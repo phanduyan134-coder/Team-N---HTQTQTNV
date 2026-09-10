@@ -245,7 +245,12 @@ Các quy trình hỗ trợ trọng yếu tại Long Châu gồm có:
 
 Kiến trúc quy trình nghiệp vụ (Process Architecture) là một bản đồ chiến lược giúp tổ chức sắp xếp, cấu trúc hóa và biểu diễn trực quan các quy trình hoạt động, từ đó xác định các lĩnh vực cần cải tiến và phân bổ nguồn lực. Đối với FPT Long Châu, kiến trúc quy trình được phân bổ dựa trên 3 tầng phân loại (Quản lý – Cốt lõi – Hỗ trợ), phản ánh toàn diện hệ sinh thái vận hành của một chuỗi bán lẻ dược phẩm quy mô lớn.
 
-Dưới đây là Bảng Kiến trúc Quy trình Nghiệp vụ (Process Architecture) tổng thể của Long Châu:
+Dưới đây là Mô hình Ngôi nhà Kiến trúc Quy trình Nghiệp vụ (Process Architecture House) tổng thể của FPT Long Châu, được chuẩn hóa theo phương pháp luận BPM (Dumas et al., 2018):
+
+![Hình 2.1: Mô hình Ngôi nhà Kiến trúc Quy trình Nghiệp vụ FPT Long Châu](hinh_2_1_ngoi_nha_quy_trinh.png)
+*Hình 2.1: Mô hình Ngôi nhà Kiến trúc Quy trình Nghiệp vụ tại FPT Long Châu (Process Architecture House)*
+
+Dưới đây là Bảng mô tả chi tiết Kiến trúc Quy trình theo 3 tầng trong mô hình Ngôi nhà:
 
 | Tầng quy trình                       | Tên quy trình                         | Mô tả ngắn                                                                                                                     |
 | :------------------------------------- | :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |

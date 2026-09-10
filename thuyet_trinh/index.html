@@ -1203,341 +1203,360 @@
 
         <!-- SLIDE 18 -->
     <section class="slide" data-slide="18">
-      <div class="slide-inner">
-        <div class="mb-3">
+      <div class="slide-inner flex flex-col justify-center">
+        <!-- Header -->
+        <div class="mb-2 text-center sm:text-left">
           <div class="flex items-center justify-between">
-            <span class="px-3.5 py-1 rounded-lg bg-gradient-to-r from-sky-600/30 text-sky-300 border border-sky-400/30 font-bold text-xs uppercase flex items-center gap-2 shadow-sm">
-              <i class="fa-solid fa-book-bookmark text-xs"></i> CHƯƠNG 2: KHẢO SÁT, LIỆT KÊ VÀ PHÂN LOẠI QUY TRÌNH
+            <span class="px-3.5 py-1 rounded-lg bg-gradient-to-r from-sky-600/30 text-sky-300 border border-sky-400/30 font-bold text-xs uppercase inline-flex items-center gap-2">
+              <i class="fa-solid fa-book-bookmark text-xs"></i> CHƯƠNG 2: KHẢO SÁT, LIỆT KÊ VÀ PHÂN LOẠI QUY TRÌNH NGHIỆP VỤ
             </span>
-            <span class="px-2.5 py-1 rounded bg-blue-500/20 text-cyan-300 text-xs font-mono font-bold border border-cyan-400/30">
-              Khung phân loại Dumas et al. (2018)
+            <span class="badge-clean text-amber-300 border-amber-500/30 font-mono">
+              <i class="fa-solid fa-house-chimney text-amber-400 mr-1"></i> Mô hình Ngôi nhà Quy trình (Process House)
             </span>
           </div>
-          <h2 class="text-3xl sm:text-4xl font-black text-white mt-1.5">2.3. Phân loại quy trình nghiệp vụ</h2>
-          <p class="text-sm sm:text-base text-slate-300 mt-0.5">Khung phân loại 3 tầng chuẩn mực theo BPM (Dumas et al.) và Chuỗi giá trị Michael Porter tại FPT Long Châu</p>
+          <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">2.3. Phân loại quy trình nghiệp vụ (Mô hình Ngôi nhà BPM)</h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5">Phân loại 10 quy trình thành 3 nhóm nền tảng (Quản lý - Cốt lõi - Hỗ trợ) theo cấu trúc Ngôi nhà chuẩn quốc tế Dumas et al.</p>
         </div>
 
-        <!-- Lưới 3 Cột Đại Diện Cho 3 Tầng Quy Trình -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+        <!-- MÔ HÌNH NGÔI NHÀ QUY TRÌNH (PROCESS HOUSE ARCHITECTURE) -->
+        <div class="w-full max-w-5xl mx-auto my-1">
           
-          <!-- CỘT 1: QUY TRÌNH QUẢN LÝ -->
-          <div class="glass-card p-4 rounded-2xl border-t-4 border-amber-400 flex flex-col justify-between hover:border-amber-300 transition-all">
-            <div>
-              <div class="flex items-center justify-between mb-3 pb-2 border-b border-amber-500/20">
-                <span class="text-amber-300 font-bold text-base uppercase tracking-wide flex items-center gap-2">
-                  <i class="fa-solid fa-compass text-lg"></i> 1. Tầng Quản lý
-                </span>
-                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-semibold">Management</span>
-              </div>
-              
-              <div class="space-y-2.5 text-xs text-slate-200">
-                <div class="p-2.5 rounded-xl bg-slate-800/60 border border-white/5">
-                  <strong class="text-amber-300 block mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-bullseye text-[11px]"></i> Bản chất BPM:
-                  </strong>
-                  <p class="text-slate-300 leading-relaxed">Định hướng chiến lược, giám sát hiệu suất và điều phối hoạt động. Không tạo giá trị trực tiếp cho khách hàng nhưng thiết lập chuẩn mực toàn chuỗi.</p>
-                </div>
-
-                <div class="p-2.5 rounded-xl bg-slate-800/60 border border-white/5">
-                  <strong class="text-amber-300 block mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-sliders text-[11px]"></i> Đặc điểm nhận diện:
-                  </strong>
-                  <p class="text-slate-300 leading-relaxed">Mang tính kiểm soát vĩ mô, tần suất định kỳ (tháng/quý), yêu cầu tuân thủ nghiêm ngặt quy định pháp lý y tế.</p>
-                </div>
-
-                <div class="p-2.5 rounded-xl bg-amber-950/30 border border-amber-500/20">
-                  <strong class="text-white block mb-1">Nghiệp vụ tại Long Châu:</strong>
-                  <ul class="text-slate-300 space-y-1 pl-1">
-                    <li>• Quản lý chất lượng Dược (GPP)</li>
-                    <li>• Quản lý tài chính – Kế toán</li>
-                    <li>• Quản lý tuân thủ pháp lý & Dược</li>
-                  </ul>
-                </div>
-              </div>
+          <!-- 1. MÁI NHÀ (TRIANGULAR ROOF WITH CHIMNEY & GABLE) -->
+          <div class="relative">
+            <!-- Ống khói (Chimney) -->
+            <div class="absolute -top-5 right-24 w-10 h-8 bg-slate-800 border-2 border-amber-400/70 rounded-t flex items-center justify-center text-[10px] font-mono text-amber-300 font-bold shadow-md z-10">
+              <i class="fa-solid fa-fire-smoke text-slate-400 text-xs mr-1"></i> ERP
             </div>
-          </div>
 
-          <!-- CỘT 2: QUY TRÌNH CỐT LÕI (NỔI BẬT) -->
-          <div class="glass-card p-4 rounded-2xl border-t-4 border-cyan-400 flex flex-col justify-between hover:border-cyan-300 transition-all shadow-[0_0_20px_rgba(34,211,238,0.12)]">
-            <div>
-              <div class="flex items-center justify-between mb-3 pb-2 border-b border-cyan-500/20">
-                <span class="text-cyan-300 font-bold text-base uppercase tracking-wide flex items-center gap-2">
-                  <i class="fa-solid fa-cubes-stacked text-lg"></i> 2. Tầng Cốt lõi
-                </span>
-                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-semibold">Core / Primary</span>
-              </div>
-              
-              <div class="space-y-2.5 text-xs text-slate-200">
-                <div class="p-2.5 rounded-xl bg-slate-800/60 border border-white/5">
-                  <strong class="text-cyan-300 block mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-heart-pulse text-[11px]"></i> Bản chất BPM:
-                  </strong>
-                  <p class="text-slate-300 leading-relaxed">Tạo ra chuỗi giá trị trực tiếp (Value Chain) cho khách hàng cuối; trực tiếp sinh doanh thu và định hình năng lực cạnh tranh.</p>
-                </div>
+            <!-- Mái nhà hình tam giác SVG -->
+            <svg viewBox="0 0 1000 130" class="w-full h-auto drop-shadow-[0_10px_25px_rgba(245,158,11,0.25)]" style="display: block;">
+              <!-- Khối tam giác mái -->
+              <polygon points="500,8 995,124 5,124" fill="url(#roofGrad18)" stroke="#f59e0b" stroke-width="3.5" stroke-linejoin="round" />
+              <!-- Xà ngang mái nhà (Eave Beam) -->
+              <rect x="0" y="122" width="1000" height="6" fill="#fbbf24" stroke="#d97706" stroke-width="1" />
+              <!-- Đỉnh chóp mái (Ridge Ornament) -->
+              <circle cx="500" cy="8" r="7" fill="#fde047" stroke="#92400e" stroke-width="2" />
+              <!-- Chỉ viền ngói trang trí -->
+              <line x1="280" y1="70" x2="720" y2="70" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.5" />
+              <defs>
+                <linearGradient id="roofGrad18" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#78350f" stop-opacity="0.98" />
+                  <stop offset="45%" stop-color="#b45309" stop-opacity="0.9" />
+                  <stop offset="100%" stop-color="#0f172a" stop-opacity="0.98" />
+                </linearGradient>
+              </defs>
+            </svg>
 
-                <div class="p-2.5 rounded-xl bg-slate-800/60 border border-white/5">
-                  <strong class="text-cyan-300 block mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-bolt text-[11px]"></i> Đặc điểm nhận diện:
-                  </strong>
-                  <p class="text-slate-300 leading-relaxed">Tần suất giao dịch diễn ra liên tục (hàng giờ/hàng ngày), tiếp xúc trực tiếp với người tiêu dùng trên mọi điểm chạm.</p>
-                </div>
-
-                <div class="p-2.5 rounded-xl bg-cyan-950/30 border border-cyan-500/20">
-                  <strong class="text-white block mb-1">Nghiệp vụ tại Long Châu:</strong>
-                  <ul class="text-slate-300 space-y-1 pl-1">
-                    <li>• Quản lý chuỗi cung ứng (Mua hàng)</li>
-                    <li>• Bán thuốc tại nhà thuốc (Offline)</li>
-                    <li>• Bán thuốc Online (Web / Mobile App)</li>
-                    <li>• Quản lý quan hệ khách hàng (CRM)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CỘT 3: QUY TRÌNH HỖ TRỢ -->
-          <div class="glass-card p-4 rounded-2xl border-t-4 border-purple-400 flex flex-col justify-between hover:border-purple-300 transition-all">
-            <div>
-              <div class="flex items-center justify-between mb-3 pb-2 border-b border-purple-500/20">
-                <span class="text-purple-300 font-bold text-base uppercase tracking-wide flex items-center gap-2">
-                  <i class="fa-solid fa-gears text-lg"></i> 3. Tầng Hỗ trợ
-                </span>
-                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-semibold">Support / Enabler</span>
-              </div>
-              
-              <div class="space-y-2.5 text-xs text-slate-200">
-                <div class="p-2.5 rounded-xl bg-slate-800/60 border border-white/5">
-                  <strong class="text-purple-300 block mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-shield-halved text-[11px]"></i> Bản chất BPM:
-                  </strong>
-                  <p class="text-slate-300 leading-relaxed">Cung cấp nguồn lực thiết yếu (tài sản, nhân lực, công nghệ) để các quy trình cốt lõi và quản lý vận hành không gián đoạn.</p>
-                </div>
-
-                <div class="p-2.5 rounded-xl bg-slate-800/60 border border-white/5">
-                  <strong class="text-purple-300 block mb-1 flex items-center gap-1.5">
-                    <i class="fa-solid fa-handshake-angle text-[11px]"></i> Đặc điểm nhận diện:
-                  </strong>
-                  <p class="text-slate-300 leading-relaxed">Phục vụ khách hàng nội bộ (Internal customers), đo lường bằng chỉ số SLA, chất lượng nguồn nhân lực và độ sẵn sàng hạ tầng.</p>
-                </div>
-
-                <div class="p-2.5 rounded-xl bg-purple-950/30 border border-purple-500/20">
-                  <strong class="text-white block mb-1">Nghiệp vụ tại Long Châu:</strong>
-                  <ul class="text-slate-300 space-y-1 pl-1">
-                    <li>• Quản lý kho trung tâm (Logistics)</li>
-                    <li>• Tuyển dụng và Đào tạo dược sĩ (HR)</li>
-                    <li>• Quản trị hệ thống CNTT (IT / ERP)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Thanh Tóm Tắt Dòng Chảy Giá Trị Liên Tầng -->
-        <div class="p-3 bg-slate-900/90 border border-slate-700/80 rounded-xl text-xs sm:text-sm text-slate-300 flex flex-wrap items-center justify-between gap-2 mt-3.5 shadow-lg">
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-diagram-project text-cyan-400 text-sm"></i>
-            <span><strong>Nguyên lý phân tầng:</strong> <span class="text-amber-300 font-semibold">[Quản lý]</span> Kiểm soát chuẩn mực ➔ <span class="text-cyan-300 font-semibold">[Cốt lõi]</span> Tạo giá trị cho người bệnh ➔ <span class="text-purple-300 font-semibold">[Hỗ trợ]</span> Bệ đỡ nguồn lực & CNTT.</span>
-          </div>
-          <span class="px-2.5 py-0.5 rounded bg-blue-600/30 text-cyan-300 text-xs font-mono font-bold border border-cyan-400/30">Xem Mô hình Ngôi nhà ở Slide 19 &rarr;</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SLIDE 19 -->
-    <section class="slide" data-slide="19">
-      <div class="slide-inner">
-        <div class="mb-2">
-          <div class="flex items-center justify-between">
-            <span class="px-3.5 py-1 rounded-lg bg-gradient-to-r from-sky-600/30 text-sky-300 border border-sky-400/30 font-bold text-xs uppercase flex items-center gap-2 shadow-sm">
-              <i class="fa-solid fa-sitemap text-xs"></i> CHƯƠNG 2: KHẢO SÁT, LIỆT KÊ VÀ PHÂN LOẠI QUY TRÌNH
-            </span>
-            <span class="px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-300 text-xs font-mono font-bold border border-amber-400/30">
-              Mô hình Ngôi nhà Quy trình (Process Architecture House)
-            </span>
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">2.4. Kiến trúc quy trình nghiệp vụ (Enterprise Process Architecture)</h2>
-          <p class="text-xs sm:text-sm text-slate-300">Bản đồ kiến trúc 3 tầng hình Ngôi nhà chuẩn Dumas et al. (2018) & Scheer ARIS phản ánh toàn diện hệ sinh thái FPT Long Châu</p>
-        </div>
-
-        <!-- MÔ HÌNH NGÔI NHÀ KIẾN TRÚC QUY TRÌNH (PROCESS ARCHITECTURE HOUSE) -->
-        <div class="glass-card p-3 rounded-2xl border border-cyan-500/30 shadow-2xl relative overflow-hidden bg-gradient-to-b from-slate-900/95 via-slate-950/90 to-slate-900/95 my-1">
-          
-          <!-- MÁI NHÀ (ROOF): TẦNG QUẢN LÝ (MANAGEMENT PROCESSES) -->
-          <div class="relative mb-2">
-            <div class="bg-gradient-to-r from-amber-500/25 via-amber-400/35 to-amber-500/25 border-2 border-amber-400/60 rounded-t-2xl p-2 text-center shadow-lg relative">
+            <!-- Nội dung bên trong Mái nhà (Attic overlay) -->
+            <div class="absolute inset-0 flex flex-col items-center justify-end pb-2.5 px-10 sm:px-24 text-center">
               <div class="flex items-center justify-center gap-2 mb-1">
-                <i class="fa-solid fa-chess-king text-amber-300 text-sm"></i>
-                <span class="text-amber-200 font-black text-xs sm:text-sm uppercase tracking-wider">MÁI NHÀ: TẦNG QUẢN LÝ (Management Processes)</span>
-                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-900/60 text-amber-300 border border-amber-400/40 font-bold">Chiến lược & Kiểm soát</span>
+                <span class="w-5 h-5 rounded-full bg-amber-500/30 text-amber-300 flex items-center justify-center text-xs font-bold border border-amber-400/40">
+                  <i class="fa-solid fa-landmark text-[10px]"></i>
+                </span>
+                <span class="text-xs sm:text-sm font-black text-amber-300 uppercase tracking-widest drop-shadow">
+                  MÁI NHÀ: QUY TRÌNH QUẢN LÝ (Management Processes)
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.2 rounded bg-amber-900/70 text-amber-300 border border-amber-400/30 font-bold hidden sm:inline">Chiến lược & Kiểm soát</span>
               </div>
-              <div class="grid grid-cols-3 gap-2 mt-1.5">
-                <div class="bg-slate-900/90 border border-amber-400/40 rounded-lg p-1.5 text-left hover:border-amber-300 transition-colors">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-4 h-4 rounded bg-amber-500/30 text-amber-300 font-mono font-bold text-[10px] flex items-center justify-center shrink-0">02</span>
-                    <span class="text-xs font-bold text-white leading-tight">Quản lý chất lượng Dược (GPP)</span>
-                  </div>
-                  <p class="text-[10px] text-slate-300 mt-0.5 pl-5.5">Giám sát COA, điều kiện GDP/GPP, cách ly thuốc lỗi</p>
+              
+              <!-- 3 Thẻ Quy trình Quản lý -->
+              <div class="grid grid-cols-3 gap-2 w-full max-w-3xl">
+                <div class="bg-slate-900/95 border border-amber-400/50 rounded-lg p-1.5 text-left shadow">
+                  <span class="text-[9px] font-mono text-amber-400 font-bold block">01 • QUẢN LÝ</span>
+                  <span class="text-xs font-bold text-white leading-tight">Chất lượng Dược (GPP/GDP)</span>
                 </div>
-                <div class="bg-slate-900/90 border border-amber-400/40 rounded-lg p-1.5 text-left hover:border-amber-300 transition-colors">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-4 h-4 rounded bg-amber-500/30 text-amber-300 font-mono font-bold text-[10px] flex items-center justify-center shrink-0">08</span>
-                    <span class="text-xs font-bold text-white leading-tight">Quản lý Tài chính – Kế toán</span>
-                  </div>
-                  <p class="text-[10px] text-slate-300 mt-0.5 pl-5.5">Kiểm soát dòng tiền, công nợ NCC, thanh toán POS</p>
+                <div class="bg-slate-900/95 border border-amber-400/50 rounded-lg p-1.5 text-left shadow">
+                  <span class="text-[9px] font-mono text-amber-400 font-bold block">02 • QUẢN LÝ</span>
+                  <span class="text-xs font-bold text-white leading-tight">Tài chính – Kế toán</span>
                 </div>
-                <div class="bg-slate-900/90 border border-amber-400/40 rounded-lg p-1.5 text-left hover:border-amber-300 transition-colors">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-4 h-4 rounded bg-amber-500/30 text-amber-300 font-mono font-bold text-[10px] flex items-center justify-center shrink-0">10</span>
-                    <span class="text-xs font-bold text-white leading-tight">Quản lý Tuân thủ pháp lý & Dược</span>
-                  </div>
-                  <p class="text-[10px] text-slate-300 mt-0.5 pl-5.5">Tuân thủ luật Dược, quy chế kê đơn Bộ Y tế</p>
+                <div class="bg-slate-900/95 border border-amber-400/50 rounded-lg p-1.5 text-left shadow">
+                  <span class="text-[9px] font-mono text-amber-400 font-bold block">03 • QUẢN LÝ</span>
+                  <span class="text-xs font-bold text-white leading-tight">Tuân thủ pháp lý & Dược</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- THÂN NHÀ (BODY): TẦNG CỐT LÕI (CORE PROCESSES) KẸP GIỮA INPUT VÀ OUTPUT -->
-          <div class="grid grid-cols-12 gap-2 items-stretch my-1">
+          <!-- 2. THÂN NHÀ (BODY: CỘT VÁCH TRÁI INPUT - SẢNH CHÍNH CORE - CỘT VÁCH PHẢI OUTPUT) -->
+          <div class="grid grid-cols-12 gap-2 border-x-4 border-slate-700 bg-slate-950/85 p-2 relative shadow-2xl items-stretch">
             
-            <!-- CỘT TRÁI (INPUT WALL): NHU CẦU KHÁCH HÀNG -->
-            <div class="col-span-2 bg-gradient-to-b from-blue-600/30 to-slate-900/90 border-2 border-blue-400/50 rounded-xl p-2 flex flex-col justify-center items-center text-center shadow-md">
-              <i class="fa-solid fa-hospital-user text-blue-300 text-xl mb-1.5 animate-pulse"></i>
-              <span class="text-blue-200 font-black text-xs uppercase tracking-wide">ĐẦU VÀO (INPUTS)</span>
-              <div class="text-[10px] text-slate-300 mt-1 leading-tight space-y-1">
-                <div class="bg-blue-950/60 p-1 rounded border border-blue-500/30 font-medium">• Nhu cầu sức khỏe</div>
-                <div class="bg-blue-950/60 p-1 rounded border border-blue-500/30 font-medium">• Đơn thuốc bác sĩ</div>
-                <div class="bg-blue-950/60 p-1 rounded border border-blue-500/30 font-medium">• Đơn đặt hàng NCC</div>
+            <!-- CỘT TRỤ VÀO: VÁCH CHỊU LỰC TRÁI (INPUTS WALL) -->
+            <div class="col-span-2 rounded-xl bg-gradient-to-b from-blue-950/90 via-slate-900 to-blue-950/90 border-2 border-blue-400/60 p-2 flex flex-col justify-between items-center text-center shadow-lg">
+              <div class="w-full">
+                <div class="w-7 h-7 rounded-lg bg-blue-500/20 text-blue-300 flex items-center justify-center mx-auto mb-1 text-xs border border-blue-400/30">
+                  <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <span class="text-[11px] font-black text-blue-300 uppercase tracking-wider block">VÁCH ĐẦU VÀO</span>
+                <span class="text-[9px] font-mono text-slate-400 block mb-1">(Input Wall)</span>
               </div>
-              <i class="fa-solid fa-angles-right text-cyan-400 text-sm mt-2"></i>
+              <div class="space-y-1 w-full text-[10px] text-slate-200 text-left">
+                <div class="p-1 rounded bg-slate-900/90 border border-white/5">• Toa thuốc bác sĩ</div>
+                <div class="p-1 rounded bg-slate-900/90 border border-white/5">• Bệnh nhân khám</div>
+                <div class="p-1 rounded bg-slate-900/90 border border-white/5">• Nhu cầu dược phẩm</div>
+              </div>
+              <i class="fa-solid fa-angles-right text-cyan-400 text-xs mt-1 animate-pulse"></i>
             </div>
 
-            <!-- THÂN CHÍNH (4 CỘT TRỤ GIÁ TRỊ CỐT LÕI): CORE PROCESSES -->
-            <div class="col-span-8 bg-gradient-to-r from-cyan-500/20 via-sky-500/20 to-blue-500/20 border-2 border-cyan-400/60 rounded-xl p-2 shadow-inner flex flex-col justify-between">
-              <div class="flex items-center justify-between pb-1 border-b border-cyan-500/30 mb-1.5 px-1">
-                <div class="flex items-center gap-1.5">
-                  <i class="fa-solid fa-heart-pulse text-cyan-400 text-sm"></i>
-                  <span class="text-cyan-200 font-black text-xs sm:text-sm uppercase tracking-wider">THÂN NHÀ: TẦNG CỐT LÕI (Core / Value-Creating Processes)</span>
-                </div>
-                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-900/70 text-cyan-300 border border-cyan-400/40 font-bold">Chuỗi giá trị tạo doanh thu</span>
+            <!-- SẢNH CHÍNH (MAIN HALL): 4 PHÒNG QUY TRÌNH CỐT LÕI -->
+            <div class="col-span-8 rounded-xl bg-slate-900/70 border-2 border-cyan-500/50 p-2.5 flex flex-col justify-between shadow-inner">
+              <div class="flex items-center justify-between pb-1 mb-1.5 border-b border-cyan-500/30 px-1">
+                <span class="text-xs font-bold text-cyan-300 uppercase flex items-center gap-1.5">
+                  <i class="fa-solid fa-cubes-stacked text-cyan-400"></i> THÂN NHÀ: QUY TRÌNH CỐT LÕI (Core / Value-Creating Processes)
+                </span>
+                <span class="badge-clean text-cyan-300 border-cyan-500/30 text-[10px]">Chuỗi tạo doanh thu</span>
               </div>
               
-              <div class="grid grid-cols-4 gap-1.5">
-                <!-- QT 01 -->
-                <div class="bg-slate-900/95 border-t-2 border-cyan-400 rounded-lg p-2 flex flex-col justify-between shadow">
+              <div class="grid grid-cols-4 gap-2">
+                <!-- Core 1 -->
+                <div class="p-2 rounded-lg bg-slate-800/90 border border-cyan-500/30 flex flex-col justify-between">
                   <div>
-                    <span class="px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-mono font-bold text-[9px]">QT-01</span>
-                    <h4 class="text-xs font-bold text-white mt-1 leading-tight">Chuỗi cung ứng & Mua hàng</h4>
-                    <p class="text-[10px] text-slate-300 mt-1 leading-snug">Cung ứng dược phẩm từ NCC về tổng kho & 1.800+ quầy</p>
+                    <span class="text-[9px] font-mono font-bold text-cyan-400">04 • CỐT LÕI</span>
+                    <h4 class="text-xs font-bold text-white mt-0.5 leading-tight">Chuỗi cung ứng</h4>
+                    <p class="text-support text-[10px] mt-1">Cung ứng thuốc từ NCC về kho và 1.800+ quầy</p>
                   </div>
-                  <div class="mt-2 pt-1 border-t border-white/5 flex items-center justify-between text-[9px] text-cyan-300 font-mono">
-                    <span>B2B • PO</span>
+                  <div class="mt-2 pt-1 border-t border-white/5 text-[9px] text-cyan-300 font-mono flex items-center justify-between">
+                    <span>B2B PO</span>
                     <i class="fa-solid fa-truck-ramp-box"></i>
                   </div>
                 </div>
 
-                <!-- QT 03 -->
-                <div class="bg-slate-900/95 border-t-2 border-emerald-400 rounded-lg p-2 flex flex-col justify-between shadow border-cyan-500/30">
+                <!-- Core 2 (Trọng điểm) -->
+                <div class="p-2 rounded-lg bg-slate-800/95 border-2 border-rose-400 flex flex-col justify-between shadow-[0_0_15px_rgba(244,63,94,0.25)]">
                   <div>
-                    <span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono font-bold text-[9px]">QT-03 • TRỌNG ĐIỂM</span>
-                    <h4 class="text-xs font-bold text-white mt-1 leading-tight">Bán thuốc tại Nhà thuốc</h4>
-                    <p class="text-[10px] text-slate-300 mt-1 leading-snug">Tư vấn toa, xuất quầy, dặn dò & in bill thanh toán POS</p>
+                    <span class="text-[9px] font-mono font-black text-rose-400">05 • TRỌNG ĐIỂM</span>
+                    <h4 class="text-xs font-bold text-white mt-0.5 leading-tight">Bán thuốc tại quầy</h4>
+                    <p class="text-support text-[10px] mt-1">Tư vấn toa, bốc thuốc, thu ngân và in bill POS</p>
                   </div>
-                  <div class="mt-2 pt-1 border-t border-white/5 flex items-center justify-between text-[9px] text-emerald-300 font-mono">
-                    <span>Offline quầy</span>
+                  <div class="mt-2 pt-1 border-t border-white/5 text-[9px] text-rose-300 font-mono flex items-center justify-between">
+                    <span>Offline Quầy</span>
                     <i class="fa-solid fa-shop"></i>
                   </div>
                 </div>
 
-                <!-- QT 04 -->
-                <div class="bg-slate-900/95 border-t-2 border-sky-400 rounded-lg p-2 flex flex-col justify-between shadow">
+                <!-- Core 3 -->
+                <div class="p-2 rounded-lg bg-slate-800/90 border border-sky-500/30 flex flex-col justify-between">
                   <div>
-                    <span class="px-1.5 py-0.5 rounded bg-sky-500/20 text-sky-300 font-mono font-bold text-[9px]">QT-04</span>
-                    <h4 class="text-xs font-bold text-white mt-1 leading-tight">Bán thuốc Online & Giao tận nơi</h4>
-                    <p class="text-[10px] text-slate-300 mt-1 leading-snug">App/Web, Dược sĩ duyệt toa online, giao nhanh 2-3h</p>
+                    <span class="text-[9px] font-mono font-bold text-sky-400">06 • CỐT LÕI</span>
+                    <h4 class="text-xs font-bold text-white mt-0.5 leading-tight">Bán thuốc Online</h4>
+                    <p class="text-support text-[10px] mt-1">Website/App, dược sĩ duyệt toa, giao 30 phút</p>
                   </div>
-                  <div class="mt-2 pt-1 border-t border-white/5 flex items-center justify-between text-[9px] text-sky-300 font-mono">
-                    <span>Omnichannel</span>
+                  <div class="mt-2 pt-1 border-t border-white/5 text-[9px] text-sky-300 font-mono flex items-center justify-between">
+                    <span>Omnichannel O2O</span>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                   </div>
                 </div>
 
-                <!-- QT 09 -->
-                <div class="bg-slate-900/95 border-t-2 border-teal-400 rounded-lg p-2 flex flex-col justify-between shadow">
+                <!-- Core 4 -->
+                <div class="p-2 rounded-lg bg-slate-800/90 border border-teal-500/30 flex flex-col justify-between">
                   <div>
-                    <span class="px-1.5 py-0.5 rounded bg-teal-500/20 text-teal-300 font-mono font-bold text-[9px]">QT-09</span>
-                    <h4 class="text-xs font-bold text-white mt-1 leading-tight">Quản trị quan hệ Khách hàng (CRM)</h4>
-                    <p class="text-[10px] text-slate-300 mt-1 leading-snug">Tích điểm, nhắc lịch dùng thuốc, CSKH & đo lường NPS</p>
+                    <span class="text-[9px] font-mono font-bold text-teal-400">07 • CỐT LÕI</span>
+                    <h4 class="text-xs font-bold text-white mt-0.5 leading-tight">Tư vấn Dược & CRM</h4>
+                    <p class="text-support text-[10px] mt-1">Tư vấn phác đồ, nhắc uống thuốc và đo NPS</p>
                   </div>
-                  <div class="mt-2 pt-1 border-t border-white/5 flex items-center justify-between text-[9px] text-teal-300 font-mono">
-                    <span>Retain & Care</span>
+                  <div class="mt-2 pt-1 border-t border-white/5 text-[9px] text-teal-300 font-mono flex items-center justify-between">
+                    <span>Chăm sóc KH</span>
                     <i class="fa-solid fa-heart"></i>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- CỘT PHẢI (OUTPUT WALL): GIÁ TRỊ CHO BỆNH NHÂN -->
-            <div class="col-span-2 bg-gradient-to-b from-emerald-600/30 to-slate-900/90 border-2 border-emerald-400/50 rounded-xl p-2 flex flex-col justify-center items-center text-center shadow-md">
-              <i class="fa-solid fa-circle-check text-emerald-400 text-xl mb-1.5 animate-bounce"></i>
-              <span class="text-emerald-200 font-black text-xs uppercase tracking-wide">ĐẦU RA (OUTPUTS)</span>
-              <div class="text-[10px] text-slate-300 mt-1 leading-tight space-y-1">
-                <div class="bg-emerald-950/60 p-1 rounded border border-emerald-500/30 font-medium">• Thuốc đúng - đủ - chuẩn</div>
-                <div class="bg-emerald-950/60 p-1 rounded border border-emerald-500/30 font-medium">• An toàn sức khỏe người bệnh</div>
-                <div class="bg-emerald-950/60 p-1 rounded border border-emerald-500/30 font-medium">• Hài lòng & Tối ưu chi phí</div>
+            <!-- CỘT TRỤ RA: VÁCH CHỊU LỰC PHẢI (OUTPUTS WALL) -->
+            <div class="col-span-2 rounded-xl bg-gradient-to-b from-emerald-950/90 via-slate-900 to-emerald-950/90 border-2 border-emerald-400/60 p-2 flex flex-col justify-between items-center text-center shadow-lg">
+              <div class="w-full">
+                <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center mx-auto mb-1 text-xs border border-emerald-400/30">
+                  <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <span class="text-[11px] font-black text-emerald-300 uppercase tracking-wider block">VÁCH ĐẦU RA</span>
+                <span class="text-[9px] font-mono text-slate-400 block mb-1">(Output Wall)</span>
               </div>
-              <i class="fa-solid fa-smile-beam text-amber-300 text-sm mt-2"></i>
+              <div class="space-y-1 w-full text-[10px] text-slate-200 text-left">
+                <div class="p-1 rounded bg-slate-900/90 border border-white/5">• Thuốc đúng & đủ liều</div>
+                <div class="p-1 rounded bg-slate-900/90 border border-white/5">• Hồi phục sức khỏe</div>
+                <div class="p-1 rounded bg-slate-900/90 border border-white/5">• Niềm tin người bệnh</div>
+              </div>
+              <i class="fa-solid fa-check text-emerald-400 text-xs mt-1"></i>
             </div>
           </div>
 
-          <!-- MÓNG NHÀ (FOUNDATION): TẦNG HỖ TRỢ (SUPPORT PROCESSES) -->
-          <div class="relative mt-2">
-            <div class="bg-gradient-to-r from-purple-500/25 via-purple-400/35 to-purple-500/25 border-2 border-purple-400/60 rounded-b-2xl p-2 text-center shadow-lg">
-              <div class="flex items-center justify-center gap-2 mb-1">
-                <i class="fa-solid fa-cubes text-purple-300 text-sm"></i>
-                <span class="text-purple-200 font-black text-xs sm:text-sm uppercase tracking-wider">MÓNG NHÀ: TẦNG HỖ TRỢ (Support / Enabler Processes)</span>
-                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-900/60 text-purple-300 border border-purple-400/40 font-bold">Nền tảng & Nguồn lực</span>
+          <!-- 3. MÓNG NHÀ (SOLID FOUNDATION BASE: SUPPORT PROCESSES) -->
+          <div class="rounded-b-2xl bg-gradient-to-r from-purple-950/90 via-slate-900 to-purple-950/90 border-2 border-t-0 border-purple-400/60 p-2.5 shadow-2xl">
+            <div class="flex items-center justify-center gap-2 mb-1.5">
+              <i class="fa-solid fa-layer-group text-purple-400 text-xs"></i>
+              <span class="text-xs font-bold text-purple-300 uppercase tracking-wider">
+                BỆ MÓNG: QUY TRÌNH HỖ TRỢ (Support / Enabler Processes)
+              </span>
+              <span class="badge-clean text-purple-300 border-purple-500/30 text-[10px]">Nền tảng vận hành</span>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-3">
+              <!-- Móng 1 (Trọng điểm) -->
+              <div class="bg-slate-900/90 border-2 border-rose-400/80 rounded-lg p-2 flex items-center gap-2.5 shadow">
+                <div class="w-8 h-8 rounded-md bg-rose-500/20 text-rose-300 flex items-center justify-center font-bold text-sm shrink-0">
+                  <i class="fa-solid fa-warehouse"></i>
+                </div>
+                <div>
+                  <span class="text-[9px] font-mono text-rose-400 font-bold block">08 • TRỌNG ĐIỂM SỐ 2</span>
+                  <span class="text-xs font-bold text-white">Quản lý Kho bãi (WMS / GSP)</span>
+                </div>
               </div>
-              <div class="grid grid-cols-3 gap-2 mt-1.5">
-                <div class="bg-slate-900/90 border border-purple-400/40 rounded-lg p-1.5 text-left hover:border-purple-300 transition-colors">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-4 h-4 rounded bg-purple-500/30 text-purple-300 font-mono font-bold text-[10px] flex items-center justify-center shrink-0">05</span>
-                    <span class="text-xs font-bold text-white leading-tight">Quản lý Kho & Bảo quản (WMS)</span>
-                  </div>
-                  <p class="text-[10px] text-slate-300 mt-0.5 pl-5.5">Bảo quản chuẩn GSP, kiểm soát FEFO & cảnh báo cận hạn</p>
+
+              <!-- Móng 2 -->
+              <div class="bg-slate-900/90 border border-purple-400/40 rounded-lg p-2 flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-md bg-purple-500/20 text-purple-300 flex items-center justify-center font-bold text-sm shrink-0">
+                  <i class="fa-solid fa-user-graduate"></i>
                 </div>
-                <div class="bg-slate-900/90 border border-purple-400/40 rounded-lg p-1.5 text-left hover:border-purple-300 transition-colors">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-4 h-4 rounded bg-purple-500/30 text-purple-300 font-mono font-bold text-[10px] flex items-center justify-center shrink-0">06</span>
-                    <span class="text-xs font-bold text-white leading-tight">Tuyển dụng & Đào tạo Dược sĩ</span>
-                  </div>
-                  <p class="text-[10px] text-slate-300 mt-0.5 pl-5.5">Chuẩn hóa dược sĩ 4T (Tâm - Tài - Trí - Tín), sát hạch GPP</p>
+                <div>
+                  <span class="text-[9px] font-mono text-purple-300 font-bold block">09 • HỖ TRỢ</span>
+                  <span class="text-xs font-bold text-white">Tuyển dụng & Đào tạo Dược sĩ</span>
                 </div>
-                <div class="bg-slate-900/90 border border-purple-400/40 rounded-lg p-1.5 text-left hover:border-purple-300 transition-colors">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-4 h-4 rounded bg-purple-500/30 text-purple-300 font-mono font-bold text-[10px] flex items-center justify-center shrink-0">07</span>
-                    <span class="text-xs font-bold text-white leading-tight">Quản trị Công nghệ Thông tin (IT)</span>
-                  </div>
-                  <p class="text-[10px] text-slate-300 mt-0.5 pl-5.5">Vận hành hạ tầng ERP, POS, App, API bảo mật y tế</p>
+              </div>
+
+              <!-- Móng 3 -->
+              <div class="bg-slate-900/90 border border-purple-400/40 rounded-lg p-2 flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-md bg-purple-500/20 text-purple-300 flex items-center justify-center font-bold text-sm shrink-0">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <div>
+                  <span class="text-[9px] font-mono text-purple-300 font-bold block">10 • HỖ TRỢ</span>
+                  <span class="text-xs font-bold text-white">Quản trị Hệ thống CNTT (IT)</span>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
 
-        <!-- BĂNG CHÂN: THUYẾT MINH PHÂN CẤP KIẾN TRÚC QUY TRÌNH (3 LEVELS) -->
-        <div class="p-2 bg-slate-900/90 border border-slate-700/80 rounded-xl text-[11px] text-slate-200 flex flex-wrap items-center justify-between gap-2 shadow-lg">
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-layer-group text-cyan-400 text-xs"></i>
-            <span><strong>Phân cấp kiến trúc quy trình (Process Hierarchy):</strong> 
-              <span class="text-amber-300 font-semibold">[Level 1: Enterprise House]</span> Ngôi nhà 10 quy trình toàn diện ➔ 
-              <span class="text-cyan-300 font-semibold">[Level 2: Process Landscaping]</span> Chuỗi giá trị liên phòng ban ➔ 
-              <span class="text-emerald-300 font-semibold">[Level 3: Detailed BPMN 2.0]</span> Sơ đồ tác vụ, rẽ nhánh gateway & swimlane.
+        <!-- Takeaway Banner -->
+        <div class="takeaway-bar amber w-full max-w-5xl mx-auto py-1.5 px-3">
+          <i class="fa-solid fa-house-chimney text-amber-400 text-base shrink-0"></i>
+          <span class="text-xs text-slate-200">
+            <strong class="text-amber-300">Ý nghĩa Mô hình Ngôi nhà:</strong> Mái nhà Quản lý bảo đảm tuân thủ chuẩn GPP; Thân nhà Cốt lõi trực tiếp tạo doanh thu và chữa bệnh; Bệ móng Hỗ trợ cung ứng kho bãi, nhân sự và hạ tầng CNTT vững chắc.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 19 -->
+    <section class="slide" data-slide="19">
+      <div class="slide-inner flex flex-col justify-center">
+        <!-- Header -->
+        <div class="mb-3 text-center sm:text-left">
+          <div class="flex items-center justify-between">
+            <span class="px-3.5 py-1 rounded-lg bg-gradient-to-r from-sky-600/30 text-sky-300 border border-sky-400/30 font-bold text-xs uppercase inline-flex items-center gap-2">
+              <i class="fa-solid fa-book-bookmark text-xs"></i> CHƯƠNG 2: KHẢO SÁT, LIỆT KÊ VÀ PHÂN LOẠI QUY TRÌNH NGHIỆP VỤ
+            </span>
+            <span class="badge-clean text-cyan-300 border-cyan-500/30 font-mono">
+              <i class="fa-solid fa-sitemap text-cyan-400 mr-1"></i> Khung Phân Rã Kiến Trúc (Process Hierarchy)
             </span>
           </div>
-          <span class="px-2 py-0.5 rounded bg-blue-600/30 text-cyan-300 text-[10px] font-mono border border-cyan-400/30">Chuẩn ARIS & Dumas et al. (2018)</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">2.4. Kiến trúc quy trình nghiệp vụ (Enterprise Process Architecture)</h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-0.5">Khung phân rã 3 cấp độ (Process Hierarchy) và ma trận luồng liên kết giá trị End-to-End toàn chuỗi FPT Long Châu</p>
+        </div>
+
+        <!-- 3 CẤP ĐỘ PHÂN RÃ KIẾN TRÚC (PROCESS HIERARCHY) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-3">
+          <!-- Level 1 -->
+          <div class="glass-card p-4 rounded-xl border-t-4 border-cyan-400 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="badge-clean text-cyan-300 border-cyan-500/30 font-mono font-bold">CẤP ĐỘ 1</span>
+                <span class="text-xs font-bold text-slate-400 uppercase">Chiến lược vĩ mô</span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 flex items-center gap-1.5">
+                <i class="fa-solid fa-building text-cyan-400"></i> Enterprise Landscape
+              </h3>
+              <p class="text-support text-xs mb-2">Bản đồ quy hoạch 10 quy trình toàn diện định hình năng lực cạnh tranh chuỗi bán lẻ dược phẩm.</p>
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-white/5 text-[11px] text-slate-300">
+                <strong class="text-cyan-300">Đối tượng:</strong> HĐQT & Ban Giám đốc FPT Retail điều phối tổng thể.
+              </div>
+            </div>
+            <div class="mt-3 pt-2 border-t border-white/10 text-xs font-semibold text-cyan-300 flex items-center gap-1">
+              <i class="fa-solid fa-compass"></i> Định hướng kinh doanh chuỗi
+            </div>
+          </div>
+
+          <!-- Level 2 -->
+          <div class="glass-card p-4 rounded-xl border-t-4 border-amber-400 flex flex-col justify-between focal-card">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="badge-clean text-amber-300 border-amber-500/30 font-mono font-bold">CẤP ĐỘ 2</span>
+                <span class="text-xs font-bold text-slate-400 uppercase">Chuỗi giá trị E2E</span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 flex items-center gap-1.5">
+                <i class="fa-solid fa-network-wired text-amber-400"></i> Process Landscaping
+              </h3>
+              <p class="text-support text-xs mb-2">Các chuỗi giá trị liên phòng ban kết nối từ đầu vào đến người bệnh cuối cùng.</p>
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-white/5 text-[11px] text-slate-300 space-y-1">
+                <div>• <strong class="text-amber-300">P2P:</strong> Mua hàng $ightarrow$ Kiểm định GPP $ightarrow$ Nhập kho</div>
+                <div>• <strong class="text-amber-300">O2C:</strong> Đơn thuốc $ightarrow$ Tra cứu POS $ightarrow$ Xuất quầy</div>
+              </div>
+            </div>
+            <div class="mt-3 pt-2 border-t border-white/10 text-xs font-semibold text-amber-300 flex items-center gap-1">
+              <i class="fa-solid fa-arrows-split-up-and-left"></i> Luân chuyển giá trị liên phòng ban
+            </div>
+          </div>
+
+          <!-- Level 3 -->
+          <div class="glass-card p-4 rounded-xl border-t-4 border-emerald-400 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="badge-clean text-emerald-300 border-emerald-500/30 font-mono font-bold">CẤP ĐỘ 3</span>
+                <span class="text-xs font-bold text-slate-400 uppercase">Tác vụ chi tiết</span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 flex items-center gap-1.5">
+                <i class="fa-solid fa-diagram-project text-emerald-400"></i> Detailed BPMN 2.0
+              </h3>
+              <p class="text-support text-xs mb-2">Mô hình hóa chi tiết từng bước thao tác, swimlane, rẽ nhánh gateway và event.</p>
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-white/5 text-[11px] text-slate-300">
+                <strong class="text-emerald-300">Thực thi:</strong> Dược sĩ, thủ kho, thu ngân và khách hàng thao tác chuẩn xác.
+              </div>
+            </div>
+            <div class="mt-3 pt-2 border-t border-white/10 text-xs font-semibold text-emerald-300 flex items-center gap-1">
+              <i class="fa-solid fa-check-double"></i> 6 Sơ đồ AS-IS & 2 Sơ đồ TO-BE
+            </div>
+          </div>
+        </div>
+
+        <!-- MA TRẬN LUỒNG GIÁ TRỊ & TƯƠNG TÁC (PROCESS INTERACTION MATRIX) -->
+        <div class="glass-card p-3 rounded-xl overflow-x-auto mb-2">
+          <div class="text-xs font-bold text-white mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-table-cells text-cyan-400"></i> Ma trận luồng luân chuyển giá trị & thông tin giữa các khối nghiệp vụ
+          </div>
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-900/90 text-slate-400 border-b border-white/10">
+                <th class="p-2">Khối nghiệp vụ</th>
+                <th class="p-2 text-cyan-300">Khối Cung ứng & Mua hàng</th>
+                <th class="p-2 text-amber-300">Khối Kho vận & QA</th>
+                <th class="p-2 text-emerald-300">Khối Bán lẻ (Quầy & Online)</th>
+                <th class="p-2 text-purple-300">Khối Hỗ trợ (IT & HR)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/5 text-support">
+              <tr>
+                <td class="p-2 font-bold text-white">Đầu vào nhận</td>
+                <td class="p-2">Báo cáo tồn kho quầy & Dự báo</td>
+                <td class="p-2">Lô thuốc & Hồ sơ COA từ NCC</td>
+                <td class="p-2">Thuốc chuẩn GPP từ kho tổng</td>
+                <td class="p-2">Yêu cầu tuyển dụng, sự cố hệ thống</td>
+              </tr>
+              <tr>
+                <td class="p-2 font-bold text-white">Đầu ra bàn giao</td>
+                <td class="p-2 text-cyan-300 font-semibold">Đơn đặt hàng PO & Hợp đồng</td>
+                <td class="p-2 text-amber-300 font-semibold">Xuất kho phân phối theo FEFO</td>
+                <td class="p-2 text-emerald-300 font-semibold">Hóa đơn bill, dữ liệu POS, doanh thu</td>
+                <td class="p-2 text-purple-300 font-semibold">Dược sĩ đạt chuẩn, phần mềm ổn định</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Takeaway Banner -->
+        <div class="takeaway-bar py-1.5 px-3">
+          <i class="fa-solid fa-sitemap text-cyan-400 text-base shrink-0"></i>
+          <span class="text-xs text-slate-200">
+            <strong class="text-cyan-300">Vai trò kiến trúc quy trình:</strong> Đóng vai trò bản đồ quy hoạch tổng thể, đảm bảo tính liên kết thông suốt từ chiến lược cấp cao (Level 1) xuống chuỗi giá trị (Level 2) và từng tác vụ BPMN chi tiết (Level 3).
+          </span>
         </div>
       </div>
     </section>
