@@ -1,0 +1,66 @@
+/* Custom styles for FPT Long Châu BPMS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-blue: #005baa;
+  --secondary-blue: #1e3a8a;
+  --accent-cyan: #0284c7;
+  --fpt-orange: #f97316;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Pulse animation for active simulation step */
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(0.95); opacity: 1; }
+}
+
+.step-active {
+  animation: pulse-ring 2s infinite ease-in-out;
+}
+
+/* SVG Viewer Container */
+.svg-viewport {
+  overflow: auto;
+  cursor: grab;
+  user-select: none;
+  background-color: #f8fafc;
+  background-image: radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+.svg-viewport:active {
+  cursor: grabbing;
+}
+
+.svg-viewport img, .svg-viewport object {
+  transform-origin: 0 0;
+  transition: transform 0.15s ease-out;
+}

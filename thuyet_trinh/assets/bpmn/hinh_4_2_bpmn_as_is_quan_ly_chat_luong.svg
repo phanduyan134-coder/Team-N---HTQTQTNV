@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="950" viewBox="0 0 2000 950">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1e293b"/>
+    </marker>
+    <marker id="arr_purple" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7e22ce"/>
+    </marker>
+    <marker id="arr_rose" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e11d48"/>
+    </marker>
+    <marker id="msg_arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 8 3.5, 0 7" fill="#ffffff" stroke="#64748b" stroke-width="1.2"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="2000" height="950" fill="#faf5ff"/>
+
+  <!-- Title Header -->
+  <rect x="30" y="15" width="1940" height="48" rx="8" fill="#1e1b4b"/>
+  <text x="1000" y="45" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="bold" fill="#c084fc">
+    BPMN 2.0 (AS-IS) – QUY TRÌNH QUẢN LÝ CHẤT LƯỢNG DƯỢC PHẨM (CHUẨN GPP / GDP)
+  </text>
+  <text x="1940" y="45" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#d8b4fe">
+    FPT Long Châu • 1 Start Event Chuẩn • 5 Cổng điều kiện (Gateways) • Loại bỏ Deadlock
+  </text>
+
+  <!-- ==================== POOL 1: FPT LONG CHÂU (Nội bộ) ==================== -->
+  <rect x="30" y="75" width="1940" height="610" fill="#ffffff" stroke="#9333ea" stroke-width="2" rx="4"/>
+  <rect x="30" y="75" width="45" height="610" fill="#6b21a8"/>
+  <text x="52" y="380" text-anchor="middle" transform="rotate(-90 52 380)" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" letter-spacing="2">
+    FPT LONG CHÂU (KIỂM SOÁT GPP)
+  </text>
+
+  <!-- Lane 1: Nhân viên kho tiếp nhận (H: 190) -->
+  <rect x="75" y="75" width="1895" height="190" fill="#fdf4ff" stroke="#f0abfc" stroke-width="1"/>
+  <rect x="75" y="75" width="40" height="190" fill="#a855f7"/>
+  <text x="95" y="170" text-anchor="middle" transform="rotate(-90 95 170)" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
+    NV KHO TIẾP NHẬN
+  </text>
+
+  <!-- Lane 2: Dược sĩ phụ trách chất lượng (H: 220) -->
+  <rect x="75" y="265" width="1895" height="220" fill="#ffffff" stroke="#f0abfc" stroke-width="1"/>
+  <rect x="75" y="265" width="40" height="220" fill="#9333ea"/>
+  <text x="95" y="375" text-anchor="middle" transform="rotate(-90 95 375)" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
+    DƯỢC SĨ CHẤT LƯỢNG
+  </text>
+
+  <!-- Lane 3: Bộ phận QA Đảm bảo chất lượng (H: 200) -->
+  <rect x="75" y="485" width="1895" height="200" fill="#fdf4ff" stroke="#f0abfc" stroke-width="1"/>
+  <rect x="75" y="485" width="40" height="200" fill="#7e22ce"/>
+  <text x="95" y="585" text-anchor="middle" transform="rotate(-90 95 585)" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
+    BỘ PHẬN QA
+  </text>
+
+  <!-- ==================== POOL 2: ĐỐI TÁC NGOÀI - NHÀ CUNG CẤP ==================== -->
+  <rect x="30" y="700" width="1940" height="180" fill="#ffffff" stroke="#e11d48" stroke-width="2" rx="4"/>
+  <rect x="30" y="700" width="45" height="180" fill="#be123c"/>
+  <text x="52" y="790" text-anchor="middle" transform="rotate(-90 52 790)" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" letter-spacing="2">
+    NHÀ CUNG CẤP DƯỢC PHẨM
+  </text>
+  <rect x="75" y="700" width="40" height="180" fill="#f43f5e"/>
+  <text x="95" y="790" text-anchor="middle" transform="rotate(-90 95 790)" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
+    ĐỐI TÁC GIAO HÀNG
+  </text>
+
+  <!-- ==================== BPMN FLOW NODES ==================== -->
+
+  <!-- 1 START EVENT DUY NHẤT (Khắc phục hoàn toàn lỗi 2 start events) -->
+  <circle cx="150" cy="165" r="18" fill="#22c55e" stroke="#15803d" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="150" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534">Bắt đầu</text>
+  <text x="150" y="218" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b">Tiếp nhận lô hàng</text>
+
+  <!-- Flow Start -> Task 1 -->
+  <line x1="168" y1="165" x2="205" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Task 1 (Lane 1): Tiếp nhận chứng từ CO/CQ & kiện hàng -->
+  <rect x="205" y="135" width="130" height="60" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="270" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Tiếp nhận lô thuốc &amp;</text>
+  <text x="270" y="174" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">chứng từ CO/CQ gốc</text>
+
+  <!-- Flow T1 -> T2 (Lane 2 - Dược sĩ) -->
+  <line x1="335" y1="165" x2="365" y2="165" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="365" y1="165" x2="365" y2="350" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="365" y1="350" x2="390" y2="350" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- Task 2 (Lane 2): Thẩm tra tính hợp pháp hồ sơ COA -->
+  <rect x="390" y="320" width="135" height="60" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="457" y="343" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Thẩm tra hồ sơ</text>
+  <text x="457" y="359" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">kiểm nghiệm COA</text>
+
+  <!-- Flow T2 -> G1 -->
+  <line x1="525" y1="350" x2="560" y2="350" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- GATEWAY 1: COA hợp lệ? -->
+  <polygon points="585 325, 610 350, 585 375, 560 350" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  <text x="585" y="355" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
+  <text x="585" y="315" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G1: COA hợp lệ?</text>
+
+  <!-- G1: "Không" -> Yêu cầu NCC bổ sung chứng từ -->
+  <line x1="585" y1="375" x2="585" y2="440" stroke="#e11d48" stroke-width="1.5"/>
+  <line x1="585" y1="440" x2="630" y2="440" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arr_rose)"/>
+  <text x="590" y="410" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#e11d48">Thiếu/Hết hạn</text>
+  <rect x="630" y="420" width="125" height="45" rx="6" fill="#fff1f2" stroke="#e11d48" stroke-width="1"/>
+  <text x="692" y="438" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#9f1239">Tạm giữ lô thuốc &amp;</text>
+  <text x="692" y="451" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#881337">yêu cầu NCC bổ sung COA</text>
+
+  <!-- G1: "Hợp lệ" -> Task 3 (Lane 1): Kiểm tra cảm quan & niêm phong -->
+  <line x1="610" y1="350" x2="670" y2="350" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="670" y1="350" x2="670" y2="165" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="670" y1="165" x2="700" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="618" y="340" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">Đạt COA</text>
+
+  <rect x="700" y="135" width="130" height="60" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="765" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Kiểm tra cảm quan,</text>
+  <text x="765" y="174" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">tem nhãn &amp; hạn dùng</text>
+
+  <!-- Flow T3 -> G2 -->
+  <line x1="830" y1="165" x2="865" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- GATEWAY 2: Ngoại quan đạt chuẩn? -->
+  <polygon points="890 140, 915 165, 890 190, 865 165" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  <text x="890" y="170" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
+  <text x="890" y="130" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G2: Ngoại quan đạt?</text>
+
+  <!-- G2: "Không đạt" -> Chuyển vào luồng xử lý lỗi ở QA -->
+  <line x1="890" y1="190" x2="890" y2="550" stroke="#e11d48" stroke-width="1.5"/>
+  <line x1="890" y1="550" x2="940" y2="550" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arr_rose)"/>
+  <text x="895" y="230" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#e11d48">Bao bì rách/Hạn ngắn</text>
+
+  <!-- G2: "Đạt" -> Task 4 (Lane 1): Đọc dữ liệu nhiệt ẩm kế xe lạnh -->
+  <line x1="915" y1="165" x2="955" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="922" y="155" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">Đạt</text>
+
+  <rect x="955" y="135" width="135" height="60" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1022" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Đọc Data Logger</text>
+  <text x="1022" y="174" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">nhiệt độ xe lạnh (GDP)</text>
+
+  <!-- Flow T4 -> G3 -->
+  <line x1="1090" y1="165" x2="1125" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- GATEWAY 3: Nhiệt độ 2-8°C đạt? -->
+  <polygon points="1150 140, 1175 165, 1150 190, 1125 165" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1150" y="170" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
+  <text x="1150" y="130" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G3: Nhiệt độ đạt?</text>
+
+  <!-- G3: "Quá nhiệt" -> Cảnh báo hỏng chuyển QA -->
+  <line x1="1150" y1="190" x2="1150" y2="530" stroke="#e11d48" stroke-width="1.5"/>
+  <line x1="1150" y1="530" x2="1190" y2="530" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arr_rose)"/>
+  <text x="1155" y="240" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#e11d48">Quá nhiệt (&gt;8&deg;C)</text>
+
+  <!-- G3: "Đạt" -> Task 5 (Lane 2): Sát hạch danh mục kiểm soát đặc biệt -->
+  <line x1="1175" y1="165" x2="1210" y2="165" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="1210" y1="165" x2="1210" y2="350" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="1210" y1="350" x2="1235" y2="350" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="1182" y="155" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">Đạt chuẩn</text>
+
+  <rect x="1235" y="320" width="135" height="60" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1302" y="343" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Kiểm tra danh mục</text>
+  <text x="1302" y="359" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">thuốc KS đặc biệt</text>
+
+  <!-- Flow T5 -> G4 -->
+  <line x1="1370" y1="350" x2="1405" y2="350" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- GATEWAY 4: Thuốc KS đặc biệt? -->
+  <polygon points="1430 325, 1455 350, 1430 375, 1405 350" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1430" y="355" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
+  <text x="1430" y="315" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G4: KS đặc biệt?</text>
+
+  <!-- G4: "Có" -> Dược sĩ trưởng lấy mẫu lưu kiểm nghiệm kép -->
+  <line x1="1430" y1="375" x2="1430" y2="430" stroke="#1e293b" stroke-width="1.5"/>
+  <line x1="1430" y1="430" x2="1475" y2="430" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="1435" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#7e22ce">Có (Kháng sinh/Độc)</text>
+  <rect x="1475" y="410" width="135" height="45" rx="6" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1"/>
+  <text x="1542" y="428" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#6b21a8">Lấy mẫu lưu kiểm nghiệm</text>
+  <text x="1542" y="441" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#581c87">&amp; sổ theo dõi đặc biệt</text>
+
+  <!-- G4: "Không" -> Đi thẳng tới Tổng hợp thẩm định -->
+  <line x1="1455" y1="350" x2="1640" y2="350" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+  <line x1="1610" y1="430" x2="1660" y2="430" stroke="#1e293b" stroke-width="1.5"/>
+  <line x1="1660" y1="430" x2="1660" y2="380" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="1465" y="340" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">Thuốc thường</text>
+
+  <!-- Task 6 (Lane 2): Kết luận thẩm định chất lượng -->
+  <rect x="1640" y="320" width="130" height="60" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1705" y="343" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Đánh giá tổng hợp</text>
+  <text x="1705" y="359" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">tiêu chuẩn GPP</text>
+
+  <!-- Flow T6 -> G5 -->
+  <line x1="1770" y1="350" x2="1805" y2="350" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- GATEWAY 5: Kết quả đạt chuẩn GPP? -->
+  <polygon points="1830 325, 1855 350, 1830 375, 1805 350" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1830" y="355" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
+  <text x="1830" y="315" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G5: Đạt chuẩn GPP?</text>
+
+  <!-- G5: "Không đạt" -> Chuyển vào xử lý sự cố QA -->
+  <line x1="1830" y1="375" x2="1830" y2="550" stroke="#e11d48" stroke-width="1.5"/>
+  <line x1="1830" y1="550" x2="1350" y2="550" stroke="#e11d48" stroke-width="1.5"/>
+  <text x="1740" y="540" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#e11d48">Không đạt GPP</text>
+
+  <!-- G5: "Đạt" -> Task 7 (Lane 1): Nghiệm thu & Nhập kho lưu trữ -->
+  <line x1="1855" y1="350" x2="1890" y2="350" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="1890" y1="350" x2="1890" y2="165" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="1890" y1="165" x2="1910" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="1860" y="340" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">Đạt 100%</text>
+
+  <rect x="1910" y="135" width="40" height="60" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="1930" y="165" text-anchor="middle" transform="rotate(-90 1930 165)" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#15803d">GPP PASS</text>
+
+  <!-- END EVENT 1: THÀNH CÔNG -->
+  <circle cx="1960" cy="165" r="15" fill="#dcfce7" stroke="#16a34a" stroke-width="3" filter="url(#shadow)"/>
+  <circle cx="1960" cy="165" r="10" fill="#16a34a"/>
+  <text x="1960" y="195" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#15803d">Kết thúc</text>
+  <text x="1960" y="206" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#166534">Nhập kho chuẩn</text>
+
+  <!-- ==================== NHÁNH XỬ LÝ SỰ CỐ TẠI BỘ PHẬN QA (Lane 3) ==================== -->
+  <!-- Task 8 (Lane 3): Lập biên bản niêm phong & chuyển khu Biệt Trữ -->
+  <rect x="1190" y="520" width="155" height="60" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1267" y="543" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#9f1239">Lập biên bản sự cố GPP &amp;</text>
+  <text x="1267" y="559" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#881337">chuyển khu Biệt trữ cách ly</text>
+
+  <!-- Flow T8 -> T9 (Gửi khiếu nại NCC) -->
+  <line x1="1267" y1="580" x2="1267" y2="620" stroke="#e11d48" stroke-width="1.5"/>
+  <line x1="1267" y1="620" x2="1350" y2="620" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arr_rose)"/>
+
+  <rect x="1350" y="595" width="145" height="50" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1422" y="616" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#9f1239">Gửi thông báo &amp; yêu cầu</text>
+  <text x="1422" y="630" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#881337">NCC thu hồi / đổi lô mới</text>
+
+  <!-- MESSAGE FLOW: QA -> NCC Pool -->
+  <line x1="1422" y1="645" x2="1422" y2="740" stroke="#64748b" stroke-width="1.8" stroke-dasharray="4 4" marker-end="url(#msg_arr)"/>
+  <text x="1430" y="685" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#e11d48">Message: Lệnh thu hồi thuốc lỗi</text>
+
+  <!-- Task 10 (Lane NCC): Tiếp nhận lô hàng thu hồi -->
+  <rect x="1350" y="740" width="145" height="55" rx="8" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="1422" y="763" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#881337">Tiếp nhận khiếu nại &amp;</text>
+  <text x="1422" y="777" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#9f1239">thu hồi hàng hỏng về hãng</text>
+
+  <!-- Flow NCC -> END EVENT 2 -->
+  <line x1="1495" y1="767" x2="1540" y2="767" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arr_rose)"/>
+  <circle cx="1560" cy="767" r="16" fill="#ffe4e6" stroke="#e11d48" stroke-width="3" filter="url(#shadow)"/>
+  <circle cx="1560" cy="767" r="11" fill="#e11d48"/>
+  <text x="1560" y="798" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#e11d48">Kết thúc</text>
+  <text x="1560" y="810" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#9f1239">Đã thu hồi thuốc lỗi</text>
+
+  <!-- ==================== LEGEND ==================== -->
+  <rect x="30" y="890" width="1940" height="50" rx="6" fill="#1e1b4b" stroke="#4c1d95" stroke-width="1"/>
+  <text x="50" y="920" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#c084fc">QUY CHUẨN GPP / BPMN 2.0:</text>
+  <circle cx="270" cy="916" r="9" fill="#22c55e" stroke="#15803d" stroke-width="2"/>
+  <text x="288" y="920" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e9d5ff">1 Start Event duy nhất (Khắc phục lỗi cú pháp 2 start events)</text>
+
+  <polygon points="690 907, 701 916, 690 925, 679 916" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="690" y="919" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#854d0e">X</text>
+  <text x="710" y="920" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e9d5ff">5 Gateways phân định: COA &rarr; Ngoại quan &rarr; Nhiệt độ GDP &rarr; Thuốc đặc biệt &rarr; Thẩm định GPP</text>
+
+  <circle cx="1320" cy="916" r="9" fill="#ffe4e6" stroke="#e11d48" stroke-width="2.5"/>
+  <text x="1338" y="920" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e9d5ff">End Event: Biệt trữ &amp; Thu hồi an toàn</text>
+
+  <text x="1940" y="920" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#34d399">
+    &check; Tuân thủ 100% Thông tư 02/2018/TT-BYT Thực hành tốt nhà thuốc GPP
+  </text>
+</svg>

@@ -1,0 +1,189 @@
+/* Presentation Web-Slide Styles - Large Typography & Screen Filling Edition */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --primary-navy: #060d17;
+  --secondary-navy: #0b1526;
+  --fpt-blue: #005baa;
+  --accent-cyan: #38bdf8;
+  --neon-emerald: #10b981;
+  --neon-amber: #f59e0b;
+  --neon-rose: #f43f5e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--primary-navy);
+  color: #f8fafc;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Slide Viewport */
+.slide-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  /* Clearance: 75px top, 70px bottom, 40px left/right */
+  padding: 4.8rem 2.5rem 4.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.985) translateY(10px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+}
+
+/* Inner Slide Content Box - Fills 16:9 widescreen canvas beautifully */
+.slide-inner {
+  max-width: 90rem; /* ~1440px */
+  width: 96%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(11, 21, 38, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.5);
+}
+
+.glass-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 12px 30px rgba(2, 132, 199, 0.3);
+}
+
+/* Modern Continuous Loading Bar */
+#slide-progress-track {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#slide-progress-track:hover {
+  border-color: rgba(56, 189, 248, 0.7);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7), 0 0 12px rgba(56, 189, 248, 0.35);
+}
+
+#slide-progress-fill {
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.7), 0 0 4px rgba(6, 182, 212, 0.8);
+  position: relative;
+}
+
+#slide-progress-fill::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #ffffff, 0 0 10px #38bdf8;
+}
+
+/* Shimmer Loading Animation */
+.progress-shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-100%);
+  animation: loading-shimmer 2.2s infinite ease-in-out;
+  border-radius: inherit;
+}
+
+@keyframes loading-shimmer {
+  0% { transform: translateX(-100%); }
+  55%, 100% { transform: translateX(100%); }
+}
+
+#top-loading-line {
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.9), 0 0 16px rgba(6, 182, 212, 0.5);
+}
+
+/* Speaker notes drawer */
+#speaker-notes-drawer {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(120%);
+}
+
+#speaker-notes-drawer.open {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
