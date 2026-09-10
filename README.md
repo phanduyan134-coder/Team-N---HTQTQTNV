@@ -3,8 +3,8 @@
 
 - **Học phần**: Hệ thống Quản trị Quy trình Nghiệp vụ (BPM)
 - **Mã lớp**: IE203.F33.CN2.CNTT – Trường Đại học Công nghệ Thông tin (UIT) – ĐHQG TP.HCM
-- **Giảng viên hướng dẫn**: Thầy ThS. [Tên Giảng Viên]
-- **Nhóm thực hiện**: Nhóm N
+- **Giảng viên hướng dẫn**: Thầy ThS. Nguyễn Đình Hiển
+- **Nhóm thực hiện**: Nhóm N (Nhóm 15)
   1. Phan Duy An (Nhóm trưởng) – MSSV: 25210247
   2. Vũ Đình Hiếu – MSSV: 25210099
   3. Nguyễn Thế Trụ – MSSV: 25210160
@@ -25,7 +25,7 @@ Team-N---HTQTQTNV/
 │   └── ...                           # Từng chương phân rã chi tiết
 │
 ├── thuyet_trinh/                     # Slide thuyết trình Web động công nghệ cao (59 Slides)
-│   ├── index.html                    # Ứng dụng slide trình diễn trực quan
+│   ├── index.html                    # Ứng dụng slide trình diễn trực quan (Ngôi nhà kiến trúc, BPMN)
 │   ├── css/slide.css                 # Giao diện Dark Neon cao cấp
 │   ├── js/presentation.js            # Hệ thống điều khiển, timer, phím tắt & zoom BPMN
 │   └── assets/bpmn/                  # Sơ đồ BPMN chuẩn OMG SVG độ phân giải cao
