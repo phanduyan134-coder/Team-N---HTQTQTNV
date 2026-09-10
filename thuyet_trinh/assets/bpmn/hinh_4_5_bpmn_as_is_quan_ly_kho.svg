@@ -1,14 +1,240 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="2020" height="920" viewBox="0 0 2020 920">
-<defs>
-      <marker id="arr_seq" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-        <path d="M0,0 L8,3 L0,6 Z" fill="#1e3a8a"/>
-      </marker>
-      <marker id="arr_msg" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
-        <path d="M1,1 L8,3.5 L1,6" fill="none" stroke="#475569" stroke-width="1.6"/>
-      </marker>
-      <marker id="circle_msg" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-        <circle cx="3" cy="3" r="2.5" fill="#ffffff" stroke="#475569" stroke-width="1.3"/>
-      </marker>
-    </defs><rect x="0" y="0" width="2020" height="920" fill="#ffffff"/><text x="1010" y="32" text-anchor="middle" font-family="Arial" font-size="19" font-weight="bold" fill="#0f172a">SƠ ĐỒ BPMN 2.0 (AS-IS) – QUY TRÌNH QUẢN LÝ KHO DƯỢC PHẨM</text><rect x="15" y="50" width="1990" height="120" fill="#ffffff" stroke="#7e22ce" stroke-width="2"/><rect x="15" y="50" width="40" height="120" fill="#7e22ce"/><text x="35" y="110" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#ffffff" transform="rotate(-90 35 110)">ĐỐI TÁC NGOÀI</text><rect x="55" y="50" width="1950" height="120" fill="#faf5ff" stroke="#cbd5e1" stroke-width="1"/><rect x="55" y="50" width="135" height="120" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/><text x="122" y="106.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#334155">NHÀ CUNG CẤP /</text><text x="122" y="121.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#334155">NHÀ THUỐC</text><rect x="15" y="200" width="1990" height="660" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/><rect x="15" y="200" width="40" height="660" fill="#1e3a8a"/><text x="35" y="530" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#ffffff" transform="rotate(-90 35 530)">KHO DƯỢC PHẨM FPT LONG CHÂU</text><rect x="55" y="200" width="1950" height="330" fill="#f0fdf4" stroke="#cbd5e1" stroke-width="1"/><rect x="55" y="200" width="135" height="330" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/><text x="122" y="361.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#334155">NHÂN VIÊN KHO</text><text x="122" y="376.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#334155">(VẬN HÀNH THỦ CÔNG)</text><rect x="55" y="530" width="1950" height="330" fill="#eff6ff" stroke="#cbd5e1" stroke-width="1"/><rect x="55" y="530" width="135" height="330" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/><text x="122" y="691.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#334155">TRƯỞNG KHO</text><text x="122" y="706.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#334155">(QUẢN LÝ &amp; ĐỐI SOÁT)</text><rect x="210" y="210" width="480" height="24" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/><text x="450" y="226" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#0369a1">LUỒNG 1: QUY TRÌNH NHẬP KHO (INBOUND)</text><rect x="790" y="210" width="550" height="24" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1"/><text x="1065" y="226" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">LUỒNG 2: QUY TRÌNH XUẤT KHO (OUTBOUND)</text><rect x="1440" y="210" width="500" height="24" rx="4" fill="#f3e8ff" stroke="#9333ea" stroke-width="1"/><text x="1690" y="226" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#7e22ce">LUỒNG 3: KIỂM KÊ ĐỊNH KỲ (AUDIT)</text><circle cx="230" cy="110" r="17" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="230" y="140" text-anchor="middle" font-family="Arial" font-size="9" fill="#15803d" font-weight="bold">NCC giao</text><rect x="278" y="86" width="125" height="48" rx="6" fill="#f3e8ff" stroke="#9333ea" stroke-width="1.8"/><text x="340" y="107.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Giao hàng &amp;</text><text x="340" y="121.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">bàn giao phiếu giao</text><path d="M 247 110 L 277 110" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><circle cx="230" cy="360" r="17" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="230" y="390" text-anchor="middle" font-family="Arial" font-size="9" fill="#15803d" font-weight="bold">Nhận hàng</text><rect x="278" y="334" width="125" height="52" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1.8"/><text x="340" y="357.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Bốc dỡ, đếm số lượng</text><text x="340" y="371.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">&amp; kiểm tra ngoại quan</text><text x="340" y="399" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Kiểm đếm thủ công</text><path d="M 247 360 L 277 360" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><path d="M 340 134 L 340 334" fill="none" stroke="#475569" stroke-width="1.7" stroke-dasharray="5,4" marker-start="url(#circle_msg)" marker-end="url(#arr_msg)"/><path d="M 455 338 L 477 360 L 455 382 L 433 360 Z" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="455" y="365" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#854d0e">X</text><text x="455" y="309" text-anchor="middle" font-family="Arial" font-size="9.5" font-weight="bold" fill="#854d0e">Khớp phiếu</text><text x="455" y="321" text-anchor="middle" font-family="Arial" font-size="9.5" font-weight="bold" fill="#854d0e">giao hàng?</text><path d="M 402 360 L 433 360" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><rect x="513" y="334" width="125" height="52" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1.8"/><text x="575" y="357.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Ghi sổ nhập kho giấy</text><text x="575" y="371.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">&amp; xếp hàng lên kệ</text><text x="575" y="328" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Chưa áp dụng FEFO</text><path d="M 477 360 L 512 360" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><text x="485" y="352" font-family="Arial" font-size="10" font-weight="bold" fill="#16a34a">Có</text><rect x="513" y="421" width="125" height="48" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.8"/><text x="575" y="442.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Lập biên bản sai lệch</text><text x="575" y="456.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">&amp; tạm giữ lô hàng</text><circle cx="680" cy="445" r="17" fill="#fee2e2" stroke="#dc2626" stroke-width="3.5"/><text x="680" y="473" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">Chờ NCC</text><text x="680" y="485" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">xử lý</text><path d="M 455 382 L 455 445 L 512 445" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><text x="462" y="415" font-family="Arial" font-size="10" font-weight="bold" fill="#dc2626">Không</text><path d="M 637 445 L 663 445" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><rect x="658" y="659" width="125" height="52" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.8"/><text x="720" y="682.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Nhập số liệu vào</text><text x="720" y="696.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Excel &amp; ERP nội bộ</text><text x="720" y="724" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Nhập liệu thủ công</text><circle cx="825" cy="685" r="17" fill="#fee2e2" stroke="#dc2626" stroke-width="3.5"/><text x="825" y="713" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">Hoàn tất</text><text x="825" y="725" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">nhập kho</text><path d="M 637 360 L 650 360 L 650 685 L 658 685" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><path d="M 782 685 L 808 685" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><circle cx="870" cy="110" r="17" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="870" y="140" text-anchor="middle" font-family="Arial" font-size="9" fill="#15803d" font-weight="bold">Yêu cầu xuất</text><rect x="908" y="86" width="125" height="48" rx="6" fill="#f3e8ff" stroke="#9333ea" stroke-width="1.8"/><text x="970" y="107.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Gửi phiếu yêu cầu xuất</text><text x="970" y="121.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">(nhà thuốc / online)</text><path d="M 887 110 L 907 110" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><rect x="908" y="659" width="125" height="52" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.8"/><text x="970" y="682.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Tiếp nhận &amp; duyệt</text><text x="970" y="696.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">phiếu yêu cầu xuất kho</text><text x="970" y="724" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Duyệt phiếu giấy</text><path d="M 970 134 L 970 659" fill="none" stroke="#475569" stroke-width="1.7" stroke-dasharray="5,4" marker-start="url(#circle_msg)" marker-end="url(#arr_msg)"/><rect x="1068" y="334" width="125" height="52" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1.8"/><text x="1130" y="357.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Tìm &amp; nhặt thuốc trên kệ</text><text x="1130" y="371.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">theo kinh nghiệm</text><text x="1130" y="328" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Chưa có định vị kệ</text><path d="M 1032 685 L 1045 685 L 1045 360 L 1068 360" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><rect x="1233" y="334" width="125" height="52" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1.8"/><text x="1295" y="357.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Ghi trừ Thẻ kho (giấy)</text><text x="1295" y="371.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">&amp; đóng gói kiện hàng</text><text x="1295" y="328" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Ghi tay thẻ kho</text><path d="M 1192 360 L 1233 360" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><rect x="1233" y="659" width="125" height="52" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.8"/><text x="1295" y="682.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Ghi Sổ xuất kho &amp;</text><text x="1295" y="696.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">trừ tồn trên Excel / ERP</text><text x="1295" y="724" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Độ trễ cập nhật</text><circle cx="1400" cy="685" r="17" fill="#fee2e2" stroke="#dc2626" stroke-width="3.5"/><text x="1400" y="713" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">Hoàn tất</text><text x="1400" y="725" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">xuất kho</text><path d="M 1295 386 L 1295 659" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><path d="M 1357 685 L 1383 685" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><circle cx="1480" cy="685" r="17" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="1480" y="715" text-anchor="middle" font-family="Arial" font-size="9" fill="#15803d" font-weight="bold">Định kỳ tháng</text><rect x="1518" y="659" width="125" height="52" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.8"/><text x="1580" y="682.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Tạm ngưng xuất nhập</text><text x="1580" y="696.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">&amp; phát phiếu kiểm kê</text><path d="M 1497 685 L 1518 685" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><rect x="1518" y="334" width="125" height="52" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1.8"/><text x="1580" y="357.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Đếm tay từng hộp thuốc</text><text x="1580" y="371.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">&amp; ghi biên bản giấy</text><text x="1580" y="328" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Đếm thủ công 100%</text><path d="M 1580 659 L 1580 386" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><rect x="1673" y="659" width="125" height="52" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.8"/><text x="1735" y="682.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Nhập Excel &amp; đối chiếu</text><text x="1735" y="696.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">với phần mềm ERP</text><text x="1735" y="724" text-anchor="middle" font-family="Arial" font-size="8.5" fill="#ef4444" font-style="italic" font-weight="bold">Đối chiếu thủ công</text><path d="M 1642 360 L 1655 360 L 1655 685 L 1673 685" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><path d="M 1840 663 L 1862 685 L 1840 707 L 1818 685 Z" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="1840" y="690" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#854d0e">X</text><text x="1840" y="634" text-anchor="middle" font-family="Arial" font-size="9.5" font-weight="bold" fill="#854d0e">Khớp số</text><text x="1840" y="646" text-anchor="middle" font-family="Arial" font-size="9.5" font-weight="bold" fill="#854d0e">liệu tồn?</text><path d="M 1797 685 L 1818 685" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><circle cx="1945" cy="685" r="17" fill="#fee2e2" stroke="#dc2626" stroke-width="3.5"/><text x="1945" y="713" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">Tồn kho</text><text x="1945" y="725" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">chính xác</text><path d="M 1862 685 L 1928 685" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><text x="1870" y="677" font-family="Arial" font-size="10" font-weight="bold" fill="#16a34a">Có</text><rect x="1775" y="746" width="130" height="48" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.8"/><text x="1840" y="767.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">Lập biên bản giải trình</text><text x="1840" y="781.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#0f172a">chênh lệch &amp; thất thoát</text><circle cx="1945" cy="770" r="17" fill="#fee2e2" stroke="#dc2626" stroke-width="3.5"/><text x="1945" y="798" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">Xử lý</text><text x="1945" y="810" text-anchor="middle" font-family="Arial" font-size="9" fill="#991b1b" font-weight="bold">sai lệch</text><path d="M 1840 707 L 1840 746" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><text x="1848" y="725" font-family="Arial" font-size="10" font-weight="bold" fill="#dc2626">Không</text><path d="M 1905 770 L 1928 770" fill="none" stroke="#1e3a8a" stroke-width="1.8" marker-end="url(#arr_seq)"/><text x="1995" y="905" text-anchor="end" font-family="Arial" font-size="11.5" font-style="italic" fill="#94a3b8">Hình 4.5: Sơ đồ BPMN AS-IS – Quy trình quản lý kho (FPT Long Châu)</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 960" width="2200" height="960">
+<defs><marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6z" fill="#1e3a5f"/></marker>
+<marker id="msg_arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L8 3.5L0 7z" fill="white" stroke="#64748b" stroke-width="1.2"/></marker></defs>
+<rect x="0" y="0" width="2200" height="960" fill="#f8fafc"/>
+<text x="1100" y="32" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#0f172a">BPMN 2.0 AS-IS – QUY TRÌNH QUẢN LÝ KHO TRUNG TÂM (FPT LONG CHÂU - TRỌNG ĐIỂM SỐ 2)</text>
+<text x="1100" y="50" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" fill="#475569">Mô hình hóa chuẩn 8 Cổng điều kiện (Gateways &gt; 7) • Kiểm soát FEFO • Phân luồng Nhập - Xuất - Kiểm kê</text>
+<rect x="0" y="60" width="40" height="610" fill="#cbd5e1" stroke="#1e293b" stroke-width="2.5"/>
+<text x="-365" y="25" transform="rotate(-90)" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#0f172a" letter-spacing="2">QUY TRÌNH QUẢN LÝ KHO TRUNG TÂM (AS-IS)</text>
+<rect x="40" y="60" width="2160" height="610" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+<rect x="40" y="60" width="90" height="610" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.5"/>
+<rect x="130" y="60" width="2070" height="150" fill="#f8fafc" opacity="0.6"/>
+<text x="85" y="132.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">ĐỐI TÁC GIAO NHẬN</text>
+<text x="85" y="146.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">(NCC / NHÀ THUỐC)</text>
+<line x1="40" y1="210" x2="2200" y2="210" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,2"/>
+<rect x="130" y="210" width="2070" height="160" fill="#f0fdf4" opacity="0.6"/>
+<text x="85" y="287.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">THỦ KHO TÁC NGHIỆP</text>
+<text x="85" y="301.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">(NHẬP / XUẤT / SOẠN)</text>
+<line x1="40" y1="370" x2="2200" y2="370" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,2"/>
+<rect x="130" y="370" width="2070" height="155" fill="#fffbeb" opacity="0.6"/>
+<text x="85" y="444.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">DƯỢC SĨ KHO GSP</text>
+<text x="85" y="458.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">& BIỆT TRỮ</text>
+<line x1="40" y1="525" x2="2200" y2="525" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,2"/>
+<rect x="130" y="525" width="2070" height="145" fill="#faf5ff" opacity="0.6"/>
+<text x="85" y="594.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">TRƯỞNG KHO TRUNG TÂM</text>
+<text x="85" y="608.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">& HỆ THỐNG ERP</text>
+<rect x="0" y="750" width="40" height="160" fill="#cbd5e1" stroke="#1e293b" stroke-width="2.5"/>
+<text x="-830" y="25" transform="rotate(-90)" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#0f172a" letter-spacing="2">ĐỘI XE VẬN TẢI LOGISTICS</text>
+<rect x="40" y="750" width="2160" height="160" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+<rect x="40" y="750" width="90" height="160" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.5"/>
+<rect x="130" y="750" width="2070" height="160" fill="#f0fdfa" opacity="0.6"/>
+<text x="85" y="827.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">ĐỘI XE VẬN CHUYỂN</text>
+<text x="85" y="841.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">LOGISTICS LONG CHÂU</text>
+<circle cx="160" cy="290" r="16" fill="#bbf7d0" stroke="#15803d" stroke-width="2.2"/>
+<text x="160" y="318" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#166534">Kế hoạch / Yêu cầu</text>
+<rect x="200" y="266" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563ab" stroke-width="1.8"/>
+<text x="260" y="287.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Tiếp nhận phiếu lệnh</text>
+<text x="260" y="300.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; phân loại tác vụ</text>
+<text x="260" y="327" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Sổ tay</text>
+<path d="M 176,290 L 200,290" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="370,270 390,290 370,310 350,290" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="370" y="294" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="370" y="264" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G1</text>
+<text x="370" y="317.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Loại nghiệp vụ</text>
+<text x="370" y="328.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">kho?</text>
+<path d="M 320,290 L 350,290" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="310" y="111" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563ab" stroke-width="1.8"/>
+<text x="370" y="132.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Xe hàng NCC đến trạm</text>
+<text x="370" y="145.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; nộp chứng từ PO</text>
+<path d="M 370,270 L 370,159" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="377" y="202" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="395" y="213.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Nhập hàng</text>
+<rect x="430" y="266" width="120" height="48" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+<text x="490" y="287.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Nhận phiếu đề xuất</text>
+<text x="490" y="300.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">xuất thuốc về shop</text>
+<path d="M 390,290 L 430,290" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="392" y="272" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="410" y="283.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Xuất hàng</text>
+<rect x="310" y="573" width="120" height="48" rx="6" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.8"/>
+<text x="370" y="594.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Kích hoạt lịch kiểm kê</text>
+<text x="370" y="607.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">định kỳ toàn kho</text>
+<text x="370" y="634" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Đóng băng kho</text>
+<path d="M 370,310 L 370,573" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="377" y="442" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="395" y="453.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Kiểm kê</text>
+<rect x="430" y="111" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563ab" stroke-width="1.8"/>
+<text x="490" y="132.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Đối chiếu hóa đơn</text>
+<text x="490" y="145.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">và phiếu PO hệ thống</text>
+<text x="490" y="172" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Kiểm giấy bằng mắt</text>
+<path d="M 430,135 L 450,135" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="610,115 630,135 610,155 590,135" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="610" y="139" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="610" y="109" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G2</text>
+<text x="610" y="162.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Chứng từ PO</text>
+<text x="610" y="173.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">trùng khớp?</text>
+<path d="M 550,135 L 590,135" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="550" y="56" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+<text x="610" y="77.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Từ chối tiếp nhận xe &amp;</text>
+<text x="610" y="90.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">lập biên bản sai lệch</text>
+<circle cx="720" cy="80" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="720" y="108" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Từ chối xe</text>
+<path d="M 610,115 L 610,104" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="612" y="102" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="630" y="113.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Lệch</text>
+<path d="M 670,80 L 704,80" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="550" y="266" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="610" y="287.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Dỡ hàng vào buồng đệm</text>
+<text x="610" y="300.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; đo cảm quan ngoại quan</text>
+<text x="610" y="327" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Dỡ hàng thủ công</text>
+<path d="M 610,155 L 610,266" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="612" y="202" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="630" y="213.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Khớp</text>
+<polygon points="740,427 760,447 740,467 720,447" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="740" y="451" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="740" y="421" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G3</text>
+<text x="740" y="474.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Điều kiện kho</text>
+<text x="740" y="485.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">bảo quản?</text>
+<path d="M 610,314 L 610,447 L 720,447" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="680" y="488" width="120" height="48" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.8"/>
+<text x="740" y="509.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Chuyển vào kho lạnh</text>
+<text x="740" y="522.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">chuyên dụng 2-8°C</text>
+<path d="M 740,467 L 740,488" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="747" y="469" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="765" y="480.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Kho lạnh</text>
+<rect x="800" y="423" width="120" height="48" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+<text x="860" y="444.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Chuyển vào khu vực</text>
+<text x="860" y="457.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">pallet tiêu chuẩn GSP</text>
+<path d="M 760,447 L 800,447" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="762" y="429" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="780" y="440.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Kho mát</text>
+<rect x="920" y="266" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="980" y="287.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Kiểm tra tình trạng</text>
+<text x="980" y="300.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">bao bì thùng thuốc</text>
+<text x="980" y="327" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Mắt thường</text>
+<path d="M 860,423 L 860,290 L 920,290" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M 800,512 L 980,512 L 980,314" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="1100,270 1120,290 1100,310 1080,290" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="1100" y="294" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="1100" y="264" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G4</text>
+<text x="1100" y="317.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Bao bì không</text>
+<text x="1100" y="328.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">móp vỡ?</text>
+<path d="M 1040,290 L 1080,290" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1040" y="423" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+<text x="1100" y="444.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Niêm phong cách ly &amp;</text>
+<text x="1100" y="457.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">lập hồ sơ bồi thường</text>
+<circle cx="1100" cy="507" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="1100" y="535" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Cách ly vỡ</text>
+<path d="M 1100,310 L 1100,423" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1107" y="357" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1125" y="368.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Vỡ hỏng</text>
+<path d="M 1100,471 L 1100,491" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1160" y="266" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="1220" y="287.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Ghi thẻ kho giấy &amp;</text>
+<text x="1220" y="300.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">xếp hàng lên giá kệ</text>
+<text x="1220" y="327" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Ghi tay thẻ kho</text>
+<path d="M 1120,290 L 1160,290" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1122" y="272" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1140" y="283.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Đạt</text>
+<rect x="1160" y="423" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563ab" stroke-width="1.8"/>
+<text x="1220" y="444.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Tra cứu hạn dùng thuốc</text>
+<text x="1220" y="457.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">trên giá kệ lưu trữ</text>
+<text x="1220" y="484" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Tìm thuốc bằng tay</text>
+<path d="M 490,314 L 490,423" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M 550,447 L 680,407 L 1220,407 L 1220,423" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="1360,270 1380,290 1360,310 1340,290" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="1360" y="294" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="1360" y="264" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G5</text>
+<text x="1360" y="317.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Tuân thủ</text>
+<text x="1360" y="328.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">chuẩn FEFO?</text>
+<path d="M 1280,290 L 1340,290" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M 1220,423 L 1220,314" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1300" y="211" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+<text x="1360" y="232.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Cảnh báo cận date &amp;</text>
+<text x="1360" y="245.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">sắp xếp lại vị trí</text>
+<path d="M 1360,270 L 1360,259" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1362" y="257" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1380" y="268.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Sai</text>
+<path d="M 1300,235 L 1280,235 L 1280,266" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1420" y="266" width="120" height="48" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+<text x="1480" y="287.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Soạn hàng, dán nhãn</text>
+<text x="1480" y="300.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; đóng gói kiện xuất</text>
+<path d="M 1380,290 L 1420,290" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1382" y="272" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1400" y="283.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Tuân thủ</text>
+<polygon points="1600,577 1620,597 1600,617 1580,597" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="1600" y="601" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="1600" y="571" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G6</text>
+<text x="1600" y="624.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Đủ 100%</text>
+<text x="1600" y="635.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">số lượng?</text>
+<path d="M 1480,314 L 1480,597 L 1580,597" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1540" y="633" width="120" height="48" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+<text x="1600" y="654.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Xuất phần có sẵn &amp;</text>
+<text x="1600" y="667.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">phát lệnh PO khẩn</text>
+<circle cx="1710" cy="657" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="1710" y="685" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Xuất thiếu</text>
+<path d="M 1600,617 L 1600,633" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1607" y="614" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1625" y="625.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Thiếu</text>
+<path d="M 1660,657 L 1694,657" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1660" y="806" width="120" height="48" rx="6" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.8"/>
+<text x="1720" y="827.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Bốc xếp lên xe tải &amp;</text>
+<text x="1720" y="840.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">vận chuyển về 1.800+ shop</text>
+<circle cx="1860" cy="830" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="1860" y="858" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Giao thành công</text>
+<path d="M 1620,597 L 1670,597 L 1670,830 L 1660,830" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1622" y="579" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1640" y="590.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Đủ</text>
+<path d="M 1780,830 L 1844,830" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1660" y="573" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="1720" y="594.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Kiểm đếm toàn kho &amp;</text>
+<text x="1720" y="607.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">đối chiếu số liệu ERP</text>
+<text x="1720" y="634" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Kiểm kê thủ công 4h</text>
+<path d="M 430,597 L 490,597" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M 490,597 L 490,637 L 1720,637 L 1720,621" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="1850,577 1870,597 1850,617 1830,597" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="1850" y="601" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="1850" y="571" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G7</text>
+<text x="1850" y="624.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Số liệu tồn</text>
+<text x="1850" y="635.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">có sai lệch?</text>
+<path d="M 1780,597 L 1830,597" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1790" y="513" width="120" height="48" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+<text x="1850" y="534.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Xác nhận biên bản &amp;</text>
+<text x="1850" y="547.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">khóa sổ kiểm kê</text>
+<circle cx="1960" cy="537" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="1960" y="565" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Khớp tồn kho</text>
+<path d="M 1850,577 L 1850,561" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1857" y="564" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1875" y="575.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Khớp</text>
+<path d="M 1910,537 L 1944,537" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1910" y="573" width="120" height="48" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+<text x="1970" y="594.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Tính tỷ lệ thất thoát</text>
+<text x="1970" y="607.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; truy vết nguyên nhân</text>
+<text x="1970" y="634" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Sai lệch thực tế 8%</text>
+<path d="M 1870,597 L 1910,597" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1872" y="579" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1890" y="590.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Lệch</text>
+<polygon points="2090,577 2110,597 2090,617 2070,597" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="2090" y="601" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="2090" y="571" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G8</text>
+<text x="2090" y="624.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Tỷ lệ lệch</text>
+<text x="2090" y="635.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">&gt; 1%?</text>
+<path d="M 2030,597 L 2070,597" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="2030" y="633" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+<text x="2090" y="654.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Lập hồ sơ bồi thường</text>
+<text x="2090" y="667.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; báo cáo Giám đốc</text>
+<circle cx="2170" cy="657" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="2170" y="685" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Lệch nặng</text>
+<path d="M 2090,617 L 2090,633" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="2097" y="614" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="2115" y="625.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Vượt 1%</text>
+<path d="M 2150,657 L 2164,657" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="2110" y="573" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="2170" y="594.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Điều chỉnh cân bằng</text>
+<text x="2170" y="607.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; hạch toán hao hụt</text>
+<circle cx="2170" cy="537" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="2170" y="565" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Hoàn tất kiểm kê</text>
+<path d="M 2110,597 L 2140,597" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="2107" y="579" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="2125" y="590.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">≤ 1%</text>
+<path d="M 2170,573 L 2170,553" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
 </svg>

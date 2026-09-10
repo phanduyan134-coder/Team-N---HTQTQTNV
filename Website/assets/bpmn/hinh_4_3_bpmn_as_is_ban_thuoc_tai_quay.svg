@@ -1,319 +1,214 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1050" viewBox="0 0 2200 1050">
-  <defs>
-    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#1e293b"/>
-    </marker>
-    <marker id="arr_emerald" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#059669"/>
-    </marker>
-    <marker id="arr_rose" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#e11d48"/>
-    </marker>
-    <marker id="msg_arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
-      <polygon points="0 0, 8 3.5, 0 7" fill="#ffffff" stroke="#64748b" stroke-width="1.2"/>
-    </marker>
-    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
-    </filter>
-  </defs>
-
-  <!-- Background -->
-  <rect x="0" y="0" width="2200" height="1050" fill="#f0fdf4"/>
-
-  <!-- Title Header -->
-  <rect x="30" y="15" width="2140" height="48" rx="8" fill="#064e3b"/>
-  <text x="1100" y="45" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="bold" fill="#34d399">
-    BPMN 2.0 (AS-IS) – QUY TRÌNH BÁN THUỐC TẠI NHÀ THUỐC (DISPENSING FLOW)
-  </text>
-  <text x="2140" y="45" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#a7f3d0">
-    FPT Long Châu • 0% Deadlock • 7 Cổng điều kiện (Gateways) • Khách hàng thông suốt 100%
-  </text>
-
-  <!-- ==================== POOL 1: KHÁCH HÀNG (NGƯỜI MUA THUỐC) ==================== -->
-  <rect x="30" y="75" width="2140" height="190" fill="#ffffff" stroke="#059669" stroke-width="2" rx="4"/>
-  <rect x="30" y="75" width="45" height="190" fill="#047857"/>
-  <text x="52" y="170" text-anchor="middle" transform="rotate(-90 52 170)" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" letter-spacing="2">
-    KHÁCH HÀNG (NGOÀI)
-  </text>
-  <rect x="75" y="75" width="40" height="190" fill="#10b981"/>
-  <text x="95" y="170" text-anchor="middle" transform="rotate(-90 95 170)" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
-    NGƯỜI BỆNH / MUA
-  </text>
-
-  <!-- ==================== POOL 2: NHÀ THUỐC FPT LONG CHÂU ==================== -->
-  <rect x="30" y="280" width="2140" height="690" fill="#ffffff" stroke="#0284c7" stroke-width="2" rx="4"/>
-  <rect x="30" y="280" width="45" height="690" fill="#0369a1"/>
-  <text x="52" y="625" text-anchor="middle" transform="rotate(-90 52 625)" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" letter-spacing="2">
-    NHÀ THUỐC FPT LONG CHÂU
-  </text>
-
-  <!-- Lane 2.1: Dược sĩ tư vấn & bán lẻ (H: 250) -->
-  <rect x="75" y="280" width="2095" height="250" fill="#f0fdf4" stroke="#a7f3d0" stroke-width="1"/>
-  <rect x="75" y="280" width="40" height="250" fill="#059669"/>
-  <text x="95" y="405" text-anchor="middle" transform="rotate(-90 95 405)" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
-    DƯỢC SĨ TƯ VẤN
-  </text>
-
-  <!-- Lane 2.2: Thu ngân (H: 220) -->
-  <rect x="75" y="530" width="2095" height="220" fill="#ffffff" stroke="#a7f3d0" stroke-width="1"/>
-  <rect x="75" y="530" width="40" height="220" fill="#0d9488"/>
-  <text x="95" y="640" text-anchor="middle" transform="rotate(-90 95 640)" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
-    QUẦY THU NGÂN
-  </text>
-
-  <!-- Lane 2.3: Hệ thống POS & Tồn kho ERP (H: 220) -->
-  <rect x="75" y="750" width="2095" height="220" fill="#f8fafc" stroke="#a7f3d0" stroke-width="1"/>
-  <rect x="75" y="750" width="40" height="220" fill="#0284c7"/>
-  <text x="95" y="860" text-anchor="middle" transform="rotate(-90 95 860)" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">
-    POS / ERP TỰ ĐỘNG
-  </text>
-
-  <!-- ==================== FLOW NODES & ACTIVITIES ==================== -->
-
-  <!-- START EVENT (Khách hàng) -->
-  <circle cx="150" cy="165" r="18" fill="#22c55e" stroke="#15803d" stroke-width="2.5" filter="url(#shadow)"/>
-  <text x="150" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534">Bắt đầu</text>
-  <text x="150" y="218" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b">Đến quầy thuốc</text>
-
-  <!-- Flow Start -> Task 1 (Khách) -->
-  <line x1="168" y1="165" x2="205" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- Task 1 (Khách): Trình đơn hoặc kể triệu chứng -->
-  <rect x="205" y="135" width="130" height="60" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="270" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Trình đơn thuốc hoặc</text>
-  <text x="270" y="174" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">mô tả triệu chứng</text>
-
-  <!-- Sequence / Interaction Flow Khách -> Dược sĩ -->
-  <line x1="270" y1="195" x2="270" y2="340" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- Task 2 (Dược sĩ): Tiếp nhận yêu cầu & phân loại toa -->
-  <rect x="205" y="340" width="130" height="60" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="270" y="363" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Tiếp nhận yêu cầu</text>
-  <text x="270" y="379" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">&amp; kiểm tra đơn</text>
-
-  <!-- Flow T2 -> G1 -->
-  <line x1="335" y1="370" x2="370" y2="370" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- GATEWAY 1: Có đơn bác sĩ (Kê đơn)? -->
-  <polygon points="395 345, 420 370, 395 395, 370 370" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
-  <text x="395" y="375" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
-  <text x="395" y="335" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G1: Thuốc kê đơn?</text>
-
-  <!-- G1: "Không" -> Khách mua OTC/TPCN (Task 3a) -->
-  <line x1="395" y1="395" x2="395" y2="460" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="395" y1="460" x2="445" y2="460" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="400" y="430" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#0284c7">Không (OTC)</text>
-
-  <rect x="445" y="435" width="130" height="50" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="1"/>
-  <text x="510" y="455" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#0369a1">Hỏi tiền sử dị ứng</text>
-  <text x="510" y="470" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#0284c7">&amp; tư vấn phác đồ OTC</text>
-
-  <!-- G1: "Có" -> Kiểm tra tính hợp lệ đơn (Task 3b) -->
-  <line x1="420" y1="370" x2="455" y2="370" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-  <text x="428" y="360" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">Có đơn</text>
-
-  <rect x="455" y="340" width="130" height="60" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="520" y="363" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Kiểm tra tính hợp lệ</text>
-  <text x="520" y="379" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">đơn (dấu, hạn 5 ngày)</text>
-
-  <!-- Flow T3b -> G2 -->
-  <line x1="585" y1="370" x2="620" y2="370" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- GATEWAY 2: Đơn thuốc hợp lệ? -->
-  <polygon points="645 345, 670 370, 645 395, 620 370" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
-  <text x="645" y="375" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
-  <text x="645" y="335" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G2: Đơn hợp lệ?</text>
-
-  <!-- G2: "Không" -> Từ chối bán kê đơn & hướng dẫn khám lại -->
-  <line x1="645" y1="345" x2="645" y2="310" stroke="#e11d48" stroke-width="1.5"/>
-  <line x1="645" y1="310" x2="700" y2="310" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arr_rose)"/>
-  <text x="650" y="325" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#e11d48">Đơn sai/Hết hạn</text>
-  <rect x="700" y="290" width="130" height="40" rx="6" fill="#fff1f2" stroke="#e11d48" stroke-width="1"/>
-  <text x="765" y="307" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#9f1239">Giải thích &amp; từ chối bán</text>
-  <text x="765" y="320" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#881337">(Hướng dẫn tái khám)</text>
-
-  <!-- G2: "Hợp lệ" & G1 OTC -> Hợp luồng vào tra cứu POS (Lane 2.3) -->
-  <line x1="670" y1="370" x2="740" y2="370" stroke="#1e293b" stroke-width="1.8"/>
-  <line x1="575" y1="460" x2="740" y2="460" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="740" y1="370" x2="740" y2="810" stroke="#1e293b" stroke-width="1.8"/>
-  <line x1="740" y1="810" x2="770" y2="810" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- Task 4 (Lane 2.3 - POS): Gõ tên thuốc & kiểm tra tồn kho -->
-  <rect x="770" y="780" width="130" height="60" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="835" y="803" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Gõ tên tra cứu</text>
-  <text x="835" y="819" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">tồn kho trên máy POS</text>
-
-  <!-- Flow T4 -> G3 -->
-  <line x1="900" y1="810" x2="935" y2="810" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- GATEWAY 3: Còn tồn tại quầy? -->
-  <polygon points="960 785, 985 810, 960 835, 935 810" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
-  <text x="960" y="815" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
-  <text x="960" y="775" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G3: Còn tồn quầy?</text>
-
-  <!-- G3: "Hết hàng" -> Tư vấn biệt dược thay thế -->
-  <line x1="960" y1="835" x2="960" y2="890" stroke="#e11d48" stroke-width="1.5"/>
-  <line x1="960" y1="890" x2="1010" y2="890" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arr_rose)"/>
-  <text x="965" y="865" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#e11d48">Hết tồn kho</text>
-
-  <rect x="1010" y="865" width="135" height="50" rx="6" fill="#fff1f2" stroke="#e11d48" stroke-width="1"/>
-  <text x="1077" y="885" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#9f1239">Tư vấn biệt dược</text>
-  <text x="1077" y="900" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#881337">tương đương hoạt chất</text>
-
-  <!-- Flow sang G4 (Hỏi ý kiến khách hàng) -->
-  <line x1="1077" y1="865" x2="1077" y2="225" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="1077" y1="225" x2="1115" y2="225" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- GATEWAY 4 (Khách hàng): Khách đồng ý đổi thuốc thay thế? -->
-  <polygon points="1135 200, 1160 225, 1135 250, 1110 225" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
-  <text x="1135" y="230" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
-  <text x="1135" y="190" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G4: Khách đồng ý đổi?</text>
-
-  <!-- G4: "Không đồng ý" -> Khách hủy giao dịch ra về -->
-  <line x1="1135" y1="200" x2="1135" y2="165" stroke="#e11d48" stroke-width="1.5"/>
-  <line x1="1135" y1="165" x2="1190" y2="165" stroke="#e11d48" stroke-width="1.5" marker-end="url(#arr_rose)"/>
-  <circle cx="1205" cy="165" r="14" fill="#ffe4e6" stroke="#e11d48" stroke-width="2"/>
-  <text x="1255" y="168" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#e11d48">Hủy đơn do hết thuốc</text>
-
-  <!-- G3: "Còn hàng" & G4: "Đồng ý" -> Dược sĩ lấy thuốc từ kệ (Lane 2.1) -->
-  <line x1="985" y1="810" x2="1240" y2="810" stroke="#1e293b" stroke-width="1.8"/>
-  <line x1="1160" y1="225" x2="1240" y2="225" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="1240" y1="225" x2="1240" y2="340" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-  <line x1="1240" y1="810" x2="1240" y2="400" stroke="#1e293b" stroke-width="1.8"/>
-  <text x="1000" y="800" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">Còn hàng</text>
-  <text x="1170" y="215" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">Đồng ý</text>
-
-  <!-- Task 5 (Lane 2.1 - Dược sĩ): Lấy thuốc từ kệ & kiểm tra hạn dùng -->
-  <rect x="1200" y="340" width="130" height="60" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="1265" y="363" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Tìm lấy thuốc trên kệ</text>
-  <text x="1265" y="379" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">&amp; soi date mắt thường</text>
-
-  <!-- Flow T5 -> G5 (Tư vấn TPCN kèm) -->
-  <line x1="1330" y1="370" x2="1365" y2="370" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- GATEWAY 5: Tư vấn TPCN / Bổ trợ? -->
-  <polygon points="1390 345, 1415 370, 1390 395, 1365 370" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
-  <text x="1390" y="375" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
-  <text x="1390" y="335" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G5: Tư vấn TPCN kèm?</text>
-
-  <!-- G5: "Có" -> Thêm sản phẩm bổ trợ -->
-  <line x1="1390" y1="395" x2="1390" y2="445" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="1390" y1="445" x2="1435" y2="445" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="1395" y="420" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#059669">Cross-sell</text>
-  <rect x="1435" y="425" width="115" height="40" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
-  <text x="1492" y="445" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#065f46">Thêm Vitamin/Bổ gan</text>
-
-  <!-- G5: Hợp luồng -> Task 6: Báo tổng tiền lên đơn -->
-  <line x1="1415" y1="370" x2="1510" y2="370" stroke="#1e293b" stroke-width="1.8"/>
-  <line x1="1550" y1="445" x2="1575" y2="445" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="1575" y1="445" x2="1575" y2="400" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <rect x="1510" y="340" width="130" height="60" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="1575" y="363" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Lên đơn bán lẻ POS</text>
-  <text x="1575" y="379" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">&amp; thông báo số tiền</text>
-
-  <!-- ==================== KHẮC PHỤC DEADLOCK: KHÁCH HÀNG THÔNG SUỐT ==================== -->
-  <!-- Interaction: Dược sĩ báo tiền ➔ Khách xác nhận & trả tiền (Lane Khách hàng) -->
-  <line x1="1575" y1="340" x2="1575" y2="195" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- Task 7 (Khách hàng): Xác nhận đơn thuốc & chuẩn bị thanh toán -->
-  <rect x="1510" y="135" width="135" height="60" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
-  <text x="1577" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">Xác nhận mua đơn</text>
-  <text x="1577" y="174" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#166534">&amp; chọn cách trả tiền</text>
-
-  <!-- KHÁCH HÀNG KHÔNG BỊ DEADLOCK: Flow đi tiếp tới G6 -->
-  <line x1="1645" y1="165" x2="1680" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- GATEWAY 6: Phương thức thanh toán (Tiền mặt hay Không tiền mặt)? -->
-  <polygon points="1705 140, 1730 165, 1705 190, 1680 165" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
-  <text x="1705" y="170" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
-  <text x="1705" y="130" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G6: Quét QR hay Tiền mặt?</text>
-
-  <!-- G6: Nhánh Quét QR / Thẻ -->
-  <line x1="1705" y1="140" x2="1705" y2="105" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="1705" y1="105" x2="1760" y2="105" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="1710" y="125" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#0284c7">QR Code / Thẻ</text>
-  <rect x="1760" y="85" width="125" height="40" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="1"/>
-  <text x="1822" y="105" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#0369a1">Quét mã VietQR/VNPAY</text>
-  <text x="1822" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#0284c7">(Xác thực tức thì)</text>
-
-  <!-- G6: Nhánh Tiền mặt -->
-  <line x1="1730" y1="165" x2="1760" y2="165" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-  <text x="1735" y="155" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#15803d">Tiền mặt</text>
-  <rect x="1760" y="145" width="125" height="40" rx="6" fill="#f0fdf4" stroke="#15803d" stroke-width="1"/>
-  <text x="1822" y="165" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#15803d">Trao tiền mặt cho</text>
-  <text x="1822" y="178" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#166534">quầy thu ngân</text>
-
-  <!-- Cả 2 nhánh thanh toán chuyển sang Thu ngân (Lane 2.2) -->
-  <line x1="1885" y1="105" x2="1910" y2="105" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="1885" y1="165" x2="1910" y2="165" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="1910" y1="105" x2="1910" y2="600" stroke="#1e293b" stroke-width="1.8"/>
-  <line x1="1910" y1="600" x2="1935" y2="600" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- Task 8 (Lane 2.2 - Thu ngân): Tiếp nhận thanh toán & in hóa đơn -->
-  <rect x="1935" y="570" width="130" height="60" rx="8" fill="#ffffff" stroke="#0d9488" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="2000" y="593" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Thu tiền, in hóa đơn</text>
-  <text x="2000" y="609" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">&amp; thối tiền thừa</text>
-
-  <!-- Flow T8 -> G7 (Hỏi hội viên) -->
-  <line x1="2000" y1="630" x2="2000" y2="665" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- GATEWAY 7: Khách có số điện thoại tích điểm? -->
-  <polygon points="2000 665, 2025 690, 2000 715, 1975 690" fill="#fef08a" stroke="#ca8a04" stroke-width="2" filter="url(#shadow)"/>
-  <text x="2000" y="695" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">X</text>
-  <text x="2080" y="695" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#a16207">G7: Tích điểm LC?</text>
-
-  <!-- G7: Tự động trừ tồn kho ERP (Lane 2.3) -->
-  <line x1="2000" y1="715" x2="2000" y2="810" stroke="#1e293b" stroke-width="1.8"/>
-  <line x1="2000" y1="810" x2="2035" y2="810" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <rect x="2035" y="780" width="130" height="60" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="2100" y="803" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">Hệ thống tự động trừ</text>
-  <text x="2100" y="819" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#0284c7">tồn kho &amp; ghi doanh thu</text>
-
-  <!-- Sau khi thu ngân in bill: Chuyển sang Dược sĩ bàn giao & dặn dò (Lane 2.1) -->
-  <line x1="2000" y1="570" x2="2000" y2="400" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- Task 9 (Dược sĩ): Ghi liều dùng lên hộp & bàn giao -->
-  <rect x="1935" y="340" width="130" height="60" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="2000" y="363" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Ghi liều dùng tay lên</text>
-  <text x="2000" y="379" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#475569">vỏ hộp &amp; dặn dò</text>
-
-  <!-- Bàn giao cho Khách hàng: Dược sĩ -> Khách hàng (Lane 1) -->
-  <line x1="2000" y1="340" x2="2000" y2="195" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arr)"/>
-
-  <!-- Task 10 (Khách hàng): Nhận túi thuốc, hóa đơn & nghe dặn dò -->
-  <rect x="1935" y="135" width="135" height="60" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
-  <text x="2002" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">Nhận túi thuốc, bill &amp;</text>
-  <text x="2002" y="174" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#166534">lắng nghe hướng dẫn</text>
-
-  <!-- Flow Khách -> END EVENT (HOÀN THÀNH - 100% THÔNG SUỐT) -->
-  <line x1="2070" y1="165" x2="2115" y2="165" stroke="#16a34a" stroke-width="2" marker-end="url(#arr_emerald)"/>
-
-  <circle cx="2135" cy="165" r="16" fill="#dcfce7" stroke="#16a34a" stroke-width="3" filter="url(#shadow)"/>
-  <circle cx="2135" cy="165" r="11" fill="#16a34a"/>
-  <text x="2135" y="198" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">Kết thúc</text>
-  <text x="2135" y="210" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#166534">Mua thuốc an toàn</text>
-
-  <!-- ==================== LEGEND / CHÚ THÍCH ==================== -->
-  <rect x="30" y="985" width="2140" height="50" rx="6" fill="#064e3b" stroke="#047857" stroke-width="1"/>
-  <text x="50" y="1015" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#34d399">CHÚ THÍCH BPMN 2.0 &amp; KHẮC PHỤC LỖI:</text>
-
-  <!-- Deadlock fix -->
-  <rect x="290" y="997" width="18" height="18" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-  <text x="315" y="1015" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ecfdf5">
-    KHẮC PHỤC DEADLOCK: Nối thông luồng Xác nhận &rarr; Thanh toán (QR/Tiền mặt) &rarr; Thu ngân &rarr; Nhận thuốc &rarr; Kết thúc
-  </text>
-
-  <!-- 7 Gateways -->
-  <polygon points="1210 997, 1220 1006, 1210 1015, 1200 1006" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
-  <text x="1210" y="1009" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="bold" fill="#854d0e">X</text>
-  <text x="1230" y="1015" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#ecfdf5">
-    7 Cổng Gateways: Đơn kê? &rarr; Đơn hợp lệ? &rarr; Tồn quầy? &rarr; Đổi generic? &rarr; TPCN kèm? &rarr; Quét QR? &rarr; Tích điểm?
-  </text>
-
-  <text x="2140" y="1015" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#6ee7b7">
-    &check; Chuẩn hóa luồng khách hàng 100% khép kín &amp; hợp lệ
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 850" width="2200" height="850">
+<defs><marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0L8 3L0 6z" fill="#1e3a5f"/></marker>
+<marker id="msg_arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L8 3.5L0 7z" fill="white" stroke="#64748b" stroke-width="1.2"/></marker></defs>
+<rect x="0" y="0" width="2200" height="850" fill="#f8fafc"/>
+<text x="1100" y="32" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#0f172a">BPMN 2.0 AS-IS – QUY TRÌNH BÁN THUỐC TẠI NHÀ THUỐC (FPT LONG CHÂU - TRỌNG ĐIỂM SỐ 1)</text>
+<text x="1100" y="50" text-anchor="middle" font-family="Arial" font-size="11" font-style="italic" fill="#475569">Mô hình hóa chuẩn 8 Cổng điều kiện (Gateways &gt; 7) • 0% Deadlock • Khắc phục điểm nghẽn tương tác Khách hàng - Dược sĩ</text>
+<rect x="0" y="60" width="40" height="680" fill="#cbd5e1" stroke="#1e293b" stroke-width="2.5"/>
+<text x="-400" y="25" transform="rotate(-90)" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#0f172a" letter-spacing="2">QUY TRÌNH BÁN LẺ NHÀ THUỐC (AS-IS)</text>
+<rect x="40" y="60" width="2160" height="680" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+<rect x="40" y="60" width="90" height="680" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.5"/>
+<rect x="130" y="60" width="2070" height="170" fill="#eff6ff" opacity="0.6"/>
+<text x="85" y="142.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">KHÁCH HÀNG</text>
+<text x="85" y="156.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">(NGƯỜI BỆNH)</text>
+<line x1="40" y1="230" x2="2200" y2="230" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,2"/>
+<rect x="130" y="230" width="2070" height="180" fill="#f0fdf4" opacity="0.6"/>
+<text x="85" y="317.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">DƯỢC SĨ TƯ VẤN</text>
+<text x="85" y="331.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">& BÁN LẺ TẠI QUẦY</text>
+<line x1="40" y1="410" x2="2200" y2="410" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,2"/>
+<rect x="130" y="410" width="2070" height="170" fill="#fffbeb" opacity="0.6"/>
+<text x="85" y="492.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">THU NGÂN &</text>
+<text x="85" y="506.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">HỆ THỐNG POS</text>
+<line x1="40" y1="580" x2="2200" y2="580" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4,2"/>
+<rect x="130" y="580" width="2070" height="160" fill="#faf5ff" opacity="0.6"/>
+<text x="85" y="657.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">KHO THUỐC QUẦY</text>
+<text x="85" y="671.0" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1e293b">& BẢO QUẢN GPP</text>
+<circle cx="160" cy="145" r="16" fill="#bbf7d0" stroke="#15803d" stroke-width="2.2"/>
+<text x="160" y="173" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#166534">Khách đến quầy</text>
+<rect x="200" y="121" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563ab" stroke-width="1.8"/>
+<text x="260" y="142.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Trình đơn thuốc hoặc</text>
+<text x="260" y="155.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">yêu cầu tư vấn</text>
+<text x="260" y="182" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Không lấy số</text>
+<path d="M 176,145 L 200,145" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="200" y="296" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563ab" stroke-width="1.8"/>
+<text x="260" y="317.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Tiếp nhận yêu cầu</text>
+<text x="260" y="330.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; chào hỏi khách</text>
+<path d="M 260,169 L 260,296" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="380,300 400,320 380,340 360,320" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="380" y="324" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="380" y="294" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G1</text>
+<text x="380" y="347.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Có đơn thuốc</text>
+<text x="380" y="358.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">bác sĩ?</text>
+<path d="M 320,320 L 360,320" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="320" y="371" width="120" height="48" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+<text x="380" y="392.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Hỏi triệu chứng &amp;</text>
+<text x="380" y="405.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">tư vấn thuốc OTC</text>
+<text x="380" y="432" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Kinh nghiệm cá nhân</text>
+<path d="M 380,340 L 380,371" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="387" y="347" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="405" y="358.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Không</text>
+<rect x="440" y="296" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="500" y="317.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Thẩm định tính hợp lệ</text>
+<text x="500" y="330.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">của đơn thuốc</text>
+<text x="500" y="357" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Kiểm giấy bằng mắt</text>
+<path d="M 400,320 L 440,320" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="402" y="302" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="420" y="313.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Có</text>
+<polygon points="620,300 640,320 620,340 600,320" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="620" y="324" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="620" y="294" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G2</text>
+<text x="620" y="347.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Đơn thuốc</text>
+<text x="620" y="358.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">hợp lệ?</text>
+<path d="M 560,320 L 600,320" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="560" y="121" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+<text x="620" y="142.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Nhận lại đơn thuốc</text>
+<text x="620" y="155.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; nghe giải thích</text>
+<circle cx="720" cy="145" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="720" y="173" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Từ chối toa</text>
+<path d="M 620,300 L 620,169" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="627" y="222" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="645" y="233.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Hết hạn</text>
+<path d="M 680,145 L 704,145" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="680" y="296" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563ab" stroke-width="1.8"/>
+<text x="740" y="317.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Tra cứu danh mục</text>
+<text x="740" y="330.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">thuốc trên máy POS</text>
+<text x="740" y="357" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Tra từng tên thuốc</text>
+<path d="M 640,320 L 680,320" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="642" y="302" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="660" y="313.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Hợp lệ</text>
+<path d="M 440,395 L 740,395 L 740,344" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="860,300 880,320 860,340 840,320" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="860" y="324" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="860" y="294" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G3</text>
+<text x="860" y="347.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Đủ số lượng</text>
+<text x="860" y="358.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">tại quầy?</text>
+<path d="M 800,320 L 840,320" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="800" y="121" width="120" height="48" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+<text x="860" y="142.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Cân nhắc thuốc biệt dược</text>
+<text x="860" y="155.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">hoạt chất tương đương</text>
+<path d="M 860,300 L 860,169" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="867" y="222" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="885" y="233.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Thiếu</text>
+<polygon points="980,125 1000,145 980,165 960,145" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="980" y="149" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="980" y="119" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G4</text>
+<text x="980" y="172.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Khách đồng ý</text>
+<text x="980" y="183.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">đổi thuốc?</text>
+<path d="M 920,145 L 960,145" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1030" y="121" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+<text x="1090" y="142.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Nhận địa chỉ shop khác</text>
+<text x="1090" y="155.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; rời quầy</text>
+<circle cx="1200" cy="145" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="1200" y="173" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Hết hàng</text>
+<path d="M 1000,145 L 1030,145" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="997" y="127" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1015" y="138.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Không</text>
+<path d="M 1150,145 L 1184,145" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="920" y="636" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="980" y="657.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Tìm vị trí thuốc trên kệ</text>
+<text x="980" y="670.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; lấy thuốc thủ công</text>
+<text x="980" y="697" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">Đi lại tìm kiếm 2.5'</text>
+<path d="M 860,340 L 860,660 L 920,660" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="862" y="392" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="880" y="403.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Đủ</text>
+<path d="M 980,165 L 980,300" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="987" y="222" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1005" y="233.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Đồng ý</text>
+<path d="M 980,340 L 980,636" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="1120,640 1140,660 1120,680 1100,660" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="1120" y="664" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="1120" y="634" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G5</text>
+<text x="1120" y="687.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Hạn dùng</text>
+<text x="1120" y="698.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">&gt; 6 tháng?</text>
+<path d="M 1040,660 L 1100,660" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1060" y="691" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+<text x="1120" y="712.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Đưa vào hộp cách ly</text>
+<text x="1120" y="725.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; tìm lô thuốc khác</text>
+<path d="M 1120,680 L 1120,691" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1127" y="677" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1145" y="688.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Cận hạn</text>
+<path d="M 1060,715 L 1040,715 L 1040,684" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1190" y="471" width="120" height="48" rx="6" fill="#dbeafe" stroke="#2563ab" stroke-width="1.8"/>
+<text x="1250" y="492.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Tiếp nhận đơn &amp;</text>
+<text x="1250" y="505.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">quét mã vạch thuốc</text>
+<path d="M 1140,660 L 1190,660 L 1190,495 L 1190,495" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M 1190,495 L 1190,475" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M 1140,660 L 1250,660 L 1250,519" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1147" y="642" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1165" y="653.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Đạt</text>
+<polygon points="1380,475 1400,495 1380,515 1360,495" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="1380" y="499" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="1380" y="469" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G6</text>
+<text x="1380" y="522.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Đã có thẻ</text>
+<text x="1380" y="533.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Hội viên CRM?</text>
+<path d="M 1310,495 L 1360,495" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1320" y="121" width="120" height="48" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+<text x="1380" y="142.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Đọc số điện thoại</text>
+<text x="1380" y="155.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">đăng ký tích điểm</text>
+<path d="M 1380,475 L 1380,169" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1387" y="292" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1405" y="303.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Chưa</text>
+<path d="M 1380,125 L 1440,125 L 1440,471" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1440" y="471" width="120" height="48" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+<text x="1500" y="492.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Áp mã voucher CRM</text>
+<text x="1500" y="505.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; xuất hóa đơn tạm</text>
+<path d="M 1400,495 L 1440,495" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1402" y="477" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1420" y="488.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Đã có</text>
+<rect x="1440" y="121" width="120" height="48" rx="6" fill="#eff6ff" stroke="#2563ab" stroke-width="1.8"/>
+<text x="1500" y="142.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Lựa chọn phương thức</text>
+<text x="1500" y="155.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">thanh toán tiền</text>
+<path d="M 1500,471 L 1500,169" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="1630,125 1650,145 1630,165 1610,145" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="1630" y="149" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="1630" y="119" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G7</text>
+<text x="1630" y="172.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Hình thức</text>
+<text x="1630" y="183.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">thanh toán?</text>
+<path d="M 1560,145 L 1610,145" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1570" y="471" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="1630" y="492.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Thu tiền mặt &amp;</text>
+<text x="1630" y="505.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">thối tiền thừa</text>
+<path d="M 1630,165 L 1630,471" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1637" y="292" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1655" y="303.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Tiền mặt</text>
+<rect x="1700" y="471" width="120" height="48" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.8"/>
+<text x="1760" y="492.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Khách quét mã QR /</text>
+<text x="1760" y="505.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">quẹt thẻ ngân hàng</text>
+<path d="M 1650,145 L 1760,145 L 1760,471" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1662" y="127" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1680" y="138.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">QR / Thẻ</text>
+<polygon points="1890,475 1910,495 1890,515 1870,495" fill="#fef08a" stroke="#b45309" stroke-width="2"/>
+<text x="1890" y="499" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#b45309">×</text>
+<text x="1890" y="469" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#b45309">G8</text>
+<text x="1890" y="522.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">Thanh toán</text>
+<text x="1890" y="533.5" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="bold" fill="#78350f">thành công?</text>
+<path d="M 1820,495 L 1870,495" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M 1690,495 L 1870,495" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1830" y="121" width="120" height="48" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+<text x="1890" y="142.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Nhận báo lỗi POS &amp;</text>
+<text x="1890" y="155.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">hủy giao dịch</text>
+<circle cx="1890" cy="90" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="1890" y="118" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Lỗi POS</text>
+<path d="M 1890,475 L 1890,169" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1897" y="292" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1915" y="303.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#dc2626">Lỗi</text>
+<path d="M 1890,121 L 1890,106" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1960" y="471" width="120" height="48" rx="6" fill="#f1f5f9" stroke="#2563ab" stroke-width="1.8"/>
+<text x="2020" y="492.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">In hóa đơn giấy POS</text>
+<text x="2020" y="505.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; ghi sổ xuất bán</text>
+<text x="2020" y="532" text-anchor="middle" font-family="Arial" font-size="8" fill="#dc2626" font-style="italic" font-weight="bold">In bill thủ công</text>
+<path d="M 1910,495 L 1960,495" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1917" y="477" width="36" height="16" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+<text x="1935" y="488.5" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#15803d">Thành công</text>
+<rect x="1960" y="296" width="120" height="48" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+<text x="2020" y="317.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Dược sĩ đóng gói thuốc</text>
+<text x="2020" y="330.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; dặn dò dùng thuốc (4T)</text>
+<path d="M 2020,471 L 2020,344" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1960" y="121" width="120" height="48" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+<text x="2020" y="142.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">Khách nhận thuốc, hóa đơn</text>
+<text x="2020" y="155.5" text-anchor="middle" font-family="Arial" font-size="9.5" fill="#0f172a">&amp; an tâm ra về</text>
+<circle cx="2140" cy="145" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="3.5"/>
+<text x="2140" y="173" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#991b1b">Hoàn tất đơn</text>
+<path d="M 2020,296 L 2020,169" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
+<path d="M 2080,145 L 2124,145" fill="none" stroke="#1e3a5f" stroke-width="1.6" marker-end="url(#arr)"/>
 </svg>
