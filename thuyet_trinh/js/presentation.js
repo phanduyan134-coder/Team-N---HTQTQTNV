@@ -178,6 +178,31 @@ window.toggleFullscreen = function() {
   }
 };
 
+window.toggleHeader = function() {
+  const isHidden = document.body.classList.toggle("header-hidden");
+  const icon = document.getElementById("header-toggle-icon");
+  if (icon) {
+    if (isHidden) {
+      icon.className = "fa-solid fa-chevron-down";
+    } else {
+      icon.className = "fa-solid fa-chevron-up";
+    }
+  }
+};
+
+window.toggleTheme = function() {
+  const isLight = document.body.classList.toggle("theme-light");
+  localStorage.setItem("slide_theme", isLight ? "light" : "dark");
+  const icon = document.getElementById("theme-icon");
+  if (icon) {
+    if (isLight) {
+      icon.className = "fa-solid fa-moon text-blue-600";
+    } else {
+      icon.className = "fa-solid fa-sun text-amber-300";
+    }
+  }
+};
+
 window.toggleSpeakerNotes = function() {
   isNotesOpen = !isNotesOpen;
   const drawer = document.getElementById("speaker-notes-drawer");
@@ -501,6 +526,8 @@ function initKeyboardNavigation() {
       window.toggleSpeakerNotes();
     } else if (e.key.toLowerCase() === "t") {
       window.toggleTimer();
+    } else if (e.key.toLowerCase() === "h") {
+      window.toggleHeader();
     } else if (e.key.toLowerCase() === "b") {
       const modal = document.getElementById("bpmn-quick-modal");
       if (modal && !modal.classList.contains("hidden")) {
@@ -538,6 +565,9 @@ function initControls() {
   document.getElementById("btn-next-slide")?.addEventListener("click", window.nextSlide);
   document.getElementById("btn-fullscreen")?.addEventListener("click", window.toggleFullscreen);
   document.getElementById("btn-notes-close")?.addEventListener("click", window.toggleSpeakerNotes);
+  document.getElementById("btn-toggle-header")?.addEventListener("click", window.toggleHeader);
+  document.getElementById("btn-show-header")?.addEventListener("click", window.toggleHeader);
+  document.getElementById("btn-toggle-theme")?.addEventListener("click", window.toggleTheme);
 
   document.getElementById("timer-badge")?.addEventListener("click", window.toggleTimer);
   document.getElementById("timer-reset-btn")?.addEventListener("click", (e) => {
@@ -550,6 +580,13 @@ function initPresentation() {
   initSlideNavigator();
   initKeyboardNavigation();
   initControls();
+
+  // Restore saved theme
+  if (localStorage.getItem("slide_theme") === "light") {
+    document.body.classList.add("theme-light");
+    const icon = document.getElementById("theme-icon");
+    if (icon) icon.className = "fa-solid fa-moon text-blue-600";
+  }
 
   const hash = window.location.hash;
   if (hash && hash.startsWith("#slide-")) {

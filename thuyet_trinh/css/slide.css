@@ -50,8 +50,8 @@ body {
 .slide {
   position: absolute;
   inset: 0;
-  /* Clearance: 75px top, 70px bottom, 40px left/right */
-  padding: 4.8rem 2.5rem 4.5rem 2.5rem;
+  /* Compact clearance: top 3.6rem (down from 4.8rem), bottom 3.2rem */
+  padding: 3.6rem 2.0rem 3.2rem 2.0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -261,3 +261,98 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #cbd5e1;
 }
+
+/* ==============================================================
+   COLLAPSIBLE HEADER STYLES (Hide/Show Toggle)
+   ============================================================== */
+#presentation-header {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.header-hidden #presentation-header {
+  transform: translateY(-100%) !important;
+}
+
+body.header-hidden #header-reveal-tab {
+  transform: translate(-50%, 0) !important;
+}
+
+body.header-hidden .slide {
+  padding-top: 1.6rem !important;
+  padding-bottom: 2.2rem !important;
+}
+
+/* ==============================================================
+   LIGHT THEME (Clean Crisp Presentation Mode)
+   ============================================================== */
+body.theme-light {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+body.theme-light .slide {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+body.theme-light #presentation-header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.theme-light #presentation-header span,
+body.theme-light #presentation-header select,
+body.theme-light #presentation-header button {
+  color: #1e293b !important;
+}
+
+body.theme-light #presentation-header select,
+body.theme-light #presentation-header button,
+body.theme-light #slide-counter {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+body.theme-light h1,
+body.theme-light h2,
+body.theme-light h3,
+body.theme-light h4 {
+  color: #0f172a !important;
+}
+
+body.theme-light .text-white {
+  color: #0f172a !important;
+}
+
+body.theme-light .text-slate-200,
+body.theme-light .text-slate-300 {
+  color: #334155 !important;
+}
+
+body.theme-light .text-slate-400 {
+  color: #64748b !important;
+}
+
+body.theme-light .bg-slate-900,
+body.theme-light .bg-slate-900\/90,
+body.theme-light .bg-slate-900\/80,
+body.theme-light .bg-slate-800,
+body.theme-light .bg-slate-800\/80,
+body.theme-light .bg-slate-800\/90,
+body.theme-light .bg-slate-950 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+}
+
+body.theme-light .takeaway-bar {
+  background: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06) !important;
+  border-color: #cbd5e1 !important;
+}
+
+body.theme-light .takeaway-bar span {
+  color: #1e293b !important;
+}
+
