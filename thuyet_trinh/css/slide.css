@@ -187,3 +187,77 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.45);
 }
+
+/* ==========================================================================
+   VISUAL HIERARCHY UTILITY CLASSES (Chính vs Phụ)
+   ========================================================================== */
+
+/* Hero Big Stat Number - For primary focal points */
+.hero-stat-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  display: block;
+}
+
+/* Takeaway Banner - Highlights the single core message per slide */
+.takeaway-bar {
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.85) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-left-width: 4px;
+  border-left-color: #38bdf8;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.takeaway-bar.amber {
+  border-left-color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+.takeaway-bar.emerald {
+  border-left-color: #10b981;
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+/* Primary Keyword - Eye catcher */
+.keyword-primary {
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Supporting text - Muted to yield spotlight to primary keywords */
+.text-support {
+  color: #94a3b8 !important; /* slate-400 */
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+/* Focal Card - Elevates the most important card */
+.focal-card {
+  border: 1px solid rgba(56, 189, 248, 0.4) !important;
+  box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.25), 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+  transform: scale(1.01);
+}
+
+/* Minimalist Clean Badge */
+.badge-clean {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+}
