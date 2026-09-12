@@ -17,7 +17,7 @@
 | 1 | **Huỳnh Công Hậu** | 25210099 | Trưởng nhóm; Lời mở đầu; Chương 1 (Giới thiệu doanh nghiệp) |
 | 2 | **Nguyễn Đức Nhiên** | 25210160 | Chương 2 (Khảo sát, phân loại và Kiến trúc 10 quy trình nghiệp vụ) |
 | 3 | **Nguyễn Thế Trụ** | 25210226 | Chương 3 (Mô hình hóa 6 quy trình nghiệp vụ hiện tại AS-IS) |
-| 4 | **Phan Duy An** | 25210247 | Chương 4 (Phân tích quy trình: VA/BVA/NVA, Lean 7 lãng phí, Fishbone, 5 Whys) |
+| 4 | **Phan Duy An** | 25210247 | Chương 4 (Phân tích quy trình: VA/BVA/NVA, Lãng phí Move-Hold-Overdo, Fishbone 6M, Định lượng) |
 | 5 | **Trịnh Chí Nguyên** | 25210150 | Chương 5 (Đề xuất cải tiến TO-BE & Ứng dụng công nghệ) |
 | 6 | **Ngô Quốc Chung** | 24730180 | Chương 6 (Kết luận, hạn chế, hướng phát triển); Phụ lục & Tài liệu tham khảo |
 
@@ -134,7 +134,7 @@ FPT Long Châu là chuỗi bán lẻ dược phẩm hàng đầu Việt Nam tr�
 2. Phân loại các quy trình nghiệp vụ theo 3 tầng chuẩn mực: Quản lý, Cốt lõi và Hỗ trợ.
 3. Xây dựng Kiến trúc Quy trình Nghiệp vụ tổng thể (Mô hình Ngôi nhà BPM) với danh mục 10 quy trình chính.
 4. Mô hình hóa hiện trạng (AS-IS) bằng sơ đồ BPMN 2.0 cho 6 quy trình tiêu biểu theo cấu trúc cân bằng 3 tầng (2-2-2).
-5. Phân tích định lượng chuyên sâu 2 quy trình then chốt (Bán thuốc tại quầy và Quản lý kho) bằng công cụ BPM chuyên dụng: Ma trận RACI, Chuỗi giá trị VA/BVA/NVA, 7 Lãng phí Lean, Biểu đồ xương cá 6M và 5 Whys.
+5. Phân tích chuyên sâu 2 quy trình then chốt (Bán thuốc tại quầy và Quản lý kho) kết hợp phân tích định tính (Chuỗi giá trị VA/BVA/NVA, Lãng phí Lean Move – Hold – Overdo, Biểu đồ xương cá 6M và 5 Whys) và phân tích định lượng (Thời gian, Chất lượng, Chi phí).
 6. Nhận diện chính xác các điểm nghẽn (bottlenecks) và định lượng tổn thất về thời gian, chi phí và chất lượng.
 7. Thiết kế mô hình cải tiến BPMN 2.0 TO-BE, tích hợp các đòn bẩy công nghệ số (Kiosk phân luồng, PDA quét mã Barcode/QR, thuật toán FEFO, WMS-ERP Real-time) và vạch lộ trình thực thi khả thi với ROI dưới 2 năm.
 
