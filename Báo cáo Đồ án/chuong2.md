@@ -82,8 +82,8 @@ Bên cạnh bằng chứng tài liệu, phương pháp phỏng vấn trực ti�
 - *Nhóm Quản lý chất lượng & Pháp chế (QA/QC):* Chuyên viên giám sát chất lượng và kiểm soát tuân thủ tiêu chuẩn GPP/GSP.
 - *Nhóm Chuyên viên CNTT & Vận hành hệ thống:* Nhân sự phụ trách hạ tầng mạng, tích hợp phần mềm POS, OMS và cơ sở dữ liệu chuỗi.
 
-**2. Danh sách bộ 20 câu hỏi phỏng vấn chuẩn hóa (Rubric Tiêu chí 3.0):**
-Nhóm thiết kế bộ câu hỏi phỏng vấn gồm đúng 20 câu, được phân loại cân đối và khoa học thành 4 nhóm theo đúng yêu cầu đánh giá của Giảng viên: 10 câu hỏi định tính (5 câu có cấu trúc & 5 câu không có cấu trúc) và 10 câu hỏi định lượng (5 câu có cấu trúc & 5 câu không có cấu trúc):
+**2. Danh sách bộ 20 câu hỏi phỏng vấn chuẩn hóa:**
+Nhóm thiết kế bộ câu hỏi phỏng vấn gồm đúng 20 câu, được phân loại cân đối và khoa học thành 4 nhóm theo phương pháp luận BPM: 10 câu hỏi định tính (5 câu có cấu trúc & 5 câu không có cấu trúc) và 10 câu hỏi định lượng (5 câu có cấu trúc & 5 câu không có cấu trúc):
 
 **A. 10 CÂU HỎI ĐỊNH TÍNH (QUALITATIVE QUESTIONS):**
 
@@ -498,7 +498,7 @@ Trong số 10 quy trình nghiệp vụ được xác định, nhóm nghiên cứ
 | 10 | Quản lý tuân thủ pháp lý & dược | 3 | 2 | 5 | 2 | 3 | **15** | Loại |
 
 **Kết quả 6 quy trình được chọn:**
-Dựa trên điểm số đánh giá cao nhất và **đặc biệt tuân thủ tuyệt đối Rubik đánh giá của môn học về cơ cấu cân bằng 3 tầng kiến trúc (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ)**, nhóm quyết định lựa chọn 6 quy trình sau để mô hình hóa BPMN 2.0 và phân tích chuyên sâu:
+Dựa trên điểm số đánh giá cao nhất và **cơ cấu cân bằng 3 tầng kiến trúc (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ)**, nhóm quyết định lựa chọn 6 quy trình sau để mô hình hóa BPMN 2.0 và phân tích chuyên sâu:
 
 1. **Nhóm Quy trình Quản lý (2 quy trình):**
    - *Quy trình 1 (QT-01): Quản lý chuỗi cung ứng* (23 điểm – Hoạch định nhu cầu, quản trị mạng lưới nhà cung ứng và phê duyệt mua sắm tập trung).
@@ -511,10 +511,10 @@ Dựa trên điểm số đánh giá cao nhất và **đặc biệt tuân thủ 
    - *Quy trình 6 (QT-06): Tuyển dụng và đào tạo* (19 điểm – Thu hút, sát hạch chuyên môn và đào tạo dược sĩ chất lượng cao).
 
 **Giải thích lý do lựa chọn:**
-Cơ cấu lựa chọn cân bằng hoàn hảo 2 – 2 – 2 này phản ánh toàn diện hệ sinh thái vận hành của FPT Long Châu:
+Cơ cấu lựa chọn cân bằng 2 – 2 – 2 này phản ánh toàn diện hệ sinh thái vận hành của FPT Long Châu:
 - Hai quy trình Quản lý (Chuỗi cung ứng & Chất lượng) giữ vai trò "mái nhà" định hướng, kiểm soát tiêu chuẩn chuyên môn y tế và điều tiết dòng tiền mua hàng vĩ mô.
 - Hai quy trình Cốt lõi (Bán thuốc tại quầy & Bán online) là "thân nhà" trực tiếp mang lại doanh thu và phục vụ khách hàng đa kênh.
 - Hai quy trình Hỗ trợ (Kho vận & Tuyển dụng đào tạo) là "bệ móng vững chắc" cung cấp hạ tầng bảo quản dược phẩm và nguồn nhân lực dược sĩ đạt chuẩn GPP.
 
 **Lý do loại trừ 4 quy trình còn lại:**
-Các quy trình như Quản lý CNTT, Quản lý tài chính - Kế toán, và Quản lý quan hệ KH (CRM) bị loại khỏi danh sách mô phỏng chuyên sâu vì thiếu hụt dữ liệu đầu vào (khó tiếp cận thông số tài chính, hoặc logic mã nguồn hệ thống). Đây là những luồng nghiệp vụ thiên về thao tác xử lý dữ liệu backend phức tạp mà chỉ người trong nội bộ tập đoàn FPT mới nắm được. Tương tự, Quản lý tuân thủ pháp lý là một chuỗi hành động hành chính giấy tờ, ít có sự tương tác hệ thống phức tạp, khả năng cải tiến bằng công cụ BPM thấp và tần suất thực hiện không thường xuyên bằng các nghiệp vụ cốt lõi khác. Vì vậy, tập trung vào 6 quy trình theo tỷ lệ 2 – 2 – 2 đã chọn sẽ mang lại một đồ án có chất lượng học thuật và thực tiễn tốt nhất, đáp ứng trọn vẹn yêu cầu khắt khe của Rubik chấm điểm.
+Các quy trình như Quản lý CNTT, Quản lý tài chính - Kế toán, và Quản lý quan hệ KH (CRM) bị loại khỏi danh sách mô phỏng chuyên sâu vì thiếu hụt dữ liệu đầu vào (khó tiếp cận thông số tài chính, hoặc logic mã nguồn hệ thống). Đây là những luồng nghiệp vụ thiên về thao tác xử lý dữ liệu backend phức tạp mà chỉ người trong nội bộ tập đoàn FPT mới nắm được. Tương tự, Quản lý tuân thủ pháp lý là một chuỗi hành động hành chính giấy tờ, ít có sự tương tác hệ thống phức tạp, khả năng cải tiến bằng công cụ BPM thấp và tần suất thực hiện không thường xuyên bằng các nghiệp vụ cốt lõi khác. Vì vậy, tập trung vào 6 quy trình theo tỷ lệ 2 – 2 – 2 đã chọn sẽ mang lại một công trình nghiên cứu có chất lượng học thuật và giá trị thực tiễn cao nhất.

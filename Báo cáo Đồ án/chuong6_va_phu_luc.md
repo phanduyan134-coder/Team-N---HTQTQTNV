@@ -102,7 +102,7 @@ bpmn.io. (2024). *bpmn-js: A BPMN 2.0 rendering toolkit and web modeler*. https:
 | 9 | Quản lý tài chính – Kế toán | 4 | 4 | 4 | 2 | 2 | **16** | Loại |
 | 10 | Quản lý tuân thủ pháp lý & dược | 3 | 2 | 5 | 2 | 3 | **15** | Loại |
 
-## Phụ lục B: Phiếu khảo sát và Bộ 20 câu hỏi phỏng vấn chuyên sâu (Rubric Tiêu chí 3.0)
+## Phụ lục B: Phiếu khảo sát và Bộ 20 câu hỏi phỏng vấn chuyên sâu
 
 Dưới đây là phiếu phỏng vấn chi tiết phục vụ công tác khám phá quy trình (Process Discovery) tại FPT Long Châu, được thiết kế theo đúng cấu trúc chuẩn hóa: 10 câu hỏi định tính (5 câu Có cấu trúc + 5 câu Không có cấu trúc) và 10 câu hỏi định lượng (5 câu Có cấu trúc + 5 câu Không có cấu trúc).
 

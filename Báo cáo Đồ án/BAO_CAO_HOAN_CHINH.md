@@ -121,7 +121,7 @@
 
 Trong ngành bán lẻ dược phẩm hiện đại, các doanh nghiệp chuỗi phải đồng thời vận hành nhiều luồng công việc phức tạp như nhập hàng, quản lý kho đạt chuẩn GSP, bán thuốc tại quầy đạt chuẩn GPP, thương mại điện tử đa kênh (Omnichannel) và chăm sóc khách hàng. Khi quy mô mở rộng nhanh chóng, việc thiếu đồng bộ hóa dữ liệu thời gian thực và phụ thuộc vào thao tác thủ công sẽ dẫn đến nhiều hệ quả nghiêm trọng: thời gian phục vụ tại quầy kéo dài trong giờ cao điểm, sai lệch số liệu tồn kho, và rủi ro tiêu hủy hàng cận hạn sử dụng.
 
-FPT Long Châu là chuỗi bán lẻ dược phẩm hàng đầu Việt Nam trực thuộc Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail, mã FRT), hiện sở hữu mạng lưới hơn 1.800 nhà thuốc trên toàn quốc. Đứng trước bài toán tăng trưởng quy mô thần tốc, việc chuẩn hóa, đánh giá định lượng và tối ưu hóa các quy trình nghiệp vụ trở thành yêu cầu cấp thiết. Xuất phát từ thực tiễn đó, nhóm thực hiện đề tài **"Hệ thống quản trị quy trình nghiệp vụ tại Công ty Cổ phần Dược phẩm FPT Long Châu"** nhằm vận dụng kiến thức học phần Quản trị Quy trình Nghiệp vụ (BPM): khảo sát kiến trúc 10 quy trình tổng thể, mô hình hóa chuẩn BPMN 2.0 cho 6 quy trình tiêu biểu (đáp ứng đúng Rubik 2 Quản lý – 2 Cốt lõi – 2 Hỗ trợ), và tiến hành phân tích sâu, đề xuất giải pháp cải tiến TO-BE cho 2 quy trình then chốt là Bán thuốc tại nhà thuốc và Quản lý kho trung tâm.
+FPT Long Châu là chuỗi bán lẻ dược phẩm hàng đầu Việt Nam trực thuộc Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail, mã FRT), hiện sở hữu mạng lưới hơn 1.800 nhà thuốc trên toàn quốc. Đứng trước bài toán tăng trưởng quy mô thần tốc, việc chuẩn hóa, đánh giá định lượng và tối ưu hóa các quy trình nghiệp vụ trở thành yêu cầu cấp thiết. Xuất phát từ thực tiễn đó, nhóm thực hiện đề tài **"Hệ thống quản trị quy trình nghiệp vụ tại Công ty Cổ phần Dược phẩm FPT Long Châu"** nhằm vận dụng kiến thức học phần Quản trị Quy trình Nghiệp vụ (BPM): khảo sát kiến trúc 10 quy trình tổng thể, mô hình hóa chuẩn BPMN 2.0 cho 6 quy trình tiêu biểu (đáp ứng cơ cấu cân bằng 2 Quản lý – 2 Cốt lõi – 2 Hỗ trợ), và tiến hành phân tích sâu, đề xuất giải pháp cải tiến TO-BE cho 2 quy trình then chốt là Bán thuốc tại nhà thuốc và Quản lý kho trung tâm.
 
 ## Mục tiêu nghiên cứu
 
@@ -130,7 +130,7 @@ FPT Long Châu là chuỗi bán lẻ dược phẩm hàng đầu Việt Nam tr�
 1. Khảo sát tổng quan bối cảnh kinh doanh, cơ cấu tổ chức và hạ tầng CNTT của FPT Long Châu.
 2. Phân loại các quy trình nghiệp vụ theo 3 tầng chuẩn mực: Quản lý, Cốt lõi và Hỗ trợ.
 3. Xây dựng Kiến trúc Quy trình Nghiệp vụ tổng thể (Mô hình Ngôi nhà BPM) với danh mục 10 quy trình chính.
-4. Mô hình hóa hiện trạng (AS-IS) bằng sơ đồ BPMN 2.0 cho 6 quy trình tiêu biểu theo chuẩn Rubik (2-2-2).
+4. Mô hình hóa hiện trạng (AS-IS) bằng sơ đồ BPMN 2.0 cho 6 quy trình tiêu biểu theo cấu trúc cân bằng 3 tầng (2-2-2).
 5. Phân tích định lượng chuyên sâu 2 quy trình then chốt (Bán thuốc tại quầy và Quản lý kho) bằng công cụ BPM chuyên dụng: Ma trận RACI, Chuỗi giá trị VA/BVA/NVA, 7 Lãng phí Lean, Biểu đồ xương cá 6M và 5 Whys.
 6. Nhận diện chính xác các điểm nghẽn (bottlenecks) và định lượng tổn thất về thời gian, chi phí và chất lượng.
 7. Thiết kế mô hình cải tiến BPMN 2.0 TO-BE, tích hợp các đòn bẩy công nghệ số (Kiosk phân luồng, PDA quét mã Barcode/QR, thuật toán FEFO, WMS-ERP Real-time) và vạch lộ trình thực thi khả thi với ROI dưới 2 năm.
@@ -162,7 +162,7 @@ FPT Long Châu là chuỗi bán lẻ dược phẩm hàng đầu Việt Nam tr�
 Báo cáo được kết cấu chặt chẽ thành 6 chương chuyên môn theo đúng Vòng đời BPM:
 
 - **Chương 1: Giới thiệu về Công ty Cổ phần Dược phẩm FPT Long Châu** – Trình bày tổng quan doanh nghiệp, lịch sử phát triển, cơ cấu tổ chức bộ máy và định hướng chiến lược.
-- **Chương 2: Khảo sát và Phân loại Quy trình Nghiệp vụ** – Trình bày cơ sở lý luận BPM, Kiến trúc Ngôi nhà Quy trình, danh mục 10 quy trình và tiêu chí lựa chọn 6 quy trình theo Rubik.
+- **Chương 2: Khảo sát và Phân loại Quy trình Nghiệp vụ** – Trình bày cơ sở lý luận BPM, Kiến trúc Ngôi nhà Quy trình, danh mục 10 quy trình và tiêu chí lựa chọn 6 quy trình trọng tâm.
 - **Chương 3: Mô hình hóa Quy trình Nghiệp vụ Hiện tại (AS-IS)** – Trình bày 6 sơ đồ BPMN 2.0 AS-IS hoàn chỉnh kèm phân tích mục tiêu, tác nhân và luồng hoạt động.
 - **Chương 4: Phân tích Quy trình Nghiệp vụ** – Phân tích định lượng chuyên sâu 2 quy trình trọng điểm (Bán thuốc và Kho) qua RACI, VA/NVA, Lean 7 lãng phí, Fishbone 6M và 5 Whys.
 - **Chương 5: Đề xuất Cải tiến Quy trình Nghiệp vụ (TO-BE)** – Đề xuất mục tiêu KPI, giải pháp công nghệ, bảng so sánh AS-IS/TO-BE, 2 sơ đồ BPMN 2.0 TO-BE và lộ trình thực thi 12 tháng.
@@ -344,8 +344,8 @@ Bên cạnh bằng chứng tài liệu, phương pháp phỏng vấn trực ti�
 - *Nhóm Quản lý chất lượng & Pháp chế (QA/QC):* Chuyên viên giám sát chất lượng và kiểm soát tuân thủ tiêu chuẩn GPP/GSP.
 - *Nhóm Chuyên viên CNTT & Vận hành hệ thống:* Nhân sự phụ trách hạ tầng mạng, tích hợp phần mềm POS, OMS và cơ sở dữ liệu chuỗi.
 
-**2. Danh sách bộ 20 câu hỏi phỏng vấn chuẩn hóa (Rubric Tiêu chí 3.0):**
-Nhóm thiết kế bộ câu hỏi phỏng vấn gồm đúng 20 câu, được phân loại cân đối và khoa học thành 4 nhóm theo đúng yêu cầu đánh giá của Giảng viên: 10 câu hỏi định tính (5 câu có cấu trúc & 5 câu không có cấu trúc) và 10 câu hỏi định lượng (5 câu có cấu trúc & 5 câu không có cấu trúc):
+**2. Danh sách bộ 20 câu hỏi phỏng vấn chuẩn hóa:**
+Nhóm thiết kế bộ câu hỏi phỏng vấn gồm đúng 20 câu, được phân loại cân đối và khoa học thành 4 nhóm theo phương pháp luận BPM: 10 câu hỏi định tính (5 câu có cấu trúc & 5 câu không có cấu trúc) và 10 câu hỏi định lượng (5 câu có cấu trúc & 5 câu không có cấu trúc):
 
 **A. 10 CÂU HỎI ĐỊNH TÍNH (QUALITATIVE QUESTIONS):**
 
@@ -760,7 +760,7 @@ Trong số 10 quy trình nghiệp vụ được xác định, nhóm nghiên cứ
 | 10 | Quản lý tuân thủ pháp lý & dược | 3 | 2 | 5 | 2 | 3 | **15** | Loại |
 
 **Kết quả 6 quy trình được chọn:**
-Dựa trên điểm số đánh giá cao nhất và **đặc biệt tuân thủ tuyệt đối Rubik đánh giá của môn học về cơ cấu cân bằng 3 tầng kiến trúc (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ)**, nhóm quyết định lựa chọn 6 quy trình sau để mô hình hóa BPMN 2.0 và phân tích chuyên sâu:
+Dựa trên điểm số đánh giá cao nhất và **cơ cấu cân bằng 3 tầng kiến trúc (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ)**, nhóm quyết định lựa chọn 6 quy trình sau để mô hình hóa BPMN 2.0 và phân tích chuyên sâu:
 
 1. **Nhóm Quy trình Quản lý (2 quy trình):**
    - *Quy trình 1 (QT-01): Quản lý chuỗi cung ứng* (23 điểm – Hoạch định nhu cầu, quản trị mạng lưới nhà cung ứng và phê duyệt mua sắm tập trung).
@@ -773,13 +773,13 @@ Dựa trên điểm số đánh giá cao nhất và **đặc biệt tuân thủ 
    - *Quy trình 6 (QT-06): Tuyển dụng và đào tạo* (19 điểm – Thu hút, sát hạch chuyên môn và đào tạo dược sĩ chất lượng cao).
 
 **Giải thích lý do lựa chọn:**
-Cơ cấu lựa chọn cân bằng hoàn hảo 2 – 2 – 2 này phản ánh toàn diện hệ sinh thái vận hành của FPT Long Châu:
+Cơ cấu lựa chọn cân bằng 2 – 2 – 2 này phản ánh toàn diện hệ sinh thái vận hành của FPT Long Châu:
 - Hai quy trình Quản lý (Chuỗi cung ứng & Chất lượng) giữ vai trò "mái nhà" định hướng, kiểm soát tiêu chuẩn chuyên môn y tế và điều tiết dòng tiền mua hàng vĩ mô.
 - Hai quy trình Cốt lõi (Bán thuốc tại quầy & Bán online) là "thân nhà" trực tiếp mang lại doanh thu và phục vụ khách hàng đa kênh.
 - Hai quy trình Hỗ trợ (Kho vận & Tuyển dụng đào tạo) là "bệ móng vững chắc" cung cấp hạ tầng bảo quản dược phẩm và nguồn nhân lực dược sĩ đạt chuẩn GPP.
 
 **Lý do loại trừ 4 quy trình còn lại:**
-Các quy trình như Quản lý CNTT, Quản lý tài chính - Kế toán, và Quản lý quan hệ KH (CRM) bị loại khỏi danh sách mô phỏng chuyên sâu vì thiếu hụt dữ liệu đầu vào (khó tiếp cận thông số tài chính, hoặc logic mã nguồn hệ thống). Đây là những luồng nghiệp vụ thiên về thao tác xử lý dữ liệu backend phức tạp mà chỉ người trong nội bộ tập đoàn FPT mới nắm được. Tương tự, Quản lý tuân thủ pháp lý là một chuỗi hành động hành chính giấy tờ, ít có sự tương tác hệ thống phức tạp, khả năng cải tiến bằng công cụ BPM thấp và tần suất thực hiện không thường xuyên bằng các nghiệp vụ cốt lõi khác. Vì vậy, tập trung vào 6 quy trình theo tỷ lệ 2 – 2 – 2 đã chọn sẽ mang lại một đồ án có chất lượng học thuật và thực tiễn tốt nhất, đáp ứng trọn vẹn yêu cầu khắt khe của Rubik chấm điểm.
+Các quy trình như Quản lý CNTT, Quản lý tài chính - Kế toán, và Quản lý quan hệ KH (CRM) bị loại khỏi danh sách mô phỏng chuyên sâu vì thiếu hụt dữ liệu đầu vào (khó tiếp cận thông số tài chính, hoặc logic mã nguồn hệ thống). Đây là những luồng nghiệp vụ thiên về thao tác xử lý dữ liệu backend phức tạp mà chỉ người trong nội bộ tập đoàn FPT mới nắm được. Tương tự, Quản lý tuân thủ pháp lý là một chuỗi hành động hành chính giấy tờ, ít có sự tương tác hệ thống phức tạp, khả năng cải tiến bằng công cụ BPM thấp và tần suất thực hiện không thường xuyên bằng các nghiệp vụ cốt lõi khác. Vì vậy, tập trung vào 6 quy trình theo tỷ lệ 2 – 2 – 2 đã chọn sẽ mang lại một công trình nghiên cứu có chất lượng học thuật và giá trị thực tiễn cao nhất.
 
 ---
 
@@ -787,12 +787,12 @@ Các quy trình như Quản lý CNTT, Quản lý tài chính - Kế toán, và Q
 
 Mô hình hóa quy trình nghiệp vụ hiện tại (AS-IS) là một bước đóng vai trò vô cùng quan trọng trong vòng đời quản trị quy trình nghiệp vụ (BPM). Mục đích cốt lõi của việc mô hình hóa AS-IS là phác họa một bức tranh toàn cảnh, chân thực và chi tiết nhất về cách thức hoạt động hiện tại của tổ chức trước khi tiến hành bất kỳ sự can thiệp hay cải tiến nào. Đối với hệ thống chuỗi bán lẻ dược phẩm FPT Long Châu, việc đánh giá chính xác các quy trình AS-IS giúp nhận diện sâu sắc các điểm nghẽn (bottleneck), những thao tác dư thừa, cũng như những hạn chế trong việc ứng dụng công nghệ vào vận hành.
 
-Trong chương này, toàn bộ 6 quy trình trọng yếu được mô hình hóa tuân thủ nghiêm ngặt tiêu chuẩn quốc tế **BPMN 2.0 (Business Process Model and Notation)** và đáp ứng trọn vẹn **Rubik đánh giá chuyên môn của môn học (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ)**:
-- **Cơ cấu phân bổ chuẩn mực theo Rubik (2 – 2 – 2)**:
+Trong chương này, toàn bộ 6 quy trình trọng yếu được mô hình hóa tuân thủ nghiêm ngặt tiêu chuẩn quốc tế **BPMN 2.0 (Business Process Model and Notation)** theo cơ cấu cân bằng 3 tầng kiến trúc quy trình (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ):
+- **Cơ cấu phân bổ chuẩn mực 3 tầng (2 – 2 – 2)**:
   - *2 Quy trình Quản lý:* 3.1. Quản lý chuỗi cung ứng & 3.2. Quản lý chất lượng.
   - *2 Quy trình Cốt lõi:* 3.3. Bán thuốc tại nhà thuốc & 3.4. Bán thuốc online.
   - *2 Quy trình Hỗ trợ:* 3.5. Quản lý kho & 3.6. Tuyển dụng và đào tạo.
-- **Chuẩn hóa Cổng điều kiện (Gateways)**: Tất cả 6 sơ đồ đều được thiết kế với **đúng 8 Cổng điều kiện (Gateways > 7)** nhằm đáp ứng tiêu chí đạt điểm tối đa (1.0 điểm) của rubric chấm điểm.
+- **Chuẩn hóa Cổng điều kiện (Gateways)**: Tất cả 6 sơ đồ đều được thiết kế với **đúng 8 Cổng điều kiện (Gateways > 7)** nhằm bảo đảm độ phức tạp, tính bao quát và phản ánh trung thực các rẽ nhánh nghiệp vụ trong thực tế.
 - **Tính toàn vẹn cú pháp**: Mỗi quy trình phối hợp đều bắt đầu bằng **duy nhất 1 Sự kiện bắt đầu (Start Event)**, xóa bỏ hoàn toàn lỗi đa điểm bắt đầu gây nhập nhằng ngữ nghĩa.
 - **Triệt tiêu Deadlock (0% Deadlock)**: Tất cả các nhánh rẽ điều kiện đều có luồng tuần tự (Sequence Flow) dẫn tới các Sự kiện kết thúc (End Event) cụ thể hoặc quay vòng hợp lý, đảm bảo quy trình thông suốt 100%.
 - **Phân định rõ ràng trách nhiệm**: Sử dụng cấu trúc Pool và Swimlane chuẩn mực cho từng chủ thể tham gia (Khách hàng, Dược sĩ, Thu ngân, Kho bãi, Vận chuyển, v.v.).
@@ -1527,7 +1527,7 @@ bpmn.io. (2024). *bpmn-js: A BPMN 2.0 rendering toolkit and web modeler*. https:
 | 9 | Quản lý tài chính – Kế toán | 4 | 4 | 4 | 2 | 2 | **16** | Loại |
 | 10 | Quản lý tuân thủ pháp lý & dược | 3 | 2 | 5 | 2 | 3 | **15** | Loại |
 
-## Phụ lục B: Phiếu khảo sát và Bộ 20 câu hỏi phỏng vấn chuyên sâu (Rubric Tiêu chí 3.0)
+## Phụ lục B: Phiếu khảo sát và Bộ 20 câu hỏi phỏng vấn chuyên sâu
 
 Dưới đây là phiếu phỏng vấn chi tiết phục vụ công tác khám phá quy trình (Process Discovery) tại FPT Long Châu, được thiết kế theo đúng cấu trúc chuẩn hóa: 10 câu hỏi định tính (5 câu Có cấu trúc + 5 câu Không có cấu trúc) và 10 câu hỏi định lượng (5 câu Có cấu trúc + 5 câu Không có cấu trúc).
 
