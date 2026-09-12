@@ -19,7 +19,7 @@ Trong chương này, toàn bộ 6 quy trình trọng yếu được mô hình h�
 
 Quy trình quản lý chuỗi cung ứng tại FPT Long Châu đóng vai trò huyết mạch trong việc đảm bảo nguồn hàng dược phẩm luôn sẵn sàng tại hơn 1.800 nhà thuốc trên toàn quốc. Tuy nhiên, ở trạng thái hiện tại (AS-IS), quy trình này vẫn đang phụ thuộc nhiều vào các thao tác thủ công, đặc biệt trong việc tổng hợp nhu cầu, phê duyệt đơn hàng và theo dõi vận chuyển, dẫn đến những rủi ro về chậm trễ và sai sót dữ liệu.
 
-**Bảng 3.1: Tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS)**
+*Bảng 3.1: Tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS)*
 
 | Thành phần | Mô tả chi tiết |
 | :--- | :--- |
@@ -63,7 +63,7 @@ Quy trình quản lý chuỗi cung ứng tại FPT Long Châu đóng vai trò hu
 
 Là chuỗi bán lẻ dược phẩm hàng đầu, FPT Long Châu bắt buộc phải tuân thủ nghiêm ngặt các tiêu chuẩn GPP (Thực hành tốt nhà thuốc) và GDP (Thực hành tốt phân phối thuốc). Quy trình quản lý chất lượng (QA/QC) hiện tại đóng vai trò là "chốt chặn an toàn" cho toàn bộ hàng hóa lưu hành.
 
-**Bảng 3.2: Tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS)**
+*Bảng 3.2: Tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS)*
 
 | Thành phần | Mô tả chi tiết |
 | :--- | :--- |
@@ -100,7 +100,7 @@ Là chuỗi bán lẻ dược phẩm hàng đầu, FPT Long Châu bắt buộc p
 
 Bán thuốc trực tiếp tại quầy là quy trình cốt lõi mang lại doanh thu chủ lực cho hơn 1.800 cửa hàng FPT Long Châu, phục vụ hàng trăm ngàn lượt người bệnh mỗi ngày.
 
-**Bảng 3.3: Tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS)**
+*Bảng 3.3: Tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS)*
 
 | Thành phần | Mô tả chi tiết |
 | :--- | :--- |
@@ -137,7 +137,7 @@ Bán thuốc trực tiếp tại quầy là quy trình cốt lõi mang lại doa
 
 Quy trình Bán thuốc Online theo mô hình O2O (Online to Offline) kết nối nền tảng thương mại điện tử (Website longchau.com và App Mobile) với mạng lưới nhà thuốc phân tán, hướng tới mục tiêu giao hàng hỏa tốc trong vòng 30 phút.
 
-**Bảng 3.4: Tóm tắt thông tin quy trình Bán thuốc online (AS-IS)**
+*Bảng 3.4: Tóm tắt thông tin quy trình Bán thuốc online (AS-IS)*
 
 | Thành phần | Mô tả chi tiết |
 | :--- | :--- |
@@ -180,7 +180,7 @@ Quy trình Bán thuốc Online theo mô hình O2O (Online to Offline) kết nố
 
 Kho trung tâm (DC) đóng vai trò là "trái tim" logistics phân phối toàn bộ hàng hóa cho chuỗi nhà thuốc FPT Long Châu. Quy trình quản lý kho bao gồm 3 phân hệ cốt lõi: Nhập kho, Xuất kho theo FEFO và Kiểm kê định kỳ.
 
-**Bảng 3.5: Tóm tắt thông tin quy trình Quản lý kho trung tâm (AS-IS)**
+*Bảng 3.5: Tóm tắt thông tin quy trình Quản lý kho trung tâm (AS-IS)*
 
 | Thành phần | Mô tả chi tiết |
 | :--- | :--- |
@@ -223,7 +223,7 @@ Kho trung tâm (DC) đóng vai trò là "trái tim" logistics phân phối toàn
 
 Nguồn nhân lực Dược sĩ chuyên môn cao, thái độ phục vụ tận tâm là yếu tố then chốt tạo nên vị thế dẫn đầu của FPT Long Châu. Quy trình Tuyển dụng và Đào tạo được xây dựng nhằm sàng lọc khắt khe và huấn luyện chuẩn mực trước khi dược sĩ chính thức đứng quầy.
 
-**Bảng 3.6: Tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS)**
+*Bảng 3.6: Tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS)*
 
 | Thành phần | Mô tả chi tiết |
 | :--- | :--- |

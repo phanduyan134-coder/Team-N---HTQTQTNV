@@ -22,7 +22,7 @@ Song song đó, khung phân tích 7 loại lãng phí (7 Wastes of Lean) cũng �
 6. **Sửa chữa lỗi (Defects/Rework)**: Sai sót dẫn đến phải làm lại, đổi trả hàng.
 7. **Phương tiện chưa dùng (Underutilized Talent)**: Lãng phí năng lực, kỹ năng của nhân viên vào các việc thủ công.
 
-Để đi sâu vào bản chất vấn đề, báo cáo sử dụng **Biểu đồ Fishbone (Ishikawa)** để phân rã nguyên nhân theo các yếu tố (Con người, Quy trình, Công nghệ, Môi trường, Nguyên vật liệu, Đo lường), kết hợp cùng **Phương pháp 5 Whys** để liên tục đặt câu hỏi nhằm tìm ra nguyên nhân gốc rễ (root cause) sâu xa nhất.
+Để đi sâu vào bản chất vấn đề và bóc tách tác động của các bên liên quan, báo cáo sử dụng **Mô hình Xương cá Fishbone (Ishikawa 6M)** để phân rã nguyên nhân theo 6 nhóm nhân tố (Con người, Quy trình, Công nghệ, Môi trường, Nguyên vật liệu, Đo lường), kết hợp cùng **Phương pháp 5 Whys** để liên tục đặt câu hỏi nhằm tìm ra nguyên nhân gốc rễ (root cause) sâu xa nhất.
 
 Cuối cùng, phương pháp đo lường hiệu suất được áp dụng qua các chỉ số: thời gian chu kỳ (cycle time) để biết tổng thời gian hoàn thành một quy trình, thời gian chờ (wait time) giữa các bước, tỷ lệ sai sót (error rate) và chi phí quy trình (process cost) nhằm lượng hóa các vấn đề đang tồn tại.
 
@@ -32,29 +32,11 @@ Cuối cùng, phương pháp đo lường hiệu suất được áp dụng qua 
 
 Quy trình bán thuốc tại nhà thuốc là tuyến đầu tiếp xúc với khách hàng, nơi quyết định chất lượng dịch vụ và doanh thu cốt lõi của FPT Long Châu. Dưới đây là phân tích chi tiết nhằm bóc tách những hạn chế còn tồn đọng trong quy trình này.
 
-### 4.2.1. Phân tích tác nhân và các bên liên quan
-
-Để xác định rõ vai trò và trách nhiệm trong quy trình, ma trận RACI được thiết lập:
-
-*Bảng 4.1: Ma trận RACI quy trình Bán thuốc tại nhà thuốc*
-
-| STT | Các bên liên quan | R (Responsible - Thực thi) | A (Accountable - Chịu trách nhiệm) | C (Consulted - Tham vấn) | I (Informed - Được thông báo) |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Khách hàng | Cung cấp thông tin bệnh lý, đơn thuốc | | | Nhận kết quả tư vấn, thuốc, hóa đơn |
-| 2 | Dược sĩ/NV tư vấn | Trực tiếp tư vấn, lấy thuốc, hướng dẫn sử dụng | Chịu trách nhiệm về tính chính xác của liều lượng thuốc tư vấn | Khách hàng, Bác sĩ (nếu cần) | |
-| 3 | Thu ngân | Thực hiện thanh toán, in hóa đơn | Chịu trách nhiệm về số tiền thu và khớp quỹ cuối ngày | | Dược sĩ |
-| 4 | Hệ thống POS | Ghi nhận giao dịch, in hóa đơn, trừ tồn kho | | | Thu ngân, Quản lý |
-| 5 | Quản lý nhà thuốc | | Chịu trách nhiệm chung về chất lượng phục vụ và doanh thu ca làm việc | | Báo cáo giao dịch |
-| 6 | Bộ phận kho (gián tiếp) | | | | Số lượng tồn kho được cập nhật |
-| 7 | Hệ thống kế toán (gián tiếp) | | | | Dữ liệu doanh thu |
-
-Vai trò cụ thể: Dược sĩ là người đóng vai trò then chốt (R), quyết định chất lượng tư vấn y khoa; trong khi Quản lý nhà thuốc là người chịu trách nhiệm cuối cùng (A) cho toàn bộ hoạt động tại cơ sở.
-
-### 4.2.2. Phân loại hoạt động VA/BVA/NVA
+### 4.2.1. Phân loại hoạt động VA/BVA/NVA
 
 Việc phân loại chi tiết các bước trong quy trình theo ba nhóm giá trị gia tăng (VA - BVA - NVA) giúp nhóm bóc tách chính xác những khâu tạo giá trị và những khâu lãng phí cần triệt tiêu, theo cấu trúc phân tích: Liệt kê hoạt động, Mô tả bản chất và Đề xuất biện pháp khắc phục.
 
-*Bảng 4.2: Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc*
+*Bảng 4.1: Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc*
 
 | STT | Hoạt động quy trình (Liệt kê) | Phân loại | Thời gian (phút) | Bản chất hoạt động (Mô tả) | Biện pháp khắc phục (Tối ưu hóa) |
 | :---: | :--- | :---: | :---: | :--- | :--- |
@@ -77,11 +59,11 @@ Việc phân loại chi tiết các bước trong quy trình theo ba nhóm giá 
 - Thời gian lãng phí không tạo giá trị (NVA): 6.5 phút (~48.2%).
 Tỷ lệ NVA chiếm gần một nửa chu kỳ vận hành cho thấy quy trình hiện tại đang lãng phí đáng kể nguồn lực, chủ yếu rơi vào khâu chờ đợi của khách hàng, tra cứu tồn kho thủ công và việc đi lại nhặt thuốc của dược sĩ.
 
-### 4.2.3. Phân tích sự lãng phí (Move – Hold – Overdo)
+### 4.2.2. Phân tích sự lãng phí (Move – Hold – Overdo)
 
 Theo phương pháp luận Lean, các loại lãng phí trong quy trình bán thuốc tại nhà thuốc được gom cụm thành 3 nhóm tác động trực tiếp: **Move (Di chuyển)**, **Hold (Tồn trữ / Chờ đợi)** và **Overdo (Làm thừa / Sửa sai)** theo cấu trúc chuẩn: Liệt kê, Mô tả biểu hiện trên quy trình và Đề xuất biện pháp khắc phục.
 
-*Bảng 4.3: Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Bán thuốc tại nhà thuốc*
+*Bảng 4.2: Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Bán thuốc tại nhà thuốc*
 
 | Nhóm lãng phí Lean | Hoạt động lãng phí (Liệt kê) | Biểu hiện cụ thể trên quy trình (Mô tả) | Biện pháp khắc phục (Khắc phục) |
 | :---: | :--- | :--- | :--- |
@@ -94,28 +76,36 @@ Theo phương pháp luận Lean, các loại lãng phí trong quy trình bán th
 | **OVERDO**<br>*(Làm thừa / Sửa sai)* | Tư vấn lặp lại do không lưu lịch sử | Khách hàng quen mua thuốc mãn tính hàng tháng vẫn phải khai báo lại từ đầu triệu chứng bệnh do hệ thống POS không lưu vết hồ sơ sức khỏe. | Tích hợp phân hệ CRM hồ sơ bệnh nhân điện tử (E-Health Profile), tự động nhận diện hội viên qua số điện thoại để hiển thị toa cũ. |
 | **OVERDO**<br>*(Làm thừa / Sửa sai)* | Lỗi nhặt nhầm thuốc phải đổi lại | Bao bì các hộp thuốc có hàm lượng khác nhau (ví dụ: Paracetamol 500mg và 650mg) rất giống nhau, dẫn đến rủi ro nhặt nhầm phải làm lại thao tác từ đầu. | Bắt buộc quét mã Barcode hộp thuốc trước khi đóng gói; hệ thống phát cảnh báo âm thanh nếu quét sai mã thuốc trong đơn. |
 
-### 4.2.4. Phân tích nguyên nhân gốc rễ
+### 4.2.3. Phân tích các bên liên quan và nguyên nhân gốc rễ (Mô hình Xương cá Fishbone 6M & Kỹ thuật 5 Whys)
 
-Sử dụng biểu đồ Fishbone (Ishikawa 6M) để phân rã nguyên nhân vấn đề trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"**.
-- **Man (Con người)**: Thiếu hụt nhân sự vào các khung giờ cao điểm (17h - 20h); kỹ năng tra cứu và ghi nhớ vị trí thuốc của dược sĩ mới chưa đồng đều.
-- **Method (Phương pháp / Quy trình)**: Chưa có quy trình phân luồng khách hàng (khách mua thuốc quen định kỳ bị xếp chung luồng với khách tư vấn ca bệnh phức tạp); quy trình thanh toán và in bill giấy cồng kềnh.
-- **Machine (Công nghệ)**: Phần mềm POS chưa thông minh, chưa tự động gợi ý vị trí ngăn thuốc trên kệ; dữ liệu tồn kho chưa liên thông thời gian thực với phân hệ kho WMS.
-- **Material (Nguyên vật liệu / Sản phẩm)**: Danh mục hơn 10.000 SKU thuốc; bao bì nhiều mặt hàng tương đồng dễ gây nhầm lẫn; thuốc hết hàng cục bộ tại quầy.
-- **Measurement (Đo lường)**: Chưa có chỉ số KPI đo lường thời gian phục vụ từng lượt khách theo thời gian thực để tự động điều phối nhân sự hỗ trợ quầy.
-- **Mother Nature (Môi trường)**: Không gian quầy tư vấn hẹp, thiếu ghế ngồi và khu vực chờ có tổ chức cho người bệnh.
+Trong quy trình bán thuốc tại nhà thuốc, các bên liên quan trực tiếp bao gồm **Khách hàng** (bệnh nhân/người mua thuốc), **Dược sĩ tư vấn** (chịu trách nhiệm chuyên môn lâm sàng), **Thu ngân** (thực hiện nghiệp vụ tài chính) và **Quản lý nhà thuốc** (giám sát vận hành ca làm việc). Mối quan hệ tương tác giữa các tác nhân này chịu tác động sâu sắc bởi các yếu tố công nghệ, quy trình và môi trường làm việc. Nhằm phân tích đa chiều sự ảnh hưởng của các bên liên quan và bóc tách nguyên nhân cốt lõi gây suy giảm chất lượng phục vụ, nhóm nghiên cứu sử dụng **Mô hình Xương cá (Ishikawa 6M)** kết hợp kỹ thuật truy vấn sâu **5 Whys**.
 
-**Áp dụng phương pháp 5 Whys cho vấn đề "Khách hàng chờ lâu":**
-1. *Tại sao khách hàng phải chờ lâu?* Vì thời gian hoàn tất một lượt giao dịch tại quầy kéo dài trung bình 13.5 phút.
-2. *Tại sao mỗi giao dịch lại mất tới 13.5 phút?* Vì dược sĩ mất nhiều thời gian đi lại tìm thuốc trên kệ (1.5') và khách phải đứng chờ đến lượt (3.0').
-3. *Tại sao việc tìm thuốc trên kệ lại tốn thời gian?* Vì quầy thuốc không có bản đồ vị trí lưu trữ số hóa, dược sĩ phải dựa hoàn toàn vào trí nhớ cá nhân.
-4. *Tại sao hệ thống POS không hiển thị vị trí ngăn kệ thuốc?* Vì cơ sở dữ liệu bán lẻ chưa được cấu trúc hóa theo sơ đồ vị trí (Bin/Location layout) và chưa liên kết với hệ thống kho.
-5. *Tại sao chưa cấu trúc hóa dữ liệu vị trí thuốc?* Vì quy trình vận hành trước đây mang nặng tính thủ công truyền thống, chưa được đầu tư tái thiết kế và số hóa đồng bộ theo chuẩn BPM. *(Nguyên nhân gốc rễ)*
+Mô hình phân rã bài toán trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"** thành 6 nhánh nhân tố tương tác trực tiếp với các bên liên quan: Con người (Man), Phương pháp (Method), Máy móc / Công nghệ (Machine), Sản phẩm (Material), Đo lường (Measurement) và Môi trường (Mother Nature).
 
-### 4.2.5. Phân tích định lượng (Thời gian, Chất lượng, Chi phí)
+![Hình 4.1: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Bán thuốc tại nhà thuốc](hinh_4_1_fishbone_ban_thuoc.png)
+
+*Hình 4.1: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Bán thuốc tại nhà thuốc*
+
+**Phân tích chi tiết 6 nhóm nguyên nhân theo mô hình 6M:**
+- **Man (Con người & Tác nhân):** Thiếu hụt nhân sự dược sĩ quầy vào các khung giờ cao điểm (17h00 - 20h00); kỹ năng tra cứu hệ thống và khả năng ghi nhớ vị trí thuốc của nhân sự mới chưa đồng đều; tâm lý khách hàng dễ nôn nóng khi phải chờ đợi giải thích đơn thuốc phức tạp.
+- **Method (Phương pháp & Quy trình):** Chưa thiết lập quy trình phân luồng khách hàng khoa học (khách mua định kỳ đơn giản bị xếp chung luồng với khách khám bệnh kê đơn); quy trình thanh toán tách rời với quầy tư vấn; quy trình in ấn và lưu trữ hóa đơn giấy còn nặng tính thủ công.
+- **Machine (Công nghệ & Thiết bị):** Hệ thống Smart POS chưa tích hợp trợ lý AI gợi ý thuốc thay thế và tương tác thuốc; chưa có bản đồ định vị số hóa ô kệ thuốc (Bin/Location layout); thiếu kênh thông tin liên thông dữ liệu tồn kho thời gian thực giữa quầy và kho tổng.
+- **Material (Nguyên vật liệu & Sản phẩm):** Danh mục quản lý hơn 10.000 SKU thuốc; bao bì nhiều mặt hàng cùng hoạt chất có thiết kế rất giống nhau (dễ gây nhầm lẫn khi nhặt hàng trong giờ cao điểm); tình trạng hết hàng cục bộ tại quầy khiến dược sĩ mất thời gian gọi tìm nguồn.
+- **Measurement (Đo lường & Chỉ số):** Thiếu công cụ đo lường và hiển thị trực quan thời gian phục vụ từng khách hàng theo thời gian thực; chưa có hệ thống cảnh báo ùn tắc tự động để quản lý nhà thuốc kịp thời điều động dược sĩ hỗ trợ.
+- **Mother Nature (Môi trường làm việc):** Diện tích quầy tư vấn và không gian di chuyển tại nhiều nhà thuốc còn chật hẹp; thiếu khu vực ghế ngồi chờ chuyên biệt cho người cao tuổi và bệnh nhân trong giờ đông khách.
+
+**Áp dụng kỹ thuật 5 Whys truy tìm nguyên nhân gốc rễ cho sự cố "Khách hàng chờ lâu":**
+1. *Tại sao khách hàng phải chờ đợi lâu tại nhà thuốc?* Vì thời gian chu kỳ hoàn tất một lượt giao dịch kéo dài trung bình 13.5 phút.
+2. *Tại sao mỗi lượt phục vụ lại kéo dài tới 13.5 phút?* Vì dược sĩ mất nhiều thời gian đi lại tìm thuốc trên kệ (1.5 phút) và khách phải đứng chờ đến lượt do không có phân luồng (3.0 phút).
+3. *Tại sao việc tìm thuốc trên kệ lại tốn nhiều thời gian di chuyển?* Vì nhà thuốc chưa có bản đồ vị trí ô kệ số hóa (Bin Location), dược sĩ phải dựa hoàn toàn vào trí nhớ cá nhân để tìm thuốc trong hơn 10.000 SKU.
+4. *Tại sao hệ thống POS không hiển thị vị trí chính xác của ngăn kệ thuốc?* Vì cơ sở dữ liệu POS chưa được chuẩn hóa theo mã ô kệ (Bin/Location layout) và chưa kết nối liên thông với hệ thống quản lý kho WMS.
+5. *Tại sao cơ sở dữ liệu chưa được chuẩn hóa và liên thông?* Vì quy trình vận hành trước đây được xây dựng trên tư duy bán lẻ truyền thống, chưa được tái thiết kế đồng bộ theo phương pháp luận BPM và hạ tầng số hóa tích hợp. *(Nguyên nhân gốc rễ)*
+
+### 4.2.4. Phân tích định lượng (Thời gian, Chất lượng, Chi phí)
 
 Phân tích định lượng là phương pháp sử dụng số liệu đo lường cụ thể để lượng hóa quy mô tổn thất và xác định rõ mục tiêu cần đạt sau cải tiến. Bảng dưới đây tổng hợp các tính toán thực nghiệm trên 3 khía cạnh cốt lõi: **Thời gian**, **Chất lượng** và **Chi phí**, theo cấu trúc: Liệt kê chỉ số, Công thức tính toán và Biện pháp khắc phục.
 
-*Bảng 4.4: Bảng phân tích định lượng hiệu suất quy trình Bán thuốc tại nhà thuốc*
+*Bảng 4.3: Bảng phân tích định lượng hiệu suất quy trình Bán thuốc tại nhà thuốc*
 
 | Khía cạnh | Chỉ số đo lường (Liệt kê) | Công thức & Tính toán thực nghiệm (AS-IS) | Biện pháp khắc phục (Mục tiêu TO-BE) |
 | :---: | :--- | :--- | :--- |
@@ -129,25 +119,11 @@ Phân tích định lượng là phương pháp sử dụng số liệu đo lư�
 
 Quy trình quản lý kho là xương sống hậu cần duy trì nguồn hàng ổn định cho toàn bộ chuỗi nhà thuốc FPT Long Châu. Tại hệ thống kho vận dược phẩm, quy trình vận hành đòi hỏi tính nghiêm ngặt về tiêu chuẩn GDP/GSP, nhưng hiện trạng tại các kho trung tâm vẫn đang tồn tại nhiều công đoạn thủ công, ghi chép trùng lặp, thiếu sự tự động hóa cần thiết dẫn đến suy giảm hiệu suất và gia tăng rủi ro cận hạn thuốc.
 
-### 4.3.1. Phân tích tác nhân và các bên liên quan
-
-Để xác định rõ trách nhiệm và vai trò của từng bộ phận tham gia vào chuỗi cung ứng nội bộ tại kho, ma trận RACI được thiết lập chi tiết:
-
-*Bảng 4.5: Ma trận RACI quy trình Quản lý kho*
-
-| STT | Các bên liên quan | R (Responsible - Thực thi) | A (Accountable - Chịu trách nhiệm) | C (Consulted - Tham vấn) | I (Informed - Được thông báo) |
-| :---: | :--- | :--- | :--- | :--- | :--- |
-| 1 | Nhân viên kho | Trực tiếp bốc dỡ, kiểm đếm, sắp xếp lên kệ, nhặt hàng, đóng gói | | Trưởng kho | Tài xế giao nhận |
-| 2 | Trưởng kho / Quản lý kho | Điều phối nhân sự, kiểm soát nhập - xuất, phê duyệt biên bản | Chịu trách nhiệm toàn diện về tính chính xác của tồn kho và date thuốc | Bộ phận QA, Bộ phận Mua hàng | Ban Giám đốc Khối Vận hành |
-| 3 | Nhà cung cấp (NCC) | Giao hàng đúng lịch, đúng quy cách chủng loại | Chịu trách nhiệm về hóa đơn, chứng từ CO/CQ và chất lượng lô thuốc | Bộ phận Mua hàng | Nhân viên tiếp nhận kho |
-| 4 | Nhân viên nhà thuốc | Lập yêu cầu cấp phát hàng, kiểm tra hàng nhận | Chịu trách nhiệm kiểm tra đối chiếu thuốc giao về quầy | | Trạng thái đơn điều chuyển |
-| 5 | Hệ thống ERP / WMS | Ghi nhận tự động số liệu tồn kho, xử lý tính toán và cảnh báo | | Đội ngũ Quản trị CNTT | Nhân viên kho, Kế toán kho |
-
-### 4.3.2. Phân loại hoạt động VA/BVA/NVA
+### 4.3.1. Phân loại hoạt động VA/BVA/NVA
 
 Việc phân tích chuỗi giá trị (Value-Added Analysis) được thực hiện cho toàn bộ 14 hoạt động thuộc chu trình kho điển hình (bao gồm: Tiếp nhận nhập kho, Lưu trữ bảo quản, Soạn hàng xuất kho và Kiểm kê). Mỗi hoạt động được bóc tách theo cấu trúc: Liệt kê, Phân loại, Thời gian, Bản chất mô tả và Biện pháp khắc phục tối ưu.
 
-*Bảng 4.6: Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho*
+*Bảng 4.4: Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho*
 
 | STT | Hoạt động quy trình (Liệt kê) | Phân loại | Thời gian (phút) | Bản chất hoạt động (Mô tả) | Biện pháp khắc phục (Khắc phục) |
 | :---: | :--- | :---: | :---: | :--- | :--- |
@@ -173,11 +149,11 @@ Việc phân tích chuỗi giá trị (Value-Added Analysis) được thực hi�
 - Thời gian lãng phí không tạo giá trị (NVA): 360.0 phút (chiếm tới **70.6%**).
 Tỷ lệ NVA vượt quá 70% là con số đáng báo động, phản ánh hiện trạng quy trình kho đang chịu tải rất lớn bởi các thao tác kiểm đếm thủ công, nhập liệu lặp lại 2 lần và kiểm kê định kỳ làm đóng băng hoạt động kinh doanh.
 
-### 4.3.3. Phân tích sự lãng phí (Move – Hold – Overdo)
+### 4.3.2. Phân tích sự lãng phí (Move – Hold – Overdo)
 
 Áp dụng phương pháp luận Lean, toàn bộ các lãng phí trong quy trình quản lý kho được phân nhóm và chuẩn hóa theo 3 nhóm tác động cốt lõi: **Move (Di chuyển / Vận chuyển)**, **Hold (Tồn trữ / Chờ đợi)** và **Overdo (Làm thừa / Sửa sai)** theo cấu trúc: Liệt kê hoạt động lãng phí, Mô tả biểu hiện trên quy trình và Biện pháp khắc phục.
 
-*Bảng 4.7: Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Quản lý kho*
+*Bảng 4.5: Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Quản lý kho*
 
 | Nhóm lãng phí Lean | Hoạt động lãng phí (Liệt kê) | Biểu hiện cụ thể trên quy trình (Mô tả) | Biện pháp khắc phục (Khắc phục) |
 | :---: | :--- | :--- | :--- |
@@ -190,29 +166,36 @@ Tỷ lệ NVA vượt quá 70% là con số đáng báo động, phản ánh hi�
 | **OVERDO**<br>*(Làm thừa / Sửa sai)* | Duy trì ghi chép thẻ kho giấy tại đầu kệ | Thao tác ghi chép trừ lùi thủ công số lượng thuốc lên các tấm thẻ kho giấy treo ở từng ngăn kệ là công việc trùng lặp, dư thừa khi doanh nghiệp đã có ERP. | Bãi bỏ 100% thẻ kho giấy; dán mã QR định danh vị trí ô kệ để tra cứu nhanh số lượng tồn kho tức thời bằng thiết bị PDA trong 1 giây. |
 | **OVERDO**<br>*(Làm thừa / Sửa sai)* | Kiểm kê đếm tay toàn bộ kho làm gián đoạn | Mỗi tháng kho phải dừng hoạt động 1 – 2 ngày để toàn bộ nhân viên đếm tay từng hộp thuốc, sau đó mất nhiều ngày đối chiếu chênh lệch giữa sổ sách và thực tế. | Chuyển sang mô hình kiểm kê cuốn chiếu theo chu kỳ (Cycle Counting) hàng ngày bằng máy quét mã vạch Barcode/RFID, không làm gián đoạn xuất nhập kho. |
 
-### 4.3.4. Phân tích nguyên nhân gốc rễ
+### 4.3.3. Phân tích các bên liên quan và nguyên nhân gốc rễ (Mô hình Xương cá Fishbone 6M & Kỹ thuật 5 Whys)
 
-Báo cáo sử dụng phương pháp **Biểu đồ Fishbone (Ishikawa 6M)** để bóc tách đa chiều các nhóm nguyên nhân gây ra vấn đề trung tâm: **"Sai sót số liệu tồn kho và thuốc cận hạn không được phát hiện kịp thời"**.
+Quy trình quản lý kho trung tâm là mắt xích kết nối đa chiều giữa nhiều tác nhân trong chuỗi cung ứng dược phẩm: **Nhà cung cấp** (giao nhận nguồn hàng và hồ sơ COA), **Nhân viên kho** (trực tiếp bốc dỡ, kiểm đếm, soạn hàng), **Trưởng kho** (kiểm soát luân chuyển và phê duyệt xuất nhập), và **Nhân viên nhà thuốc** (tiếp nhận phân bổ hàng hóa). Những trục trặc và ách tắc tại kho không chỉ đơn thuần là lỗi vận hành đơn lẻ mà xuất phát từ sự tương tác phức tạp giữa các bên liên quan trên nền tảng hạ tầng vận hành. 
 
-- **Man (Con người)**: Khối lượng kiểm đếm tay quá lớn dẫn đến mệt mỏi thể chất, mất tập trung; thao tác ghi chép phụ thuộc nặng nề vào trí nhớ và kinh nghiệm cá nhân của thủ kho cũ.
-- **Machine (Công nghệ & Máy móc)**: Thiếu thiết bị di động chuyên dụng (PDA/Barcode Scanner); phần mềm ERP hoạt động độc lập, chưa có thuật toán quản lý hạn sử dụng FEFO (First Expired, First Out) tự động.
-- **Method (Phương pháp & Quy trình)**: Quy trình cập nhật thẻ kho giấy và sổ tay mang nặng tính thủ công; phương thức kiểm kê toàn diện gây đóng băng vận hành và tạo độ trễ lớn trong việc phát hiện sai lệch.
-- **Material (Nguyên vật liệu & Sản phẩm)**: Danh mục hơn 10.000 SKU thuốc; nhiều mặt hàng cùng tên nhưng khác hàm lượng (ví dụ: Panadol xanh và Panadol đỏ) có bao bì tương đồng rất dễ gây nhầm lẫn khi nhặt hàng.
-- **Measurement (Đo lường & Chỉ số)**: Chưa thiết lập chỉ số KPI đo lường năng suất nhặt hàng và tỷ lệ sai lệch tồn kho theo thời gian thực để gắn trách nhiệm cá nhân.
-- **Mother Nature (Môi trường)**: Không gian kho tổng rộng lớn hàng ngàn mét vuông, thiếu biển chỉ dẫn khoa học; khu vực kho lạnh bảo quản vắc-xin/thuốc đặc trị có nhiệt độ thấp gây khó khăn cho nhân viên thao tác lâu.
+Để nhận diện căn nguyên của các tổn thất, nhóm nghiên cứu áp dụng **Mô hình Xương cá (Fishbone 6M)** để giải phẫu bài toán trung tâm: **"Sai sót số liệu tồn kho và thuốc cận hạn không được phát hiện kịp thời"** theo 6 nhóm nhân tố toàn diện: Con người, Công nghệ, Quy trình, Sản phẩm, Đo lường và Môi trường.
 
-**Áp dụng phương pháp 5 Whys cho sự cố "Số liệu tồn kho trên hệ thống không khớp thực tế":**
-1. *Tại sao số liệu tồn kho trên ERP không khớp với số lượng thực tế trong kho?* Vì thẻ kho giấy và phần mềm ERP ghi nhận hai con số chênh lệch nhau.
-2. *Tại sao hai hệ thống lại ghi nhận con số khác nhau?* Vì nhân viên quên cập nhật vào phần mềm sau khi xuất hàng hoặc nhập sai số lượng khi gõ lại từ sổ tay.
-3. *Tại sao nhân viên lại quên hoặc nhập sai số liệu?* Vì quy trình được thực hiện hoàn toàn thủ công, nhân viên phải ghi chép ra giấy trước rồi mới gõ lại vào máy tính.
-4. *Tại sao không nhập trực tiếp vào hệ thống ngay lúc bốc xếp hàng hóa?* Vì tại vị trí bốc dỡ và ngăn kệ kho không có máy tính, nhân viên không có thiết bị di động để thao tác thời gian thực.
-5. *Tại sao không trang bị thiết bị di động có quét mã vạch?* Vì hạ tầng vận hành kho trước đây chưa được đầu tư số hóa toàn diện theo chuẩn BPM và WMS hiện đại. *(Nguyên nhân gốc rễ)*
+![Hình 4.2: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Quản lý kho trung tâm](hinh_4_2_fishbone_quan_ly_kho.png)
 
-### 4.3.5. Phân tích định lượng (Thời gian, Chất lượng, Chi phí)
+*Hình 4.2: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Quản lý kho trung tâm*
+
+**Phân tích chi tiết 6 nhóm nguyên nhân theo mô hình 6M:**
+- **Man (Con người & Tác nhân):** Khối lượng kiểm đếm thủ công quá lớn gây mệt mỏi thể chất và suy giảm độ tập trung; nhân viên kho thao tác dựa nhiều vào thói quen và kinh nghiệm cá nhân; áp lực thời hạn giao hàng khiến việc đối chiếu số lô date bị xem nhẹ.
+- **Machine (Công nghệ & Máy móc):** Chưa trang bị thiết bị kiểm kho di động PDA tích hợp đầu đọc Barcode/QR Code; phần mềm ERP chưa hỗ trợ thuật toán kiểm soát hạn sử dụng FEFO (First Expired, First Out) tự động; thiếu hạ tầng mạng Wi-Fi công nghiệp đồng bộ tại các ngóc ngách kho bãi.
+- **Method (Phương pháp & Quy trình):** Quy trình ghi chép thẻ kho giấy và sổ tay thủ công trước khi nhập liệu máy tính gây trùng lặp và tạo độ trễ thông tin; phương thức kiểm kê toàn diện định kỳ làm đóng băng hoạt động kinh doanh mà vẫn bỏ sót sai lệch giữa kỳ.
+- **Material (Nguyên vật liệu & Hàng hóa):** Quy mô danh mục hơn 10.000 SKU thuốc; bao bì nhiều mặt hàng tương đồng cao (khác biệt chỉ ở hàm lượng in nhỏ trên vỏ hộp); tình trạng vỏ hộp bị móp méo trong quá trình bốc xếp thủ công làm khó nhận diện mã vạch.
+- **Measurement (Đo lường & Chỉ số):** Chưa thiết lập hệ thống KPI tự động theo dõi năng suất nhặt hàng và tỷ lệ sai lệch tồn kho thời gian thực; thiếu cơ chế phân loại cảnh báo hàng cận hạn theo dải màu (3 tháng, 6 tháng, 9 tháng).
+- **Mother Nature (Môi trường lưu trữ):** Không gian tổng kho rộng lớn hàng nghìn mét vuông nhưng thiếu hệ thống biển báo chỉ dẫn trực quan; khu vực kho lạnh bảo quản vắc-xin và sinh phẩm có nhiệt độ khắt khe khiến thời gian kiểm tra đối chiếu bị giới hạn.
+
+**Áp dụng kỹ thuật 5 Whys truy tìm nguyên nhân gốc rễ cho sự cố "Số liệu tồn kho trên hệ thống không khớp thực tế":**
+1. *Tại sao số liệu tồn kho trên ERP không khớp với số lượng thực tế trong kho?* Vì thẻ kho giấy và hệ thống phần mềm ghi nhận số liệu chênh lệch nhau.
+2. *Tại sao hai nơi ghi nhận lại có sự chênh lệch?* Vì nhân viên xuất hàng nhưng quên cập nhật ngay vào phần mềm, hoặc gõ sai số lượng khi nhập liệu lại từ sổ tay vào cuối ngày.
+3. *Tại sao nhân viên lại phải ghi sổ tay rồi mới gõ lại vào máy tính?* Vì tại bến bãi bốc dỡ và các lối đi giá kệ không có máy tính để bàn, quy trình buộc phải dùng sổ giấy trung gian.
+4. *Tại sao không trang bị thiết bị di động để nhân viên quét mã cập nhật tồn kho tức thời ngay tại kệ?* Vì hệ thống vận hành kho chưa được đầu tư triển khai phân hệ WMS chuyên dụng và thiết bị PDA cầm tay.
+5. *Tại sao chưa triển khai WMS và thiết bị PDA đồng bộ?* Vì hệ thống hậu cần kho vận trước đây chưa được định hướng chuyển đổi số theo chuẩn BPM hiện đại, dẫn đến độ trễ công nghệ so với tốc độ mở rộng của chuỗi bán lẻ. *(Nguyên nhân gốc rễ)*
+
+### 4.3.4. Phân tích định lượng (Thời gian, Chất lượng, Chi phí)
 
 Nhằm định lượng chính xác mức độ tổn thất và xác lập mục tiêu số liệu cho mô hình cải tiến TO-BE, bảng phân tích định lượng hiệu suất quy trình quản lý kho được xây dựng dựa trên 3 khía cạnh: **Thời gian**, **Chất lượng** và **Chi phí**, theo cấu trúc chuẩn: Liệt kê chỉ số, Công thức tính toán và Biện pháp khắc phục.
 
-*Bảng 4.8: Bảng phân tích định lượng hiệu suất quy trình Quản lý kho*
+*Bảng 4.6: Bảng phân tích định lượng hiệu suất quy trình Quản lý kho*
 
 | Khía cạnh | Chỉ số đo lường (Liệt kê) | Công thức & Tính toán thực nghiệm (AS-IS) | Biện pháp khắc phục (Mục tiêu TO-BE) |
 | :---: | :--- | :--- | :--- |
@@ -226,7 +209,7 @@ Nhằm định lượng chính xác mức độ tổn thất và xác lập mụ
 
 Sau khi tiến hành mổ xẻ chi tiết hai quy trình mang tính sống còn của Long Châu, báo cáo đã tổng hợp được bức tranh toàn cảnh về những khiếm khuyết đang kìm hãm hiệu suất của hệ thống. Dưới đây là bảng tổng hợp các vấn đề chính yếu đã được nhận diện:
 
-*Bảng 4.9: Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt*
+*Bảng 4.7: Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt*
 
 | Tên vấn đề | Quy trình liên quan | Phân loại lãng phí | Mức độ ảnh hưởng | Giải pháp ưu tiên đề xuất |
 | --- | --- | --- | --- | --- |

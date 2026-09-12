@@ -104,7 +104,7 @@ Báo cáo được kết cấu chặt chẽ thành 6 chương chuyên môn theo 
 - **Chương 1: Giới thiệu về Công ty Cổ phần Dược phẩm FPT Long Châu** – Trình bày tổng quan doanh nghiệp, lịch sử phát triển, cơ cấu tổ chức bộ máy và định hướng chiến lược.
 - **Chương 2: Khảo sát và Phân loại Quy trình Nghiệp vụ** – Trình bày cơ sở lý luận BPM, Kiến trúc Ngôi nhà Quy trình, danh mục 10 quy trình và tiêu chí lựa chọn 6 quy trình trọng tâm.
 - **Chương 3: Mô hình hóa Quy trình Nghiệp vụ Hiện tại (AS-IS)** – Trình bày 6 sơ đồ BPMN 2.0 AS-IS hoàn chỉnh kèm phân tích mục tiêu, tác nhân và luồng hoạt động.
-- **Chương 4: Phân tích Quy trình Nghiệp vụ** – Phân tích định lượng chuyên sâu 2 quy trình trọng điểm (Bán thuốc và Kho) qua RACI, VA/NVA, Lean 7 lãng phí, Fishbone 6M và 5 Whys.
+- **Chương 4: Phân tích Quy trình Nghiệp vụ** – Phân tích định lượng chuyên sâu 2 quy trình trọng điểm (Bán thuốc và Kho) qua phân loại VA/BVA/NVA, phân tích lãng phí Move-Hold-Overdo, Mô hình Xương cá Fishbone 6M và Kỹ thuật 5 Whys.
 - **Chương 5: Đề xuất Cải tiến Quy trình Nghiệp vụ (TO-BE)** – Đề xuất mục tiêu KPI, giải pháp công nghệ, bảng so sánh AS-IS/TO-BE, 2 sơ đồ BPMN 2.0 TO-BE và lộ trình thực thi 12 tháng.
 - **Tài liệu tham khảo & Phụ lục:** Danh mục trích dẫn chuẩn APA7, Phụ lục A (Bảng đánh giá tiêu chí lựa chọn quy trình) và Phụ lục B (Danh sách câu hỏi khảo sát chuyên sâu).
 
