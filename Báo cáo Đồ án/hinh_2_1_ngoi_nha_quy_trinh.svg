@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690">
+<defs>
+
+  <linearGradient id="grad_roof" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#fef3c7"/>
+    <stop offset="100%" stop-color="#fde68a"/>
+  </linearGradient>
+  <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.08"/>
+  </filter>
+  <filter id="card_shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+    <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.06"/>
+  </filter>
+
+</defs>
+<rect x="0" y="0" width="1200" height="690" fill="#ffffff"/>
+<text x="600" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" fill="#0f172a" letter-spacing="0.5">MÔ HÌNH NGÔI NHÀ KIẾN TRÚC QUY TRÌNH NGHIỆP VỤ FPT LONG CHÂU</text>
+<text x="600" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-style="italic" fill="#64748b">(Phân loại 10 Quy trình theo 3 Tầng quản trị: Quản lý – Cốt lõi – Hỗ trợ)</text>
+<polygon points="600,85 80,155 1120,155" fill="url(#grad_roof)" stroke="#d97706" stroke-width="2.5" filter="url(#shadow)"/>
+<text x="600" y="138" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" fill="#92400e" letter-spacing="1.5">QUY TRÌNH QUẢN LÝ (MANAGEMENT PROCESSES)</text>
+<rect x="100" y="155" width="1000" height="90" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+<rect x="114" y="168" width="225" height="64" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.8" filter="url(#card_shadow)"/>
+<text x="226.5" y="195.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">1. Quản lý</text>
+<text x="226.5" y="214.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">chuỗi cung ứng</text>
+<rect x="363" y="168" width="225" height="64" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.8" filter="url(#card_shadow)"/>
+<text x="475.5" y="195.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">2. Quản lý</text>
+<text x="475.5" y="214.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">chất lượng</text>
+<rect x="612" y="168" width="225" height="64" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.8" filter="url(#card_shadow)"/>
+<text x="724.5" y="195.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">3. Quản lý</text>
+<text x="724.5" y="214.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">tài chính – kế toán</text>
+<rect x="861" y="168" width="225" height="64" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.8" filter="url(#card_shadow)"/>
+<text x="973.5" y="195.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">4. Quản lý</text>
+<text x="973.5" y="214.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">tuân thủ pháp lý</text>
+<rect x="90" y="245" width="1020" height="12" rx="3" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+<rect x="100" y="264" width="1000" height="195" rx="8" fill="#f0f9ff" stroke="#0284c7" stroke-width="2" filter="url(#shadow)"/>
+<text x="600" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" fill="#0369a1" letter-spacing="1.5">QUY TRÌNH CỐT LÕI (CORE PROCESSES)</text>
+<rect x="114" y="308" width="304" height="136" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="2" filter="url(#card_shadow)"/>
+<text x="266" y="370.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">5. Bán thuốc</text>
+<text x="266" y="395.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">tại nhà thuốc</text>
+<rect x="448" y="308" width="304" height="136" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="2" filter="url(#card_shadow)"/>
+<text x="600" y="370.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">6. Bán thuốc</text>
+<text x="600" y="395.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">online</text>
+<rect x="782" y="308" width="304" height="136" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="2" filter="url(#card_shadow)"/>
+<text x="934" y="370.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">7. Quản lý quan hệ</text>
+<text x="934" y="395.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">khách hàng (CRM)</text>
+<rect x="90" y="466" width="1020" height="10" rx="2" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+<rect x="100" y="482" width="1000" height="135" rx="8" fill="#faf5ff" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>
+<text x="600" y="508" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" fill="#6d28d9" letter-spacing="1.5">QUY TRÌNH HỖ TRỢ (SUPPORT PROCESSES)</text>
+<rect x="114" y="522" width="304" height="82" rx="8" fill="#ffffff" stroke="#8b5cf6" stroke-width="1.8" filter="url(#card_shadow)"/>
+<text x="266" y="569.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="bold" fill="#0f172a">8. Quản lý kho</text>
+<rect x="448" y="522" width="304" height="82" rx="8" fill="#ffffff" stroke="#8b5cf6" stroke-width="1.8" filter="url(#card_shadow)"/>
+<text x="600" y="559.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="bold" fill="#0f172a">9. Tuyển dụng</text>
+<text x="600" y="579.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="bold" fill="#0f172a">và đào tạo</text>
+<rect x="782" y="522" width="304" height="82" rx="8" fill="#ffffff" stroke="#8b5cf6" stroke-width="1.8" filter="url(#card_shadow)"/>
+<text x="934" y="559.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="bold" fill="#0f172a">10. Quản lý</text>
+<text x="934" y="579.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="bold" fill="#0f172a">công nghệ thông tin</text>
+<rect x="80" y="624" width="1040" height="14" rx="4" fill="#6d28d9"/>
+<text x="600" y="665" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">Hình 2.1: Mô hình Ngôi nhà Kiến trúc Quy trình Nghiệp vụ tại FPT Long Châu</text>
+</svg>

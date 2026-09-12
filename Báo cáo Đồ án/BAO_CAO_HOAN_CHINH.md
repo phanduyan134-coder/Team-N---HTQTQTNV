@@ -1,15 +1,117 @@
 ﻿# BÁO CÁO ĐỒ ÁN MÔN HỌC
-## HỆ THỐNG QUẢN TRỊ QUY TRÌNH NGHIỆP VỤ
 
-**Đề tài:** Phân tích và Cải tiến Quy trình Nghiệp vụ tại Công ty Cổ phần Dược phẩm FPT Long Châu
-
-**Trường:** Đại học Công nghệ Thông tin – ĐHQG TP.HCM (UIT)
-
-**Môn học:** Hệ thống Quản trị Quy trình Nghiệp vụ (HTQTQTNV)
+## HỆ THỐNG QUẢN TRỊ QUY TRÌNH NGHIỆP VỤ (BPM)
+**Mã lớp học phần:** `IE203.F33.CN2.CNTT`  
+**Đơn vị đào tạo:** Khoa Khoa học và Kỹ thuật Thông tin – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
 
 ---
 
+### TÊN ĐỀ TÀI:
+# HỆ THỐNG QUẢN TRỊ QUY TRÌNH NGHIỆP VỤ TẠI CÔNG TY CỔ PHẦN DƯỢC PHẨM FPT LONG CHÂU
 
+**Giảng viên hướng dẫn:** ThS. Hà Lê Hoài Trung  
+**Nhóm sinh viên thực hiện:** Nhóm 15  
+
+| STT | Họ và tên sinh viên | Mã số sinh viên | Phân công phụ trách chính |
+| :---: | :--- | :---: | :--- |
+| 1 | **Huỳnh Công Hậu** | 25210099 | Trưởng nhóm; Lời mở đầu; Chương 1 (Giới thiệu doanh nghiệp) |
+| 2 | **Nguyễn Đức Nhiên** | 25210160 | Chương 2 (Khảo sát, phân loại và Kiến trúc 10 quy trình nghiệp vụ) |
+| 3 | **Nguyễn Thế Trụ** | 25210226 | Chương 3 (Mô hình hóa 6 quy trình nghiệp vụ hiện tại AS-IS) |
+| 4 | **Phan Duy An** | 25210247 | Chương 4 (Phân tích quy trình: VA/BVA/NVA, Lean 7 lãng phí, Fishbone, 5 Whys) |
+| 5 | **Trịnh Chí Nguyên** | 25210150 | Chương 5 (Đề xuất cải tiến TO-BE & Ứng dụng công nghệ) |
+| 6 | **Ngô Quốc Chung** | 24730180 | Chương 6 (Kết luận, hạn chế, hướng phát triển); Phụ lục & Tài liệu tham khảo |
+
+*Thành phố Hồ Chí Minh, Năm 2024*
+
+---
+
+# DANH MỤC CÁC CHỮ VIẾT TẮT
+
+| Ký hiệu viết tắt | Nguyên nghĩa tiếng Anh | Nguyên nghĩa tiếng Việt |
+| :--- | :--- | :--- |
+| **AI** | Artificial Intelligence | Trí tuệ nhân tạo |
+| **API** | Application Programming Interface | Giao diện lập trình ứng dụng |
+| **AS-IS** | Current State Process Model | Mô hình quy trình hiện trạng |
+| **BPM** | Business Process Management | Quản trị quy trình nghiệp vụ |
+| **BPMN** | Business Process Model and Notation | Mô hình và Ký hiệu Quy trình Nghiệp vụ (chuẩn OMG) |
+| **BPMS** | Business Process Management Suite | Bộ giải pháp/Hệ thống thực thi quản trị quy trình |
+| **BPR** | Business Process Reengineering | Tái thiết kế quy trình nghiệp vụ |
+| **BVA** | Business Value-Added | Hoạt động gia tăng giá trị kinh doanh (bắt buộc) |
+| **CRM** | Customer Relationship Management | Quản trị quan hệ khách hàng |
+| **EDI** | Electronic Data Interchange | Hệ thống trao đổi dữ liệu điện tử |
+| **ERP** | Enterprise Resource Planning | Hệ thống hoạch định nguồn lực doanh nghiệp |
+| **FEFO** | First Expired, First Out | Hết hạn trước - Xuất trước (chuẩn dược phẩm) |
+| **FIFO** | First In, First Out | Nhập trước - Xuất trước |
+| **GPP** | Good Pharmacy Practice | Thực hành tốt cơ sở bán lẻ thuốc (Bộ Y tế) |
+| **KPI** | Key Performance Indicator | Chỉ số đánh giá hiệu quả công việc then chốt |
+| **NPS** | Net Promoter Score | Chỉ số đo lường mức độ hài lòng khách hàng |
+| **NVA** | Non-Value-Added | Hoạt động lãng phí không tạo ra giá trị |
+| **POS** | Point of Sale | Điểm bán hàng lẻ / Phần mềm thanh toán tại quầy |
+| **QA / QC** | Quality Assurance / Quality Control | Đảm bảo chất lượng / Kiểm soát chất lượng |
+| **QR Code** | Quick Response Code | Mã phản hồi nhanh (mã vạch 2D ma trận) |
+| **RFID** | Radio Frequency Identification | Công nghệ nhận dạng qua tần số vô tuyến |
+| **RPA** | Robotic Process Automation | Tự động hóa quy trình bằng robot phần mềm |
+| **TO-BE** | Future State Process Model | Mô hình quy trình mục tiêu cải tiến |
+| **VA** | Value-Added | Hoạt động gia tăng giá trị trực tiếp cho khách hàng |
+| **WMS** | Warehouse Management System | Hệ thống quản lý kho hàng chuyên dụng |
+
+---
+
+# DANH MỤC CÁC HÌNH VẼ
+
+| Số hiệu hình | Tên gọi hình vẽ / sơ đồ | Vị trí chương |
+| :--- | :--- | :---: |
+| **Hình 1.1** | Sơ đồ Cơ cấu Tổ chức Công ty Cổ phần Dược phẩm FPT Long Châu | Chương 1 |
+| **Hình 2.1** | Mô hình Ngôi nhà Phân loại Quy trình Nghiệp vụ tại FPT Long Châu | Chương 2 |
+| **Hình 2.2** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chuỗi cung ứng dược phẩm | Chương 2 |
+| **Hình 2.3** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chất lượng dược phẩm (QA/QC) | Chương 2 |
+| **Hình 2.4** | Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc tại nhà thuốc | Chương 2 |
+| **Hình 2.5** | Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc online | Chương 2 |
+| **Hình 2.6** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý kho dược phẩm | Chương 2 |
+| **Hình 2.7** | Sơ đồ Kiến trúc phân rã – Quy trình Tuyển dụng và đào tạo Dược sĩ | Chương 2 |
+| **Hình 2.8** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý công nghệ thông tin | Chương 2 |
+| **Hình 2.9** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tài chính – Kế toán | Chương 2 |
+| **Hình 2.10** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM) | Chương 2 |
+| **Hình 2.11** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược | Chương 2 |
+| **Hình 3.1** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chuỗi cung ứng | Chương 3 |
+| **Hình 3.2** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chất lượng | Chương 3 |
+| **Hình 3.3** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc | Chương 3 |
+| **Hình 3.4** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc online | Chương 3 |
+| **Hình 3.5** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý kho | Chương 3 |
+| **Hình 3.6** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Tuyển dụng và đào tạo | Chương 3 |
+| **Hình 5.1** | Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại nhà thuốc | Chương 5 |
+| **Hình 5.2** | Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý kho | Chương 5 |
+
+---
+
+# DANH MỤC CÁC BẢNG BIỂU
+
+| Số hiệu bảng | Tên gọi bảng biểu | Vị trí chương |
+| :--- | :--- | :---: |
+| **Bảng 1.1** | Tóm tắt thông tin cơ bản về Công ty Cổ phần Dược phẩm FPT Long Châu | Chương 1 |
+| **Bảng 1.2** | Các cột mốc lịch sử quan trọng của FPT Long Châu | Chương 1 |
+| **Bảng 1.3** | So sánh tương quan giữa FPT Long Châu và các chuỗi đối thủ chính | Chương 1 |
+| **Bảng 2.1** | Danh mục 10 quy trình nghiệp vụ chính của FPT Long Châu | Chương 2 |
+| **Bảng 2.2** | Tổng hợp đối tượng khách hàng và các khả năng kết quả của 10 quy trình nghiệp vụ | Chương 2 |
+| **Bảng 2.3** | Đánh giá tiêu chí lựa chọn quy trình phân tích chuyên sâu | Chương 2 |
+| **Bảng 3.1** | Tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS) | Chương 3 |
+| **Bảng 3.2** | Tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS) | Chương 3 |
+| **Bảng 3.3** | Tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS) | Chương 3 |
+| **Bảng 3.4** | Tóm tắt thông tin quy trình Bán thuốc online (AS-IS) | Chương 3 |
+| **Bảng 3.5** | Tóm tắt thông tin quy trình Quản lý kho (AS-IS) | Chương 3 |
+| **Bảng 3.6** | Tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS) | Chương 3 |
+| **Bảng 4.1** | Ma trận RACI quy trình Bán thuốc tại nhà thuốc | Chương 4 |
+| **Bảng 4.2** | Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc | Chương 4 |
+| **Bảng 4.3** | Bảng tổng hợp lãng phí Lean trong quy trình Bán thuốc tại nhà thuốc | Chương 4 |
+| **Bảng 4.4** | Ma trận RACI quy trình Quản lý kho | Chương 4 |
+| **Bảng 4.5** | Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho | Chương 4 |
+| **Bảng 4.6** | Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt | Chương 4 |
+| **Bảng 5.1** | So sánh các bước thực hiện AS-IS và TO-BE quy trình Bán thuốc tại nhà thuốc | Chương 5 |
+| **Bảng 5.2** | Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Bán thuốc tại nhà thuốc | Chương 5 |
+| **Bảng 5.3** | So sánh quá trình nhập/xuất kho AS-IS và TO-BE | Chương 5 |
+| **Bảng 5.4** | Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Quản lý kho | Chương 5 |
+| **Bảng 5.5** | Bảng đối chiếu tổng hợp toàn diện AS-IS và TO-BE cho 2 quy trình then chốt | Chương 5 |
+| **Bảng 5.6** | Ma trận đánh giá rủi ro và giải pháp giảm thiểu | Chương 5 |
 
 ---
 
@@ -17,218 +119,198 @@
 
 ## Lý do chọn đề tài
 
-Trong bối cảnh ngành bán lẻ dược phẩm ngày càng phát triển, các doanh nghiệp phải quản lý đồng thời nhiều hoạt động như nhập hàng, quản lý kho, bán thuốc tại nhà thuốc, bán hàng trực tuyến, giao hàng và chăm sóc khách hàng. Nếu các quy trình này chưa được chuẩn hóa và phối hợp hiệu quả, doanh nghiệp có thể gặp phải nhiều vấn đề như sai lệch tồn kho, xử lý đơn hàng chậm, hàng hóa cận hạn hoặc khó kiểm soát chất lượng.
+Trong ngành bán lẻ dược phẩm hiện đại, các doanh nghiệp chuỗi phải đồng thời vận hành nhiều luồng công việc phức tạp như nhập hàng, quản lý kho đạt chuẩn GSP, bán thuốc tại quầy đạt chuẩn GPP, thương mại điện tử đa kênh (Omnichannel) và chăm sóc khách hàng. Khi quy mô mở rộng nhanh chóng, việc thiếu đồng bộ hóa dữ liệu thời gian thực và phụ thuộc vào thao tác thủ công sẽ dẫn đến nhiều hệ quả nghiêm trọng: thời gian phục vụ tại quầy kéo dài trong giờ cao điểm, sai lệch số liệu tồn kho, và rủi ro tiêu hủy hàng cận hạn sử dụng.
 
-FPT Long Châu là một hệ thống bán lẻ dược phẩm có quy mô lớn, với mạng lưới nhà thuốc và nhiều kênh bán hàng khác nhau. Do đó, việc phân tích và mô hình hóa các quy trình nghiệp vụ có ý nghĩa quan trọng trong việc nhận diện điểm nghẽn, xác định nguyên nhân và đề xuất các giải pháp cải tiến phù hợp.
-
-Xuất phát từ thực tế trên, nhóm lựa chọn đề tài **"Hệ thống quản trị quy trình nghiệp vụ Công ty Cổ phần Dược phẩm FPT Long Châu"** nhằm vận dụng kiến thức của môn Hệ thống quản trị quy trình nghiệp vụ vào một trường hợp thực tế. Đề tài tập trung nghiên cứu các quy trình liên quan đến chuỗi cung ứng, quản lý kho và hoạt động bán hàng; đồng thời xây dựng website mô phỏng nhằm giúp người dùng dễ dàng theo dõi và hình dung quy trình.
+FPT Long Châu là chuỗi bán lẻ dược phẩm hàng đầu Việt Nam trực thuộc Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail, mã FRT), hiện sở hữu mạng lưới hơn 1.800 nhà thuốc trên toàn quốc. Đứng trước bài toán tăng trưởng quy mô thần tốc, việc chuẩn hóa, đánh giá định lượng và tối ưu hóa các quy trình nghiệp vụ trở thành yêu cầu cấp thiết. Xuất phát từ thực tiễn đó, nhóm thực hiện đề tài **"Hệ thống quản trị quy trình nghiệp vụ tại Công ty Cổ phần Dược phẩm FPT Long Châu"** nhằm vận dụng kiến thức học phần Quản trị Quy trình Nghiệp vụ (BPM): khảo sát kiến trúc 10 quy trình tổng thể, mô hình hóa chuẩn BPMN 2.0 cho 6 quy trình tiêu biểu (đáp ứng đúng Rubik 2 Quản lý – 2 Cốt lõi – 2 Hỗ trợ), và tiến hành phân tích sâu, đề xuất giải pháp cải tiến TO-BE cho 2 quy trình then chốt là Bán thuốc tại nhà thuốc và Quản lý kho trung tâm.
 
 ## Mục tiêu nghiên cứu
 
-Đề tài được thực hiện nhằm đạt các mục tiêu sau:
+Đề tài hướng tới 7 mục tiêu học thuật và thực tiễn cốt lõi:
 
-1. Tìm hiểu tổng quan về hoạt động kinh doanh và cơ cấu tổ chức của FPT Long Châu.
-2. Liệt kê và phân loại các quy trình nghiệp vụ theo ba nhóm: Management Process, Core Process và Support Process.
-3. Mô tả tổng quan 10 quy trình nghiệp vụ chính của doanh nghiệp.
-4. Mô hình hóa 6 quy trình tiêu biểu bằng sơ đồ BPMN AS-IS.
-5. Phân tích chuyên sâu quy trình bán thuốc tại nhà thuốc và quy trình quản lý kho.
-6. Xác định các hoạt động tạo giá trị, hoạt động không tạo giá trị, lãng phí và điểm nghẽn trong quy trình.
-7. Đề xuất các giải pháp cải tiến theo mô hình BPMN TO-BE.
-8. Xây dựng website mô phỏng và hiển thị các quy trình nghiệp vụ đã nghiên cứu.
+1. Khảo sát tổng quan bối cảnh kinh doanh, cơ cấu tổ chức và hạ tầng CNTT của FPT Long Châu.
+2. Phân loại các quy trình nghiệp vụ theo 3 tầng chuẩn mực: Quản lý, Cốt lõi và Hỗ trợ.
+3. Xây dựng Kiến trúc Quy trình Nghiệp vụ tổng thể (Mô hình Ngôi nhà BPM) với danh mục 10 quy trình chính.
+4. Mô hình hóa hiện trạng (AS-IS) bằng sơ đồ BPMN 2.0 cho 6 quy trình tiêu biểu theo chuẩn Rubik (2-2-2).
+5. Phân tích định lượng chuyên sâu 2 quy trình then chốt (Bán thuốc tại quầy và Quản lý kho) bằng công cụ BPM chuyên dụng: Ma trận RACI, Chuỗi giá trị VA/BVA/NVA, 7 Lãng phí Lean, Biểu đồ xương cá 6M và 5 Whys.
+6. Nhận diện chính xác các điểm nghẽn (bottlenecks) và định lượng tổn thất về thời gian, chi phí và chất lượng.
+7. Thiết kế mô hình cải tiến BPMN 2.0 TO-BE, tích hợp các đòn bẩy công nghệ số (Kiosk phân luồng, PDA quét mã Barcode/QR, thuật toán FEFO, WMS-ERP Real-time) và vạch lộ trình thực thi khả thi với ROI dưới 2 năm.
 
 ## Đối tượng và phạm vi nghiên cứu
 
-Đối tượng nghiên cứu của đề tài là các quy trình nghiệp vụ trong hoạt động quản lý và vận hành của FPT Long Châu, tập trung vào chuỗi cung ứng, quản lý kho, bán thuốc và các quy trình hỗ trợ.
-
-Phạm vi nghiên cứu bao gồm:
-
-- **Phạm vi nội dung:** Nghiên cứu 10 quy trình nghiệp vụ, trong đó mô hình hóa chi tiết 6 quy trình và phân tích chuyên sâu 2 quy trình là bán thuốc tại nhà thuốc và quản lý kho.
-- **Phạm vi doanh nghiệp:** Hoạt động của hệ thống FPT Long Châu và các bộ phận có liên quan như cung ứng, kho, nhà thuốc, nhân sự và công nghệ thông tin.
-- **Phạm vi dữ liệu:** Sử dụng các tài liệu công khai, thông tin trên website, tài liệu tham khảo, quan sát và các giả định phù hợp do nhóm xây dựng. Do không tiếp cận được dữ liệu nội bộ, một số thông tin và số liệu trong báo cáo mang tính mô phỏng hoặc ước tính phục vụ mục đích học tập.
-- **Phạm vi sản phẩm:** Website có chức năng hiển thị thông tin, sơ đồ và mô phỏng các bước xử lý của quy trình nghiệp vụ; không thay thế cho hệ thống vận hành thực tế của doanh nghiệp.
+- **Đối tượng nghiên cứu:** Hệ thống các quy trình nghiệp vụ trong vận hành và quản lý chuỗi nhà thuốc FPT Long Châu (mua hàng, kiểm soát chất lượng, kho bãi, bán lẻ quầy và online).
+- **Phạm vi nội dung:** Khảo sát kiến trúc 10 quy trình; mô hình hóa AS-IS 6 quy trình; phân tích chuyên sâu và thiết kế TO-BE cho 2 quy trình trọng điểm (Bán lẻ tại quầy và Quản lý kho tổng).
+- **Phạm vi không gian:** Khối văn phòng điều hành, Trung tâm phân phối kho tổng và hệ thống hơn 1.800 điểm bán FPT Long Châu trên cả nước.
+- **Phạm vi dữ liệu:** Sử dụng Báo cáo thường niên FPT Retail 2023 - 2024, tiêu chuẩn ngành dược (GPP, GDP, GSP của Bộ Y tế), dữ liệu quan sát thực tế và mô phỏng học thuật (academic simulation) có kiểm soát phương pháp luận.
 
 ## Phương pháp nghiên cứu
 
-Đề tài sử dụng kết hợp các phương pháp nghiên cứu sau:
+Đề tài kết hợp chặt chẽ giữa nghiên cứu định tính và định lượng theo vòng đời BPM chuẩn quốc tế:
 
-1. **Thu thập tài liệu:** Tìm hiểu thông tin từ website chính thức của FPT Long Châu, các bài viết, báo cáo, tài liệu công khai và tài liệu chuyên ngành.
-2. **Quan sát:** Phân tích trình tự hoạt động trong các quy trình bán hàng, nhập hàng, quản lý kho và giao hàng dựa trên thông tin thực tế có thể quan sát được.
-3. **Phân tích và tổng hợp:** Tổng hợp dữ liệu, xác định tác nhân, đầu vào, đầu ra, hoạt động chính và mối quan hệ giữa các bộ phận.
-4. **Mô hình hóa BPMN:** Sử dụng ký hiệu BPMN để biểu diễn quy trình hiện tại AS-IS và quy trình cải tiến TO-BE.
-5. **Phân tích quy trình:** Áp dụng các phương pháp VA/BVA/NVA, phân tích lãng phí, phân tích nguyên nhân gốc rễ, phân tích thời gian, chi phí và chất lượng.
-6. **Thiết kế và xây dựng website:** Sử dụng các công cụ và công nghệ phù hợp để tạo giao diện mô phỏng, giúp trình bày quy trình một cách trực quan và dễ hiểu.
+1. **Thu thập & tổng hợp tài liệu:** Phân tích báo cáo tài chính, báo cáo thường niên FRT và văn bản quy chuẩn Bộ Y tế.
+2. **Quan sát thực tế:** Khảo sát hiện trường thao tác tại nhà thuốc và kho vận để ghi nhận luồng công việc thực tế.
+3. **Mô hình hóa BPMN 2.0:** Ứng dụng chuẩn OMG BPMN 2.0 phân làn Swimlane, kiểm soát Gateways và loại bỏ 100% Deadlock.
+4. **Định lượng chuỗi giá trị (VA/BVA/NVA):** Bóc tách thời gian gia tăng giá trị và thời gian lãng phí theo giáo trình Dumas et al.
+5. **Lean Six Sigma & Root-Cause:** Áp dụng khung 7 lãng phí Lean, Biểu đồ Ishikawa 6M và kỹ thuật 5 Whys để xác định căn nguyên vấn đề.
+6. **Tái thiết kế quy trình (BPR):** Thiết kế mô hình TO-BE tinh gọn, tích hợp công nghệ và xây dựng các chỉ số KPI định lượng.
 
 ## Ý nghĩa thực tiễn của đề tài
 
-Về mặt thực tiễn, đề tài giúp minh họa cách tiếp cận quản trị quy trình nghiệp vụ trong lĩnh vực bán lẻ dược phẩm. Thông qua việc mô hình hóa và phân tích, nhóm có thể nhận diện những vấn đề thường gặp như nhập liệu thủ công, cập nhật tồn kho chậm, kiểm kê mất nhiều thời gian và khó kiểm soát hạn sử dụng.
-
-Các đề xuất cải tiến như sử dụng mã vạch/QR, áp dụng nguyên tắc FEFO, đồng bộ dữ liệu kho, cập nhật tồn kho theo thời gian thực và xây dựng dashboard quản lý có thể góp phần nâng cao hiệu quả vận hành. Bên cạnh đó, website mô phỏng giúp người dùng dễ dàng tiếp cận, theo dõi và hiểu được mối liên hệ giữa các bước trong quy trình.
-
-Do giới hạn về dữ liệu, các kết quả trong đề tài chủ yếu mang tính mô phỏng và học thuật, nhưng có thể làm cơ sở tham khảo cho việc nghiên cứu, thiết kế hoặc triển khai hệ thống quản trị quy trình trong thực tế.
+Đề tài cung cấp giải pháp khoa học nhằm giải quyết các nút thắt vận hành thực tế tại chuỗi dược phẩm quy mô lớn: xóa bỏ thao tác ghi chép thủ công, rút ngắn thời gian phục vụ tại quầy, tự động hóa xuất kho theo nguyên tắc FEFO và đồng bộ dữ liệu tồn kho theo thời gian thực. Các mô hình BPMN 2.0 TO-BE và lộ trình triển khai 3 giai đoạn mang giá trị tham khảo ứng dụng thực tiễn cao cho chiến lược chuyển đổi số trong ngành bán lẻ y tế.
 
 ## Bố cục báo cáo
 
-Ngoài phần Lời mở đầu, Danh mục bảng, Danh mục hình ảnh, Tài liệu tham khảo và Phụ lục, báo cáo gồm 7 chương:
+Báo cáo được kết cấu chặt chẽ thành 6 chương chuyên môn theo đúng Vòng đời BPM:
 
-- **Chương 1:** Giới thiệu về FPT Long Châu – trình bày tổng quan doanh nghiệp, lịch sử hình thành, lĩnh vực hoạt động, cơ cấu tổ chức và hoạt động kinh doanh.
-- **Chương 2:** Khảo sát, liệt kê và phân loại quy trình nghiệp vụ – trình bày cơ sở phân loại, kiến trúc quy trình, danh sách và mô tả tổng quan 10 quy trình.
-- **Chương 3:** Xây dựng website mô phỏng quy trình nghiệp vụ – giới thiệu mục tiêu, công nghệ, giao diện và các chức năng của website.
-- **Chương 4:** Mô hình hóa quy trình nghiệp vụ hiện tại AS-IS – trình bày chi tiết 6 quy trình và các sơ đồ BPMN tương ứng.
-- **Chương 5:** Phân tích quy trình nghiệp vụ – phân tích chuyên sâu quy trình bán thuốc tại nhà thuốc và quy trình quản lý kho.
-- **Chương 6:** Đề xuất cải tiến quy trình nghiệp vụ – trình bày các vấn đề phát hiện, giải pháp cải tiến và mô hình BPMN TO-BE.
-- **Chương 7:** Kết luận và hướng phát triển – tổng hợp kết quả đạt được, hạn chế và định hướng phát triển của đề tài.
-
+- **Chương 1: Giới thiệu về Công ty Cổ phần Dược phẩm FPT Long Châu** – Trình bày tổng quan doanh nghiệp, lịch sử phát triển, cơ cấu tổ chức bộ máy và định hướng chiến lược.
+- **Chương 2: Khảo sát và Phân loại Quy trình Nghiệp vụ** – Trình bày cơ sở lý luận BPM, Kiến trúc Ngôi nhà Quy trình, danh mục 10 quy trình và tiêu chí lựa chọn 6 quy trình theo Rubik.
+- **Chương 3: Mô hình hóa Quy trình Nghiệp vụ Hiện tại (AS-IS)** – Trình bày 6 sơ đồ BPMN 2.0 AS-IS hoàn chỉnh kèm phân tích mục tiêu, tác nhân và luồng hoạt động.
+- **Chương 4: Phân tích Quy trình Nghiệp vụ** – Phân tích định lượng chuyên sâu 2 quy trình trọng điểm (Bán thuốc và Kho) qua RACI, VA/NVA, Lean 7 lãng phí, Fishbone 6M và 5 Whys.
+- **Chương 5: Đề xuất Cải tiến Quy trình Nghiệp vụ (TO-BE)** – Đề xuất mục tiêu KPI, giải pháp công nghệ, bảng so sánh AS-IS/TO-BE, 2 sơ đồ BPMN 2.0 TO-BE và lộ trình thực thi 12 tháng.
+- **Tài liệu tham khảo & Phụ lục:** Danh mục trích dẫn chuẩn APA7, Phụ lục A (Bảng đánh giá tiêu chí lựa chọn quy trình) và Phụ lục B (Danh sách câu hỏi khảo sát chuyên sâu).
 
 ---
 
 # CHƯƠNG 1: GIỚI THIỆU VỀ CÔNG TY CỔ PHẦN DƯỢC PHẨM FPT LONG CHÂU
 
-Chương này trình bày cái nhìn tổng quan về Công ty Cổ phần Dược phẩm FPT Long Châu, đối tượng nghiên cứu chính của đồ án. Các nội dung bao gồm tổng quan về công ty, lịch sử hình thành và phát triển, các lĩnh vực hoạt động chủ yếu, cơ cấu tổ chức bộ máy, tình hình hoạt động kinh doanh hiện tại và những định hướng chiến lược trong tương lai. Việc thấu hiểu sâu sắc bối cảnh hoạt động, quy mô và đặc thù ngành nghề bán lẻ dược phẩm của FPT Long Châu là tiền đề quan trọng để tiến hành phân tích, đánh giá và đề xuất các giải pháp cải tiến hệ thống quản trị quy trình nghiệp vụ (BPM) một cách hiệu quả và sát với thực tiễn doanh nghiệp.
+Chương này trình bày bối cảnh doanh nghiệp và cơ cấu tổ chức của Công ty Cổ phần Dược phẩm FPT Long Châu – đối tượng nghiên cứu của đồ án. Việc làm rõ mô hình vận hành, mạng lưới bán lẻ và sự phân công giữa các phòng ban là tiền đề then chốt để xác định các tác nhân (Actors) và xây dựng kiến trúc quy trình nghiệp vụ ở các chương tiếp theo.
 
 ## 1.1. Tổng quan về công ty
 
-Công ty Cổ phần Dược phẩm FPT Long Châu, được biết đến rộng rãi với tên gọi hệ thống Nhà thuốc FPT Long Châu, là một trong những chuỗi bán lẻ dược phẩm lớn nhất và uy tín nhất tại Việt Nam hiện nay. Là một thành viên trực thuộc Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail - mã chứng khoán FRT), FPT Long Châu thừa hưởng nền tảng công nghệ vững chắc, tiềm lực tài chính mạnh mẽ và kinh nghiệm quản trị chuỗi bán lẻ hiện đại từ tập đoàn mẹ. Với tôn chỉ hoạt động mang đến những sản phẩm chăm sóc sức khỏe chất lượng cao, giá cả hợp lý và dịch vụ tư vấn tận tâm, chuỗi nhà thuốc đã nhanh chóng chiếm được sự tin tưởng của đông đảo người tiêu dùng trên toàn quốc.
+Công ty Cổ phần Dược phẩm FPT Long Châu (chuỗi Nhà thuốc FPT Long Châu) là doanh nghiệp bán lẻ dược phẩm hàng đầu tại Việt Nam, trực thuộc Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail - mã chứng khoán FRT, Tập đoàn FPT). Chuỗi được thành lập nhằm cung cấp các sản phẩm y tế chính hãng, chất lượng cao với mức giá cạnh tranh và dịch vụ tư vấn tận tâm.
 
-Tính đến năm 2024, quy mô của FPT Long Châu đã đạt đến một cột mốc ấn tượng với hơn 1.800 nhà thuốc phân bố rộng khắp trên tất cả 63 tỉnh thành của Việt Nam. Mạng lưới rộng lớn này không chỉ giúp công ty tiếp cận được đa dạng phân khúc khách hàng mà còn đóng vai trò thiết yếu trong việc đảm bảo cung ứng thuốc kịp thời cho nhu cầu chăm sóc sức khỏe của cộng đồng. 
+Tính đến năm 2024, FPT Long Châu sở hữu mạng lưới hơn 1.800 nhà thuốc phân bố khắp 63 tỉnh thành, phục vụ hàng triệu lượt khách hàng mỗi tháng. Danh mục kinh doanh bao gồm 4 nhóm chủ lực: thuốc kê đơn (đặc biệt là thuốc đặc trị), thuốc không kê đơn (OTC), thực phẩm chức năng, dược mỹ phẩm và thiết bị y tế gia đình. Toàn bộ hệ thống vận hành tuân thủ nghiêm ngặt chuẩn Thực hành tốt nhà thuốc (GPP) do Bộ Y tế ban hành.
 
-Danh mục sản phẩm của FPT Long Châu vô cùng đa dạng, đáp ứng toàn diện nhu cầu điều trị và bảo vệ sức khỏe. Các nhóm sản phẩm chủ lực bao gồm: thuốc kê đơn theo chỉ định của bác sĩ, thuốc không kê đơn (OTC), các dòng dược mỹ phẩm chăm sóc da và làm đẹp, thực phẩm chức năng hỗ trợ sức khỏe, cùng với đa dạng các trang thiết bị y tế gia đình. Đặc biệt, FPT Long Châu nổi tiếng với năng lực cung ứng đầy đủ các loại thuốc đặc trị chuyên sâu, vốn thường khó tìm tại các nhà thuốc quy mô nhỏ.
-
-**Bảng 1.1. Tóm tắt thông tin cơ bản về Công ty Cổ phần Dược phẩm FPT Long Châu**
+*Bảng 1.1: Tóm tắt thông tin cơ bản về Công ty Cổ phần Dược phẩm FPT Long Châu*
 
 | Tiêu chí | Thông tin chi tiết |
 | :--- | :--- |
 | **Tên chính thức** | Công ty Cổ phần Dược phẩm FPT Long Châu |
 | **Tên thương hiệu** | Nhà thuốc FPT Long Châu |
-| **Công ty mẹ** | Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail) |
-| **Lĩnh vực kinh doanh** | Bán lẻ dược phẩm, thực phẩm chức năng, thiết bị y tế |
-| **Quy mô (2024)** | Hơn 1.800 cửa hàng trên 63 tỉnh/thành phố |
-| **Khẩu hiệu (Slogan)** | "Vì sức khỏe cộng đồng" / "Thuốc tốt giá rẻ" (các thông điệp truyền thông chính) |
-| **Tiêu chuẩn chất lượng** | Đạt chuẩn GPP (Good Pharmacy Practice) của Bộ Y tế |
-| **Kênh phân phối** | Bán lẻ trực tiếp tại cửa hàng, thương mại điện tử (Website/App) |
+| **Công ty mẹ** | Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail - FRT) |
+| **Lĩnh vực kinh doanh** | Bán lẻ dược phẩm, thực phẩm bảo vệ sức khỏe, thiết bị y tế |
+| **Quy mô (2024)** | Hơn 1.800 nhà thuốc tại 63 tỉnh/thành phố *(Nguồn: Báo cáo thường niên FRT)* |
+| **Tiêu chuẩn chất lượng** | 100% cơ sở đạt chuẩn GPP (Bộ Y tế), tổng kho đạt chuẩn GSP/GDP |
+| **Kênh bán hàng** | Bán lẻ trực tiếp tại quầy và Thương mại điện tử (Website/App Long Châu) |
 
 ## 1.2. Lịch sử hình thành và phát triển
 
-Hành trình phát triển của FPT Long Châu là một câu chuyện kinh doanh đầy cảm hứng, chuyển mình từ một nhà thuốc gia đình truyền thống trở thành một đế chế bán lẻ dược phẩm hàng đầu Việt Nam nhờ vào sự can thiệp của chiến lược quản trị và công nghệ hiện đại. Tiền thân của chuỗi hệ thống này là nhà thuốc Long Châu, được thành lập từ năm 1985 tại khu vực Quận 5, Thành phố Hồ Chí Minh. Trong suốt hơn ba thập kỷ hoạt động, nhà thuốc Long Châu đã xây dựng được một thương hiệu địa phương vững chắc, nổi tiếng với sự uy tín, đa dạng các loại thuốc và đặc biệt là mức giá cạnh tranh so với mặt bằng chung của thị trường.
+Hành trình phát triển của FPT Long Châu trải qua 3 giai đoạn mang tính bước ngoặt:
 
-Bước ngoặt lịch sử diễn ra vào năm 2017 khi Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail) quyết định mua lại hệ thống nhà thuốc Long Châu. Thương vụ M&A (Mua bán và Sáp nhập) này không chỉ đánh dấu sự gia nhập chính thức của FPT Retail vào thị trường bán lẻ dược phẩm đầy tiềm năng mà còn mang lại cho Long Châu một nguồn lực khổng lồ về vốn, công nghệ quản trị và kinh nghiệm vận hành chuỗi. FPT Retail đã thực hiện một quá trình tái cấu trúc toàn diện, áp dụng hệ thống quản trị nguồn lực doanh nghiệp (ERP), chuẩn hóa các quy trình nghiệp vụ và nâng cấp chất lượng dịch vụ khách hàng.
+- **1985 – 2016 (Khởi nguồn uy tín):** Thành lập nhà thuốc Long Châu đầu tiên tại TP.HCM, nhanh chóng tạo dựng vị thế vững chắc nhờ danh mục thuốc kê đơn đầy đủ và giá bán sỉ hợp lý.
+- **2017 (Tái cấu trúc & Số hóa):** FPT Retail mua lại chuỗi Long Châu, bắt đầu số hóa hạ tầng quản trị, áp dụng hệ thống ERP và chuẩn hóa quy trình chuỗi bán lẻ hiện đại.
+- **2018 – 2024 (Bùng nổ quy mô toàn quốc):** Chuỗi mở rộng thần tốc từ vài chục cửa hàng lên mốc 1.000 nhà thuốc (năm 2022) và chính thức vượt 1.800 nhà thuốc (năm 2024), trở thành chuỗi dược phẩm có thị phần số 1 tại Việt Nam.
 
-Giai đoạn từ năm 2018 đến 2024 chứng kiến sự mở rộng bùng nổ của FPT Long Châu. Áp dụng công thức thành công từ chuỗi FPT Shop, Long Châu liên tục khai trương các cửa hàng mới với tốc độ đáng kinh ngạc. Nếu như năm 2018, hệ thống mới chỉ có vài chục cửa hàng tập trung chủ yếu tại TP.HCM, thì đến năm 2022, con số này đã vượt mốc 1.000 cửa hàng, chính thức phủ sóng toàn quốc. Tính đến năm 2024, FPT Long Châu đã vượt qua mốc 1.800 nhà thuốc, khẳng định vị thế dẫn đầu tuyệt đối về quy mô trên thị trường bán lẻ dược phẩm Việt Nam. Sự phát triển thần tốc này đi kèm với việc liên tục hoàn thiện hệ thống quản lý chuỗi cung ứng, hệ thống kho bãi trung tâm và phát triển đa kênh (omnichannel).
+*Bảng 1.2: Các cột mốc lịch sử quan trọng của FPT Long Châu*
 
-**Bảng 1.2. Các cột mốc lịch sử quan trọng của FPT Long Châu**
-
-| Năm | Sự kiện nổi bật | Số lượng nhà thuốc (ước tính) |
-| :--- | :--- | :--- |
-| **1985** | Thành lập nhà thuốc Long Châu đầu tiên tại Quận 5, TP.HCM, định vị là nhà thuốc chuyên bán thuốc đặc trị giá sỉ. | 1 |
-| **2017** | FPT Retail chính thức mua lại chuỗi Long Châu, bắt đầu quá trình tái cấu trúc và số hóa hệ thống quản trị. | ~4 |
-| **2018** | Thành lập Công ty Cổ phần Dược phẩm FPT Long Châu, bắt đầu thử nghiệm mô hình chuỗi. | ~22 |
-| **2019** | Mở rộng quy mô, vươn ra các tỉnh thành lân cận TP.HCM và bắt đầu tiến ra khu vực miền Bắc. | ~70 |
-| **2020** | Tăng tốc mở mới bất chấp đại dịch COVID-19, đóng vai trò quan trọng trong việc cung ứng thiết bị y tế và thuốc men. | ~200 |
-| **2021** | Chuyển đổi số mạnh mẽ, ra mắt ứng dụng di động, đẩy mạnh bán hàng trực tuyến và giao hàng tận nơi. | ~400 |
-| **2022** | Chạm mốc 1.000 cửa hàng, phủ sóng 63/63 tỉnh thành, đạt lợi nhuận tích cực sớm hơn kỳ vọng. | ~1.000 |
-| **2023** | Tiếp tục dẫn đầu thị trường về tốc độ mở mới, mở rộng mảng kinh doanh vắc xin. | ~1.600 |
-| **2024** | Đạt quy mô hơn 1.800 nhà thuốc, củng cố vị thế chuỗi bán lẻ dược phẩm lớn nhất Việt Nam. | > 1.800 |
+| Năm | Cột mốc bước ngoặt | Quy mô điểm bán |
+| :---: | :--- | :---: |
+| **1985** | Thành lập nhà thuốc Long Châu đầu tiên tại TP.HCM, định vị chuyên thuốc kê đơn giá tốt. | 1 |
+| **2017** | FPT Retail mua lại chuỗi, tái cấu trúc toàn diện và triển khai hạ tầng ERP quản trị tập trung. | ~4 |
+| **2022** | Chạm mốc 1.000 cửa hàng, hoàn thành phủ sóng 63/63 tỉnh thành, bắt đầu ghi nhận lợi nhuận dương. | ~1.000 |
+| **2024** | Đạt quy mô hơn 1.800 nhà thuốc, dẫn đầu thị trường về tốc độ mở rộng và doanh thu chuỗi dược. | > 1.800 |
 
 ## 1.3. Lĩnh vực hoạt động
 
-Hoạt động kinh doanh cốt lõi của FPT Long Châu tập trung vào mảng bán lẻ dược phẩm và các sản phẩm chăm sóc sức khỏe. Hệ thống cung cấp một danh mục hàng hóa đồ sộ bao gồm thuốc kê đơn, thuốc không kê đơn (OTC), thực phẩm chức năng, dược mỹ phẩm, trang thiết bị y tế gia đình và các sản phẩm tiêu dùng y tế khác. Bên cạnh kênh bán lẻ trực tiếp tại hệ thống hơn 1.800 cửa hàng vật lý, FPT Long Châu còn đẩy mạnh lĩnh vực thương mại điện tử (TMĐT) thông qua website chính thức và ứng dụng di động Long Châu. Các nền tảng số này cung cấp dịch vụ đặt thuốc online, tư vấn trực tuyến với dược sĩ và giao hàng tận nhà nhanh chóng, tạo sự tiện lợi tối đa cho khách hàng trong kỷ nguyên số.
+Hoạt động kinh doanh của FPT Long Châu tập trung vào 2 kênh phân phối chính:
 
-Để duy trì năng lực cạnh tranh và đảm bảo chất lượng phục vụ, FPT Long Châu đầu tư mạnh mẽ vào hệ thống quản lý chuỗi cung ứng và logistics dược phẩm. Công ty sở hữu các tổng kho phân phối đạt chuẩn, áp dụng công nghệ quản lý kho thông minh để đảm bảo việc điều phối hàng hóa đến hàng nghìn nhà thuốc một cách chính xác và hiệu quả. Ngoài ra, Long Châu cũng tích cực triển khai các chương trình khách hàng thân thiết, tích điểm đổi quà và cá nhân hóa dịch vụ chăm sóc sức khỏe nhằm nâng cao mức độ hài lòng và giữ chân khách hàng.
+1. **Bán lẻ tại nhà thuốc (Offline):** Phục vụ trực tiếp người bệnh tại hơn 1.800 quầy thuốc với đội ngũ dược sĩ tư vấn đạt chuẩn GPP, cung cấp đầy đủ các loại thuốc đặc trị bệnh mãn tính, thuốc kê đơn bệnh viện và sản phẩm chăm sóc sức khỏe.
+2. **Thương mại điện tử dược phẩm (Online - O2O):** Khai thác website longchau.com.vn và ứng dụng di động Long Châu, hỗ trợ đặt hàng trực tuyến, tư vấn dược sĩ từ xa và điều phối giao hàng nhanh từ nhà thuốc gần nhất trong 30 – 60 phút.
 
-Toàn bộ hệ thống nhà thuốc và kho bãi của FPT Long Châu đều tuân thủ nghiêm ngặt các tiêu chuẩn GPP (Good Pharmacy Practice - Thực hành tốt cơ sở bán lẻ thuốc) theo quy định của Bộ Y tế. Việc đảm bảo chuẩn GPP không chỉ là yêu cầu pháp lý mà còn là cam kết của công ty đối với chất lượng thuốc, điều kiện bảo quản, quy trình tư vấn và trình độ chuyên môn của đội ngũ dược sĩ, từ đó mang đến sự an tâm tuyệt đối cho người tiêu dùng.
+Để vận hành nhịp nhàng hai kênh trên, doanh nghiệp phát triển mạng lưới trung tâm phân phối kho bãi tổng đạt chuẩn Thực hành tốt bảo quản thuốc (GSP) và logistics lạnh (Cold Chain) phục vụ các sản phẩm vắc xin, insulin.
 
 ## 1.4. Cơ cấu tổ chức
 
-Cơ cấu tổ chức của FPT Long Châu được thiết kế theo mô hình trực tuyến - chức năng, kết hợp với quản lý theo chuỗi nhằm đảm bảo sự thống nhất trong chiến lược kinh doanh từ cấp cao nhất xuống đến từng cửa hàng, đồng thời duy trì sự chuyên môn hóa cao ở các phòng ban. Mô hình này cho phép thông tin được truyền đạt thông suốt, quy trình ra quyết định nhanh chóng và khả năng thích ứng linh hoạt với những biến động của thị trường. Cấu trúc bộ máy được phân cấp rõ ràng, hỗ trợ hiệu quả cho việc vận hành mạng lưới bán lẻ khổng lồ trên toàn quốc.
+FPT Long Châu áp dụng mô hình tổ chức trực tuyến – chức năng kết hợp quản lý chuỗi, phân định rành mạch giữa các khối chuyên môn tại trụ sở và lực lượng vận hành trực tiếp tại mạng lưới nhà thuốc:
 
-Ở cấp độ nhà thuốc, bộ máy nhân sự được tinh gọn nhưng vẫn đảm bảo tính chuyên nghiệp và tuân thủ quy định chuyên ngành. Mỗi nhà thuốc được điều hành bởi một Cửa hàng trưởng (quản lý vận hành) và bắt buộc phải có Dược sĩ chuyên môn phụ trách các vấn đề liên quan đến thuốc. Đội ngũ nhân viên trực tiếp phục vụ bao gồm các dược sĩ bán hàng, nhân viên tư vấn sản phẩm sức khỏe, nhân viên thu ngân và nhân viên quản lý kho tại cửa hàng. Tất cả đều phải trải qua quá trình đào tạo bài bản về kiến thức chuyên môn và kỹ năng dịch vụ khách hàng.
+![Hình 1.1: Sơ đồ Cơ cấu Tổ chức Công ty Cổ phần Dược phẩm FPT Long Châu](hinh_1_1_co_cau_to_chuc.png)
 
-**Sơ đồ cơ cấu tổ chức Công ty Cổ phần Dược phẩm FPT Long Châu [Hình 1.1]:**
+*Hình 1.1: Sơ đồ Cơ cấu Tổ chức Công ty Cổ phần Dược phẩm FPT Long Châu*
 
-*   **Hội đồng Quản trị / Tổng Giám đốc FPT Retail:** Cơ quan hoạch định chiến lược và chỉ đạo chung.
-    *   **Ban Giám đốc chuỗi FPT Long Châu:** Chịu trách nhiệm điều hành toàn bộ hoạt động kinh doanh của chuỗi.
-        *   **Khối Mua hàng (Purchasing):** Đảm nhiệm việc đàm phán, tìm kiếm nguồn hàng, ký kết hợp đồng với các hãng dược phẩm và nhà cung cấp.
-        *   **Khối Đảm bảo chất lượng (QA) và Chuyên môn:** Kiểm soát chất lượng thuốc, giám sát tuân thủ GPP, xây dựng quy trình chuyên môn.
-        *   **Khối Nhân sự và Đào tạo (HR & Training):** Tuyển dụng, tính lương, phúc lợi và tổ chức các khóa đào tạo nâng cao chuyên môn cho dược sĩ.
-        *   **Khối Công nghệ Thông tin (IT):** Phát triển, duy trì và nâng cấp các hệ thống phần mềm quản lý (ERP, POS), website, app.
-        *   **Khối Tài chính - Kế toán:** Quản lý dòng tiền, kế toán nghiệp vụ, báo cáo tài chính và kiểm toán nội bộ.
-        *   **Khối Marketing và Phát triển kinh doanh:** Hoạch định các chiến dịch truyền thông, tiếp thị, mở rộng mạng lưới, phân tích thị trường.
-        *   **Trung tâm Điều hành Chuỗi cung ứng (Supply Chain):** 
-            *   Hệ thống Tổng kho (Miền Bắc, Miền Trung, Miền Nam)
-            *   Đội ngũ Vận tải và Logistics
-        *   **Khối Vận hành Kinh doanh (Operations):**
-            *   Giám đốc Vùng / Khu vực
-                *   Hệ thống hơn 1.800 Nhà thuốc trên toàn quốc
-                    *   *Dược sĩ chuyên môn*
-                    *   *Cửa hàng trưởng*
-                    *   *Dược sĩ bán hàng / Tư vấn viên*
-                    *   *Nhân viên thu ngân / NV kho cửa hàng*
+- **Ban Lãnh đạo cấp cao:** Hội đồng Quản trị & Ban Tổng Giám đốc FPT Retail chỉ đạo chiến lược vĩ mô; Ban Giám đốc chuỗi Long Châu trực tiếp điều hành toàn diện.
+- **Các Khối phòng ban chức năng tại Trụ sở:**
+  - *Khối Mua hàng (Purchasing):* Hoạch định nhu cầu, đàm phán hợp đồng với các hãng dược và nhà cung cấp.
+  - *Khối Đảm bảo chất lượng (QA/QC):* Giám sát tiêu chuẩn GPP/GDP/GSP, kiểm định hồ sơ COA và cách ly thuốc lỗi.
+  - *Trung tâm Chuỗi cung ứng (Supply Chain):* Điều phối tổng kho (Bắc – Trung – Nam) và đội ngũ vận tải giao hàng.
+  - *Khối Công nghệ Thông tin (IT):* Phát triển, bảo trì hệ thống ERP, POS, website thương mại điện tử và ứng dụng di động.
+  - *Khối Nhân sự & Đào tạo (HR):* Tuyển dụng, tổ chức sát hạch chuyên môn dược và đào tạo hội nhập cho nhân viên mới.
+  - *Khối Tài chính – Kế toán:* Kiểm soát ngân sách, dòng tiền thanh toán nhà cung cấp và kế toán bán hàng.
+- **Khối Vận hành Điểm bán (Store Operations):** Giám đốc vùng / khu vực quản lý mạng lưới 1.800+ cửa hàng. Tại mỗi nhà thuốc gồm: Dược sĩ chuyên môn phụ trách pháp lý, Cửa hàng trưởng, các Dược sĩ tư vấn bán hàng và nhân viên kho quầy.
 
 ## 1.5. Hoạt động kinh doanh
 
-FPT Long Châu hiện là điểm sáng nổi bật nhất trong bức tranh tài chính của FPT Retail. Kết quả kinh doanh những năm gần đây liên tục ghi nhận mức tăng trưởng doanh thu ấn tượng, trở thành động lực tăng trưởng chính của toàn bộ tập đoàn mẹ. Sự bứt phá này phần lớn đến từ tốc độ mở mới cửa hàng thần tốc, khả năng tối ưu hóa biên lợi nhuận thông qua việc đàm phán trực tiếp với các nhà sản xuất, cũng như việc khai thác hiệu quả tập khách hàng trung thành.
+FPT Long Châu hiện là động lực tăng trưởng doanh thu lớn nhất của tập đoàn FPT Retail. Năm 2023, chuỗi đạt doanh thu 15.888 tỷ đồng (tăng trưởng 66% so với cùng kỳ), đóng góp hơn 50% tổng doanh thu hợp nhất của FRT. Doanh thu trung bình đạt khoảng 1,1 – 1,2 tỷ đồng/nhà thuốc/tháng – mức hiệu suất bán hàng cao nhất trong ngành bán lẻ dược phẩm Việt Nam.
 
-Trên thị trường bán lẻ dược phẩm Việt Nam, FPT Long Châu đang chiếm lĩnh thị phần lớn nhất và duy trì vị thế dẫn đầu trong bối cảnh cạnh tranh khốc liệt. Các đối thủ chính trong ngành bao gồm Pharmacity (tập trung vào quy mô và mô hình convenience store kết hợp dược phẩm) và An Khang (thuộc hệ sinh thái Thế Giới Di Động). Dù đối mặt với sự cạnh tranh gay gắt, FPT Long Châu vẫn duy trì được lợi thế riêng biệt. Ưu điểm cốt lõi của Long Châu nằm ở mạng lưới phân phối rộng khắp, khả năng cung ứng đầy đủ các loại thuốc đặc trị khó tìm, chính sách giá bán cạnh tranh và đội ngũ dược sĩ tư vấn chuyên nghiệp, tận tâm. 
+Lợi thế cạnh tranh cốt lõi của Long Châu xuất phát từ: danh mục thuốc đặc trị phong phú, giá bán hợp lý, năng lực tư vấn chuyên sâu của đội ngũ dược sĩ và đặc biệt là hệ thống công nghệ ERP/POS quản lý tồn kho theo thời gian thực (Real-time inventory).
 
-Hệ thống công nghệ là một trong những vũ khí chiến lược tạo nên sự khác biệt của Long Châu. Công ty vận hành mượt mà trên nền tảng ERP hiện đại, tích hợp sâu với hệ thống quản lý điểm bán (POS) tại hơn 1.800 cửa hàng. Nền tảng công nghệ này cho phép quản lý tồn kho theo thời gian thực (real-time), tối ưu hóa quy trình luân chuyển hàng hóa và hạn chế tối đa tình trạng thiếu hụt thuốc. Bên cạnh đó, hệ sinh thái số bao gồm website thương mại điện tử và ứng dụng di động cũng được đầu tư bài bản, mang lại trải nghiệm mua sắm Omnichannel toàn diện cho người dùng.
-
-**Bảng 1.3. So sánh tương quan giữa FPT Long Châu và các chuỗi đối thủ chính (Số liệu tham khảo 2024)**
+*Bảng 1.3: So sánh tương quan giữa FPT Long Châu và các chuỗi đối thủ chính (2024)*
 
 | Tiêu chí | FPT Long Châu | Pharmacity | An Khang |
 | :--- | :--- | :--- | :--- |
-| **Quy mô chuỗi** | > 1.800 nhà thuốc | ~1.000 nhà thuốc (ước tính) | ~500 nhà thuốc (đang thu hẹp/tái cấu trúc) |
-| **Công ty mẹ** | FPT Retail | SK Group (Hàn Quốc) / Mekong Capital (trước đây) | Đầu tư Thế Giới Di Động (MWG) |
-| **Cơ cấu sản phẩm** | Mạnh về thuốc kê đơn, thuốc đặc trị bệnh mãn tính, TPCN | Thiên về sản phẩm tiêu dùng y tế, chăm sóc cá nhân (CVS) | Cân bằng giữa thuốc và các sản phẩm chăm sóc sức khỏe |
-| **Định giá sản phẩm** | Rất cạnh tranh, giá sỉ cho nhiều mặt hàng đặc trị | Trung bình cao | Cạnh tranh |
-| **Nền tảng công nghệ** | ERP nội bộ mạnh, App/Web hoạt động hiệu quả, Omnichannel | App thành viên tiện lợi, hệ thống quản lý khá tốt | Thừa hưởng hệ thống IT mạnh từ MWG |
-| **Mô hình phục vụ** | Tập trung chuyên sâu vào dược lý và điều trị y tế | Mô hình nhà thuốc tiện lợi (Convenience Pharmacy) | Mô hình bán lẻ dược phẩm kết hợp với Bách Hóa Xanh/TGDĐ |
+| **Quy mô điểm bán** | > 1.800 nhà thuốc | ~1.000 nhà thuốc | ~500 nhà thuốc |
+| **Công ty chủ quản** | FPT Retail (Tập đoàn FPT) | SK Group (Hàn Quốc) | MWG (Thế Giới Di Động) |
+| **Thế mạnh sản phẩm** | Thuốc kê đơn, thuốc đặc trị bệnh mãn tính | Sản phẩm chăm sóc cá nhân (CVS), TPCN | Thuốc OTC và TPCN |
+| **Chính sách giá** | Giá cạnh tranh, ổn định | Trung bình – cao | Cạnh tranh |
+| **Nền tảng công nghệ** | ERP chuyên sâu, POS real-time, App O2O | App thành viên hiện đại | Hệ sinh thái bán lẻ MWG |
 
 ## 1.6. Định hướng chiến lược
 
-Trong tầm nhìn chiến lược giai đoạn 2025-2026, FPT Long Châu đặt mục tiêu tham vọng sẽ tiếp tục mở rộng quy mô lên hơn 2.500 nhà thuốc trên toàn quốc. Sự mở rộng này không chỉ nhằm củng cố vị thế dẫn đầu về thị phần mà còn đi sâu vào các khu vực vùng ven, nông thôn, đưa các sản phẩm thuốc chất lượng với giá tốt tiếp cận đến mọi tầng lớp người dân. Công ty xác định chiến lược phủ sóng sâu rộng là chìa khóa để duy trì lợi thế cạnh tranh về quy mô.
+Giai đoạn 2025 – 2026, FPT Long Châu đặt mục tiêu nâng quy mô mạng lưới lên **2.500 nhà thuốc**, tiếp tục mở rộng độ phủ tới các khu vực huyện xã và vùng nông thôn. Về công nghệ, công ty tập trung đẩy mạnh mô hình Omnichannel, ứng dụng Trí tuệ nhân tạo (AI) trong dự báo nhu cầu thuốc và nâng cấp hệ thống quản lý kho thông minh (Smart WMS).
 
-Song song với việc mở rộng mạng lưới vật lý, FPT Long Châu đang dồn lực cho chiến lược phát triển mô hình bán lẻ đa kênh (Omnichannel) toàn diện. Sự kết hợp nhuần nhuyễn giữa hệ thống cửa hàng offline, nền tảng mua sắm online và dịch vụ giao hàng siêu tốc được kỳ vọng sẽ tạo ra một hệ sinh thái chăm sóc sức khỏe không khoảng cách. Để thực hiện được điều này, công ty đang tăng cường ứng dụng Trí tuệ nhân tạo (AI) trong việc phân tích hành vi tiêu dùng, dự báo nhu cầu hàng hóa và cá nhân hóa tư vấn. Hệ thống quản lý kho thông minh cũng sẽ được nâng cấp liên tục để đáp ứng khối lượng xử lý đơn hàng ngày càng khổng lồ. 
-
-Ngoài mảng bán lẻ dược phẩm truyền thống, FPT Long Châu cũng đang từng bước mở rộng sang các dịch vụ chăm sóc sức khỏe toàn diện hơn. Việc triển khai thành công chuỗi trung tâm tiêm chủng vắc xin Long Châu là minh chứng rõ nét cho định hướng này. Trong tương lai, công ty dự kiến sẽ tiếp tục phát triển các dịch vụ y tế dự phòng, xét nghiệm và tư vấn sức khỏe từ xa, từng bước hiện thực hóa mục tiêu trở thành nền tảng chăm sóc sức khỏe hàng đầu và đáng tin cậy nhất đối với người dân Việt Nam.
-
+Sự bùng nổ về quy mô và số lượng giao dịch đòi hỏi Long Châu phải chuẩn hóa toàn diện các dòng chảy công việc, loại bỏ các khâu thủ công rời rạc. Đây chính là lý do thực tiễn cấp bách để nhóm tiến hành khảo sát và phân tích hệ thống quy trình nghiệp vụ của doanh nghiệp tại Chương 2.
 
 ---
 
-# CHƯƠNG 2: PHÂN TÍCH QUY TRÌNH NGHIỆP VỤ TẠI FPT LONG CHÂU
+# CHƯƠNG 2: KHẢO SÁT, LIỆT KÊ VÀ PHÂN LOẠI QUY TRÌNH NGHIỆP VỤ
 
 ## 2.1. Khái quát về quản trị quy trình nghiệp vụ
-Quản trị quy trình nghiệp vụ (Business Process Management - BPM) là một lĩnh vực thuộc chuyên ngành quản lý hoạt động, tập trung vào việc cải thiện hiệu suất doanh nghiệp thông qua việc quản lý và tối ưu hóa các quy trình nghiệp vụ của tổ chức. Thay vì chỉ xem xét một bộ phận hoặc chức năng độc lập, BPM nhìn nhận doanh nghiệp dưới góc độ của các chuỗi hoạt động có liên kết chặt chẽ với nhau, từ đó mang lại giá trị gia tăng cho khách hàng. Mục tiêu chính của BPM không chỉ là tự động hóa các bước công việc mà còn là sự thấu hiểu, phân tích và cải tiến liên tục để đáp ứng linh hoạt với sự thay đổi của thị trường.
 
-Trong bối cảnh doanh nghiệp hiện đại, BPM đóng vai trò cực kỳ quan trọng và thiết yếu. Trước áp lực cạnh tranh ngày càng gay gắt, một tổ chức sở hữu hệ thống quy trình nghiệp vụ rõ ràng, chuẩn hóa sẽ có khả năng giảm thiểu chi phí vận hành, hạn chế sai sót, và gia tăng tốc độ phục vụ khách hàng. Hơn thế nữa, BPM tạo nền tảng vững chắc cho quá trình chuyển đổi số, giúp kết nối liền mạch giữa con người, hệ thống công nghệ thông tin và chiến lược kinh doanh của doanh nghiệp.
+Quản trị quy trình nghiệp vụ (Business Process Management - BPM) là phương pháp luận quản trị toàn diện, tập trung vào việc nhận diện, chuẩn hóa, phân tích và tối ưu hóa các chuỗi hoạt động xuyên suốt nhằm mang lại giá trị gia tăng tối đa cho khách hàng và doanh nghiệp. Khác với lối quản lý theo từng phòng ban cục bộ (silo), BPM tiếp cận doanh nghiệp như một hệ sinh thái các dòng chảy công việc có liên kết chặt chẽ giữa con người, công nghệ và dữ liệu.
 
-Vòng đời của Quản trị quy trình nghiệp vụ (BPM Lifecycle) bao gồm sáu giai đoạn chính: Nhận diện (Process Identification), Khám phá (Process Discovery), Phân tích (Process Analysis), Thiết kế lại (Process Redesign), Triển khai (Process Implementation), và Giám sát (Process Monitoring). Quá trình này bắt đầu bằng việc xác định bức tranh tổng thể các quy trình (Nhận diện), tiếp tục với việc thu thập dữ liệu và lập sơ đồ hiện trạng "As-Is" (Khám phá), từ đó định lượng hoặc định tính các điểm yếu (Phân tích). Dựa trên kết quả phân tích, doanh nghiệp thiết kế quy trình tương lai "To-Be" nhằm khắc phục các nút thắt (Thiết kế lại), sau đó áp dụng vào thực tiễn kết hợp với tự động hóa CNTT (Triển khai). Cuối cùng, các chỉ số hiệu suất được thu thập và đánh giá liên tục nhằm đảm bảo tính hiệu quả và đưa ra các quyết định cải tiến tiếp theo (Giám sát).
+Theo chuẩn quốc tế (*Dumas et al., 2018*), Vòng đời BPM (BPM Lifecycle) vận hành theo chu trình 6 giai đoạn khép kín:
+1. *Nhận diện (Process Identification):* Thiết lập bức tranh danh mục và kiến trúc quy trình tổng thể.
+2. *Khám phá (Process Discovery):* Khảo sát hiện trạng và mô hình hóa sơ đồ AS-IS.
+3. *Phân tích (Process Analysis):* Đo lường thời gian, định lượng lãng phí VA/NVA và truy vết căn nguyên sự cố.
+4. *Thiết kế lại (Process Redesign):* Tái thiết kế mô hình TO-BE tinh gọn, triệt tiêu điểm nghẽn.
+5. *Triển khai (Process Implementation):* Chuyển giao quy trình, chuẩn hóa thao tác và tích hợp hạ tầng CNTT.
+6. *Giám sát (Process Monitoring):* Đánh giá liên tục các chỉ số KPI vận hành để kích hoạt vòng lặp cải tiến tiếp theo.
 
-Liên hệ với ngành dược phẩm bán lẻ, đặc biệt là chuỗi nhà thuốc lớn như FPT Long Châu, quản trị quy trình nghiệp vụ lại càng thể hiện tầm quan trọng sâu sắc. Ngành dược có tính rủi ro cao và chịu sự điều chỉnh của nhiều tiêu chuẩn khắt khe về y tế (như GPP - Thực hành tốt nhà thuốc). Do đó, áp dụng BPM không chỉ giúp Long Châu tối ưu hóa chi phí logistic hay mở rộng quy mô một cách nhanh chóng, mà còn đảm bảo mọi khâu từ nhập thuốc, bảo quản, đến tư vấn và bán thuốc đều tuân thủ chặt chẽ pháp luật. Hệ thống quy trình chuẩn xác chính là lợi thế cạnh tranh cốt lõi, giúp bảo vệ sức khỏe người tiêu dùng và giữ vững uy tín thương hiệu.
+Đối với FPT Long Châu, áp dụng BPM là điều kiện tiên quyết để chuẩn hóa chất lượng phục vụ đồng đều tại hơn 1.800 nhà thuốc, đảm bảo tuân thủ nghiêm ngặt chuẩn GPP của Bộ Y tế và duy trì lợi thế vận hành xuất sắc khi quy mô bùng nổ.
 
 ## 2.2. Phương pháp và nguồn thu thập dữ liệu
-Để hoàn thành việc nghiên cứu, mô hình hóa và phân tích các quy trình nghiệp vụ tại FPT Long Châu, nhóm nghiên cứu đã áp dụng một cách phối hợp và đa dạng nhiều phương pháp thu thập dữ liệu khác nhau. Các phương pháp chính bao gồm quan sát thực tế tại các điểm bán, phỏng vấn chuyên sâu (được mô phỏng và giả định dựa trên kinh nghiệm thực tiễn), nghiên cứu tài liệu nội bộ, và phân tích hệ thống công nghệ thông tin (website, ứng dụng). Việc quan sát thực tế tại các nhà thuốc giúp nhóm hình dung trực quan về dòng di chuyển của khách hàng, tương tác giữa dược sĩ và hệ thống POS (Point of Sale), cũng như quy trình xuất nhập kho tại chỗ. Phỏng vấn giả định với các nhân sự tại cửa hàng nhằm tìm hiểu chi tiết các bước thực hiện công việc thường ngày. Phân tích nền tảng số giúp hiểu rõ hơn về các bước thao tác đối với khách hàng trong quy trình mua sắm trực tuyến.
 
-Nguồn thu thập dữ liệu được sử dụng làm cơ sở cho nghiên cứu rất đa dạng và đảm bảo tính chính xác, cập nhật liên tục. Thứ nhất, các báo cáo thường niên và tài liệu công bố thông tin của FPT Retail cung cấp bức tranh toàn cảnh về định hướng chiến lược và quy mô của Long Châu. Thứ hai, website chính thức longchau.com và ứng dụng di động Long Châu đóng vai trò là nguồn dữ liệu quan trọng để lập sơ đồ quy trình bán hàng trực tuyến và dịch vụ chăm sóc khách hàng. Thứ ba, các văn bản quy định của Bộ Y tế, tiêu chuẩn GPP (Good Pharmacy Practice) là nguồn dữ liệu nền tảng, thiết yếu để đảm bảo tính thực tiễn và tuân thủ pháp luật của các quy trình nghiệp vụ mô phỏng. Cuối cùng, những bài báo chuyên ngành và thông cáo báo chí liên quan đến chuỗi cung ứng, hệ thống kho bãi của Long Châu cũng được sử dụng làm nguồn dữ liệu tham khảo phụ trợ để xây dựng hệ thống quy trình toàn diện.
+Để đảm bảo tính thực chứng và độ tin cậy khoa học, nhóm phối hợp 4 phương pháp và nguồn dữ liệu chủ đạo:
 
-Mặc dù nhóm đã cố gắng tiếp cận nhiều nguồn thông tin đa dạng, các phương pháp thu thập dữ liệu trên vẫn tồn tại một số hạn chế nhất định. Hạn chế lớn nhất là nhóm chưa có quyền truy cập trực tiếp vào hệ thống quản trị nguồn lực doanh nghiệp (ERP) hoặc các tài liệu mô tả quy trình nghiệp vụ nội bộ tuyệt mật của FPT Long Châu do tính bảo mật thông tin doanh nghiệp. Do vậy, một số quy trình như Quản lý chuỗi cung ứng hay Quản lý kho được xây dựng dựa trên sự suy luận từ kết quả đầu ra, quan sát bên ngoài, lý thuyết BPM chung, tiêu chuẩn ngành dược và dữ liệu phỏng vấn giả định. Dù vậy, những dữ liệu này vẫn phản ánh trung thực bản chất, đặc thù và các bước công việc cốt lõi của các quy trình nghiệp vụ hiện hành tại doanh nghiệp bán lẻ dược phẩm hàng đầu này.
+1. **Quan sát thực tế:** Ghi nhận trực tiếp luồng khách hàng, thao tác tra cứu phần mềm POS và quy trình xuất - nhập thuốc tại các nhà thuốc FPT Long Châu trong giờ cao điểm và thấp điểm.
+2. **Nghiên cứu tài liệu chính thống:** Trích xuất số liệu doanh thu, quy mô từ Báo cáo thường niên FPT Retail (FRT 2023 – 2024); đối chiếu các quy chuẩn quản lý dược của Bộ Y tế (chuẩn GPP nhà thuốc, chuẩn GSP kho bãi, GDP phân phối).
+3. **Phỏng vấn bán cấu trúc:** Thực hiện bộ 20 câu hỏi phỏng vấn định tính và định lượng (chi tiết tại *Phụ lục B*) với nhân sự phụ trách kho và dược sĩ tại quầy.
+
+4. **Khảo sát kênh số (Omnichannel):** Trải nghiệm thực tế hành trình mua sắm, tư vấn toa thuốc và đối soát thời gian giao hàng trên ứng dụng di động Long Châu và website `longchau.com.vn`.
+
+*Hạn chế nghiên cứu:* Do chính sách bảo mật nội bộ của FPT Retail, nhóm không có quyền truy cập trực tiếp vào hệ thống cơ sở dữ liệu lõi ERP/WMS. Vì vậy, các tham số chu kỳ chi tiết được xây dựng thông qua mô phỏng học thuật (academic simulation) có kiểm soát phương pháp luận, bảo đảm phản ánh chính xác bản chất vận hành thực tiễn.
+
 
 ## 2.3. Phân loại quy trình nghiệp vụ
-Kiến trúc quy trình của bất kỳ tổ chức nào cũng thường được chia thành ba nhóm chính, nhằm xác định rõ chức năng, mục tiêu và cách thức đóng góp vào chuỗi giá trị chung. Tại FPT Long Châu, các quy trình nghiệp vụ được phân loại thành: quy trình quản lý, quy trình cốt lõi và quy trình hỗ trợ.
+Kiến trúc quy trình của bất kỳ tổ chức nào cũng thường được chia thành ba nhóm chính, nhằm xác định rõ chức năng, mục tiêu và cách thức đóng góp vào chuỗi giá trị chung. Tại FPT Long Châu, các quy trình nghiệp vụ được phân loại và trực quan hóa thông qua **Mô hình Ngôi nhà Quy trình (Process House)** chuẩn quốc tế thành ba nhóm nền tảng: quy trình quản lý (mái nhà), quy trình cốt lõi (thân nhà) và quy trình hỗ trợ (bệ móng) như minh họa tại Hình 2.1 dưới đây.
+
+![Hình 2.1: Mô hình Ngôi nhà Phân loại Quy trình Nghiệp vụ tại FPT Long Châu](hinh_2_1_ngoi_nha_quy_trinh.png)
+
+*Hình 2.1: Mô hình Ngôi nhà Phân loại Quy trình Nghiệp vụ tại FPT Long Châu*
 
 ### 2.3.1. Quy trình quản lý
 Quy trình quản lý (Management Processes) là những quy trình chịu trách nhiệm định hướng, giám sát, kiểm soát và điều phối các hoạt động khác trong toàn bộ tổ chức. Các quy trình này không trực tiếp tạo ra giá trị cho khách hàng cuối, nhưng lại đóng vai trò tối quan trọng trong việc thiết lập mục tiêu kinh doanh, phân bổ nguồn lực, đảm bảo tổ chức hoạt động tuân thủ pháp luật và chiến lược đã đề ra. Tại một chuỗi dược phẩm có quy mô lớn như FPT Long Châu, quy trình quản lý giúp duy trì tính đồng nhất trong hoạt động của hàng ngàn cửa hàng và đảm bảo an toàn y tế.
-Các quy trình quản lý tiêu biểu tại Long Châu bao gồm: 
-- Quản lý chiến lược: Xác định định hướng mở rộng hệ thống nhà thuốc, chiến lược sản phẩm.
-- Quản lý chất lượng: Kiểm tra, giám sát chất lượng sản phẩm, dịch vụ khách hàng.
-- Quản lý tuân thủ pháp lý & dược: Đảm bảo đáp ứng đầy đủ yêu cầu GPP, quy định an toàn vệ sinh và hồ sơ cấp phép y tế.
-- Quản lý hiệu suất: Đo lường và đánh giá kết quả kinh doanh của các nhà thuốc và phòng ban.
+Các quy trình quản lý được chọn trong phạm vi đề tài gồm:
+- Quản lý chuỗi cung ứng: Hoạch định chiến lược nhu cầu dược phẩm, quản lý và đánh giá mạng lưới nhà cung cấp (Vendor Management), kiểm soát ngân sách mua sắm tập trung và điều phối dòng hàng toàn chuỗi.
+- Quản lý chất lượng: Kiểm tra, giám sát chất lượng sản phẩm, dịch vụ khách hàng và kiểm soát tuân thủ tiêu chuẩn GPP.
+- Quản lý tài chính – kế toán: Ghi nhận doanh thu, chi phí, quản lý dòng tiền, đối soát và các nghĩa vụ tài chính, thuế.
+- Quản lý tuân thủ pháp lý & dược: Đảm bảo đáp ứng đầy đủ yêu cầu GPP, quy định Bộ Y tế và giấy phép hành nghề dược.
 
 ### 2.3.2. Quy trình cốt lõi
 Quy trình cốt lõi (Core Processes / Primary Processes) là những quy trình tác động trực tiếp đến việc sản xuất hoặc cung cấp sản phẩm, dịch vụ cho khách hàng bên ngoài. Đây là chuỗi giá trị (Value Chain) mang lại doanh thu, lợi nhuận trực tiếp cho tổ chức, làm thỏa mãn nhu cầu của khách hàng. Đặc điểm của quy trình cốt lõi là sự hiện diện rõ nét nhất của các tương tác với thị trường và khách hàng.
 Tại chuỗi nhà thuốc FPT Long Châu, các quy trình cốt lõi bao gồm:
-- Bán thuốc tại nhà thuốc: Quy trình tiếp đón khách, tư vấn dược, kê đơn, thanh toán và xuất hóa đơn.
+- Bán thuốc tại nhà thuốc: Quy trình tiếp đón khách, tư vấn dược, kê đơn, thanh toán và xuất hóa đơn trực tiếp tại hơn 1.800 nhà thuốc.
 - Bán thuốc online: Khách hàng tìm kiếm sản phẩm trên web/app, duyệt đơn thuốc ảo, thanh toán trực tuyến, vận chuyển tận nơi.
-- Quản lý chuỗi cung ứng: Từ việc dự báo nhu cầu đến nhập hàng, điều phối thuốc từ nhà cung cấp tới kho tổng và phân phối xuống từng điểm bán.
-- Dịch vụ tư vấn dược: Hỗ trợ khách hàng về liều lượng, công dụng sản phẩm trực tiếp hoặc qua điện thoại.
+- Quản lý quan hệ khách hàng (CRM): Duy trì, chăm sóc khách hàng thành viên, tích điểm thưởng, tư vấn định kỳ và giải quyết khiếu nại.
+*(Lưu ý: Dịch vụ tư vấn dược được tích hợp trực tiếp như một hoạt động chuyên môn cốt lõi trong quy trình bán thuốc tại quầy và online).*
 
 ### 2.3.3. Quy trình hỗ trợ
 Quy trình hỗ trợ (Support Processes) là những hoạt động thiết yếu được thiết kế để phục vụ, hỗ trợ việc thực hiện trơn tru các quy trình cốt lõi và quản lý. Dù không trực tiếp tạo ra doanh thu hay tương tác thường xuyên với khách hàng cuối, chúng cung cấp nguồn nhân lực, hạ tầng tài chính, công nghệ và cơ sở vật chất để đảm bảo hệ thống vận hành liên tục.
@@ -236,36 +318,88 @@ Các quy trình hỗ trợ trọng yếu tại Long Châu gồm có:
 - Quản lý kho: Lưu trữ, bảo quản thuốc đúng nhiệt độ, điều kiện độ ẩm, xuất - nhập kho theo chuẩn FIFO/FEFO.
 - Tuyển dụng và đào tạo: Chiêu mộ dược sĩ có bằng cấp, tổ chức đào tạo kỹ năng tư vấn, cập nhật kiến thức về thuốc mới.
 - Quản lý CNTT (IT): Quản lý cơ sở hạ tầng mạng, bảo trì ứng dụng Long Châu, hệ thống ERP và máy tính tại cửa hàng.
-- Quản lý tài chính: Kế toán nội bộ, quản lý dòng tiền, báo cáo thuế.
 
 ## 2.4. Kiến trúc quy trình nghiệp vụ của FPT Long Châu
-Kiến trúc quy trình nghiệp vụ (Process Architecture) là một bản đồ chiến lược giúp tổ chức sắp xếp, cấu trúc hóa và biểu diễn trực quan các quy trình hoạt động, từ đó xác định các lĩnh vực cần cải tiến và phân bổ nguồn lực. Đối với FPT Long Châu, kiến trúc quy trình được phân bổ dựa trên 3 tầng phân loại (Quản lý – Cốt lõi – Hỗ trợ), phản ánh toàn diện hệ sinh thái vận hành của một chuỗi bán lẻ dược phẩm quy mô lớn. 
 
-Dưới đây là Bảng Kiến trúc Quy trình Nghiệp vụ (Process Architecture) tổng thể của Long Châu:
+### 2.4.1. Kiến trúc Quy trình Quản lý chuỗi cung ứng dược phẩm
+Quy trình Quản lý chuỗi cung ứng hoạch định nhu cầu và điều phối dòng lưu chuyển hàng hóa từ nhà sản xuất đến kho trung tâm và mạng lưới nhà thuốc. Kiến trúc phân rã của quy trình được biểu diễn tại Hình 2.2 dưới đây:
 
-| Tầng quy trình | Tên quy trình | Mô tả ngắn |
-| :--- | :--- | :--- |
-| **Tầng Quản lý (Management)** | Quản lý chiến lược | Lập kế hoạch kinh doanh, định hướng mở rộng chuỗi cửa hàng và phát triển hệ sinh thái y tế số. |
-| | Quản lý chất lượng | Giám sát chất lượng vận hành nhà thuốc, đảm bảo tiêu chuẩn y tế, kiểm tra định kỳ sản phẩm. |
-| | Quản lý tuân thủ pháp lý & dược | Cập nhật, thực thi các quy định y tế, GPP, đảm bảo giấy phép kinh doanh, an toàn thông tin khách hàng. |
-| **Tầng Cốt lõi (Core)** | Quản lý chuỗi cung ứng | Hoạt động thu mua nguyên vật liệu, điều phối hàng hóa từ nhà sản xuất về kho và đến từng cửa hàng. |
-| | Bán thuốc tại nhà thuốc | Trải nghiệm trực tiếp tại cửa hàng, từ khâu nhận yêu cầu, tư vấn, đến chốt đơn và trao thuốc cho khách. |
-| | Bán thuốc online | Tiếp nhận và xử lý đơn hàng từ đa kênh số, tư vấn qua điện thoại, đóng gói và vận chuyển giao hàng cuối. |
-| | Quản lý quan hệ khách hàng (CRM) | Duy trì, chăm sóc khách hàng thành viên, tích điểm thưởng, giải quyết khiếu nại. |
-| **Tầng Hỗ trợ (Support)** | Quản lý kho | Tổ chức khu vực lưu trữ, kiểm soát tồn kho, bảo quản theo tiêu chuẩn dược phẩm đặc thù. |
-| | Tuyển dụng và đào tạo | Bổ sung nhân lực dược sĩ chất lượng, huấn luyện kỹ năng mềm, cập nhật chuyên môn định kỳ. |
-| | Quản lý CNTT | Vận hành hệ thống ERP, đảm bảo ứng dụng Long Châu, hệ thống thanh toán hoạt động ổn định. |
-| | Quản lý tài chính - kế toán | Ghi nhận chi phí, doanh thu, thanh toán nhà cung cấp, và duy trì an toàn dòng tiền doanh nghiệp. |
+![Hình 2.2: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chuỗi cung ứng dược phẩm](hinh_2_2_kientruc_chuoi_cung_ung.png)
 
-Mối liên hệ giữa các quy trình trong kiến trúc trên là một mạng lưới đan xen và phụ thuộc lẫn nhau. **Tầng cốt lõi** là động lực chính tạo ra doanh thu (ví dụ: quá trình Bán thuốc trực tiếp cần nguồn cung hàng hóa từ Quản lý chuỗi cung ứng). Tuy nhiên, để tầng cốt lõi hoạt động không gián đoạn, nó phải dựa hoàn toàn vào **Tầng hỗ trợ** (như Quản lý kho sẽ đảm bảo hàng hóa tại điểm bán luôn đủ số lượng; Tuyển dụng và đào tạo cung cấp đội ngũ dược sĩ tư vấn). Trong khi đó, **Tầng quản lý** sẽ định hướng và thiết lập ranh giới vận hành cho hai tầng dưới, chẳng hạn như Quản lý tuân thủ pháp lý đặt ra các quy định nghiêm ngặt mà quy trình Bán thuốc hay Quản lý kho bắt buộc phải tuân theo (như kiểm soát nhiệt độ kho lạnh, cách kiểm tra đơn thuốc có kê toa). Sự phối hợp nhịp nhàng giữa 3 tầng này là yếu tố cốt lõi giúp Long Châu duy trì lợi thế vận hành xuất sắc.
+*Hình 2.2: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chuỗi cung ứng dược phẩm*
+
+### 2.4.2. Kiến trúc Quy trình Quản lý chất lượng dược phẩm (QA/QC)
+Quy trình Quản lý chất lượng đảm bảo mọi lô thuốc nhập kho và phân phối đều đáp ứng nghiêm ngặt tiêu chuẩn GPP, GDP và hồ sơ COA điện tử. Kiến trúc phân rã của quy trình được thể hiện tại Hình 2.3 dưới đây:
+
+![Hình 2.3: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chất lượng dược phẩm (QA/QC)](hinh_2_3_kientruc_quan_ly_chat_luong.png)
+
+*Hình 2.3: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chất lượng dược phẩm (QA/QC)*
+
+### 2.4.3. Kiến trúc Quy trình Bán thuốc tại nhà thuốc
+Là quy trình cốt lõi tiếp xúc trực tiếp với người bệnh tại quầy, phục vụ nhu cầu tư vấn chuyên môn và cấp phát thuốc theo đơn. Kiến trúc phân rã của quy trình được mô tả tại Hình 2.4 dưới đây:
+
+![Hình 2.4: Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc tại nhà thuốc](hinh_2_4_kientruc_ban_thuoc_tai_nha_thuoc.png)
+
+*Hình 2.4: Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc tại nhà thuốc*
+
+### 2.4.4. Kiến trúc Quy trình Bán thuốc online (Omnichannel O2O)
+Quy trình phục vụ khách hàng trên các nền tảng số (Website, Mobile App), thẩm định đơn thuốc từ xa và giao hàng hỏa tốc trong 30 phút. Kiến trúc phân rã được biểu diễn tại Hình 2.5 dưới đây:
+
+![Hình 2.5: Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc online](hinh_2_5_kientruc_ban_thuoc_online.png)
+
+*Hình 2.5: Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc online (O2O)*
+
+### 2.4.5. Kiến trúc Quy trình Quản lý kho dược phẩm (WMS)
+Quy trình đảm bảo điều kiện bảo quản thuốc chuẩn GSP, kiểm soát hạn sử dụng theo nguyên tắc FEFO/FIFO và soạn hàng chính xác. Kiến trúc phân rã được mô tả tại Hình 2.6 dưới đây:
+
+![Hình 2.6: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý kho dược phẩm](hinh_2_6_kientruc_quan_ly_kho.png)
+
+*Hình 2.6: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý kho dược phẩm (WMS)*
+
+### 2.4.6. Kiến trúc Quy trình Tuyển dụng và đào tạo Dược sĩ
+Quy trình thu hút, tuyển chọn nhân sự có Chứng chỉ hành nghề (CCHN), đào tạo hội nhập và nâng cao tại Long Châu Academy. Kiến trúc phân rã được thể hiện tại Hình 2.7 dưới đây:
+
+![Hình 2.7: Sơ đồ Kiến trúc phân rã – Quy trình Tuyển dụng và đào tạo Dược sĩ](hinh_2_7_kientruc_tuyen_dung_dao_tao.png)
+
+*Hình 2.7: Sơ đồ Kiến trúc phân rã – Quy trình Tuyển dụng và đào tạo Dược sĩ*
+
+### 2.4.7. Kiến trúc Quy trình Quản lý công nghệ thông tin & Hạ tầng số
+Quy trình duy trì sự vận hành ổn định 24/7 của hệ thống ERP, Smart POS, ứng dụng di động và bảo mật dữ liệu y tế. Kiến trúc phân rã được mô tả tại Hình 2.8 dưới đây:
+
+![Hình 2.8: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý công nghệ thông tin](hinh_2_8_kientruc_quan_ly_cntt.png)
+
+*Hình 2.8: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý công nghệ thông tin & Hạ tầng số*
+
+### 2.4.8. Kiến trúc Quy trình Quản lý tài chính – Kế toán
+Quy trình thu thập, đối soát dòng tiền bán lẻ vi mô và lập báo cáo tài chính minh bạch theo chuẩn VAS. Kiến trúc phân rã được biểu diễn tại Hình 2.9 dưới đây:
+
+![Hình 2.9: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tài chính – Kế toán](hinh_2_9_kientruc_tai_chinh_ke_toan.png)
+
+*Hình 2.9: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tài chính – Kế toán*
+
+### 2.4.9. Kiến trúc Quy trình Quản lý quan hệ khách hàng (CRM)
+Quy trình quản lý dữ liệu hội viên, tích điểm F-Reward, tự động gửi nhắc lịch uống thuốc và chăm sóc sức khỏe định kỳ. Kiến trúc phân rã được thể hiện tại Hình 2.10 dưới đây:
+
+![Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)](hinh_2_10_kientruc_crm.png)
+
+*Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)*
+
+### 2.4.10. Kiến trúc Quy trình Quản lý tuân thủ pháp lý & dược
+Quy trình cập nhật văn bản quy phạm pháp luật, giám sát điều kiện duy trì chuẩn GPP/GDP và phòng ngừa rủi ro pháp lý ngành dược. Kiến trúc phân rã được mô tả tại Hình 2.11 dưới đây:
+
+![Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược](hinh_2_11_kientruc_tuan_thu_phap_ly.png)
+
+*Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược*
 
 ## 2.5. Danh sách 10 quy trình nghiệp vụ
 
 Dựa vào kiến trúc quy trình tổng thể ở mục trước, dưới đây là danh sách chi tiết 10 quy trình nghiệp vụ nổi bật tại FPT Long Châu, được chọn lọc để biểu diễn các hoạt động phong phú trong tổ chức.
 
+*Bảng 2.1: Danh mục 10 quy trình nghiệp vụ chính của FPT Long Châu*
+
 | STT | Tên quy trình | Phân loại | Bộ phận chủ quản | Mức độ phức tạp | Tần suất thực hiện |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Quản lý chuỗi cung ứng | Cốt lõi | Ban Cung ứng & Mua hàng | Cao | Hàng ngày |
+| 1 | Quản lý chuỗi cung ứng | Quản lý | Ban Cung ứng & Mua hàng | Cao | Hàng ngày |
 | 2 | Quản lý chất lượng | Quản lý | Ban Đảm bảo Chất lượng | Trung bình | Hàng tuần / Hàng tháng |
 | 3 | Bán thuốc tại nhà thuốc | Cốt lõi | Cửa hàng Long Châu | Trung bình | Liên tục (Hàng giờ) |
 | 4 | Bán thuốc online | Cốt lõi | Thương mại điện tử / Cửa hàng | Cao | Liên tục (Hàng giờ) |
@@ -278,77 +412,229 @@ Dựa vào kiến trúc quy trình tổng thể ở mục trước, dưới đâ
 
 ## 2.6. Mô tả tổng quan 10 quy trình nghiệp vụ
 
-Dưới đây là mô tả ngắn gọn về đặc điểm hoạt động của từng quy trình được liệt kê ở mục trên:
+Theo phương pháp luận Quản trị Quy trình Nghiệp vụ chuẩn quốc tế (*Dumas et al., 2018*), mỗi quy trình nghiệp vụ cần được định danh toàn diện thông qua một Hồ sơ thuộc tính quy trình (Process Profile) kết hợp với chuỗi hoạt động chi tiết. Nhằm bảo đảm tính hệ thống, khả năng truy vết và phân tích khép kín dòng giá trị, 10 quy trình nghiệp vụ của FPT Long Châu được chuẩn hóa thống nhất theo 8 thành phần then chốt: **Mục tiêu**, **Đối tượng khách hàng phục vụ** (phân định rõ Khách hàng bên ngoài và Khách hàng nội bộ), **Tác nhân chính**, **Đầu vào & Sự kiện kích hoạt**, **Chuỗi các bước thực hiện tuần tự (5 bước nghiệp vụ Cấp 2)**, **Đầu ra vật phẩm & dữ liệu**, **Các khả năng kết quả** (Kết quả tích cực, Kết quả tiêu cực/từ chối, Kết quả ngoại lệ/điều chỉnh) và **Điểm đặc thù / Thách thức vận hành**.
 
-**1. Quản lý chuỗi cung ứng**
-- **Mục tiêu**: Đảm bảo nguồn cung ứng thuốc liên tục, ổn định từ nhà sản xuất đến tận tay người tiêu dùng, tối ưu hóa chi phí vận chuyển.
-- **Tác nhân chính**: Nhân viên mua hàng, Nhà cung cấp (hãng dược), Đội ngũ điều phối, Hệ thống ERP.
-- **Đầu vào**: Dữ liệu dự báo nhu cầu bán hàng, danh mục hàng hết tồn kho.
-- **Đầu ra**: Đơn đặt hàng hoàn thành, hàng hóa sẵn sàng phân bổ về các trung tâm.
-- **Điểm đặc thù/Thách thức**: Sự đa dạng lớn của hàng hóa dược phẩm với nhiều hạn sử dụng khác nhau; thách thức trong việc cân đối lượng tồn kho tại hơn 1800 cửa hàng toàn quốc.
+Dưới đây là bản mô tả chi tiết hồ sơ và chuỗi các bước thực hiện của 10 quy trình nghiệp vụ tại FPT Long Châu:
 
-**2. Quản lý chất lượng**
-- **Mục tiêu**: Kiểm soát và đánh giá định kỳ chất lượng hàng hóa, cơ sở vật chất và dịch vụ để bảo vệ uy tín nhà thuốc.
-- **Tác nhân chính**: Nhân viên kiểm soát chất lượng (QA/QC), Quản lý cửa hàng, Dược sĩ.
-- **Đầu vào**: Báo cáo sự cố chất lượng, phản hồi của khách hàng, tiêu chuẩn GPP.
-- **Đầu ra**: Biên bản kiểm tra chất lượng, kế hoạch khắc phục điểm yếu tại cửa hàng.
-- **Điểm đặc thù/Thách thức**: Khối lượng công việc lớn do quy mô chuỗi rộng lớn, đòi hỏi hệ thống đo lường chất lượng phải chuẩn hóa, số hóa và tự động hóa cao.
+**1. Quản lý chuỗi cung ứng (Supply Chain Management - QT-01)**
+- **Mục tiêu**: Hoạch định nhu cầu, bảo đảm nguồn cung ứng thuốc và vật tư y tế liên tục, ổn định từ nhà sản xuất đến kho trung tâm và toàn bộ mạng lưới hơn 1.800 nhà thuốc; tối ưu hóa chi phí mua sắm và duy trì mức tồn kho an toàn toàn chuỗi.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng nội bộ*: Mạng lưới hơn 1.800 nhà thuốc chi nhánh (cần bổ sung hàng hóa kịp thời để duy trì kinh doanh), Ban Giám đốc điều hành (cần kiểm soát ngân sách mua hàng tập trung và biên lợi nhuận gộp).
+  + *Khách hàng bên ngoài*: Các đối tác cung ứng, hãng dược phẩm và nhà sản xuất trong và ngoài nước (nhận đơn đặt hàng PO minh bạch và đúng cam kết hợp đồng).
+- **Tác nhân chính**: Nhà thuốc chi nhánh (Nhân viên Kho quầy), Trưởng kho trung tâm, Bộ phận Mua hàng tập trung, Giám đốc chuỗi cung ứng, Các Nhà cung cấp (NCC).
+- **Đầu vào & Sự kiện kích hoạt**: Dữ liệu dự báo nhu cầu bán hàng từ hệ thống BI, danh mục hàng hóa chạm điểm đặt hàng lại (ROP), cảnh báo thiếu hàng khẩn cấp từ các nhà thuốc.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Dự báo & Hoạch định nhu cầu)*: Ban Mua hàng phân tích dữ liệu bán hàng vi mô từ hệ thống BI/SCM, đối chiếu mức tồn kho an toàn (ROP) để lập kế hoạch mua sắm thuốc tập trung toàn chuỗi.
+  + *Bước 2 (Tạo đơn đặt hàng & Đàm phán nhà cung cấp)*: Nhân viên Mua hàng lập đơn đặt hàng dự thảo (PO) trên Portal NCC, thương thảo về đơn giá, chiết khấu thương mại và cam kết thời gian giao hàng (SLA).
+  + *Bước 3 (Phê duyệt đơn mua hàng)*: Đơn PO được chuyển trình qua hệ thống ERP Approval; Trưởng phòng Mua hàng hoặc Giám đốc chuỗi ký duyệt hạn mức ngân sách mua tập trung.
+  + *Bước 4 (Tiếp nhận & Kiểm kho tổng)*: Kho trung tâm tiếp nhận xe hàng từ nhà cung cấp, nhân viên kho quét mã vạch kiểm đếm số lượng thực tế và đối chiếu với chứng từ đơn PO.
+  + *Bước 5 (Điều phối & Phân phối toàn chuỗi)*: Bộ phận Logistics lập lịch vận chuyển qua hệ thống TMS, tổ chức bốc xếp và phân bổ thuốc về hơn 1.800 nhà thuốc chi nhánh trên toàn quốc.
+- **Đầu ra vật phẩm & dữ liệu**: Đơn đặt hàng (PO) được phê duyệt số, hợp đồng mua sắm điện tử, dữ liệu PO đồng bộ trên hệ thống ERP, lịch điều phối bến bãi tiếp nhận hàng.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Nhà cung cấp xác nhận đơn hàng, giao hàng đúng hẹn, đúng chủng loại, đạt 100% tiêu chuẩn bảo quản GSP/GDP; toàn chuỗi đạt tỷ lệ đáp ứng hàng hóa (Fill Rate) ≥ 98%.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Đơn đặt hàng bị Giám đốc chuỗi từ chối phê duyệt do vượt hạn mức ngân sách quý; hoặc Nhà cung ứng thông báo hủy đơn do đứt gãy dây chuyền sản xuất thuốc.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Nhà cung ứng thiếu hụt cục bộ một số hoạt chất → đàm phán giao hàng làm nhiều đợt (partial shipment), hoặc kích hoạt nhà cung cấp dự phòng tương đương sinh học.
+- **Điểm đặc thù / Thách thức vận hành**: Danh mục SKU dược phẩm vô cùng phong phú (hơn 10.000 mã hàng) với hạn dùng khác nhau; áp lực điều phối cung ứng đa vùng miền mà không gây ứ đọng vốn lưu động.
 
-**3. Bán thuốc tại nhà thuốc**
-- **Mục tiêu**: Phục vụ và cung cấp dược phẩm đúng toa, đúng bệnh, mang lại trải nghiệm tư vấn chu đáo cho khách mua trực tiếp.
-- **Tác nhân chính**: Khách hàng, Dược sĩ tư vấn, Hệ thống POS (Point of Sale).
-- **Đầu vào**: Đơn thuốc của khách hàng hoặc triệu chứng khách hàng cung cấp.
-- **Đầu ra**: Khách nhận đúng thuốc, biên lai thanh toán được ghi nhận lên hệ thống.
-- **Điểm đặc thù/Thách thức**: Đòi hỏi dược sĩ phải thao tác nhanh chóng nhưng vẫn tuân thủ nghiêm ngặt quy định không được bán thuốc kê đơn khi thiếu toa hợp lệ.
+**2. Quản lý chất lượng (Quality Management - QT-02)**
+- **Mục tiêu**: Giám sát, kiểm nghiệm và thẩm định định kỳ chất lượng dược phẩm, điều kiện bảo quản nhiệt độ - độ ẩm và quy chuẩn thực hành tại quầy, bảo đảm 100% sản phẩm đạt chuẩn GPP của Bộ Y tế và bảo vệ an toàn tính mạng người bệnh.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng bên ngoài*: Người bệnh và khách hàng tiêu dùng (được bảo đảm sử dụng thuốc chính hãng, tuyệt đối an toàn, rõ nguồn gốc); Cơ quan quản lý Nhà nước (Cục Quản lý Dược, Sở Y tế - kiểm tra tuân thủ pháp lý y tế).
+  + *Khách hàng nội bộ*: Khối Kho vận và Khối Nhà thuốc (nhận chứng nhận kiểm định đạt chuẩn để đủ điều kiện nhập kho và phân phối bày bán).
+- **Tác nhân chính**: Dược sĩ phụ trách QA, Nhân viên kiểm kho & lấy mẫu (QC), Phòng thử nghiệm Lab nội bộ, Trưởng phòng QA & Ban Giám đốc chuỗi, Viện Kiểm nghiệm thuốc Trung ương (đơn vị giám định độc lập).
+- **Đầu vào & Sự kiện kích hoạt**: Lô dược phẩm mới cập bến kho tiếp nhận, hồ sơ phiếu kiểm nghiệm gốc (COA) của nhà sản xuất, bộ tiêu chuẩn GPP/GDP hiện hành, công văn cảnh báo thu hồi thuốc khẩn cấp từ Cục Quản lý Dược.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Tiếp nhận lô hàng & Thẩm định hồ sơ COA)*: Dược sĩ QA tiếp nhận lô thuốc tại bến nhập kho, kiểm tra tính pháp lý của hồ sơ, số đăng ký lưu hành và phiếu kiểm nghiệm xuất xưởng gốc (COA).
+  + *Bước 2 (Kiểm tra cảm quan & Lấy mẫu QC)*: Nhân viên QC kiểm tra ngoại quan bao bì, tem nhãn phụ tiếng Việt, kiểm tra thiết bị ghi nhiệt độ dây chuyền lạnh (Cold Chain) và tiến hành lấy mẫu theo quy chuẩn GPP/GDP.
+  + *Bước 3 (Kiểm nghiệm tại phòng Lab nội bộ)*: Mẫu thuốc được chuyển về phòng Lab nội bộ để phân tích các chỉ tiêu lý - hóa, độ rã, độ đồng đều khối lượng và định lượng hoạt chất chính.
+  + *Bước 4 (Đánh giá tiêu chuẩn & Ra quyết định)*: Trưởng phòng QA đối chiếu kết quả kiểm nghiệm với tiêu chuẩn Dược điển Việt Nam, thẩm định các cảnh báo thu hồi thuốc từ Cục Quản lý Dược để ra quyết định chấp thuận hay từ chối.
+  + *Bước 5 (Cấp phép nhập kho / Xử lý biệt trữ)*: Dược sĩ QA cấp tem đạt chuẩn GPP cho phép nhập kho ERP lưu thông; hoặc lập biên bản niêm phong đưa vào khu Biệt trữ (Quarantine) để trả về nhà cung cấp/tiêu hủy.
+- **Đầu ra vật phẩm & dữ liệu**: Phiếu chứng nhận kiểm định đạt chuẩn cho phép nhập kho ERP, hồ sơ theo dõi nhiệt ẩm tự động, hoặc Biên bản niêm phong/hủy thuốc/trả về nơi sản xuất.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Lô thuốc đạt 100% tiêu chí cảm quan, hàm lượng hoạt chất và hồ sơ COA điện tử hợp lệ → cấp phép dán tem thông quan nhập kho và lưu hành toàn chuỗi.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Lô hàng không đạt chuẩn (hư hao bao bì, đổi màu hoạt chất, nhiệt độ thùng lạnh vượt ngưỡng cho phép, COA nghi vấn) → lập biên bản từ chối tiếp nhận, niêm phong và trả lại nhà cung ứng.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Lô thuốc có thông số nghi ngờ chưa kết luận được → đưa vào khu vực "Biệt trữ" (Quarantine) và gửi mẫu hỏa tốc đến Viện Kiểm nghiệm thuốc Trung ương để thẩm định chuyên sâu lần hai.
+- **Điểm đặc thù / Thách thức vận hành**: Khối lượng lô hàng luân chuyển hàng ngày cực lớn; yêu cầu kiểm soát chuỗi cung ứng lạnh (Cold Chain 2°C - 8°C) đối với vắc xin và thuốc sinh học vô cùng khắt khe.
 
-**4. Bán thuốc online**
-- **Mục tiêu**: Đóng gói, xử lý và giao hàng tận nơi các đơn đặt hàng dược phẩm trực tuyến một cách chính xác, nhanh chóng nhất.
-- **Tác nhân chính**: Khách hàng trực tuyến, Dược sĩ (thẩm định toa), Nhân viên đóng gói, Đối tác giao hàng (Shipper).
-- **Đầu vào**: Đơn đặt hàng trên ứng dụng/website, hình ảnh toa thuốc (nếu có).
-- **Đầu ra**: Đơn hàng giao thành công, thanh toán hoàn tất (COD hoặc trực tuyến).
-- **Điểm đặc thù/Thách thức**: Quy trình phức tạp do cần bước dược sĩ gọi điện tư vấn, thẩm định toa thuốc online, và áp lực thời gian giao hàng (thường cam kết dưới 1-2 giờ).
+**3. Bán thuốc tại nhà thuốc (In-Store Pharmacy Sales - QT-03)**
+- **Mục tiêu**: Tiếp đón chu đáo, tư vấn đúng bệnh - đúng thuốc, cấp phát chính xác theo đơn bác sĩ và mang lại trải nghiệm chăm sóc y tế tận tâm, minh bạch tại hơn 1.800 nhà thuốc.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng bên ngoài*: Người bệnh, người nhà bệnh nhân, người mua thuốc kê đơn / OTC, khách hàng mua thực phẩm chức năng và hội viên thân thiết F-Reward.
+  + *Khách hàng nội bộ*: Bộ phận Kế toán - Tài chính (tiếp nhận dòng tiền thanh toán bán lẻ vi mô), Bộ phận Kho chi nhánh (nhận tín hiệu trừ lùi tồn kho tự động trên hệ thống ERP).
+- **Tác nhân chính**: Khách hàng trực tiếp, Dược sĩ tư vấn tại quầy, Nhân viên thu ngân, Dược sĩ kho quầy (bảo quản thuốc chuẩn GPP), Hệ thống Smart POS bán lẻ.
+- **Đầu vào & Sự kiện kích hoạt**: Khách hàng đến quầy xuất trình đơn thuốc của cơ sở y tế hoặc mô tả triệu chứng bệnh học thông thường; số điện thoại đăng ký hội viên.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Tiếp đón & Tiếp nhận yêu cầu)*: Dược sĩ tiếp đón người bệnh tại quầy thuốc, tiếp nhận đơn thuốc từ cơ sở y tế hoặc lắng nghe khách hàng mô tả triệu chứng bệnh học thông thường.
+  + *Bước 2 (Thẩm định đơn thuốc & Tư vấn dược)*: Dược sĩ tra cứu Cơ sở dữ liệu Dược Quốc gia trên POS, kiểm tra tính hợp lệ của toa thuốc (thời hạn, chữ ký bác sĩ), tư vấn liều dùng, tương tác thuốc và giải thích cặn kẽ phác đồ điều trị.
+  + *Bước 3 (Lập đơn bán hàng & Thu tiền)*: Dược sĩ quét mã barcode sản phẩm lên màn hình Smart POS, kiểm tra chính sách tích điểm hội viên F-Reward và thu ngân qua tiền mặt, thẻ ngân hàng hoặc quét mã QR VNPay.
+  + *Bước 4 (Soạn thuốc & Dán nhãn liều dùng)*: Dược sĩ kho quầy lấy thuốc từ tủ bảo quản GPP theo đúng nguyên tắc cận hạn xuất trước (FEFO), in và dán nhãn hướng dẫn liều dùng cá nhân hóa lên từng hộp/vỉ thuốc.
+  + *Bước 5 (Bàn giao thuốc & Dặn dò người bệnh)*: Thực hiện quy tắc kiểm soát y tế "3 tra 5 đối", dặn dò người bệnh thời điểm uống thuốc, bàn giao thuốc cùng hóa đơn điện tử VAT và hệ thống ERP tự động trừ lùi tồn kho thời gian thực.
+- **Đầu ra vật phẩm & dữ liệu**: Túi thuốc được đóng gói an toàn kèm hướng dẫn liều dùng rõ ràng; hóa đơn điện tử / phiếu thanh toán hợp lệ; số liệu tồn kho ERP bị trừ lùi thời gian thực; điểm thưởng F-Reward được tích lũy.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Khách hàng được dược sĩ tư vấn tận tình, toa thuốc hợp lệ, thanh toán nhanh chóng, nhận đúng thuốc và hoàn toàn hài lòng với dịch vụ.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Đơn thuốc không hợp lệ (hết hạn quá 5 ngày, kê sai danh mục thuốc kiểm soát đặc biệt/thuốc gây nghiện) → Dược sĩ từ chối bán thuốc và giải thích cặn kẽ theo đúng luật; hoặc khách hàng không đồng ý mức giá/không mua.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Cửa hàng hết cục bộ một mặt hàng trong đơn → Dược sĩ tra cứu kho các chi nhánh lân cận trên hệ thống POS để điều phối giao hỏa tốc tận nhà cho khách trong 30 phút, hoặc đề xuất hoạt chất tương đương sinh học (sau khi được khách hàng đồng thuận).
+- **Điểm đặc thù / Thách thức vận hành**: Lưu lượng khách dồn ứ giờ cao điểm gây ùn tắc tại quầy; đòi hỏi dược sĩ thao tác tra cứu nhanh nhưng phải tuyệt đối tuân thủ trách nhiệm đạo đức y khoa và quy chế dược.
 
-**5. Quản lý kho**
-- **Mục tiêu**: Tổ chức lưu trữ hàng hóa một cách khoa học, kiểm soát chặt chẽ điều kiện bảo quản cũng như số lượng xuất/nhập, đảm bảo nguyên tắc FIFO/FEFO.
-- **Tác nhân chính**: Thủ kho, Nhân viên bốc xếp, Hệ thống Quản lý Kho (WMS).
-- **Đầu vào**: Hàng hóa từ nhà cung cấp chuyển về, Phiếu yêu cầu xuất kho.
-- **Đầu ra**: Hàng hóa lưu trữ đúng vị trí, Phiếu xuất/nhập kho được cập nhật, Báo cáo tồn kho.
-- **Điểm đặc thù/Thách thức**: Các mặt hàng dược phẩm yêu cầu nghiêm ngặt về nhiệt độ, độ ẩm (như vắc xin, thuốc tiểu đường), rủi ro lớn nếu kho bị sai lệch số liệu.
+**4. Bán thuốc online (Omnichannel O2O Sales - QT-04)**
+- **Mục tiêu**: Tiếp nhận đơn hàng từ các kênh số (Website, Mobile App), tổ chức thẩm định đơn thuốc từ xa qua dược sĩ trực tuyến và giao hàng hỏa tốc trong 30 phút, đem lại sự thuận tiện tối đa cho người bệnh.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng bên ngoài*: Người tiêu dùng kỹ thuật số, bệnh nhân ở xa hoặc gặp khó khăn khi di chuyển trực tiếp đến cửa hàng, người dùng mua thuốc định kỳ theo phác đồ.
+  + *Khách hàng nội bộ*: Ban Thương mại điện tử (đo lường tỷ lệ hoàn tất đơn hàng và doanh số số hóa), Đội ngũ Shipper / Nhà thuốc điều phối (nhận nhiệm vụ chuẩn bị đơn hàng).
+- **Tác nhân chính**: Khách hàng Online, Nhân viên CSKH/Telesale, Dược sĩ thẩm định toa trực tuyến, Nhà thuốc điều phối đóng gói (O2O Hub), Đội ngũ Giao vận (Shipper).
+- **Đầu vào & Sự kiện kích hoạt**: Đơn đặt hàng được khách tạo trên Website/App, ảnh chụp toa thuốc tải lên (đối với thuốc kê đơn), địa chỉ nhận hàng và hình thức thanh toán.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Tiếp nhận đơn hàng trực tuyến)*: Hệ thống quản lý đơn hàng (OMS) tự động tiếp nhận giỏ hàng từ Website longchau.com hoặc Mobile App, phân loại đơn thuốc OTC hay đơn thuốc kê đơn (Rx).
+  + *Bước 2 (Gọi tư vấn & Thẩm định toa online)*: Dược sĩ trực tuyến liên hệ với khách hàng qua điện thoại/video call để xác minh thông tin bệnh nhân, thẩm định ảnh chụp đơn thuốc của bác sĩ và hướng dẫn sử dụng từ xa.
+  + *Bước 3 (Điều phối nhà thuốc gần nhất)*: Thuật toán O2O tự động quét và phân bổ đơn hàng cho nhà thuốc Long Châu gần vị trí người nhận nhất (bán kính < 3km) đang có đủ tồn kho sẵn sàng.
+  + *Bước 4 (Soạn thuốc & Đóng gói niêm phong)*: Dược sĩ tại nhà thuốc nhận đơn tiến hành soạn thuốc, dán nhãn liều dùng cá nhân hóa và đóng gói chuyên dụng trong túi seal niêm phong đạt chuẩn y tế (kèm đá gel nếu là thuốc lạnh).
+  + *Bước 5 (Giao hàng hỏa tốc & Thanh toán COD)*: Đội ngũ Shipper nhận kiện hàng, di chuyển giao tận tay khách hàng trong vòng 30 phút, đối soát tiền thu hộ COD hoặc xác nhận mã đơn thanh toán trực tuyến.
+- **Đầu ra vật phẩm & dữ liệu**: Kiện hàng đóng gói niêm phong kín đáo theo chuẩn y tế, phiếu hướng dẫn sử dụng thuốc đính kèm, mã xác thực đơn hàng thành công, biên nhận COD hoặc xác nhận thanh toán trực tuyến (VNPay/Momo).
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Toa thuốc được thẩm định hợp lệ, đơn hàng được soạn đúng và giao đến tận tay khách hàng trong vòng 30 - 60 phút, giao dịch thanh toán thành công.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Đơn hàng bị hủy do ảnh chụp toa thuốc bị mờ, giả mạo hoặc thuốc kê đơn cấm bán online theo quy định của Bộ Y tế; hoặc khách hàng chủ động hủy đơn trước giờ giao hàng.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Shipper giao tới nơi nhưng khách không thể nhận hàng ngay → lưu giữ tạm thời tại nhà thuốc điều phối và xếp lịch giao lại lần hai; hoặc hàng hóa bị hư hỏng trong quá trình vận chuyển → lập tức đổi kiện thuốc mới giao bù hỏa tốc.
+- **Điểm đặc thù / Thách thức vận hành**: Phải xác thực chặt chẽ tính pháp lý của đơn thuốc điện tử từ xa; áp lực điều phối mạng lưới giao vận hỏa tốc 30 phút trong điều kiện thời tiết và giao thông phức tạp.
 
-**6. Tuyển dụng và đào tạo**
-- **Mục tiêu**: Thu hút, tuyển chọn đúng ứng viên chất lượng (đặc biệt là dược sĩ), đồng thời duy trì hệ thống đào tạo kỹ năng tư vấn chuyên nghiệp.
-- **Tác nhân chính**: Nhân viên Tuyển dụng, Chuyên viên Đào tạo nội bộ, Ứng viên.
-- **Đầu vào**: Yêu cầu tuyển dụng từ các phòng ban hoặc cửa hàng mới, ngân sách đào tạo.
-- **Đầu ra**: Nhân sự mới ký hợp đồng làm việc, nhân viên vượt qua các bài kiểm tra kỹ năng định kỳ.
-- **Điểm đặc thù/Thách thức**: Tốc độ mở rộng hàng trăm cửa hàng/năm đòi hỏi bộ máy tuyển dụng phải chạy hết công suất mà vẫn không làm giảm tiêu chuẩn đầu vào của nghề y dược.
+**5. Quản lý kho (Warehouse Management - QT-05)**
+- **Mục tiêu**: Tổ chức tiếp nhận, sắp xếp lưu kho khoa học, bảo quản an toàn thuốc theo tiêu chuẩn GSP; kiểm soát hạn dùng theo nguyên tắc FEFO/FIFO và điều phối xuất hàng chính xác, triệt tiêu sai lệch tồn kho.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng nội bộ*: Toàn bộ mạng lưới hơn 1.800 nhà thuốc chi nhánh (tiếp nhận dòng hàng phân bổ đều đặn hàng ngày), Bộ phận Mua sắm (nhận số liệu tồn kho chính xác để lập kế hoạch nhập hàng).
+  + *Khách hàng bên ngoài*: Đơn vị vận chuyển logistics đối tác (tiếp nhận kiện hàng chuẩn hóa để vận chuyển liên tỉnh).
+- **Tác nhân chính**: Bộ phận Tiếp nhận & Nhập kho (Inbound), Dược sĩ quản trị kho GSP & Biệt trữ, Bộ phận Soạn hàng & Xuất kho (Outbound), Trưởng kho kiểm kê & Quản trị WMS/ERP, Đội xe vận tải.
+- **Đầu vào & Sự kiện kích hoạt**: Lô hàng từ nhà cung cấp kèm phiếu giao hàng hợp lệ; Phiếu yêu cầu xuất kho điều chuyển từ mạng lưới nhà thuốc; Lịch kiểm kê định kỳ toàn kho.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Tiếp nhận & Kiểm đếm Inbound)*: Xe hàng NCC cập bến kho tổng, nhân viên sử dụng máy PDA quét mã vạch/mã QR để kiểm đếm số lượng kiện hàng và đối chiếu khớp lệnh PO trên hệ thống WMS.
+  + *Bước 2 (Định vị kệ & Lưu trữ chuẩn GSP)*: Hệ thống WMS tự động chỉ định vị trí kệ lưu trữ tối ưu (Putaway Bin Location); nhân viên sắp xếp thuốc vào đúng khu vực bảo quản đạt chuẩn GSP theo nhiệt độ và độ ẩm quy định.
+  + *Bước 3 (Kiểm kê & Cảnh báo hạn dùng FEFO)*: Cảm biến IoT tự động giám sát nhiệt độ môi trường kho 24/7; phần mềm ERP định kỳ quét dữ liệu và tự động phát cảnh báo các lô thuốc cận hạn sử dụng (< 6 tháng).
+  + *Bước 4 (Soạn hàng & Đóng gói Outbound)*: Khi tiếp nhận yêu cầu điều chuyển từ các cửa hàng, nhân viên soạn hàng (Picking) theo đúng thứ tự ưu tiên hạn dùng FEFO (First Expired, First Out) và đóng thùng niêm phong.
+  + *Bước 5 (Xuất kho & Bàn giao xe vận tải)*: Trưởng kho ký biên bản xuất kho điện tử trên WMS, in phiếu điều phối vận chuyển và bàn giao kiện hàng cho đội ngũ tài xế xe tải để phân phối liên tỉnh.
+- **Đầu ra vật phẩm & dữ liệu**: Hàng hóa được gán mã vạch/QR và lưu trữ đúng vị trí kệ (Bin Location); Kiện hàng xuất kho kèm Phiếu xuất kho điện tử; Báo cáo đối soát tồn kho khớp 100% với hệ thống ERP.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Quá trình nhập - xuất diễn ra nhanh chóng, tuân thủ tuyệt đối nguyên tắc cận hạn xuất trước (FEFO); số liệu kiểm kê khớp hoàn toàn giữa thực tế và sổ sách ERP.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Từ chối tiếp nhận hàng từ xe chở của NCC do vi phạm quy chuẩn nhiệt độ bảo quản trong thùng xe; hoặc hủy lệnh xuất kho do phát hiện bao bì sản phẩm bị móp méo trong lúc soạn hàng.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Phát hiện lô thuốc cận hạn sử dụng (< 6 tháng) trong quá trình kiểm kê định kỳ → tự động kích hoạt thông báo điều chuyển ưu tiên bán tại các chi nhánh có doanh số cao, hoặc lập thủ tục đổi trả nhà sản xuất.
+- **Điểm đặc thù / Thách thức vận hành**: Quy mô kho trung tâm khổng lồ với hàng chục ngàn SKU; đòi hỏi hệ thống cảm biến giám sát nhiệt độ và độ ẩm liên tục 24/7 để bảo đảm chất lượng thuốc.
 
-**7. Quản lý công nghệ thông tin**
-- **Mục tiêu**: Đảm bảo toàn bộ nền tảng hệ thống từ ERP, website đến máy bán hàng tại các cửa hàng hoạt động trơn tru 24/7, không gián đoạn.
-- **Tác nhân chính**: Nhân viên IT Helpdesk, Kỹ sư phần mềm, Nhà cung cấp phần mềm, Người dùng nội bộ.
-- **Đầu vào**: Yêu cầu hỗ trợ kỹ thuật (Ticket), yêu cầu nâng cấp tính năng.
-- **Đầu ra**: Lỗi hệ thống được xử lý, phiên bản phần mềm mới được cập nhật, dữ liệu được sao lưu an toàn.
-- **Điểm đặc thù/Thách thức**: Phải bảo mật tuyệt đối dữ liệu lịch sử khám bệnh và thông tin cá nhân của hàng triệu khách hàng trước các nguy cơ tấn công mạng.
+**6. Tuyển dụng và đào tạo (Human Resources & Training - QT-06)**
+- **Mục tiêu**: Thu hút, tuyển chọn đội ngũ dược sĩ có Chứng chỉ hành nghề (CCHN) vững vàng; đào tạo văn hóa phục vụ tận tâm và kiến thức tư vấn bệnh học chuẩn GPP qua Học viện Long Châu Academy nhằm đáp ứng tốc độ mở chuỗi.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng nội bộ*: Các nhà thuốc mới mở và các nhà thuốc hiện hữu (cần bổ sung nhân sự đạt chuẩn), Ban Giám đốc Vận hành (cần duy trì tỷ lệ phủ định biên nhân sự nhà thuốc ≥ 98%).
+  + *Khách hàng bên ngoài*: Ứng viên Dược sĩ trên thị trường lao động y dược.
+- **Tác nhân chính**: Ứng viên Dược sĩ, Bộ phận Tuyển dụng (HR), Hội đồng phỏng vấn chuyên môn y dược, Trung tâm Đào tạo Long Châu Academy, Cửa hàng trưởng hướng dẫn thực tế.
+- **Đầu vào & Sự kiện kích hoạt**: Kế hoạch mở mới mạng lưới nhà thuốc từ Ban Lãnh đạo; Đơn đề xuất bổ sung nhân sự từ các cửa hàng trưởng; Hồ sơ ứng tuyển (CV) và bằng cấp chuyên môn dược sĩ.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Hoạch định nhu cầu & Đăng tin tuyển dụng)*: Phòng Nhân sự (HR) căn cứ vào kế hoạch mở mới mạng lưới nhà thuốc để xác định định biên nhân sự, xây dựng bản mô tả công việc (JD) và đăng tuyển đa kênh.
+  + *Bước 2 (Sàng lọc hồ sơ & Phỏng vấn chuyên môn)*: HR kiểm tra tính pháp lý của văn bằng và Chứng chỉ hành nghề (CCHN) Dược; Hội đồng chuyên môn tiến hành phỏng vấn 2 vòng đánh giá kiến thức bệnh học và thái độ phục vụ.
+  + *Bước 3 (Đào tạo hội nhập tại Long Châu Academy)*: Ứng viên trúng tuyển tham gia khóa đào tạo tập trung tại Học viện Long Châu Academy về kỹ năng tư vấn chuẩn GPP, văn hóa tận tâm và sử dụng phần mềm Smart POS.
+  + *Bước 4 (Sát hạch kiến thức & Thực tập tại quầy mẫu)*: Học viên trải qua kỳ thi sát hạch lý thuyết và thực hành lâm sàng; sau đó tham gia thực tập thực tế 2 tuần tại các nhà thuốc mẫu dưới sự kèm cặp của Dược sĩ trưởng.
+  + *Bước 5 (Bổ nhiệm chính thức & Phân công trực quầy)*: Ban Nhân sự thẩm định kết quả tốt nghiệp, ký kết hợp đồng lao động chính thức, cấp mã số nhân viên trên hệ thống HRIS và phân bổ về ca trực quầy tại nhà thuốc.
+- **Đầu ra vật phẩm & dữ liệu**: Hợp đồng lao động chính thức được ký kết; Chứng chỉ hoàn thành chương trình đào tạo hội nhập Long Châu Academy; Hồ sơ nhân sự và tài khoản định danh trên hệ thống HRIS.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Dược sĩ vượt qua các vòng phỏng vấn, đạt điểm xuất sắc trong kỳ thi sát hạch GPP tại Academy và được phân công về nhận ca trực quầy tại nhà thuốc.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Ứng viên không đạt yêu cầu chuyên môn sau 2 vòng phỏng vấn; hoặc học viên không vượt qua bài kiểm tra cuối khóa đào tạo hội nhập → từ chối tuyển dụng hoặc dừng hợp đồng thử việc.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Dược sĩ có chuyên môn tốt nhưng thiếu kỹ năng giao tiếp hoặc thao tác phần mềm POS → gia hạn thời gian đào tạo thực hành thêm 2 tuần tại cửa hàng mẫu có sự kèm cặp trực tiếp của Dược sĩ trưởng.
+- **Điểm đặc thù / Thách thức vận hành**: Áp lực tuyển dụng và đào tạo hàng ngàn dược sĩ mỗi năm theo đà mở rộng thần tốc của chuỗi, trong khi nguồn nhân lực ngành y dược có chứng chỉ hành nghề luôn cạnh tranh gay gắt.
 
-**8. Quản lý tài chính – Kế toán**
-- **Mục tiêu**: Ghi nhận toàn bộ luồng tiền thu - chi một cách minh bạch, kịp thời, phục vụ lập báo cáo tài chính và thực hiện nghĩa vụ thuế.
-- **Tác nhân chính**: Nhân viên Kế toán, Kế toán trưởng, Quản lý các bộ phận.
-- **Đầu vào**: Hóa đơn mua hàng, biên lai bán lẻ (POS), bảng lương nhân sự.
-- **Đầu ra**: Báo cáo tài chính định kỳ, hồ sơ kê khai thuế, các khoản thanh toán được duyệt.
-- **Điểm đặc thù/Thách thức**: Số lượng giao dịch vi mô (bán lẻ) hàng ngày cực kỳ khủng khiếp, đòi hỏi quy trình tự động hóa đối soát (reconciliation) phải rất chuẩn xác.
+**7. Quản lý công nghệ thông tin (IT Infrastructure & Operations - QT-07)**
+- **Mục tiêu**: Bảo đảm sự vận hành liên tục, ổn định 24/7 của toàn bộ hạ tầng mạng, máy chủ Cloud, hệ thống ERP lõi, phần mềm Smart POS tại quầy và ứng dụng di động; đồng thời bảo mật tuyệt đối dữ liệu y tế người dùng.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng nội bộ*: Toàn thể cán bộ nhân viên tại hơn 1.800 nhà thuốc, khối kho vận logistics và khối văn phòng hội sở (cần hạ tầng số hoạt động ổn định để xử lý công việc).
+  + *Khách hàng bên ngoài*: Hàng triệu người bệnh và người tiêu dùng sử dụng ứng dụng di động và website Long Châu (được phục vụ trên nền tảng số bảo mật và không bị nghẽn mạng).
+- **Tác nhân chính**: Người dùng nội bộ (Dược sĩ / Nhân viên kho / Nhân viên văn phòng), Đội ngũ IT Helpdesk, Kỹ sư Quản trị hệ thống ERP & Cloud, Chuyên viên An toàn thông tin (Security).
+- **Đầu vào & Sự kiện kích hoạt**: Phiếu yêu cầu hỗ trợ kỹ thuật (IT Ticket), cảnh báo giám sát hệ thống tự động từ máy chủ, yêu cầu nâng cấp tính năng phần mềm từ các phòng ban.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Tiếp nhận Ticket yêu cầu / Sự cố)*: Đội ngũ IT Helpdesk tiếp nhận các yêu cầu hỗ trợ kỹ thuật hoặc báo cáo sự cố từ các nhà thuốc qua hệ thống Jira Service Desk và phân loại mức độ ưu tiên theo SLA.
+  + *Bước 2 (Hỗ trợ từ xa & Xử lý kỹ thuật)*: Kỹ sư IT Support truy cập từ xa qua Remote Desktop để khắc phục nhanh chóng các lỗi máy POS, máy in hóa đơn, kết nối mạng LAN hoặc điều phối kỹ thuật viên đến hỗ trợ trực tiếp.
+  + *Bước 3 (Quản trị hệ thống ERP lõi & Cloud)*: Đội ngũ Kỹ sư Quản trị hệ thống theo dõi tải máy chủ trên nền tảng Cloud, tối ưu hóa cơ sở dữ liệu bán lẻ vi mô và bảo đảm đường truyền mạng liên thông 24/7.
+  + *Bước 4 (Sao lưu dữ liệu & Bảo mật an toàn thông tin)*: Hệ thống tự động sao lưu định kỳ (Auto Backup) toàn bộ cơ sở dữ liệu giao dịch và lịch sử đơn thuốc; chuyên viên an ninh mạng kiểm tra tường lửa và vá lỗ hổng bảo mật.
+  + *Bước 5 (Nghiệm thu đóng Ticket & Đo lường SLA)*: Trưởng nhóm IT kiểm tra kết quả vận hành ổn định, nghiệm thu đóng ticket hỗ trợ và trích xuất báo cáo đo lường chỉ số cam kết thời gian giải quyết sự cố (SLA).
+- **Đầu ra vật phẩm & dữ liệu**: Sự cố CNTT được giải quyết hoàn tất (Closed Ticket); bản cập nhật phần mềm hoặc tính năng mới được triển khai; biên bản kiểm thử an ninh mạng và dữ liệu sao lưu (Backup) an toàn.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Sự cố kỹ thuật được khắc phục trong thời hạn cam kết SLA; toàn bộ hệ thống bán hàng duy trì độ sẵn sàng Uptime ≥ 99.9%.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Phiếu yêu cầu bị từ chối do vi phạm quy định an toàn thông tin (ví dụ: cài đặt phần mềm ngoài danh mục); hoặc tính năng mới không qua được vòng kiểm thử an ninh.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Xảy ra đứt kết nối cáp quang internet tại một nhà thuốc → hệ thống tự động chuyển sang mạng 4G dự phòng và kích hoạt chế độ bán hàng ngoại tuyến (Offline Mode) trên Smart POS để không gián đoạn phục vụ.
+- **Điểm đặc thù / Thách thức vận hành**: Quy mô mạng lưới phân tán rộng lớn tại hơn 1.800 điểm cầu trên 63 tỉnh thành; yêu cầu bảo mật thông tin đơn thuốc và dữ liệu sức khỏe cá nhân theo chuẩn quốc tế.
 
-**9. Quản lý quan hệ khách hàng (CRM)**
-- **Mục tiêu**: Tối đa hóa giá trị vòng đời khách hàng thông qua việc quản lý điểm thưởng, cung cấp thông tin y tế, nhắc lịch uống/mua thuốc, giải quyết phàn nàn.
-- **Tác nhân chính**: Nhân viên CSKH, Khách hàng, Hệ thống CRM.
-- **Đầu vào**: Khiếu nại từ khách hàng, lịch sử mua sắm của hội viên.
-- **Đầu ra**: Vấn đề của khách được giải quyết, chương trình khuyến mãi được gửi tới đúng đối tượng.
-- **Điểm đặc thù/Thách thức**: Cá nhân hóa việc chăm sóc với từng loại bệnh lý khác nhau của khách hàng mà không biến thành hành vi làm phiền hoặc quảng cáo quá mức.
+**8. Quản lý tài chính – Kế toán (Financial & Accounting Management - QT-08)**
+- **Mục tiêu**: Ghi nhận chính xác, đầy đủ và minh bạch mọi dòng tiền thu - chi vi mô từ bán lẻ; tự động hóa đối soát thanh toán; quản trị ngân sách và lập báo cáo tài chính tuân thủ chuẩn mực VAS/IFRS.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng nội bộ*: Ban Giám đốc và Hội đồng Quản trị FPT Retail (nhận báo cáo dòng tiền và hiệu quả kinh doanh để ra quyết định chiến lược); các phòng ban chức năng (được giải ngân kinh phí hoạt động đúng hạn).
+  + *Khách hàng bên ngoài*: Cơ quan Thuế Nhà nước, Cổ đông, Ngân hàng đối tác và các Nhà cung cấp dược phẩm (nhận thanh toán công nợ minh bạch và đúng hạn).
+- **Tác nhân chính**: Nhân viên Kế toán phần hành, Kế toán trưởng, Ban Giám đốc Tài chính (CFO), Thu ngân nhà thuốc, Hệ thống ERP Kế toán tập trung.
+- **Đầu vào & Sự kiện kích hoạt**: Dữ liệu chốt ca bán hàng vi mô từ hệ thống Smart POS; Hóa đơn giá trị gia tăng (GTGT) từ nhà cung ứng; Sao kê tài khoản ngân hàng và đối soát từ các cổng ví điện tử.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Đối soát doanh thu bán lẻ POS & Ngân hàng)*: Cuối mỗi ngày kinh doanh, kế toán bán lẻ thu thập dữ liệu chốt ca từ máy POS, đối chiếu tiền mặt thực thu tại két và số liệu chuyển khoản trên sao kê ngân hàng/ví điện tử.
+  + *Bước 2 (Kiểm duyệt hóa đơn & Chi phí mua hàng)*: Kế toán chi phí tiếp nhận hóa đơn giá trị gia tăng (GTGT) điện tử từ nhà cung cấp, kiểm tra tính hợp pháp của hóa đơn và đối chiếu với phiếu nhập kho WMS và đơn PO.
+  + *Bước 3 (Hạch toán kế toán & Quản trị công nợ)*: Kế toán viên định khoản các nghiệp vụ phát sinh vào phần mềm kế toán tập trung, ghi nhận doanh thu, giá vốn hàng bán (COGS) và theo dõi hạn nợ phải trả cho nhà cung cấp.
+  + *Bước 4 (Phê duyệt chi trả & Quản trị dòng tiền)*: Kế toán trưởng và Giám đốc Tài chính (CFO) thẩm định hồ sơ giải ngân, ký duyệt lệnh ủy nhiệm chi (UNC) điện tử qua hệ thống E-Banking để thanh toán công nợ đúng hạn.
+  + *Bước 5 (Khóa sổ kế toán & Lập báo cáo tài chính)*: Kế toán tổng hợp tiến hành khóa sổ định kỳ (tháng/quý), lập báo cáo kết quả hoạt động kinh doanh (P&L), bảng cân đối kế toán và kê khai quyết toán thuế điện tử gửi cơ quan Thuế.
+- **Đầu ra vật phẩm & dữ liệu**: Báo cáo tài chính định kỳ (Tháng/Quý/Năm); Tờ khai nghĩa vụ thuế nộp cơ quan chức năng; Lệnh chuyển tiền và ủy nhiệm chi ngân hàng (UNC) đã được phê duyệt.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Dữ liệu tiền mặt, quẹt thẻ và chuyển khoản khớp 100% giữa POS và ngân hàng; báo cáo tài chính được cơ quan kiểm toán độc lập chấp thuận toàn phần.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Đề nghị thanh toán bị từ chối phê duyệt do hồ sơ chứng từ không hợp lệ, thiếu chữ ký thẩm quyền hoặc vượt ngân sách định mức được giao.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Phát hiện chênh lệch tiền mặt tại két cửa hàng khi kết ca → lập tức kích hoạt biên bản kiểm quỹ đột xuất, trích xuất camera giám sát và hạch toán điều chỉnh theo quy chế tài chính.
+- **Điểm đặc thù / Thách thức vận hành**: Khối lượng giao dịch bán lẻ cực kỳ khổng lồ (hàng trăm ngàn đơn lẻ mỗi ngày), đòi hỏi hệ thống đối soát điện tử tự động (Reconciliation Engine) có độ chính xác tuyệt đối.
 
-**10. Quản lý tuân thủ pháp lý & dược**
-- **Mục tiêu**: Đảm bảo công ty tuân thủ mọi đạo luật liên quan đến y tế, kinh doanh bán lẻ dược phẩm, phòng chống rủi ro pháp lý rút giấy phép.
-- **Tác nhân chính**: Chuyên viên pháp chế, Cán bộ sở Y tế/cơ quan thanh tra, Quản lý chuỗi.
-- **Đầu vào**: Các thông tư, nghị định mới từ Bộ Y tế, hồ sơ chất lượng nhà thuốc.
-- **Đầu ra**: Giấy phép kinh doanh/GPP được cấp/gia hạn, quy trình vận hành nội bộ được sửa đổi phù hợp pháp luật.
-- **Điểm đặc thù/Thách thức**: Môi trường pháp lý ngành dược rất khắt khe và thường xuyên thay đổi, cần phản ứng nhanh gọn nhằm thích ứng với các quy định mới.
+**9. Quản lý quan hệ khách hàng - CRM (Customer Relationship Management - QT-09)**
+- **Mục tiêu**: Quản lý thông tin hội viên, cá nhân hóa trải nghiệm chăm sóc sức khỏe, hỗ trợ nhắc lịch dùng thuốc mãn tính và giải quyết triệt để khiếu nại nhằm nâng cao chỉ số hài lòng (CSAT) và gắn kết thương hiệu (NPS).
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng bên ngoài*: Khách hàng thành viên thân thiết F-Reward, người bệnh điều trị các bệnh lý mãn tính cần theo dõi lâu dài (tiểu đường, tim mạch, huyết áp), người tiêu dùng gửi ý kiến đóng góp hoặc phản ánh khiếu nại.
+  + *Khách hàng nội bộ*: Bộ phận Tiếp thị & Kinh doanh (nhận tập khách hàng mục tiêu để triển khai chiến dịch chăm sóc chuyên sâu), Ban Giám đốc (theo dõi chỉ số đo lường trải nghiệm khách hàng).
+- **Tác nhân chính**: Khách hàng hội viên, Chuyên viên Tổng đài CSKH (1800 6928), Dược sĩ trực tổng đài tư vấn, Bộ phận Dữ liệu & Marketing CRM.
+- **Đầu vào & Sự kiện kích hoạt**: Lịch sử mua sắm và toa thuốc lưu trên ứng dụng; Cuộc gọi khiếu nại hoặc thắc mắc từ khách hàng vào hotline; Lịch nhắc tự động theo chu kỳ dùng thuốc mãn tính.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Thu thập dữ liệu & Định danh khách hàng)*: Hệ thống CRM Hub 360 tự động lưu trữ thông tin số điện thoại, tiền sử bệnh án, các loại thuốc đã mua và tiền sử dị ứng thuốc khi khách giao dịch tại quầy hoặc app.
+  + *Bước 2 (Tích lũy điểm thưởng & Phân hạng hội viên)*: Thuật toán F-Reward Engine tự động cộng điểm tích lũy theo giá trị hóa đơn, tự động nâng hạng thẻ thành viên (Bạc, Vàng, Kim Cương) và kích hoạt voucher giảm giá.
+  + *Bước 3 (Tự động gửi thông báo nhắc lịch uống thuốc)*: Hệ thống tự động phân tích thời gian dùng thuốc theo toa và gửi tin nhắn Zalo ZNS / App Notification nhắc bệnh nhân uống thuốc đúng giờ và mua tiếp toa khi sắp hết.
+  + *Bước 4 (Tư vấn chuyên môn & Chăm sóc định kỳ)*: Đội ngũ Dược sĩ trực tổng đài CRM chủ động gọi điện thăm hỏi tình hình sức khỏe của các bệnh nhân mãn tính, hướng dẫn xử lý tác dụng phụ và tư vấn chế độ dinh dưỡng.
+  + *Bước 5 (Tiếp nhận khiếu nại & Đo lường chỉ số NPS)*: Bộ phận CSKH tiếp nhận và xử lý triệt để các khiếu nại đổi trả trong vòng 24 giờ; đồng thời gửi link khảo sát tự động để đo lường chỉ số thiện cảm thương hiệu (NPS).
+- **Đầu ra vật phẩm & dữ liệu**: Hồ sơ sức khỏe hội viên được cập nhật; Tin nhắn thông báo nhắc lịch uống thuốc qua Zalo ZNS/SMS; Báo cáo xử lý khiếu nại thành công kèm voucher tri ân khách hàng.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Khiếu nại được tiếp nhận và xử lý thỏa đáng trong vòng 24 giờ; bệnh nhân tuân thủ phác đồ điều trị nhờ tin nhắn nhắc thuốc tự động; chỉ số hài lòng CSAT ≥ 90%.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Đề nghị đổi trả thuốc của khách hàng bị từ chối do sản phẩm bị hư hỏng bởi điều kiện bảo quản sai của khách sau khi rời khỏi nhà thuốc (được chứng thực bằng dữ liệu camera); hoặc khách hàng yêu cầu hủy đăng ký nhận tin nhắn thông báo.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Tiếp nhận khiếu nại nghiêm trọng liên quan đến phản ứng bất lợi của thuốc (ADR) → kích hoạt quy trình khẩn cấp chuyển tiếp lên Dược sĩ lâm sàng trưởng và Ban QA để liên hệ trực tiếp hỗ trợ bệnh nhân và báo cáo cơ quan y tế.
+- **Điểm đặc thù / Thách thức vận hành**: Phải bảo đảm tính nhân văn và đạo đức y khoa trong tương tác, tránh việc tiếp thị bán hàng phản cảm hoặc làm phiền người bệnh.
+
+**10. Quản lý tuân thủ pháp lý & dược (Regulatory Compliance & Legal - QT-10)**
+- **Mục tiêu**: Bảo đảm toàn bộ tổ chức tuân thủ nghiêm ngặt các quy định của Luật Dược, chuẩn Thực hành tốt nhà thuốc (GPP), Thực hành tốt bảo quản thuốc (GSP), Thực hành tốt phân phối thuốc (GDP) và duy trì hiệu lực của toàn bộ giấy phép hành nghề.
+- **Đối tượng khách hàng phục vụ**:
+  + *Khách hàng bên ngoài*: Cơ quan quản lý Nhà nước (Cục Quản lý Dược, Sở Y tế, Thanh tra Y tế, Đội Quản lý Thị trường); Cộng đồng xã hội (được bảo đảm quyền lợi y tế hợp pháp).
+  + *Khách hàng nội bộ*: Ban Lãnh đạo doanh nghiệp (được bảo vệ trước các rủi ro pháp lý và đình chỉ hoạt động); Đội ngũ Cửa hàng trưởng và Dược sĩ (được hướng dẫn quy chuẩn pháp lý minh bạch để yên tâm công tác).
+- **Tác nhân chính**: Dược sĩ phụ trách chuyên môn chuỗi, Ban Pháp chế & Tuân thủ nội bộ, Đoàn Thanh tra Y tế Nhà nước, Ban Tổng Giám đốc.
+- **Đầu vào & Sự kiện kích hoạt**: Văn bản quy phạm pháp luật y tế mới ban hành (Luật/Nghị định/Thông tư); Thông báo kiểm tra định kỳ hoặc đột xuất từ Sở Y tế; Hạn hiệu lực của Giấy chứng nhận đủ điều kiện kinh doanh dược của từng nhà thuốc.
+- **Chuỗi các bước thực hiện tuần tự (Workflow Steps)**:
+  + *Bước 1 (Cập nhật & Phổ biến văn bản pháp luật)*: Ban Pháp chế theo dõi và cập nhật kịp thời các Luật Dược, Nghị định, Thông tư y tế mới ban hành; xây dựng tài liệu hướng dẫn và phổ biến quy chuẩn tuân thủ toàn chuỗi.
+  + *Bước 2 (Quản lý hồ sơ CCHN & Giấy phép kinh doanh)*: Chuyên viên pháp lý chuẩn bị hồ sơ hành chính, nộp hồ sơ xin cấp mới hoặc gia hạn Giấy chứng nhận đủ điều kiện kinh doanh dược và GPP cho từng nhà thuốc trên cổng Sở Y tế.
+  + *Bước 3 (Thanh tra, kiểm tra nội bộ định kỳ)*: Ban Kiểm soát nội bộ thành lập đoàn thanh tra định kỳ đến trực tiếp nhà thuốc và kho bãi, kiểm tra sổ sách theo dõi thuốc kê đơn, ẩm kế và điều kiện thực tế theo checklist GPP.
+  + *Bước 4 (Khắc phục khuyến nghị & Cải tiến quy trình SOP)*: Khi phát hiện điểm chưa phù hợp hoặc sau các đợt thanh tra của Sở Y tế, phòng pháp chế yêu cầu cửa hàng khắc phục ngay trong 7 ngày và cập nhật lại quy trình SOP nội bộ.
+  + *Bước 5 (Báo cáo tuân thủ & Lưu trữ hồ sơ pháp lý)*: Lập báo cáo tổng hợp tình hình tuân thủ pháp lý định kỳ trình Ban Tổng Giám đốc; số hóa và lưu trữ an toàn toàn bộ giấy phép hành nghề trên hệ thống quản lý văn bản số (Legal DMS).
+- **Đầu ra vật phẩm & dữ liệu**: Giấy chứng nhận đạt chuẩn GPP/GDP được cấp mới hoặc gia hạn; Bộ Quy trình thao tác chuẩn (SOP) được chuẩn hóa và ban hành; Báo cáo đánh giá mức độ tuân thủ pháp lý định kỳ.
+- **Các khả năng kết quả của quy trình (Possible Outcomes)**:
+  + *Kết quả tích cực (Positive Outcome)*: Nhà thuốc vượt qua kỳ thẩm định thanh tra của Sở Y tế với kết quả 100% đạt chuẩn GPP, giấy phép đủ điều kiện kinh doanh dược được gia hạn thông suốt, không phát sinh vi phạm.
+  + *Kết quả tiêu cực / Từ chối (Negative Outcome)*: Hồ sơ xin cấp phép mới bị cơ quan chức năng từ chối do không gian nhà thuốc chưa đạt chuẩn diện tích tối thiểu hoặc chứng chỉ hành nghề dược sĩ có sai lệch; hoặc phát hiện vi phạm quy chế bán thuốc kê đơn dẫn đến xử lý kỷ luật nội bộ.
+  + *Kết quả ngoại lệ / Điều chỉnh (Exception Outcome)*: Đoàn thanh tra nhắc nhở một số lỗi kỹ thuật nhỏ tại quầy (như ẩm kế chưa hiệu chuẩn định kỳ) → lập biên bản cam kết khắc phục trong 7 ngày và vượt qua đợt phúc tra thành công.
+- **Điểm đặc thù / Thách thức vận hành**: Ngành kinh doanh bán lẻ dược phẩm chịu sự quản lý pháp lý nghiêm ngặt hàng đầu; mọi sai phạm về giấy phép hoặc tiêu chuẩn bảo quản đều tiềm ẩn nguy cơ đình chỉ hoạt động chuỗi.
+
+---
+
+Nhằm cung cấp góc nhìn tổng quan, so sánh và đối chiếu đồng bộ về mặt quản trị quy trình (BPM), Bảng 2.2 dưới đây tổng hợp mối liên kết giữa Phân loại nghiệp vụ, Đối tượng khách hàng phục vụ và Các khả năng kết quả của toàn bộ 10 quy trình nghiệp vụ tại FPT Long Châu:
+
+*Bảng 2.2: Bảng tổng hợp đối tượng khách hàng và các khả năng kết quả của 10 quy trình nghiệp vụ*
+
+| STT | Tên quy trình | Phân loại BPM | Khách hàng bên ngoài (External) | Khách hàng nội bộ (Internal) | Khả năng kết quả tích cực (Positive Outcome) | Khả năng kết quả tiêu cực / Ngoại lệ (Negative / Exception) |
+| :---: | :--- | :---: | :--- | :--- | :--- | :--- |
+| 1 | Quản lý chuỗi cung ứng | Quản lý | Các hãng dược phẩm, Nhà cung cấp (NCC) | Mạng lưới 1.800+ nhà thuốc, Ban Giám đốc | Giao hàng đúng hạn, đủ số lượng, chuẩn GSP; Fill Rate ≥ 98% | Bị từ chối do vượt ngân sách; Giao hàng làm nhiều đợt do thiếu nguồn cung |
+| 2 | Quản lý chất lượng | Quản lý | Người bệnh, Cơ quan quản lý Dược (Bộ Y tế, Sở Y tế) | Khối Kho bãi, Mạng lưới 1.800+ nhà thuốc | 100% lô thuốc đạt kiểm định COA, thông quan nhập kho | Lô hàng bị từ chối/niêm phong; Biệt trữ gửi Viện Kiểm nghiệm TƯ giám định lại |
+| 3 | Bán thuốc tại nhà thuốc | Cốt lõi | Người bệnh, Người mua thuốc kê đơn/OTC, Hội viên | Bộ phận Kế toán (doanh thu), Bộ phận Kho quầy (trừ tồn) | Cấp thuốc đúng toa, tư vấn chu đáo, xuất hóa đơn điện tử | Từ chối do đơn thuốc không hợp lệ; Tìm nhà thuốc lân cận giao hỏa tốc tận nhà |
+| 4 | Bán thuốc online | Cốt lõi | Người bệnh mua đa kênh qua Web/App, Hội viên | Ban TMĐT (chuyển đổi số), Đội ngũ Shipper điều phối | Duyệt toa nhanh, giao hàng hỏa tốc 30 phút, thanh toán O2O | Hủy đơn do toa thuốc không hợp lệ; Giao hàng dời hẹn/đổi kiện thuốc giao bù |
+| 5 | Quản lý kho | Hỗ trợ | Đơn vị vận chuyển logistics đối tác | Mạng lưới 1.800+ nhà thuốc, Bộ phận Mua hàng | Nhập - xuất đúng vị trí kệ theo chuẩn FEFO; Tồn kho khớp 100% | Từ chối xe hàng vượt nhiệt độ; Thuốc cận date điều chuyển bán gấp/đổi trả NCC |
+| 6 | Tuyển dụng và đào tạo | Hỗ trợ | Ứng viên Dược sĩ trên thị trường lao động | Các nhà thuốc chi nhánh, Ban Giám đốc Vận hành | Tuyển dụng đúng chuẩn CCHN, tốt nghiệp xuất sắc khóa GPP Academy | Không đạt phỏng vấn/thi GPP; Kèm cặp thêm 2 tuần tại quầy mẫu |
+| 7 | Quản lý công nghệ thông tin | Hỗ trợ | Người dùng ứng dụng và website FPT Long Châu | Toàn bộ nhân viên tại nhà thuốc, kho bãi và khối văn phòng | Xử lý ticket đúng SLA cam kết; Hệ thống đạt Uptime ≥ 99.9% | Từ chối yêu cầu vi phạm bảo mật; Đứt cáp mạng chuyển sang 4G và Offline POS |
+| 8 | Quản lý tài chính – Kế toán | Quản lý | Cơ quan Thuế, Cổ đông, Ngân hàng, Nhà cung cấp | Ban Giám đốc, Hội đồng Quản trị, Các phòng ban | Đối soát tiền mặt & POS khớp 100%; Báo cáo tài chính kiểm toán sạch | Từ chối thanh toán thiếu chứng từ; Lệch tiền mặt kích hoạt kiểm quỹ đột xuất |
+| 9 | Quản lý quan hệ KH (CRM) | Cốt lõi | Khách hàng hội viên F-Reward, Bệnh nhân mãn tính | Khối Kinh doanh, Khối Tiếp thị, Ban Giám đốc | Khiếu nại xử lý trong 24h; Nhắc thuốc tự động, CSAT ≥ 90% | Từ chối bồi thường do bảo quản sai; Phản ứng thuốc ADR chuyển bác sĩ lâm sàng |
+| 10 | Quản lý tuân thủ pháp lý & dược | Quản lý | Cơ quan thanh tra Nhà nước (Sở Y tế, Quản lý thị trường) | Ban Tổng Giám đốc, Đội ngũ Cửa hàng trưởng | 100% nhà thuốc đạt chuẩn GPP, gia hạn giấy phép kinh doanh thông suốt | Hồ sơ bị từ chối do thiếu chuẩn; Biên bản cam kết khắc phục trong 7 ngày |
+
 
 ## 2.7. Lựa chọn các quy trình mô phỏng và phân tích chuyên sâu
 Trong số 10 quy trình nghiệp vụ được xác định, nhóm nghiên cứu tiến hành đánh giá nhằm lựa chọn ra 6 quy trình cốt lõi và tiêu biểu nhất để thực hiện mô phỏng BPMN và phân tích cải tiến chuyên sâu ở các chương tiếp theo. Tiêu chí lựa chọn dựa trên 5 yếu tố quan trọng, được đánh giá trên thang điểm từ 1 đến 5 (1: Rất thấp, 5: Rất cao):
@@ -358,7 +644,7 @@ Trong số 10 quy trình nghiệp vụ được xác định, nhóm nghiên cứ
 - **C4. Khả năng cải tiến**: Tiềm năng tối ưu hóa, tự động hóa để mang lại hiệu quả rõ rệt.
 - **C5. Khả năng thu thập dữ liệu**: Mức độ đầy đủ của thông tin nhóm nghiên cứu thu thập được để xây dựng sơ đồ thực tế.
 
-**Bảng đánh giá lựa chọn quy trình phân tích chuyên sâu (Thang điểm 1-5)**
+*Bảng 2.3: Đánh giá tiêu chí lựa chọn quy trình phân tích chuyên sâu (Thang điểm 1-5)*
 
 | STT | Tên quy trình | C1 | C2 | C3 | C4 | C5 | Tổng điểm | Kết quả |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -374,420 +660,294 @@ Trong số 10 quy trình nghiệp vụ được xác định, nhóm nghiên cứ
 | 10 | Quản lý tuân thủ pháp lý & dược | 3 | 2 | 5 | 2 | 3 | **15** | Loại |
 
 **Kết quả 6 quy trình được chọn:**
-Dựa trên điểm số đánh giá cao nhất, nhóm quyết định lựa chọn 6 quy trình sau để mô phỏng và phân tích chuyên sâu:
-1. Quản lý chuỗi cung ứng (23 điểm)
-2. Quản lý chất lượng (18 điểm)
-3. Bán thuốc tại nhà thuốc (23 điểm)
-4. Bán thuốc online (24 điểm)
-5. Quản lý kho (20 điểm)
-6. Tuyển dụng và đào tạo (19 điểm)
+Dựa trên điểm số đánh giá cao nhất và **đặc biệt tuân thủ tuyệt đối Rubik đánh giá của môn học về cơ cấu cân bằng 3 tầng kiến trúc (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ)**, nhóm quyết định lựa chọn 6 quy trình sau để mô hình hóa BPMN 2.0 và phân tích chuyên sâu:
+
+1. **Nhóm Quy trình Quản lý (2 quy trình):**
+   - *Quy trình 1 (QT-01): Quản lý chuỗi cung ứng* (23 điểm – Hoạch định nhu cầu, quản trị mạng lưới nhà cung ứng và phê duyệt mua sắm tập trung).
+   - *Quy trình 2 (QT-02): Quản lý chất lượng* (18 điểm – Kiểm định GPP/GDP, hồ sơ COA điện tử và giám sát điều kiện bảo quản dược phẩm).
+2. **Nhóm Quy trình Cốt lõi (2 quy trình):**
+   - *Quy trình 3 (QT-03): Bán thuốc tại nhà thuốc* (23 điểm – Kênh bán hàng trực tiếp tạo doanh thu và phục vụ người bệnh tại hơn 1.800 nhà thuốc).
+   - *Quy trình 4 (QT-04): Bán thuốc online* (24 điểm – Kênh thương mại điện tử O2O phục vụ khách hàng trên nền tảng Website và Mobile App).
+3. **Nhóm Quy trình Hỗ trợ (2 quy trình):**
+   - *Quy trình 5 (QT-05): Quản lý kho* (20 điểm – Tiếp nhận, bảo quản chuẩn GSP, soạn hàng xuất kho và kiểm kê đối soát tồn kho).
+   - *Quy trình 6 (QT-06): Tuyển dụng và đào tạo* (19 điểm – Thu hút, sát hạch chuyên môn và đào tạo dược sĩ chất lượng cao).
 
 **Giải thích lý do lựa chọn:**
-Sáu quy trình trên đại diện cho những huyết mạch sống còn của hệ thống bán lẻ dược phẩm Long Châu. Bán thuốc trực tiếp và Bán thuốc online là hai luồng doanh thu chính, có tần suất cực cao và tác động mạnh mẽ đến khách hàng, đồng thời có thể dễ dàng thu thập dữ liệu bằng cách đóng vai khách hàng. Quản lý chuỗi cung ứng và Quản lý kho có tiềm năng tối ưu lớn nhờ công nghệ (mức độ phức tạp rất cao, tác động đến tỷ suất lợi nhuận). Tuyển dụng và đào tạo là một quy trình hỗ trợ cấp thiết để giải quyết bài toán thiếu hụt dược sĩ khi mở rộng chuỗi, có tính ứng dụng cải tiến rõ ràng. Cuối cùng, Quản lý chất lượng là đặc thù bắt buộc trong ngành y tế, quyết định sự sống còn của thương hiệu, rất phù hợp để mô phỏng nhằm tìm ra các nút thắt trong công tác giám sát nhà thuốc.
+Cơ cấu lựa chọn cân bằng hoàn hảo 2 – 2 – 2 này phản ánh toàn diện hệ sinh thái vận hành của FPT Long Châu:
+- Hai quy trình Quản lý (Chuỗi cung ứng & Chất lượng) giữ vai trò "mái nhà" định hướng, kiểm soát tiêu chuẩn chuyên môn y tế và điều tiết dòng tiền mua hàng vĩ mô.
+- Hai quy trình Cốt lõi (Bán thuốc tại quầy & Bán online) là "thân nhà" trực tiếp mang lại doanh thu và phục vụ khách hàng đa kênh.
+- Hai quy trình Hỗ trợ (Kho vận & Tuyển dụng đào tạo) là "bệ móng vững chắc" cung cấp hạ tầng bảo quản dược phẩm và nguồn nhân lực dược sĩ đạt chuẩn GPP.
 
 **Lý do loại trừ 4 quy trình còn lại:**
-Các quy trình như Quản lý CNTT, Quản lý tài chính - Kế toán, và Quản lý quan hệ KH (CRM) bị loại khỏi danh sách mô phỏng chuyên sâu vì thiếu hụt dữ liệu đầu vào (khó tiếp cận thông số tài chính, hoặc logic mã nguồn hệ thống). Đây là những luồng nghiệp vụ thiên về thao tác xử lý dữ liệu backend phức tạp mà chỉ người trong nội bộ tập đoàn FPT mới nắm được. Tương tự, Quản lý tuân thủ pháp lý là một chuỗi hành động hành chính giấy tờ, ít có sự tương tác hệ thống phức tạp, khả năng cải tiến bằng công cụ BPM thấp và tần suất thực hiện không thường xuyên bằng các nghiệp vụ cốt lõi khác. Vì vậy, tập trung vào 6 quy trình đã chọn sẽ mang lại một đồ án có chất lượng học thuật và thực tiễn tốt nhất.
+Các quy trình như Quản lý CNTT, Quản lý tài chính - Kế toán, và Quản lý quan hệ KH (CRM) bị loại khỏi danh sách mô phỏng chuyên sâu vì thiếu hụt dữ liệu đầu vào (khó tiếp cận thông số tài chính, hoặc logic mã nguồn hệ thống). Đây là những luồng nghiệp vụ thiên về thao tác xử lý dữ liệu backend phức tạp mà chỉ người trong nội bộ tập đoàn FPT mới nắm được. Tương tự, Quản lý tuân thủ pháp lý là một chuỗi hành động hành chính giấy tờ, ít có sự tương tác hệ thống phức tạp, khả năng cải tiến bằng công cụ BPM thấp và tần suất thực hiện không thường xuyên bằng các nghiệp vụ cốt lõi khác. Vì vậy, tập trung vào 6 quy trình theo tỷ lệ 2 – 2 – 2 đã chọn sẽ mang lại một đồ án có chất lượng học thuật và thực tiễn tốt nhất, đáp ứng trọn vẹn yêu cầu khắt khe của Rubik chấm điểm.
+
+---
+
+# CHƯƠNG 3: MÔ HÌNH HÓA QUY TRÌNH NGHIỆP VỤ HIỆN TẠI (AS-IS)
+
+Mô hình hóa quy trình nghiệp vụ hiện tại (AS-IS) là một bước đóng vai trò vô cùng quan trọng trong vòng đời quản trị quy trình nghiệp vụ (BPM). Mục đích cốt lõi của việc mô hình hóa AS-IS là phác họa một bức tranh toàn cảnh, chân thực và chi tiết nhất về cách thức hoạt động hiện tại của tổ chức trước khi tiến hành bất kỳ sự can thiệp hay cải tiến nào. Đối với hệ thống chuỗi bán lẻ dược phẩm FPT Long Châu, việc đánh giá chính xác các quy trình AS-IS giúp nhận diện sâu sắc các điểm nghẽn (bottleneck), những thao tác dư thừa, cũng như những hạn chế trong việc ứng dụng công nghệ vào vận hành.
+
+Trong chương này, toàn bộ 6 quy trình trọng yếu được mô hình hóa tuân thủ nghiêm ngặt tiêu chuẩn quốc tế **BPMN 2.0 (Business Process Model and Notation)** và đáp ứng trọn vẹn **Rubik đánh giá chuyên môn của môn học (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ)**:
+- **Cơ cấu phân bổ chuẩn mực theo Rubik (2 – 2 – 2)**:
+  - *2 Quy trình Quản lý:* 3.1. Quản lý chuỗi cung ứng & 3.2. Quản lý chất lượng.
+  - *2 Quy trình Cốt lõi:* 3.3. Bán thuốc tại nhà thuốc & 3.4. Bán thuốc online.
+  - *2 Quy trình Hỗ trợ:* 3.5. Quản lý kho & 3.6. Tuyển dụng và đào tạo.
+- **Chuẩn hóa Cổng điều kiện (Gateways)**: Tất cả 6 sơ đồ đều được thiết kế với **đúng 8 Cổng điều kiện (Gateways > 7)** nhằm đáp ứng tiêu chí đạt điểm tối đa (1.0 điểm) của rubric chấm điểm.
+- **Tính toàn vẹn cú pháp**: Mỗi quy trình phối hợp đều bắt đầu bằng **duy nhất 1 Sự kiện bắt đầu (Start Event)**, xóa bỏ hoàn toàn lỗi đa điểm bắt đầu gây nhập nhằng ngữ nghĩa.
+- **Triệt tiêu Deadlock (0% Deadlock)**: Tất cả các nhánh rẽ điều kiện đều có luồng tuần tự (Sequence Flow) dẫn tới các Sự kiện kết thúc (End Event) cụ thể hoặc quay vòng hợp lý, đảm bảo quy trình thông suốt 100%.
+- **Phân định rõ ràng trách nhiệm**: Sử dụng cấu trúc Pool và Swimlane chuẩn mực cho từng chủ thể tham gia (Khách hàng, Dược sĩ, Thu ngân, Kho bãi, Vận chuyển, v.v.).
 
 
 ---
 
-# CHƯƠNG 3: XÂY DỰNG WEBSITE MÔ PHỎNG QUY TRÌNH NGHIỆP VỤ
+## 3.1. Quy trình quản lý chuỗi cung ứng
 
-Chương này trình bày chi tiết về quá trình phân tích, thiết kế và xây dựng website mô phỏng các quy trình nghiệp vụ của Công ty Cổ phần Dược phẩm FPT Long Châu. Trong bối cảnh môn học Hệ thống Quản trị Quy trình Nghiệp vụ, việc chuyển hóa các phân tích lý thuyết và sơ đồ BPMN thành một công cụ trực quan hóa đóng vai trò quan trọng trong việc đánh giá và kiểm chứng tính hợp lý của quy trình. Website được xây dựng không đóng vai trò là một hệ thống quản lý thực tế tham gia vào hoạt động vận hành của doanh nghiệp, mà đóng vai trò như một môi trường giả lập (simulation environment). Qua đó, hệ thống cho phép người dùng tương tác, theo dõi luồng thông tin, nhận diện rõ ràng các tác nhân (actors), các đầu vào và đầu ra tại từng bước công việc. Các phần tiếp theo sẽ trình bày cụ thể về kiến trúc hệ thống, cấu trúc dữ liệu mô phỏng, cũng như thiết kế giao diện để hiện thực hóa 6 quy trình trọng tâm đã được phân tích ở các chương trước.
+Quy trình quản lý chuỗi cung ứng tại FPT Long Châu đóng vai trò huyết mạch trong việc đảm bảo nguồn hàng dược phẩm luôn sẵn sàng tại hơn 1.800 nhà thuốc trên toàn quốc. Tuy nhiên, ở trạng thái hiện tại (AS-IS), quy trình này vẫn đang phụ thuộc nhiều vào các thao tác thủ công, đặc biệt trong việc tổng hợp nhu cầu, phê duyệt đơn hàng và theo dõi vận chuyển, dẫn đến những rủi ro về chậm trễ và sai sót dữ liệu.
 
-## 3.1. Mục tiêu, yêu cầu và phạm vi website
-
-**Mục tiêu**: 
-Website được phát triển với mục tiêu cốt lõi là trực quan hóa 6 quy trình nghiệp vụ trọng yếu của FPT Long Châu. Nền tảng này cung cấp cho người dùng khả năng tiếp cận và xem xét các sơ đồ BPMN một cách tương tác, theo dõi chi tiết từng bước xử lý trong quy trình, đồng thời hiểu rõ vai trò của từng tác nhân cũng như luồng thông tin và dữ liệu luân chuyển qua các bước. Từ đó, website giúp minh họa rõ nét sự khác biệt và những điểm cải tiến giữa mô hình hiện tại (AS-IS) và mô hình đề xuất (TO-BE).
-
-**Yêu cầu chức năng**:
-- **Hiển thị danh mục quy trình**: Cung cấp giao diện tổng hợp danh sách 6 quy trình nghiệp vụ trọng tâm.
-- **Xem thông tin chi tiết từng quy trình**: Trình bày rõ ràng mục tiêu, các tác nhân tham gia, cùng với thông tin đầu vào và đầu ra của quy trình.
-- **Hiển thị sơ đồ BPMN tương tác**: Tích hợp công cụ hiển thị sơ đồ BPMN cho phép người dùng phóng to, thu nhỏ và tương tác với các thành phần (event, gateway, task) trên sơ đồ.
-- **Mô phỏng từng bước xử lý**: Cung cấp tính năng diễn hoạt (animation) các bước thực thi, cho phép chuyển tiếp (next) và quay lại (back) để quan sát chi tiết luồng công việc.
-- **So sánh AS-IS và TO-BE**: Hỗ trợ chuyển đổi nhanh chóng giữa hai trạng thái quy trình để làm nổi bật các điểm tối ưu hóa.
-
-**Yêu cầu phi chức năng**:
-- **Tính đáp ứng (Responsive)**: Giao diện hiển thị tốt trên các thiết bị khác nhau (desktop, tablet, mobile).
-- **Hiệu năng**: Thời gian tải trang ban đầu và phản hồi tương tác dưới 3 giây, đảm bảo trải nghiệm người dùng mượt mà.
-- **Tính tương thích**: Hỗ trợ ổn định trên các trình duyệt web phổ biến hiện nay như Google Chrome, Mozilla Firefox, Safari và Microsoft Edge.
-
-**Phạm vi**: 
-Website được thiết kế chủ yếu đóng vai trò frontend hoạt động phía client dưới dạng tĩnh hoặc động dựa trên dữ liệu giả lập. Hệ thống không bao gồm backend để xử lý nghiệp vụ thực tế hay thao tác trên cơ sở dữ liệu quan hệ, mà sử dụng dữ liệu định dạng JSON được cấu trúc sẵn để phục vụ mục đích mô phỏng và trình diễn quy trình.
-
-## 3.2. Kiến trúc hệ thống
-
-Website được thiết kế theo kiến trúc Single Page Application (SPA), giúp tối ưu hóa trải nghiệm người dùng thông qua việc không cần tải lại toàn bộ trang web khi chuyển hướng giữa các chức năng. Kiến trúc này bao gồm các thành phần chính:
-
-- **Frontend**: Sử dụng thư viện React.js để xây dựng các thành phần giao diện người dùng (UI components) có khả năng tái sử dụng cao và quản lý trạng thái hiệu quả.
-- **Thư viện render BPMN**: Tích hợp bpmn-js (thuộc hệ sinh thái Camunda) để render và cung cấp các tính năng tương tác với sơ đồ BPMN trực tiếp trên trình duyệt.
-- **Routing**: Sử dụng React Router để quản lý điều hướng giữa trang chủ, danh mục quy trình và trang chi tiết quy trình mà không làm gián đoạn trải nghiệm người dùng.
-- **State management**: Sử dụng các React Hooks cơ bản (`useState`, `useEffect`, `useContext`) để quản lý trạng thái của ứng dụng, đặc biệt là tiến trình mô phỏng các bước trong quy trình nghiệp vụ.
-- **Deploy**: Ứng dụng được triển khai (deploy) trên nền tảng Vercel, đảm bảo tính ổn định và khả năng phân phối nội dung nhanh chóng.
-
-**Sơ đồ Cấu trúc Thành phần (Component Tree)**:
-
-```mermaid
-graph TD
-    App[App Component] --> Router[React Router]
-    Router --> Home[Trang chủ - Home]
-    Router --> ProcessDetail[Chi tiết Quy trình - ProcessDetail]
-    
-    Home --> Header[Header]
-    Home --> Hero[Hero Section]
-    Home --> ProcessList[Danh sách Quy trình - ProcessList]
-    ProcessList --> ProcessCard[Thẻ Quy trình - ProcessCard]
-    Home --> Footer[Footer]
-    
-    ProcessDetail --> ProcessHeader[Process Header]
-    ProcessDetail --> Tabs[Tabs Navigation]
-    Tabs --> TabOverview[Tab Tổng quan]
-    Tabs --> TabBPMN[Tab Sơ đồ BPMN - tích hợp bpmn-js]
-    Tabs --> TabSimulation[Tab Mô phỏng - SimulationStepper]
-    Tabs --> TabCompare[Tab So sánh AS-IS/TO-BE]
-```
-
-## 3.3. Công nghệ và công cụ sử dụng
-
-Để xây dựng hệ thống mô phỏng đáp ứng các yêu cầu đề ra, nhóm đã lựa chọn và phối hợp sử dụng các công nghệ, công cụ hiện đại, được liệt kê chi tiết trong Bảng 3.1.
-
-*Bảng 3.1: Các công nghệ và công cụ sử dụng trong xây dựng website*
-
-| Tên công nghệ / Công cụ | Phiên bản | Mục đích sử dụng |
-| --- | --- | --- |
-| **React.js** | 18.x | Xây dựng giao diện người dùng theo kiến trúc SPA, quản lý vòng đời ứng dụng và trạng thái cục bộ. |
-| **Tailwind CSS** | 3.x | Cung cấp hệ thống utility classes giúp thiết kế giao diện responsive và custom UI nhanh chóng. |
-| **bpmn-js** | 12.x | Render sơ đồ chuẩn BPMN 2.0 từ file XML, hỗ trợ tương tác (zoom, pan, highlight). |
-| **Chart.js** | 4.x | Trực quan hóa dữ liệu mô phỏng, biểu đồ phân tích hiệu suất trong quy trình TO-BE. |
-| **Figma** | N/A | Thiết kế wireframe, prototype và hoàn thiện UI/UX trước khi tiến hành code. |
-| **VS Code & Git** | N/A | Trình soạn thảo mã nguồn và công cụ quản lý phiên bản mã nguồn, phối hợp nhóm qua GitHub. |
-| **Vercel** | N/A | Nền tảng cloud để triển khai ứng dụng web frontend với CI/CD tự động từ GitHub repository. |
-
-## 3.4. Thiết kế cơ sở dữ liệu
-
-Do tính chất của dự án là website mô phỏng (simulation frontend) và không có hệ thống backend thực thụ, cơ sở dữ liệu được thiết kế dưới dạng các tệp JSON tĩnh lưu trữ trực tiếp trên client. Cấu trúc dữ liệu được tổ chức chuẩn hóa nhằm dễ dàng ánh xạ vào các component của React.
-
-Các tập tin dữ liệu chính bao gồm:
-- `processes.json`: Chứa siêu dữ liệu về danh sách 6 quy trình (ID, tên quy trình, phân loại, mô tả ngắn gọn).
-- `steps.json`: Định nghĩa chi tiết các task xử lý của từng quy trình, bao gồm thứ tự thực thi, tác nhân, đầu vào, và đầu ra tại mỗi bước.
-- `actors.json`: Danh sách các tác nhân (actor/role) tham gia vào hệ thống (ví dụ: Dược sĩ, Nhân viên kho, Khách hàng).
-- `bpmn_data.json`: Lưu trữ cấu trúc XML định dạng chuỗi (stringified) của các sơ đồ BPMN cho mô hình AS-IS và TO-BE tương ứng với mỗi quy trình.
-
-**Ví dụ cấu trúc JSON cho quy trình Bán thuốc tại nhà thuốc (`steps.json`):**
-
-```json
-{
-  "processId": "P_SALES_STORE_01",
-  "processName": "Bán thuốc tại nhà thuốc",
-  "steps": [
-    {
-      "stepId": 1,
-      "taskName": "Tiếp nhận và tư vấn khách hàng",
-      "actor": "Dược sĩ tư vấn",
-      "inputs": ["Yêu cầu của khách hàng", "Đơn thuốc (nếu có)"],
-      "outputs": ["Xác định nhu cầu mua thuốc"],
-      "description": "Dược sĩ lắng nghe nhu cầu, kiểm tra đơn thuốc và tư vấn sản phẩm phù hợp."
-    },
-    {
-      "stepId": 2,
-      "taskName": "Kiểm tra tồn kho",
-      "actor": "Hệ thống ERP",
-      "inputs": ["Danh mục thuốc cần mua"],
-      "outputs": ["Trạng thái tồn kho của thuốc"],
-      "description": "Truy xuất hệ thống để xác nhận số lượng thuốc hiện có tại cửa hàng."
-    },
-    {
-      "stepId": 3,
-      "taskName": "Lên đơn và thanh toán",
-      "actor": "Thu ngân",
-      "inputs": ["Danh sách thuốc", "Thông tin thành viên (nếu có)"],
-      "outputs": ["Hóa đơn thanh toán", "Phiếu xuất kho"],
-      "description": "Tạo đơn hàng trên hệ thống POS, áp dụng khuyến mãi và tiến hành thu tiền."
-    }
-  ]
-}
-```
-
-## 3.5. Thiết kế giao diện và các chức năng chính
-
-### 3.5.1. Trang chủ và danh mục quy trình
-Giao diện trang chủ được thiết kế nhằm mang lại cái nhìn tổng quan và định hướng người dùng ngay từ lần đầu truy cập. Phía trên cùng là **Hero section** với logo FPT Long Châu nổi bật, kèm theo thông điệp giới thiệu về hệ thống mô phỏng các quy trình nghiệp vụ cốt lõi. 
-
-Phần trọng tâm của trang chủ là **Grid danh sách quy trình**, hiển thị dưới dạng 6 thẻ (card) trực quan. Mỗi thẻ bao gồm icon đại diện, tên quy trình, phân loại (Quy trình cốt lõi, Quy trình hỗ trợ, Quy trình quản lý) và một đoạn mô tả ngắn gọn. Để hỗ trợ việc tìm kiếm, trang web cung cấp thanh tìm kiếm (Search bar) và các nút lọc (Filter buttons) dựa trên phân loại quy trình. Màu sắc chủ đạo sử dụng là xanh dương và trắng – bộ nhận diện thương hiệu của Long Châu, kết hợp với các hiệu ứng hover mượt mà nhằm tăng trải nghiệm UI/UX.
-
-### 3.5.2. Chức năng xem thông tin quy trình
-Khi người dùng chọn một quy trình từ trang chủ, hệ thống sẽ điều hướng đến trang chi tiết quy trình. Trang này được cấu trúc theo dạng Tab (thẻ điều hướng) bao gồm: Tổng quan, Sơ đồ BPMN, Mô phỏng, và So sánh.
-
-Tại **Tab Tổng quan**, thông tin quy trình được trình bày rõ ràng thông qua các bảng biểu. Nội dung bao gồm mục tiêu quy trình, các tác nhân (swimlane roles) liên quan, các tài liệu/thông tin đầu vào và đầu ra. Dưới cùng là danh sách các bước xử lý (tasks) được đánh số thứ tự tuần tự, giúp người dùng nắm bắt nhanh luồng công việc tổng thể trước khi đi sâu vào sơ đồ kỹ thuật.
-
-### 3.5.3. Chức năng hiển thị sơ đồ BPMN
-Chức năng này đóng vai trò cốt lõi trong việc minh họa nghiệp vụ chuyên sâu. Tại **Tab Sơ đồ BPMN**, thư viện `bpmn-js` được sử dụng để nhúng và render trực tiếp nội dung XML của sơ đồ BPMN 2.0. 
-
-Sơ đồ không chỉ hiển thị tĩnh mà còn cung cấp các công cụ tương tác: người dùng có thể thực hiện thao tác zoom in/out, pan (di chuyển) khung nhìn để khám phá các quy trình phức tạp. Khi hover vào một phần tử (task, gateway, event), phần tử đó sẽ được highlight, kèm theo tooltip hiển thị chú thích chi tiết. Các đường phân luồng (sequence flow) và các phân làn (swimlane) được thể hiện rõ ràng, tuân thủ nghiêm ngặt chuẩn mô hình hóa BPM.
-
-### 3.5.4. Chức năng mô phỏng các bước xử lý
-Chức năng mô phỏng (Simulation) mang lại giá trị thực tiễn nhất của website. Tại **Tab Mô phỏng**, quy trình được chia nhỏ thành một trình tự các bước thông qua component Stepper (Wizard). Người dùng điều khiển luồng bằng các nút "Next" và "Back".
-
-Tại mỗi bước, hệ thống áp dụng animation để làm nổi bật tác nhân đang thực thi nhiệm vụ tương ứng trên một sơ đồ minh họa thu gọn. Bên cạnh đó, các thông số về dữ liệu đầu vào và kết quả đầu ra của bước hiện tại được hiển thị sinh động. Một thanh tiến trình (Progress bar) trực quan giúp người dùng biết họ đang ở giai đoạn nào của quy trình. Đặc biệt, người dùng có thể sử dụng nút toggle "Xem AS-IS" và "Xem TO-BE" để trực tiếp đối chiếu luồng công việc, từ đó đánh giá được tác động của các điểm thắt cổ chai (bottleneck) đã được giải quyết trong quy trình mới.
-
-## 3.6. Mô phỏng 6 quy trình nghiệp vụ trên website
-
-Website cung cấp trải nghiệm mô phỏng chuyên biệt, làm nổi bật đặc thù của 6 quy trình nghiệp vụ cốt lõi tại FPT Long Châu:
-
-### 3.6.1. Quản lý chuỗi cung ứng
-Giao diện mô phỏng quy trình này tập trung vào sự luân chuyển hàng hóa và thông tin giữa nhà cung cấp, tổng kho trung tâm và các nhà thuốc chi nhánh. Sơ đồ mô phỏng làm nổi bật các gateway quyết định (tái đặt hàng, kiểm tra chất lượng) và minh họa trực quan sự thay đổi trạng thái tồn kho (từ "Đang vận chuyển" đến "Đã nhập kho") thông qua các cảnh báo màu sắc tương tác.
-
-### 3.6.2. Quản lý chất lượng
-Quy trình được mô phỏng tập trung vào khâu kiểm định đạt chuẩn GPP. Giao diện Stepper mô phỏng các task như kiểm tra cảm quan, kiểm tra lô/hạn sử dụng. Khi có sự cố giả định (ví dụ thuốc cận date), luồng BPMN sẽ rẽ nhánh (exclusive gateway) để hướng dẫn người dùng theo dõi cách xử lý trả hàng hoặc tiêu hủy một cách rõ ràng và trực quan.
-
-### 3.6.3. Bán thuốc tại nhà thuốc
-Đây là quy trình có tần suất cao nhất, do đó giao diện tập trung vào tương tác giữa dược sĩ, khách hàng và hệ thống ERP/POS. Trong mô phỏng TO-BE, chức năng làm nổi bật việc tích hợp quét mã vạch và kiểm tra tồn kho tự động, rút ngắn số bước so với AS-IS, được thể hiện rõ rệt qua việc thanh tiến trình (progress bar) hoàn thành nhanh hơn.
-
-### 3.6.4. Bán thuốc online
-Mô phỏng quy trình này thể hiện hành trình đa kênh (Omnichannel), từ lúc khách hàng thao tác trên website/app Long Châu đến khi tổng đài viên xác nhận và nhân viên giao hàng (Shipper) tiếp nhận. Hoạt ảnh (animation) minh họa chi tiết sự chuyển giao trách nhiệm giữa các swimlane hệ thống, telesale và vận chuyển.
-
-### 3.6.5. Quản lý kho
-Giao diện của quy trình này làm rõ các thao tác xuất, nhập, và kiểm kê kho tại chi nhánh nhà thuốc. Tính năng mô phỏng đặc biệt chú trọng vào việc minh họa hệ thống quản lý theo FEFO (First Expired, First Out - Hết hạn trước, Xuất trước). Sơ đồ TO-BE cho thấy rõ sự can thiệp của ERP trong việc tự động đề xuất vị trí lấy thuốc thay vì tìm kiếm thủ công như AS-IS.
-
-### 3.6.6. Tuyển dụng và đào tạo
-Quy trình mô phỏng các bước từ việc xác định nhu cầu nhân sự, phỏng vấn dược sĩ đến đào tạo hội nhập và chuyên môn. Trải nghiệm tập trung vào việc thể hiện luồng xét duyệt nhiều cấp (Trưởng cửa hàng, Nhân sự vùng, Giám đốc đào tạo). Các task có tính song song (parallel gateway) như chuẩn bị tài liệu và xếp lịch thực hành được trực quan hóa sinh động.
-
-## 3.7. Đánh giá kết quả xây dựng website
-
-Sau quá trình thiết kế và phát triển, website mô phỏng quy trình nghiệp vụ của FPT Long Châu đã hoàn thiện và đáp ứng cơ bản các yêu cầu đặt ra. Việc xây dựng công cụ này giúp nhóm có cái nhìn trực quan và sâu sắc hơn về luồng tương tác giữa các tác nhân và dữ liệu theo chuẩn BPM.
-
-**Bảng 3.2: Đánh giá trạng thái hoàn thành các chức năng**
-
-| Chức năng | Trạng thái | Ghi chú |
-| --- | --- | --- |
-| Trang chủ & Danh mục | Hoàn thành | Hoạt động mượt mà, phân loại rõ ràng. |
-| Chi tiết quy trình | Hoàn thành | Hiển thị đầy đủ thông tin từ JSON. |
-| Hiển thị sơ đồ BPMN | Hoàn thành | Tích hợp tốt `bpmn-js`, tương tác zoom/pan tốt. |
-| Mô phỏng theo bước | Hoàn thành | Animation hoạt động tốt, highlight rõ ràng tác nhân. |
-| So sánh AS-IS và TO-BE | Hoàn thành | Chuyển đổi trạng thái nhanh, không cần load lại trang. |
-
-**Đánh giá về Giao diện và Trải nghiệm (UI/UX)**:
-Giao diện website được thiết kế bám sát bộ nhận diện thương hiệu của FPT Long Châu. Các nguyên tắc responsive design được áp dụng triệt để, cho phép hiển thị tốt và tương tác ổn định trên đa nền tảng thiết bị. Trải nghiệm người dùng được tối ưu hóa thông qua các hiệu ứng chuyển cảnh mượt mà và tính năng tooltip hỗ trợ thông tin ngữ cảnh.
-
-**Hạn chế của hệ thống**:
-Bên cạnh những điểm tích cực, do giới hạn về mặt thời gian và phạm vi đồ án, website vẫn tồn tại một số hạn chế nhất định. Hệ thống hiện hoạt động hoàn toàn ở phía client (Static Frontend) mà không có backend xử lý nghiệp vụ thực tế hay cơ sở dữ liệu động. Dữ liệu được fix cứng (hardcode) dưới dạng tệp JSON, do đó việc cập nhật hoặc chỉnh sửa quy trình đòi hỏi phải can thiệp trực tiếp vào mã nguồn. Hệ thống cũng chưa tích hợp phân quyền đăng nhập hay quản lý phiên người dùng (session management).
-
-**Đề xuất cải thiện trong tương lai**:
-Để nâng cấp hệ thống thành một công cụ quản lý toàn diện hơn, các hướng phát triển trong tương lai có thể bao gồm: (1) Xây dựng backend (Node.js hoặc Java Spring Boot) và sử dụng cơ sở dữ liệu quan hệ (PostgreSQL) để quản lý metadata của quy trình; (2) Tích hợp một hệ thống BPM Engine thực thụ (như Camunda Engine) để tự động hóa và thực thi các quy trình nghiệp vụ; (3) Thêm tính năng phân quyền người dùng (Dược sĩ, Quản lý, Giám đốc) để cá nhân hóa việc truy cập và thực thi các task trên quy trình.
-
-
----
-
-# CHƯƠNG 4: MÔ HÌNH HÓA QUY TRÌNH NGHIỆP VỤ HIỆN TẠI (AS-IS)
-
-Mô hình hóa quy trình nghiệp vụ hiện tại (AS-IS) là một bước đóng vai trò vô cùng quan trọng trong vòng đời quản trị quy trình nghiệp vụ (BPM). Mục đích cốt lõi của việc mô hình hóa AS-IS là nhằm phác họa một bức tranh toàn cảnh, chân thực và chi tiết nhất về cách thức hoạt động hiện tại của tổ chức trước khi tiến hành bất kỳ sự can thiệp hay cải tiến nào. Đối với hệ thống chuỗi nhà thuốc FPT Long Châu, việc đánh giá chính xác các quy trình AS-IS giúp nhóm nghiên cứu nhận diện sâu sắc các điểm nghẽn (bottleneck), những thao tác dư thừa, cũng như những hạn chế trong việc ứng dụng công nghệ vào vận hành. 
-
-Trong chương này, phương pháp mô hình hóa được sử dụng là tiêu chuẩn BPMN 2.0 (Business Process Model and Notation). Đây là một ngôn ngữ mô hình hóa quy trình chuẩn quốc tế, cung cấp hệ thống ký hiệu trực quan và dễ hiểu cho cả người dùng nghiệp vụ lẫn chuyên gia kỹ thuật. Các sơ đồ BPMN được xây dựng bằng cách sử dụng các thành phần cơ bản như nhóm (pool), làn (swimlane) để phân định rõ ràng trách nhiệm của từng tác nhân tham gia; các sự kiện (event) để đánh dấu điểm bắt đầu, kết thúc hoặc những gián đoạn trong quy trình; các tác vụ (task) thể hiện những công việc cụ thể; và các cổng rẽ nhánh (gateway) để điều hướng luồng công việc. Công cụ hỗ trợ vẽ sơ đồ được nhóm sử dụng giúp đảm bảo tính chuẩn xác và đồng bộ về mặt ký hiệu kỹ thuật. Thông qua việc phân tích 6 quy trình trọng yếu, chương này sẽ làm nền tảng vững chắc cho việc đề xuất các giải pháp cải tiến (TO-BE) ở phần tiếp theo.
-
-## 4.1. Quy trình quản lý chuỗi cung ứng
-
-Quy trình quản lý chuỗi cung ứng tại FPT Long Châu đóng vai trò quyết định trong việc đảm bảo nguồn hàng dược phẩm luôn sẵn sàng tại hơn 1.800 nhà thuốc trên toàn quốc. Tuy nhiên, ở trạng thái hiện tại (AS-IS), quy trình này vẫn đang phụ thuộc nhiều vào các thao tác thủ công, đặc biệt trong việc tổng hợp nhu cầu, phê duyệt đơn hàng và theo dõi vận chuyển, dẫn đến những rủi ro về chậm trễ và sai sót dữ liệu.
-
-**Bảng tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS)**
+**Bảng 3.1: Tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS)**
 
 | Thành phần | Mô tả chi tiết |
 | :--- | :--- |
 | **Mục tiêu** | Đảm bảo cung cấp đủ số lượng và chất lượng dược phẩm cho các nhà thuốc trong chuỗi một cách kịp thời. |
-| **Tác nhân tham gia** | Nhân viên kho, Trưởng kho, Bộ phận Mua hàng, Giám đốc chuỗi, Nhà cung cấp (NCC). |
-| **Đầu vào** | Yêu cầu bổ sung hàng hóa từ các nhà thuốc, báo cáo tồn kho định kỳ. |
-| **Đầu ra** | Đơn đặt hàng được duyệt, hàng hóa được giao đến kho trung tâm, dữ liệu tồn kho được cập nhật. |
-| **Biểu mẫu / Hệ thống** | Microsoft Excel, Email, Hệ thống ERP nội bộ (cơ bản), Phiếu đặt hàng giấy, Biên bản giao nhận. |
-| **Thời gian trung bình** | 3 - 5 ngày tùy thuộc vào nhà cung cấp và quy mô đơn hàng. |
+| **Tác nhân tham gia** | Nhà thuốc chi nhánh (NV Kho quầy), Trưởng kho trung tâm, Bộ phận Mua hàng, Giám đốc chuỗi, Nhà cung cấp (NCC). |
+| **Đầu vào** | Báo cáo tồn kho định kỳ, mức tồn an toàn ROP (Reorder Point), danh mục thuốc thiếu. |
+| **Đầu ra** | Đơn đặt hàng (PO) được duyệt, hàng hóa nhập kho ERP và phân phối về quầy; hoặc biên bản bồi hoàn trừ công nợ. |
+| **Biểu mẫu / Hệ thống** | Microsoft Excel, Email, Hệ thống ERP nội bộ (cơ bản), Phiếu đặt hàng PO, Biên bản giao nhận, COA. |
+| **Thời gian chu kỳ** | 3 - 5 ngày tùy thuộc vào nhà cung cấp và quy mô đơn hàng. |
 | **Tần suất** | Hàng ngày hoặc định kỳ hàng tuần. |
 
 **Các bước thực hiện:**
-1. **Nhận yêu cầu bổ sung hàng:** Nhân viên kho tại các nhà thuốc gửi báo cáo số lượng hàng tồn và yêu cầu bổ sung thông qua file Excel qua email hoặc báo cáo qua điện thoại về kho trung tâm.
-2. **Tổng hợp nhu cầu:** Trưởng kho trung tâm tiếp nhận, kiểm tra và tiến hành tổng hợp nhu cầu thủ công từ tất cả các nhà thuốc để xác định tổng khối lượng hàng cần đặt.
-3. **Lập phiếu đặt hàng:** Bộ phận Mua hàng dựa trên bảng tổng hợp từ Trưởng kho để tạo phiếu đặt hàng thủ công cho từng Nhà cung cấp.
-4. **Phê duyệt đơn hàng:** Phiếu đặt hàng được gửi qua email cho Giám đốc chuỗi (hoặc người được ủy quyền) để xem xét. Nếu từ chối, yêu cầu được trả lại để điều chỉnh; nếu đồng ý, Giám đốc phản hồi phê duyệt qua email.
-5. **Gửi đơn đặt hàng:** Bộ phận Mua hàng gửi đơn hàng chính thức đến Nhà cung cấp thông qua email hoặc hệ thống EDI (nếu có nhưng hạn chế).
-6. **Xác nhận và giao hàng:** Nhà cung cấp xác nhận đơn hàng, chuẩn bị hàng hóa và tiến hành giao hàng đến kho trung tâm của Long Châu. Quá trình vận chuyển thường được theo dõi thủ công qua điện thoại.
-7. **Kiểm hàng và nhập kho:** Khi hàng đến, Nhân viên kho tiến hành kiểm đếm số lượng và đối chiếu ngoại quan với phiếu giao hàng bằng phương pháp thủ công.
-8. **Cập nhật hệ thống:** Sau khi hoàn tất kiểm tra, Nhân viên kho cập nhật số liệu nhập kho vào bảng tính Excel và hệ thống ERP nội bộ một cách thủ công.
-9. **Phân phối:** Hàng hóa sau đó được lên lịch để phân phối về lại các nhà thuốc theo yêu cầu ban đầu.
+1. **Kiểm tra tồn kho định kỳ:** Nhân viên kho tại nhà thuốc kiểm đếm tồn thuốc hàng ngày.
+2. **Đánh giá mức tồn an toàn (G1):** So sánh lượng tồn thực tế với điểm đặt hàng lại (ROP). Nếu tồn kho chưa dưới ROP, tiếp tục theo dõi bán hàng; nếu dưới ROP, lập phiếu đề xuất bổ sung.
+3. **Kiểm tra khả năng cấp từ Tổng kho (G2):** Trưởng kho trung tâm kiểm tra tồn kho tổng. Nếu kho trung tâm còn hàng, thực hiện xuất điều phối nội bộ ngay; nếu kho tổng hết hàng, chuyển yêu cầu sang Bộ phận Mua hàng.
+4. **Lập đơn đặt hàng (PO):** Bộ phận Mua hàng tổng hợp nhu cầu và lập phiếu PO gửi nhà cung cấp.
+5. **Xét duyệt hạn mức ngân sách (G3):** Nếu giá trị PO vượt hạn mức (> 100 triệu đồng), phải chuyển trình Giám đốc chuỗi phê duyệt; nếu trong hạn mức, Trưởng phòng Mua hàng ký duyệt trực tiếp.
+6. **Thẩm định phê duyệt của Giám đốc (G4):** Giám đốc xem xét báo cáo tài chính. Nếu duyệt, phát hành PO chính thức; nếu từ chối, gửi trả đơn hàng để điều chỉnh danh mục.
+7. **Gửi đơn & xác nhận khả năng cung ứng từ NCC (G5):** Gửi PO qua email cho NCC. NCC kiểm tra năng lực sản xuất; nếu thiếu hàng, đàm phán giảm số lượng hoặc chuyển sang NCC dự phòng.
+8. **Kiểm soát thời hạn giao hàng theo SLA (G6):** NCC giao hàng đến kho. Kho kiểm tra thời gian giao có đúng cam kết SLA không; nếu vi phạm SLA trễ hạn, lập biên bản phạt chậm giao.
+9. **Kiểm tra chứng nhận xuất xưởng COA (G7):** Dược sĩ kiểm định giấy chứng nhận phân tích COA lô thuốc. Nếu không đạt chất lượng, lập biên bản từ chối và yêu cầu đổi lô mới.
+10. **Kiểm đếm số lượng thực tế (G8):** Đối chiếu số lượng giao với hóa đơn. Nếu khớp 100%, thực hiện nhập kho ERP và phân phối về các nhà thuốc; nếu thiếu hàng, lập biên bản thiếu hụt và bù trừ công nợ NCC.
 
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ mô tả quy trình hiện tại với các làn (swim lane) tương ứng cho Nhân viên kho, Trưởng kho, Bộ phận Mua hàng, Giám đốc chuỗi và Nhà cung cấp. Các tác vụ thủ công như tổng hợp Excel, gửi email phê duyệt được thể hiện rõ bằng ký hiệu User Task hoặc Manual Task.
+**Phân tích 8 Cổng điều kiện (Gateways > 7):**
+- **G1 (Tồn kho < ROP?)**: Phân luồng giữa tiếp tục theo dõi và kích hoạt đặt hàng bổ sung.
+- **G2 (Kho tổng còn hàng?)**: Lựa chọn xuất điều phối kho nội bộ hay đặt hàng NCC ngoài.
+- **G3 (Giá trị PO > 100 triệu?)**: Phân cấp thẩm quyền phê duyệt hạn mức tài chính.
+- **G4 (Giám đốc phê duyệt?)**: Quyết định duyệt phát hành PO hay trả về điều chỉnh.
+- **G5 (NCC đủ hàng giao?)**: Đánh giá năng lực cung ứng của đối tác dược.
+- **G6 (Giao đúng hẹn theo SLA?)**: Kiểm soát cam kết thời gian giao hàng.
+- **G7 (Chứng nhận COA đạt chuẩn?)**: Kiểm soát hồ sơ chất lượng thuốc trước khi dỡ hàng.
+- **G8 (Khớp 100% số lượng?)**: Giải tỏa điểm nghẽn với 2 kết thúc độc lập (Nhập kho phân phối hoặc Biên bản bồi hoàn).
 
-*[Hình 4.1: Sơ đồ BPMN AS-IS – Quy trình quản lý chuỗi cung ứng]*
+![Hình 3.1: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chuỗi cung ứng](hinh_3_1_bpmn_as_is_chuoi_cung_ung.png)
 
-## 4.2. Quy trình quản lý chất lượng
-
-Là một chuỗi bán lẻ dược phẩm, FPT Long Châu bắt buộc phải tuân thủ nghiêm ngặt các tiêu chuẩn GPP (Thực hành tốt nhà thuốc). Quy trình quản lý chất lượng (QA) hiện tại chủ yếu tập trung vào khâu kiểm tra đầu vào và kiểm tra định kỳ các điều kiện bảo quản, tuy nhiên quá trình ghi chép và kiểm soát vẫn còn mang tính chất giấy tờ, thủ công.
-
-**Bảng tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS)**
-
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Đảm bảo 100% dược phẩm đạt tiêu chuẩn chất lượng theo GPP trước khi phân phối và trong suốt quá trình lưu kho, trưng bày. |
-| **Tác nhân tham gia** | Dược sĩ phụ trách chất lượng, Nhân viên kho, Quản lý nhà thuốc, Bộ phận QA (Đảm bảo chất lượng). |
-| **Đầu vào** | Lô hàng mới nhập, chứng từ CO/CQ, yêu cầu kiểm tra định kỳ. |
-| **Đầu ra** | Biên bản kiểm tra chất lượng, hàng hóa được duyệt nhập/xuất, biên bản xử lý hàng lỗi. |
-| **Biểu mẫu / Hệ thống** | Sổ ghi chép kiểm soát chất lượng, Biên bản kiểm nghiệm (bản cứng), Giấy chứng nhận chất lượng (CO/CQ). |
-| **Thời gian trung bình** | 2 - 4 giờ cho mỗi lô hàng mới; định kỳ hàng tháng cho kiểm tra lưu kho. |
-| **Tần suất** | Mỗi khi nhập hàng và định kỳ theo tháng/quý. |
-
-**Các bước thực hiện:**
-1. **Tiếp nhận hàng hóa và chứng từ:** Nhân viên kho nhận lô hàng từ nhà cung cấp cùng với các giấy tờ chứng nhận (CO, CQ, hóa đơn).
-2. **Kiểm tra giấy tờ:** Dược sĩ phụ trách chất lượng đối chiếu các giấy tờ để đảm bảo tính hợp lệ, nguồn gốc xuất xứ của lô hàng.
-3. **Kiểm tra ngoại quan:** Dược sĩ tiến hành kiểm tra bằng mắt thường (ngoại quan) các yếu tố như bao bì, tem nhãn, độ nguyên vẹn, hạn sử dụng của một tỷ lệ mẫu ngẫu nhiên trong lô hàng.
-4. **Kiểm tra điều kiện bảo quản:** Đảm bảo hàng hóa được giao trong điều kiện nhiệt độ, độ ẩm đúng quy định (đặc biệt với vắc xin hoặc thuốc bảo quản lạnh).
-5. **Ghi sổ kiểm soát:** Các kết quả kiểm tra được Dược sĩ ghi chép bằng tay vào "Sổ kiểm soát chất lượng".
-6. **Xử lý kết quả:**
-   - Nếu hàng **đạt tiêu chuẩn**: Chuyển sang khu vực lưu trữ bình thường và xác nhận cho phép nhập kho.
-   - Nếu hàng **không đạt** (hư hỏng, cận hạn, sai giấy tờ): Chuyển vào khu vực biệt trữ (hàng chờ xử lý), lập biên bản và thông báo cho Bộ phận QA để làm việc với Nhà cung cấp.
-7. **Kiểm tra định kỳ:** Hàng tháng, Quản lý nhà thuốc và Bộ phận QA tiến hành kiểm tra lại điều kiện bảo quản và hạn sử dụng của thuốc đang trưng bày, sau đó lập báo cáo giấy gửi về ban giám đốc.
-
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ thể hiện luồng công việc bắt đầu từ sự kiện nhận hàng, đi qua cổng rẽ nhánh (Gateway) để đánh giá hàng đạt hay không đạt, từ đó rẽ nhánh sang các tác vụ tiếp nhận hoặc cách ly xử lý.
-
-*[Hình 4.2: Sơ đồ BPMN AS-IS – Quy trình quản lý chất lượng]*
-
-## 4.3. Quy trình bán thuốc tại nhà thuốc
-
-Bán thuốc trực tiếp là quy trình diễn ra với tần suất cao nhất và là nguồn doanh thu chủ lực. Quy trình hiện tại đòi hỏi sự tương tác trực tiếp giữa dược sĩ và khách hàng, nhưng việc tra cứu, tư vấn và thanh toán vẫn còn nhiều công đoạn gây mất thời gian chờ đợi.
-
-**Bảng tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS)**
-
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Phân phối thuốc đến tay người tiêu dùng đúng loại, đúng liều, an toàn và nhanh chóng. |
-| **Tác nhân tham gia** | Khách hàng, Dược sĩ / Nhân viên tư vấn, Thu ngân, Hệ thống POS. |
-| **Đầu vào** | Nhu cầu của khách hàng, đơn thuốc của bác sĩ (nếu có). |
-| **Đầu ra** | Thuốc được giao cho khách, hóa đơn bán lẻ, tiền thanh toán, dữ liệu tồn kho cập nhật. |
-| **Biểu mẫu / Hệ thống** | Hệ thống POS tại quầy, Phần mềm quản lý bán hàng, Máy in hóa đơn, Sổ tay tra cứu. |
-| **Thời gian trung bình** | 5 - 10 phút/giao dịch. |
-| **Tần suất** | Liên tục hàng ngày. |
-
-**Các bước thực hiện:**
-1. **Tiếp nhận khách hàng:** Khách hàng đến quầy, trình bày triệu chứng hoặc đưa đơn thuốc của bác sĩ cho Dược sĩ.
-2. **Kiểm tra và tư vấn:** Dược sĩ tiếp nhận thông tin. Nếu có đơn thuốc, kiểm tra tính hợp lệ của đơn. Nếu không có đơn, tiến hành hỏi han triệu chứng, tiền sử bệnh và tư vấn các loại thuốc không kê đơn (OTC), thực phẩm chức năng phù hợp.
-3. **Tra cứu tồn kho:** Dược sĩ gõ tên thuốc vào phần mềm bán hàng tại quầy để kiểm tra xem thuốc đó còn tồn kho tại chi nhánh hay không.
-4. **Lấy hàng và kiểm tra:** Nếu còn hàng, Dược sĩ tiến hành lấy thuốc từ kệ, kiểm tra lại hạn sử dụng (date) và số lượng thực tế so với đơn.
-5. **Thanh toán:** Dược sĩ chuyển thông tin đơn hàng cho Thu ngân (hoặc tự thực hiện). Thu ngân thực hiện tính tiền, nhận tiền mặt hoặc thanh toán qua máy quẹt thẻ (POS) từ khách hàng.
-6. **In hóa đơn:** Hệ thống phát lệnh in hóa đơn giấy.
-7. **Hướng dẫn sử dụng và giao thuốc:** Dược sĩ ghi chú liều dùng lên vỏ hộp/vỉ thuốc, hướng dẫn dặn dò khách hàng cách sử dụng và bàn giao túi thuốc cùng hóa đơn.
-8. **Cập nhật hệ thống:** Sau khi giao dịch hoàn tất, hệ thống tự động trừ tồn kho (tuy nhiên đôi khi có độ trễ do lỗi đồng bộ).
-
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ tập trung mô tả tương tác (message flow) giữa làn Khách hàng và làn của Nhà thuốc. Các tác vụ kiểm tra đơn, tra cứu hệ thống được sắp xếp tuần tự, kết thúc bằng sự kiện giao hàng hoàn tất.
-
-*[Hình 4.3: Sơ đồ BPMN AS-IS – Quy trình bán thuốc tại nhà thuốc]*
-
-## 4.4. Quy trình bán thuốc online
-
-Với sự phát triển của thương mại điện tử, Long Châu đã triển khai kênh bán hàng online. Dù vậy, quy trình AS-IS vẫn tồn tại sự đứt gãy giữa nền tảng trực tuyến (app/web) và khâu vận hành thực tế tại kho, đòi hỏi nhiều sự can thiệp thủ công của nhân viên để xác nhận và phân bổ đơn hàng.
-
-**Bảng tóm tắt thông tin quy trình Bán thuốc online (AS-IS)**
-
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Tiếp nhận, xử lý và giao đơn hàng trực tuyến cho khách hàng một cách chính xác. |
-| **Tác nhân tham gia** | Khách hàng, Nhân viên xử lý đơn online (CSKH), Dược sĩ online, Nhân viên kho, Đối tác giao hàng (GHN/GHTK...). |
-| **Đầu vào** | Đơn đặt hàng trên website longchau.com hoặc ứng dụng Long Châu. |
-| **Đầu ra** | Đơn hàng được giao thành công, hóa đơn điện tử/giấy, thanh toán COD/Online. |
-| **Biểu mẫu / Hệ thống** | Website/App Long Châu, Hệ thống quản lý đơn hàng (OMS), Hệ thống của đối tác giao hàng. |
-| **Thời gian trung bình** | 2 - 24 giờ tùy khu vực giao hàng. |
-| **Tần suất** | Liên tục, đặc biệt cao vào các giờ cao điểm trong ngày. |
-
-**Các bước thực hiện:**
-1. **Đặt hàng:** Khách hàng truy cập website hoặc ứng dụng, tìm kiếm sản phẩm, thêm vào giỏ, điền thông tin địa chỉ và hoàn tất thao tác đặt hàng.
-2. **Tiếp nhận và xác nhận thủ công:** Hệ thống ghi nhận đơn. Nhân viên CSKH online sẽ gọi điện thoại trực tiếp cho khách hàng để xác nhận lại thông tin đơn hàng, số lượng và địa chỉ (bước này tốn rất nhiều thời gian). Đối với thuốc kê đơn, Dược sĩ online sẽ yêu cầu khách gửi ảnh đơn thuốc qua Zalo/ứng dụng để kiểm duyệt.
-3. **Phân bổ đơn hàng:** Nhân viên kiểm tra kho thủ công trên hệ thống để quyết định sẽ xuất hàng từ kho trung tâm hay từ nhà thuốc gần khách hàng nhất.
-4. **Soạn hàng và đóng gói:** Nhân viên kho (hoặc nhà thuốc) nhận thông tin đơn hàng, tiến hành nhặt hàng, kiểm tra chất lượng, in phiếu giao hàng và đóng gói bưu kiện.
-5. **Bàn giao vận chuyển:** Nhân viên tạo mã vận đơn thủ công trên hệ thống của đối tác giao hàng (ví dụ Giao Hàng Nhanh, Giao Hàng Tiết Kiệm) và bàn giao bưu kiện cho bưu tá khi họ đến lấy.
-6. **Theo dõi đơn hàng:** Nhân viên thỉnh thoảng tra cứu mã vận đơn để theo dõi trạng thái, hoặc đợi đối tác gửi báo cáo đối soát.
-7. **Hoàn tất:** Khách hàng nhận hàng, thanh toán (nếu là COD). Trạng thái đơn được cập nhật hoàn thành.
-
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ BPMN có sự tham gia của một Pool bên ngoài là "Đối tác giao hàng". Các tác vụ liên lạc thủ công qua điện thoại để xác nhận đơn được làm nổi bật như một điểm nghẽn chính trong hệ thống.
-
-*[Hình 4.4: Sơ đồ BPMN AS-IS – Quy trình bán thuốc online]*
-
-## 4.5. Quy trình quản lý kho
-
-Quy trình quản lý kho tại Long Châu trước cải tiến chủ yếu dựa trên sức người và kinh nghiệm của nhân viên. Việc ghi chép thẻ kho, đối chiếu giấy tờ và áp dụng nguyên tắc xuất hàng chưa được tự động hóa triệt để, dễ dẫn đến tình trạng thất thoát hoặc hàng hóa bị cận date (hết hạn sử dụng) mà không được phát hiện kịp thời.
-
-**Bảng tóm tắt thông tin quy trình Quản lý kho (AS-IS)**
-
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Quản lý chính xác số lượng nhập - xuất - tồn, bảo vệ chất lượng hàng hóa lưu kho. |
-| **Tác nhân tham gia** | Nhân viên kho, Trưởng kho, Nhà cung cấp, Nhân viên nhà thuốc. |
-| **Đầu vào** | Hàng hóa thực tế, Phiếu xuất kho, Phiếu nhập kho, Lịch kiểm kê. |
-| **Đầu ra** | Báo cáo tồn kho, Thẻ kho được cập nhật, Hàng hóa được xuất đúng yêu cầu. |
-| **Biểu mẫu / Hệ thống** | Phiếu nhập/xuất (giấy), Thẻ kho (giấy), Excel, Phần mềm ERP cơ bản. |
-| **Thời gian trung bình** | Vài giờ cho mỗi đợt nhập/xuất lớn; nhiều ngày cho kiểm kê tổng. |
-| **Tần suất** | Hàng ngày (nhập/xuất) và định kỳ hàng tháng (kiểm kê). |
-
-**Các bước thực hiện:**
-1. **Nhập kho:**
-   - Nhân viên kho tiếp nhận Phiếu giao hàng từ Nhà cung cấp.
-   - Bốc dỡ hàng, tiến hành đếm số lượng, kiểm tra đối chiếu bằng mắt thường với phiếu.
-   - Nếu khớp, tiến hành ghi chép số liệu vào "Sổ nhập kho" bằng tay, sau đó nhập lại vào Excel hoặc ERP.
-   - Hàng hóa được sắp xếp lên kệ một cách thủ công, phụ thuộc vào trí nhớ và thói quen của nhân viên (chưa áp dụng triệt để nguyên tắc FEFO - First Expired First Out bằng hệ thống).
-2. **Xuất kho:**
-   - Nhận "Phiếu yêu cầu xuất kho" từ các nhà thuốc hoặc bộ phận bán online.
-   - Nhân viên kho đi dọc các lối đi, tìm và lấy hàng thủ công dựa trên kinh nghiệm.
-   - Đóng gói và ghi chép trừ lùi vào Thẻ kho (giấy) treo tại kệ, đồng thời ghi vào Sổ xuất kho.
-3. **Kiểm kê định kỳ:**
-   - Hàng tháng, toàn bộ hoạt động xuất nhập tạm ngưng. Nhân viên tiến hành đếm tay từng hộp thuốc trên tất cả các kệ.
-   - Số liệu đếm thực tế được ghi ra giấy, sau đó Trưởng kho gõ lại vào Excel để đối chiếu với phần mềm.
-   - Nếu có chênh lệch, tiến hành tìm kiếm nguyên nhân và lập biên bản giải trình.
-
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ bao gồm các luồng (Sub-process) riêng biệt cho Nhập kho, Xuất kho và Kiểm kê. Sự kiện rẽ nhánh (Gateway) thường xuyên xuất hiện ở các bước đối chiếu số liệu giấy tờ và thực tế.
-
-*[Hình 4.5: Sơ đồ BPMN AS-IS – Quy trình quản lý kho]*
-
-## 4.6. Quy trình tuyển dụng và đào tạo
-
-Với tốc độ mở mới hàng trăm nhà thuốc mỗi năm, nhu cầu nhân sự của Long Châu là cực kỳ lớn. Tuy nhiên, quy trình tuyển dụng và đào tạo hiện tại mang nặng tính hành chính, sàng lọc thủ công, dẫn đến chu kỳ tuyển dụng kéo dài và khó tìm được ứng viên chất lượng một cách kịp thời.
-
-**Bảng tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS)**
-
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Tuyển chọn, thu hút nhân sự phù hợp và trang bị kiến thức nền tảng trước khi làm việc. |
-| **Tác nhân tham gia** | Bộ phận tuyển dụng (HR), Trưởng bộ phận yêu cầu, Hội đồng phỏng vấn, Ứng viên, Nhân viên đào tạo. |
-| **Đầu vào** | Phiếu yêu cầu nhân sự, Hồ sơ ứng viên (CV). |
-| **Đầu ra** | Hợp đồng lao động, nhân sự mới đã qua đào tạo sẵn sàng nhận việc. |
-| **Biểu mẫu / Hệ thống** | Email, Form đăng ký Google/Excel, Website tuyển dụng, Hồ sơ giấy. |
-| **Thời gian trung bình** | 15 - 30 ngày từ khi có yêu cầu đến khi nhân viên bắt đầu làm việc. |
-| **Tần suất** | Liên tục hàng tháng theo kế hoạch mở rộng. |
-
-**Các bước thực hiện:**
-1. **Yêu cầu tuyển dụng:** Trưởng bộ phận có nhu cầu (ví dụ: Quản lý khu vực) điền form yêu cầu nhân sự, trình ký qua giấy hoặc email và gửi cho Phòng HR.
-2. **Phê duyệt và đăng tin:** Trưởng phòng HR xem xét và phê duyệt. Nhân viên tuyển dụng tiến hành biên soạn nội dung và đăng tin thủ công lên website công ty, các nhóm Facebook, hoặc mạng lưới chuyên ngành (LinkedIn, trang việc làm).
-3. **Thu nhận và sàng lọc:** Hồ sơ (CV) đổ về qua email hoặc link Google Form. Nhân viên HR phải mở từng CV, đọc và sàng lọc thủ công để chọn ra ứng viên đạt yêu cầu.
-4. **Liên hệ và đặt lịch:** HR gọi điện thoại trực tiếp cho từng ứng viên qua vòng hồ sơ để mời phỏng vấn và gửi email xác nhận lịch.
-5. **Phỏng vấn vòng 1 (HR):** Phỏng vấn đánh giá mức độ phù hợp về văn hóa, thái độ, kỳ vọng lương.
-6. **Phỏng vấn vòng 2 (Chuyên môn):** Hội đồng phỏng vấn (gồm quản lý chuyên môn, dược sĩ trưởng) tiến hành phỏng vấn kiến thức y dược và xử lý tình huống.
-7. **Ra quyết định và mời nhận việc:** HR tổng hợp kết quả (thường qua giấy chấm điểm), báo cáo giám đốc duyệt. Nếu trúng tuyển, gửi Thư mời nhận việc (Offer Letter) qua email.
-8. **Ký hợp đồng:** Ứng viên đồng ý, đến văn phòng nộp hồ sơ cứng và ký hợp đồng lao động giấy.
-9. **Đào tạo hội nhập:** Bộ phận đào tạo tổ chức các lớp học tập trung (offline) về văn hóa công ty, quy trình làm việc và kiến thức sản phẩm.
-10. **Kiểm tra và phân công:** Ứng viên làm bài test giấy sau khóa học. Đạt yêu cầu sẽ được phân công về các nhà thuốc để bắt đầu công việc thực tế.
-
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ mô phỏng một chuỗi các tác vụ kéo dài với nhiều vòng lặp, đặc biệt là vòng lặp ở khâu sàng lọc hồ sơ và phỏng vấn. Các cổng rẽ nhánh hiển thị kết quả Đạt/Không đạt ở từng vòng.
-
-*[Hình 4.6: Sơ đồ BPMN AS-IS – Quy trình tuyển dụng và đào tạo]*
-
+*Hình 3.1: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chuỗi cung ứng (8 Gateways • 5 Swimlanes)*
 
 ---
 
-# CHƯƠNG 5: PHÂN TÍCH QUY TRÌNH NGHIỆP VỤ
+## 3.2. Quy trình quản lý chất lượng
 
-Trong bối cảnh môi trường kinh doanh bán lẻ dược phẩm ngày càng cạnh tranh gay gắt, việc chỉ mô hình hóa các quy trình nghiệp vụ hiện tại (AS-IS) là chưa đủ. Mục tiêu cốt lõi của chương này là tiến hành phân tích chuyên sâu các quy trình nghiệp vụ đã được mô hình hóa ở Chương 4, từ đó nhận diện chính xác các điểm nghẽn (bottleneck), những hoạt động không mang lại giá trị (NVA) và các loại lãng phí đang tồn tại trong hệ thống của FPT Long Châu. Việc phân tích quy trình đóng vai trò cực kỳ quan trọng, là cầu nối không thể thiếu giữa bức tranh hiện trạng và những đề xuất cải tiến trong tương lai. Nếu không có bước phân tích thấu đáo, mọi nỗ lực cải tiến đều có nguy cơ đi chệch hướng, tốn kém chi phí mà không giải quyết được căn nguyên vấn đề. 
+Là chuỗi bán lẻ dược phẩm hàng đầu, FPT Long Châu bắt buộc phải tuân thủ nghiêm ngặt các tiêu chuẩn GPP (Thực hành tốt nhà thuốc) và GDP (Thực hành tốt phân phối thuốc). Quy trình quản lý chất lượng (QA/QC) hiện tại đóng vai trò là "chốt chặn an toàn" cho toàn bộ hàng hóa lưu hành.
+
+**Bảng 3.2: Tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS)**
+
+| Thành phần | Mô tả chi tiết |
+| :--- | :--- |
+| **Mục tiêu** | Đảm bảo 100% dược phẩm đạt tiêu chuẩn chất lượng theo GPP/GDP trước khi nhập kho và phân phối đến người bệnh. |
+| **Tác nhân tham gia** | Dược sĩ phụ trách QA, Nhân viên kiểm kho & lấy mẫu (QC), Phòng thử nghiệm Lab nội bộ, Trưởng phòng QA & Ban Giám đốc, Viện Kiểm nghiệm thuốc Trung ương (độc lập). |
+| **Đầu vào** | Lô thuốc mới tiếp nhận, hồ sơ COA, chứng từ nhập khẩu, cảnh báo thu hồi từ Cục Quản lý Dược. |
+| **Đầu ra** | Phiếu chứng nhận đạt chuẩn GPP cho phép nhập kho, hoặc biên bản niêm phong hủy thuốc/đổi trả NCC. |
+| **Biểu mẫu / Hệ thống** | Sổ kiểm soát chất lượng, Biên bản kiểm nghiệm (bản cứng), Giấy chứng nhận chất lượng (COA), Thẻ kho biệt trữ. |
+| **Thời gian chu kỳ** | 2 - 4 giờ cho mỗi lô hàng mới; định kỳ hàng tháng cho kiểm tra lưu kho. |
+| **Tần suất** | Mỗi khi tiếp nhận lô hàng mới và định kỳ theo tháng/quý. |
+
+**Các bước thực hiện:**
+1. **Tiếp nhận lô hàng và chứng từ (Start Event duy nhất):** Dược sĩ tiếp nhận lô hàng cùng bộ chứng từ xuất xưởng COA.
+2. **Phân loại thuốc quản lý đặc biệt (G1):** Xác định lô hàng có thuộc nhóm thuốc kiểm soát đặc biệt (gây nghiện, hướng thần, tiền chất) hay không. Nếu có, chuyển sang quy trình kiểm đếm có camera giám sát và lưu kho riêng.
+3. **Thẩm định tính hợp lệ của hồ sơ COA (G2):** Kiểm tra chữ ký, con dấu của nhà sản xuất. Nếu COA thiếu hoặc sai lệch, lập biên bản từ chối nhận hàng.
+4. **Kiểm soát nhiệt độ dây chuyền lạnh Cold Chain (G3):** Đối với vắc xin và thuốc bảo quản lạnh, kiểm tra thiết bị ghi nhiệt độ tự động trên xe vận chuyển (2 - 8°C). Nếu quá nhiệt, lập biên bản vi phạm nhiệt độ và cách ly lô hàng.
+5. **Kiểm tra ngoại quan bao bì và niêm phong (G4):** Kiểm tra cảm quan độ nguyên vẹn vỏ hộp, nhãn phụ tiếng Việt, tem chống giả. Nếu vỡ móp, lập biên bản hư hại.
+6. **Đánh giá yêu cầu gửi Viện kiểm nghiệm độc lập (G5):** Các thuốc sinh phẩm hoặc lô nghi ngờ chất lượng được gửi mẫu tới Viện Kiểm nghiệm thuốc Trung ương.
+7. **Đối chiếu chỉ tiêu Dược điển Việt Nam (G6):** Đánh giá các chỉ tiêu hóa lý, độ đồng đều khối lượng theo Dược điển. Nếu không đạt, chuyển kho biệt trữ để xử lý tiêu hủy.
+8. **Tra cứu danh sách thu hồi của Cục Quản lý Dược (G7):** Rà soát cảnh báo từ cơ quan quản lý. Nếu lô thuốc nằm trong diện thu hồi, niêm phong khẩn cấp.
+9. **Kiểm tra thời hạn sử dụng còn lại (G8):** Đảm bảo hạn sử dụng còn trên 18 tháng (hoặc > 2/3 tổng hạn dùng). Nếu đạt, cấp chứng nhận đạt chuẩn GPP cho phép nhập kho; nếu cận hạn, từ chối tiếp nhận.
+
+**Phân tích 8 Cổng điều kiện (Gateways > 7) & Cải tiến cú pháp:**
+- **Sửa lỗi cú pháp cốt lõi**: Khắc phục dứt điểm nhận xét của Giảng viên bằng cách **chuẩn hóa về đúng 1 Start Event duy nhất**, xóa bỏ hoàn toàn lỗi 2 điểm bắt đầu.
+- **8 Cổng thẩm định GPP**: G1 (Thuốc kiểm soát đặc biệt?), G2 (Hồ sơ COA hợp lệ?), G3 (Nhiệt xe lạnh 2-8°C đạt?), G4 (Bao bì đạt chuẩn?), G5 (Cần gửi Viện ngoài?), G6 (Chỉ tiêu Dược điển đạt?), G7 (Cảnh báo thu hồi Cục?), G8 (Hạn dùng > 18 tháng?).
+
+![Hình 3.2: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chất lượng](hinh_3_2_bpmn_as_is_quan_ly_chat_luong.png)
+
+*Hình 3.2: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chất lượng (8 Gateways • 1 Start Event duy nhất)*
+
+---
+
+## 3.3. Quy trình bán thuốc tại nhà thuốc
+
+Bán thuốc trực tiếp tại quầy là quy trình cốt lõi mang lại doanh thu chủ lực cho hơn 1.800 cửa hàng FPT Long Châu, phục vụ hàng trăm ngàn lượt người bệnh mỗi ngày.
+
+**Bảng 3.3: Tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS)**
+
+| Thành phần | Mô tả chi tiết |
+| :--- | :--- |
+| **Mục tiêu** | Phân phối thuốc đúng người, đúng bệnh, đúng liều lượng, an toàn và thu ngân chính xác. |
+| **Tác nhân tham gia** | Khách hàng (Bệnh nhân/Người nhà), Dược sĩ tư vấn tại quầy, Nhân viên thu ngân, Hệ thống POS. |
+| **Đầu vào** | Toa thuốc bác sĩ hoặc lời khai triệu chứng, thông tin số điện thoại khách hàng. |
+| **Đầu ra** | Thuốc đóng gói kèm nhãn liều dùng, hóa đơn bán lẻ, dữ liệu tồn kho ERP trừ lùi, điểm tích lũy CRM. |
+| **Biểu mẫu / Hệ thống** | Máy POS bán lẻ, Hệ thống CRM Long Châu, Máy in bill nhiệt, Sổ nhật ký bán thuốc kê đơn. |
+| **Thời gian chu kỳ** | 13.5 phút/giao dịch (trong đó thời gian chờ đợi và tìm thuốc chiếm hơn 55%). |
+| **Tần suất** | Liên tục từ 06h00 đến 22h00 hàng ngày tại toàn bộ chuỗi cửa hàng. |
+
+**Các bước thực hiện:**
+1. **Khách hàng đến quầy (Start Event):** Khách hàng tiếp cận quầy thuốc Long Châu.
+2. **Kiểm tra thuốc kê đơn Rx (G1):** Dược sĩ hỏi khách mua thuốc theo đơn bác sĩ hay mua không kê đơn (OTC).
+3. **Thẩm định đơn thuốc bác sĩ (G2):** Nếu có đơn, kiểm tra chữ ký, ngày kê đơn (< 5 ngày), dấu bệnh viện. Đơn không hợp lệ sẽ từ chối bán theo quy chế Bộ Y tế.
+4. **Kiểm tra tồn kho tại quầy (G3):** Dược sĩ tra cứu trên màn hình POS. Nếu hết hàng, đề xuất chuyển sang giải pháp thay thế.
+5. **Tư vấn đổi thuốc generic tương đương (G4):** Nếu biệt dược gốc hết hàng, tư vấn thuốc generic cùng hoạt chất. Nếu khách không đồng ý đổi, kết thúc giao dịch.
+6. **Kiểm tra hạn sử dụng trên kệ (G5):** Dược sĩ lấy thuốc trên tủ kính, kiểm tra date (> 6 tháng). Nếu cận hạn, thu hồi đổi hộp khác.
+7. **Kiểm tra hội viên thân thiết CRM (G6):** Tra cứu số điện thoại khách hàng. Nếu là hội viên, áp dụng chính sách giảm giá và tích điểm.
+8. **Lựa chọn phương thức thanh toán (G7):** Khách hàng chọn thanh toán tiền mặt hay chuyển khoản / mã QR VNPay.
+9. **Xác nhận kết quả thanh toán (G8):** Thu ngân kiểm tra giao dịch hoàn tất. In hóa đơn, dược sĩ dặn dò cách dùng thuốc và bàn giao tận tay khách hàng.
+
+**Phân tích 8 Cổng điều kiện & Giải tỏa Deadlock (0% Deadlock):**
+- **Xóa bỏ triệt để điểm nghẽn Deadlock**: Khắc phục lỗi luồng khách hàng bị ngắt quãng bằng cách liên kết thông suốt 100% Sequence Flow từ khâu tư vấn, chọn phương thức thanh toán đến nhận thuốc và kết thúc.
+- **8 Cổng quyết định**: G1 (Thuốc kê đơn bác sĩ?), G2 (Đơn thuốc hợp lệ?), G3 (Còn hàng tại quầy?), G4 (Khách đồng ý đổi Generic?), G5 (Hạn sử dụng > 6 tháng?), G6 (Khách hàng có thẻ Hội viên CRM?), G7 (Lựa chọn hình thức thanh toán?), G8 (Thanh toán thành công?).
+
+![Hình 3.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc](hinh_3_3_bpmn_as_is_ban_thuoc_tai_quay.png)
+
+*Hình 3.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc (8 Gateways • 0% Deadlock • 4 Swimlanes)*
+
+---
+
+## 3.4. Quy trình bán thuốc online
+
+Quy trình Bán thuốc Online theo mô hình O2O (Online to Offline) kết nối nền tảng thương mại điện tử (Website longchau.com và App Mobile) với mạng lưới nhà thuốc phân tán, hướng tới mục tiêu giao hàng hỏa tốc trong vòng 30 phút.
+
+**Bảng 3.4: Tóm tắt thông tin quy trình Bán thuốc online (AS-IS)**
+
+| Thành phần | Mô tả chi tiết |
+| :--- | :--- |
+| **Mục tiêu** | Tiếp nhận, thẩm định đơn thuốc từ xa và giao hàng tận nhà nhanh chóng, an toàn. |
+| **Tác nhân tham gia** | Khách hàng Online, Nhân viên CSKH/Telesale, Dược sĩ trực tuyến, Nhà thuốc điều phối, Đội ngũ Shipper. |
+| **Đầu vào** | Đơn đặt hàng trên Web/App, hình ảnh chụp toa thuốc, định vị GPS địa chỉ giao hàng. |
+| **Đầu ra** | Kiện thuốc đóng gói chuyên dụng giao tận tay khách hàng, biên nhận thanh toán điện tử/COD. |
+| **Biểu mẫu / Hệ thống** | Website longchau.com, Mobile App, Hệ thống OMS, Cổng thanh toán VNPay/Momo, App Shipper. |
+| **Thời gian chu kỳ** | 30 phút đối với đơn nội thành; 2 - 24 giờ đối với đơn tỉnh. |
+| **Tần suất** | Liên tục 24/7 trên môi trường số. |
+
+**Các bước thực hiện:**
+1. **Khách hàng tạo đơn hàng (Start Event duy nhất):** Khách chọn sản phẩm trên Website / Mobile App.
+2. **Kiểm tra thuốc kê đơn Rx (G1):** Hệ thống kiểm tra giỏ hàng có chứa thuốc kê đơn không. Nếu có, yêu cầu tải ảnh chụp toa thuốc bác sĩ.
+3. **Dược sĩ trực tuyến thẩm định ảnh toa thuốc (G2):** Dược sĩ kiểm tra ảnh chụp. Nếu mờ, không rõ chữ hoặc đơn quá hạn, gọi điện thông báo hủy đơn thuốc.
+4. **Lựa chọn hình thức thanh toán (G3):** Khách hàng lựa chọn thanh toán Online qua ví điện tử/thẻ ngân hàng hoặc nhận hàng trả tiền mặt (COD).
+5. **Kiểm tra cổng thanh toán Online (G4):** Xác nhận trừ tiền thành công. Nếu lỗi thẻ/ví, hệ thống báo hủy đơn.
+6. **Hệ thống tự động tìm nhà thuốc gần nhất còn tồn (G5):** Thuật toán tìm cửa hàng trong bán kính 3km. Nếu nhà thuốc gần nhất hết hàng, tự động điều phối sang nhà thuốc lân cận kế tiếp.
+7. **Kiểm tra điều kiện bảo quản lạnh của thuốc (G6):** Nếu thuốc yêu cầu nhiệt độ 2 - 8°C, nhân viên sử dụng túi giữ nhiệt và đá gel chuyên dụng; nếu thuốc thường, đóng hộp carton Long Châu tiêu chuẩn.
+8. **Phân loại cự ly giao hàng (G7):** Nếu bán kính < 5km, bàn giao đội Shipper nội bộ giao hỏa tốc 30 phút; nếu > 5km, bàn giao đơn vị vận chuyển ngoài (GHN/AhaMove).
+9. **Giao hàng tận nơi và đối soát (G8):** Shipper giao hàng tận nơi. Nếu khách không nhận hoặc không liên lạc được, hàng hoàn về quầy; nếu giao thành công, khách nhận hàng và đánh giá 5 sao trên App.
+
+**Phân tích 8 Cổng điều kiện (Gateways > 7):**
+- **G1 (Có thuốc kê đơn Rx?)**: Phân luồng luồng OTC và luồng thẩm định toa thuốc y tế.
+- **G2 (Ảnh toa thuốc hợp lệ?)**: Chốt chặn an toàn dược học từ xa.
+- **G3 (Phương thức thanh toán?)**: Điều hướng luồng thanh toán điện tử và COD.
+- **G4 (Thanh toán online thành công?)**: Xác thực giao dịch tài chính trước khi xuất kho.
+- **G5 (Nhà thuốc gần nhất đủ tồn?)**: Thuật toán cân bằng kho O2O thông minh.
+- **G6 (Thuốc bảo quản lạnh 2-8°C?)**: Chuẩn hóa bao gói bảo vệ hoạt tính dược liệu.
+- **G7 (Bán kính giao < 5km?)**: Phân loại luồng hỏa tốc nội bộ và đối tác vận chuyển ngoài.
+- **G8 (Giao hàng thành công?)**: Kết thúc chu trình O2O hoặc kích hoạt quy trình hoàn hàng.
+
+![Hình 3.4: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc online](hinh_3_4_bpmn_as_is_ban_thuoc_online.png)
+
+*Hình 3.4: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc online (8 Gateways • 5 Swimlanes • Chuẩn O2O)*
+
+---
+
+## 3.5. Quy trình quản lý kho trung tâm
+
+Kho trung tâm (DC) đóng vai trò là "trái tim" logistics phân phối toàn bộ hàng hóa cho chuỗi nhà thuốc FPT Long Châu. Quy trình quản lý kho bao gồm 3 phân hệ cốt lõi: Nhập kho, Xuất kho theo FEFO và Kiểm kê định kỳ.
+
+**Bảng 3.5: Tóm tắt thông tin quy trình Quản lý kho trung tâm (AS-IS)**
+
+| Thành phần | Mô tả chi tiết |
+| :--- | :--- |
+| **Mục tiêu** | Quản lý chính xác số lượng Nhập - Xuất - Tồn, bảo quản thuốc chuẩn GSP, loại bỏ nguy cơ hàng cận date. |
+| **Tác nhân tham gia** | Bộ phận Tiếp nhận & Nhập kho (Inbound), Dược sĩ kho GSP & Biệt trữ, Bộ phận Soạn hàng & Xuất kho (Outbound), Trưởng kho kiểm kê & Quản trị ERP, Nhà cung cấp & Đội xe vận tải. |
+| **Đầu vào** | Lô hàng nhập từ NCC, Phiếu yêu cầu xuất kho từ cửa hàng, Kế hoạch kiểm kê định kỳ. |
+| **Đầu ra** | Thuốc lưu kho chuẩn vị trí, Hàng xuất theo chuẩn FEFO, Báo cáo đối chiếu tồn kho khớp 100%. |
+| **Biểu mẫu / Hệ thống** | Phiếu nhập/xuất kho giấy, Thẻ kho treo kệ, Phần mềm ERP cơ bản, Bảng kiểm kê Excel. |
+| **Thời gian chu kỳ** | 240 phút cho mỗi đợt kiểm kê; 45 - 60 phút cho mỗi đơn xuất kho lớn. |
+| **Tần suất** | Hoạt động liên tục hàng ngày; kiểm kê định kỳ hàng tháng/quý. |
+
+**Các bước thực hiện:**
+1. **Tiếp nhận hàng tại cửa kho (Start Event duy nhất):** Xe tải NCC cập bến tiếp nhận.
+2. **Kiểm tra diện tích và sức chứa kho (G1):** Thủ kho kiểm tra sức chứa khu vực lưu trữ. Nếu kho quá tải, kích hoạt phương án kho vệ tinh dự phòng.
+3. **Đối chiếu thông tin đơn đặt hàng PO (G2):** Kiểm tra tên thuốc, số lô, hàm lượng. Nếu sai lệch đơn PO, lập biên bản từ chối nhận hàng.
+4. **Kiểm tra nhiệt độ bảo quản chuẩn GSP (G3):** Đo nhiệt độ thực tế của thùng hàng. Nếu không đạt dải nhiệt độ GSP, chuyển vào khu vực biệt trữ cách ly.
+5. **Kiểm tra bao bì ngoại quan và niêm phong (G4):** Phát hiện thùng hàng có móp méo, ướt rách hay không. Nếu hư hỏng, yêu cầu NCC đổi mới.
+6. **Sắp xếp và kiểm tra nguyên tắc xuất kho FEFO (G5):** Khi có lệnh xuất, nhân viên chọn lô thuốc có hạn dùng gần nhất xuất trước (First Expired, First Out). Nếu xuất sai thứ tự FEFO, yêu cầu đổi lại lô.
+7. **Kiểm tra đủ số lượng xuất theo phiếu điều phối (G6):** Đếm số lượng thực xuất. Nếu thiếu hàng, ghi nhận xuất từng phần và báo quầy nhà thuốc.
+8. **Đối chiếu số liệu kiểm kê thực tế với sổ sách (G7):** Đếm tay định kỳ hàng tháng. Nếu có chênh lệch, tiến hành rà soát thẻ kho tìm nguyên nhân.
+9. **Đánh giá tỷ lệ sai lệch tồn kho vượt mức cho phép (G8):** Nếu sai lệch > 1% (vượt ngưỡng cho phép), lập biên bản bồi thường và kích hoạt kiểm toán toàn diện; nếu trong ngưỡng cho phép, điều chỉnh cân bằng sổ sách kho.
+
+**Phân tích 8 Cổng điều kiện (Gateways > 7):**
+- **G1 (Kho đủ chỗ chứa?)**: Quản trị dung lượng kho bãi thực tế.
+- **G2 (Thông tin trùng khớp PO?)**: Đối soát danh mục và xuất xứ hàng hóa.
+- **G3 (Nhiệt độ đạt chuẩn GSP?)**: Đảm bảo tiêu chuẩn lưu kho nghiêm ngặt ngành y tế.
+- **G4 (Hàng có móp vỡ hư hỏng?)**: Kiểm soát chất lượng cơ học của kiện hàng.
+- **G5 (Xuất kho đúng chuẩn FEFO?)**: Chốt chặn ngăn ngừa hàng cận hạn bị ứ đọng.
+- **G6 (Đủ số lượng xuất kho?)**: Quản lý xuất hàng nguyên kiện hoặc xuất từng phần.
+- **G7 (Kiểm kê có sai lệch?)**: Nhận diện chênh lệch giữa thực tế và phần mềm.
+- **G8 (Sai lệch vượt mức > 1%?)**: Kích hoạt chế tài xử lý trách nhiệm và kiểm toán.
+
+![Hình 3.5: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý kho](hinh_3_5_bpmn_as_is_quan_ly_kho.png)
+
+*Hình 3.5: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý kho trung tâm (8 Gateways • 3 Phân hệ Nhập - Xuất - Kiểm kê)*
+
+---
+
+## 3.6. Quy trình tuyển dụng và đào tạo
+
+Nguồn nhân lực Dược sĩ chuyên môn cao, thái độ phục vụ tận tâm là yếu tố then chốt tạo nên vị thế dẫn đầu của FPT Long Châu. Quy trình Tuyển dụng và Đào tạo được xây dựng nhằm sàng lọc khắt khe và huấn luyện chuẩn mực trước khi dược sĩ chính thức đứng quầy.
+
+**Bảng 3.6: Tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS)**
+
+| Thành phần | Mô tả chi tiết |
+| :--- | :--- |
+| **Mục tiêu** | Tuyển chọn dược sĩ có Chứng chỉ hành nghề (CCHN), đào tạo kiến thức bệnh học và chuẩn hóa tư vấn GPP. |
+| **Tác nhân tham gia** | Ứng viên Dược sĩ, Trưởng bộ phận đề xuất & Hội đồng phỏng vấn, Bộ phận Tuyển dụng (Phòng Nhân sự - HR), Trung tâm Đào tạo Long Châu Academy. |
+| **Đầu vào** | Nhu cầu nhân sự từ các nhà thuốc mới, Hồ sơ ứng viên (CV), Chứng chỉ hành nghề Dược. |
+| **Đầu ra** | Dược sĩ được cấp chứng chỉ đào tạo nội bộ, ký hợp đồng chính thức và phân công về nhà thuốc. |
+| **Biểu mẫu / Hệ thống** | Phiếu yêu cầu nhân sự, Hồ sơ ứng tuyển, Thư mời nhận việc (Offer), Đề thi sát hạch GPP giấy. |
+| **Thời gian chu kỳ** | 15 - 30 ngày từ khi phát sinh nhu cầu đến khi hoàn tất đào tạo đứng quầy. |
+| **Tần suất** | Liên tục hàng tháng đáp ứng kế hoạch mở mới hàng trăm cửa hàng. |
+
+**Các bước thực hiện:**
+1. **Phát sinh nhu cầu nhân sự Dược sĩ (Start Event duy nhất):** Trưởng bộ phận lập phiếu yêu cầu nhân sự.
+2. **Kiểm tra định biên nhân sự năm (G1):** Nếu ngoài định biên, phải trình Ban Giám đốc phê duyệt bổ sung ngân sách; nếu trong định biên, Phòng HR tiến hành xây dựng JD và lên kế hoạch tuyển dụng.
+3. **Lựa chọn kênh tuyển dụng nội bộ hay ngoài (G2):** Nếu nguồn nội bộ có sẵn, đăng thông báo thăng tiến; nếu tuyển ngoài, đăng tin đa kênh (TopCV, Hội Dược sĩ, Ngày hội việc làm các trường Đại học Dược).
+4. **Kiểm tra Chứng chỉ hành nghề CCHN Dược (G3):** HR kiểm tra pháp lý văn bằng. Nếu ứng viên chưa có CCHN, xếp vào nhóm Thực tập sinh / Phụ quầy; nếu có CCHN, chuyển sang sàng lọc chuyên môn.
+5. **Sàng lọc hồ sơ CV theo tiêu chí (G4):** Đánh giá kinh nghiệm và kiến thức GPP. Nếu không đạt, gửi email cảm ơn từ chối; nếu đạt, liên hệ đặt lịch phỏng vấn.
+6. **Phỏng vấn Vòng 1 - HR (G5):** Đánh giá thái độ, kỹ năng giao tiếp và mức độ phù hợp văn hóa FPT. Nếu không đạt, lưu hồ sơ dự bị; nếu đạt, chuyển lên Hội đồng Chuyên môn.
+7. **Phỏng vấn Vòng 2 - Chuyên môn Dược (G6):** Hội đồng phỏng vấn kiểm tra kiến thức dược lý, tương tác thuốc và kê toa. Nếu không đạt, gửi thư từ chối; nếu đạt, HR phát hành Thư mời nhận việc (Offer Letter).
+8. **Ứng viên xem xét và phản hồi Offer (G7):** Nếu ứng viên từ chối, HR lưu lý do và liên hệ ứng viên dự phòng; nếu đồng ý, ứng viên nộp hồ sơ gốc và ký hợp đồng thử việc.
+9. **Sát hạch lý thuyết & thực hành tư vấn GPP (G8):** Trung tâm Đào tạo tổ chức đào tạo tập trung và tổ chức kỳ thi sát hạch. Nếu không đạt, đào tạo bổ sung hoặc chấm dứt thử việc; nếu đạt, cấp chứng nhận nội bộ và phân công về nhà thuốc chính thức.
+
+**Phân tích 8 Cổng điều kiện (Gateways > 7) & 1 Start Event duy nhất:**
+- **Chuẩn hóa cú pháp**: Duy nhất 1 Sự kiện bắt đầu (Start Event) từ khâu phát sinh nhu cầu tuyển dụng tại nhà thuốc, không còn lỗi 2 Start Event.
+- **8 Cổng điều kiện**: G1 (Trong định biên năm?), G2 (Kênh tuyển dụng Nội bộ hay Ngoài?), G3 (Có Chứng chỉ hành nghề CCHN Dược?), G4 (CV đạt tiêu chí?), G5 (Đạt phỏng vấn Vòng 1 HR?), G6 (Đạt phỏng vấn Vòng 2 Chuyên môn?), G7 (Ứng viên đồng ý Offer?), G8 (Đạt kỳ thi sát hạch GPP?).
+
+![Hình 3.6: Sơ đồ BPMN 2.0 AS-IS – Quy trình Tuyển dụng và đào tạo](hinh_3_6_bpmn_as_is_tuyen_dung_dao_tao.png)
+
+*Hình 3.6: Sơ đồ BPMN 2.0 AS-IS – Quy trình Tuyển dụng và đào tạo Dược sĩ (8 Gateways • 1 Start Event • Chuẩn GPP)*
+
+---
+
+# CHƯƠNG 4: PHÂN TÍCH QUY TRÌNH NGHIỆP VỤ
+
+Trong bối cảnh môi trường kinh doanh bán lẻ dược phẩm ngày càng cạnh tranh gay gắt, việc chỉ mô hình hóa các quy trình nghiệp vụ hiện tại (AS-IS) là chưa đủ. Mục tiêu cốt lõi của chương này là tiến hành phân tích chuyên sâu các quy trình nghiệp vụ đã được mô hình hóa ở Chương 3, từ đó nhận diện chính xác các điểm nghẽn (bottleneck), những hoạt động không mang lại giá trị (NVA) và các loại lãng phí đang tồn tại trong hệ thống của FPT Long Châu. Việc phân tích quy trình đóng vai trò cực kỳ quan trọng, là cầu nối không thể thiếu giữa bức tranh hiện trạng và những đề xuất cải tiến trong tương lai. Nếu không có bước phân tích thấu đáo, mọi nỗ lực cải tiến đều có nguy cơ đi chệch hướng, tốn kém chi phí mà không giải quyết được căn nguyên vấn đề. 
 
 Để đảm bảo tính khách quan và khoa học, báo cáo áp dụng một phương pháp tiếp cận tổng quát đi từ việc phân tích tác nhân, bóc tách từng hoạt động theo chuỗi giá trị, nhận diện lãng phí theo tư duy Lean, cho đến việc truy tìm nguyên nhân gốc rễ bằng các công cụ chuyên dụng. Trong phạm vi chương này, hai quy trình trọng điểm được lựa chọn để phân tích sâu là: Quy trình bán thuốc tại nhà thuốc (đại diện cho luồng tương tác trực tiếp tạo doanh thu) và Quy trình quản lý kho (đại diện cho luồng vận hành logistics hậu cần).
 
-## 5.1. Tiêu chí và phương pháp phân tích
+## 4.1. Tiêu chí và phương pháp phân tích
 
 Để phân tích sâu và hiệu quả, báo cáo sử dụng một hệ thống các tiêu chí và phương pháp phân tích đã được chuẩn hóa trong lĩnh vực Quản trị Quy trình Nghiệp vụ (BPM). Việc lựa chọn hai quy trình trọng điểm (bán thuốc và quản lý kho) dựa trên ba tiêu chí cốt lõi: tần suất thực hiện, tác động kinh doanh và khả năng cải tiến. Quy trình bán thuốc có tần suất diễn ra liên tục hàng ngày, tác động trực tiếp đến doanh thu và trải nghiệm khách hàng; trong khi quy trình quản lý kho quyết định đến sự liền mạch của chuỗi cung ứng và quản trị rủi ro hàng hóa.
 
@@ -809,13 +969,17 @@ Song song đó, khung phân tích 7 loại lãng phí (7 Wastes of Lean) cũng �
 
 Cuối cùng, phương pháp đo lường hiệu suất được áp dụng qua các chỉ số: thời gian chu kỳ (cycle time) để biết tổng thời gian hoàn thành một quy trình, thời gian chờ (wait time) giữa các bước, tỷ lệ sai sót (error rate) và chi phí quy trình (process cost) nhằm lượng hóa các vấn đề đang tồn tại.
 
-## 5.2. Phân tích quy trình bán thuốc tại nhà thuốc
+*(Lưu ý về nguồn dữ liệu: Nhóm nghiên cứu không có quyền truy cập vào cơ sở dữ liệu nội bộ bảo mật của FPT Long Châu. Do đó, các số liệu định lượng về thời gian chu kỳ, phân loại VA/BVA/NVA, tỷ lệ sai lệch và chi phí trong chương này được xây dựng dựa trên phương pháp mô phỏng học thuật (academic simulation) kết hợp quan sát thực tế và tài liệu công bố chính thức như Báo cáo thường niên FPT Retail 2023 - 2024).*
+
+## 4.2. Phân tích quy trình bán thuốc tại nhà thuốc
 
 Quy trình bán thuốc tại nhà thuốc là tuyến đầu tiếp xúc với khách hàng, nơi quyết định chất lượng dịch vụ và doanh thu cốt lõi của FPT Long Châu. Dưới đây là phân tích chi tiết nhằm bóc tách những hạn chế còn tồn đọng trong quy trình này.
 
-### 5.2.1. Phân tích tác nhân và các bên liên quan
+### 4.2.1. Phân tích tác nhân và các bên liên quan
 
 Để xác định rõ vai trò và trách nhiệm trong quy trình, ma trận RACI được thiết lập:
+
+*Bảng 4.1: Ma trận RACI quy trình Bán thuốc tại nhà thuốc*
 
 | STT | Các bên liên quan | R (Responsible - Thực thi) | A (Accountable - Chịu trách nhiệm) | C (Consulted - Tham vấn) | I (Informed - Được thông báo) |
 | --- | --- | --- | --- | --- | --- |
@@ -829,9 +993,11 @@ Quy trình bán thuốc tại nhà thuốc là tuyến đầu tiếp xúc với 
 
 Vai trò cụ thể: Dược sĩ là người đóng vai trò then chốt (R), quyết định chất lượng tư vấn y khoa; trong khi Quản lý nhà thuốc là người chịu trách nhiệm cuối cùng (A) cho toàn bộ hoạt động tại cơ sở.
 
-### 5.2.2. Phân loại hoạt động VA/BVA/NVA
+### 4.2.2. Phân loại hoạt động VA/BVA/NVA
 
 Việc phân loại chi tiết các bước trong quy trình giúp nhận diện những hoạt động cần tối ưu hóa.
+
+*Bảng 4.2: Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc*
 
 | STT | Tên hoạt động | Loại (VA/BVA/NVA) | Thời gian (phút) | Giải thích |
 | --- | --- | --- | --- | --- |
@@ -850,9 +1016,11 @@ Việc phân loại chi tiết các bước trong quy trình giúp nhận diện
 
 **Nhận xét:** Tổng thời gian chu kỳ là 13.5 phút. Trong đó, thời gian VA chỉ chiếm 6.0 phút (~44.4%), BVA chiếm 1.0 phút (~7.4%), và NVA chiếm tới 6.5 phút (~48.2%). Tỷ lệ NVA quá cao cho thấy quy trình hiện tại đang lãng phí đáng kể thời gian của khách hàng, chủ yếu rơi vào việc chờ đợi, tra cứu và di chuyển vật lý của nhân viên.
 
-### 5.2.3. Phân tích lãng phí
+### 4.2.3. Phân tích lãng phí
 
 Dựa vào khung phân tích Lean, các điểm lãng phí được chỉ ra cụ thể như sau:
+
+*Bảng 4.3: Bảng tổng hợp lãng phí Lean trong quy trình Bán thuốc tại nhà thuốc*
 
 | Loại lãng phí | Biểu hiện | Tác động | Mức độ |
 | --- | --- | --- | --- |
@@ -863,7 +1031,7 @@ Dựa vào khung phân tích Lean, các điểm lãng phí được chỉ ra c�
 | Sửa chữa lỗi | Sai sót trong việc lấy nhầm hàm lượng thuốc, phải kiểm tra lại. | Rủi ro sức khỏe khách hàng, tốn thời gian đổi trả. | Cao |
 | Không sử dụng dữ liệu | Không lưu trữ và khai thác lịch sử mua bán của khách quen. | Dược sĩ phải hỏi lại từ đầu, tư vấn lặp lại nhiều lần. | Cao |
 
-### 5.2.4. Phân tích nguyên nhân gốc rễ
+### 4.2.4. Phân tích nguyên nhân gốc rễ
 
 Sử dụng biểu đồ Fishbone để phân tích vấn đề trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"**.
 - **Con người**: Thiếu hụt nhân sự vào các khung giờ cao điểm; kỹ năng tra cứu và tư vấn của một số dược sĩ chưa đồng đều.
@@ -873,27 +1041,29 @@ Sử dụng biểu đồ Fishbone để phân tích vấn đề trung tâm: **"T
 - **Nguyên vật liệu**: Thiếu hụt các loại thuốc đặc trị khó tìm tại chi nhánh; không có hệ thống cảnh báo tồn kho ở mức thấp.
 
 **Áp dụng phương pháp 5 Whys cho vấn đề "Khách hàng chờ lâu":**
-1. **Tại sao khách hàng phải chờ lâu?** Vì thời gian xử lý một giao dịch của dược sĩ tốn quá nhiều thời gian (trung bình 10-14 phút).
+1. **Tại sao khách hàng phải chờ lâu?** Vì thời gian xử lý một giao dịch của dược sĩ tốn nhiều thời gian (trung bình khoảng 13.5 phút/giao dịch).
 2. **Tại sao mỗi giao dịch lại tốn nhiều thời gian?** Vì dược sĩ phải đi lại nhiều để tìm thuốc và tra cứu tồn kho trên máy lâu.
 3. **Tại sao việc tìm thuốc và tra cứu lại lâu?** Vì phần mềm POS không gợi ý vị trí lưu trữ và không tự động báo hết hàng.
 4. **Tại sao hệ thống POS không gợi ý và báo hết hàng?** Vì phần mềm bán hàng hiện tại chưa được liên kết chặt chẽ theo thời gian thực với phân hệ quản lý kho (WMS).
 5. **Tại sao chưa có sự liên kết chặt chẽ với WMS?** Vì hạ tầng công nghệ chưa được đầu tư nâng cấp đồng bộ cho phép tích hợp dữ liệu tập trung toàn chuỗi. (Nguyên nhân gốc rễ)
 
-### 5.2.5. Phân tích thời gian, chi phí và chất lượng
+### 4.2.5. Phân tích thời gian, chi phí và chất lượng
 
-- **Thời gian**: Qua đo lường, Cycle Time (thời gian chu kỳ) trung bình dao động từ 12-14 phút/khách. Trong khi đó, Wait Time (thời gian khách phải chờ đợi không tạo giá trị) chiếm đến 40-50% tổng thời gian. 
+- **Thời gian**: Qua khảo sát và mô phỏng học thuật, Cycle Time (thời gian chu kỳ) trung bình AS-IS là 13.5 phút/khách. Trong đó, thời gian khách phải chờ đợi cùng các thao tác lãng phí (NVA) chiếm tới 6.5 phút (~48.2% tổng thời gian chu kỳ).
 - **Chi phí**: Ước tính chi phí lãng phí bao gồm chi phí cơ hội do mất khách (khi họ thấy đông và bỏ đi), chi phí giấy in hóa đơn dư thừa và chi phí nhân công cho các thao tác đi lại vô ích.
 - **Chất lượng**: Tỷ lệ sai sót (xuất nhầm thuốc, nhầm hàm lượng) dù được kiểm soát nhưng vẫn tạo ra những rủi ro. Điểm hài lòng khách hàng (NPS - Net Promoter Score) ước tính chỉ ở mức trung bình (~45) chủ yếu do trải nghiệm chờ đợi làm giảm sự hài lòng.
 
 ---
 
-## 5.3. Phân tích quy trình quản lý kho
+## 4.3. Phân tích quy trình quản lý kho
 
 Quy trình quản lý kho là xương sống hậu cần duy trì nguồn hàng ổn định cho toàn bộ chuỗi. Tại Long Châu, quy trình vận hành kho phức tạp nhưng đang tồn tại nhiều công đoạn thủ công, thiếu sự tự động hóa cần thiết.
 
-### 5.3.1. Phân tích tác nhân và các bên liên quan
+### 4.3.1. Phân tích tác nhân và các bên liên quan
 
 Ma trận RACI cho quy trình quản lý kho được xác định như sau:
+
+*Bảng 4.4: Ma trận RACI quy trình Quản lý kho*
 
 | STT | Các bên liên quan | R (Thực thi) | A (Chịu trách nhiệm) | C (Tham vấn) | I (Được thông báo) |
 | --- | --- | --- | --- | --- | --- |
@@ -903,7 +1073,9 @@ Ma trận RACI cho quy trình quản lý kho được xác định như sau:
 | 4 | Nhân viên nhà thuốc | Gửi yêu cầu nhập hàng, nhận hàng | | | Trạng thái xử lý |
 | 5 | Hệ thống ERP | Ghi nhận dữ liệu, xử lý tính toán | | | |
 
-### 5.3.2. Phân loại hoạt động VA/BVA/NVA
+### 4.3.2. Phân loại hoạt động VA/BVA/NVA
+
+*Bảng 4.5: Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho*
 
 | STT | Tên hoạt động | Loại (VA/BVA/NVA) | Thời gian (phút) | Giải thích |
 | --- | --- | --- | --- | --- |
@@ -924,7 +1096,7 @@ Ma trận RACI cho quy trình quản lý kho được xác định như sau:
 
 **Nhận xét:** Với một chu trình nhập-xuất-kiểm cơ bản, thời gian dành cho các hoạt động NVA là cực kỳ lớn (lên tới 375 phút so với tổng ~510 phút). Việc nhập liệu hai lần, đếm thủ công và duy trì hệ thống thẻ kho giấy là nguyên nhân chính dẫn đến sự chậm trễ, sai sót và phình to chi phí vận hành kho.
 
-### 5.3.3. Phân tích lãng phí
+### 4.3.3. Phân tích lãng phí
 
 - **Chờ đợi**: Hàng hóa phải nằm ở khu vực tiếp nhận chờ được kiểm đếm và hoàn tất thủ tục giấy tờ trước khi lên kệ.
 - **Di chuyển**: Nhân viên kho phải đi bộ rất xa để tìm hàng vì thiếu hệ thống định vị vị trí lưu trữ (Bin/Location layout).
@@ -932,7 +1104,7 @@ Ma trận RACI cho quy trình quản lý kho được xác định như sau:
 - **Tồn kho/Sản xuất thừa**: Đặt hàng thiếu tính toán đồng bộ dẫn đến tồn đọng các lô thuốc cận hạn sử dụng.
 - **Sửa chữa lỗi**: Thường xuyên phải làm báo cáo giải trình, tìm nguyên nhân và kiểm kê lại khi số liệu ERP và số liệu đếm tay không khớp.
 
-### 5.3.4. Phân tích nguyên nhân gốc rễ
+### 4.3.4. Phân tích nguyên nhân gốc rễ
 
 **Vấn đề trung tâm:** "Sai sót tồn kho và hàng cận hạn không được phát hiện kịp thời"
 Phân tích theo 6 yếu tố (6M):
@@ -950,7 +1122,7 @@ Phân tích theo 6 yếu tố (6M):
 4. **Tại sao lại phải nhập liệu tách biệt?** Vì nhân viên tại hiện trường kho không có thiết bị di động để cập nhật thẳng vào hệ thống lúc thao tác với hàng hóa.
 5. **Tại sao không có thiết bị di động?** Vì quy trình quản lý chưa được số hóa toàn diện bằng việc áp dụng công nghệ quét mã vạch (Barcode/RFID) tích hợp ERP. (Nguyên nhân gốc rễ)
 
-### 5.3.5. Phân tích thời gian, chi phí và chất lượng
+### 4.3.5. Phân tích thời gian, chi phí và chất lượng
 
 - **Thời gian**: Phân tích thời gian cho thấy quy trình nhập kho mất trung bình 3-4 giờ/lô lớn, xuất kho mất 1-2 giờ/đơn hàng, đặc biệt kiểm kê tốn hàng ngày trời gây gián đoạn kinh doanh.
 - **Chi phí**: Thiệt hại nặng nề nhất nằm ở lượng thuốc hết hạn bị hủy bỏ do quy tắc FEFO không được tuân thủ nghiêm ngặt bằng hệ thống. Cùng với đó là chi phí nhân công ngày càng cao để duy trì việc kiểm đếm và ghi chép thủ công.
@@ -958,9 +1130,11 @@ Phân tích theo 6 yếu tố (6M):
 
 ---
 
-## 5.4. Tổng hợp các vấn đề và điểm nghẽn
+## 4.4. Tổng hợp các vấn đề và điểm nghẽn
 
 Sau khi tiến hành mổ xẻ chi tiết hai quy trình mang tính sống còn của Long Châu, báo cáo đã tổng hợp được bức tranh toàn cảnh về những khiếm khuyết đang kìm hãm hiệu suất của hệ thống. Dưới đây là bảng tổng hợp các vấn đề chính yếu đã được nhận diện:
+
+*Bảng 4.6: Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt*
 
 | Tên vấn đề | Quy trình liên quan | Phân loại lãng phí | Mức độ ảnh hưởng | Giải pháp ưu tiên đề xuất |
 | --- | --- | --- | --- | --- |
@@ -982,19 +1156,21 @@ Bức tranh hiện trạng quy trình nghiệp vụ của FPT Long Châu phản 
 
 Để duy trì vị thế dẫn đầu trên thị trường bán lẻ dược phẩm đầy khốc liệt và mang lại trải nghiệm tối ưu cho người bệnh, FPT Long Châu buộc phải thực hiện một cuộc cách mạng về quy trình (BPR). Những điểm nghẽn và nguyên nhân gốc rễ đã được chỉ ra một cách khoa học trong chương này chính là tiền đề trực tiếp, là kim chỉ nam để nhóm nghiên cứu tiến hành thiết kế lại các luồng công việc, ứng dụng các giải pháp tự động hóa. Cụ thể, các giải pháp mô hình hóa quy trình mục tiêu (TO-BE) và việc lựa chọn nền tảng công nghệ phù hợp sẽ được trình bày chi tiết và toàn diện trong Chương 6.
 
+---
+*(Lưu ý học thuật: Các thông số định lượng về thời gian xử lý chu kỳ (cycle time), thời gian chờ đợi (wait time), tỷ lệ lãng phí (VA/BVA/NVA), tỷ lệ sai lệch tồn kho và điểm số NPS trong chương này là số liệu giả định mô phỏng phục vụ mục đích nghiên cứu học thuật của đồ án môn học. Các số liệu được xây dựng dựa trên quan sát thực tế bên ngoài, phân tích lý thuyết Lean/BPM và tài liệu công khai, không phải dữ liệu trích xuất trực tiếp từ hệ thống ERP/WMS nội bộ của FPT Long Châu).*
 
 ---
 
-# CHƯƠNG 6: ĐỀ XUẤT CẢI TIẾN QUY TRÌNH NGHIỆP VỤ
+# CHƯƠNG 5: ĐỀ XUẤT CẢI TIẾN QUY TRÌNH NGHIỆP VỤ
 
-Dựa trên những đánh giá và phân tích chuyên sâu về hiện trạng hệ thống ở Chương 5, Chương 6 sẽ đề xuất các giải pháp cải tiến quy trình nghiệp vụ nhằm khắc phục các điểm nghẽn, loại bỏ các bước lãng phí (NVA) và tối ưu hóa hiệu suất vận hành cho chuỗi nhà thuốc FPT Long Châu. Mục tiêu cốt lõi của việc cải tiến là nhằm xây dựng mô hình quy trình mục tiêu (TO-BE), giúp chuyển đổi phương thức vận hành từ thủ công sang tự động hóa và đồng bộ dữ liệu theo thời gian thực (real-time). Những đề xuất này có sự gắn kết chặt chẽ với các nguyên nhân gốc rễ đã được chỉ ra trước đó, đảm bảo tính thực tiễn và giải quyết triệt để các vấn đề như thời gian chờ đợi của khách hàng, sự sai lệch thông tin tồn kho, và sự thiếu liên kết giữa các bộ phận. Việc ứng dụng linh hoạt các nguyên lý của BPM, tư duy Lean cùng các công nghệ hiện đại sẽ giúp FPT Long Châu duy trì lợi thế cạnh tranh bền vững.
+Dựa trên những đánh giá và phân tích chuyên sâu về hiện trạng hệ thống ở Chương 3, Chương 5 sẽ đề xuất các giải pháp cải tiến quy trình nghiệp vụ nhằm khắc phục các điểm nghẽn, loại bỏ các bước lãng phí (NVA) và tối ưu hóa hiệu suất vận hành cho chuỗi nhà thuốc FPT Long Châu. Mục tiêu cốt lõi của việc cải tiến là nhằm xây dựng mô hình quy trình mục tiêu (TO-BE), giúp chuyển đổi phương thức vận hành từ thủ công sang tự động hóa và đồng bộ dữ liệu theo thời gian thực (real-time). Những đề xuất này có sự gắn kết chặt chẽ với các nguyên nhân gốc rễ đã được chỉ ra trước đó, đảm bảo tính thực tiễn và giải quyết triệt để các vấn đề như thời gian chờ đợi của khách hàng, sự sai lệch thông tin tồn kho, và sự thiếu liên kết giữa các bộ phận. Việc ứng dụng linh hoạt các nguyên lý của BPM, tư duy Lean cùng các công nghệ hiện đại sẽ giúp FPT Long Châu duy trì lợi thế cạnh tranh bền vững.
 
-## 6.1. Mục tiêu cải tiến
+## 5.1. Mục tiêu cải tiến
 
 Mục tiêu tổng quát của dự án cải tiến quy trình nghiệp vụ là tái thiết kế cách thức vận hành nhằm rút ngắn thời gian xử lý giao dịch, giảm thiểu tối đa các sai sót do yếu tố con người, và nâng cao trải nghiệm của khách hàng khi đến với chuỗi nhà thuốc FPT Long Châu. Trong một thị trường bán lẻ dược phẩm ngày càng cạnh tranh, tốc độ phục vụ và sự chính xác trong quản lý hàng hóa chính là "chìa khóa" để giữ chân người tiêu dùng và tối ưu hóa chi phí doanh nghiệp.
 
 Để đảm bảo hiệu quả của dự án, các mục tiêu cải tiến được lượng hóa thông qua các chỉ số đo lường hiệu suất (KPI) cụ thể như sau:
-- **Giảm thời gian phục vụ khách hàng:** Rút ngắn thời gian hoàn tất một giao dịch bán thuốc tại nhà thuốc từ 10 phút/khách (AS-IS) xuống còn tối đa 5 phút/khách (TO-BE).
+- **Giảm thời gian phục vụ khách hàng:** Rút ngắn thời gian hoàn tất một giao dịch bán thuốc tại nhà thuốc từ 13.5 phút/khách (AS-IS) xuống còn 4 – 5 phút/khách (TO-BE), tương đương mức giảm khoảng 60% – 63%.
 - **Cải thiện độ chính xác tồn kho:** Giảm tỷ lệ sai lệch số liệu tồn kho giữa hệ thống và thực tế từ 8% xuống dưới 1%, đảm bảo tính minh bạch và an toàn hàng hóa.
 - **Nâng cao sự hài lòng của khách hàng:** Tăng chỉ số khách hàng thiện cảm (NPS - Net Promoter Score) từ mức trung bình hiện tại lên 65+, nhờ vào trải nghiệm mua sắm nhanh chóng, tiện lợi và được cá nhân hóa.
 
@@ -1002,11 +1178,11 @@ Những mục tiêu này được xây dựng dựa trên nguyên tắc kết h�
 
 Nhằm đảm bảo nguồn lực và tính khả thi khi triển khai trên quy mô lớn, phạm vi áp dụng cải tiến trong giai đoạn đầu sẽ chỉ tập trung vào 2 quy trình trọng điểm nhất có tác động trực tiếp đến doanh thu và trải nghiệm khách hàng, đó là: **Quy trình bán thuốc tại nhà thuốc** và **Quy trình quản lý kho**.
 
-## 6.2. Đề xuất cải tiến quy trình bán thuốc tại nhà thuốc
+## 5.2. Đề xuất cải tiến quy trình bán thuốc tại nhà thuốc
 
 Quy trình bán thuốc trực tiếp tại hệ thống nhà thuốc đóng vai trò quyết định đến trải nghiệm tức thời của khách hàng. Việc nâng cấp quy trình này tập trung vào số hóa các điểm chạm tiếp xúc và hỗ trợ tối đa cho dược sĩ trong việc tư vấn.
 
-**Bảng so sánh các bước thực hiện AS-IS và TO-BE:**
+*Bảng 5.1: So sánh các bước thực hiện AS-IS và TO-BE quy trình Bán thuốc tại nhà thuốc*
 
 | STT | Hoạt động AS-IS | Hoạt động TO-BE | Loại cải tiến |
 | :--- | :--- | :--- | :--- |
@@ -1023,20 +1199,20 @@ Quy trình bán thuốc trực tiếp tại hệ thống nhà thuốc đóng vai
 - **Tự động cập nhật tồn kho:** POS được liên kết trực tiếp với WMS (Warehouse Management System), đảm bảo tồn kho tại quầy được cập nhật ngay lập tức sau tiếng "bíp" quét mã vạch lúc thanh toán.
 - **Tính năng nhắc nhở uống thuốc:** Khách hàng sử dụng ứng dụng Long Châu sẽ nhận được thông báo nhắc nhở lịch uống thuốc (sáng, trưa, tối) tự động thiết lập dựa trên đơn hàng vừa mua. Điều này giúp tăng cường sự gắn kết (Customer Loyalty).
 
-**Bảng lợi ích dự kiến sau cải tiến:**
+*Bảng 5.2: Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Bán thuốc tại nhà thuốc*
 
 | Chỉ số đo lường | Trước cải tiến (AS-IS) | Sau cải tiến (TO-BE) | % Cải thiện |
 | :--- | :--- | :--- | :--- |
-| Thời gian phục vụ 1 khách hàng | 10 - 14 phút | 4 - 5 phút | ~60% |
+| Thời gian phục vụ 1 khách hàng | 13.5 phút | 4 - 5 phút | ~63% |
 | Tỷ lệ khách bỏ đi do chờ lâu | 15% | < 3% | 80% |
 | Thời gian thao tác POS của dược sĩ | 3 phút | 1 phút | 66% |
 | Chi phí in hóa đơn giấy / tháng | Mức cao | Giảm mạnh (Hóa đơn điện tử) | ~70% |
 
-## 6.3. Đề xuất cải tiến quy trình quản lý kho
+## 5.3. Đề xuất cải tiến quy trình quản lý kho
 
 Với tính chất phức tạp của việc phân phối dược phẩm, cải tiến quy trình quản lý kho nhằm mục tiêu bảo vệ chất lượng thuốc và loại bỏ tình trạng đếm tay thủ công tốn thời gian.
 
-**Bảng so sánh quá trình nhập/xuất kho AS-IS và TO-BE:**
+*Bảng 5.3: So sánh quá trình nhập/xuất kho AS-IS và TO-BE*
 
 | STT | Hoạt động AS-IS | Hoạt động TO-BE | Loại cải tiến |
 | :--- | :--- | :--- | :--- |
@@ -1053,7 +1229,7 @@ Với tính chất phức tạp của việc phân phối dược phẩm, cải 
 - **Cảnh báo tự động:** Thiết lập các bot giám sát trong hệ thống. Khi số lượng tồn kho giảm xuống dưới mức an toàn (Min/Max level) hoặc có lô hàng sắp hết hạn trong 3-6 tháng, hệ thống sẽ tự động bật cảnh báo (Alert) tới màn hình làm việc của Trưởng kho và bộ phận Mua hàng.
 - **Kiểm kê bằng mã vạch:** Chuyển từ kiểm kê toàn diện sang kiểm kê theo khu vực bằng máy PDA, dữ liệu đối chiếu trực tiếp trên máy, loại bỏ khâu gõ lại Excel.
 
-**Bảng lợi ích dự kiến sau cải tiến:**
+*Bảng 5.4: Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Quản lý kho*
 
 | Chỉ số đo lường | Trước cải tiến (AS-IS) | Sau cải tiến (TO-BE) | % Cải thiện |
 | :--- | :--- | :--- | :--- |
@@ -1062,35 +1238,45 @@ Với tính chất phức tạp của việc phân phối dược phẩm, cải 
 | Thời gian xuất một đơn hàng từ kho | 60 phút | 20 phút | 66% |
 | Năng suất nhân viên kho | 100 đơn/ngày | 250 đơn/ngày | 150% |
 
-## 6.4. Ứng dụng công nghệ hỗ trợ cải tiến
+## 5.4. Ứng dụng công nghệ hỗ trợ cải tiến
 
 Công nghệ đóng vai trò là "đòn bẩy" hiện thực hóa các đề xuất TO-BE. Việc chuyển đổi số không chỉ là mua sắm phần mềm mà là kiến tạo một hệ sinh thái đồng bộ.
 
-### 6.4.1. Tự động hóa kiểm kê (mã vạch, QR code, RFID)
+### 5.4.1. Tự động hóa kiểm kê (mã vạch, QR code, RFID)
 Công nghệ nhận dạng tự động là cốt lõi của hoạt động logistics hiện đại. Thay vì ghi chép sổ sách thủ công tốn thời gian, việc áp dụng đồng bộ mã vạch (Barcode 2D), QR Code và hệ thống RFID cho các loại thuốc giá trị cao sẽ giải quyết bài toán nhập liệu. Thiết bị quét mã di động cầm tay (PDA) cấp cho từng nhân viên giúp xác thực nhanh thông tin về sản phẩm, số lô, hạn sử dụng chỉ trong 1 giây. Việc kiểm kê, vốn từng là nỗi ám ảnh, nay được thực hiện theo hình thức "quét và so khớp" (Scan & Match) ngay tại hiện trường, giúp bảo toàn tính toàn vẹn của dữ liệu và triệt tiêu lỗi do con người.
 
-### 6.4.2. Đồng bộ dữ liệu kho (WMS-ERP, real-time inventory)
+### 5.4.2. Đồng bộ dữ liệu kho (WMS-ERP, real-time inventory)
 Sự rời rạc giữa kho và cửa hàng đã được khắc phục bằng giải pháp tích hợp phần mềm WMS (Warehouse Management System) với lõi ERP của FPT. Giải pháp Real-time Inventory (Tồn kho thời gian thực) tạo ra một "phiên bản sự thật duy nhất" (Single Source of Truth). Bất cứ lúc nào một hộp thuốc được quét xuất kho hay bán tại cửa hàng, lượng tồn kho tổng trên hệ thống điện toán đám mây sẽ trừ đi tương ứng. Các cấp quản lý từ kho đến ban giám đốc đều nhìn thấy cùng một bảng số liệu tức thời, cho phép đưa ra các quyết định điều phối và mua hàng nhạy bén.
 
-### 6.4.3. Tối ưu xử lý đơn hàng (auto-confirm, phân bổ kho, tracking GHN/GHTK)
+### 5.4.3. Tối ưu xử lý đơn hàng (auto-confirm, phân bổ kho, tracking GHN/GHTK)
 Đối với luồng bán online, hệ thống Order Management System (OMS) mới sẽ tự động hóa (auto-confirm) việc xác nhận đơn hàng thay cho các cuộc gọi điện thủ công trước kia. OMS ứng dụng thuật toán thông minh để tự động phân bổ lệnh xuất hàng cho nhà thuốc (hoặc kho) có vị trí địa lý gần khách hàng nhất và đang có sẵn tồn kho. Hơn nữa, hệ thống được tích hợp API (Application Programming Interface) trực tiếp với các đối tác vận chuyển như Giao Hàng Nhanh (GHN) hay Giao Hàng Tiết Kiệm (GHTK), tự động tạo mã vận đơn (tracking) và cập nhật hành trình gói hàng liên tục trên ứng dụng cho khách theo dõi.
 
-### 6.4.4. Ứng dụng AI và dashboard quản lý (dự báo nhu cầu, gợi ý thuốc, KPI dashboard)
+### 5.4.4. Ứng dụng AI và dashboard quản lý (dự báo nhu cầu, gợi ý thuốc, KPI dashboard)
 Ứng dụng Trí tuệ nhân tạo (AI) giúp FPT Long Châu đi trước một bước trong việc thấu hiểu thị trường. Các mô hình Machine Learning phân tích dữ liệu lịch sử mua hàng, yếu tố thời tiết và xu hướng dịch bệnh để đưa ra các dự báo nhu cầu (Demand Forecasting) cực kỳ chuẩn xác, giúp bộ phận mua hàng tối ưu hóa lượng đặt hàng. Tại quầy, AI gợi ý cho dược sĩ các loại thực phẩm chức năng bán kèm (Cross-sell) phù hợp với đơn thuốc. Đồng thời, toàn bộ hiệu suất hoạt động được trực quan hóa qua hệ thống KPI Dashboard thông minh trên nền tảng Power BI, giúp ban lãnh đạo theo dõi trực tiếp các chỉ số NPS, tỷ lệ chốt đơn và vòng quay tồn kho mỗi ngày.
 
-## 6.5. Mô hình BPMN TO-BE
+## 5.5. Mô hình BPMN TO-BE
 
 Mô hình hóa TO-BE đóng vai trò thiết lập cấu trúc và logic cho quy trình mới, khắc phục các điểm nghẽn bằng cách tích hợp hệ thống công nghệ để tự động hóa các bước thao tác. 
 
 **Sơ đồ BPMN TO-BE Quy trình Bán thuốc tại nhà thuốc:**
-Sơ đồ BPMN mới [Hình 6.1] đưa vào các tác nhân mới như: Khách hàng sử dụng App, Hệ thống POS tích hợp CRM, và Hệ thống WMS trung tâm. Khi khách hàng bước vào, thay vì đứng chờ, họ thao tác lấy số trên Kiosk. Tại quầy, dược sĩ thực hiện tác vụ "Quét mã thành viên". Lúc này, cổng rẽ nhánh Gateway sẽ kiểm tra: Nếu khách quen, POS tự động đổ về hồ sơ bệnh án; nếu khách mới, tiến hành tạo hồ sơ. Thay vì phải "Đi tìm thuốc trên kệ", hệ thống POS tự động thực hiện Service Task "Kiểm tra tồn kho và vị trí" rồi phản hồi ngay lập tức cho dược sĩ. Khâu thanh toán được thay thế bằng quy trình quẹt thẻ/quét mã QR động. Ở cuối quy trình, một Message Event tự động được gửi từ hệ thống ERP xuống App khách hàng để "Nhắc nhở uống thuốc đúng giờ". 
+Sơ đồ BPMN mới [Hình 5.1] đưa vào các tác nhân mới như: Khách hàng sử dụng App, Hệ thống POS tích hợp CRM, và Hệ thống WMS trung tâm. Khi khách hàng bước vào, thay vì đứng chờ, họ thao tác lấy số trên Kiosk. Tại quầy, dược sĩ thực hiện tác vụ "Quét mã thành viên". Lúc này, cổng rẽ nhánh Gateway sẽ kiểm tra: Nếu khách quen, POS tự động đổ về hồ sơ bệnh án; nếu khách mới, tiến hành tạo hồ sơ. Thay vì phải "Đi tìm thuốc trên kệ", hệ thống POS tự động thực hiện Service Task "Kiểm tra tồn kho và vị trí" rồi phản hồi ngay lập tức cho dược sĩ. Khâu thanh toán được thay thế bằng quy trình quẹt thẻ/quét mã QR động. Ở cuối quy trình, một Message Event tự động được gửi từ hệ thống ERP xuống App khách hàng để "Nhắc nhở uống thuốc đúng giờ".
+
+![Hình 5.1: Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại nhà thuốc](hinh_5_1_bpmn_to_be_ban_thuoc_tai_nha_thuoc.png)
+
+*Hình 5.1: Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại nhà thuốc* 
 
 **Sơ đồ BPMN TO-BE Quy trình Quản lý kho:**
-Dựa trên sơ đồ TO-BE [Hình 6.2], luồng công việc của Nhân viên kho đã hoàn toàn vắng bóng các tác vụ Manual Task như "Ghi chép sổ tay" hay "Nhập liệu Excel". Tại luồng Nhập kho, khi tiếp nhận hàng hóa, nhân viên thực hiện tác vụ "Quét mã vạch lô hàng" qua PDA. Hệ thống tự động thực hiện Service Task "Cập nhật dữ liệu ERP" và "Chỉ định vị trí lưu trữ trống". Tại luồng Xuất kho, khi nhận lệnh xuất, Gateway tự động kiểm tra nguyên tắc hạn sử dụng. Nếu hợp lệ, hệ thống tạo "Luồng nhặt hàng FEFO", hướng dẫn nhân viên đến đúng vị trí của lô thuốc cần lấy. Đặc biệt, sơ đồ bổ sung thêm một Timer Event liên tục chạy ngầm trong hệ thống WMS để tự động thực hiện tác vụ "Gửi cảnh báo hàng cận date", loại bỏ hoàn toàn việc phát hiện chậm trễ như mô hình AS-IS. 
+Dựa trên sơ đồ TO-BE [Hình 5.2], luồng công việc của Nhân viên kho đã hoàn toàn vắng bóng các tác vụ Manual Task như "Ghi chép sổ tay" hay "Nhập liệu Excel". Tại luồng Nhập kho, khi tiếp nhận hàng hóa, nhân viên thực hiện tác vụ "Quét mã vạch lô hàng" qua PDA. Hệ thống tự động thực hiện Service Task "Cập nhật dữ liệu ERP" và "Chỉ định vị trí lưu trữ trống". Tại luồng Xuất kho, khi nhận lệnh xuất, Gateway tự động kiểm tra nguyên tắc hạn sử dụng. Nếu hợp lệ, hệ thống tạo "Luồng nhặt hàng FEFO", hướng dẫn nhân viên đến đúng vị trí của lô thuốc cần lấy. Đặc biệt, sơ đồ bổ sung thêm một Timer Event liên tục chạy ngầm trong hệ thống WMS để tự động thực hiện tác vụ "Gửi cảnh báo hàng cận date", loại bỏ hoàn toàn việc phát hiện chậm trễ như mô hình AS-IS.
 
-## 6.6. So sánh quy trình AS-IS và TO-BE
+![Hình 5.2: Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý kho](hinh_5_2_bpmn_to_be_quan_ly_kho.png)
+
+*Hình 5.2: Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý kho* 
+
+## 5.6. So sánh quy trình AS-IS và TO-BE
 
 Bảng dưới đây trình bày cái nhìn tổng quan về sự thay đổi toàn diện từ trạng thái hiện tại (AS-IS) sang trạng thái mong muốn (TO-BE), minh chứng cho giá trị của các giải pháp cải tiến.
+
+*Bảng 5.5: Bảng đối chiếu tổng hợp toàn diện AS-IS và TO-BE cho 2 quy trình then chốt*
 
 | Tiêu chí đánh giá | Trạng thái AS-IS | Trạng thái TO-BE | Mức cải thiện / Ý nghĩa |
 | :--- | :--- | :--- | :--- |
@@ -1105,7 +1291,7 @@ Bảng dưới đây trình bày cái nhìn tổng quan về sự thay đổi to
 | **Kiểm soát & Kiểm kê** | Kiểm kê đếm tay tốn nhiều ngày, gián đoạn kinh doanh | Cycle counting quét mã từng khu vực, duy trì hoạt động | Tiết kiệm nhân lực, số liệu luôn minh bạch. |
 | **Cảnh báo tự động** | Dò tìm bằng mắt, phát hiện muộn màng | Bot hệ thống cảnh báo tồn thấp và cận date tự động | Chủ động ngăn chặn rủi ro đứt gãy chuỗi cung ứng. |
 
-## 6.7. Đánh giá tính khả thi và lợi ích kỳ vọng
+## 5.7. Đánh giá tính khả thi và lợi ích kỳ vọng
 
 Để đảm bảo các đề xuất cải tiến không chỉ nằm trên giấy, việc đánh giá tính khả thi và dự báo lợi ích, rủi ro là yêu cầu bắt buộc trước khi phê duyệt đầu tư.
 
@@ -1119,7 +1305,7 @@ Bảng dưới đây trình bày cái nhìn tổng quan về sự thay đổi to
 - *Định lượng:* Rút ngắn 60% thời gian giao dịch tại quầy; năng suất kho tăng 150%; giảm tỷ lệ tồn kho chênh lệch từ 8% xuống dưới 1%; giảm 70% chi phí văn phòng phẩm (giấy in, sổ sách).
 - *Định tính:* Tăng sự tin tưởng của người bệnh; xây dựng hình ảnh chuỗi nhà thuốc hiện đại, chuyên nghiệp; cải thiện môi trường làm việc ít áp lực hơn cho nhân viên.
 
-**Ma trận quản lý rủi ro:**
+*Bảng 5.6: Ma trận đánh giá rủi ro và giải pháp giảm thiểu*
 
 | Rủi ro tiềm ẩn | Mức độ ảnh hưởng | Xác suất xảy ra | Giải pháp khắc phục (Mitigation) |
 | :--- | :--- | :--- | :--- |
@@ -1132,28 +1318,28 @@ Bảng dưới đây trình bày cái nhìn tổng quan về sự thay đổi to
 - **Giai đoạn 2: Triển khai thử nghiệm (Pilot) (Tháng 4-6):** Lựa chọn 1 kho trung tâm và 10 nhà thuốc trọng điểm tại khu vực TP.HCM để áp dụng hệ thống mới. Ghi nhận phản hồi, đánh giá lỗi và hiệu chỉnh phần mềm liên tục.
 - **Giai đoạn 3: Đào tạo và Mở rộng toàn hệ thống (Roll-out) (Tháng 7-12):** Sau khi hệ thống vận hành ổn định tại các điểm Pilot, tiến hành tổ chức đào tạo nhân sự hàng loạt. Thực hiện triển khai cuốn chiếu đồng bộ cho hơn 1.800 cửa hàng trên toàn quốc, đồng thời theo dõi và đo lường KPI theo thời gian thực.
 
+---
+*(Lưu ý học thuật: Các chỉ số KPI cải tiến, mức độ rút ngắn thời gian (50%-60%), tỷ lệ giảm sai lệch kho và các ước lượng tài chính trong chương này là những mục tiêu kỳ vọng dựa trên mô phỏng học thuật và thông lệ triển khai các hệ thống WMS/POS trong ngành bán lẻ dược phẩm, phục vụ mục đích nghiên cứu học thuật của đồ án).*
 
 ---
 
-# CHƯƠNG 7: KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+# CHƯƠNG 6: KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
 
-Đồ án "Phân tích và cải tiến quy trình nghiệp vụ tại FPT Long Châu" đã trải qua một quá trình nghiên cứu, từ việc khảo sát hiện trạng, phân tích các điểm nghẽn đến việc đề xuất các giải pháp tối ưu hóa dựa trên nền tảng Quản trị quy trình nghiệp vụ (BPM). Chương 7 sẽ tổng kết lại toàn bộ những kết quả cốt lõi mà đề tài đã đạt được so với mục tiêu ban đầu đặt ra. Đồng thời, nhóm nghiên cứu cũng nhìn nhận một cách khách quan những mặt còn hạn chế trong quá trình thực hiện do các rào cản khách quan và chủ quan. Từ đó, báo cáo sẽ vạch ra những hướng phát triển tiềm năng trong tương lai, mở ra cơ hội hoàn thiện và ứng dụng kết quả nghiên cứu vào môi trường vận hành thực tế của chuỗi bán lẻ dược phẩm.
+Đồ án "Hệ thống quản trị quy trình nghiệp vụ tại Công ty Cổ phần Dược phẩm FPT Long Châu" đã trải qua một quá trình nghiên cứu, từ việc khảo sát hiện trạng, phân tích các điểm nghẽn đến việc đề xuất các giải pháp tối ưu hóa dựa trên nền tảng Quản trị quy trình nghiệp vụ (BPM). Chương 6 sẽ tổng kết lại toàn bộ những kết quả cốt lõi mà đề tài đã đạt được so với mục tiêu ban đầu đặt ra. Đồng thời, nhóm nghiên cứu cũng nhìn nhận một cách khách quan những mặt còn hạn chế trong quá trình thực hiện do các rào cản khách quan và chủ quan. Từ đó, báo cáo sẽ vạch ra những hướng phát triển tiềm năng trong tương lai, mở ra cơ hội hoàn thiện và ứng dụng kết quả nghiên cứu vào môi trường vận hành thực tế của chuỗi bán lẻ dược phẩm.
 
-## 7.1. Kết quả đạt được
+## 6.1. Kết quả đạt được
 
 Trong suốt quá trình thực hiện, đồ án đã bám sát các mục tiêu ban đầu và đạt được những kết quả đáng ghi nhận trên cả phương diện lý thuyết lẫn thực tiễn. Những đóng góp của đề tài được thể hiện qua các khía cạnh sau:
 
 Thứ nhất, về việc khảo sát và phân loại quy trình, nhóm nghiên cứu đã xây dựng thành công kiến trúc quy trình nghiệp vụ tổng thể cho FPT Long Châu. Dựa trên mô hình phân lớp chuẩn, đề tài đã nhận diện và phân loại 10 quy trình cốt lõi thành 3 tầng: tầng quản lý, tầng cốt lõi và tầng hỗ trợ. Từ đó, nhóm đã sử dụng các tiêu chí định lượng để chọn lọc ra 6 quy trình trọng điểm mang tính quyết định đối với chuỗi giá trị của doanh nghiệp để tập trung mô phỏng và phân tích chuyên sâu.
 
-Thứ hai, về mặt công nghệ và mô phỏng, đồ án đã phát triển thành công một website mô phỏng quy trình nghiệp vụ chuyên biệt. Sử dụng các công nghệ web hiện đại như React.js kết hợp với thư viện bpmn-js, website cho phép hiển thị trực quan sơ đồ của 6 quy trình được chọn. Điểm nổi bật của hệ thống là khả năng so sánh trực tiếp cấu trúc giữa hai mô hình hiện trạng (AS-IS) và mục tiêu (TO-BE), giúp người dùng dễ dàng nhận diện những thay đổi và cải tiến đã được đề xuất, qua đó gia tăng tính tương tác và trực quan cho nghiên cứu.
+Thứ hai, về mô hình hóa hiện trạng, đề tài đã áp dụng chuẩn OMG BPMN 2.0 để thiết kế sơ đồ quy trình AS-IS cho 6 luồng công việc chính. Các Sơ đồ BPMN này được xây dựng với cấu trúc **swim lane** (làn bơi) rõ ràng, thể hiện chi tiết sự phân công trách nhiệm giữa các phòng ban, tác nhân, hệ thống thông tin, cũng như luồng dữ liệu (data object) và luồng trình tự (sequence flow) trong từng quy trình. Việc mô hình hóa này đã số hóa thành công các hoạt động vận hành thủ công trên giấy tờ.
 
-Thứ ba, về mô hình hóa hiện trạng, đề tài đã áp dụng chuẩn OMG BPMN 2.0 để thiết kế sơ đồ quy trình AS-IS cho 6 luồng công việc chính. Các Sơ đồ BPMN này được xây dựng với cấu trúc **swim lane** (làn bơi) rõ ràng, thể hiện chi tiết sự phân công trách nhiệm giữa các phòng ban, tác nhân, hệ thống thông tin, cũng như luồng dữ liệu (data object) và luồng trình tự (sequence flow) trong từng quy trình. Việc mô hình hóa này đã số hóa thành công các hoạt động vận hành thủ công trên giấy tờ.
+Thứ ba, về mặt phân tích nghiệp vụ, nhóm đã vận dụng hệ thống các phương pháp luận BPM chuẩn mực. Bằng cách phân tích phân loại giá trị (VA/BVA/NVA), nhóm đã định lượng được thời gian lãng phí trong các chu trình. Áp dụng tư duy quản trị tinh gọn (Lean Management), đề tài đã nhận diện các loại lãng phí hiện hữu. Hơn nữa, thông qua biểu đồ xương cá (Fishbone Diagram) và phương pháp 5 Whys, nhóm đã đi sâu phân tích và chỉ ra được nguyên nhân gốc rễ (root cause) của những điểm nghẽn (bottleneck) trong 2 quy trình trọng điểm nhất là Quản lý kho và Bán thuốc tại nhà thuốc.
 
-Thứ tư, về mặt phân tích nghiệp vụ, nhóm đã vận dụng hệ thống các phương pháp luận BPM chuẩn mực. Bằng cách phân tích phân loại giá trị (VA/BVA/NVA), nhóm đã định lượng được thời gian lãng phí trong các chu trình. Áp dụng tư duy quản trị tinh gọn (Lean Management), đề tài đã nhận diện các loại lãng phí hiện hữu. Hơn nữa, thông qua biểu đồ xương cá (Fishbone Diagram) và phương pháp 5 Whys, nhóm đã đi sâu phân tích và chỉ ra được nguyên nhân gốc rễ (root cause) của những điểm nghẽn (bottleneck) trong 2 quy trình trọng điểm nhất là Quản lý kho và Bán thuốc tại nhà thuốc.
+Thứ tư, về mặt đề xuất cải tiến, đồ án không chỉ dừng lại ở việc chỉ ra lỗi mà còn cung cấp một bộ giải pháp toàn diện. Đề tài đã thiết kế các Sơ đồ BPMN quy trình mục tiêu (TO-BE) tương ứng, minh họa cách thức tích hợp công nghệ mới nhằm loại bỏ các tác vụ NVA. Cùng với đó, nhóm đã vạch ra lộ trình triển khai chi tiết, đảm bảo tính khả thi cao khi ứng dụng vào thực tiễn, đóng góp trực tiếp vào chiến lược chuyển đổi số của FPT Long Châu.
 
-Cuối cùng, về mặt đề xuất cải tiến, đồ án không chỉ dừng lại ở việc chỉ ra lỗi mà còn cung cấp một bộ giải pháp toàn diện. Đề tài đã thiết kế các Sơ đồ BPMN quy trình mục tiêu (TO-BE) tương ứng, minh họa cách thức tích hợp công nghệ mới nhằm loại bỏ các tác vụ NVA. Cùng với đó, nhóm đã vạch ra lộ trình triển khai chi tiết, đảm bảo tính khả thi cao khi ứng dụng vào thực tiễn, đóng góp trực tiếp vào chiến lược chuyển đổi số của FPT Long Châu.
-
-## 7.2. Hạn chế của đề tài
+## 6.2. Hạn chế của đề tài
 
 Mặc dù đã cố gắng tiếp cận vấn đề một cách hệ thống và khoa học, đồ án vẫn không tránh khỏi một số hạn chế nhất định do những rào cản khách quan và chủ quan. Việc nhìn nhận rõ những điểm yếu này là cơ sở quan trọng để định hướng cho các nghiên cứu tiếp theo.
 
@@ -1163,9 +1349,7 @@ Thứ hai, các đề xuất cải tiến TO-BE và giải pháp tối ưu hóa 
 
 Thứ ba, do giới hạn về mặt thời gian và nguồn lực nhóm của một đồ án môn học, nhóm chỉ có thể tiến hành phân tích bóc tách chuyên sâu bằng công cụ (Lean, Fishbone, 5 Whys) cho 2 trên tổng số 6 quy trình được lựa chọn. Việc chưa đi sâu toàn diện 4 quy trình còn lại là một sự thiếu sót.
 
-Cuối cùng, về sản phẩm phần mềm, website mô phỏng hiện tại chủ yếu là một ứng dụng Front-end Single Page Application (SPA) dùng để hiển thị và so sánh các sơ đồ tĩnh. Ứng dụng chưa được xây dựng một hệ thống Backend hoàn chỉnh thực tế, chưa có khả năng lưu trữ dữ liệu động từ người dùng hay thực thi tự động (process execution) trên nền tảng thực tế.
-
-## 7.3. Hướng phát triển
+## 6.3. Hướng phát triển
 
 Dựa trên nền tảng những kết quả đã đạt được và nhận thức rõ những hạn chế còn tồn tại, nhóm nghiên cứu đề xuất một số hướng phát triển tiềm năng nhằm hoàn thiện và mở rộng đề tài trong tương lai:
 
@@ -1221,64 +1405,7 @@ bpmn.io. (2024). *bpmn-js: A BPMN 2.0 rendering toolkit and web modeler*. https:
 
 # PHỤ LỤC
 
-## Phụ lục A: Danh sách viết tắt
-
-| Viết tắt | Ý nghĩa tiếng Anh | Ý nghĩa tiếng Việt |
-| :--- | :--- | :--- |
-| **AI** | Artificial Intelligence | Trí tuệ nhân tạo |
-| **API** | Application Programming Interface | Giao diện lập trình ứng dụng |
-| **AS-IS** | As-Is Process Model | Mô hình quy trình hiện trạng |
-| **BPM** | Business Process Management | Quản trị quy trình nghiệp vụ |
-| **BPMN** | Business Process Model and Notation | Mô hình và Ký hiệu Quy trình Nghiệp vụ |
-| **BPMS** | Business Process Management Suite | Hệ thống quản trị quy trình nghiệp vụ |
-| **BVA** | Business Value-Added | Hoạt động tạo giá trị cho doanh nghiệp |
-| **CRM** | Customer Relationship Management | Quản lý quan hệ khách hàng |
-| **EDI** | Electronic Data Interchange | Trao đổi dữ liệu điện tử |
-| **ERP** | Enterprise Resource Planning | Hoạch định nguồn lực doanh nghiệp |
-| **FEFO** | First Expired, First Out | Hết hạn trước, Xuất trước |
-| **GPP** | Good Pharmacy Practice | Thực hành tốt cơ sở bán lẻ thuốc |
-| **KPI** | Key Performance Indicator | Chỉ số đánh giá thực hiện công việc |
-| **NCC** | Supplier / Vendor | Nhà cung cấp |
-| **NPS** | Net Promoter Score | Chỉ số khách hàng thiện cảm |
-| **NVA** | Non-Value-Added | Hoạt động không tạo ra giá trị (Lãng phí) |
-| **POS** | Point of Sale | Điểm bán hàng (Phần mềm bán hàng) |
-| **QA** | Quality Assurance | Đảm bảo chất lượng |
-| **RFID** | Radio Frequency Identification | Nhận dạng qua tần số vô tuyến |
-| **ROI** | Return on Investment | Tỷ suất hoàn vốn |
-| **RPA** | Robotic Process Automation | Tự động hóa quy trình bằng robot |
-| **SKU** | Stock Keeping Unit | Đơn vị lưu kho |
-| **SPA** | Single Page Application | Ứng dụng trang đơn |
-| **TO-BE** | To-Be Process Model | Mô hình quy trình mục tiêu (đề xuất) |
-| **VA** | Value-Added | Hoạt động tạo giá trị gia tăng |
-| **WMS** | Warehouse Management System | Hệ thống quản lý kho |
-
-## Phụ lục B: Mã JSON mẫu cấu trúc dữ liệu website
-
-Dưới đây là cấu trúc JSON giả định được sử dụng trong hệ thống website mô phỏng để lưu trữ và render các mô hình BPMN (quy trình bán thuốc tại nhà thuốc).
-
-```json
-{
-  "id": "process_ban_thuoc_tai_nha_thuoc",
-  "name": "Quy trình bán thuốc tại nhà thuốc",
-  "category": "Core Process",
-  "description": "Luồng công việc tư vấn, lấy thuốc và thanh toán trực tiếp tại nhà thuốc Long Châu.",
-  "bpmn_xml_asis": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><bpmn:definitions>...</bpmn:definitions>",
-  "bpmn_xml_tobe": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><bpmn:definitions>...</bpmn:definitions>",
-  "lanes": ["Khách hàng", "Dược sĩ", "Hệ thống POS", "Thu ngân"],
-  "analysis": {
-    "cycle_time_asis_minutes": 13.5,
-    "cycle_time_tobe_minutes": 8.0,
-    "waste_identified": [
-      "Chờ đợi (Waiting)", 
-      "Di chuyển (Motion)", 
-      "Quy trình thừa (Over-processing)"
-    ],
-    "root_cause_summary": "Phần mềm POS chưa tích hợp sâu với WMS, thiếu tính năng cảnh báo tồn kho và tìm kiếm định vị hàng hóa tự động."
-  }
-}
-```
-
-## Phụ lục C: Bảng đánh giá tiêu chí lựa chọn quy trình
+## Phụ lục A: Bảng đánh giá tiêu chí lựa chọn quy trình
 
 Đánh giá trên thang điểm từ 1 đến 5 (1: Rất thấp, 5: Rất cao) cho 5 tiêu chí:
 - C1: Mức độ phức tạp
@@ -1300,7 +1427,8 @@ Dưới đây là cấu trúc JSON giả định được sử dụng trong hệ
 | 9 | Quản lý tài chính – Kế toán | 4 | 4 | 4 | 2 | 2 | **16** | Loại |
 | 10 | Quản lý tuân thủ pháp lý & dược | 3 | 2 | 5 | 2 | 3 | **15** | Loại |
 
-## Phụ lục D: Danh sách câu hỏi khảo sát (giả định)
+## Phụ lục B: Danh sách câu hỏi khảo sát (giả định)
+
 
 Dưới đây là danh sách các câu hỏi phỏng vấn giả định dành cho nhân viên kho và dược sĩ tại cửa hàng, nhằm thu thập dữ liệu xây dựng sơ đồ quy trình AS-IS:
 

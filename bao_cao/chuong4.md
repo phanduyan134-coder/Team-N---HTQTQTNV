@@ -1,250 +1,217 @@
-﻿# CHƯƠNG 4: MÔ HÌNH HÓA QUY TRÌNH NGHIỆP VỤ HIỆN TẠI (AS-IS)
+# CHƯƠNG 4: PHÂN TÍCH QUY TRÌNH NGHIỆP VỤ
 
-Mô hình hóa quy trình nghiệp vụ hiện tại (AS-IS) là một bước đóng vai trò vô cùng quan trọng trong vòng đời quản trị quy trình nghiệp vụ (BPM). Mục đích cốt lõi của việc mô hình hóa AS-IS là phác họa một bức tranh toàn cảnh, chân thực và chi tiết nhất về cách thức hoạt động hiện tại của tổ chức trước khi tiến hành bất kỳ sự can thiệp hay cải tiến nào. Đối với hệ thống chuỗi bán lẻ dược phẩm FPT Long Châu, việc đánh giá chính xác các quy trình AS-IS giúp nhận diện sâu sắc các điểm nghẽn (bottleneck), những thao tác dư thừa, cũng như những hạn chế trong việc ứng dụng công nghệ vào vận hành.
+Trong bối cảnh môi trường kinh doanh bán lẻ dược phẩm ngày càng cạnh tranh gay gắt, việc chỉ mô hình hóa các quy trình nghiệp vụ hiện tại (AS-IS) là chưa đủ. Mục tiêu cốt lõi của chương này là tiến hành phân tích chuyên sâu các quy trình nghiệp vụ đã được mô hình hóa ở Chương 3, từ đó nhận diện chính xác các điểm nghẽn (bottleneck), những hoạt động không mang lại giá trị (NVA) và các loại lãng phí đang tồn tại trong hệ thống của FPT Long Châu. Việc phân tích quy trình đóng vai trò cực kỳ quan trọng, là cầu nối không thể thiếu giữa bức tranh hiện trạng và những đề xuất cải tiến trong tương lai. Nếu không có bước phân tích thấu đáo, mọi nỗ lực cải tiến đều có nguy cơ đi chệch hướng, tốn kém chi phí mà không giải quyết được căn nguyên vấn đề. 
 
-Trong chương này, toàn bộ 6 quy trình trọng yếu được mô hình hóa tuân thủ nghiêm ngặt tiêu chuẩn quốc tế **BPMN 2.0 (Business Process Model and Notation)** theo chuẩn Rubric đánh giá đồ án:
-- **Chuẩn hóa Cổng điều kiện (Gateways)**: Tất cả 6 sơ đồ đều được thiết kế với **đúng 8 Cổng điều kiện (Gateways > 7)** nhằm đáp ứng tiêu chí đạt điểm tối đa (1.0 điểm) của rubric chấm điểm.
-- **Tính toàn vẹn cú pháp**: Mỗi quy trình phối hợp đều bắt đầu bằng **duy nhất 1 Sự kiện bắt đầu (Start Event)**, xóa bỏ hoàn toàn lỗi đa điểm bắt đầu gây nhập nhằng ngữ nghĩa.
-- **Triệt tiêu Deadlock (0% Deadlock)**: Tất cả các nhánh rẽ điều kiện đều có luồng tuần tự (Sequence Flow) dẫn tới các Sự kiện kết thúc (End Event) cụ thể hoặc quay vòng hợp lý, đảm bảo quy trình thông suốt 100%.
-- **Phân định rõ ràng trách nhiệm**: Sử dụng cấu trúc Pool và Swimlane chuẩn mực cho từng chủ thể tham gia (Khách hàng, Dược sĩ, Thu ngân, Kho bãi, Vận chuyển, v.v.).
+Để đảm bảo tính khách quan và khoa học, báo cáo áp dụng một phương pháp tiếp cận tổng quát đi từ việc phân tích tác nhân, bóc tách từng hoạt động theo chuỗi giá trị, nhận diện lãng phí theo tư duy Lean, cho đến việc truy tìm nguyên nhân gốc rễ bằng các công cụ chuyên dụng. Trong phạm vi chương này, hai quy trình trọng điểm được lựa chọn để phân tích sâu là: Quy trình bán thuốc tại nhà thuốc (đại diện cho luồng tương tác trực tiếp tạo doanh thu) và Quy trình quản lý kho (đại diện cho luồng vận hành logistics hậu cần).
 
----
+## 4.1. Tiêu chí và phương pháp phân tích
 
-## 4.1. Quy trình quản lý chuỗi cung ứng
+Để phân tích sâu và hiệu quả, báo cáo sử dụng một hệ thống các tiêu chí và phương pháp phân tích đã được chuẩn hóa trong lĩnh vực Quản trị Quy trình Nghiệp vụ (BPM). Việc lựa chọn hai quy trình trọng điểm (bán thuốc và quản lý kho) dựa trên ba tiêu chí cốt lõi: tần suất thực hiện, tác động kinh doanh và khả năng cải tiến. Quy trình bán thuốc có tần suất diễn ra liên tục hàng ngày, tác động trực tiếp đến doanh thu và trải nghiệm khách hàng; trong khi quy trình quản lý kho quyết định đến sự liền mạch của chuỗi cung ứng và quản trị rủi ro hàng hóa.
 
-Quy trình quản lý chuỗi cung ứng tại FPT Long Châu đóng vai trò huyết mạch trong việc đảm bảo nguồn hàng dược phẩm luôn sẵn sàng tại hơn 1.800 nhà thuốc trên toàn quốc. Tuy nhiên, ở trạng thái hiện tại (AS-IS), quy trình này vẫn đang phụ thuộc nhiều vào các thao tác thủ công, đặc biệt trong việc tổng hợp nhu cầu, phê duyệt đơn hàng và theo dõi vận chuyển, dẫn đến những rủi ro về chậm trễ và sai sót dữ liệu.
+Phương pháp phân tích đầu tiên được áp dụng là phân loại hoạt động theo giá trị (Value-Added Analysis). Các bước trong quy trình được chia thành ba nhóm:
+- **VA (Value-Added - Tạo giá trị gia tăng)**: Là những hoạt động tạo ra giá trị trực tiếp cho khách hàng, khách hàng sẵn sàng chi trả cho các hoạt động này (ví dụ: tư vấn thuốc, giao thuốc).
+- **BVA (Business Value-Added - Tạo giá trị doanh nghiệp)**: Những hoạt động không trực tiếp mang lại giá trị cho khách hàng nhưng bắt buộc phải có để doanh nghiệp vận hành, tuân thủ pháp luật (ví dụ: kiểm tra tính hợp lệ của đơn thuốc, ghi nhận sổ sách kế toán).
+- **NVA (Non-Value-Added - Không tạo giá trị)**: Là những hoạt động lãng phí, không tạo ra bất kỳ giá trị nào cho cả khách hàng lẫn doanh nghiệp và cần được tối thiểu hóa hoặc loại bỏ hoàn toàn (ví dụ: chờ đợi, tìm kiếm hàng hóa, nhập liệu lặp lại).
 
-**Bảng 4.1: Tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS)**
+Song song đó, khung phân tích 7 loại lãng phí (7 Wastes of Lean) cũng được sử dụng để nhận diện các điểm yếu trong quy trình:
+1. **Chờ đợi (Waiting)**: Thời gian chờ máy móc, chờ phê duyệt hoặc khách hàng chờ phục vụ.
+2. **Tồn kho thừa (Inventory)**: Lưu trữ hàng hóa quá mức cần thiết, gây đọng vốn.
+3. **Di chuyển (Motion)**: Thao tác đi lại, tìm kiếm không cần thiết của nhân viên.
+4. **Quy trình thừa (Over-processing)**: Các bước thực hiện phức tạp hơn mức cần thiết.
+5. **Sản xuất thừa (Over-production)**: Thực hiện công việc sớm hơn hoặc nhiều hơn nhu cầu thực tế.
+6. **Sửa chữa lỗi (Defects/Rework)**: Sai sót dẫn đến phải làm lại, đổi trả hàng.
+7. **Phương tiện chưa dùng (Underutilized Talent)**: Lãng phí năng lực, kỹ năng của nhân viên vào các việc thủ công.
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Đảm bảo cung cấp đủ số lượng và chất lượng dược phẩm cho các nhà thuốc trong chuỗi một cách kịp thời. |
-| **Tác nhân tham gia** | Nhà thuốc chi nhánh (NV Kho quầy), Trưởng kho trung tâm, Bộ phận Mua hàng, Giám đốc chuỗi, Nhà cung cấp (NCC). |
-| **Đầu vào** | Báo cáo tồn kho định kỳ, mức tồn an toàn ROP (Reorder Point), danh mục thuốc thiếu. |
-| **Đầu ra** | Đơn đặt hàng (PO) được duyệt, hàng hóa nhập kho ERP và phân phối về quầy; hoặc biên bản bồi hoàn trừ công nợ. |
-| **Biểu mẫu / Hệ thống** | Microsoft Excel, Email, Hệ thống ERP nội bộ (cơ bản), Phiếu đặt hàng PO, Biên bản giao nhận, COA. |
-| **Thời gian chu kỳ** | 3 - 5 ngày tùy thuộc vào nhà cung cấp và quy mô đơn hàng. |
-| **Tần suất** | Hàng ngày hoặc định kỳ hàng tuần. |
+Để đi sâu vào bản chất vấn đề, báo cáo sử dụng **Biểu đồ Fishbone (Ishikawa)** để phân rã nguyên nhân theo các yếu tố (Con người, Quy trình, Công nghệ, Môi trường, Nguyên vật liệu, Đo lường), kết hợp cùng **Phương pháp 5 Whys** để liên tục đặt câu hỏi nhằm tìm ra nguyên nhân gốc rễ (root cause) sâu xa nhất.
 
-**Các bước thực hiện:**
-1. **Kiểm tra tồn kho định kỳ:** Nhân viên kho tại nhà thuốc kiểm đếm tồn thuốc hàng ngày.
-2. **Đánh giá mức tồn an toàn (G1):** So sánh lượng tồn thực tế với điểm đặt hàng lại (ROP). Nếu tồn kho chưa dưới ROP, tiếp tục theo dõi bán hàng; nếu dưới ROP, lập phiếu đề xuất bổ sung.
-3. **Kiểm tra khả năng cấp từ Tổng kho (G2):** Trưởng kho trung tâm kiểm tra tồn kho tổng. Nếu kho trung tâm còn hàng, thực hiện xuất điều phối nội bộ ngay; nếu kho tổng hết hàng, chuyển yêu cầu sang Bộ phận Mua hàng.
-4. **Lập đơn đặt hàng (PO):** Bộ phận Mua hàng tổng hợp nhu cầu và lập phiếu PO gửi nhà cung cấp.
-5. **Xét duyệt hạn mức ngân sách (G3):** Nếu giá trị PO vượt hạn mức (> 100 triệu đồng), phải chuyển trình Giám đốc chuỗi phê duyệt; nếu trong hạn mức, Trưởng phòng Mua hàng ký duyệt trực tiếp.
-6. **Thẩm định phê duyệt của Giám đốc (G4):** Giám đốc xem xét báo cáo tài chính. Nếu duyệt, phát hành PO chính thức; nếu từ chối, gửi trả đơn hàng để điều chỉnh danh mục.
-7. **Gửi đơn & xác nhận khả năng cung ứng từ NCC (G5):** Gửi PO qua email cho NCC. NCC kiểm tra năng lực sản xuất; nếu thiếu hàng, đàm phán giảm số lượng hoặc chuyển sang NCC dự phòng.
-8. **Kiểm soát thời hạn giao hàng theo SLA (G6):** NCC giao hàng đến kho. Kho kiểm tra thời gian giao có đúng cam kết SLA không; nếu vi phạm SLA trễ hạn, lập biên bản phạt chậm giao.
-9. **Kiểm tra chứng nhận xuất xưởng COA (G7):** Dược sĩ kiểm định giấy chứng nhận phân tích COA lô thuốc. Nếu không đạt chất lượng, lập biên bản từ chối và yêu cầu đổi lô mới.
-10. **Kiểm đếm số lượng thực tế (G8):** Đối chiếu số lượng giao với hóa đơn. Nếu khớp 100%, thực hiện nhập kho ERP và phân phối về các nhà thuốc; nếu thiếu hàng, lập biên bản thiếu hụt và bù trừ công nợ NCC.
+Cuối cùng, phương pháp đo lường hiệu suất được áp dụng qua các chỉ số: thời gian chu kỳ (cycle time) để biết tổng thời gian hoàn thành một quy trình, thời gian chờ (wait time) giữa các bước, tỷ lệ sai sót (error rate) và chi phí quy trình (process cost) nhằm lượng hóa các vấn đề đang tồn tại.
 
-**Phân tích 8 Cổng điều kiện (Gateways > 7):**
-- **G1 (Tồn kho < ROP?)**: Phân luồng giữa tiếp tục theo dõi và kích hoạt đặt hàng bổ sung.
-- **G2 (Kho tổng còn hàng?)**: Lựa chọn xuất điều phối kho nội bộ hay đặt hàng NCC ngoài.
-- **G3 (Giá trị PO > 100 triệu?)**: Phân cấp thẩm quyền phê duyệt hạn mức tài chính.
-- **G4 (Giám đốc phê duyệt?)**: Quyết định duyệt phát hành PO hay trả về điều chỉnh.
-- **G5 (NCC đủ hàng giao?)**: Đánh giá năng lực cung ứng của đối tác dược.
-- **G6 (Giao đúng hẹn theo SLA?)**: Kiểm soát cam kết thời gian giao hàng.
-- **G7 (Chứng nhận COA đạt chuẩn?)**: Kiểm soát hồ sơ chất lượng thuốc trước khi dỡ hàng.
-- **G8 (Khớp 100% số lượng?)**: Giải tỏa điểm nghẽn với 2 kết thúc độc lập (Nhập kho phân phối hoặc Biên bản bồi hoàn).
+*(Lưu ý về nguồn dữ liệu: Nhóm nghiên cứu không có quyền truy cập vào cơ sở dữ liệu nội bộ bảo mật của FPT Long Châu. Do đó, các số liệu định lượng về thời gian chu kỳ, phân loại VA/BVA/NVA, tỷ lệ sai lệch và chi phí trong chương này được xây dựng dựa trên phương pháp mô phỏng học thuật (academic simulation) kết hợp quan sát thực tế và tài liệu công bố chính thức như Báo cáo thường niên FPT Retail 2023 - 2024).*
 
-![Hình 4.1: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chuỗi cung ứng](hinh_4_1_bpmn_as_is_chuoi_cung_ung.png)
+## 4.2. Phân tích quy trình bán thuốc tại nhà thuốc
 
-*Hình 4.1: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chuỗi cung ứng (8 Gateways • 5 Swimlanes)*
+Quy trình bán thuốc tại nhà thuốc là tuyến đầu tiếp xúc với khách hàng, nơi quyết định chất lượng dịch vụ và doanh thu cốt lõi của FPT Long Châu. Dưới đây là phân tích chi tiết nhằm bóc tách những hạn chế còn tồn đọng trong quy trình này.
 
----
+### 4.2.1. Phân tích tác nhân và các bên liên quan
 
-## 4.2. Quy trình quản lý chất lượng
+Để xác định rõ vai trò và trách nhiệm trong quy trình, ma trận RACI được thiết lập:
 
-Là chuỗi bán lẻ dược phẩm hàng đầu, FPT Long Châu bắt buộc phải tuân thủ nghiêm ngặt các tiêu chuẩn GPP (Thực hành tốt nhà thuốc) và GDP (Thực hành tốt phân phối thuốc). Quy trình quản lý chất lượng (QA/QC) hiện tại đóng vai trò là "chốt chặn an toàn" cho toàn bộ hàng hóa lưu hành.
+*Bảng 4.1: Ma trận RACI quy trình Bán thuốc tại nhà thuốc*
 
-**Bảng 4.2: Tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS)**
+| STT | Các bên liên quan | R (Responsible - Thực thi) | A (Accountable - Chịu trách nhiệm) | C (Consulted - Tham vấn) | I (Informed - Được thông báo) |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Khách hàng | Cung cấp thông tin bệnh lý, đơn thuốc | | | Nhận kết quả tư vấn, thuốc, hóa đơn |
+| 2 | Dược sĩ/NV tư vấn | Trực tiếp tư vấn, lấy thuốc, hướng dẫn sử dụng | Chịu trách nhiệm về tính chính xác của liều lượng thuốc tư vấn | Khách hàng, Bác sĩ (nếu cần) | |
+| 3 | Thu ngân | Thực hiện thanh toán, in hóa đơn | Chịu trách nhiệm về số tiền thu và khớp quỹ cuối ngày | | Dược sĩ |
+| 4 | Hệ thống POS | Ghi nhận giao dịch, in hóa đơn, trừ tồn kho | | | Thu ngân, Quản lý |
+| 5 | Quản lý nhà thuốc | | Chịu trách nhiệm chung về chất lượng phục vụ và doanh thu ca làm việc | | Báo cáo giao dịch |
+| 6 | Bộ phận kho (gián tiếp) | | | | Số lượng tồn kho được cập nhật |
+| 7 | Hệ thống kế toán (gián tiếp) | | | | Dữ liệu doanh thu |
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Đảm bảo 100% dược phẩm đạt tiêu chuẩn chất lượng theo GPP/GDP trước khi nhập kho và phân phối đến người bệnh. |
-| **Tác nhân tham gia** | Dược sĩ phụ trách chất lượng, Nhân viên kho biệt trữ, Bộ phận QA, Viện Kiểm nghiệm thuốc. |
-| **Đầu vào** | Lô thuốc mới tiếp nhận, hồ sơ COA, chứng từ nhập khẩu, cảnh báo thu hồi từ Cục Quản lý Dược. |
-| **Đầu ra** | Phiếu chứng nhận đạt chuẩn GPP cho phép nhập kho, hoặc biên bản niêm phong hủy thuốc/đổi trả NCC. |
-| **Biểu mẫu / Hệ thống** | Sổ kiểm soát chất lượng, Biên bản kiểm nghiệm (bản cứng), Giấy chứng nhận chất lượng (COA), Thẻ kho biệt trữ. |
-| **Thời gian chu kỳ** | 2 - 4 giờ cho mỗi lô hàng mới; định kỳ hàng tháng cho kiểm tra lưu kho. |
-| **Tần suất** | Mỗi khi tiếp nhận lô hàng mới và định kỳ theo tháng/quý. |
+Vai trò cụ thể: Dược sĩ là người đóng vai trò then chốt (R), quyết định chất lượng tư vấn y khoa; trong khi Quản lý nhà thuốc là người chịu trách nhiệm cuối cùng (A) cho toàn bộ hoạt động tại cơ sở.
 
-**Các bước thực hiện:**
-1. **Tiếp nhận lô hàng và chứng từ (Start Event duy nhất):** Dược sĩ tiếp nhận lô hàng cùng bộ chứng từ xuất xưởng COA.
-2. **Phân loại thuốc quản lý đặc biệt (G1):** Xác định lô hàng có thuộc nhóm thuốc kiểm soát đặc biệt (gây nghiện, hướng thần, tiền chất) hay không. Nếu có, chuyển sang quy trình kiểm đếm có camera giám sát và lưu kho riêng.
-3. **Thẩm định tính hợp lệ của hồ sơ COA (G2):** Kiểm tra chữ ký, con dấu của nhà sản xuất. Nếu COA thiếu hoặc sai lệch, lập biên bản từ chối nhận hàng.
-4. **Kiểm soát nhiệt độ dây chuyền lạnh Cold Chain (G3):** Đối với vắc xin và thuốc bảo quản lạnh, kiểm tra thiết bị ghi nhiệt độ tự động trên xe vận chuyển (2 - 8°C). Nếu quá nhiệt, lập biên bản vi phạm nhiệt độ và cách ly lô hàng.
-5. **Kiểm tra ngoại quan bao bì và niêm phong (G4):** Kiểm tra cảm quan độ nguyên vẹn vỏ hộp, nhãn phụ tiếng Việt, tem chống giả. Nếu vỡ móp, lập biên bản hư hại.
-6. **Đánh giá yêu cầu gửi Viện kiểm nghiệm độc lập (G5):** Các thuốc sinh phẩm hoặc lô nghi ngờ chất lượng được gửi mẫu tới Viện Kiểm nghiệm thuốc Trung ương.
-7. **Đối chiếu chỉ tiêu Dược điển Việt Nam (G6):** Đánh giá các chỉ tiêu hóa lý, độ đồng đều khối lượng theo Dược điển. Nếu không đạt, chuyển kho biệt trữ để xử lý tiêu hủy.
-8. **Tra cứu danh sách thu hồi của Cục Quản lý Dược (G7):** Rà soát cảnh báo từ cơ quan quản lý. Nếu lô thuốc nằm trong diện thu hồi, niêm phong khẩn cấp.
-9. **Kiểm tra thời hạn sử dụng còn lại (G8):** Đảm bảo hạn sử dụng còn trên 18 tháng (hoặc > 2/3 tổng hạn dùng). Nếu đạt, cấp chứng nhận đạt chuẩn GPP cho phép nhập kho; nếu cận hạn, từ chối tiếp nhận.
+### 4.2.2. Phân loại hoạt động VA/BVA/NVA
 
-**Phân tích 8 Cổng điều kiện (Gateways > 7) & Cải tiến cú pháp:**
-- **Sửa lỗi cú pháp cốt lõi**: Khắc phục dứt điểm nhận xét của Giảng viên bằng cách **chuẩn hóa về đúng 1 Start Event duy nhất**, xóa bỏ hoàn toàn lỗi 2 điểm bắt đầu.
-- **8 Cổng thẩm định GPP**: G1 (Thuốc kiểm soát đặc biệt?), G2 (Hồ sơ COA hợp lệ?), G3 (Nhiệt xe lạnh 2-8°C đạt?), G4 (Bao bì đạt chuẩn?), G5 (Cần gửi Viện ngoài?), G6 (Chỉ tiêu Dược điển đạt?), G7 (Cảnh báo thu hồi Cục?), G8 (Hạn dùng > 18 tháng?).
+Việc phân loại chi tiết các bước trong quy trình giúp nhận diện những hoạt động cần tối ưu hóa.
 
-![Hình 4.2: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chất lượng](hinh_4_2_bpmn_as_is_quan_ly_chat_luong.png)
+*Bảng 4.2: Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc*
 
-*Hình 4.2: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chất lượng (8 Gateways • 1 Start Event duy nhất)*
+| STT | Tên hoạt động | Loại (VA/BVA/NVA) | Thời gian (phút) | Giải thích |
+| --- | --- | --- | --- | --- |
+| 1 | Khách hàng lấy số/chờ đến lượt | NVA | 3.0 | Khách hàng phải đợi trong giờ cao điểm, không tạo giá trị. |
+| 2 | Khách hàng trình bày triệu chứng/đơn thuốc | VA | 1.0 | Cung cấp thông tin thiết yếu cho việc chẩn đoán. |
+| 3 | Dược sĩ kiểm tra tính hợp lệ đơn thuốc | BVA | 0.5 | Hoạt động bắt buộc theo quy định pháp luật y tế. |
+| 4 | Dược sĩ đặt câu hỏi tư vấn sâu | VA | 2.0 | Tạo ra giá trị chuyên môn, giúp tìm đúng thuốc. |
+| 5 | Tra cứu tồn kho trên phần mềm | NVA | 1.0 | Có thể tự động hóa hoặc tích hợp tốt hơn để giảm thời gian tìm kiếm. |
+| 6 | Đi lại tìm thuốc trên kệ | NVA | 1.5 | Di chuyển vật lý mất thời gian, do bố trí kho chưa tối ưu. |
+| 7 | Lấy thuốc và kiểm tra hạn sử dụng | BVA | 0.5 | Cần thiết để đảm bảo chất lượng trước khi giao. |
+| 8 | Di chuyển thuốc ra quầy thu ngân | NVA | 0.5 | Thao tác thừa do quầy tư vấn và thu ngân tách biệt. |
+| 9 | Thu ngân tính tiền và khách hàng thanh toán | VA | 1.0 | Hoàn tất giao dịch, tạo doanh thu. |
+| 10 | Đợi in hóa đơn giấy | NVA | 0.5 | Lãng phí thời gian chờ thiết bị. |
+| 11 | Ghi chú liều dùng lên vỏ thuốc | VA | 1.0 | Mang lại giá trị sử dụng an toàn cho khách hàng. |
+| 12 | Giao thuốc và dặn dò khách hàng | VA | 1.0 | Tương tác cuối cùng, tạo sự an tâm. |
 
----
+**Nhận xét:** Tổng thời gian chu kỳ là 13.5 phút. Trong đó, thời gian VA chỉ chiếm 6.0 phút (~44.4%), BVA chiếm 1.0 phút (~7.4%), và NVA chiếm tới 6.5 phút (~48.2%). Tỷ lệ NVA quá cao cho thấy quy trình hiện tại đang lãng phí đáng kể thời gian của khách hàng, chủ yếu rơi vào việc chờ đợi, tra cứu và di chuyển vật lý của nhân viên.
 
-## 4.3. Quy trình bán thuốc tại nhà thuốc
+### 4.2.3. Phân tích lãng phí
 
-Bán thuốc trực tiếp tại quầy là quy trình cốt lõi mang lại doanh thu chủ lực cho hơn 1.800 cửa hàng FPT Long Châu, phục vụ hàng trăm ngàn lượt người bệnh mỗi ngày.
+Dựa vào khung phân tích Lean, các điểm lãng phí được chỉ ra cụ thể như sau:
 
-**Bảng 4.3: Tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS)**
+*Bảng 4.3: Bảng tổng hợp lãng phí Lean trong quy trình Bán thuốc tại nhà thuốc*
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Phân phối thuốc đúng người, đúng bệnh, đúng liều lượng, an toàn và thu ngân chính xác. |
-| **Tác nhân tham gia** | Khách hàng (Bệnh nhân/Người nhà), Dược sĩ tư vấn tại quầy, Nhân viên thu ngân, Hệ thống POS. |
-| **Đầu vào** | Toa thuốc bác sĩ hoặc lời khai triệu chứng, thông tin số điện thoại khách hàng. |
-| **Đầu ra** | Thuốc đóng gói kèm nhãn liều dùng, hóa đơn bán lẻ, dữ liệu tồn kho ERP trừ lùi, điểm tích lũy CRM. |
-| **Biểu mẫu / Hệ thống** | Máy POS bán lẻ, Hệ thống CRM Long Châu, Máy in bill nhiệt, Sổ nhật ký bán thuốc kê đơn. |
-| **Thời gian chu kỳ** | 13.5 phút/giao dịch (trong đó thời gian chờ đợi và tìm thuốc chiếm hơn 55%). |
-| **Tần suất** | Liên tục từ 06h00 đến 22h00 hàng ngày tại toàn bộ chuỗi cửa hàng. |
+| Loại lãng phí | Biểu hiện | Tác động | Mức độ |
+| --- | --- | --- | --- |
+| Chờ đợi | Khách hàng chờ lâu giờ cao điểm do không có hệ thống lấy số; chờ in hóa đơn giấy. | Giảm sự hài lòng, khách hàng có thể bỏ đi. | Cao |
+| Di chuyển | Dược sĩ phải đi lại nhiều giữa quầy tư vấn, kệ thuốc và quầy thu ngân. | Kéo dài thời gian giao dịch, gây mệt mỏi cho nhân sự. | Trung bình |
+| Quy trình thừa | In hóa đơn giấy cho mọi giao dịch dù khách không yêu cầu; ghi chép sổ tay lặp lại. | Tốn kém chi phí giấy in, tốn thời gian thao tác. | Trung bình |
+| Tồn kho | Tồn kho không cân bằng, nhà thuốc thiếu hàng, nơi thừa hàng; không có cảnh báo tự động. | Mất cơ hội bán hàng, tốn thời gian tra cứu. | Cao |
+| Sửa chữa lỗi | Sai sót trong việc lấy nhầm hàm lượng thuốc, phải kiểm tra lại. | Rủi ro sức khỏe khách hàng, tốn thời gian đổi trả. | Cao |
+| Không sử dụng dữ liệu | Không lưu trữ và khai thác lịch sử mua bán của khách quen. | Dược sĩ phải hỏi lại từ đầu, tư vấn lặp lại nhiều lần. | Cao |
 
-**Các bước thực hiện:**
-1. **Khách hàng đến quầy (Start Event):** Khách hàng tiếp cận quầy thuốc Long Châu.
-2. **Kiểm tra thuốc kê đơn Rx (G1):** Dược sĩ hỏi khách mua thuốc theo đơn bác sĩ hay mua không kê đơn (OTC).
-3. **Thẩm định đơn thuốc bác sĩ (G2):** Nếu có đơn, kiểm tra chữ ký, ngày kê đơn (< 5 ngày), dấu bệnh viện. Đơn không hợp lệ sẽ từ chối bán theo quy chế Bộ Y tế.
-4. **Kiểm tra tồn kho tại quầy (G3):** Dược sĩ tra cứu trên màn hình POS. Nếu hết hàng, đề xuất chuyển sang giải pháp thay thế.
-5. **Tư vấn đổi thuốc generic tương đương (G4):** Nếu biệt dược gốc hết hàng, tư vấn thuốc generic cùng hoạt chất. Nếu khách không đồng ý đổi, kết thúc giao dịch.
-6. **Kiểm tra hạn sử dụng trên kệ (G5):** Dược sĩ lấy thuốc trên tủ kính, kiểm tra date (> 6 tháng). Nếu cận hạn, thu hồi đổi hộp khác.
-7. **Kiểm tra hội viên thân thiết CRM (G6):** Tra cứu số điện thoại khách hàng. Nếu là hội viên, áp dụng chính sách giảm giá và tích điểm.
-8. **Lựa chọn phương thức thanh toán (G7):** Khách hàng chọn thanh toán tiền mặt hay chuyển khoản / mã QR VNPay.
-9. **Xác nhận kết quả thanh toán (G8):** Thu ngân kiểm tra giao dịch hoàn tất. In hóa đơn, dược sĩ dặn dò cách dùng thuốc và bàn giao tận tay khách hàng.
+### 4.2.4. Phân tích nguyên nhân gốc rễ
 
-**Phân tích 8 Cổng điều kiện & Giải tỏa Deadlock (0% Deadlock):**
-- **Xóa bỏ triệt để điểm nghẽn Deadlock**: Khắc phục lỗi luồng khách hàng bị ngắt quãng bằng cách liên kết thông suốt 100% Sequence Flow từ khâu tư vấn, chọn phương thức thanh toán đến nhận thuốc và kết thúc.
-- **8 Cổng quyết định**: G1 (Thuốc kê đơn bác sĩ?), G2 (Đơn thuốc hợp lệ?), G3 (Còn hàng tại quầy?), G4 (Khách đồng ý đổi Generic?), G5 (Hạn sử dụng > 6 tháng?), G6 (Khách hàng có thẻ Hội viên CRM?), G7 (Lựa chọn hình thức thanh toán?), G8 (Thanh toán thành công?).
+Sử dụng biểu đồ Fishbone để phân tích vấn đề trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"**.
+- **Con người**: Thiếu hụt nhân sự vào các khung giờ cao điểm; kỹ năng tra cứu và tư vấn của một số dược sĩ chưa đồng đều.
+- **Quy trình**: Không có quy trình phân luồng khách hàng (mua định kỳ vs tư vấn mới); quy trình kiểm tra đơn thuốc thủ công mất nhiều thời gian.
+- **Công nghệ**: Hệ thống POS chưa thông minh, không tích hợp gợi ý thuốc thay thế; thiếu kênh online hỗ trợ đặt trước.
+- **Môi trường**: Diện tích quầy tư vấn hẹp, bố trí layout chưa tối ưu; thiếu khu vực chờ có tổ chức cho khách hàng.
+- **Nguyên vật liệu**: Thiếu hụt các loại thuốc đặc trị khó tìm tại chi nhánh; không có hệ thống cảnh báo tồn kho ở mức thấp.
 
-![Hình 4.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc](hinh_4_3_bpmn_as_is_ban_thuoc_tai_quay.png)
+**Áp dụng phương pháp 5 Whys cho vấn đề "Khách hàng chờ lâu":**
+1. **Tại sao khách hàng phải chờ lâu?** Vì thời gian xử lý một giao dịch của dược sĩ tốn nhiều thời gian (trung bình khoảng 13.5 phút/giao dịch).
+2. **Tại sao mỗi giao dịch lại tốn nhiều thời gian?** Vì dược sĩ phải đi lại nhiều để tìm thuốc và tra cứu tồn kho trên máy lâu.
+3. **Tại sao việc tìm thuốc và tra cứu lại lâu?** Vì phần mềm POS không gợi ý vị trí lưu trữ và không tự động báo hết hàng.
+4. **Tại sao hệ thống POS không gợi ý và báo hết hàng?** Vì phần mềm bán hàng hiện tại chưa được liên kết chặt chẽ theo thời gian thực với phân hệ quản lý kho (WMS).
+5. **Tại sao chưa có sự liên kết chặt chẽ với WMS?** Vì hạ tầng công nghệ chưa được đầu tư nâng cấp đồng bộ cho phép tích hợp dữ liệu tập trung toàn chuỗi. (Nguyên nhân gốc rễ)
 
-*Hình 4.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc (8 Gateways • 0% Deadlock • 4 Swimlanes)*
+### 4.2.5. Phân tích thời gian, chi phí và chất lượng
+
+- **Thời gian**: Qua khảo sát và mô phỏng học thuật, Cycle Time (thời gian chu kỳ) trung bình AS-IS là 13.5 phút/khách. Trong đó, thời gian khách phải chờ đợi cùng các thao tác lãng phí (NVA) chiếm tới 6.5 phút (~48.2% tổng thời gian chu kỳ).
+- **Chi phí**: Ước tính chi phí lãng phí bao gồm chi phí cơ hội do mất khách (khi họ thấy đông và bỏ đi), chi phí giấy in hóa đơn dư thừa và chi phí nhân công cho các thao tác đi lại vô ích.
+- **Chất lượng**: Tỷ lệ sai sót (xuất nhầm thuốc, nhầm hàm lượng) dù được kiểm soát nhưng vẫn tạo ra những rủi ro. Điểm hài lòng khách hàng (NPS - Net Promoter Score) ước tính chỉ ở mức trung bình (~45) chủ yếu do trải nghiệm chờ đợi làm giảm sự hài lòng.
 
 ---
 
-## 4.4. Quy trình bán thuốc online
+## 4.3. Phân tích quy trình quản lý kho
 
-Quy trình Bán thuốc Online theo mô hình O2O (Online to Offline) kết nối nền tảng thương mại điện tử (Website longchau.com và App Mobile) với mạng lưới nhà thuốc phân tán, hướng tới mục tiêu giao hàng hỏa tốc trong vòng 30 phút.
+Quy trình quản lý kho là xương sống hậu cần duy trì nguồn hàng ổn định cho toàn bộ chuỗi. Tại Long Châu, quy trình vận hành kho phức tạp nhưng đang tồn tại nhiều công đoạn thủ công, thiếu sự tự động hóa cần thiết.
 
-**Bảng 4.4: Tóm tắt thông tin quy trình Bán thuốc online (AS-IS)**
+### 4.3.1. Phân tích tác nhân và các bên liên quan
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Tiếp nhận, thẩm định đơn thuốc từ xa và giao hàng tận nhà nhanh chóng, an toàn. |
-| **Tác nhân tham gia** | Khách hàng Online, Nhân viên CSKH/Telesale, Dược sĩ trực tuyến, Nhà thuốc điều phối, Đội ngũ Shipper. |
-| **Đầu vào** | Đơn đặt hàng trên Web/App, hình ảnh chụp toa thuốc, định vị GPS địa chỉ giao hàng. |
-| **Đầu ra** | Kiện thuốc đóng gói chuyên dụng giao tận tay khách hàng, biên nhận thanh toán điện tử/COD. |
-| **Biểu mẫu / Hệ thống** | Website longchau.com, Mobile App, Hệ thống OMS, Cổng thanh toán VNPay/Momo, App Shipper. |
-| **Thời gian chu kỳ** | 30 phút đối với đơn nội thành; 2 - 24 giờ đối với đơn tỉnh. |
-| **Tần suất** | Liên tục 24/7 trên môi trường số. |
+Ma trận RACI cho quy trình quản lý kho được xác định như sau:
 
-**Các bước thực hiện:**
-1. **Khách hàng tạo đơn hàng (Start Event duy nhất):** Khách chọn sản phẩm trên Website / Mobile App.
-2. **Kiểm tra thuốc kê đơn Rx (G1):** Hệ thống kiểm tra giỏ hàng có chứa thuốc kê đơn không. Nếu có, yêu cầu tải ảnh chụp toa thuốc bác sĩ.
-3. **Dược sĩ trực tuyến thẩm định ảnh toa thuốc (G2):** Dược sĩ kiểm tra ảnh chụp. Nếu mờ, không rõ chữ hoặc đơn quá hạn, gọi điện thông báo hủy đơn thuốc.
-4. **Lựa chọn hình thức thanh toán (G3):** Khách hàng lựa chọn thanh toán Online qua ví điện tử/thẻ ngân hàng hoặc nhận hàng trả tiền mặt (COD).
-5. **Kiểm tra cổng thanh toán Online (G4):** Xác nhận trừ tiền thành công. Nếu lỗi thẻ/ví, hệ thống báo hủy đơn.
-6. **Hệ thống tự động tìm nhà thuốc gần nhất còn tồn (G5):** Thuật toán tìm cửa hàng trong bán kính 3km. Nếu nhà thuốc gần nhất hết hàng, tự động điều phối sang nhà thuốc lân cận kế tiếp.
-7. **Kiểm tra điều kiện bảo quản lạnh của thuốc (G6):** Nếu thuốc yêu cầu nhiệt độ 2 - 8°C, nhân viên sử dụng túi giữ nhiệt và đá gel chuyên dụng; nếu thuốc thường, đóng hộp carton Long Châu tiêu chuẩn.
-8. **Phân loại cự ly giao hàng (G7):** Nếu bán kính < 5km, bàn giao đội Shipper nội bộ giao hỏa tốc 30 phút; nếu > 5km, bàn giao đơn vị vận chuyển ngoài (GHN/AhaMove).
-9. **Giao hàng tận nơi và đối soát (G8):** Shipper giao hàng tận nơi. Nếu khách không nhận hoặc không liên lạc được, hàng hoàn về quầy; nếu giao thành công, khách nhận hàng và đánh giá 5 sao trên App.
+*Bảng 4.4: Ma trận RACI quy trình Quản lý kho*
 
-**Phân tích 8 Cổng điều kiện (Gateways > 7):**
-- **G1 (Có thuốc kê đơn Rx?)**: Phân luồng luồng OTC và luồng thẩm định toa thuốc y tế.
-- **G2 (Ảnh toa thuốc hợp lệ?)**: Chốt chặn an toàn dược học từ xa.
-- **G3 (Phương thức thanh toán?)**: Điều hướng luồng thanh toán điện tử và COD.
-- **G4 (Thanh toán online thành công?)**: Xác thực giao dịch tài chính trước khi xuất kho.
-- **G5 (Nhà thuốc gần nhất đủ tồn?)**: Thuật toán cân bằng kho O2O thông minh.
-- **G6 (Thuốc bảo quản lạnh 2-8°C?)**: Chuẩn hóa bao gói bảo vệ hoạt tính dược liệu.
-- **G7 (Bán kính giao < 5km?)**: Phân loại luồng hỏa tốc nội bộ và đối tác vận chuyển ngoài.
-- **G8 (Giao hàng thành công?)**: Kết thúc chu trình O2O hoặc kích hoạt quy trình hoàn hàng.
+| STT | Các bên liên quan | R (Thực thi) | A (Chịu trách nhiệm) | C (Tham vấn) | I (Được thông báo) |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Nhân viên kho | Bốc dỡ, kiểm đếm, sắp xếp, xuất hàng | | | |
+| 2 | Trưởng kho | Lập kế hoạch, điều phối nhân sự, duyệt báo cáo | Chịu trách nhiệm toàn bộ về số lượng và chất lượng tồn kho | Bộ phận QA | Ban Giám đốc |
+| 3 | Nhà cung cấp | Giao hàng đúng hạn | | | Trưởng kho |
+| 4 | Nhân viên nhà thuốc | Gửi yêu cầu nhập hàng, nhận hàng | | | Trạng thái xử lý |
+| 5 | Hệ thống ERP | Ghi nhận dữ liệu, xử lý tính toán | | | |
 
-![Hình 4.4: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc online](hinh_4_4_bpmn_as_is_ban_thuoc_online.png)
+### 4.3.2. Phân loại hoạt động VA/BVA/NVA
 
-*Hình 4.4: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc online (8 Gateways • 5 Swimlanes • Chuẩn O2O)*
+*Bảng 4.5: Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho*
 
----
+| STT | Tên hoạt động | Loại (VA/BVA/NVA) | Thời gian (phút) | Giải thích |
+| --- | --- | --- | --- | --- |
+| 1 | Nhận thông báo giao hàng | BVA | 5.0 | Cần thiết để chuẩn bị khu vực bốc dỡ. |
+| 2 | Bốc dỡ hàng từ xe | VA | 30.0 | Di chuyển hàng vào khu vực an toàn. |
+| 3 | Đợi giấy tờ, phiếu giao hàng | NVA | 15.0 | Thời gian chờ đợi do thủ tục hành chính. |
+| 4 | Kiểm đếm số lượng thủ công | NVA | 45.0 | Lãng phí do không sử dụng công nghệ mã vạch. |
+| 5 | Kiểm tra ngoại quan, hạn sử dụng | BVA | 20.0 | Bắt buộc để đảm bảo chất lượng dược phẩm. |
+| 6 | Ghi chép sổ sách nhập kho bằng tay | NVA | 15.0 | Thao tác thừa, dễ dẫn đến sai sót. |
+| 7 | Nhập lại số liệu từ sổ vào hệ thống ERP | NVA | 20.0 | Nhân đôi công việc nhập liệu, lãng phí thời gian. |
+| 8 | Di chuyển, sắp xếp hàng lên kệ | VA | 40.0 | Tổ chức lưu trữ hàng hóa phục vụ xuất kho. |
+| 9 | Nhận yêu cầu xuất kho | BVA | 5.0 | Tiếp nhận thông tin xử lý. |
+| 10 | Đi tìm hàng hóa theo yêu cầu | NVA | 30.0 | Mất thời gian do không có bản đồ kho số hóa. |
+| 11 | Nhặt hàng, soạn hàng | VA | 20.0 | Tạo ra giá trị hoàn thành đơn hàng. |
+| 12 | Đóng gói hàng hóa | VA | 15.0 | Bảo vệ hàng hóa khi vận chuyển. |
+| 13 | Ghi trừ lùi thẻ kho bằng giấy | NVA | 10.0 | Hoạt động lặp lại, dư thừa với hệ thống số. |
+| 14 | Kiểm kê định kỳ đếm tay toàn bộ kho | NVA | 240.0 | Cực kỳ tốn kém thời gian nhân lực và gián đoạn. |
 
-## 4.5. Quy trình quản lý kho trung tâm
+**Nhận xét:** Với một chu trình nhập-xuất-kiểm cơ bản, thời gian dành cho các hoạt động NVA là cực kỳ lớn (lên tới 375 phút so với tổng ~510 phút). Việc nhập liệu hai lần, đếm thủ công và duy trì hệ thống thẻ kho giấy là nguyên nhân chính dẫn đến sự chậm trễ, sai sót và phình to chi phí vận hành kho.
 
-Kho trung tâm (DC) đóng vai trò là "trái tim" logistics phân phối toàn bộ hàng hóa cho chuỗi nhà thuốc FPT Long Châu. Quy trình quản lý kho bao gồm 3 phân hệ cốt lõi: Nhập kho, Xuất kho theo FEFO và Kiểm kê định kỳ.
+### 4.3.3. Phân tích lãng phí
 
-**Bảng 4.5: Tóm tắt thông tin quy trình Quản lý kho trung tâm (AS-IS)**
+- **Chờ đợi**: Hàng hóa phải nằm ở khu vực tiếp nhận chờ được kiểm đếm và hoàn tất thủ tục giấy tờ trước khi lên kệ.
+- **Di chuyển**: Nhân viên kho phải đi bộ rất xa để tìm hàng vì thiếu hệ thống định vị vị trí lưu trữ (Bin/Location layout).
+- **Quy trình thừa**: Việc duy trì song song hệ thống ERP và hệ thống sổ sách, thẻ kho bằng giấy là sự lãng phí quy trình nghiêm trọng.
+- **Tồn kho/Sản xuất thừa**: Đặt hàng thiếu tính toán đồng bộ dẫn đến tồn đọng các lô thuốc cận hạn sử dụng.
+- **Sửa chữa lỗi**: Thường xuyên phải làm báo cáo giải trình, tìm nguyên nhân và kiểm kê lại khi số liệu ERP và số liệu đếm tay không khớp.
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Quản lý chính xác số lượng Nhập - Xuất - Tồn, bảo quản thuốc chuẩn GSP, loại bỏ nguy cơ hàng cận date. |
-| **Tác nhân tham gia** | Nhân viên bốc dỡ, Thủ kho trung tâm, Dược sĩ kiểm soát chất lượng GSP, Nhân viên kiểm kê. |
-| **Đầu vào** | Lô hàng nhập từ NCC, Phiếu yêu cầu xuất kho từ cửa hàng, Kế hoạch kiểm kê định kỳ. |
-| **Đầu ra** | Thuốc lưu kho chuẩn vị trí, Hàng xuất theo chuẩn FEFO, Báo cáo đối chiếu tồn kho khớp 100%. |
-| **Biểu mẫu / Hệ thống** | Phiếu nhập/xuất kho giấy, Thẻ kho treo kệ, Phần mềm ERP cơ bản, Bảng kiểm kê Excel. |
-| **Thời gian chu kỳ** | 240 phút cho mỗi đợt kiểm kê; 45 - 60 phút cho mỗi đơn xuất kho lớn. |
-| **Tần suất** | Hoạt động liên tục hàng ngày; kiểm kê định kỳ hàng tháng/quý. |
+### 4.3.4. Phân tích nguyên nhân gốc rễ
 
-**Các bước thực hiện:**
-1. **Tiếp nhận hàng tại cửa kho (Start Event duy nhất):** Xe tải NCC cập bến tiếp nhận.
-2. **Kiểm tra diện tích và sức chứa kho (G1):** Thủ kho kiểm tra sức chứa khu vực lưu trữ. Nếu kho quá tải, kích hoạt phương án kho vệ tinh dự phòng.
-3. **Đối chiếu thông tin đơn đặt hàng PO (G2):** Kiểm tra tên thuốc, số lô, hàm lượng. Nếu sai lệch đơn PO, lập biên bản từ chối nhận hàng.
-4. **Kiểm tra nhiệt độ bảo quản chuẩn GSP (G3):** Đo nhiệt độ thực tế của thùng hàng. Nếu không đạt dải nhiệt độ GSP, chuyển vào khu vực biệt trữ cách ly.
-5. **Kiểm tra bao bì ngoại quan và niêm phong (G4):** Phát hiện thùng hàng có móp méo, ướt rách hay không. Nếu hư hỏng, yêu cầu NCC đổi mới.
-6. **Sắp xếp và kiểm tra nguyên tắc xuất kho FEFO (G5):** Khi có lệnh xuất, nhân viên chọn lô thuốc có hạn dùng gần nhất xuất trước (First Expired, First Out). Nếu xuất sai thứ tự FEFO, yêu cầu đổi lại lô.
-7. **Kiểm tra đủ số lượng xuất theo phiếu điều phối (G6):** Đếm số lượng thực xuất. Nếu thiếu hàng, ghi nhận xuất từng phần và báo quầy nhà thuốc.
-8. **Đối chiếu số liệu kiểm kê thực tế với sổ sách (G7):** Đếm tay định kỳ hàng tháng. Nếu có chênh lệch, tiến hành rà soát thẻ kho tìm nguyên nhân.
-9. **Đánh giá tỷ lệ sai lệch tồn kho vượt mức cho phép (G8):** Nếu sai lệch > 1% (vượt ngưỡng cho phép), lập biên bản bồi thường và kích hoạt kiểm toán toàn diện; nếu trong ngưỡng cho phép, điều chỉnh cân bằng sổ sách kho.
+**Vấn đề trung tâm:** "Sai sót tồn kho và hàng cận hạn không được phát hiện kịp thời"
+Phân tích theo 6 yếu tố (6M):
+- **Man (Con người)**: Mệt mỏi do khối lượng đếm tay quá lớn dẫn đến đếm sai; phụ thuộc vào trí nhớ của nhân viên cũ.
+- **Machine (Công nghệ)**: Thiếu máy quét mã vạch (Barcode Scanner) và thiết bị PDA di động; phần mềm ERP chưa có thuật toán kiểm soát FEFO (First Expired First Out).
+- **Method (Phương pháp)**: Quy trình cập nhật thẻ kho giấy dễ xảy ra quên sót; quy trình kiểm kê toàn diện gây đóng băng hoạt động kho.
+- **Material (Nguyên vật liệu)**: Rất nhiều mã thuốc có thiết kế bao bì giống nhau dễ gây nhầm lẫn khi nhặt hàng nhanh.
+- **Measurement (Đo lường)**: Không có chỉ số đo lường hiệu suất (KPI) thời gian thực cho nhân viên kho.
+- **Mother Nature (Môi trường)**: Diện tích kho rộng, nhiều góc khuất, khu vực bảo quản lạnh khó làm việc lâu dài.
 
-**Phân tích 8 Cổng điều kiện (Gateways > 7):**
-- **G1 (Kho đủ chỗ chứa?)**: Quản trị dung lượng kho bãi thực tế.
-- **G2 (Thông tin trùng khớp PO?)**: Đối soát danh mục và xuất xứ hàng hóa.
-- **G3 (Nhiệt độ đạt chuẩn GSP?)**: Đảm bảo tiêu chuẩn lưu kho nghiêm ngặt ngành y tế.
-- **G4 (Hàng có móp vỡ hư hỏng?)**: Kiểm soát chất lượng cơ học của kiện hàng.
-- **G5 (Xuất kho đúng chuẩn FEFO?)**: Chốt chặn ngăn ngừa hàng cận hạn bị ứ đọng.
-- **G6 (Đủ số lượng xuất kho?)**: Quản lý xuất hàng nguyên kiện hoặc xuất từng phần.
-- **G7 (Kiểm kê có sai lệch?)**: Nhận diện chênh lệch giữa thực tế và phần mềm.
-- **G8 (Sai lệch vượt mức > 1%?)**: Kích hoạt chế tài xử lý trách nhiệm và kiểm toán.
+**Áp dụng 5 Whys cho vấn đề "Số liệu tồn kho trên hệ thống không khớp thực tế":**
+1. **Tại sao số liệu không khớp?** Vì thẻ kho giấy và phần mềm ERP ghi nhận hai con số khác nhau.
+2. **Tại sao hai hệ thống ghi nhận khác nhau?** Vì nhân viên quên cập nhật vào ERP sau khi xuất hàng hoặc gõ sai số liệu.
+3. **Tại sao nhân viên quên hoặc nhập sai?** Vì quá trình này được làm hoàn toàn thủ công, nhân viên phải nhớ và nhập liệu hai lần tách biệt.
+4. **Tại sao lại phải nhập liệu tách biệt?** Vì nhân viên tại hiện trường kho không có thiết bị di động để cập nhật thẳng vào hệ thống lúc thao tác với hàng hóa.
+5. **Tại sao không có thiết bị di động?** Vì quy trình quản lý chưa được số hóa toàn diện bằng việc áp dụng công nghệ quét mã vạch (Barcode/RFID) tích hợp ERP. (Nguyên nhân gốc rễ)
 
-![Hình 4.5: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý kho](hinh_4_5_bpmn_as_is_quan_ly_kho.png)
+### 4.3.5. Phân tích thời gian, chi phí và chất lượng
 
-*Hình 4.5: Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý kho trung tâm (8 Gateways • 3 Phân hệ Nhập - Xuất - Kiểm kê)*
+- **Thời gian**: Phân tích thời gian cho thấy quy trình nhập kho mất trung bình 3-4 giờ/lô lớn, xuất kho mất 1-2 giờ/đơn hàng, đặc biệt kiểm kê tốn hàng ngày trời gây gián đoạn kinh doanh.
+- **Chi phí**: Thiệt hại nặng nề nhất nằm ở lượng thuốc hết hạn bị hủy bỏ do quy tắc FEFO không được tuân thủ nghiêm ngặt bằng hệ thống. Cùng với đó là chi phí nhân công ngày càng cao để duy trì việc kiểm đếm và ghi chép thủ công.
+- **Chất lượng**: Tỷ lệ sai lệch tồn kho được ước tính dao động khoảng 5-8%. Đây là con số đáng báo động trong ngành bán lẻ dược phẩm, nơi mức độ chính xác đòi hỏi gần như tuyệt đối để đảm bảo an toàn cho bệnh nhân.
 
 ---
 
-## 4.6. Quy trình tuyển dụng và đào tạo
+## 4.4. Tổng hợp các vấn đề và điểm nghẽn
 
-Nguồn nhân lực Dược sĩ chuyên môn cao, thái độ phục vụ tận tâm là yếu tố then chốt tạo nên vị thế dẫn đầu của FPT Long Châu. Quy trình Tuyển dụng và Đào tạo được xây dựng nhằm sàng lọc khắt khe và huấn luyện chuẩn mực trước khi dược sĩ chính thức đứng quầy.
+Sau khi tiến hành mổ xẻ chi tiết hai quy trình mang tính sống còn của Long Châu, báo cáo đã tổng hợp được bức tranh toàn cảnh về những khiếm khuyết đang kìm hãm hiệu suất của hệ thống. Dưới đây là bảng tổng hợp các vấn đề chính yếu đã được nhận diện:
 
-**Bảng 4.6: Tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS)**
+*Bảng 4.6: Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt*
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Tuyển chọn dược sĩ có Chứng chỉ hành nghề (CCHN), đào tạo kiến thức bệnh học và chuẩn hóa tư vấn GPP. |
-| **Tác nhân tham gia** | Hội đồng Chuyên môn Dược, Ban Nhân sự (HR Tuyển dụng), Trung tâm Đào tạo Long Châu Academy, Ứng viên. |
-| **Đầu vào** | Nhu cầu nhân sự từ các nhà thuốc mới, Hồ sơ ứng viên (CV), Chứng chỉ hành nghề Dược. |
-| **Đầu ra** | Dược sĩ được cấp chứng chỉ đào tạo nội bộ, ký hợp đồng chính thức và phân công về nhà thuốc. |
-| **Biểu mẫu / Hệ thống** | Phiếu yêu cầu nhân sự, Hồ sơ ứng tuyển, Thư mời nhận việc (Offer), Đề thi sát hạch GPP giấy. |
-| **Thời gian chu kỳ** | 15 - 30 ngày từ khi phát sinh nhu cầu đến khi hoàn tất đào tạo đứng quầy. |
-| **Tần suất** | Liên tục hàng tháng đáp ứng kế hoạch mở mới hàng trăm cửa hàng. |
+| Tên vấn đề | Quy trình liên quan | Phân loại lãng phí | Mức độ ảnh hưởng | Giải pháp ưu tiên đề xuất |
+| --- | --- | --- | --- | --- |
+| Khách hàng chờ đợi lâu tại quầy | Bán thuốc tại nhà thuốc | NVA (Chờ đợi) | Rất cao | Tối ưu hóa phần mềm POS, tích hợp hệ thống phân luồng và kênh online. |
+| Thao tác nhập liệu lặp lại (ERP & Giấy) | Quản lý kho | NVA (Quy trình thừa) | Cao | Số hóa hoàn toàn quy trình, loại bỏ các loại thẻ kho và sổ giấy. |
+| Không áp dụng chuẩn xác FEFO | Quản lý kho | Lãng phí tồn kho | Rất cao | Tích hợp thuật toán cảnh báo hạn sử dụng vào phần mềm. |
+| Tìm kiếm thuốc thủ công mất thời gian | Bán thuốc & Quản lý kho | NVA (Di chuyển) | Cao | Áp dụng máy quét mã vạch và thiết lập sơ đồ kho điện tử (Bin/Location). |
+| Không khai thác được dữ liệu khách hàng | Bán thuốc tại nhà thuốc | NVA (Không sử dụng năng lực) | Trung bình | Xây dựng hệ thống CRM tích hợp nhận diện và lưu trữ bệnh án khách hàng. |
+| Chênh lệch số liệu thực tế và phần mềm | Quản lý kho | NVA (Sửa chữa lỗi) | Cao | Cập nhật số liệu tồn kho theo thời gian thực qua thiết bị PDA di động. |
 
-**Các bước thực hiện:**
-1. **Phát sinh nhu cầu nhân sự Dược sĩ (Start Event duy nhất):** Trưởng bộ phận lập phiếu yêu cầu nhân sự.
-2. **Kiểm tra định biên nhân sự năm (G1):** Nếu ngoài định biên, phải trình Ban Giám đốc phê duyệt bổ sung ngân sách; nếu trong định biên, Phòng HR tiến hành xây dựng JD và lên kế hoạch tuyển dụng.
-3. **Lựa chọn kênh tuyển dụng nội bộ hay ngoài (G2):** Nếu nguồn nội bộ có sẵn, đăng thông báo thăng tiến; nếu tuyển ngoài, đăng tin đa kênh (TopCV, Hội Dược sĩ, Ngày hội việc làm các trường Đại học Dược).
-4. **Kiểm tra Chứng chỉ hành nghề CCHN Dược (G3):** HR kiểm tra pháp lý văn bằng. Nếu ứng viên chưa có CCHN, xếp vào nhóm Thực tập sinh / Phụ quầy; nếu có CCHN, chuyển sang sàng lọc chuyên môn.
-5. **Sàng lọc hồ sơ CV theo tiêu chí (G4):** Đánh giá kinh nghiệm và kiến thức GPP. Nếu không đạt, gửi email cảm ơn từ chối; nếu đạt, liên hệ đặt lịch phỏng vấn.
-6. **Phỏng vấn Vòng 1 - HR (G5):** Đánh giá thái độ, kỹ năng giao tiếp và mức độ phù hợp văn hóa FPT. Nếu không đạt, lưu hồ sơ dự bị; nếu đạt, chuyển lên Hội đồng Chuyên môn.
-7. **Phỏng vấn Vòng 2 - Chuyên môn Dược (G6):** Hội đồng phỏng vấn kiểm tra kiến thức dược lý, tương tác thuốc và kê toa. Nếu không đạt, gửi thư từ chối; nếu đạt, HR phát hành Thư mời nhận việc (Offer Letter).
-8. **Ứng viên xem xét và phản hồi Offer (G7):** Nếu ứng viên từ chối, HR lưu lý do và liên hệ ứng viên dự phòng; nếu đồng ý, ứng viên nộp hồ sơ gốc và ký hợp đồng thử việc.
-9. **Sát hạch lý thuyết & thực hành tư vấn GPP (G8):** Trung tâm Đào tạo tổ chức đào tạo tập trung và tổ chức kỳ thi sát hạch. Nếu không đạt, đào tạo bổ sung hoặc chấm dứt thử việc; nếu đạt, cấp chứng nhận nội bộ và phân công về nhà thuốc chính thức.
+**Định vị các điểm nghẽn (Bottleneck) cốt lõi:**
+Từ việc tổng hợp các vấn đề trên, có thể định vị 3 điểm nghẽn mang tính chiến lược đang "bóp nghẹt" hiệu năng của cả chuỗi bán lẻ:
+1. **Điểm nghẽn thông tin tại quầy bán hàng (POS):** Phần mềm POS hiện tại thiếu tính kết nối sâu và tức thời với phân hệ kho (WMS). Mỗi khi dược sĩ cần tra cứu tồn kho, thao tác rời rạc làm chậm toàn bộ giao dịch, tạo ra "nút thắt cổ chai" khiến dòng khách hàng bị ùn ứ vào giờ cao điểm.
+2. **Điểm nghẽn cập nhật dữ liệu và độ trễ thông tin:** Việc phụ thuộc vào ghi chép giấy tờ sau đó mới nhập liệu lại vào hệ thống tạo ra độ trễ rất lớn về thông tin. Ban lãnh đạo và hệ thống cung ứng không thể nhìn thấy lượng tồn kho theo thời gian thực (real-time), dẫn đến các quyết định điều phối hàng hóa, cảnh báo cận date bị sai lệch và chậm trễ.
+3. **Điểm nghẽn công nghệ trong định vị hàng hóa:** Việc duy trì phương pháp tìm kiếm hàng hóa dựa hoàn toàn vào "trí nhớ" của nhân viên trên hàng ngàn mét vuông kệ kho vừa gây mệt mỏi vật lý, vừa làm tốc độ xử lý đơn hàng giảm sút nghiêm trọng. Khi có nhân sự mới chưa quen việc, điểm nghẽn này càng bộc lộ rõ rệt, đẩy tỷ lệ sai sót tăng cao.
 
-**Phân tích 8 Cổng điều kiện (Gateways > 7) & 1 Start Event duy nhất:**
-- **Chuẩn hóa cú pháp**: Duy nhất 1 Sự kiện bắt đầu (Start Event) từ khâu phát sinh nhu cầu tuyển dụng tại nhà thuốc, không còn lỗi 2 Start Event.
-- **8 Cổng điều kiện**: G1 (Trong định biên năm?), G2 (Kênh tuyển dụng Nội bộ hay Ngoài?), G3 (Có Chứng chỉ hành nghề CCHN Dược?), G4 (CV đạt tiêu chí?), G5 (Đạt phỏng vấn Vòng 1 HR?), G6 (Đạt phỏng vấn Vòng 2 Chuyên môn?), G7 (Ứng viên đồng ý Offer?), G8 (Đạt kỳ thi sát hạch GPP?).
+**Nhận xét tổng quan về hiện trạng quy trình:**
+Bức tranh hiện trạng quy trình nghiệp vụ của FPT Long Châu phản ánh một thách thức kinh điển: tốc độ mở rộng quy mô kinh doanh (lên tới hơn 1.800 cửa hàng) đã vượt quá năng lực đáp ứng của một cơ chế vận hành mang nặng tính thủ công và truyền thống. Mặc dù đội ngũ dược sĩ và nhân viên kho làm việc rất nỗ lực, nhưng chính sự thiếu hụt trong việc áp dụng công nghệ thông tin chuyên sâu đã và đang trói buộc năng suất của họ. Một khối lượng lớn thời gian và nguồn lực thay vì được dùng để tạo ra giá trị chăm sóc sức khỏe trực tiếp cho khách hàng (VA), lại bị tiêu phí vào các công việc hành chính, tìm kiếm, chờ đợi và xử lý lỗi (NVA).
 
-![Hình 4.6: Sơ đồ BPMN 2.0 AS-IS – Quy trình Tuyển dụng và đào tạo](hinh_4_6_bpmn_as_is_tuyen_dung_dao_tao.png)
+Để duy trì vị thế dẫn đầu trên thị trường bán lẻ dược phẩm đầy khốc liệt và mang lại trải nghiệm tối ưu cho người bệnh, FPT Long Châu buộc phải thực hiện một cuộc cách mạng về quy trình (BPR). Những điểm nghẽn và nguyên nhân gốc rễ đã được chỉ ra một cách khoa học trong chương này chính là tiền đề trực tiếp, là kim chỉ nam để nhóm nghiên cứu tiến hành thiết kế lại các luồng công việc, ứng dụng các giải pháp tự động hóa. Cụ thể, các giải pháp mô hình hóa quy trình mục tiêu (TO-BE) và việc lựa chọn nền tảng công nghệ phù hợp sẽ được trình bày chi tiết và toàn diện trong Chương 6.
 
-*Hình 4.6: Sơ đồ BPMN 2.0 AS-IS – Quy trình Tuyển dụng và đào tạo Dược sĩ (8 Gateways • 1 Start Event • Chuẩn GPP)*
+---
+*(Lưu ý học thuật: Các thông số định lượng về thời gian xử lý chu kỳ (cycle time), thời gian chờ đợi (wait time), tỷ lệ lãng phí (VA/BVA/NVA), tỷ lệ sai lệch tồn kho và điểm số NPS trong chương này là số liệu giả định mô phỏng phục vụ mục đích nghiên cứu học thuật của đồ án môn học. Các số liệu được xây dựng dựa trên quan sát thực tế bên ngoài, phân tích lý thuyết Lean/BPM và tài liệu công khai, không phải dữ liệu trích xuất trực tiếp từ hệ thống ERP/WMS nội bộ của FPT Long Châu).*

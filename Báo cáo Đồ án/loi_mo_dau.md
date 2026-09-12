@@ -1,64 +1,170 @@
-﻿# LỜI MỞ ĐẦU
+# BÁO CÁO ĐỒ ÁN MÔN HỌC
+
+## HỆ THỐNG QUẢN TRỊ QUY TRÌNH NGHIỆP VỤ (BPM)
+**Mã lớp học phần:** `IE203.F33.CN2.CNTT`  
+**Đơn vị đào tạo:** Khoa Khoa học và Kỹ thuật Thông tin – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
+
+---
+
+### TÊN ĐỀ TÀI:
+# HỆ THỐNG QUẢN TRỊ QUY TRÌNH NGHIỆP VỤ TẠI CÔNG TY CỔ PHẦN DƯỢC PHẨM FPT LONG CHÂU
+
+**Giảng viên hướng dẫn:** ThS. Hà Lê Hoài Trung  
+**Nhóm sinh viên thực hiện:** Nhóm 15  
+
+| STT | Họ và tên sinh viên | Mã số sinh viên | Phân công phụ trách chính |
+| :---: | :--- | :---: | :--- |
+| 1 | **Huỳnh Công Hậu** | 25210099 | Trưởng nhóm; Lời mở đầu; Chương 1 (Giới thiệu doanh nghiệp) |
+| 2 | **Nguyễn Đức Nhiên** | 25210160 | Chương 2 (Khảo sát, phân loại và Kiến trúc 10 quy trình nghiệp vụ) |
+| 3 | **Nguyễn Thế Trụ** | 25210226 | Chương 3 (Mô hình hóa 6 quy trình nghiệp vụ hiện tại AS-IS) |
+| 4 | **Phan Duy An** | 25210247 | Chương 4 (Phân tích quy trình: VA/BVA/NVA, Lean 7 lãng phí, Fishbone, 5 Whys) |
+| 5 | **Trịnh Chí Nguyên** | 25210150 | Chương 5 (Đề xuất cải tiến TO-BE & Ứng dụng công nghệ) |
+| 6 | **Ngô Quốc Chung** | 24730180 | Chương 6 (Kết luận, hạn chế, hướng phát triển); Phụ lục & Tài liệu tham khảo |
+
+*Thành phố Hồ Chí Minh, Năm 2024*
+
+---
+
+# DANH MỤC CÁC CHỮ VIẾT TẮT
+
+| Ký hiệu viết tắt | Nguyên nghĩa tiếng Anh | Nguyên nghĩa tiếng Việt |
+| :--- | :--- | :--- |
+| **AI** | Artificial Intelligence | Trí tuệ nhân tạo |
+| **API** | Application Programming Interface | Giao diện lập trình ứng dụng |
+| **AS-IS** | Current State Process Model | Mô hình quy trình hiện trạng |
+| **BPM** | Business Process Management | Quản trị quy trình nghiệp vụ |
+| **BPMN** | Business Process Model and Notation | Mô hình và Ký hiệu Quy trình Nghiệp vụ (chuẩn OMG) |
+| **BPMS** | Business Process Management Suite | Bộ giải pháp/Hệ thống thực thi quản trị quy trình |
+| **BPR** | Business Process Reengineering | Tái thiết kế quy trình nghiệp vụ |
+| **BVA** | Business Value-Added | Hoạt động gia tăng giá trị kinh doanh (bắt buộc) |
+| **CRM** | Customer Relationship Management | Quản trị quan hệ khách hàng |
+| **EDI** | Electronic Data Interchange | Hệ thống trao đổi dữ liệu điện tử |
+| **ERP** | Enterprise Resource Planning | Hệ thống hoạch định nguồn lực doanh nghiệp |
+| **FEFO** | First Expired, First Out | Hết hạn trước - Xuất trước (chuẩn dược phẩm) |
+| **FIFO** | First In, First Out | Nhập trước - Xuất trước |
+| **GPP** | Good Pharmacy Practice | Thực hành tốt cơ sở bán lẻ thuốc (Bộ Y tế) |
+| **KPI** | Key Performance Indicator | Chỉ số đánh giá hiệu quả công việc then chốt |
+| **NPS** | Net Promoter Score | Chỉ số đo lường mức độ hài lòng khách hàng |
+| **NVA** | Non-Value-Added | Hoạt động lãng phí không tạo ra giá trị |
+| **POS** | Point of Sale | Điểm bán hàng lẻ / Phần mềm thanh toán tại quầy |
+| **QA / QC** | Quality Assurance / Quality Control | Đảm bảo chất lượng / Kiểm soát chất lượng |
+| **QR Code** | Quick Response Code | Mã phản hồi nhanh (mã vạch 2D ma trận) |
+| **RFID** | Radio Frequency Identification | Công nghệ nhận dạng qua tần số vô tuyến |
+| **RPA** | Robotic Process Automation | Tự động hóa quy trình bằng robot phần mềm |
+| **TO-BE** | Future State Process Model | Mô hình quy trình mục tiêu cải tiến |
+| **VA** | Value-Added | Hoạt động gia tăng giá trị trực tiếp cho khách hàng |
+| **WMS** | Warehouse Management System | Hệ thống quản lý kho hàng chuyên dụng |
+
+---
+
+# DANH MỤC CÁC HÌNH VẼ
+
+| Số hiệu hình | Tên gọi hình vẽ / sơ đồ | Vị trí chương |
+| :--- | :--- | :---: |
+| **Hình 1.1** | Sơ đồ Cơ cấu Tổ chức Công ty Cổ phần Dược phẩm FPT Long Châu | Chương 1 |
+| **Hình 2.1** | Mô hình Ngôi nhà Phân loại Quy trình Nghiệp vụ tại FPT Long Châu | Chương 2 |
+| **Hình 2.2** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chuỗi cung ứng dược phẩm | Chương 2 |
+| **Hình 2.3** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chất lượng dược phẩm (QA/QC) | Chương 2 |
+| **Hình 2.4** | Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc tại nhà thuốc | Chương 2 |
+| **Hình 2.5** | Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc online | Chương 2 |
+| **Hình 2.6** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý kho dược phẩm | Chương 2 |
+| **Hình 2.7** | Sơ đồ Kiến trúc phân rã – Quy trình Tuyển dụng và đào tạo Dược sĩ | Chương 2 |
+| **Hình 2.8** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý công nghệ thông tin | Chương 2 |
+| **Hình 2.9** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tài chính – Kế toán | Chương 2 |
+| **Hình 2.10** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM) | Chương 2 |
+| **Hình 2.11** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược | Chương 2 |
+| **Hình 3.1** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chuỗi cung ứng | Chương 3 |
+| **Hình 3.2** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chất lượng | Chương 3 |
+| **Hình 3.3** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc | Chương 3 |
+| **Hình 3.4** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc online | Chương 3 |
+| **Hình 3.5** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý kho | Chương 3 |
+| **Hình 3.6** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Tuyển dụng và đào tạo | Chương 3 |
+| **Hình 5.1** | Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại nhà thuốc | Chương 5 |
+| **Hình 5.2** | Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý kho | Chương 5 |
+
+---
+
+# DANH MỤC CÁC BẢNG BIỂU
+
+| Số hiệu bảng | Tên gọi bảng biểu | Vị trí chương |
+| :--- | :--- | :---: |
+| **Bảng 1.1** | Tóm tắt thông tin cơ bản về Công ty Cổ phần Dược phẩm FPT Long Châu | Chương 1 |
+| **Bảng 1.2** | Các cột mốc lịch sử quan trọng của FPT Long Châu | Chương 1 |
+| **Bảng 1.3** | So sánh tương quan giữa FPT Long Châu và các chuỗi đối thủ chính | Chương 1 |
+| **Bảng 2.1** | Danh mục 10 quy trình nghiệp vụ chính của FPT Long Châu | Chương 2 |
+| **Bảng 2.2** | Tổng hợp đối tượng khách hàng và các khả năng kết quả của 10 quy trình nghiệp vụ | Chương 2 |
+| **Bảng 2.3** | Đánh giá tiêu chí lựa chọn quy trình phân tích chuyên sâu | Chương 2 |
+| **Bảng 3.1** | Tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS) | Chương 3 |
+| **Bảng 3.2** | Tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS) | Chương 3 |
+| **Bảng 3.3** | Tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS) | Chương 3 |
+| **Bảng 3.4** | Tóm tắt thông tin quy trình Bán thuốc online (AS-IS) | Chương 3 |
+| **Bảng 3.5** | Tóm tắt thông tin quy trình Quản lý kho (AS-IS) | Chương 3 |
+| **Bảng 3.6** | Tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS) | Chương 3 |
+| **Bảng 4.1** | Ma trận RACI quy trình Bán thuốc tại nhà thuốc | Chương 4 |
+| **Bảng 4.2** | Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc | Chương 4 |
+| **Bảng 4.3** | Bảng tổng hợp lãng phí Lean trong quy trình Bán thuốc tại nhà thuốc | Chương 4 |
+| **Bảng 4.4** | Ma trận RACI quy trình Quản lý kho | Chương 4 |
+| **Bảng 4.5** | Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho | Chương 4 |
+| **Bảng 4.6** | Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt | Chương 4 |
+| **Bảng 5.1** | So sánh các bước thực hiện AS-IS và TO-BE quy trình Bán thuốc tại nhà thuốc | Chương 5 |
+| **Bảng 5.2** | Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Bán thuốc tại nhà thuốc | Chương 5 |
+| **Bảng 5.3** | So sánh quá trình nhập/xuất kho AS-IS và TO-BE | Chương 5 |
+| **Bảng 5.4** | Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Quản lý kho | Chương 5 |
+| **Bảng 5.5** | Bảng đối chiếu tổng hợp toàn diện AS-IS và TO-BE cho 2 quy trình then chốt | Chương 5 |
+| **Bảng 5.6** | Ma trận đánh giá rủi ro và giải pháp giảm thiểu | Chương 5 |
+
+---
+
+# LỜI MỞ ĐẦU
 
 ## Lý do chọn đề tài
 
-Trong bối cảnh ngành bán lẻ dược phẩm ngày càng phát triển, các doanh nghiệp phải quản lý đồng thời nhiều hoạt động như nhập hàng, quản lý kho, bán thuốc tại nhà thuốc, bán hàng trực tuyến, giao hàng và chăm sóc khách hàng. Nếu các quy trình này chưa được chuẩn hóa và phối hợp hiệu quả, doanh nghiệp có thể gặp phải nhiều vấn đề như sai lệch tồn kho, xử lý đơn hàng chậm, hàng hóa cận hạn hoặc khó kiểm soát chất lượng.
+Trong ngành bán lẻ dược phẩm hiện đại, các doanh nghiệp chuỗi phải đồng thời vận hành nhiều luồng công việc phức tạp như nhập hàng, quản lý kho đạt chuẩn GSP, bán thuốc tại quầy đạt chuẩn GPP, thương mại điện tử đa kênh (Omnichannel) và chăm sóc khách hàng. Khi quy mô mở rộng nhanh chóng, việc thiếu đồng bộ hóa dữ liệu thời gian thực và phụ thuộc vào thao tác thủ công sẽ dẫn đến nhiều hệ quả nghiêm trọng: thời gian phục vụ tại quầy kéo dài trong giờ cao điểm, sai lệch số liệu tồn kho, và rủi ro tiêu hủy hàng cận hạn sử dụng.
 
-FPT Long Châu là một hệ thống bán lẻ dược phẩm có quy mô lớn, với mạng lưới nhà thuốc và nhiều kênh bán hàng khác nhau. Do đó, việc phân tích và mô hình hóa các quy trình nghiệp vụ có ý nghĩa quan trọng trong việc nhận diện điểm nghẽn, xác định nguyên nhân và đề xuất các giải pháp cải tiến phù hợp.
-
-Xuất phát từ thực tế trên, nhóm lựa chọn đề tài **"Hệ thống quản trị quy trình nghiệp vụ Công ty Cổ phần Dược phẩm FPT Long Châu"** nhằm vận dụng kiến thức của môn Hệ thống quản trị quy trình nghiệp vụ vào một trường hợp thực tế. Đề tài tập trung nghiên cứu các quy trình liên quan đến chuỗi cung ứng, quản lý kho và hoạt động bán hàng; đồng thời xây dựng website mô phỏng nhằm giúp người dùng dễ dàng theo dõi và hình dung quy trình.
+FPT Long Châu là chuỗi bán lẻ dược phẩm hàng đầu Việt Nam trực thuộc Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail, mã FRT), hiện sở hữu mạng lưới hơn 1.800 nhà thuốc trên toàn quốc. Đứng trước bài toán tăng trưởng quy mô thần tốc, việc chuẩn hóa, đánh giá định lượng và tối ưu hóa các quy trình nghiệp vụ trở thành yêu cầu cấp thiết. Xuất phát từ thực tiễn đó, nhóm thực hiện đề tài **"Hệ thống quản trị quy trình nghiệp vụ tại Công ty Cổ phần Dược phẩm FPT Long Châu"** nhằm vận dụng kiến thức học phần Quản trị Quy trình Nghiệp vụ (BPM): khảo sát kiến trúc 10 quy trình tổng thể, mô hình hóa chuẩn BPMN 2.0 cho 6 quy trình tiêu biểu (đáp ứng đúng Rubik 2 Quản lý – 2 Cốt lõi – 2 Hỗ trợ), và tiến hành phân tích sâu, đề xuất giải pháp cải tiến TO-BE cho 2 quy trình then chốt là Bán thuốc tại nhà thuốc và Quản lý kho trung tâm.
 
 ## Mục tiêu nghiên cứu
 
-Đề tài được thực hiện nhằm đạt các mục tiêu sau:
+Đề tài hướng tới 7 mục tiêu học thuật và thực tiễn cốt lõi:
 
-1. Tìm hiểu tổng quan về hoạt động kinh doanh và cơ cấu tổ chức của FPT Long Châu.
-2. Liệt kê và phân loại các quy trình nghiệp vụ theo ba nhóm: Management Process, Core Process và Support Process.
-3. Mô tả tổng quan 10 quy trình nghiệp vụ chính của doanh nghiệp.
-4. Mô hình hóa 6 quy trình tiêu biểu bằng sơ đồ BPMN AS-IS.
-5. Phân tích chuyên sâu quy trình bán thuốc tại nhà thuốc và quy trình quản lý kho.
-6. Xác định các hoạt động tạo giá trị, hoạt động không tạo giá trị, lãng phí và điểm nghẽn trong quy trình.
-7. Đề xuất các giải pháp cải tiến theo mô hình BPMN TO-BE.
-8. Xây dựng website mô phỏng và hiển thị các quy trình nghiệp vụ đã nghiên cứu.
+1. Khảo sát tổng quan bối cảnh kinh doanh, cơ cấu tổ chức và hạ tầng CNTT của FPT Long Châu.
+2. Phân loại các quy trình nghiệp vụ theo 3 tầng chuẩn mực: Quản lý, Cốt lõi và Hỗ trợ.
+3. Xây dựng Kiến trúc Quy trình Nghiệp vụ tổng thể (Mô hình Ngôi nhà BPM) với danh mục 10 quy trình chính.
+4. Mô hình hóa hiện trạng (AS-IS) bằng sơ đồ BPMN 2.0 cho 6 quy trình tiêu biểu theo chuẩn Rubik (2-2-2).
+5. Phân tích định lượng chuyên sâu 2 quy trình then chốt (Bán thuốc tại quầy và Quản lý kho) bằng công cụ BPM chuyên dụng: Ma trận RACI, Chuỗi giá trị VA/BVA/NVA, 7 Lãng phí Lean, Biểu đồ xương cá 6M và 5 Whys.
+6. Nhận diện chính xác các điểm nghẽn (bottlenecks) và định lượng tổn thất về thời gian, chi phí và chất lượng.
+7. Thiết kế mô hình cải tiến BPMN 2.0 TO-BE, tích hợp các đòn bẩy công nghệ số (Kiosk phân luồng, PDA quét mã Barcode/QR, thuật toán FEFO, WMS-ERP Real-time) và vạch lộ trình thực thi khả thi với ROI dưới 2 năm.
 
 ## Đối tượng và phạm vi nghiên cứu
 
-Đối tượng nghiên cứu của đề tài là các quy trình nghiệp vụ trong hoạt động quản lý và vận hành của FPT Long Châu, tập trung vào chuỗi cung ứng, quản lý kho, bán thuốc và các quy trình hỗ trợ.
-
-Phạm vi nghiên cứu bao gồm:
-
-- **Phạm vi nội dung:** Nghiên cứu 10 quy trình nghiệp vụ, trong đó mô hình hóa chi tiết 6 quy trình và phân tích chuyên sâu 2 quy trình là bán thuốc tại nhà thuốc và quản lý kho.
-- **Phạm vi doanh nghiệp:** Hoạt động của hệ thống FPT Long Châu và các bộ phận có liên quan như cung ứng, kho, nhà thuốc, nhân sự và công nghệ thông tin.
-- **Phạm vi dữ liệu:** Sử dụng các tài liệu công khai, thông tin trên website, tài liệu tham khảo, quan sát và các giả định phù hợp do nhóm xây dựng. Do không tiếp cận được dữ liệu nội bộ, một số thông tin và số liệu trong báo cáo mang tính mô phỏng hoặc ước tính phục vụ mục đích học tập.
-- **Phạm vi sản phẩm:** Website có chức năng hiển thị thông tin, sơ đồ và mô phỏng các bước xử lý của quy trình nghiệp vụ; không thay thế cho hệ thống vận hành thực tế của doanh nghiệp.
+- **Đối tượng nghiên cứu:** Hệ thống các quy trình nghiệp vụ trong vận hành và quản lý chuỗi nhà thuốc FPT Long Châu (mua hàng, kiểm soát chất lượng, kho bãi, bán lẻ quầy và online).
+- **Phạm vi nội dung:** Khảo sát kiến trúc 10 quy trình; mô hình hóa AS-IS 6 quy trình; phân tích chuyên sâu và thiết kế TO-BE cho 2 quy trình trọng điểm (Bán lẻ tại quầy và Quản lý kho tổng).
+- **Phạm vi không gian:** Khối văn phòng điều hành, Trung tâm phân phối kho tổng và hệ thống hơn 1.800 điểm bán FPT Long Châu trên cả nước.
+- **Phạm vi dữ liệu:** Sử dụng Báo cáo thường niên FPT Retail 2023 - 2024, tiêu chuẩn ngành dược (GPP, GDP, GSP của Bộ Y tế), dữ liệu quan sát thực tế và mô phỏng học thuật (academic simulation) có kiểm soát phương pháp luận.
 
 ## Phương pháp nghiên cứu
 
-Đề tài sử dụng kết hợp các phương pháp nghiên cứu sau:
+Đề tài kết hợp chặt chẽ giữa nghiên cứu định tính và định lượng theo vòng đời BPM chuẩn quốc tế:
 
-1. **Thu thập tài liệu:** Tìm hiểu thông tin từ website chính thức của FPT Long Châu, các bài viết, báo cáo, tài liệu công khai và tài liệu chuyên ngành.
-2. **Quan sát:** Phân tích trình tự hoạt động trong các quy trình bán hàng, nhập hàng, quản lý kho và giao hàng dựa trên thông tin thực tế có thể quan sát được.
-3. **Phân tích và tổng hợp:** Tổng hợp dữ liệu, xác định tác nhân, đầu vào, đầu ra, hoạt động chính và mối quan hệ giữa các bộ phận.
-4. **Mô hình hóa BPMN:** Sử dụng ký hiệu BPMN để biểu diễn quy trình hiện tại AS-IS và quy trình cải tiến TO-BE.
-5. **Phân tích quy trình:** Áp dụng các phương pháp VA/BVA/NVA, phân tích lãng phí, phân tích nguyên nhân gốc rễ, phân tích thời gian, chi phí và chất lượng.
-6. **Thiết kế và xây dựng website:** Sử dụng các công cụ và công nghệ phù hợp để tạo giao diện mô phỏng, giúp trình bày quy trình một cách trực quan và dễ hiểu.
+1. **Thu thập & tổng hợp tài liệu:** Phân tích báo cáo tài chính, báo cáo thường niên FRT và văn bản quy chuẩn Bộ Y tế.
+2. **Quan sát thực tế:** Khảo sát hiện trường thao tác tại nhà thuốc và kho vận để ghi nhận luồng công việc thực tế.
+3. **Mô hình hóa BPMN 2.0:** Ứng dụng chuẩn OMG BPMN 2.0 phân làn Swimlane, kiểm soát Gateways và loại bỏ 100% Deadlock.
+4. **Định lượng chuỗi giá trị (VA/BVA/NVA):** Bóc tách thời gian gia tăng giá trị và thời gian lãng phí theo giáo trình Dumas et al.
+5. **Lean Six Sigma & Root-Cause:** Áp dụng khung 7 lãng phí Lean, Biểu đồ Ishikawa 6M và kỹ thuật 5 Whys để xác định căn nguyên vấn đề.
+6. **Tái thiết kế quy trình (BPR):** Thiết kế mô hình TO-BE tinh gọn, tích hợp công nghệ và xây dựng các chỉ số KPI định lượng.
 
 ## Ý nghĩa thực tiễn của đề tài
 
-Về mặt thực tiễn, đề tài giúp minh họa cách tiếp cận quản trị quy trình nghiệp vụ trong lĩnh vực bán lẻ dược phẩm. Thông qua việc mô hình hóa và phân tích, nhóm có thể nhận diện những vấn đề thường gặp như nhập liệu thủ công, cập nhật tồn kho chậm, kiểm kê mất nhiều thời gian và khó kiểm soát hạn sử dụng.
-
-Các đề xuất cải tiến như sử dụng mã vạch/QR, áp dụng nguyên tắc FEFO, đồng bộ dữ liệu kho, cập nhật tồn kho theo thời gian thực và xây dựng dashboard quản lý có thể góp phần nâng cao hiệu quả vận hành. Bên cạnh đó, website mô phỏng giúp người dùng dễ dàng tiếp cận, theo dõi và hiểu được mối liên hệ giữa các bước trong quy trình.
-
-Do giới hạn về dữ liệu, các kết quả trong đề tài chủ yếu mang tính mô phỏng và học thuật, nhưng có thể làm cơ sở tham khảo cho việc nghiên cứu, thiết kế hoặc triển khai hệ thống quản trị quy trình trong thực tế.
+Đề tài cung cấp giải pháp khoa học nhằm giải quyết các nút thắt vận hành thực tế tại chuỗi dược phẩm quy mô lớn: xóa bỏ thao tác ghi chép thủ công, rút ngắn thời gian phục vụ tại quầy, tự động hóa xuất kho theo nguyên tắc FEFO và đồng bộ dữ liệu tồn kho theo thời gian thực. Các mô hình BPMN 2.0 TO-BE và lộ trình triển khai 3 giai đoạn mang giá trị tham khảo ứng dụng thực tiễn cao cho chiến lược chuyển đổi số trong ngành bán lẻ y tế.
 
 ## Bố cục báo cáo
 
-Ngoài phần Lời mở đầu, Danh mục bảng, Danh mục hình ảnh, Tài liệu tham khảo và Phụ lục, báo cáo gồm 7 chương:
+Báo cáo được kết cấu chặt chẽ thành 6 chương chuyên môn theo đúng Vòng đời BPM:
 
-- **Chương 1:** Giới thiệu về FPT Long Châu – trình bày tổng quan doanh nghiệp, lịch sử hình thành, lĩnh vực hoạt động, cơ cấu tổ chức và hoạt động kinh doanh.
-- **Chương 2:** Khảo sát, liệt kê và phân loại quy trình nghiệp vụ – trình bày cơ sở phân loại, kiến trúc quy trình, danh sách và mô tả tổng quan 10 quy trình.
-- **Chương 3:** Xây dựng website mô phỏng quy trình nghiệp vụ – giới thiệu mục tiêu, công nghệ, giao diện và các chức năng của website.
-- **Chương 4:** Mô hình hóa quy trình nghiệp vụ hiện tại AS-IS – trình bày chi tiết 6 quy trình và các sơ đồ BPMN tương ứng.
-- **Chương 5:** Phân tích quy trình nghiệp vụ – phân tích chuyên sâu quy trình bán thuốc tại nhà thuốc và quy trình quản lý kho.
-- **Chương 6:** Đề xuất cải tiến quy trình nghiệp vụ – trình bày các vấn đề phát hiện, giải pháp cải tiến và mô hình BPMN TO-BE.
-- **Chương 7:** Kết luận và hướng phát triển – tổng hợp kết quả đạt được, hạn chế và định hướng phát triển của đề tài.
+- **Chương 1: Giới thiệu về Công ty Cổ phần Dược phẩm FPT Long Châu** – Trình bày tổng quan doanh nghiệp, lịch sử phát triển, cơ cấu tổ chức bộ máy và định hướng chiến lược.
+- **Chương 2: Khảo sát và Phân loại Quy trình Nghiệp vụ** – Trình bày cơ sở lý luận BPM, Kiến trúc Ngôi nhà Quy trình, danh mục 10 quy trình và tiêu chí lựa chọn 6 quy trình theo Rubik.
+- **Chương 3: Mô hình hóa Quy trình Nghiệp vụ Hiện tại (AS-IS)** – Trình bày 6 sơ đồ BPMN 2.0 AS-IS hoàn chỉnh kèm phân tích mục tiêu, tác nhân và luồng hoạt động.
+- **Chương 4: Phân tích Quy trình Nghiệp vụ** – Phân tích định lượng chuyên sâu 2 quy trình trọng điểm (Bán thuốc và Kho) qua RACI, VA/NVA, Lean 7 lãng phí, Fishbone 6M và 5 Whys.
+- **Chương 5: Đề xuất Cải tiến Quy trình Nghiệp vụ (TO-BE)** – Đề xuất mục tiêu KPI, giải pháp công nghệ, bảng so sánh AS-IS/TO-BE, 2 sơ đồ BPMN 2.0 TO-BE và lộ trình thực thi 12 tháng.
+- **Tài liệu tham khảo & Phụ lục:** Danh mục trích dẫn chuẩn APA7, Phụ lục A (Bảng đánh giá tiêu chí lựa chọn quy trình) và Phụ lục B (Danh sách câu hỏi khảo sát chuyên sâu).
+

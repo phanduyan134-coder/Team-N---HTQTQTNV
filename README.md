@@ -58,7 +58,7 @@ Team-N---HTQTQTNV/
    - Bộ **20 câu hỏi phỏng vấn**: 10 câu định tính (5 cấu trúc + 5 phi cấu trúc) & 10 câu định lượng (5 cấu trúc + 5 phi cấu trúc).
 4. **Phân tích Quy trình (Tiêu chí 4.0 - 10đ)**:
    - Định tính: Bảng VA/BVA/NVA, Bảng lãng phí Lean dạng **Move - Hold - Overdo** (Liệt kê - Mô tả - Biện pháp khắc phục), Biểu đồ xương cá Fishbone 6M kèm **Bảng biện pháp khắc phục tương ứng**.
-   - Định lượng: Tính toán Thời gian chu kỳ ($Cycle\ Time = 13.5$ phút), thời gian chờ ($7.5$ phút), thời gian xử lý ($6.0$ phút), chi phí nhân công và điểm hài lòng khách hàng ($NPS = 45$).
+   - Định lượng: Tính toán Thời gian chu kỳ (Cycle Time = 13.5 phút), thời gian chờ (7.5 phút), thời gian xử lý (6.0 phút), chi phí nhân công và điểm hài lòng khách hàng (NPS = 45).
 5. **Trình bày & Github (Tiêu chí 5.0 - 10đ)**:
    - Báo cáo chuẩn mẫu khóa luận Khoa HTTT UIT.
    - Slide thuyết trình trực quan, có đồng hồ bấm giờ, zoom BPMN toàn màn hình.

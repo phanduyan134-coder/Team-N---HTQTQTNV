@@ -1,199 +1,217 @@
-﻿# CHƯƠNG 4: MÔ HÌNH HÓA QUY TRÌNH NGHIỆP VỤ HIỆN TẠI (AS-IS)
+# CHƯƠNG 4: PHÂN TÍCH QUY TRÌNH NGHIỆP VỤ
 
-Mô hình hóa quy trình nghiệp vụ hiện tại (AS-IS) là một bước đóng vai trò vô cùng quan trọng trong vòng đời quản trị quy trình nghiệp vụ (BPM). Mục đích cốt lõi của việc mô hình hóa AS-IS là nhằm phác họa một bức tranh toàn cảnh, chân thực và chi tiết nhất về cách thức hoạt động hiện tại của tổ chức trước khi tiến hành bất kỳ sự can thiệp hay cải tiến nào. Đối với hệ thống chuỗi nhà thuốc FPT Long Châu, việc đánh giá chính xác các quy trình AS-IS giúp nhóm nghiên cứu nhận diện sâu sắc các điểm nghẽn (bottleneck), những thao tác dư thừa, cũng như những hạn chế trong việc ứng dụng công nghệ vào vận hành. 
+Trong bối cảnh môi trường kinh doanh bán lẻ dược phẩm ngày càng cạnh tranh gay gắt, việc chỉ mô hình hóa các quy trình nghiệp vụ hiện tại (AS-IS) là chưa đủ. Mục tiêu cốt lõi của chương này là tiến hành phân tích chuyên sâu các quy trình nghiệp vụ đã được mô hình hóa ở Chương 3, từ đó nhận diện chính xác các điểm nghẽn (bottleneck), những hoạt động không mang lại giá trị (NVA) và các loại lãng phí đang tồn tại trong hệ thống của FPT Long Châu. Việc phân tích quy trình đóng vai trò cực kỳ quan trọng, là cầu nối không thể thiếu giữa bức tranh hiện trạng và những đề xuất cải tiến trong tương lai. Nếu không có bước phân tích thấu đáo, mọi nỗ lực cải tiến đều có nguy cơ đi chệch hướng, tốn kém chi phí mà không giải quyết được căn nguyên vấn đề. 
 
-Trong chương này, phương pháp mô hình hóa được sử dụng là tiêu chuẩn BPMN 2.0 (Business Process Model and Notation). Đây là một ngôn ngữ mô hình hóa quy trình chuẩn quốc tế, cung cấp hệ thống ký hiệu trực quan và dễ hiểu cho cả người dùng nghiệp vụ lẫn chuyên gia kỹ thuật. Các sơ đồ BPMN được xây dựng bằng cách sử dụng các thành phần cơ bản như nhóm (pool), làn (swimlane) để phân định rõ ràng trách nhiệm của từng tác nhân tham gia; các sự kiện (event) để đánh dấu điểm bắt đầu, kết thúc hoặc những gián đoạn trong quy trình; các tác vụ (task) thể hiện những công việc cụ thể; và các cổng rẽ nhánh (gateway) để điều hướng luồng công việc. Công cụ hỗ trợ vẽ sơ đồ được nhóm sử dụng giúp đảm bảo tính chuẩn xác và đồng bộ về mặt ký hiệu kỹ thuật. Thông qua việc phân tích 6 quy trình trọng yếu, chương này sẽ làm nền tảng vững chắc cho việc đề xuất các giải pháp cải tiến (TO-BE) ở phần tiếp theo.
+Để đảm bảo tính khách quan và khoa học, báo cáo áp dụng một phương pháp tiếp cận tổng quát đi từ việc phân tích tác nhân, bóc tách từng hoạt động theo chuỗi giá trị, nhận diện lãng phí theo tư duy Lean, cho đến việc truy tìm nguyên nhân gốc rễ bằng các công cụ chuyên dụng. Trong phạm vi chương này, hai quy trình trọng điểm được lựa chọn để phân tích sâu là: Quy trình bán thuốc tại nhà thuốc (đại diện cho luồng tương tác trực tiếp tạo doanh thu) và Quy trình quản lý kho (đại diện cho luồng vận hành logistics hậu cần).
 
-## 4.1. Quy trình quản lý chuỗi cung ứng
+## 4.1. Tiêu chí và phương pháp phân tích
 
-Quy trình quản lý chuỗi cung ứng tại FPT Long Châu đóng vai trò quyết định trong việc đảm bảo nguồn hàng dược phẩm luôn sẵn sàng tại hơn 1.800 nhà thuốc trên toàn quốc. Tuy nhiên, ở trạng thái hiện tại (AS-IS), quy trình này vẫn đang phụ thuộc nhiều vào các thao tác thủ công, đặc biệt trong việc tổng hợp nhu cầu, phê duyệt đơn hàng và theo dõi vận chuyển, dẫn đến những rủi ro về chậm trễ và sai sót dữ liệu.
+Để phân tích sâu và hiệu quả, báo cáo sử dụng một hệ thống các tiêu chí và phương pháp phân tích đã được chuẩn hóa trong lĩnh vực Quản trị Quy trình Nghiệp vụ (BPM). Việc lựa chọn hai quy trình trọng điểm (bán thuốc và quản lý kho) dựa trên ba tiêu chí cốt lõi: tần suất thực hiện, tác động kinh doanh và khả năng cải tiến. Quy trình bán thuốc có tần suất diễn ra liên tục hàng ngày, tác động trực tiếp đến doanh thu và trải nghiệm khách hàng; trong khi quy trình quản lý kho quyết định đến sự liền mạch của chuỗi cung ứng và quản trị rủi ro hàng hóa.
 
-**Bảng tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS)**
+Phương pháp phân tích đầu tiên được áp dụng là phân loại hoạt động theo giá trị (Value-Added Analysis). Các bước trong quy trình được chia thành ba nhóm:
+- **VA (Value-Added - Tạo giá trị gia tăng)**: Là những hoạt động tạo ra giá trị trực tiếp cho khách hàng, khách hàng sẵn sàng chi trả cho các hoạt động này (ví dụ: tư vấn thuốc, giao thuốc).
+- **BVA (Business Value-Added - Tạo giá trị doanh nghiệp)**: Những hoạt động không trực tiếp mang lại giá trị cho khách hàng nhưng bắt buộc phải có để doanh nghiệp vận hành, tuân thủ pháp luật (ví dụ: kiểm tra tính hợp lệ của đơn thuốc, ghi nhận sổ sách kế toán).
+- **NVA (Non-Value-Added - Không tạo giá trị)**: Là những hoạt động lãng phí, không tạo ra bất kỳ giá trị nào cho cả khách hàng lẫn doanh nghiệp và cần được tối thiểu hóa hoặc loại bỏ hoàn toàn (ví dụ: chờ đợi, tìm kiếm hàng hóa, nhập liệu lặp lại).
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Đảm bảo cung cấp đủ số lượng và chất lượng dược phẩm cho các nhà thuốc trong chuỗi một cách kịp thời. |
-| **Tác nhân tham gia** | Nhân viên kho, Trưởng kho, Bộ phận Mua hàng, Giám đốc chuỗi, Nhà cung cấp (NCC). |
-| **Đầu vào** | Yêu cầu bổ sung hàng hóa từ các nhà thuốc, báo cáo tồn kho định kỳ. |
-| **Đầu ra** | Đơn đặt hàng được duyệt, hàng hóa được giao đến kho trung tâm, dữ liệu tồn kho được cập nhật. |
-| **Biểu mẫu / Hệ thống** | Microsoft Excel, Email, Hệ thống ERP nội bộ (cơ bản), Phiếu đặt hàng giấy, Biên bản giao nhận. |
-| **Thời gian trung bình** | 3 - 5 ngày tùy thuộc vào nhà cung cấp và quy mô đơn hàng. |
-| **Tần suất** | Hàng ngày hoặc định kỳ hàng tuần. |
+Song song đó, khung phân tích 7 loại lãng phí (7 Wastes of Lean) cũng được sử dụng để nhận diện các điểm yếu trong quy trình:
+1. **Chờ đợi (Waiting)**: Thời gian chờ máy móc, chờ phê duyệt hoặc khách hàng chờ phục vụ.
+2. **Tồn kho thừa (Inventory)**: Lưu trữ hàng hóa quá mức cần thiết, gây đọng vốn.
+3. **Di chuyển (Motion)**: Thao tác đi lại, tìm kiếm không cần thiết của nhân viên.
+4. **Quy trình thừa (Over-processing)**: Các bước thực hiện phức tạp hơn mức cần thiết.
+5. **Sản xuất thừa (Over-production)**: Thực hiện công việc sớm hơn hoặc nhiều hơn nhu cầu thực tế.
+6. **Sửa chữa lỗi (Defects/Rework)**: Sai sót dẫn đến phải làm lại, đổi trả hàng.
+7. **Phương tiện chưa dùng (Underutilized Talent)**: Lãng phí năng lực, kỹ năng của nhân viên vào các việc thủ công.
 
-**Các bước thực hiện:**
-1. **Nhận yêu cầu bổ sung hàng:** Nhân viên kho tại các nhà thuốc gửi báo cáo số lượng hàng tồn và yêu cầu bổ sung thông qua file Excel qua email hoặc báo cáo qua điện thoại về kho trung tâm.
-2. **Tổng hợp nhu cầu:** Trưởng kho trung tâm tiếp nhận, kiểm tra và tiến hành tổng hợp nhu cầu thủ công từ tất cả các nhà thuốc để xác định tổng khối lượng hàng cần đặt.
-3. **Lập phiếu đặt hàng:** Bộ phận Mua hàng dựa trên bảng tổng hợp từ Trưởng kho để tạo phiếu đặt hàng thủ công cho từng Nhà cung cấp.
-4. **Phê duyệt đơn hàng:** Phiếu đặt hàng được gửi qua email cho Giám đốc chuỗi (hoặc người được ủy quyền) để xem xét. Nếu từ chối, yêu cầu được trả lại để điều chỉnh; nếu đồng ý, Giám đốc phản hồi phê duyệt qua email.
-5. **Gửi đơn đặt hàng:** Bộ phận Mua hàng gửi đơn hàng chính thức đến Nhà cung cấp thông qua email hoặc hệ thống EDI (nếu có nhưng hạn chế).
-6. **Xác nhận và giao hàng:** Nhà cung cấp xác nhận đơn hàng, chuẩn bị hàng hóa và tiến hành giao hàng đến kho trung tâm của Long Châu. Quá trình vận chuyển thường được theo dõi thủ công qua điện thoại.
-7. **Kiểm hàng và nhập kho:** Khi hàng đến, Nhân viên kho tiến hành kiểm đếm số lượng và đối chiếu ngoại quan với phiếu giao hàng bằng phương pháp thủ công.
-8. **Cập nhật hệ thống:** Sau khi hoàn tất kiểm tra, Nhân viên kho cập nhật số liệu nhập kho vào bảng tính Excel và hệ thống ERP nội bộ một cách thủ công.
-9. **Phân phối:** Hàng hóa sau đó được lên lịch để phân phối về lại các nhà thuốc theo yêu cầu ban đầu.
+Để đi sâu vào bản chất vấn đề, báo cáo sử dụng **Biểu đồ Fishbone (Ishikawa)** để phân rã nguyên nhân theo các yếu tố (Con người, Quy trình, Công nghệ, Môi trường, Nguyên vật liệu, Đo lường), kết hợp cùng **Phương pháp 5 Whys** để liên tục đặt câu hỏi nhằm tìm ra nguyên nhân gốc rễ (root cause) sâu xa nhất.
 
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ mô tả quy trình hiện tại với các làn (swim lane) tương ứng cho Nhân viên kho, Trưởng kho, Bộ phận Mua hàng, Giám đốc chuỗi và Nhà cung cấp. Các tác vụ thủ công như tổng hợp Excel, gửi email phê duyệt được thể hiện rõ bằng ký hiệu User Task hoặc Manual Task.
+Cuối cùng, phương pháp đo lường hiệu suất được áp dụng qua các chỉ số: thời gian chu kỳ (cycle time) để biết tổng thời gian hoàn thành một quy trình, thời gian chờ (wait time) giữa các bước, tỷ lệ sai sót (error rate) và chi phí quy trình (process cost) nhằm lượng hóa các vấn đề đang tồn tại.
 
-*[Hình 4.1: Sơ đồ BPMN AS-IS – Quy trình quản lý chuỗi cung ứng]*
+*(Lưu ý về nguồn dữ liệu: Nhóm nghiên cứu không có quyền truy cập vào cơ sở dữ liệu nội bộ bảo mật của FPT Long Châu. Do đó, các số liệu định lượng về thời gian chu kỳ, phân loại VA/BVA/NVA, tỷ lệ sai lệch và chi phí trong chương này được xây dựng dựa trên phương pháp mô phỏng học thuật (academic simulation) kết hợp quan sát thực tế và tài liệu công bố chính thức như Báo cáo thường niên FPT Retail 2023 - 2024).*
 
-## 4.2. Quy trình quản lý chất lượng
+## 4.2. Phân tích quy trình bán thuốc tại nhà thuốc
 
-Là một chuỗi bán lẻ dược phẩm, FPT Long Châu bắt buộc phải tuân thủ nghiêm ngặt các tiêu chuẩn GPP (Thực hành tốt nhà thuốc). Quy trình quản lý chất lượng (QA) hiện tại chủ yếu tập trung vào khâu kiểm tra đầu vào và kiểm tra định kỳ các điều kiện bảo quản, tuy nhiên quá trình ghi chép và kiểm soát vẫn còn mang tính chất giấy tờ, thủ công.
+Quy trình bán thuốc tại nhà thuốc là tuyến đầu tiếp xúc với khách hàng, nơi quyết định chất lượng dịch vụ và doanh thu cốt lõi của FPT Long Châu. Dưới đây là phân tích chi tiết nhằm bóc tách những hạn chế còn tồn đọng trong quy trình này.
 
-**Bảng tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS)**
+### 4.2.1. Phân tích tác nhân và các bên liên quan
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Đảm bảo 100% dược phẩm đạt tiêu chuẩn chất lượng theo GPP trước khi phân phối và trong suốt quá trình lưu kho, trưng bày. |
-| **Tác nhân tham gia** | Dược sĩ phụ trách chất lượng, Nhân viên kho, Quản lý nhà thuốc, Bộ phận QA (Đảm bảo chất lượng). |
-| **Đầu vào** | Lô hàng mới nhập, chứng từ CO/CQ, yêu cầu kiểm tra định kỳ. |
-| **Đầu ra** | Biên bản kiểm tra chất lượng, hàng hóa được duyệt nhập/xuất, biên bản xử lý hàng lỗi. |
-| **Biểu mẫu / Hệ thống** | Sổ ghi chép kiểm soát chất lượng, Biên bản kiểm nghiệm (bản cứng), Giấy chứng nhận chất lượng (CO/CQ). |
-| **Thời gian trung bình** | 2 - 4 giờ cho mỗi lô hàng mới; định kỳ hàng tháng cho kiểm tra lưu kho. |
-| **Tần suất** | Mỗi khi nhập hàng và định kỳ theo tháng/quý. |
+Để xác định rõ vai trò và trách nhiệm trong quy trình, ma trận RACI được thiết lập:
 
-**Các bước thực hiện:**
-1. **Tiếp nhận hàng hóa và chứng từ:** Nhân viên kho nhận lô hàng từ nhà cung cấp cùng với các giấy tờ chứng nhận (CO, CQ, hóa đơn).
-2. **Kiểm tra giấy tờ:** Dược sĩ phụ trách chất lượng đối chiếu các giấy tờ để đảm bảo tính hợp lệ, nguồn gốc xuất xứ của lô hàng.
-3. **Kiểm tra ngoại quan:** Dược sĩ tiến hành kiểm tra bằng mắt thường (ngoại quan) các yếu tố như bao bì, tem nhãn, độ nguyên vẹn, hạn sử dụng của một tỷ lệ mẫu ngẫu nhiên trong lô hàng.
-4. **Kiểm tra điều kiện bảo quản:** Đảm bảo hàng hóa được giao trong điều kiện nhiệt độ, độ ẩm đúng quy định (đặc biệt với vắc xin hoặc thuốc bảo quản lạnh).
-5. **Ghi sổ kiểm soát:** Các kết quả kiểm tra được Dược sĩ ghi chép bằng tay vào "Sổ kiểm soát chất lượng".
-6. **Xử lý kết quả:**
-   - Nếu hàng **đạt tiêu chuẩn**: Chuyển sang khu vực lưu trữ bình thường và xác nhận cho phép nhập kho.
-   - Nếu hàng **không đạt** (hư hỏng, cận hạn, sai giấy tờ): Chuyển vào khu vực biệt trữ (hàng chờ xử lý), lập biên bản và thông báo cho Bộ phận QA để làm việc với Nhà cung cấp.
-7. **Kiểm tra định kỳ:** Hàng tháng, Quản lý nhà thuốc và Bộ phận QA tiến hành kiểm tra lại điều kiện bảo quản và hạn sử dụng của thuốc đang trưng bày, sau đó lập báo cáo giấy gửi về ban giám đốc.
+*Bảng 4.1: Ma trận RACI quy trình Bán thuốc tại nhà thuốc*
 
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ thể hiện luồng công việc bắt đầu từ sự kiện nhận hàng, đi qua cổng rẽ nhánh (Gateway) để đánh giá hàng đạt hay không đạt, từ đó rẽ nhánh sang các tác vụ tiếp nhận hoặc cách ly xử lý.
+| STT | Các bên liên quan | R (Responsible - Thực thi) | A (Accountable - Chịu trách nhiệm) | C (Consulted - Tham vấn) | I (Informed - Được thông báo) |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Khách hàng | Cung cấp thông tin bệnh lý, đơn thuốc | | | Nhận kết quả tư vấn, thuốc, hóa đơn |
+| 2 | Dược sĩ/NV tư vấn | Trực tiếp tư vấn, lấy thuốc, hướng dẫn sử dụng | Chịu trách nhiệm về tính chính xác của liều lượng thuốc tư vấn | Khách hàng, Bác sĩ (nếu cần) | |
+| 3 | Thu ngân | Thực hiện thanh toán, in hóa đơn | Chịu trách nhiệm về số tiền thu và khớp quỹ cuối ngày | | Dược sĩ |
+| 4 | Hệ thống POS | Ghi nhận giao dịch, in hóa đơn, trừ tồn kho | | | Thu ngân, Quản lý |
+| 5 | Quản lý nhà thuốc | | Chịu trách nhiệm chung về chất lượng phục vụ và doanh thu ca làm việc | | Báo cáo giao dịch |
+| 6 | Bộ phận kho (gián tiếp) | | | | Số lượng tồn kho được cập nhật |
+| 7 | Hệ thống kế toán (gián tiếp) | | | | Dữ liệu doanh thu |
 
-*[Hình 4.2: Sơ đồ BPMN AS-IS – Quy trình quản lý chất lượng]*
+Vai trò cụ thể: Dược sĩ là người đóng vai trò then chốt (R), quyết định chất lượng tư vấn y khoa; trong khi Quản lý nhà thuốc là người chịu trách nhiệm cuối cùng (A) cho toàn bộ hoạt động tại cơ sở.
 
-## 4.3. Quy trình bán thuốc tại nhà thuốc
+### 4.2.2. Phân loại hoạt động VA/BVA/NVA
 
-Bán thuốc trực tiếp là quy trình diễn ra với tần suất cao nhất và là nguồn doanh thu chủ lực. Quy trình hiện tại đòi hỏi sự tương tác trực tiếp giữa dược sĩ và khách hàng, nhưng việc tra cứu, tư vấn và thanh toán vẫn còn nhiều công đoạn gây mất thời gian chờ đợi.
+Việc phân loại chi tiết các bước trong quy trình giúp nhận diện những hoạt động cần tối ưu hóa.
 
-**Bảng tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS)**
+*Bảng 4.2: Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc*
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Phân phối thuốc đến tay người tiêu dùng đúng loại, đúng liều, an toàn và nhanh chóng. |
-| **Tác nhân tham gia** | Khách hàng, Dược sĩ / Nhân viên tư vấn, Thu ngân, Hệ thống POS. |
-| **Đầu vào** | Nhu cầu của khách hàng, đơn thuốc của bác sĩ (nếu có). |
-| **Đầu ra** | Thuốc được giao cho khách, hóa đơn bán lẻ, tiền thanh toán, dữ liệu tồn kho cập nhật. |
-| **Biểu mẫu / Hệ thống** | Hệ thống POS tại quầy, Phần mềm quản lý bán hàng, Máy in hóa đơn, Sổ tay tra cứu. |
-| **Thời gian trung bình** | 5 - 10 phút/giao dịch. |
-| **Tần suất** | Liên tục hàng ngày. |
+| STT | Tên hoạt động | Loại (VA/BVA/NVA) | Thời gian (phút) | Giải thích |
+| --- | --- | --- | --- | --- |
+| 1 | Khách hàng lấy số/chờ đến lượt | NVA | 3.0 | Khách hàng phải đợi trong giờ cao điểm, không tạo giá trị. |
+| 2 | Khách hàng trình bày triệu chứng/đơn thuốc | VA | 1.0 | Cung cấp thông tin thiết yếu cho việc chẩn đoán. |
+| 3 | Dược sĩ kiểm tra tính hợp lệ đơn thuốc | BVA | 0.5 | Hoạt động bắt buộc theo quy định pháp luật y tế. |
+| 4 | Dược sĩ đặt câu hỏi tư vấn sâu | VA | 2.0 | Tạo ra giá trị chuyên môn, giúp tìm đúng thuốc. |
+| 5 | Tra cứu tồn kho trên phần mềm | NVA | 1.0 | Có thể tự động hóa hoặc tích hợp tốt hơn để giảm thời gian tìm kiếm. |
+| 6 | Đi lại tìm thuốc trên kệ | NVA | 1.5 | Di chuyển vật lý mất thời gian, do bố trí kho chưa tối ưu. |
+| 7 | Lấy thuốc và kiểm tra hạn sử dụng | BVA | 0.5 | Cần thiết để đảm bảo chất lượng trước khi giao. |
+| 8 | Di chuyển thuốc ra quầy thu ngân | NVA | 0.5 | Thao tác thừa do quầy tư vấn và thu ngân tách biệt. |
+| 9 | Thu ngân tính tiền và khách hàng thanh toán | VA | 1.0 | Hoàn tất giao dịch, tạo doanh thu. |
+| 10 | Đợi in hóa đơn giấy | NVA | 0.5 | Lãng phí thời gian chờ thiết bị. |
+| 11 | Ghi chú liều dùng lên vỏ thuốc | VA | 1.0 | Mang lại giá trị sử dụng an toàn cho khách hàng. |
+| 12 | Giao thuốc và dặn dò khách hàng | VA | 1.0 | Tương tác cuối cùng, tạo sự an tâm. |
 
-**Các bước thực hiện:**
-1. **Tiếp nhận khách hàng:** Khách hàng đến quầy, trình bày triệu chứng hoặc đưa đơn thuốc của bác sĩ cho Dược sĩ.
-2. **Kiểm tra và tư vấn:** Dược sĩ tiếp nhận thông tin. Nếu có đơn thuốc, kiểm tra tính hợp lệ của đơn. Nếu không có đơn, tiến hành hỏi han triệu chứng, tiền sử bệnh và tư vấn các loại thuốc không kê đơn (OTC), thực phẩm chức năng phù hợp.
-3. **Tra cứu tồn kho:** Dược sĩ gõ tên thuốc vào phần mềm bán hàng tại quầy để kiểm tra xem thuốc đó còn tồn kho tại chi nhánh hay không.
-4. **Lấy hàng và kiểm tra:** Nếu còn hàng, Dược sĩ tiến hành lấy thuốc từ kệ, kiểm tra lại hạn sử dụng (date) và số lượng thực tế so với đơn.
-5. **Thanh toán:** Dược sĩ chuyển thông tin đơn hàng cho Thu ngân (hoặc tự thực hiện). Thu ngân thực hiện tính tiền, nhận tiền mặt hoặc thanh toán qua máy quẹt thẻ (POS) từ khách hàng.
-6. **In hóa đơn:** Hệ thống phát lệnh in hóa đơn giấy.
-7. **Hướng dẫn sử dụng và giao thuốc:** Dược sĩ ghi chú liều dùng lên vỏ hộp/vỉ thuốc, hướng dẫn dặn dò khách hàng cách sử dụng và bàn giao túi thuốc cùng hóa đơn.
-8. **Cập nhật hệ thống:** Sau khi giao dịch hoàn tất, hệ thống tự động trừ tồn kho (tuy nhiên đôi khi có độ trễ do lỗi đồng bộ).
+**Nhận xét:** Tổng thời gian chu kỳ là 13.5 phút. Trong đó, thời gian VA chỉ chiếm 6.0 phút (~44.4%), BVA chiếm 1.0 phút (~7.4%), và NVA chiếm tới 6.5 phút (~48.2%). Tỷ lệ NVA quá cao cho thấy quy trình hiện tại đang lãng phí đáng kể thời gian của khách hàng, chủ yếu rơi vào việc chờ đợi, tra cứu và di chuyển vật lý của nhân viên.
 
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ tập trung mô tả tương tác (message flow) giữa làn Khách hàng và làn của Nhà thuốc. Các tác vụ kiểm tra đơn, tra cứu hệ thống được sắp xếp tuần tự, kết thúc bằng sự kiện giao hàng hoàn tất.
+### 4.2.3. Phân tích lãng phí
 
-*[Hình 4.3: Sơ đồ BPMN AS-IS – Quy trình bán thuốc tại nhà thuốc]*
+Dựa vào khung phân tích Lean, các điểm lãng phí được chỉ ra cụ thể như sau:
 
-## 4.4. Quy trình bán thuốc online
+*Bảng 4.3: Bảng tổng hợp lãng phí Lean trong quy trình Bán thuốc tại nhà thuốc*
 
-Với sự phát triển của thương mại điện tử, Long Châu đã triển khai kênh bán hàng online. Dù vậy, quy trình AS-IS vẫn tồn tại sự đứt gãy giữa nền tảng trực tuyến (app/web) và khâu vận hành thực tế tại kho, đòi hỏi nhiều sự can thiệp thủ công của nhân viên để xác nhận và phân bổ đơn hàng.
+| Loại lãng phí | Biểu hiện | Tác động | Mức độ |
+| --- | --- | --- | --- |
+| Chờ đợi | Khách hàng chờ lâu giờ cao điểm do không có hệ thống lấy số; chờ in hóa đơn giấy. | Giảm sự hài lòng, khách hàng có thể bỏ đi. | Cao |
+| Di chuyển | Dược sĩ phải đi lại nhiều giữa quầy tư vấn, kệ thuốc và quầy thu ngân. | Kéo dài thời gian giao dịch, gây mệt mỏi cho nhân sự. | Trung bình |
+| Quy trình thừa | In hóa đơn giấy cho mọi giao dịch dù khách không yêu cầu; ghi chép sổ tay lặp lại. | Tốn kém chi phí giấy in, tốn thời gian thao tác. | Trung bình |
+| Tồn kho | Tồn kho không cân bằng, nhà thuốc thiếu hàng, nơi thừa hàng; không có cảnh báo tự động. | Mất cơ hội bán hàng, tốn thời gian tra cứu. | Cao |
+| Sửa chữa lỗi | Sai sót trong việc lấy nhầm hàm lượng thuốc, phải kiểm tra lại. | Rủi ro sức khỏe khách hàng, tốn thời gian đổi trả. | Cao |
+| Không sử dụng dữ liệu | Không lưu trữ và khai thác lịch sử mua bán của khách quen. | Dược sĩ phải hỏi lại từ đầu, tư vấn lặp lại nhiều lần. | Cao |
 
-**Bảng tóm tắt thông tin quy trình Bán thuốc online (AS-IS)**
+### 4.2.4. Phân tích nguyên nhân gốc rễ
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Tiếp nhận, xử lý và giao đơn hàng trực tuyến cho khách hàng một cách chính xác. |
-| **Tác nhân tham gia** | Khách hàng, Nhân viên xử lý đơn online (CSKH), Dược sĩ online, Nhân viên kho, Đối tác giao hàng (GHN/GHTK...). |
-| **Đầu vào** | Đơn đặt hàng trên website longchau.com hoặc ứng dụng Long Châu. |
-| **Đầu ra** | Đơn hàng được giao thành công, hóa đơn điện tử/giấy, thanh toán COD/Online. |
-| **Biểu mẫu / Hệ thống** | Website/App Long Châu, Hệ thống quản lý đơn hàng (OMS), Hệ thống của đối tác giao hàng. |
-| **Thời gian trung bình** | 2 - 24 giờ tùy khu vực giao hàng. |
-| **Tần suất** | Liên tục, đặc biệt cao vào các giờ cao điểm trong ngày. |
+Sử dụng biểu đồ Fishbone để phân tích vấn đề trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"**.
+- **Con người**: Thiếu hụt nhân sự vào các khung giờ cao điểm; kỹ năng tra cứu và tư vấn của một số dược sĩ chưa đồng đều.
+- **Quy trình**: Không có quy trình phân luồng khách hàng (mua định kỳ vs tư vấn mới); quy trình kiểm tra đơn thuốc thủ công mất nhiều thời gian.
+- **Công nghệ**: Hệ thống POS chưa thông minh, không tích hợp gợi ý thuốc thay thế; thiếu kênh online hỗ trợ đặt trước.
+- **Môi trường**: Diện tích quầy tư vấn hẹp, bố trí layout chưa tối ưu; thiếu khu vực chờ có tổ chức cho khách hàng.
+- **Nguyên vật liệu**: Thiếu hụt các loại thuốc đặc trị khó tìm tại chi nhánh; không có hệ thống cảnh báo tồn kho ở mức thấp.
 
-**Các bước thực hiện:**
-1. **Đặt hàng:** Khách hàng truy cập website hoặc ứng dụng, tìm kiếm sản phẩm, thêm vào giỏ, điền thông tin địa chỉ và hoàn tất thao tác đặt hàng.
-2. **Tiếp nhận và xác nhận thủ công:** Hệ thống ghi nhận đơn. Nhân viên CSKH online sẽ gọi điện thoại trực tiếp cho khách hàng để xác nhận lại thông tin đơn hàng, số lượng và địa chỉ (bước này tốn rất nhiều thời gian). Đối với thuốc kê đơn, Dược sĩ online sẽ yêu cầu khách gửi ảnh đơn thuốc qua Zalo/ứng dụng để kiểm duyệt.
-3. **Phân bổ đơn hàng:** Nhân viên kiểm tra kho thủ công trên hệ thống để quyết định sẽ xuất hàng từ kho trung tâm hay từ nhà thuốc gần khách hàng nhất.
-4. **Soạn hàng và đóng gói:** Nhân viên kho (hoặc nhà thuốc) nhận thông tin đơn hàng, tiến hành nhặt hàng, kiểm tra chất lượng, in phiếu giao hàng và đóng gói bưu kiện.
-5. **Bàn giao vận chuyển:** Nhân viên tạo mã vận đơn thủ công trên hệ thống của đối tác giao hàng (ví dụ Giao Hàng Nhanh, Giao Hàng Tiết Kiệm) và bàn giao bưu kiện cho bưu tá khi họ đến lấy.
-6. **Theo dõi đơn hàng:** Nhân viên thỉnh thoảng tra cứu mã vận đơn để theo dõi trạng thái, hoặc đợi đối tác gửi báo cáo đối soát.
-7. **Hoàn tất:** Khách hàng nhận hàng, thanh toán (nếu là COD). Trạng thái đơn được cập nhật hoàn thành.
+**Áp dụng phương pháp 5 Whys cho vấn đề "Khách hàng chờ lâu":**
+1. **Tại sao khách hàng phải chờ lâu?** Vì thời gian xử lý một giao dịch của dược sĩ tốn nhiều thời gian (trung bình khoảng 13.5 phút/giao dịch).
+2. **Tại sao mỗi giao dịch lại tốn nhiều thời gian?** Vì dược sĩ phải đi lại nhiều để tìm thuốc và tra cứu tồn kho trên máy lâu.
+3. **Tại sao việc tìm thuốc và tra cứu lại lâu?** Vì phần mềm POS không gợi ý vị trí lưu trữ và không tự động báo hết hàng.
+4. **Tại sao hệ thống POS không gợi ý và báo hết hàng?** Vì phần mềm bán hàng hiện tại chưa được liên kết chặt chẽ theo thời gian thực với phân hệ quản lý kho (WMS).
+5. **Tại sao chưa có sự liên kết chặt chẽ với WMS?** Vì hạ tầng công nghệ chưa được đầu tư nâng cấp đồng bộ cho phép tích hợp dữ liệu tập trung toàn chuỗi. (Nguyên nhân gốc rễ)
 
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ BPMN có sự tham gia của một Pool bên ngoài là "Đối tác giao hàng". Các tác vụ liên lạc thủ công qua điện thoại để xác nhận đơn được làm nổi bật như một điểm nghẽn chính trong hệ thống.
+### 4.2.5. Phân tích thời gian, chi phí và chất lượng
 
-*[Hình 4.4: Sơ đồ BPMN AS-IS – Quy trình bán thuốc online]*
+- **Thời gian**: Qua khảo sát và mô phỏng học thuật, Cycle Time (thời gian chu kỳ) trung bình AS-IS là 13.5 phút/khách. Trong đó, thời gian khách phải chờ đợi cùng các thao tác lãng phí (NVA) chiếm tới 6.5 phút (~48.2% tổng thời gian chu kỳ).
+- **Chi phí**: Ước tính chi phí lãng phí bao gồm chi phí cơ hội do mất khách (khi họ thấy đông và bỏ đi), chi phí giấy in hóa đơn dư thừa và chi phí nhân công cho các thao tác đi lại vô ích.
+- **Chất lượng**: Tỷ lệ sai sót (xuất nhầm thuốc, nhầm hàm lượng) dù được kiểm soát nhưng vẫn tạo ra những rủi ro. Điểm hài lòng khách hàng (NPS - Net Promoter Score) ước tính chỉ ở mức trung bình (~45) chủ yếu do trải nghiệm chờ đợi làm giảm sự hài lòng.
 
-## 4.5. Quy trình quản lý kho
+---
 
-Quy trình quản lý kho tại Long Châu trước cải tiến chủ yếu dựa trên sức người và kinh nghiệm của nhân viên. Việc ghi chép thẻ kho, đối chiếu giấy tờ và áp dụng nguyên tắc xuất hàng chưa được tự động hóa triệt để, dễ dẫn đến tình trạng thất thoát hoặc hàng hóa bị cận date (hết hạn sử dụng) mà không được phát hiện kịp thời.
+## 4.3. Phân tích quy trình quản lý kho
 
-**Bảng tóm tắt thông tin quy trình Quản lý kho (AS-IS)**
+Quy trình quản lý kho là xương sống hậu cần duy trì nguồn hàng ổn định cho toàn bộ chuỗi. Tại Long Châu, quy trình vận hành kho phức tạp nhưng đang tồn tại nhiều công đoạn thủ công, thiếu sự tự động hóa cần thiết.
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Quản lý chính xác số lượng nhập - xuất - tồn, bảo vệ chất lượng hàng hóa lưu kho. |
-| **Tác nhân tham gia** | Nhân viên kho, Trưởng kho, Nhà cung cấp, Nhân viên nhà thuốc. |
-| **Đầu vào** | Hàng hóa thực tế, Phiếu xuất kho, Phiếu nhập kho, Lịch kiểm kê. |
-| **Đầu ra** | Báo cáo tồn kho, Thẻ kho được cập nhật, Hàng hóa được xuất đúng yêu cầu. |
-| **Biểu mẫu / Hệ thống** | Phiếu nhập/xuất (giấy), Thẻ kho (giấy), Excel, Phần mềm ERP cơ bản. |
-| **Thời gian trung bình** | Vài giờ cho mỗi đợt nhập/xuất lớn; nhiều ngày cho kiểm kê tổng. |
-| **Tần suất** | Hàng ngày (nhập/xuất) và định kỳ hàng tháng (kiểm kê). |
+### 4.3.1. Phân tích tác nhân và các bên liên quan
 
-**Các bước thực hiện:**
-1. **Nhập kho:**
-   - Nhân viên kho tiếp nhận Phiếu giao hàng từ Nhà cung cấp.
-   - Bốc dỡ hàng, tiến hành đếm số lượng, kiểm tra đối chiếu bằng mắt thường với phiếu.
-   - Nếu khớp, tiến hành ghi chép số liệu vào "Sổ nhập kho" bằng tay, sau đó nhập lại vào Excel hoặc ERP.
-   - Hàng hóa được sắp xếp lên kệ một cách thủ công, phụ thuộc vào trí nhớ và thói quen của nhân viên (chưa áp dụng triệt để nguyên tắc FEFO - First Expired First Out bằng hệ thống).
-2. **Xuất kho:**
-   - Nhận "Phiếu yêu cầu xuất kho" từ các nhà thuốc hoặc bộ phận bán online.
-   - Nhân viên kho đi dọc các lối đi, tìm và lấy hàng thủ công dựa trên kinh nghiệm.
-   - Đóng gói và ghi chép trừ lùi vào Thẻ kho (giấy) treo tại kệ, đồng thời ghi vào Sổ xuất kho.
-3. **Kiểm kê định kỳ:**
-   - Hàng tháng, toàn bộ hoạt động xuất nhập tạm ngưng. Nhân viên tiến hành đếm tay từng hộp thuốc trên tất cả các kệ.
-   - Số liệu đếm thực tế được ghi ra giấy, sau đó Trưởng kho gõ lại vào Excel để đối chiếu với phần mềm.
-   - Nếu có chênh lệch, tiến hành tìm kiếm nguyên nhân và lập biên bản giải trình.
+Ma trận RACI cho quy trình quản lý kho được xác định như sau:
 
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ bao gồm các luồng (Sub-process) riêng biệt cho Nhập kho, Xuất kho và Kiểm kê. Sự kiện rẽ nhánh (Gateway) thường xuyên xuất hiện ở các bước đối chiếu số liệu giấy tờ và thực tế.
+*Bảng 4.4: Ma trận RACI quy trình Quản lý kho*
 
-*[Hình 4.5: Sơ đồ BPMN AS-IS – Quy trình quản lý kho]*
+| STT | Các bên liên quan | R (Thực thi) | A (Chịu trách nhiệm) | C (Tham vấn) | I (Được thông báo) |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Nhân viên kho | Bốc dỡ, kiểm đếm, sắp xếp, xuất hàng | | | |
+| 2 | Trưởng kho | Lập kế hoạch, điều phối nhân sự, duyệt báo cáo | Chịu trách nhiệm toàn bộ về số lượng và chất lượng tồn kho | Bộ phận QA | Ban Giám đốc |
+| 3 | Nhà cung cấp | Giao hàng đúng hạn | | | Trưởng kho |
+| 4 | Nhân viên nhà thuốc | Gửi yêu cầu nhập hàng, nhận hàng | | | Trạng thái xử lý |
+| 5 | Hệ thống ERP | Ghi nhận dữ liệu, xử lý tính toán | | | |
 
-## 4.6. Quy trình tuyển dụng và đào tạo
+### 4.3.2. Phân loại hoạt động VA/BVA/NVA
 
-Với tốc độ mở mới hàng trăm nhà thuốc mỗi năm, nhu cầu nhân sự của Long Châu là cực kỳ lớn. Tuy nhiên, quy trình tuyển dụng và đào tạo hiện tại mang nặng tính hành chính, sàng lọc thủ công, dẫn đến chu kỳ tuyển dụng kéo dài và khó tìm được ứng viên chất lượng một cách kịp thời.
+*Bảng 4.5: Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho*
 
-**Bảng tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS)**
+| STT | Tên hoạt động | Loại (VA/BVA/NVA) | Thời gian (phút) | Giải thích |
+| --- | --- | --- | --- | --- |
+| 1 | Nhận thông báo giao hàng | BVA | 5.0 | Cần thiết để chuẩn bị khu vực bốc dỡ. |
+| 2 | Bốc dỡ hàng từ xe | VA | 30.0 | Di chuyển hàng vào khu vực an toàn. |
+| 3 | Đợi giấy tờ, phiếu giao hàng | NVA | 15.0 | Thời gian chờ đợi do thủ tục hành chính. |
+| 4 | Kiểm đếm số lượng thủ công | NVA | 45.0 | Lãng phí do không sử dụng công nghệ mã vạch. |
+| 5 | Kiểm tra ngoại quan, hạn sử dụng | BVA | 20.0 | Bắt buộc để đảm bảo chất lượng dược phẩm. |
+| 6 | Ghi chép sổ sách nhập kho bằng tay | NVA | 15.0 | Thao tác thừa, dễ dẫn đến sai sót. |
+| 7 | Nhập lại số liệu từ sổ vào hệ thống ERP | NVA | 20.0 | Nhân đôi công việc nhập liệu, lãng phí thời gian. |
+| 8 | Di chuyển, sắp xếp hàng lên kệ | VA | 40.0 | Tổ chức lưu trữ hàng hóa phục vụ xuất kho. |
+| 9 | Nhận yêu cầu xuất kho | BVA | 5.0 | Tiếp nhận thông tin xử lý. |
+| 10 | Đi tìm hàng hóa theo yêu cầu | NVA | 30.0 | Mất thời gian do không có bản đồ kho số hóa. |
+| 11 | Nhặt hàng, soạn hàng | VA | 20.0 | Tạo ra giá trị hoàn thành đơn hàng. |
+| 12 | Đóng gói hàng hóa | VA | 15.0 | Bảo vệ hàng hóa khi vận chuyển. |
+| 13 | Ghi trừ lùi thẻ kho bằng giấy | NVA | 10.0 | Hoạt động lặp lại, dư thừa với hệ thống số. |
+| 14 | Kiểm kê định kỳ đếm tay toàn bộ kho | NVA | 240.0 | Cực kỳ tốn kém thời gian nhân lực và gián đoạn. |
 
-| Thành phần | Mô tả chi tiết |
-| :--- | :--- |
-| **Mục tiêu** | Tuyển chọn, thu hút nhân sự phù hợp và trang bị kiến thức nền tảng trước khi làm việc. |
-| **Tác nhân tham gia** | Bộ phận tuyển dụng (HR), Trưởng bộ phận yêu cầu, Hội đồng phỏng vấn, Ứng viên, Nhân viên đào tạo. |
-| **Đầu vào** | Phiếu yêu cầu nhân sự, Hồ sơ ứng viên (CV). |
-| **Đầu ra** | Hợp đồng lao động, nhân sự mới đã qua đào tạo sẵn sàng nhận việc. |
-| **Biểu mẫu / Hệ thống** | Email, Form đăng ký Google/Excel, Website tuyển dụng, Hồ sơ giấy. |
-| **Thời gian trung bình** | 15 - 30 ngày từ khi có yêu cầu đến khi nhân viên bắt đầu làm việc. |
-| **Tần suất** | Liên tục hàng tháng theo kế hoạch mở rộng. |
+**Nhận xét:** Với một chu trình nhập-xuất-kiểm cơ bản, thời gian dành cho các hoạt động NVA là cực kỳ lớn (lên tới 375 phút so với tổng ~510 phút). Việc nhập liệu hai lần, đếm thủ công và duy trì hệ thống thẻ kho giấy là nguyên nhân chính dẫn đến sự chậm trễ, sai sót và phình to chi phí vận hành kho.
 
-**Các bước thực hiện:**
-1. **Yêu cầu tuyển dụng:** Trưởng bộ phận có nhu cầu (ví dụ: Quản lý khu vực) điền form yêu cầu nhân sự, trình ký qua giấy hoặc email và gửi cho Phòng HR.
-2. **Phê duyệt và đăng tin:** Trưởng phòng HR xem xét và phê duyệt. Nhân viên tuyển dụng tiến hành biên soạn nội dung và đăng tin thủ công lên website công ty, các nhóm Facebook, hoặc mạng lưới chuyên ngành (LinkedIn, trang việc làm).
-3. **Thu nhận và sàng lọc:** Hồ sơ (CV) đổ về qua email hoặc link Google Form. Nhân viên HR phải mở từng CV, đọc và sàng lọc thủ công để chọn ra ứng viên đạt yêu cầu.
-4. **Liên hệ và đặt lịch:** HR gọi điện thoại trực tiếp cho từng ứng viên qua vòng hồ sơ để mời phỏng vấn và gửi email xác nhận lịch.
-5. **Phỏng vấn vòng 1 (HR):** Phỏng vấn đánh giá mức độ phù hợp về văn hóa, thái độ, kỳ vọng lương.
-6. **Phỏng vấn vòng 2 (Chuyên môn):** Hội đồng phỏng vấn (gồm quản lý chuyên môn, dược sĩ trưởng) tiến hành phỏng vấn kiến thức y dược và xử lý tình huống.
-7. **Ra quyết định và mời nhận việc:** HR tổng hợp kết quả (thường qua giấy chấm điểm), báo cáo giám đốc duyệt. Nếu trúng tuyển, gửi Thư mời nhận việc (Offer Letter) qua email.
-8. **Ký hợp đồng:** Ứng viên đồng ý, đến văn phòng nộp hồ sơ cứng và ký hợp đồng lao động giấy.
-9. **Đào tạo hội nhập:** Bộ phận đào tạo tổ chức các lớp học tập trung (offline) về văn hóa công ty, quy trình làm việc và kiến thức sản phẩm.
-10. **Kiểm tra và phân công:** Ứng viên làm bài test giấy sau khóa học. Đạt yêu cầu sẽ được phân công về các nhà thuốc để bắt đầu công việc thực tế.
+### 4.3.3. Phân tích lãng phí
 
-**Sơ đồ BPMN AS-IS:**
-Sơ đồ mô phỏng một chuỗi các tác vụ kéo dài với nhiều vòng lặp, đặc biệt là vòng lặp ở khâu sàng lọc hồ sơ và phỏng vấn. Các cổng rẽ nhánh hiển thị kết quả Đạt/Không đạt ở từng vòng.
+- **Chờ đợi**: Hàng hóa phải nằm ở khu vực tiếp nhận chờ được kiểm đếm và hoàn tất thủ tục giấy tờ trước khi lên kệ.
+- **Di chuyển**: Nhân viên kho phải đi bộ rất xa để tìm hàng vì thiếu hệ thống định vị vị trí lưu trữ (Bin/Location layout).
+- **Quy trình thừa**: Việc duy trì song song hệ thống ERP và hệ thống sổ sách, thẻ kho bằng giấy là sự lãng phí quy trình nghiêm trọng.
+- **Tồn kho/Sản xuất thừa**: Đặt hàng thiếu tính toán đồng bộ dẫn đến tồn đọng các lô thuốc cận hạn sử dụng.
+- **Sửa chữa lỗi**: Thường xuyên phải làm báo cáo giải trình, tìm nguyên nhân và kiểm kê lại khi số liệu ERP và số liệu đếm tay không khớp.
 
-*[Hình 4.6: Sơ đồ BPMN AS-IS – Quy trình tuyển dụng và đào tạo]*
+### 4.3.4. Phân tích nguyên nhân gốc rễ
+
+**Vấn đề trung tâm:** "Sai sót tồn kho và hàng cận hạn không được phát hiện kịp thời"
+Phân tích theo 6 yếu tố (6M):
+- **Man (Con người)**: Mệt mỏi do khối lượng đếm tay quá lớn dẫn đến đếm sai; phụ thuộc vào trí nhớ của nhân viên cũ.
+- **Machine (Công nghệ)**: Thiếu máy quét mã vạch (Barcode Scanner) và thiết bị PDA di động; phần mềm ERP chưa có thuật toán kiểm soát FEFO (First Expired First Out).
+- **Method (Phương pháp)**: Quy trình cập nhật thẻ kho giấy dễ xảy ra quên sót; quy trình kiểm kê toàn diện gây đóng băng hoạt động kho.
+- **Material (Nguyên vật liệu)**: Rất nhiều mã thuốc có thiết kế bao bì giống nhau dễ gây nhầm lẫn khi nhặt hàng nhanh.
+- **Measurement (Đo lường)**: Không có chỉ số đo lường hiệu suất (KPI) thời gian thực cho nhân viên kho.
+- **Mother Nature (Môi trường)**: Diện tích kho rộng, nhiều góc khuất, khu vực bảo quản lạnh khó làm việc lâu dài.
+
+**Áp dụng 5 Whys cho vấn đề "Số liệu tồn kho trên hệ thống không khớp thực tế":**
+1. **Tại sao số liệu không khớp?** Vì thẻ kho giấy và phần mềm ERP ghi nhận hai con số khác nhau.
+2. **Tại sao hai hệ thống ghi nhận khác nhau?** Vì nhân viên quên cập nhật vào ERP sau khi xuất hàng hoặc gõ sai số liệu.
+3. **Tại sao nhân viên quên hoặc nhập sai?** Vì quá trình này được làm hoàn toàn thủ công, nhân viên phải nhớ và nhập liệu hai lần tách biệt.
+4. **Tại sao lại phải nhập liệu tách biệt?** Vì nhân viên tại hiện trường kho không có thiết bị di động để cập nhật thẳng vào hệ thống lúc thao tác với hàng hóa.
+5. **Tại sao không có thiết bị di động?** Vì quy trình quản lý chưa được số hóa toàn diện bằng việc áp dụng công nghệ quét mã vạch (Barcode/RFID) tích hợp ERP. (Nguyên nhân gốc rễ)
+
+### 4.3.5. Phân tích thời gian, chi phí và chất lượng
+
+- **Thời gian**: Phân tích thời gian cho thấy quy trình nhập kho mất trung bình 3-4 giờ/lô lớn, xuất kho mất 1-2 giờ/đơn hàng, đặc biệt kiểm kê tốn hàng ngày trời gây gián đoạn kinh doanh.
+- **Chi phí**: Thiệt hại nặng nề nhất nằm ở lượng thuốc hết hạn bị hủy bỏ do quy tắc FEFO không được tuân thủ nghiêm ngặt bằng hệ thống. Cùng với đó là chi phí nhân công ngày càng cao để duy trì việc kiểm đếm và ghi chép thủ công.
+- **Chất lượng**: Tỷ lệ sai lệch tồn kho được ước tính dao động khoảng 5-8%. Đây là con số đáng báo động trong ngành bán lẻ dược phẩm, nơi mức độ chính xác đòi hỏi gần như tuyệt đối để đảm bảo an toàn cho bệnh nhân.
+
+---
+
+## 4.4. Tổng hợp các vấn đề và điểm nghẽn
+
+Sau khi tiến hành mổ xẻ chi tiết hai quy trình mang tính sống còn của Long Châu, báo cáo đã tổng hợp được bức tranh toàn cảnh về những khiếm khuyết đang kìm hãm hiệu suất của hệ thống. Dưới đây là bảng tổng hợp các vấn đề chính yếu đã được nhận diện:
+
+*Bảng 4.6: Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt*
+
+| Tên vấn đề | Quy trình liên quan | Phân loại lãng phí | Mức độ ảnh hưởng | Giải pháp ưu tiên đề xuất |
+| --- | --- | --- | --- | --- |
+| Khách hàng chờ đợi lâu tại quầy | Bán thuốc tại nhà thuốc | NVA (Chờ đợi) | Rất cao | Tối ưu hóa phần mềm POS, tích hợp hệ thống phân luồng và kênh online. |
+| Thao tác nhập liệu lặp lại (ERP & Giấy) | Quản lý kho | NVA (Quy trình thừa) | Cao | Số hóa hoàn toàn quy trình, loại bỏ các loại thẻ kho và sổ giấy. |
+| Không áp dụng chuẩn xác FEFO | Quản lý kho | Lãng phí tồn kho | Rất cao | Tích hợp thuật toán cảnh báo hạn sử dụng vào phần mềm. |
+| Tìm kiếm thuốc thủ công mất thời gian | Bán thuốc & Quản lý kho | NVA (Di chuyển) | Cao | Áp dụng máy quét mã vạch và thiết lập sơ đồ kho điện tử (Bin/Location). |
+| Không khai thác được dữ liệu khách hàng | Bán thuốc tại nhà thuốc | NVA (Không sử dụng năng lực) | Trung bình | Xây dựng hệ thống CRM tích hợp nhận diện và lưu trữ bệnh án khách hàng. |
+| Chênh lệch số liệu thực tế và phần mềm | Quản lý kho | NVA (Sửa chữa lỗi) | Cao | Cập nhật số liệu tồn kho theo thời gian thực qua thiết bị PDA di động. |
+
+**Định vị các điểm nghẽn (Bottleneck) cốt lõi:**
+Từ việc tổng hợp các vấn đề trên, có thể định vị 3 điểm nghẽn mang tính chiến lược đang "bóp nghẹt" hiệu năng của cả chuỗi bán lẻ:
+1. **Điểm nghẽn thông tin tại quầy bán hàng (POS):** Phần mềm POS hiện tại thiếu tính kết nối sâu và tức thời với phân hệ kho (WMS). Mỗi khi dược sĩ cần tra cứu tồn kho, thao tác rời rạc làm chậm toàn bộ giao dịch, tạo ra "nút thắt cổ chai" khiến dòng khách hàng bị ùn ứ vào giờ cao điểm.
+2. **Điểm nghẽn cập nhật dữ liệu và độ trễ thông tin:** Việc phụ thuộc vào ghi chép giấy tờ sau đó mới nhập liệu lại vào hệ thống tạo ra độ trễ rất lớn về thông tin. Ban lãnh đạo và hệ thống cung ứng không thể nhìn thấy lượng tồn kho theo thời gian thực (real-time), dẫn đến các quyết định điều phối hàng hóa, cảnh báo cận date bị sai lệch và chậm trễ.
+3. **Điểm nghẽn công nghệ trong định vị hàng hóa:** Việc duy trì phương pháp tìm kiếm hàng hóa dựa hoàn toàn vào "trí nhớ" của nhân viên trên hàng ngàn mét vuông kệ kho vừa gây mệt mỏi vật lý, vừa làm tốc độ xử lý đơn hàng giảm sút nghiêm trọng. Khi có nhân sự mới chưa quen việc, điểm nghẽn này càng bộc lộ rõ rệt, đẩy tỷ lệ sai sót tăng cao.
+
+**Nhận xét tổng quan về hiện trạng quy trình:**
+Bức tranh hiện trạng quy trình nghiệp vụ của FPT Long Châu phản ánh một thách thức kinh điển: tốc độ mở rộng quy mô kinh doanh (lên tới hơn 1.800 cửa hàng) đã vượt quá năng lực đáp ứng của một cơ chế vận hành mang nặng tính thủ công và truyền thống. Mặc dù đội ngũ dược sĩ và nhân viên kho làm việc rất nỗ lực, nhưng chính sự thiếu hụt trong việc áp dụng công nghệ thông tin chuyên sâu đã và đang trói buộc năng suất của họ. Một khối lượng lớn thời gian và nguồn lực thay vì được dùng để tạo ra giá trị chăm sóc sức khỏe trực tiếp cho khách hàng (VA), lại bị tiêu phí vào các công việc hành chính, tìm kiếm, chờ đợi và xử lý lỗi (NVA).
+
+Để duy trì vị thế dẫn đầu trên thị trường bán lẻ dược phẩm đầy khốc liệt và mang lại trải nghiệm tối ưu cho người bệnh, FPT Long Châu buộc phải thực hiện một cuộc cách mạng về quy trình (BPR). Những điểm nghẽn và nguyên nhân gốc rễ đã được chỉ ra một cách khoa học trong chương này chính là tiền đề trực tiếp, là kim chỉ nam để nhóm nghiên cứu tiến hành thiết kế lại các luồng công việc, ứng dụng các giải pháp tự động hóa. Cụ thể, các giải pháp mô hình hóa quy trình mục tiêu (TO-BE) và việc lựa chọn nền tảng công nghệ phù hợp sẽ được trình bày chi tiết và toàn diện trong Chương 6.
+
+---
+*(Lưu ý học thuật: Các thông số định lượng về thời gian xử lý chu kỳ (cycle time), thời gian chờ đợi (wait time), tỷ lệ lãng phí (VA/BVA/NVA), tỷ lệ sai lệch tồn kho và điểm số NPS trong chương này là số liệu giả định mô phỏng phục vụ mục đích nghiên cứu học thuật của đồ án môn học. Các số liệu được xây dựng dựa trên quan sát thực tế bên ngoài, phân tích lý thuyết Lean/BPM và tài liệu công khai, không phải dữ liệu trích xuất trực tiếp từ hệ thống ERP/WMS nội bộ của FPT Long Châu).*

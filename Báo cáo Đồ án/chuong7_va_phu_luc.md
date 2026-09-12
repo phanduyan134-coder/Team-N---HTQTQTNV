@@ -1,6 +1,6 @@
-﻿# CHƯƠNG 7: KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+# CHƯƠNG 7: KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
 
-Đồ án "Phân tích và cải tiến quy trình nghiệp vụ tại FPT Long Châu" đã trải qua một quá trình nghiên cứu, từ việc khảo sát hiện trạng, phân tích các điểm nghẽn đến việc đề xuất các giải pháp tối ưu hóa dựa trên nền tảng Quản trị quy trình nghiệp vụ (BPM). Chương 7 sẽ tổng kết lại toàn bộ những kết quả cốt lõi mà đề tài đã đạt được so với mục tiêu ban đầu đặt ra. Đồng thời, nhóm nghiên cứu cũng nhìn nhận một cách khách quan những mặt còn hạn chế trong quá trình thực hiện do các rào cản khách quan và chủ quan. Từ đó, báo cáo sẽ vạch ra những hướng phát triển tiềm năng trong tương lai, mở ra cơ hội hoàn thiện và ứng dụng kết quả nghiên cứu vào môi trường vận hành thực tế của chuỗi bán lẻ dược phẩm.
+Đồ án "Hệ thống quản trị quy trình nghiệp vụ tại Công ty Cổ phần Dược phẩm FPT Long Châu" đã trải qua một quá trình nghiên cứu, từ việc khảo sát hiện trạng, phân tích các điểm nghẽn đến việc đề xuất các giải pháp tối ưu hóa dựa trên nền tảng Quản trị quy trình nghiệp vụ (BPM). Chương 7 sẽ tổng kết lại toàn bộ những kết quả cốt lõi mà đề tài đã đạt được so với mục tiêu ban đầu đặt ra. Đồng thời, nhóm nghiên cứu cũng nhìn nhận một cách khách quan những mặt còn hạn chế trong quá trình thực hiện do các rào cản khách quan và chủ quan. Từ đó, báo cáo sẽ vạch ra những hướng phát triển tiềm năng trong tương lai, mở ra cơ hội hoàn thiện và ứng dụng kết quả nghiên cứu vào môi trường vận hành thực tế của chuỗi bán lẻ dược phẩm.
 
 ## 7.1. Kết quả đạt được
 
@@ -8,7 +8,7 @@ Trong suốt quá trình thực hiện, đồ án đã bám sát các mục tiê
 
 Thứ nhất, về việc khảo sát và phân loại quy trình, nhóm nghiên cứu đã xây dựng thành công kiến trúc quy trình nghiệp vụ tổng thể cho FPT Long Châu. Dựa trên mô hình phân lớp chuẩn, đề tài đã nhận diện và phân loại 10 quy trình cốt lõi thành 3 tầng: tầng quản lý, tầng cốt lõi và tầng hỗ trợ. Từ đó, nhóm đã sử dụng các tiêu chí định lượng để chọn lọc ra 6 quy trình trọng điểm mang tính quyết định đối với chuỗi giá trị của doanh nghiệp để tập trung mô phỏng và phân tích chuyên sâu.
 
-Thứ hai, về mặt công nghệ và mô phỏng, đồ án đã phát triển thành công một website mô phỏng quy trình nghiệp vụ chuyên biệt. Sử dụng các công nghệ web hiện đại như React.js kết hợp với thư viện bpmn-js, website cho phép hiển thị trực quan sơ đồ của 6 quy trình được chọn. Điểm nổi bật của hệ thống là khả năng so sánh trực tiếp cấu trúc giữa hai mô hình hiện trạng (AS-IS) và mục tiêu (TO-BE), giúp người dùng dễ dàng nhận diện những thay đổi và cải tiến đã được đề xuất, qua đó gia tăng tính tương tác và trực quan cho nghiên cứu.
+Thứ hai, về mặt công nghệ và mô phỏng, đồ án đã phát triển thành công một website mô phỏng quy trình nghiệp vụ chuyên biệt. Ứng dụng nền tảng HTML5, Tailwind CSS và Vanilla JavaScript (ES6+) kết hợp trình xem đồ họa Vector SVG tương tác độ nét cao, website cho phép hiển thị trực quan sơ đồ của 6 quy trình được chọn. Điểm nổi bật của hệ thống là khả năng so sánh trực tiếp cấu trúc giữa hai mô hình hiện trạng (AS-IS) và mục tiêu (TO-BE), giúp người dùng dễ dàng nhận diện những thay đổi và cải tiến đã được đề xuất, qua đó gia tăng tính tương tác và trực quan cho nghiên cứu.
 
 Thứ ba, về mô hình hóa hiện trạng, đề tài đã áp dụng chuẩn OMG BPMN 2.0 để thiết kế sơ đồ quy trình AS-IS cho 6 luồng công việc chính. Các Sơ đồ BPMN này được xây dựng với cấu trúc **swim lane** (làn bơi) rõ ràng, thể hiện chi tiết sự phân công trách nhiệm giữa các phòng ban, tác nhân, hệ thống thông tin, cũng như luồng dữ liệu (data object) và luồng trình tự (sequence flow) trong từng quy trình. Việc mô hình hóa này đã số hóa thành công các hoạt động vận hành thủ công trên giấy tờ.
 
@@ -85,6 +85,8 @@ bpmn.io. (2024). *bpmn-js: A BPMN 2.0 rendering toolkit and web modeler*. https:
 # PHỤ LỤC
 
 ## Phụ lục A: Danh sách viết tắt
+
+*Bảng A.1: Danh sách các thuật ngữ viết tắt trong báo cáo*
 
 | Viết tắt | Ý nghĩa tiếng Anh | Ý nghĩa tiếng Việt |
 | :--- | :--- | :--- |
