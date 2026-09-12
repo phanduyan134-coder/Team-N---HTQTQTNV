@@ -31,7 +31,7 @@ const SPEAKER_NOTES = {
   16: "Đồ án tiếp cận theo chuẩn BPM hiện đại, bám sát vòng đời BPM 6 giai đoạn: Nhận diện, Khám phá, Phân tích, Tái thiết kế, Triển khai và Giám sát vận hành trong môi trường bán lẻ dược phẩm.",
   17: "Dữ liệu nghiên cứu được tổng hợp từ Báo cáo thường niên FPT Retail, tài liệu pháp lý GPP của Bộ Y tế, quan sát luồng giao dịch tại các nhà thuốc và các thông tin công khai trên ứng dụng Long Châu.",
   18: "Theo chuẩn mực BPM quốc tế (Dumas et al.) và Chuỗi giá trị Michael Porter, nhóm phân loại toàn bộ hoạt động của Long Châu thành 3 tầng rõ rệt: Tầng Quản lý (định hướng và kiểm soát chuẩn GPP), Tầng Cốt lõi (trực tiếp tạo dòng giá trị và phục vụ người bệnh) và Tầng Hỗ trợ (cung cấp nguồn lực kho vận, nhân sự và CNTT bảo đảm hệ thống vận hành liên tục).",
-  19: "Bản đồ kiến trúc 3 tầng thể hiện mối quan hệ tương hỗ chặt chẽ: Tầng Cốt lõi là dòng chảy giá trị phục vụ người bệnh xuyên suốt từ Mua hàng, Bán tại quầy, Bán online đến Chăm sóc CRM; được nâng đỡ bởi nền móng Kho vận, Nhân sự và CNTT ở Tầng Hỗ trợ; dưới sự định hướng và kiểm soát chuẩn mực GPP của Tầng Quản lý.",
+  19: "Mục 2.4 trong báo cáo chuẩn hóa toàn bộ 10 Sơ đồ Kiến trúc phân rã (Level 2 Architecture - từ Hình 2.2 đến Hình 2.11) cấu trúc theo 3 tầng nghiệp vụ: Tầng Quản lý (Chuỗi cung ứng, Chất lượng, Tài chính, Pháp lý); Tầng Cốt lõi (Bán thuốc tại quầy, Bán online, CRM); và Tầng Hỗ trợ (Kho vận, Tuyển dụng đào tạo, CNTT). Thầy và các bạn có thể click chọn trực tiếp từng quy trình trên slide để xem chi tiết sơ đồ phân rã của quy trình đó.",
   20: "Trên màn hình là danh mục 10 quy trình nghiệp vụ then chốt đã được nhóm khảo sát và chuẩn hóa tên gọi, bao gồm đầy đủ các khâu từ mua hàng, kho bãi, bán hàng trực tiếp, trực tuyến cho đến quản trị nhân sự và tài chính.",
   21: "Mỗi quy trình đều được nhóm chuẩn hóa hồ sơ thuộc tính (Process Profile) với 7 yếu tố toàn diện theo chuẩn BPM quốc tế: Mục tiêu, Đối tượng khách hàng (Nội bộ & Bên ngoài), Tác nhân chính, Đầu vào, Đầu ra, Các khả năng kết quả (Tích cực, Tiêu cực, Ngoại lệ) và Điểm đặc thù ngành dược, tạo nền tảng phân tích đồng bộ và khép kín dòng giá trị.",
   22: "Dựa trên ma trận đánh giá mức độ phức tạp và tầm ảnh hưởng kinh doanh: Nhóm chọn **6 quy trình trọng tâm** để mô hình hóa BPMN 2.0 AS-IS chi tiết ở Chương 3; đồng thời định vị **2 quy trình then chốt nhất** (Bán thuốc tại quầy và Quản lý kho) để phân tích định lượng chuyên sâu ở Chương 4 và xây dựng mô hình cải tiến TO-BE ở Chương 5.",
@@ -85,7 +85,7 @@ const SLIDE_TITLES = [
   "2.1. Khái quát về Quản trị Quy trình Nghiệp vụ (BPM)",
   "2.2. Phương pháp và nguồn thu thập dữ liệu",
   "2.3. Phân loại quy trình nghiệp vụ (Ngôi nhà BPM)",
-  "2.4. Kiến trúc quy trình nghiệp vụ (Enterprise Process Architecture)",
+  "2.4. Kiến trúc quy trình nghiệp vụ của FPT Long Châu",
   "2.5. Danh sách 10 quy trình nghiệp vụ",
   "2.6. Mô tả tổng quan 10 quy trình nghiệp vụ",
   "2.7. Lựa chọn các quy trình mô phỏng & phân tích chuyên sâu",
@@ -447,6 +447,10 @@ function updateSlideView() {
   if (notesContent) {
     notesContent.textContent = SPEAKER_NOTES[currentSlide] || "Không có ghi chú cho slide này.";
   }
+
+  if (currentSlide === 19 && typeof window.selectArchProcess === "function") {
+    window.selectArchProcess(currentArchIndex || 0);
+  }
 }
 
 function initSlideNavigator() {
@@ -571,6 +575,188 @@ function initControls() {
     window.resetTimer();
   });
 }
+
+
+// ==================== SLIDE 19: ARCHITECTURE DECOMPOSITION VIEWER ====================
+const ARCH_PROCESSES = [
+  {
+    code: "QT-01",
+    name: "Quản lý chuỗi cung ứng",
+    tier: "Tầng Quản lý",
+    tierClass: "bg-purple-500/20 text-purple-300 border-purple-400/30",
+    btnBorder: "border-purple-500/60 bg-purple-950/60 text-purple-200 ring-1 ring-purple-400/50",
+    fig: "Hình 2.2",
+    img: "assets/bpmn/hinh_2_2_kientruc_chuoi_cung_ung.png",
+    title: "Hình 2.2: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chuỗi cung ứng dược phẩm",
+    sys: "ERP SAP S/4HANA, Portal NCC, EDI",
+    input: "Dự báo nhu cầu, Báo cáo tồn kho quầy",
+    output: "Đơn đặt hàng PO & Hợp đồng phân phối"
+  },
+  {
+    code: "QT-02",
+    name: "Quản lý chất lượng",
+    tier: "Tầng Quản lý",
+    tierClass: "bg-purple-500/20 text-purple-300 border-purple-400/30",
+    btnBorder: "border-purple-500/60 bg-purple-950/60 text-purple-200 ring-1 ring-purple-400/50",
+    fig: "Hình 2.3",
+    img: "assets/bpmn/hinh_2_3_kientruc_quan_ly_chat_luong.png",
+    title: "Hình 2.3: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chất lượng dược phẩm (QA/QC)",
+    sys: "Phần mềm QA/QC, Cảm biến IoT nhiệt ẩm",
+    input: "Lô hàng từ NCC, Giấy chứng nhận COA",
+    output: "Biên bản kiểm nghiệm đạt GPP/GDP"
+  },
+  {
+    code: "QT-03",
+    name: "Bán thuốc tại nhà thuốc",
+    tier: "Tầng Cốt lõi",
+    tierClass: "bg-emerald-500/20 text-emerald-300 border-emerald-400/30",
+    btnBorder: "border-emerald-500/60 bg-emerald-950/60 text-emerald-200 ring-1 ring-emerald-400/50",
+    fig: "Hình 2.4",
+    img: "assets/bpmn/hinh_2_4_kientruc_ban_thuoc_tai_nha_thuoc.png",
+    title: "Hình 2.4: Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc tại nhà thuốc",
+    sys: "Phần mềm Smart POS, Tra cứu kho chuỗi",
+    input: "Toa thuốc bác sĩ, Triệu chứng bệnh nhân",
+    output: "Thuốc cấp phát, Hóa đơn VAT, Trừ tồn"
+  },
+  {
+    code: "QT-04",
+    name: "Bán thuốc online (O2O)",
+    tier: "Tầng Cốt lõi",
+    tierClass: "bg-emerald-500/20 text-emerald-300 border-emerald-400/30",
+    btnBorder: "border-emerald-500/60 bg-emerald-950/60 text-emerald-200 ring-1 ring-emerald-400/50",
+    fig: "Hình 2.5",
+    img: "assets/bpmn/hinh_2_5_kientruc_ban_thuoc_online.png",
+    title: "Hình 2.5: Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc online (O2O)",
+    sys: "Website, Mobile App, OMS, Shipper App",
+    input: "Đơn hàng online, Ảnh chụp toa thuốc",
+    output: "Kiện thuốc niêm phong, Giao hỏa tốc 30p"
+  },
+  {
+    code: "QT-05",
+    name: "Quản lý kho dược phẩm",
+    tier: "Tầng Hỗ trợ",
+    tierClass: "bg-cyan-500/20 text-cyan-300 border-cyan-400/30",
+    btnBorder: "border-cyan-500/60 bg-cyan-950/60 text-cyan-200 ring-1 ring-cyan-400/50",
+    fig: "Hình 2.6",
+    img: "assets/bpmn/hinh_2_6_kientruc_quan_ly_kho.png",
+    title: "Hình 2.6: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý kho dược phẩm (WMS)",
+    sys: "Phần mềm WMS, Máy quét Barcode/QR",
+    input: "Phiếu nhập/xuất kho, Lô hàng đạt chuẩn",
+    output: "Thuốc xếp chuẩn FEFO, Cập nhật tồn kho"
+  },
+  {
+    code: "QT-06",
+    name: "Tuyển dụng và đào tạo",
+    tier: "Tầng Hỗ trợ",
+    tierClass: "bg-cyan-500/20 text-cyan-300 border-cyan-400/30",
+    btnBorder: "border-cyan-500/60 bg-cyan-950/60 text-cyan-200 ring-1 ring-cyan-400/50",
+    fig: "Hình 2.7",
+    img: "assets/bpmn/hinh_2_7_kientruc_tuyen_dung_dao_tao.png",
+    title: "Hình 2.7: Sơ đồ Kiến trúc phân rã – Quy trình Tuyển dụng và đào tạo Dược sĩ",
+    sys: "HRM Portal, Long Châu E-Learning",
+    input: "Hồ sơ ứng viên Dược sĩ có CCHN",
+    output: "Dược sĩ tốt nghiệp GPP Academy"
+  },
+  {
+    code: "QT-07",
+    name: "Quản lý công nghệ thông tin",
+    tier: "Tầng Hỗ trợ",
+    tierClass: "bg-cyan-500/20 text-cyan-300 border-cyan-400/30",
+    btnBorder: "border-cyan-500/60 bg-cyan-950/60 text-cyan-200 ring-1 ring-cyan-400/50",
+    fig: "Hình 2.8",
+    img: "assets/bpmn/hinh_2_8_kientruc_quan_ly_cntt.png",
+    title: "Hình 2.8: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý công nghệ thông tin & Hạ tầng số",
+    sys: "Hạ tầng Cloud AWS/FPT, Jira Helpdesk",
+    input: "Phiếu yêu cầu IT Ticket, Cảnh báo lỗi",
+    output: "Hệ thống Uptime ≥ 99.9%, Dữ liệu sao lưu"
+  },
+  {
+    code: "QT-08",
+    name: "Quản lý tài chính – Kế toán",
+    tier: "Tầng Quản lý",
+    tierClass: "bg-purple-500/20 text-purple-300 border-purple-400/30",
+    btnBorder: "border-purple-500/60 bg-purple-950/60 text-purple-200 ring-1 ring-purple-400/50",
+    fig: "Hình 2.9",
+    img: "assets/bpmn/hinh_2_9_kientruc_tai_chinh_ke_toan.png",
+    title: "Hình 2.9: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tài chính – Kế toán",
+    sys: "Phần mềm Kế toán ERP, Cổng thanh toán",
+    input: "Chứng từ kế toán, Giao dịch POS quầy",
+    output: "Đối soát doanh thu, Báo cáo tài chính VAS"
+  },
+  {
+    code: "QT-09",
+    name: "Quan hệ khách hàng (CRM)",
+    tier: "Tầng Cốt lõi",
+    tierClass: "bg-emerald-500/20 text-emerald-300 border-emerald-400/30",
+    btnBorder: "border-emerald-500/60 bg-emerald-950/60 text-emerald-200 ring-1 ring-emerald-400/50",
+    fig: "Hình 2.10",
+    img: "assets/bpmn/hinh_2_10_kientruc_quan_he_khach_hang_crm.png",
+    title: "Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)",
+    sys: "Hệ thống FPT CRM, AI Chatbot chăm sóc",
+    input: "Thông tin hội viên, Đơn thuốc tái khám",
+    output: "Tích điểm F-Reward, Nhắc lịch thuốc tự động"
+  },
+  {
+    code: "QT-10",
+    name: "Quản lý tuân thủ pháp lý & dược",
+    tier: "Tầng Quản lý",
+    tierClass: "bg-purple-500/20 text-purple-300 border-purple-400/30",
+    btnBorder: "border-purple-500/60 bg-purple-950/60 text-purple-200 ring-1 ring-purple-400/50",
+    fig: "Hình 2.11",
+    img: "assets/bpmn/hinh_2_11_kientruc_tuan_thu_phap_ly_duoc.png",
+    title: "Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược",
+    sys: "Cơ sở dữ liệu Dược Quốc gia, Văn bản BYT",
+    input: "Quy định Bộ Y tế, Hồ sơ pháp lý cơ sở",
+    output: "100% nhà thuốc duy trì chuẩn GPP/GDP"
+  }
+];
+
+let currentArchIndex = 0;
+
+window.selectArchProcess = function(idx) {
+  currentArchIndex = idx;
+  const p = ARCH_PROCESSES[idx];
+  if (!p) return;
+  
+  const tierEl = document.getElementById('arch-preview-tier');
+  const titleEl = document.getElementById('arch-preview-title');
+  const imgEl = document.getElementById('arch-preview-img');
+  const sysEl = document.getElementById('arch-sys-text');
+  const inputEl = document.getElementById('arch-input-text');
+  const outputEl = document.getElementById('arch-output-text');
+  
+  if (tierEl) {
+    tierEl.textContent = p.tier;
+    tierEl.className = `text-[10px] font-bold px-2 py-0.5 rounded border uppercase mr-1.5 ${p.tierClass}`;
+  }
+  if (titleEl) titleEl.textContent = `${p.fig}: Kiến trúc ${p.name}`;
+  if (imgEl) {
+    imgEl.src = p.img;
+    imgEl.alt = p.title;
+  }
+  if (sysEl) sysEl.textContent = p.sys;
+  if (inputEl) inputEl.textContent = p.input;
+  if (outputEl) outputEl.textContent = p.output;
+  
+  // Update button active state
+  for (let i = 0; i < ARCH_PROCESSES.length; i++) {
+    const btn = document.getElementById(`arch-btn-${i}`);
+    if (btn) {
+      if (i === idx) {
+        btn.className = `arch-btn text-left p-1.5 rounded-lg border transition flex items-center justify-between group shadow-md ${p.btnBorder}`;
+      } else {
+        btn.className = "arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300";
+      }
+    }
+  }
+};
+
+window.zoomCurrentArch = function() {
+  const p = ARCH_PROCESSES[currentArchIndex];
+  if (p && window.openBpmnQuickView) {
+    window.openBpmnQuickView(p.img, p.title);
+  }
+};
 
 function initPresentation() {
   initSlideNavigator();

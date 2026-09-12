@@ -91,8 +91,8 @@
 - **Slide 18: 2.3. Phân loại quy trình nghiệp vụ (Ngôi nhà BPM)**
   > *"Theo chuẩn mực BPM quốc tế (Dumas et al.) và Chuỗi giá trị Michael Porter, nhóm phân loại toàn bộ hoạt động của Long Châu thành 3 tầng rõ rệt: Tầng Quản lý (định hướng và kiểm soát chuẩn GPP), Tầng Cốt lõi (trực tiếp tạo dòng giá trị và phục vụ người bệnh) và Tầng Hỗ trợ (cung cấp nguồn lực kho vận, nhân sự và CNTT bảo đảm hệ thống vận hành liên tục)."*
 
-- **Slide 19: 2.4. Kiến trúc quy trình nghiệp vụ (Enterprise Process Architecture)**
-  > *"Bản đồ kiến trúc 3 tầng thể hiện mối quan hệ tương hỗ chặt chẽ: Tầng Cốt lõi là dòng chảy giá trị phục vụ người bệnh xuyên suốt từ Mua hàng, Bán tại quầy, Bán online đến Chăm sóc CRM; được nâng đỡ bởi nền móng Kho vận, Nhân sự và CNTT ở Tầng Hỗ trợ; dưới sự định hướng và kiểm soát chuẩn mực GPP của Tầng Quản lý."*
+- **Slide 19: 2.4. Kiến trúc quy trình nghiệp vụ của FPT Long Châu**
+  > *"Mục 2.4 trong báo cáo chuẩn hóa toàn bộ 10 Sơ đồ Kiến trúc phân rã (Level 2 Architecture - từ Hình 2.2 đến Hình 2.11) cấu trúc theo 3 tầng nghiệp vụ: Tầng Quản lý (Chuỗi cung ứng, Chất lượng, Tài chính, Pháp lý); Tầng Cốt lõi (Bán thuốc tại quầy, Bán online, CRM); và Tầng Hỗ trợ (Kho vận, Tuyển dụng đào tạo, CNTT). Thầy và các bạn có thể click chọn trực tiếp từng quy trình trên slide để xem chi tiết sơ đồ phân rã của quy trình đó."*
 
 - **Slide 20: 2.5. Danh sách 10 quy trình nghiệp vụ**
   > *"Trên màn hình là danh mục 10 quy trình nghiệp vụ then chốt đã được nhóm khảo sát và chuẩn hóa tên gọi, bao gồm đầy đủ các khâu từ mua hàng, kho bãi, bán hàng trực tiếp, trực tuyến cho đến quản trị nhân sự và tài chính."*
