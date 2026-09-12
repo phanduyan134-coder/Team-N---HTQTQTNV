@@ -1,14 +1,6 @@
-# BÁO CÁO ĐỒ ÁN MÔN HỌC
+# PHÂN CÔNG NHIỆM VỤ THỰC HIỆN ĐỒ ÁN
 
-## HỆ THỐNG QUẢN TRỊ QUY TRÌNH NGHIỆP VỤ (BPM)
 **Mã lớp học phần:** `IE203.F33.CN2.CNTT`  
-**Đơn vị đào tạo:** Khoa Khoa học và Kỹ thuật Thông tin – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
-
----
-
-### TÊN ĐỀ TÀI:
-# HỆ THỐNG QUẢN TRỊ QUY TRÌNH NGHIỆP VỤ TẠI CÔNG TY CỔ PHẦN DƯỢC PHẨM FPT LONG CHÂU
-
 **Giảng viên hướng dẫn:** ThS. Hà Lê Hoài Trung  
 **Nhóm sinh viên thực hiện:** Nhóm 15  
 
@@ -22,6 +14,10 @@
 | 6 | **Ngô Quốc Chung** | 24730180 | Chương 6 (Kết luận, hạn chế, hướng phát triển); Phụ lục & Tài liệu tham khảo |
 
 *Thành phố Hồ Chí Minh, Năm 2024*
+
+---
+
+# MỤC LỤC
 
 ---
 
