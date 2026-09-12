@@ -1314,180 +1314,186 @@
     <!-- SLIDE 19 -->
         <!-- SLIDE 19: 2.4. Kiến trúc quy trình nghiệp vụ -->
     <section class="slide" data-slide="19">
-      <div class="slide-inner flex flex-col justify-between py-1">
+      <div class="slide-inner flex flex-col justify-between h-full py-2 sm:py-3">
         <!-- Header -->
-        <div class="mb-2 text-center sm:text-left">
+        <div class="text-center sm:text-left">
           <div class="flex items-center justify-between">
-            <span class="px-3 py-0.5 rounded-lg bg-gradient-to-r from-sky-600/30 text-sky-300 border border-sky-400/30 font-bold text-[11px] uppercase inline-flex items-center gap-1.5">
+            <span class="px-3.5 py-1 rounded-lg bg-gradient-to-r from-sky-600/30 to-sky-500/10 text-sky-300 border border-sky-400/30 font-bold text-xs uppercase inline-flex items-center gap-2 shadow-sm">
               <i class="fa-solid fa-book-bookmark text-xs"></i> CHƯƠNG 2: KHẢO SÁT, LIỆT KÊ VÀ PHÂN LOẠI QUY TRÌNH NGHIỆP VỤ
             </span>
-            <span class="badge-clean text-cyan-300 border-cyan-500/30 font-mono text-[11px]">
-              <i class="fa-solid fa-sitemap text-cyan-400 mr-1"></i> Mục 2.4 • Kiến trúc phân rã 10 quy trình (Hình 2.2 – 2.11)
+            <span class="badge-clean text-cyan-300 border-cyan-500/30 font-mono text-xs font-semibold">
+              <i class="fa-solid fa-sitemap text-cyan-400 mr-1.5"></i> Mục 2.4 • Kiến trúc phân rã 10 quy trình (Hình 2.2 – 2.11)
             </span>
           </div>
-          <h2 class="text-lg sm:text-xl font-bold text-white mt-0.5">2.4. Kiến trúc quy trình nghiệp vụ của FPT Long Châu</h2>
-          <p class="text-slate-400 text-xs mt-0.5">Hệ thống 10 Sơ đồ Kiến trúc phân rã Cấp 2 (Level 2 Architecture) theo 3 tầng nghiệp vụ chuẩn BPM</p>
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-white mt-1.5">2.4. Kiến trúc quy trình nghiệp vụ của FPT Long Châu</h2>
+          <p class="text-slate-300 text-xs sm:text-sm mt-0.5">Hệ thống 10 Sơ đồ Kiến trúc phân rã Cấp 2 (Level 2 Architecture) theo 3 tầng nghiệp vụ chuẩn BPM</p>
         </div>
 
         <!-- BỐ CỤC 2 CỘT: DANH SÁCH 3 TẦNG & KHUNG XEM TRỰC QUAN SƠ ĐỒ PHÂN RÃ -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 items-stretch my-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4 items-stretch flex-1 my-2">
           <!-- CỘT TRÁI: 10 QUY TRÌNH THEO 3 TẦNG (5 Cols) -->
-          <div class="lg:col-span-5 flex flex-col gap-2">
-            <!-- Tầng Quản lý -->
-            <div class="p-2 rounded-xl bg-slate-900/80 border border-purple-500/30">
-              <div class="flex items-center justify-between mb-1.5 px-1">
-                <span class="text-[11px] font-bold text-purple-300 uppercase flex items-center gap-1.5">
+          <div class="lg:col-span-5 flex flex-col justify-between gap-2.5 h-full">
+            <!-- Tầng Quản lý (4 quy trình) -->
+            <div class="p-2.5 sm:p-3 rounded-2xl bg-slate-900/85 border border-purple-500/30 flex flex-col justify-between shadow-md">
+              <div class="flex items-center justify-between mb-2 px-1">
+                <span class="text-xs sm:text-sm font-bold text-purple-300 uppercase flex items-center gap-2">
                   <i class="fa-solid fa-chess-king text-purple-400"></i> Tầng Quản lý (4 quy trình)
                 </span>
-                <span class="text-[10px] text-slate-400">Định hướng & Kiểm soát</span>
+                <span class="text-xs text-purple-200/70 font-medium">Định hướng &amp; Kiểm soát</span>
               </div>
-              <div class="grid grid-cols-2 gap-1.5">
-                <button onclick="selectArchProcess(0)" id="arch-btn-0" class="arch-btn text-left p-1.5 rounded-lg border border-purple-500/30 bg-purple-950/30 hover:bg-purple-900/50 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-purple-300 block">QT-01: Chuỗi cung ứng</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.2 • Hoạch định PO</span>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="selectArchProcess(0)" id="arch-btn-0" class="arch-btn text-left p-2 sm:p-2.5 rounded-xl border border-purple-500/70 bg-purple-950/70 text-purple-200 ring-2 ring-purple-400/50 transition flex items-center justify-between group shadow-lg">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-white block truncate">QT-01: Chuỗi cung ứng</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-white/80 block truncate">Hình 2.2 • Hoạch định PO</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-purple-400 opacity-60 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-white shrink-0 ml-1.5"></i>
                 </button>
-                <button onclick="selectArchProcess(1)" id="arch-btn-1" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-purple-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-02: Quản lý chất lượng</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.3 • GPP/GDP & COA</span>
+                <button onclick="selectArchProcess(1)" id="arch-btn-1" class="arch-btn text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-02: Quản lý chất lượng</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.3 • GPP/GDP &amp; COA</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
-                <button onclick="selectArchProcess(7)" id="arch-btn-7" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-purple-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-08: Tài chính – Kế toán</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.9 • Đối soát & VAS</span>
+                <button onclick="selectArchProcess(7)" id="arch-btn-7" class="arch-btn text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-08: Tài chính – Kế toán</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.9 • Đối soát &amp; VAS</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
-                <button onclick="selectArchProcess(9)" id="arch-btn-9" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-purple-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-10: Tuân thủ pháp lý</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.11 • CCHN & Bộ Y tế</span>
+                <button onclick="selectArchProcess(9)" id="arch-btn-9" class="arch-btn text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-10: Tuân thủ pháp lý</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.11 • CCHN &amp; Bộ Y tế</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
               </div>
             </div>
 
-            <!-- Tầng Cốt lõi -->
-            <div class="p-2 rounded-xl bg-slate-900/80 border border-emerald-500/30">
-              <div class="flex items-center justify-between mb-1.5 px-1">
-                <span class="text-[11px] font-bold text-emerald-300 uppercase flex items-center gap-1.5">
+            <!-- Tầng Cốt lõi (3 quy trình) -->
+            <div class="p-2.5 sm:p-3 rounded-2xl bg-slate-900/85 border border-emerald-500/30 flex flex-col justify-between shadow-md">
+              <div class="flex items-center justify-between mb-2 px-1">
+                <span class="text-xs sm:text-sm font-bold text-emerald-300 uppercase flex items-center gap-2">
                   <i class="fa-solid fa-gem text-emerald-400"></i> Tầng Cốt lõi (3 quy trình)
                 </span>
-                <span class="text-[10px] text-slate-400">Tạo giá trị & Doanh thu</span>
+                <span class="text-xs text-emerald-200/70 font-medium">Tạo giá trị &amp; Doanh thu</span>
               </div>
-              <div class="grid grid-cols-3 gap-1.5">
-                <button onclick="selectArchProcess(2)" id="arch-btn-2" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-emerald-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-03: Bán tại quầy</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.4 • Smart POS</span>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="selectArchProcess(2)" id="arch-btn-2" class="arch-btn text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-03: Bán tại quầy</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.4 • Smart POS &amp; Kê đơn</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
-                <button onclick="selectArchProcess(3)" id="arch-btn-3" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-emerald-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-04: Bán Online</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.5 • O2O 30 phút</span>
+                <button onclick="selectArchProcess(3)" id="arch-btn-3" class="arch-btn text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-04: Bán Online O2O</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.5 • Giao hàng 30 phút</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
-                <button onclick="selectArchProcess(8)" id="arch-btn-8" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-emerald-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-09: Khách hàng CRM</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.10 • F-Reward</span>
+                <button onclick="selectArchProcess(8)" id="arch-btn-8" class="arch-btn col-span-2 text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-09: Quản lý khách hàng CRM</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.10 • F-Reward &amp; Nhắc lịch tái khám tự động</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
               </div>
             </div>
 
-            <!-- Tầng Hỗ trợ -->
-            <div class="p-2 rounded-xl bg-slate-900/80 border border-cyan-500/30">
-              <div class="flex items-center justify-between mb-1.5 px-1">
-                <span class="text-[11px] font-bold text-cyan-300 uppercase flex items-center gap-1.5">
+            <!-- Tầng Hỗ trợ (3 quy trình) -->
+            <div class="p-2.5 sm:p-3 rounded-2xl bg-slate-900/85 border border-cyan-500/30 flex flex-col justify-between shadow-md">
+              <div class="flex items-center justify-between mb-2 px-1">
+                <span class="text-xs sm:text-sm font-bold text-cyan-300 uppercase flex items-center gap-2">
                   <i class="fa-solid fa-screwdriver-wrench text-cyan-400"></i> Tầng Hỗ trợ (3 quy trình)
                 </span>
-                <span class="text-[10px] text-slate-400">Nền tảng & Hạ tầng</span>
+                <span class="text-xs text-cyan-200/70 font-medium">Nền tảng &amp; Hạ tầng</span>
               </div>
-              <div class="grid grid-cols-3 gap-1.5">
-                <button onclick="selectArchProcess(4)" id="arch-btn-4" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-cyan-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-05: Quản lý kho</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.6 • WMS FEFO</span>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="selectArchProcess(4)" id="arch-btn-4" class="arch-btn text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-05: Quản lý kho</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.6 • WMS Barcode &amp; FEFO</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
-                <button onclick="selectArchProcess(5)" id="arch-btn-5" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-cyan-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-06: Tuyển dụng</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.7 • GPP Academy</span>
+                <button onclick="selectArchProcess(5)" id="arch-btn-5" class="arch-btn text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-06: Tuyển dụng &amp; Đào tạo</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.7 • Dược sĩ GPP Academy</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
-                <button onclick="selectArchProcess(6)" id="arch-btn-6" class="arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-cyan-900/40 transition flex items-center justify-between group">
-                  <div class="truncate">
-                    <span class="text-[10px] font-bold text-slate-200 block">QT-07: Quản lý CNTT</span>
-                    <span class="text-[9px] text-slate-400">Hình 2.8 • ERP 99.9%</span>
+                <button onclick="selectArchProcess(6)" id="arch-btn-6" class="arch-btn col-span-2 text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300">
+                  <div class="min-w-0 pr-1">
+                    <span class="arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white">QT-07: Quản lý CNTT &amp; Hạ tầng</span>
+                    <span class="arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300">Hình 2.8 • ERP Cloud &amp; Uptime ≥ 99.9%</span>
                   </div>
-                  <i class="fa-solid fa-magnifying-glass-plus text-[10px] text-slate-500 group-hover:opacity-100 shrink-0 ml-1"></i>
+                  <i class="arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition"></i>
                 </button>
               </div>
             </div>
           </div>
 
           <!-- CỘT PHẢI: KHUNG XEM TRỰC QUAN SƠ ĐỒ KIẾN TRÚC PHÂN RÃ (7 Cols) -->
-          <div class="lg:col-span-7 glass-card p-3 rounded-xl border border-white/10 flex flex-col justify-between">
+          <div class="lg:col-span-7 glass-card p-3.5 sm:p-4 rounded-2xl border border-white/10 flex flex-col justify-between h-full shadow-xl">
             <!-- Header khung xem ảnh -->
-            <div class="flex items-center justify-between pb-2 border-b border-white/10 mb-2">
-              <div>
-                <span id="arch-preview-tier" class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-400/30 uppercase mr-1.5">
+            <div class="flex items-center justify-between pb-2.5 border-b border-white/10 mb-2.5">
+              <div class="flex items-center gap-2 truncate">
+                <span id="arch-preview-tier" class="text-xs font-bold px-2.5 py-0.5 rounded-md bg-purple-500/20 text-purple-300 border border-purple-400/30 uppercase shrink-0">
                   Tầng Quản lý
                 </span>
-                <span id="arch-preview-title" class="text-xs sm:text-sm font-bold text-white">
-                  Hình 2.2: Kiến trúc Quy trình Quản lý chuỗi cung ứng dược phẩm
-                </span>
+                <h3 id="arch-preview-title" class="text-xs sm:text-sm lg:text-base font-bold text-white truncate">
+                  Hình 2.2: Kiến trúc Quản lý chuỗi cung ứng
+                </h3>
               </div>
-              <button id="arch-zoom-btn" onclick="zoomCurrentArch()" class="text-xs px-2.5 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 hover:bg-cyan-500/30 transition flex items-center gap-1 shrink-0 ml-2">
-                <i class="fa-solid fa-magnifying-glass-plus"></i> Phóng to
+              <button id="arch-zoom-btn" onclick="zoomCurrentArch()" class="text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 hover:bg-cyan-500/30 hover:text-white transition flex items-center gap-1.5 shrink-0 ml-2 shadow-sm">
+                <i class="fa-solid fa-expand"></i> Phóng to
               </button>
             </div>
 
             <!-- Vùng ảnh preview -->
-            <div class="w-full h-[220px] sm:h-[250px] bg-slate-950/80 rounded-lg border border-white/10 p-1 flex items-center justify-center overflow-hidden cursor-zoom-in group relative" onclick="zoomCurrentArch()">
-              <img id="arch-preview-img" src="assets/bpmn/hinh_2_2_kientruc_chuoi_cung_ung.png" alt="Sơ đồ Kiến trúc phân rã" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300">
-              <div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-slate-900/90 border border-white/20 text-[10px] text-cyan-300 pointer-events-none opacity-80 group-hover:opacity-100 flex items-center gap-1">
-                <i class="fa-solid fa-expand"></i> Nhấn để xem chi tiết
+            <div class="w-full flex-1 min-h-[340px] sm:min-h-[380px] lg:min-h-[410px] bg-slate-950/90 rounded-xl border border-white/10 p-2 flex items-center justify-center overflow-hidden cursor-zoom-in group relative" onclick="zoomCurrentArch()">
+              <img id="arch-preview-img" src="assets/bpmn/hinh_2_2_kientruc_chuoi_cung_ung.png" alt="Sơ đồ Kiến trúc phân rã" class="max-w-full max-h-full object-contain group-hover:scale-[1.02] transition-transform duration-300">
+              <div class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-slate-900/90 border border-white/20 text-xs text-cyan-300 pointer-events-none opacity-80 group-hover:opacity-100 flex items-center gap-1.5 shadow">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Nhấn để xem toàn màn hình
               </div>
             </div>
 
             <!-- Tóm tắt thông số kiến trúc của quy trình đang chọn -->
-            <div class="grid grid-cols-3 gap-2 mt-2 pt-2 border-t border-white/10 text-[11px]">
-              <div class="bg-slate-900/60 p-1.5 rounded-lg border border-white/5">
-                <span class="text-slate-400 block text-[10px]">Hệ thống hỗ trợ:</span>
-                <strong id="arch-sys-text" class="text-cyan-300 text-[11px] truncate block">ERP SAP, Portal NCC, EDI</strong>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-2.5 pt-2.5 border-t border-white/10">
+              <div class="bg-slate-900/80 p-2.5 sm:p-3 rounded-xl border border-white/10 flex flex-col justify-between">
+                <span class="text-slate-300 text-xs font-semibold flex items-center gap-1.5 mb-1">
+                  <i class="fa-solid fa-server text-cyan-400"></i> Hệ thống hỗ trợ:
+                </span>
+                <strong id="arch-sys-text" class="text-cyan-300 text-xs sm:text-sm font-bold block leading-snug">ERP SAP S/4HANA, Portal NCC, EDI</strong>
               </div>
-              <div class="bg-slate-900/60 p-1.5 rounded-lg border border-white/5">
-                <span class="text-slate-400 block text-[10px]">Đầu vào nhận:</span>
-                <strong id="arch-input-text" class="text-amber-300 text-[11px] truncate block">Dự báo nhu cầu, Tồn kho quầy</strong>
+              <div class="bg-slate-900/80 p-2.5 sm:p-3 rounded-xl border border-white/10 flex flex-col justify-between">
+                <span class="text-slate-300 text-xs font-semibold flex items-center gap-1.5 mb-1">
+                  <i class="fa-solid fa-right-to-bracket text-amber-400"></i> Đầu vào nhận:
+                </span>
+                <strong id="arch-input-text" class="text-amber-300 text-xs sm:text-sm font-bold block leading-snug">Dự báo nhu cầu, Báo cáo tồn kho quầy</strong>
               </div>
-              <div class="bg-slate-900/60 p-1.5 rounded-lg border border-white/5">
-                <span class="text-slate-400 block text-[10px]">Đầu ra bàn giao:</span>
-                <strong id="arch-output-text" class="text-emerald-300 text-[11px] truncate block">Đơn đặt hàng PO & Hợp đồng</strong>
+              <div class="bg-slate-900/80 p-2.5 sm:p-3 rounded-xl border border-white/10 flex flex-col justify-between">
+                <span class="text-slate-300 text-xs font-semibold flex items-center gap-1.5 mb-1">
+                  <i class="fa-solid fa-right-from-bracket text-emerald-400"></i> Đầu ra bàn giao:
+                </span>
+                <strong id="arch-output-text" class="text-emerald-300 text-xs sm:text-sm font-bold block leading-snug">Đơn đặt hàng PO &amp; Hợp đồng phân phối</strong>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Takeaway Bar -->
-        <div class="takeaway-bar py-1.5 px-3 mt-1">
-          <i class="fa-solid fa-circle-check text-cyan-400 text-sm shrink-0"></i>
-          <span class="text-xs text-slate-200">
-            <strong class="text-cyan-300">Ý nghĩa báo cáo:</strong> 10 sơ đồ kiến trúc phân rã (Hình 2.2 – 2.11) chuẩn hóa các khối chức năng Cấp 2, xác định rõ biên giới tác nghiệp giữa các phòng ban và làm cơ sở vững chắc để mô hình hóa BPMN 2.0 chuyên sâu ở Chương 3.
+        <div class="takeaway-bar py-2 px-4 mt-2 rounded-xl flex items-center gap-3">
+          <i class="fa-solid fa-circle-check text-cyan-400 text-base shrink-0"></i>
+          <span class="text-xs sm:text-sm text-slate-200">
+            <strong class="text-cyan-300 font-bold">Ý nghĩa báo cáo:</strong> 10 sơ đồ kiến trúc phân rã Cấp 2 (Hình 2.2 – 2.11) chuẩn hóa các khối chức năng, xác định rõ biên giới tác nghiệp giữa các phòng ban và làm cơ sở thiết kế mô hình BPMN 2.0 chuyên sâu ở Chương 3.
           </span>
         </div>
       </div>

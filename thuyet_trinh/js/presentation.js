@@ -584,7 +584,7 @@ const ARCH_PROCESSES = [
     name: "Quản lý chuỗi cung ứng",
     tier: "Tầng Quản lý",
     tierClass: "bg-purple-500/20 text-purple-300 border-purple-400/30",
-    btnBorder: "border-purple-500/60 bg-purple-950/60 text-purple-200 ring-1 ring-purple-400/50",
+    btnBorder: "border-purple-500/70 bg-purple-950/70 text-purple-200 ring-2 ring-purple-400/50",
     fig: "Hình 2.2",
     img: "assets/bpmn/hinh_2_2_kientruc_chuoi_cung_ung.png",
     title: "Hình 2.2: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chuỗi cung ứng dược phẩm",
@@ -597,7 +597,7 @@ const ARCH_PROCESSES = [
     name: "Quản lý chất lượng",
     tier: "Tầng Quản lý",
     tierClass: "bg-purple-500/20 text-purple-300 border-purple-400/30",
-    btnBorder: "border-purple-500/60 bg-purple-950/60 text-purple-200 ring-1 ring-purple-400/50",
+    btnBorder: "border-purple-500/70 bg-purple-950/70 text-purple-200 ring-2 ring-purple-400/50",
     fig: "Hình 2.3",
     img: "assets/bpmn/hinh_2_3_kientruc_quan_ly_chat_luong.png",
     title: "Hình 2.3: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chất lượng dược phẩm (QA/QC)",
@@ -610,7 +610,7 @@ const ARCH_PROCESSES = [
     name: "Bán thuốc tại nhà thuốc",
     tier: "Tầng Cốt lõi",
     tierClass: "bg-emerald-500/20 text-emerald-300 border-emerald-400/30",
-    btnBorder: "border-emerald-500/60 bg-emerald-950/60 text-emerald-200 ring-1 ring-emerald-400/50",
+    btnBorder: "border-emerald-500/70 bg-emerald-950/70 text-emerald-200 ring-2 ring-emerald-400/50",
     fig: "Hình 2.4",
     img: "assets/bpmn/hinh_2_4_kientruc_ban_thuoc_tai_nha_thuoc.png",
     title: "Hình 2.4: Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc tại nhà thuốc",
@@ -623,7 +623,7 @@ const ARCH_PROCESSES = [
     name: "Bán thuốc online (O2O)",
     tier: "Tầng Cốt lõi",
     tierClass: "bg-emerald-500/20 text-emerald-300 border-emerald-400/30",
-    btnBorder: "border-emerald-500/60 bg-emerald-950/60 text-emerald-200 ring-1 ring-emerald-400/50",
+    btnBorder: "border-emerald-500/70 bg-emerald-950/70 text-emerald-200 ring-2 ring-emerald-400/50",
     fig: "Hình 2.5",
     img: "assets/bpmn/hinh_2_5_kientruc_ban_thuoc_online.png",
     title: "Hình 2.5: Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc online (O2O)",
@@ -636,7 +636,7 @@ const ARCH_PROCESSES = [
     name: "Quản lý kho dược phẩm",
     tier: "Tầng Hỗ trợ",
     tierClass: "bg-cyan-500/20 text-cyan-300 border-cyan-400/30",
-    btnBorder: "border-cyan-500/60 bg-cyan-950/60 text-cyan-200 ring-1 ring-cyan-400/50",
+    btnBorder: "border-cyan-500/70 bg-cyan-950/70 text-cyan-200 ring-2 ring-cyan-400/50",
     fig: "Hình 2.6",
     img: "assets/bpmn/hinh_2_6_kientruc_quan_ly_kho.png",
     title: "Hình 2.6: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý kho dược phẩm (WMS)",
@@ -649,7 +649,7 @@ const ARCH_PROCESSES = [
     name: "Tuyển dụng và đào tạo",
     tier: "Tầng Hỗ trợ",
     tierClass: "bg-cyan-500/20 text-cyan-300 border-cyan-400/30",
-    btnBorder: "border-cyan-500/60 bg-cyan-950/60 text-cyan-200 ring-1 ring-cyan-400/50",
+    btnBorder: "border-cyan-500/70 bg-cyan-950/70 text-cyan-200 ring-2 ring-cyan-400/50",
     fig: "Hình 2.7",
     img: "assets/bpmn/hinh_2_7_kientruc_tuyen_dung_dao_tao.png",
     title: "Hình 2.7: Sơ đồ Kiến trúc phân rã – Quy trình Tuyển dụng và đào tạo Dược sĩ",
@@ -662,7 +662,7 @@ const ARCH_PROCESSES = [
     name: "Quản lý công nghệ thông tin",
     tier: "Tầng Hỗ trợ",
     tierClass: "bg-cyan-500/20 text-cyan-300 border-cyan-400/30",
-    btnBorder: "border-cyan-500/60 bg-cyan-950/60 text-cyan-200 ring-1 ring-cyan-400/50",
+    btnBorder: "border-cyan-500/70 bg-cyan-950/70 text-cyan-200 ring-2 ring-cyan-400/50",
     fig: "Hình 2.8",
     img: "assets/bpmn/hinh_2_8_kientruc_quan_ly_cntt.png",
     title: "Hình 2.8: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý công nghệ thông tin & Hạ tầng số",
@@ -675,7 +675,7 @@ const ARCH_PROCESSES = [
     name: "Quản lý tài chính – Kế toán",
     tier: "Tầng Quản lý",
     tierClass: "bg-purple-500/20 text-purple-300 border-purple-400/30",
-    btnBorder: "border-purple-500/60 bg-purple-950/60 text-purple-200 ring-1 ring-purple-400/50",
+    btnBorder: "border-purple-500/70 bg-purple-950/70 text-purple-200 ring-2 ring-purple-400/50",
     fig: "Hình 2.9",
     img: "assets/bpmn/hinh_2_9_kientruc_tai_chinh_ke_toan.png",
     title: "Hình 2.9: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tài chính – Kế toán",
@@ -688,7 +688,7 @@ const ARCH_PROCESSES = [
     name: "Quan hệ khách hàng (CRM)",
     tier: "Tầng Cốt lõi",
     tierClass: "bg-emerald-500/20 text-emerald-300 border-emerald-400/30",
-    btnBorder: "border-emerald-500/60 bg-emerald-950/60 text-emerald-200 ring-1 ring-emerald-400/50",
+    btnBorder: "border-emerald-500/70 bg-emerald-950/70 text-emerald-200 ring-2 ring-emerald-400/50",
     fig: "Hình 2.10",
     img: "assets/bpmn/hinh_2_10_kientruc_quan_he_khach_hang_crm.png",
     title: "Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)",
@@ -701,7 +701,7 @@ const ARCH_PROCESSES = [
     name: "Quản lý tuân thủ pháp lý & dược",
     tier: "Tầng Quản lý",
     tierClass: "bg-purple-500/20 text-purple-300 border-purple-400/30",
-    btnBorder: "border-purple-500/60 bg-purple-950/60 text-purple-200 ring-1 ring-purple-400/50",
+    btnBorder: "border-purple-500/70 bg-purple-950/70 text-purple-200 ring-2 ring-purple-400/50",
     fig: "Hình 2.11",
     img: "assets/bpmn/hinh_2_11_kientruc_tuan_thu_phap_ly_duoc.png",
     title: "Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược",
@@ -727,7 +727,7 @@ window.selectArchProcess = function(idx) {
   
   if (tierEl) {
     tierEl.textContent = p.tier;
-    tierEl.className = `text-[10px] font-bold px-2 py-0.5 rounded border uppercase mr-1.5 ${p.tierClass}`;
+    tierEl.className = `text-xs font-bold px-2.5 py-0.5 rounded-md border uppercase shrink-0 ${p.tierClass}`;
   }
   if (titleEl) titleEl.textContent = `${p.fig}: Kiến trúc ${p.name}`;
   if (imgEl) {
@@ -742,10 +742,22 @@ window.selectArchProcess = function(idx) {
   for (let i = 0; i < ARCH_PROCESSES.length; i++) {
     const btn = document.getElementById(`arch-btn-${i}`);
     if (btn) {
+      const isSpan2 = (i === 8 || i === 6);
+      const spanClass = isSpan2 ? "col-span-2 " : "";
+      const titleSpan = btn.querySelector('.arch-btn-title');
+      const descSpan = btn.querySelector('.arch-btn-desc');
+      const iconEl = btn.querySelector('.arch-btn-icon');
+      
       if (i === idx) {
-        btn.className = `arch-btn text-left p-1.5 rounded-lg border transition flex items-center justify-between group shadow-md ${p.btnBorder}`;
+        btn.className = `arch-btn ${spanClass}text-left p-2 sm:p-2.5 rounded-xl border transition flex items-center justify-between group shadow-lg ${p.btnBorder}`;
+        if (titleSpan) titleSpan.className = 'arch-btn-title text-xs sm:text-sm font-bold text-white block truncate';
+        if (descSpan) descSpan.className = 'arch-btn-desc text-[11px] sm:text-xs text-white/80 block truncate';
+        if (iconEl) iconEl.className = 'arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-white shrink-0 ml-1.5';
       } else {
-        btn.className = "arch-btn text-left p-1.5 rounded-lg border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300";
+        btn.className = `arch-btn ${spanClass}text-left p-2 sm:p-2.5 rounded-xl border border-white/10 bg-slate-800/60 hover:bg-slate-700/60 transition flex items-center justify-between group text-slate-300`;
+        if (titleSpan) titleSpan.className = 'arch-btn-title text-xs sm:text-sm font-bold text-slate-200 block truncate group-hover:text-white';
+        if (descSpan) descSpan.className = 'arch-btn-desc text-[11px] sm:text-xs text-slate-400 block truncate group-hover:text-slate-300';
+        if (iconEl) iconEl.className = 'arch-btn-icon fa-solid fa-magnifying-glass-plus text-xs text-slate-500 group-hover:text-slate-300 shrink-0 ml-1.5 transition';
       }
     }
   }
