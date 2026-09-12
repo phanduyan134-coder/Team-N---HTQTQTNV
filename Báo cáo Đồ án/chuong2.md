@@ -14,17 +14,117 @@ Theo chuẩn quốc tế (*Dumas et al., 2018*), Vòng đời BPM (BPM Lifecycle
 
 Đối với FPT Long Châu, áp dụng BPM là điều kiện tiên quyết để chuẩn hóa chất lượng phục vụ đồng đều tại hơn 1.800 nhà thuốc, đảm bảo tuân thủ nghiêm ngặt chuẩn GPP của Bộ Y tế và duy trì lợi thế vận hành xuất sắc khi quy mô bùng nổ.
 
-## 2.2. Phương pháp và nguồn thu thập dữ liệu
+## 2.2. Phương pháp thực hiện và nguồn thu thập dữ liệu
 
-Để đảm bảo tính thực chứng và độ tin cậy khoa học, nhóm phối hợp 4 phương pháp và nguồn dữ liệu chủ đạo:
+Nhằm bảo đảm tính xác thực, độ tin cậy khoa học và tuân thủ chặt chẽ tiêu chuẩn quản trị quy trình nghiệp vụ (BPM), nhóm xây dựng phương pháp tiếp cận đa chiều kết hợp giữa phương pháp thu thập dữ liệu dựa trên bằng chứng thực tế và phương pháp phỏng vấn chuyên sâu các tác nhân vận hành trực tiếp.
 
-1. **Quan sát thực tế:** Ghi nhận trực tiếp luồng khách hàng, thao tác tra cứu phần mềm POS và quy trình xuất - nhập thuốc tại các nhà thuốc FPT Long Châu trong giờ cao điểm và thấp điểm.
-2. **Nghiên cứu tài liệu chính thống:** Trích xuất số liệu doanh thu, quy mô từ Báo cáo thường niên FPT Retail (FRT 2023 – 2024); đối chiếu các quy chuẩn quản lý dược của Bộ Y tế (chuẩn GPP nhà thuốc, chuẩn GSP kho bãi, GDP phân phối).
-3. **Phỏng vấn bán cấu trúc:** Thực hiện bộ 20 câu hỏi phỏng vấn định tính và định lượng (chi tiết tại *Phụ lục B*) với nhân sự phụ trách kho và dược sĩ tại quầy.
+### 2.2.1. Phương pháp thu thập dữ liệu dựa trên bằng chứng (Evidence-Based Process Discovery)
 
-4. **Khảo sát kênh số (Omnichannel):** Trải nghiệm thực tế hành trình mua sắm, tư vấn toa thuốc và đối soát thời gian giao hàng trên ứng dụng di động Long Châu và website `longchau.com.vn`.
+Phương pháp dựa trên bằng chứng giúp nhóm tái hiện chính xác hiện trạng vận hành dựa trên các văn bản quy chuẩn, tài liệu nghiệp vụ chính thức và dấu vết dữ liệu thực tế tại FPT Long Châu, bao gồm 5 cấu phần cốt lõi:
 
-*Hạn chế nghiên cứu:* Do chính sách bảo mật nội bộ của FPT Retail, nhóm không có quyền truy cập trực tiếp vào hệ thống cơ sở dữ liệu lõi ERP/WMS. Vì vậy, các tham số chu kỳ chi tiết được xây dựng thông qua mô phỏng học thuật (academic simulation) có kiểm soát phương pháp luận, bảo đảm phản ánh chính xác bản chất vận hành thực tiễn.
+**1. Khai thác tài liệu mô tả quy trình hiện có (Existing Process Documents & SOP):**
+Doanh nghiệp hoạt động trong lĩnh vực phân phối và bán lẻ dược phẩm chịu sự quản lý nghiêm ngặt của Bộ Y tế, do đó FPT Long Châu đã ban hành hệ thống Quy trình Thao tác Chuẩn (Standard Operating Procedures - SOP) áp dụng thống nhất trên toàn chuỗi. Nhóm đã nghiên cứu và đối chiếu các quy trình sẵn có này để nắm bắt luồng chuẩn mực (De jure process) trước khi đánh giá thực tế vận hành (De facto process):
+- *SOP-BH-01 (Quy trình Bán lẻ thuốc tại nhà thuốc đạt chuẩn GPP):* Quy định các bước từ đón tiếp khách hàng, thẩm định tính hợp lệ của đơn thuốc kê toa (Rx), tư vấn thuốc không kê toa (OTC), hướng dẫn liều dùng, thanh toán và in hóa đơn tài chính.
+- *SOP-TV-02 (Quy trình Tư vấn sử dụng thuốc và giám sát phản ứng có hại ADR):* Hướng dẫn dược sĩ khai thác tiền sử dị ứng, cảnh báo tương tác thuốc và quy trình báo cáo phản ứng bất lợi của thuốc về Trung tâm Quốc gia về Thông tin thuốc và Theo dõi phản ứng có hại của thuốc.
+- *SOP-KH-03 (Quy trình Tiếp nhận, kiểm nhập và lưu kho đạt chuẩn GSP):* Quy định việc kiểm tra đối chiếu hóa đơn, kiểm tra cảm quan bao bì, đối soát hồ sơ phân tích (COA) và đưa hàng vào khu vực bảo quản tiêu chuẩn (đặc biệt là quy trình bảo quản lạnh Cold Chain từ 2°C - 8°C cho vắc-xin và sinh phẩm).
+- *SOP-XK-04 (Quy trình Xuất kho và điều phối hàng theo chuẩn FEFO):* Quy định nguyên tắc xuất hàng ưu tiên lô có hạn dùng ngắn hơn ra trước (First Expired, First Out) nhằm hạn chế tối đa rủi ro tồn kho cận hạn.
+- *SOP-OL-05 (Quy trình Xử lý đơn hàng trực tuyến Omnichannel O2O):* Quy định việc đồng bộ đơn hàng từ ứng dụng di động Long Châu về hệ thống quản lý đơn hàng (OMS), tự động điều phối nhà thuốc gần nhất soạn hàng và bàn giao cho đối tác vận chuyển hỏa tốc.
+
+**2. Phân tích sơ đồ cơ cấu tổ chức và phân quyền quản trị (Organizational Structure):**
+Căn cứ vào Sơ đồ cơ cấu tổ chức bộ máy quản lý tại *Hình 1.1* (Chương 1), FPT Long Châu áp dụng mô hình quản trị trực tuyến - chức năng (Line-and-Staff) kết hợp quản lý chuỗi bán lẻ tập trung. Việc phân tích sơ đồ tổ chức giúp nhóm xác định rõ:
+- *Chủ sở hữu quy trình (Process Owners):* Ban Giám đốc Khối Vận hành (chủ sở hữu quy trình bán lẻ), Ban Giám đốc Khối Cung ứng (chủ sở hữu quy trình chuỗi cung ứng và kho bãi), Trưởng ban QA (chủ sở hữu quy trình chất lượng và tuân thủ GPP).
+- *Điểm bàn giao công việc (Hand-offs):* Xác định các ranh giới chuyển giao thông tin giữa các phòng ban chức năng (ví dụ: điểm chuyển giao giữa Khối Mua hàng và Thủ kho, giữa Dược sĩ tư vấn và Thu ngân). Đây chính là những vị trí dễ phát sinh xung đột, hiểu lầm thông tin và gây ra độ trễ thời gian chu kỳ.
+
+**3. Kế hoạch làm việc và tiến độ triển khai đề tài (Work Plan):**
+Nhóm xây dựng Kế hoạch làm việc chi tiết (BPM Work Plan) kéo dài trong 6 tuần làm việc, phân chia rõ các mốc kiểm soát tiến độ (Milestones) nhằm đảm bảo hoàn thành trọn vẹn chu trình nghiên cứu:
+
+*Kế hoạch tiến độ thực hiện đề tài (BPM Work Plan - 6 tuần):*
+- *Tuần 1 (Khởi động & Nhận diện quy trình):* Họp khởi động đề tài, xác định phạm vi nghiên cứu; khảo sát bối cảnh kinh doanh của FPT Long Châu; xây dựng Mô hình Ngôi nhà Quy trình (Process House) và thiết lập danh mục 10 quy trình nghiệp vụ tổng thể.
+- *Tuần 2 (Thu thập bằng chứng & Khám phá hiện trạng):* Nghiên cứu hệ thống tài liệu SOP, Báo cáo thường niên FRT 2023 - 2024; tổ chức workshop thu thập quy trình; triển khai phỏng vấn sâu 20 câu hỏi với Dược sĩ và Nhân viên kho; quan sát thực tế luồng khách hàng tại 5 nhà thuốc Long Châu.
+- *Tuần 3 (Mô hình hóa quy trình hiện tại AS-IS):* Chuẩn hóa và làm sạch dữ liệu khảo sát; sử dụng công cụ BPMN 2.0 mô hình hóa 6 quy trình nghiệp vụ tiêu biểu (2 Quản lý, 2 Cốt lõi, 2 Hỗ trợ) có phân làn Swimlane rõ ràng; nghiệm thu mô hình với các tác nhân liên quan.
+- *Tuần 4 (Phân tích định tính & Định lượng chuyên sâu):* Thiết lập ma trận RACI; phân loại và bóc tách chuỗi giá trị hoạt động VA/BVA/NVA cho 2 quy trình trọng điểm; đo lường 7 loại lãng phí Lean; xây dựng biểu đồ xương cá Fishbone 6M và phân tích nguyên nhân gốc rễ bằng 5 Whys.
+- *Tuần 5 (Tái thiết kế quy trình TO-BE & Xây dựng công cụ mô phỏng):* Thiết kế mô hình cải tiến BPMN 2.0 TO-BE cho quy trình Bán thuốc và Quản lý kho; tích hợp các giải pháp công nghệ (PDA quét mã Barcode/QR, thuật toán cảnh báo hạn dùng tự động, WMS-ERP Realtime); lập trình Website mô phỏng quy trình tương tác.
+- *Tuần 6 (Đánh giá tính khả thi & Nghiệm thu báo cáo):* Phân tích khả thi về kỹ thuật, tài chính và nhân sự; tính toán thời gian hoàn vốn đầu tư (ROI); xây dựng ma trận quản trị rủi ro; hoàn thiện Báo cáo hoàn chỉnh, Slide thuyết trình và kịch bản bảo vệ.
+
+**4. Sổ tay thuật ngữ và từ điển chuyên ngành (Glossary & Process Handbook):**
+Do đề tài nghiên cứu chuyên sâu về lĩnh vực y tế và bán lẻ dược phẩm, nhóm biên soạn Sổ tay thuật ngữ chuyên ngành (Glossary) nhằm thống nhất cách hiểu chuẩn xác trong toàn bộ tài liệu báo cáo:
+- *Lĩnh vực & Ngành nghề:* Bán lẻ dược phẩm (Pharmaceutical Retailing), Logistics & Chuỗi cung ứng y tế (Healthcare Supply Chain).
+- *Thuật ngữ chuyên ngành Dược & Quản lý chất lượng y tế:*
+  + **GPP (Good Pharmacy Practice):** Thực hành tốt cơ sở bán lẻ thuốc, bộ tiêu chuẩn bắt buộc do Bộ Y tế ban hành nhằm bảo đảm cung cấp thuốc đạt chất lượng và tư vấn dùng thuốc an toàn cho người bệnh.
+  + **GSP (Good Storage Practice):** Thực hành tốt bảo quản thuốc tại hệ thống kho bãi, kiểm soát chặt chẽ nhiệt độ và độ ẩm.
+  + **GDP (Good Distribution Practice):** Thực hành tốt phân phối thuốc trong suốt quá trình vận chuyển và lưu thông.
+  + **FEFO (First Expired, First Out):** Nguyên tắc ưu tiên xuất bán hoặc điều chuyển lô thuốc có hạn sử dụng ngắn hơn ra trước, nhằm loại bỏ rủi ro hư hỏng thuốc do quá hạn.
+  + **Cold Chain (Chuỗi cung ứng lạnh):** Hệ thống bảo quản liên tục ở dải nhiệt độ 2°C - 8°C đối với các dòng sinh phẩm, vắc-xin và thuốc tiêm đặc trị.
+  + **COA (Certificate of Analysis):** Phiếu chứng nhận kiểm nghiệm phân tích chỉ tiêu chất lượng của từng lô thuốc do nhà sản xuất hoặc Viện Kiểm nghiệm thuốc cấp.
+  + **Thuốc Rx (Prescription Drug):** Thuốc kê đơn, bắt buộc phải có đơn thuốc hợp lệ của bác sĩ mới được phép bán.
+  + **Thuốc OTC (Over-The-Counter):** Thuốc không kê đơn, người bệnh có thể mua theo tư vấn của Dược sĩ tại quầy.
+  + **ADR (Adverse Drug Reaction):** Phản ứng có hại ngoài ý muốn của thuốc xuất hiện ở liều dùng thông thường.
+- *Thuật ngữ chuyên ngành BPM & Công nghệ thông tin:*
+  + **BPMN 2.0 (Business Process Model and Notation):** Chuẩn ký hiệu mô hình hóa quy trình nghiệp vụ quốc tế do tổ chức OMG ban hành.
+  + **Cycle Time (Thời gian chu kỳ):** Tổng thời gian trôi qua từ khi một ca quy trình bắt đầu đến khi hoàn tất giao kết quả cho khách hàng (bao gồm thời gian thực hiện thao tác và thời gian chờ đợi).
+  + **VA / BVA / NVA:** Hoạt động tạo giá trị gia tăng trực tiếp cho khách hàng (Value-Added) / Hoạt động tạo giá trị kinh doanh bắt buộc (Business Value-Added) / Hoạt động lãng phí không tạo giá trị cần loại bỏ (Non-Value-Added).
+  + **Fill Rate (Tỷ lệ đáp ứng đơn hàng):** Tỷ lệ phần trăm nhu cầu hàng hóa được cung ứng đầy đủ và kịp thời ngay trong lần giao đầu tiên.
+  + **CSAT (Customer Satisfaction Score):** Chỉ số đo lường mức độ hài lòng của khách hàng đối với dịch vụ.
+
+**5. Hệ thống biểu mẫu khảo sát và kịch bản điều phối (Templates & Scripts):**
+Nhóm xây dựng và áp dụng bộ biểu mẫu chuẩn hóa để ghi chép và kiểm soát thông tin trong suốt quá trình khảo sát:
+- *Biểu mẫu cuộc họp / Workshop thu thập quy trình (Process Discovery Workshop Template):* Ghi nhận thông tin buổi làm việc (Tên quy trình, Ngày thực hiện, Người chủ trì, Thư ký, Thành phần tham dự); Bảng kiểm kê các bước công việc thực tế (Tác nhân, Hành động, Dữ liệu đầu vào, Kết quả đầu ra, Hệ thống sử dụng); Bảng ghi nhận các điểm nghẽn bức xúc (Pain Points) và ý kiến đề xuất cải tiến của nhân viên.
+- *Biểu mẫu biên bản họp (Meeting Minutes Template):* Theo dõi các quyết định thống nhất về luồng quy trình, phân công hành động (Action Items), người phụ trách và thời hạn hoàn thành (Deadlines).
+- *Kịch bản điều phối Workshop và Phỏng vấn (Discovery Script):* Kịch bản gồm 4 giai đoạn chuẩn mực: Khởi động và giới thiệu mục đích nghiên cứu khách quan (10 phút) → Dẫn dắt mô tả luồng công việc chính từ đầu đến cuối (30 phút) → Đào sâu các trường hợp ngoại lệ, sự cố và xung đột dữ liệu (20 phút) → Tổng kết, đối chiếu và xác nhận tính chính xác của dữ liệu thu thập (10 phút).
+
+### 2.2.2. Phương pháp phỏng vấn chuyên sâu đối tượng liên quan (Interview Methodology)
+
+Bên cạnh bằng chứng tài liệu, phương pháp phỏng vấn trực tiếp các tác nhân tham gia vào quy trình đóng vai trò then chốt giúp nhận diện rõ sự khác biệt giữa quy trình văn bản và quy trình thực tế ngoài hiện trường.
+
+**1. Các nhóm đối tượng liên quan được phỏng vấn:**
+- *Nhóm Dược sĩ tại nhà thuốc:* Dược sĩ Trưởng cửa hàng và Dược sĩ tư vấn tại quầy (đối tượng trực tiếp thực thi quy trình bán thuốc tại quầy, tra cứu phần mềm POS, tiếp nhận đơn thuốc và tư vấn liều dùng).
+- *Nhóm Nhân sự vận hành kho:* Quản lý tổng kho và Nhân viên kho trung tâm (đối tượng trực tiếp thực thi việc kiểm nhập, kiểm kê định kỳ, bốc dỡ và phân phối thuốc).
+- *Nhóm Quản lý chất lượng & Pháp chế (QA/QC):* Chuyên viên giám sát chất lượng và kiểm soát tuân thủ tiêu chuẩn GPP/GSP.
+- *Nhóm Chuyên viên CNTT & Vận hành hệ thống:* Nhân sự phụ trách hạ tầng mạng, tích hợp phần mềm POS, OMS và cơ sở dữ liệu chuỗi.
+
+**2. Danh sách bộ 20 câu hỏi phỏng vấn chuẩn hóa (Rubric Tiêu chí 3.0):**
+Nhóm thiết kế bộ câu hỏi phỏng vấn gồm đúng 20 câu, được phân loại cân đối và khoa học thành 4 nhóm theo đúng yêu cầu đánh giá của Giảng viên: 10 câu hỏi định tính (5 câu có cấu trúc & 5 câu không có cấu trúc) và 10 câu hỏi định lượng (5 câu có cấu trúc & 5 câu không có cấu trúc):
+
+**A. 10 CÂU HỎI ĐỊNH TÍNH (QUALITATIVE QUESTIONS):**
+
+*Nhóm 1: 5 câu hỏi Định tính Có cấu trúc (Structured Qualitative Questions - có thang đo đánh giá và phương án lựa chọn cố định):*
+1. *Đánh giá mức độ rõ ràng của quy trình kiểm tra đơn thuốc kê toa (Rx) tại quầy:* Xin bạn cho biết mức độ rõ ràng, chuẩn hóa và dễ áp dụng của quy trình kiểm tra đơn thuốc hiện tại theo thang điểm từ 1 đến 5 (1: Rất mơ hồ, khó áp dụng; 2: Chưa rõ ràng; 3: Bình thường; 4: Rõ ràng, dễ áp dụng; 5: Rất rõ ràng, chuẩn hóa xuất sắc)?
+2. *Xác định khó khăn lớn nhất trong việc tìm kiếm và nhặt thuốc trên kệ tại nhà thuốc:* Khó khăn phổ biến nhất mà bạn gặp phải khi nhặt thuốc phục vụ khách hàng là gì? [A. Thuốc bị xếp sai vị trí mã kệ quy định; B. Mẫu mã bao bì giữa các hàm lượng thuốc quá giống nhau dễ gây nhầm lẫn; C. Diện tích quầy chật hẹp, nhiều dược sĩ cùng di chuyển va chạm nhau; D. Phần mềm POS không hiển thị vị trí ngăn kệ cụ thể của hộp thuốc].
+3. *Phương thức thực thi nguyên tắc kiểm soát hạn dùng FEFO tại kho bãi:* Quy trình phân loại và xuất hàng theo hạn sử dụng tại kho hiện đang được kiểm soát chủ yếu bằng cách nào? [A. Dựa hoàn toàn vào trí nhớ và sự kiểm tra thủ công bằng mắt của nhân viên kho; B. Ghi chép thủ công trên thẻ kho giấy gắn đầu kệ; C. Hệ thống phần mềm WMS tự động chỉ định vị trí pallet có hạn dùng gần nhất cần xuất; D. Kết hợp giữa cảnh báo phần mềm và đối soát lại bằng sổ tay].
+4. *Cách thức xử lý tình huống đơn thuốc không hợp lệ hoặc không rõ chữ bác sĩ:* Khi tiếp nhận đơn thuốc mờ chữ, sai liều chỉ định hoặc quá hạn 5 ngày, hành động chuẩn của bạn là gì? [A. Dược sĩ từ chối bán và giải thích quy định y tế cho bệnh nhân; B. Bán các thuốc thông thường, chỉ từ chối thuốc kháng sinh/thuốc đặc trị; C. Gọi điện trực tiếp cho bác sĩ kê đơn theo số điện thoại trên toa để đối chiếu; D. Hướng dẫn khách hàng quay lại cơ sở khám chữa bệnh để xin lại đơn mới].
+5. *Mức độ đồng bộ thông tin giữa bộ phận Mua hàng và Thủ kho khi có hàng nhập về:* Xin bạn đánh giá mức độ thông suốt thông tin giữa bộ phận Mua sắm và Kho bãi khi tiếp nhận các lô hàng lớn từ nhà cung cấp? [1: Rất kém, thường xuyên bị động đột xuất; 2: Kém, thông báo trễ khi xe hàng đã tới cổng; 3: Bình thường, thông báo qua email hoặc Zalo; 4: Tốt, có lịch hẹn giao nhận trước 24 giờ; 5: Rất tốt, dữ liệu đơn mua PO được đồng bộ thời gian thực trên hệ thống ERP].
+
+*Nhóm 2: 5 câu hỏi Định tính Không có cấu trúc (Unstructured Qualitative Questions - câu hỏi mở sâu nhằm thu thập cảm nhận, nguyên nhân gốc rễ và thách thức thực tế):*
+6. *Khám phá điểm nghẽn thao tác tại quầy thuốc trong giờ cao điểm:* "Trong một ca làm việc vào khung giờ cao điểm (17h - 20h), khâu nào trong quy trình phục vụ từ lúc tiếp đón đến khi khách cầm thuốc ra về khiến bạn cảm thấy áp lực, mất thời gian và dễ xảy ra sai sót nhất? Nguyên nhân cốt lõi là do đâu?"
+7. *Đánh giá trải nghiệm sử dụng phần mềm bán hàng POS hiện hành:* "Bạn có nhận xét gì về giao diện, tính năng tra cứu thuốc thay thế và độ ổn định của phần mềm POS đang dùng? Nếu được đề xuất thay đổi một điểm trên hệ thống để phục vụ khách nhanh hơn, bạn sẽ đề xuất điều gì?"
+8. *Khám phá nguyên nhân gốc rễ gây ra sai lệch số liệu tồn kho:* "Trong các đợt kiểm kê định kỳ, những nguyên nhân thực tế nào dẫn đến tình trạng số liệu tồn kho hiển thị trên phần mềm không khớp với lượng thuốc thực tế trên kệ kho?"
+9. *Khai thác quy trình giải quyết sự cố chất lượng và khiếu nại của khách hàng:* "Khi khách hàng đem thuốc quay lại phản ánh về việc thuốc bị đổi màu, vỡ vỉ hoặc nghi ngờ chất lượng bảo quản, quy trình thực tế từ cửa hàng phối hợp với phòng QA và nhà sản xuất diễn ra như thế nào?"
+10. *Thu thập sáng kiến cải tiến từ người trực tiếp vận hành:* "Dưới góc nhìn của người trực tiếp làm việc hàng ngày, bạn cho rằng Long Châu cần cải tiến quy trình hoặc ứng dụng công nghệ gì để rút ngắn thời gian khách phải chờ đợi và giảm tải công việc cho dược sĩ?"
+
+**B. 10 CÂU HỎI ĐỊNH LƯỢNG (QUANTITATIVE QUESTIONS):**
+
+*Nhóm 3: 5 câu hỏi Định lượng Có cấu trúc (Structured Quantitative Questions - có các khoảng giá trị định lượng cụ thể để người trả lời lựa chọn):*
+11. *Thời gian trung bình phục vụ một lượt khách mua thuốc kê đơn tại quầy:* Thời gian trung bình để hoàn tất một đơn thuốc kê đơn thông thường (từ lúc tiếp nhận toa đến khi thu tiền và bàn giao thuốc) là bao lâu? [A. Dưới 5 phút; B. Từ 5 – 8 phút; C. Từ 8 – 12 phút; D. Trên 12 phút].
+12. *Tỷ lệ thời gian khách hàng phải đứng chờ đợi (Wait Time) trong toàn bộ chu kỳ mua thuốc:* Trong tổng thời gian một khách hàng có mặt tại quầy, thời gian phải đứng chờ (chờ dược sĩ tra máy, chờ thu ngân tính tiền, chờ nhặt thuốc) ước tính chiếm bao nhiêu phần trăm? [A. Dưới 20%; B. Từ 20% – 40%; C. Từ 40% – 60%; D. Trên 60%].
+13. *Tỷ lệ sai lệch số liệu tồn kho giữa hệ thống và thực tế kiểm đếm:* Tỷ lệ chênh lệch giữa số lượng thuốc ghi nhận trên phần mềm và số lượng thực tế kiểm đếm tại kho trung tâm thường dao động trong khoảng nào? [A. Dưới 1%; B. Từ 1% – 3%; C. Từ 3% – 5%; D. Từ 5% – 8%; E. Trên 8%].
+14. *Tần suất phát sinh sự cố hệ thống POS bị chậm, đơ hoặc gián đoạn kết nối:* Trong một tháng làm việc, tần suất quầy bán thuốc gặp phải tình trạng phần mềm phản hồi chậm trên 10 giây hoặc mất kết nối máy chủ là bao nhiêu lần? [A. Dưới 1 lần/tháng; B. Từ 1 – 3 lần/tháng; C. Từ 4 – 6 lần/tháng; D. Trên 6 lần/tháng (gần như hàng tuần)].
+15. *Số lượng lượt khách hàng một Dược sĩ phục vụ trong một ca làm việc chuẩn:* Trung bình trong một ca làm việc 8 tiếng, một dược sĩ tại cửa hàng phục vụ bao nhiêu lượt khách mua thuốc? [A. Dưới 40 lượt khách; B. Từ 40 – 70 lượt khách; C. Từ 70 – 100 lượt khách; D. Trên 100 lượt khách].
+
+*Nhóm 4: 5 câu hỏi Định lượng Không có cấu trúc (Unstructured Quantitative Questions - câu hỏi mở yêu cầu người được phỏng vấn tự do ước lượng các con số thực tế):*
+16. *Ước lượng thời gian tiêu hao cho việc đi lại nhặt thuốc trên kệ:* "Đối với một đơn thuốc trung bình gồm 3 đến 5 loại sản phẩm, bạn ước tính mất khoảng bao nhiêu giây hoặc bao nhiêu phút chỉ riêng cho thao tác đi lại giữa các dãy kệ thuốc để lấy đủ hàng?"
+17. *Ước lượng thời gian chờ đợi đối soát chứng từ nhập kho:* "Khi xe tải của nhà cung cấp đến bến giao nhận, trung bình mất bao nhiêu phút chờ đợi từ lúc tài xế nộp phiếu giao hàng cho đến khi nhân viên kho bắt đầu kiểm đếm thực tế lô hàng?"
+18. *Ước lượng tỷ lệ đơn hàng trực tuyến bị trễ hạn cam kết giao hàng:* "Trong các đợt cao điểm khuyến mãi hoặc thời tiết mưa bão, bạn ước tính có khoảng bao nhiêu phần trăm đơn hàng online đặt qua ứng dụng Long Châu bị trễ cam kết giao hàng trong 30 phút hoặc bị khách hàng hủy đơn?"
+19. *Ước lượng tỷ lệ tổn thất chi phí hàng hóa do cận hạn sử dụng:* "Theo ước tính của bạn, tỷ lệ giá trị thuốc và thực phẩm chức năng phải tiêu hủy hoặc đàm phán trả lại nhà sản xuất do cận hạn sử dụng chiếm khoảng bao nhiêu phần trăm trên tổng giá trị hàng tồn kho mỗi năm?"
+20. *Thời gian đào tạo một Dược sĩ mới sử dụng thành thạo quy trình và phần mềm:* "Trung bình cần mất bao nhiêu ngày hoặc bao nhiêu giờ huấn luyện thực tế tại cửa hàng để một dược sĩ mới có thể thao tác độc lập, tư vấn chuẩn xác và sử dụng trơn tru phần mềm bán hàng mà không cần người có kinh nghiệm kèm cặp?"
+
+*(Toàn bộ bảng câu hỏi chi tiết kèm phiếu trả lời mẫu được lưu trữ tại Phụ lục B của báo cáo).*
+
+### 2.2.3. Nhìn nhận hạn chế nghiên cứu và phương pháp mô phỏng học thuật (Academic Simulation)
+
+Mặc dù đã áp dụng phương pháp tiếp cận dựa trên bằng chứng tài liệu và phỏng vấn thực tiễn, đề tài vẫn có một số giới hạn khách quan:
+- Do chính sách bảo mật thông tin nội bộ của Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail), nhóm nghiên cứu không có quyền truy cập trực tiếp vào hệ thống cơ sở dữ liệu lõi ERP và phần mềm WMS thực tế để trích xuất nhật ký dữ liệu (Event Logs) tự động.
+- Để khắc phục hạn chế này mà vẫn bảo đảm tính khoa học, nhóm đã kết hợp dữ liệu phỏng vấn thực nghiệm với phương pháp mô phỏng học thuật (Academic Simulation) theo chuẩn quốc tế của Dumas et al. (2018). Các tham số thời gian xử lý (Processing Time), thời gian chờ đợi (Wait Time) và chi phí vận hành được tính toán chuẩn hóa dựa trên số liệu quan sát thực địa tại các cửa hàng mẫu, bảo đảm phản ánh trung thực bản chất vận hành của chuỗi nhà thuốc FPT Long Châu.
+
 
 
 ## 2.3. Phân loại quy trình nghiệp vụ

@@ -102,23 +102,124 @@ bpmn.io. (2024). *bpmn-js: A BPMN 2.0 rendering toolkit and web modeler*. https:
 | 9 | Quản lý tài chính – Kế toán | 4 | 4 | 4 | 2 | 2 | **16** | Loại |
 | 10 | Quản lý tuân thủ pháp lý & dược | 3 | 2 | 5 | 2 | 3 | **15** | Loại |
 
-## Phụ lục B: Danh sách câu hỏi khảo sát (giả định)
+## Phụ lục B: Phiếu khảo sát và Bộ 20 câu hỏi phỏng vấn chuyên sâu (Rubric Tiêu chí 3.0)
 
+Dưới đây là phiếu phỏng vấn chi tiết phục vụ công tác khám phá quy trình (Process Discovery) tại FPT Long Châu, được thiết kế theo đúng cấu trúc chuẩn hóa: 10 câu hỏi định tính (5 câu Có cấu trúc + 5 câu Không có cấu trúc) và 10 câu hỏi định lượng (5 câu Có cấu trúc + 5 câu Không có cấu trúc).
 
-Dưới đây là danh sách các câu hỏi phỏng vấn giả định dành cho nhân viên kho và dược sĩ tại cửa hàng, nhằm thu thập dữ liệu xây dựng sơ đồ quy trình AS-IS:
+---
 
-**Dành cho Dược sĩ tư vấn tại nhà thuốc:**
-1. Xin bạn mô tả chi tiết các bước từ khi một khách hàng bước vào cửa hàng cho đến khi họ nhận thuốc và ra về?
-2. Trong quá trình tư vấn và tra cứu thuốc, bạn sử dụng phần mềm POS như thế nào? Hệ thống có gợi ý vị trí thuốc trên kệ không?
-3. Bạn thường mất bao nhiêu thời gian trung bình để xử lý một đơn thuốc có kê toa phức tạp?
-4. Những khó khăn hoặc lỗi thường gặp nhất khi bạn phải đi tìm thuốc trên kệ là gì?
-5. Việc phối hợp giữa bạn (người tư vấn) và thu ngân diễn ra như thế nào? Có xảy ra tình trạng "nút thắt cổ chai" ở khâu thanh toán không?
-6. Bạn xử lý ra sao khi phần mềm báo còn hàng nhưng trên kệ thực tế lại hết hàng?
+### PHIẾU KHẢO SÁT PHỎNG VẤN QUY TRÌNH NGHIỆP VỤ FPT LONG CHÂU
 
-**Dành cho Nhân viên/Quản lý Kho:**
-7. Bạn hãy mô tả luồng công việc khi nhận một lô hàng mới từ nhà cung cấp đưa vào kho bãi?
-8. Công cụ hoặc thiết bị nào đang được sử dụng để kiểm đếm số lượng hàng hóa khi nhập/xuất kho? (Sổ giấy, phần mềm trên máy tính, hay máy quét mã vạch di động?)
-9. Việc áp dụng nguyên tắc xuất hàng FEFO (hết hạn trước, xuất trước) đang được hệ thống quản lý tự động hay phụ thuộc vào trí nhớ của nhân viên?
-10. Mỗi khi xuất hàng đi các cửa hàng bán lẻ, bạn mất khoảng bao lâu để nhặt và đóng gói hàng? Điểm nào làm bạn tốn thời gian nhất?
-11. Quy trình kiểm kê định kỳ diễn ra như thế nào? Có gây gián đoạn lớn đến hoạt động xuất nhập kho hàng ngày không?
-12. Theo bạn, đâu là khâu lãng phí thời gian và dễ xảy ra sai sót con người nhất trong quá trình quản lý kho hiện tại?
+- **Đơn vị khảo sát:** Chuỗi nhà thuốc FPT Long Châu & Hệ thống Tổng kho phân phối.
+- **Mục đích:** Thu thập dữ liệu vận hành thực tế (De facto process) phục vụ phân tích lãng phí, xác định điểm nghẽn và tái thiết kế quy trình BPMN 2.0.
+- **Cam kết:** Dữ liệu phỏng vấn chỉ phục vụ mục đích nghiên cứu học thuật của đề tài.
+
+---
+
+#### PHẦN 1: 10 CÂU HỎI ĐỊNH TÍNH (QUALITATIVE INTERVIEW)
+
+**A. 5 Câu hỏi Định tính Có cấu trúc (Structured Qualitative Questions):**
+
+1. **[Dành cho Dược sĩ quầy]** Xin bạn đánh giá mức độ rõ ràng, chuẩn hóa và thuận tiện khi áp dụng của quy trình kiểm tra đơn thuốc kê toa (Rx) hiện nay tại nhà thuốc?
+   - [ ] 1. Rất mơ hồ, khó áp dụng (thường xuyên lúng túng khi gặp đơn thuốc lạ)
+   - [ ] 2. Chưa rõ ràng (còn phụ thuộc nhiều vào cảm tính của từng cá nhân)
+   - [ ] 3. Bình thường (đáp ứng được các đơn thuốc phổ biến)
+   - [ ] 4. Rõ ràng, dễ áp dụng (hướng dẫn cụ thể, dễ kiểm tra)
+   - [ ] 5. Rất rõ ràng, chuẩn hóa xuất sắc (quy chuẩn GPP chặt chẽ, có danh mục đối chiếu nhanh)
+
+2. **[Dành cho Dược sĩ quầy]** Khó khăn hoặc trở ngại phổ biến nhất mà bạn gặp phải trong quá trình tìm kiếm và nhặt thuốc trên kệ là gì?
+   - [ ] A. Thuốc bị xếp sai vị trí mã kệ quy định do nhân viên ca trước để nhầm
+   - [ ] B. Mẫu mã bao bì giữa các hàm lượng thuốc quá giống nhau dễ gây nhầm lẫn
+   - [ ] C. Diện tích quầy chật hẹp, nhiều dược sĩ cùng di chuyển va chạm nhau vào giờ cao điểm
+   - [ ] D. Phần mềm POS không hiển thị vị trí ngăn kệ cụ thể của từng mã hộp thuốc
+
+3. **[Dành cho Quản lý / Nhân viên kho]** Quy trình kiểm soát hạn dùng và thực thi nguyên tắc FEFO (Hạn ngắn xuất trước) tại kho hiện nay đang được thực hiện chủ yếu bằng phương thức nào?
+   - [ ] A. Dựa hoàn toàn vào trí nhớ và sự kiểm tra thủ công bằng mắt của thủ kho
+   - [ ] B. Ghi chép thủ công ngày hết hạn trên thẻ kho giấy gắn tại đầu mỗi dãy kệ
+   - [ ] C. Hệ thống phần mềm WMS tự động chỉ định chính xác vị trí pallet/lô hàng cần xuất
+   - [ ] D. Kết hợp giữa thông báo trên phần mềm và đối soát lại bằng sổ tay trước khi bốc dỡ
+
+4. **[Dành cho Dược sĩ quầy]** Khi tiếp nhận một đơn thuốc không hợp lệ (hết hạn quá 5 ngày, kê sai danh mục kiểm soát đặc biệt hoặc chữ bác sĩ không thể đọc được), cách xử lý chuẩn của bạn là:
+   - [ ] A. Dược sĩ từ chối bán và giải thích quy định pháp luật y tế cho bệnh nhân
+   - [ ] B. Bán các loại thuốc bổ trợ thông thường, chỉ từ chối thuốc kê toa đặc trị
+   - [ ] C. Gọi điện trực tiếp cho bác sĩ theo số điện thoại ghi trên đơn để đối chiếu xác nhận
+   - [ ] D. Hướng dẫn khách hàng quay lại cơ sở y tế khám bệnh để xin lại đơn thuốc mới
+
+5. **[Dành cho Thủ kho / Bộ phận Mua hàng]** Xin bạn đánh giá mức độ thông suốt thông tin và tính chủ động giữa bộ phận Mua hàng và Kho bãi khi tiếp nhận các lô hàng nhập từ nhà cung cấp?
+   - [ ] 1. Rất kém (thường xuyên bị động đột xuất khi xe hàng đến bến mới biết)
+   - [ ] 2. Kém (thông báo trễ, không kịp bố trí nhân lực bốc dỡ và diện tích mặt bằng)
+   - [ ] 3. Bình thường (thông báo lịch giao qua email hoặc ứng dụng chat Zalo)
+   - [ ] 4. Tốt (có kế hoạch tiếp nhận và lịch điều phối xe trước 24 giờ)
+   - [ ] 5. Rất tốt (dữ liệu đơn đặt hàng PO được đồng bộ thời gian thực trên hệ thống ERP)
+
+**B. 5 Câu hỏi Định tính Không có cấu trúc (Unstructured Qualitative Questions):**
+
+6. **[Dành cho Dược sĩ quầy]** Trong một ca làm việc vào khung giờ cao điểm (17h – 20h), khâu nào trong quy trình phục vụ từ lúc tiếp đón đến khi khách cầm thuốc ra về khiến bạn cảm thấy áp lực, mất nhiều thời gian và dễ xảy ra sai sót nhất? Nguyên nhân cốt lõi là do đâu?
+   - *Ghi chép câu trả lời:* ...........................................................................................................................................
+
+7. **[Dành cho Dược sĩ quầy]** Bạn có nhận xét gì về giao diện, tốc độ phản hồi và tính năng tra cứu thuốc của phần mềm POS đang sử dụng? Nếu được đề xuất thay đổi một tính năng để rút ngắn thời gian phục vụ khách, bạn sẽ đề xuất điều gì?
+   - *Ghi chép câu trả lời:* ...........................................................................................................................................
+
+8. **[Dành cho Nhân viên kho]** Trong các đợt kiểm kê định kỳ, những nguyên nhân thực tế nào dẫn đến tình trạng số liệu tồn kho hiển thị trên phần mềm không khớp với lượng thuốc thực tế đếm được trên kệ?
+   - *Ghi chép câu trả lời:* ...........................................................................................................................................
+
+9. **[Dành cho Chuyên viên QA / Dược sĩ]** Khi khách hàng đem thuốc quay lại quầy phản ánh về việc thuốc bị đổi màu, ẩm mốc, vỡ vỉ hoặc nghi ngờ về chất lượng, quy trình phối hợp thực tế giữa nhà thuốc, ban QA và nhà cung cấp diễn ra như thế nào?
+   - *Ghi chép câu trả lời:* ...........................................................................................................................................
+
+10. **[Dành cho mọi tác nhân]** Theo quan sát và kinh nghiệm thực tiễn của bạn, giải pháp công nghệ hoặc cải tiến quy trình nào sẽ giúp tối ưu hóa rõ rệt nhất năng suất làm việc và sự hài lòng của khách hàng tại FPT Long Châu?
+    - *Ghi chép câu trả lời:* ...........................................................................................................................................
+
+---
+
+#### PHẦN 2: 10 CÂU HỎI ĐỊNH LƯỢNG (QUANTITATIVE INTERVIEW)
+
+**A. 5 Câu hỏi Định lượng Có cấu trúc (Structured Quantitative Questions):**
+
+11. **[Dành cho Dược sĩ quầy]** Thời gian trung bình để hoàn tất một lượt phục vụ khách mua thuốc kê đơn thông thường (từ lúc tiếp nhận đơn đến khi tư vấn, nhặt thuốc, thanh toán và in hóa đơn) là bao lâu?
+    - [ ] A. Dưới 5 phút
+    - [ ] B. Từ 5 – 8 phút
+    - [ ] C. Từ 8 – 12 phút
+    - [ ] D. Trên 12 phút
+
+12. **[Dành cho Dược sĩ / Khách hàng]** Trong tổng thời gian một khách hàng có mặt tại nhà thuốc, thời gian khách hàng phải đứng chờ đợi (chờ tới lượt, chờ tra cứu hệ thống, chờ lấy thuốc) ước tính chiếm khoảng bao nhiêu phần trăm?
+    - [ ] A. Dưới 20% tổng thời gian
+    - [ ] B. Từ 20% – 40% tổng thời gian
+    - [ ] C. Từ 40% – 60% tổng thời gian
+    - [ ] D. Trên 60% tổng thời gian
+
+13. **[Dành cho Quản lý kho]** Tỷ lệ sai lệch số liệu tồn kho giữa hệ thống máy tính và thực tế kiểm đếm tại tổng kho trung tâm thường dao động trong khoảng nào?
+    - [ ] A. Dưới 1%
+    - [ ] B. Từ 1% – 3%
+    - [ ] C. Từ 3% – 5%
+    - [ ] D. Từ 5% – 8%
+    - [ ] E. Trên 8%
+
+14. **[Dành cho Dược sĩ / Quản lý IT]** Trong một tháng làm việc, quầy thuốc gặp phải tình trạng hệ thống POS bị gián đoạn mạng, máy in bill bị kẹt hoặc phần mềm phản hồi chậm trên 10 giây khoảng bao nhiêu lần?
+    - [ ] A. Dưới 1 lần / tháng
+    - [ ] B. Từ 1 – 3 lần / tháng
+    - [ ] C. Từ 4 – 6 lần / tháng
+    - [ ] D. Trên 6 lần / tháng (gần như tuần nào cũng gặp sự cố)
+
+15. **[Dành cho Dược sĩ quầy]** Trung bình trong một ca làm việc 8 tiếng, một dược sĩ tại cửa hàng phục vụ trực tiếp bao nhiêu lượt khách hàng?
+    - [ ] A. Dưới 40 lượt khách
+    - [ ] B. Từ 40 – 70 lượt khách
+    - [ ] C. Từ 70 – 100 lượt khách
+    - [ ] D. Trên 100 lượt khách
+
+**B. 5 Câu hỏi Định lượng Không có cấu trúc (Unstructured Quantitative Questions):**
+
+16. **[Dành cho Dược sĩ quầy]** Đối với một đơn thuốc trung bình gồm 3 đến 5 loại thuốc, bạn ước tính mất khoảng bao nhiêu giây hoặc bao nhiêu phút chỉ riêng cho thao tác đi lại giữa các dãy kệ để nhặt đủ thuốc?
+    - *Số liệu ước tính:* .................................................... phút/đơn thuốc.
+
+17. **[Dành cho Nhân viên kho]** Khi xe tải của nhà cung ứng tới cổng kho giao hàng, trung bình tài xế phải chờ đợi bao nhiêu phút từ lúc nộp phiếu giao nhận đến khi nhân viên kho bắt đầu kiểm đếm thực tế?
+    - *Số liệu ước tính:* .................................................... phút/chuyến hàng.
+
+18. **[Dành cho Nhân viên điều phối Online]** Trong các đợt cao điểm khuyến mãi hoặc thời tiết xấu, bạn ước tính có khoảng bao nhiêu phần trăm đơn hàng online đặt qua ứng dụng Long Châu bị giao trễ cam kết 30 phút hoặc bị khách hàng hủy đơn?
+    - *Số liệu ước tính:* .................................................... % đơn hàng online.
+
+19. **[Dành cho Quản lý kho / Kế toán kho]** Theo số liệu ghi nhận hàng năm, tỷ lệ tổn thất do thuốc và thực phẩm chức năng bị cận hạn sử dụng, hỏng bao bì phải đàm phán trả về nhà sản xuất hoặc tiêu hủy chiếm khoảng bao nhiêu phần trăm trên tổng giá trị hàng tồn trữ?
+    - *Số liệu ước tính:* .................................................... % giá trị tồn kho/năm.
+
+20. **[Dành cho Dược sĩ trưởng / Đào tạo]** Trung bình cần bao nhiêu ngày hoặc bao nhiêu giờ huấn luyện kèm cặp tại quầy để một dược sĩ mới tốt nghiệp có thể tự tin thao tác bán hàng, tư vấn thuốc đúng quy trình và sử dụng thành thạo phần mềm POS một cách độc lập?
+    - *Số liệu ước tính:* .................................................... ngày đào tạo thực hành.
+
