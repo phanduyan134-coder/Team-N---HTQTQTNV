@@ -305,13 +305,13 @@ window.switchToBeTab = function(tabIndex) {
 window.zoomActiveToBe = function() {
   if (currentToBeTab === 1) {
     window.openBpmnQuickView(
-      'assets/bpmn/hinh_6_1_bpmn_to_be_ban_thuoc_tai_nha_thuoc.svg',
-      'Hình 6.1: Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại Nhà thuốc (FPT Long Châu)'
+      'assets/bpmn/hinh_5_1_bpmn_to_be_ban_thuoc_tai_nha_thuoc.svg',
+      'Hình 5.1: Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại Nhà thuốc (FPT Long Châu)'
     );
   } else {
     window.openBpmnQuickView(
-      'assets/bpmn/hinh_6_2_bpmn_to_be_quan_ly_kho.svg',
-      'Hình 6.2: Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý Kho Trung tâm (FPT Long Châu)'
+      'assets/bpmn/hinh_5_2_bpmn_to_be_quan_ly_kho.svg',
+      'Hình 5.2: Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý Kho Trung tâm (FPT Long Châu)'
     );
   }
 };

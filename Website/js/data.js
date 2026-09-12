@@ -16,9 +16,9 @@ const PROCESS_DATA = [
     frequency: "Liên tục hàng ngày (>1.800 nhà thuốc)",
     icon: "fa-pills",
     color: "#0284c7",
-    bpmnSvg: "assets/bpmn/hinh_4_3_bpmn_as_is_ban_thuoc_tai_quay.svg",
-    toBeSvg: "assets/bpmn/hinh_6_1_bpmn_to_be_ban_thuoc_tai_nha_thuoc.svg",
-    toBeTitle: "Hình 6.1: Sơ đồ BPMN 2.0 (TO-BE) – Bán thuốc tại nhà thuốc",
+    bpmnSvg: "assets/bpmn/hinh_3_3_bpmn_as_is_ban_thuoc_tai_quay.svg",
+    toBeSvg: "assets/bpmn/hinh_5_1_bpmn_to_be_ban_thuoc_tai_nha_thuoc.svg",
+    toBeTitle: "Hình 5.1: Sơ đồ BPMN 2.0 (TO-BE) – Bán thuốc tại nhà thuốc",
     desc: "Quy trình đón tiếp khách hàng, tư vấn đơn thuốc, tra cứu tồn kho, thanh toán và hướng dẫn sử dụng thuốc tại quầy.",
     overview: {
       objective: "Tư vấn đúng bệnh, đúng thuốc, đảm bảo an toàn sử dụng thuốc theo chuẩn GPP và tối ưu hóa doanh thu bán lẻ.",
@@ -83,9 +83,9 @@ const PROCESS_DATA = [
     frequency: "Liên tục 24/7 (3 ca làm việc)",
     icon: "fa-warehouse",
     color: "#059669",
-    bpmnSvg: "assets/bpmn/hinh_4_5_bpmn_as_is_quan_ly_kho.svg",
-    toBeSvg: "assets/bpmn/hinh_6_2_bpmn_to_be_quan_ly_kho.svg",
-    toBeTitle: "Hình 6.2: Sơ đồ BPMN 2.0 (TO-BE) – Quản lý kho dược phẩm",
+    bpmnSvg: "assets/bpmn/hinh_3_5_bpmn_as_is_quan_ly_kho.svg",
+    toBeSvg: "assets/bpmn/hinh_5_2_bpmn_to_be_quan_ly_kho.svg",
+    toBeTitle: "Hình 5.2: Sơ đồ BPMN 2.0 (TO-BE) – Quản lý kho dược phẩm",
     desc: "Quy trình tiếp nhận hàng từ NCC, nhập kho, lưu trữ bảo quản, soạn hàng xuất cho nhà thuốc và kiểm kê đối soát tồn kho định kỳ.",
     overview: {
       objective: "Bảo đảm cung ứng thuốc đầy đủ, chính xác, bảo quản đúng tiêu chuẩn GSP và ngăn ngừa thất thoát/cận hạn.",
@@ -149,7 +149,7 @@ const PROCESS_DATA = [
     frequency: "Liên tục 24/7",
     icon: "fa-shopping-cart",
     color: "#9333ea",
-    bpmnSvg: "assets/bpmn/hinh_4_4_bpmn_as_is_ban_thuoc_online.svg",
+    bpmnSvg: "assets/bpmn/hinh_3_4_bpmn_as_is_ban_thuoc_online.svg",
     desc: "Quy trình khách đặt hàng trên Web/App Long Châu, CSKH gọi điện xác nhận, Dược sĩ duyệt đơn thuốc và bàn giao đối tác vận chuyển giao tận nhà.",
     overview: {
       objective: "Mở rộng kênh bán hàng đa kênh (Omnichannel), giao thuốc tận tay người bệnh nhanh chóng và đúng quy chế dược.",
@@ -210,7 +210,7 @@ const PROCESS_DATA = [
     frequency: "Định kỳ hàng tuần & Đột xuất",
     icon: "fa-truck",
     color: "#2563eb",
-    bpmnSvg: "assets/bpmn/hinh_4_1_bpmn_as_is_chuoi_cung_ung.svg",
+    bpmnSvg: "assets/bpmn/hinh_3_1_bpmn_as_is_chuoi_cung_ung.svg",
     desc: "Quy trình dự báo nhu cầu thuốc, lập đơn đặt hàng NCC, thương thảo giá, theo dõi vận chuyển và phân bổ hàng hóa cho mạng lưới toàn quốc.",
     overview: {
       objective: "Bảo đảm nguồn cung ứng thuốc ổn định, giá thành cạnh tranh, không đứt gãy nguồn hàng phục vụ bệnh nhân.",
@@ -270,7 +270,7 @@ const PROCESS_DATA = [
     frequency: "Định kỳ hàng tháng & Đột xuất",
     icon: "fa-shield-halved",
     color: "#d97706",
-    bpmnSvg: "assets/bpmn/hinh_4_2_bpmn_as_is_quan_ly_chat_luong.svg",
+    bpmnSvg: "assets/bpmn/hinh_3_2_bpmn_as_is_quan_ly_chat_luong.svg",
     desc: "Quy trình kiểm soát chất lượng thuốc đầu vào, giám sát nhiệt độ độ ẩm nhà thuốc, kiểm định hồ sơ pháp lý và xử lý thu hồi thuốc lỗi.",
     overview: {
       objective: "Bảo đảm 100% thuốc lưu hành trong hệ thống đều đạt tiêu chuẩn chất lượng Bộ Y tế, bảo vệ sức khỏe người dùng.",
@@ -328,7 +328,7 @@ const PROCESS_DATA = [
     frequency: "Liên tục hàng tháng (Mở mới hàng trăm cửa hàng)",
     icon: "fa-user-graduate",
     color: "#7c3aed",
-    bpmnSvg: "assets/bpmn/hinh_4_6_bpmn_as_is_tuyen_dung_dao_tao.svg",
+    bpmnSvg: "assets/bpmn/hinh_3_6_bpmn_as_is_tuyen_dung_dao_tao.svg",
     desc: "Quy trình tiếp nhận đề xuất nhân sự, đăng tin, sàng lọc hồ sơ ứng viên, phỏng vấn 2 vòng (HR & Chuyên môn Dược), ký HĐ và đào tạo hội nhập trước khi ra quầy.",
     overview: {
       objective: "Bảo đảm bổ sung đủ nguồn nhân lực Dược sĩ chuyên môn cao, đạt chuẩn văn hóa phục vụ Long Châu cho tốc độ mở rộng chuỗi.",
