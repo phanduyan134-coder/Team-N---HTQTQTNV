@@ -134,34 +134,34 @@
 ---
 
 ### 🎙️ PHẦN 4: CHƯƠNG 4 – PHÂN TÍCH QUY TRÌNH NGHIỆP VỤ (AS-IS) (Slide 30 – 38)
-*Đặt song song 2 quy trình trọng điểm (Bán thuốc & Quản lý kho), bóc tách lãng phí qua RACI, VA/NVA, 7 Lean Wastes, 5 Whys & 6M Ishikawa.*
+*Đặt song song 2 quy trình trọng điểm (Bán thuốc & Quản lý kho), bóc tách lãng phí qua Chuỗi giá trị VA/NVA, Lean Move–Hold–Overdo, Sơ đồ Xương cá Fishbone 6M & Cây 5 Whys.*
 
 - **Slide 30: CHƯƠNG 4: PHÂN TÍCH QUY TRÌNH NGHIỆP VỤ (AS-IS)**
   > *"Kính thưa Thầy cùng toàn thể các bạn, đại diện Nhóm 15 xin phép tiếp nối buổi báo cáo với Chương 4: Phân tích Quy trình Nghiệp vụ hiện tại (AS-IS). Mục tiêu của chương này là bóc tách các lãng phí vô hình thành những con số định lượng cụ thể, chỉ rõ các điểm nghẽn của hệ thống, làm tiền đề vững chắc để nhóm xây dựng mô hình cải tiến TO-BE ở Chương 5."*
 
 - **Slide 31: 4.1. Tiêu chí và phương pháp phân tích quy trình**
-  > *"Tại mục 4.1, nhóm chọn phân tích 2 quy trình trọng điểm là Bán thuốc và Quản lý kho dựa trên 3 tiêu chí: Tần suất giao dịch lớn, Tác động trực tiếp đến doanh thu - chi phí, và Tiềm năng số hóa cao. Nhóm ứng dụng các chuẩn mực BPM gồm: Phân loại chuỗi giá trị VA/NVA, nhận diện 7 Lãng phí Lean, cùng 2 công cụ tìm gốc rễ là 5 Whys và Biểu đồ xương cá Ishikawa."*
+  > *"Tại mục 4.1, nhóm lựa chọn phân tích chuyên sâu 2 quy trình trọng điểm là Bán thuốc tại nhà thuốc và Quản lý kho dựa trên 3 tiêu chí: Tần suất giao dịch lớn, Tác động trực tiếp đến doanh thu - chi phí, và Tiềm năng số hóa cao. Nhóm chuẩn hóa phương pháp luận BPM gồm: Khung phân loại chuỗi giá trị VA/BVA/NVA, nhận diện 3 nhóm lãng phí Lean Move – Hold – Overdo, cùng 2 công cụ truy vết nguyên nhân gốc rễ là Sơ đồ Xương cá Fishbone 6M và Kỹ thuật 5 Whys."*
 
 - **Slide 32: 4.2 & 4.3. Phân tích Quy trình Bán thuốc & Quản lý Kho**
-  > *"Trên màn hình là 2 mắt xích sống còn của Long Châu: Quy trình Bán thuốc (Front-end) trực tiếp phục vụ khách hàng tại hơn 1.800 nhà thuốc và tạo hơn 80% doanh thu; cùng Quy trình Quản lý kho (Back-end) làm bệ đỡ hậu cần nhập hàng và điều phối thuốc đi toàn quốc. Nhóm sẽ đối chiếu song song 2 quy trình này qua 5 trụ cột phân tích từ Slide 33 đến 37."*
+  > *"Trên màn hình là 2 mắt xích sống còn của Long Châu: Quy trình Bán thuốc (Front-end) trực tiếp phục vụ khách hàng tại hơn 1.800 nhà thuốc và tạo hơn 80% doanh thu; cùng Quy trình Quản lý kho (Back-end) làm bệ đỡ hậu cần nhập hàng và điều phối thuốc đi toàn quốc. Nhóm sẽ đối chiếu và phân tích chuyên sâu 2 quy trình này qua các trụ cột từ Slide 33 đến 37."*
 
-- **Slide 33: 4.2.1 & 4.3.1. Phân tích Tác nhân & Ma trận RACI**
-  > *"Tại Trụ cột 1 - Ma trận RACI: Ở quầy, Dược sĩ chịu trách nhiệm chính và duyệt chuyên môn; ở kho, Thủ kho chịu trách nhiệm tác nghiệp và Trưởng kho chịu trách nhiệm toàn diện. Điểm nghẽn chung lớn nhất là: Cả Dược sĩ lẫn Thủ kho đều là nhân sự chuyên môn nhưng đang bị lãng phí rất nhiều thời gian vào các việc thủ công như ghi sổ giấy, tìm thuốc trên kệ và gõ lại dữ liệu vào máy tính."*
+- **Slide 33: 4.2.1 & 4.3.1. Định lượng Chuỗi giá trị (VA / BVA / NVA)**
+  > *"Tại Trụ cột 1 - Chuỗi giá trị: Tại quầy bán thuốc, một lượt phục vụ khách hàng mất trung bình 13.5 phút nhưng lãng phí NVA chiếm tới 48.2% (khách chờ 3 phút, tìm thuốc trên kệ 2.5 phút); Tại kho trung tâm, chu kỳ quản lý kho mất 510 phút nhưng lãng phí NVA lên tới 70.6% (đặc biệt đợt kiểm kê đếm tay ngốn tới 240 phút làm đình trệ kho). Cả hai quy trình đều đang bị bóp nghẹt bởi các thao tác thủ công không sinh ra giá trị!"*
 
-- **Slide 34: 4.2.2 & 4.3.2. Định lượng Chuỗi giá trị (VA / BVA / NVA)**
-  > *"Tại Trụ cột 2 - Chuỗi giá trị: Tại quầy, một lượt mua mất 13.5 phút nhưng lãng phí NVA chiếm tới 48.2% (khách chờ 3 phút, tìm thuốc 2.5 phút); Tại kho, chu kỳ mất 510 phút nhưng lãng phí NVA lên tới 73.5% (đặc biệt kiểm kê đếm tay ngốn tới 240 phút làm đình trệ kho). Cả hai quy trình đều đang bị bóp nghẹt bởi các thao tác không sinh ra giá trị!"*
+- **Slide 34: 4.2.2 & 4.3.2. Bóc tách Lãng phí Lean (Move – Hold – Overdo)**
+  > *"Tại Trụ cột 2 - Bóc tách Lãng phí Lean: Cả hai quy trình đều mắc bộ ba lãng phí kinh điển: Thứ nhất là Move (Di chuyển thừa): Dược sĩ phải đi lại nhiều vòng tìm tủ thuốc, còn thủ kho phải đi bộ 8-10 km mỗi ngày vì thiếu bản đồ ô kệ số; Thứ hai là Hold (Chờ đợi & Tồn ứ): Khách hàng chờ mua giờ cao điểm, hàng chờ ký chứng từ giấy, và thuốc cận date bị đè phía trong do thiếu cơ chế FEFO tự động gây thiệt hại hàng tỷ đồng; Thứ ba là Overdo (Làm thừa & Sửa sai): Quầy in 100% hóa đơn giấy dù khách bỏ lại, còn kho thì ghi thẻ kho giấy rồi lại gõ tay vào phần mềm ERP lần thứ hai."*
 
-- **Slide 35: 4.2.3 & 4.3.3. Nhận diện 7 Lãng phí Lean tại Quầy & Kho**
-  > *"Tại Trụ cột 3 - 7 Lãng phí Lean, cả hai quy trình đều mắc bộ ba kinh điển: Thứ nhất là lãng phí Chờ đợi: Khách hàng phải chờ mua thuốc tại quầy, trong khi hàng hóa thì nằm chờ kiểm đếm tại kho; Thứ hai là lãng phí Đi lại thừa: Dược sĩ phải đi qua lại giữa các dãy tủ để tìm thuốc, còn thủ kho thì đi bộ tìm hàng vì thiếu bản đồ số; Và thứ ba là lãng phí Quy trình thừa: Quầy in 100% hóa đơn giấy, còn kho thì ghi thẻ giấy rồi lại gõ tay vào phần mềm lần hai, kèm theo rủi ro thuốc bị cận hạn do thiếu cơ chế FEFO tự động."*
+- **Slide 35: 4.2.3. Nguyên nhân gốc rễ: Fishbone 6M & 5 Whys Bán thuốc tại nhà thuốc**
+  > *"Tại Slide 35, nhóm trình bày Sơ đồ Xương cá Fishbone 6M - Hình 4.1 trong báo cáo cùng Cây 5 Whys cho quy trình Bán thuốc: Phân tích 6 yếu tố Man, Machine, Method, Material, Measurement và Milieu chỉ rõ các xung đột vận hành. Khi áp dụng 5 Whys truy vết: Tại sao phục vụ lâu? Vì dược sĩ tìm thuốc lâu; do POS không hiển thị vị trí ô kệ; do POS chưa kết nối thời gian thực với kho; và do kiến trúc phần mềm phân tán đồng bộ theo đợt. Căn nguyên gốc rễ (Why 5) không nằm ở kỹ năng dược sĩ, mà do Hạ tầng CNTT chưa được đầu tư nâng cấp thành nền tảng tích hợp thời gian thực!"*
 
-- **Slide 36: 4.2.4 & 4.3.4. Nguyên nhân gốc rễ (5 Whys & 6M Ishikawa)**
-  > *"Đến Trụ cột 4 - Nguyên nhân gốc rễ qua 5 Whys và Biểu đồ xương cá: Tại sao bán thuốc lại lâu? Bởi vì dược sĩ tìm thuốc trên kệ lâu, mà nguyên nhân là do máy POS không hiển thị vị trí ô kệ, và sâu xa hơn là do POS chưa kết nối thời gian thực với kho. Tương tự, tại sao kho lại lệch số liệu? Bởi vì nhân viên ghi chép thẻ giấy rồi gõ tay vào máy, mà nguyên nhân là do thiếu thiết bị quét mã vạch tại hiện trường. Từ đó, nhóm rút ra kết luận chiến lược: Nguyên nhân của mọi ách tắc KHÔNG PHẢI do con người, mà do Hạ tầng CNTT chưa được tích hợp đồng bộ thời gian thực!"*
+- **Slide 36: 4.3.3. Nguyên nhân gốc rễ: Fishbone 6M & 5 Whys Quản lý kho trung tâm**
+  > *"Tiếp theo tại Slide 36 là Sơ đồ Xương cá Fishbone 6M - Hình 4.2 cùng Cây 5 Whys cho quy trình Quản lý kho: Kho trung tâm gặp rủi ro sai lệch tồn 5-8% và nguy cơ hủy thuốc cận date. Bóc tách 6M cho thấy thủ kho mệt mỏi vì đếm tay, thiếu thiết bị quét mã vạch PDA chuyên dụng, và thiếu thuật toán ép xuất FEFO. Cây 5 Whys chỉ rõ căn nguyên cốt lõi (Why 5): Doanh nghiệp chưa đầu tư hệ thống WMS thông minh tích hợp IoT và máy PDA Barcode để tự động hóa định vị ô kệ và kiểm soát hạn dùng. Đây là lý do sống còn cần triển khai WMS số hóa!"*
 
-- **Slide 37: 4.2.5 & 4.3.5. Đánh giá 3 chiều Thời gian - Chi phí - Chất lượng**
-  > *"Tại Trụ cột 5 - Bức tranh 3 chiều hiệu suất phản ánh rõ thiệt hại: Về Thời gian, tỷ lệ lãng phí quá lớn khi quầy mất gần 50% và kho mất hơn 70% thời gian cho các việc vô ích; Về Chi phí, thất thoát 10 đến 15% khách hàng bỏ đi vào giờ cao điểm, và phát sinh chi phí tiêu hủy thuốc cận date hàng năm; Về Chất lượng, áp lực đông khách dễ dẫn đến rủi ro phát nhầm thuốc, và số liệu tồn kho thực tế bị lệch từ 5% đến 8%."*
+- **Slide 37: 4.2.4 & 4.3.4. Phân tích Định lượng: Thời gian – Chi phí – Chất lượng**
+  > *"Tại Slide 37, nhóm lượng hóa bức tranh tổn thất trên 3 chiều cốt lõi: Về Thời gian, hiệu suất chu kỳ PCE tại quầy chỉ đạt 44.4% và tại kho chỉ 23.5%; Về Chi phí, toàn chuỗi phải trả hơn 18.7 tỷ đồng mỗi tháng chi phí nhân công cho thời gian chết (NVA) tại quầy, và thiệt hại 27 đến 36 tỷ đồng mỗi năm do hủy thuốc quá hạn tại kho; Về Chất lượng, tỷ lệ khách bỏ hàng vì chờ lâu từ 8-10%, và sai lệch tồn kho thực tế lên tới 5% đến 8%."*
 
-- **Slide 38: 4.4. Tổng hợp các Vấn đề, Điểm nghẽn & Tiền đề Chương 5**
-  > *"Để khép lại Chương 4, nhóm đúc kết 3 nút thắt chiến lược cần tháo gỡ cấp bách: Thứ nhất là Nút thắt Thông tin (dữ liệu tồn kho bị đứt gãy); Thứ hai là Nút thắt Vận hành (quá phụ thuộc vào ghi chép thủ công); và Thứ ba là Nút thắt Rủi ro Date & GPP do thiếu cơ chế FEFO tự động. Đây chính là tiền đề cốt lõi để nhóm chuyển sang trình bày Chương 5: Đề xuất cải tiến quy trình (TO-BE) ngay sau đây."*
+- **Slide 38: 4.4. Tổng hợp các Vấn đề, Điểm nghẽn cốt lõi & Tiền đề Chương 5**
+  > *"Để khép lại Chương 4, tại Bảng 4.7, nhóm đúc kết 5 vấn đề then chốt và 3 nút thắt chiến lược cần tháo gỡ cấp bách: Thứ nhất là Nút thắt Thông tin (dữ liệu tồn kho bị đứt gãy); Thứ hai là Nút thắt Vận hành (quá phụ thuộc vào ghi chép thủ công); và Thứ ba là Nút thắt Rủi ro Date & GPP do thiếu cơ chế FEFO tự động. Toàn bộ các phát hiện định lượng này là cơ sở khoa học đanh thép để nhóm bước sang Chương 5: Đề xuất cải tiến quy trình (TO-BE) ngay sau đây."*
 
 
 ---
