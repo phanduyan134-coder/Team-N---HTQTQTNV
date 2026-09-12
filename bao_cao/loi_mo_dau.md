@@ -1,8 +1,4 @@
-# PHÂN CÔNG NHIỆM VỤ THỰC HIỆN ĐỒ ÁN
-
-**Mã lớp học phần:** `IE203.F33.CN2.CNTT`  
-**Giảng viên hướng dẫn:** ThS. Hà Lê Hoài Trung  
-**Nhóm sinh viên thực hiện:** Nhóm 15  
+# BẢNG PHÂN CÔNG NHIỆM VỤ ĐỒ ÁN
 
 | STT | Họ và tên sinh viên | Mã số sinh viên | Phân công phụ trách chính |
 | :---: | :--- | :---: | :--- |
@@ -12,8 +8,6 @@
 | 4 | **Phan Duy An** | 25210247 | Chương 4 (Phân tích quy trình: VA/BVA/NVA, Lãng phí Move-Hold-Overdo, Fishbone 6M, Định lượng) |
 | 5 | **Trịnh Chí Nguyên** | 25210150 | Chương 5 (Đề xuất cải tiến TO-BE & Ứng dụng công nghệ) |
 | 6 | **Ngô Quốc Chung** | 24730180 | Chương 6 (Kết luận, hạn chế, hướng phát triển); Phụ lục & Tài liệu tham khảo |
-
-*Thành phố Hồ Chí Minh, Năm 2024*
 
 ---
 
