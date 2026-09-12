@@ -3852,7 +3852,7 @@
     </section>
 
     <!-- SLIDE 35: Trụ cột 3 - Lãng phí Lean đối chiếu -->
-    <section class="slide" data-slide="35">
+        <section class="slide" data-slide="35">
       <div class="slide-inner flex flex-col justify-between h-full py-2 sm:py-3">
         <!-- Header -->
         <div class="mb-2">
@@ -3861,83 +3861,134 @@
               <i class="fa-solid fa-trash-can"></i> TRỤ CỘT 3 • MỤC 4.2.3 & 4.3.3
             </span>
             <span class="text-xs text-rose-300 font-mono font-bold bg-slate-900/80 px-2.5 py-1 rounded-lg border border-rose-500/20">
-              Lean 7 Wastes
+              Move • Hold • Overdo
             </span>
           </div>
           <h2 class="text-lg sm:text-xl font-bold text-white mt-0.5 tracking-tight">
-            4.2.3 & 4.3.3. NHẬN DIỆN 7 LÃNG PHÍ LEAN TẠI QUẦY & TẠI KHO
+            4.2.3 & 4.3.3. PHÂN TÍCH LÃNG PHÍ LEAN: MOVE – HOLD – OVERDO
           </h2>
           <p class="text-slate-300 text-xs sm:text-sm font-medium mt-0.5">
-            Đối chiếu các biểu hiện lãng phí vận hành điển hình theo phương pháp Lean Six Sigma giữa 2 quy trình
+            Bóc tách 3 nhóm lãng phí cốt lõi theo mô hình Lean (Liệt kê – Mô tả – Biện pháp khắc phục) tại Quầy và Kho
           </p>
         </div>
 
         <!-- 2-Column Comparison -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 flex-1 my-1 items-stretch">
-          <!-- Left: Lãng phí Bán thuốc (5.2.3) -->
+          <!-- Left: Lãng phí Bán thuốc (Bảng 4.3) -->
           <div class="glass-card p-3.5 sm:p-4 rounded-2xl flex flex-col justify-between border-t-4 border-t-rose-400 shadow-xl">
             <div>
-              <h4 class="text-sm sm:text-base font-bold text-rose-400 uppercase tracking-wide mb-2.5 flex items-center gap-2">
-                <i class="fa-solid fa-store"></i> 3 Lãng phí Lean Nổi cộm tại Quầy (Mục 4.2.3)
-              </h4>
-              <div class="space-y-2.5 text-xs sm:text-sm text-slate-100 font-medium">
-                <div class="p-2.5 rounded-xl bg-rose-500/10 border border-rose-500/30">
-                  <div class="font-bold text-rose-300 flex items-center gap-2 mb-0.5">
-                    <i class="fa-solid fa-hourglass-half"></i> 1. Chờ đợi (Waiting - 3.0 phút)
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="text-sm sm:text-base font-bold text-rose-400 uppercase tracking-wide flex items-center gap-2">
+                  <i class="fa-solid fa-store"></i> Bán Thuốc Tại Quầy (Bảng 4.3)
+                </h4>
+                <span class="text-[11px] font-mono text-rose-300 bg-rose-500/20 px-2 py-0.5 rounded border border-rose-500/30">3 Nhóm Lean</span>
+              </div>
+              
+              <div class="space-y-2 text-xs sm:text-sm text-slate-100 font-medium">
+                <!-- MOVE -->
+                <div class="p-2 rounded-xl bg-slate-900/70 border-l-4 border-amber-400 border border-white/5">
+                  <div class="flex justify-between items-center mb-0.5">
+                    <span class="font-bold text-amber-300 flex items-center gap-1.5">
+                      <i class="fa-solid fa-person-walking text-xs"></i> MOVE (Di chuyển thừa - 2.0')
+                    </span>
+                    <span class="text-[10px] font-mono text-slate-400">Liệt kê & Mô tả</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    Khách hàng phải xếp hàng dài giờ cao điểm do thiếu Kiosk lấy số tự phục vụ và chưa phân luồng khách mua theo đơn cũ.
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Mô tả:</strong> Dược sĩ đi lại nhiều vòng tìm thuốc (1.5') + mang khay thuốc sang quầy thu ngân riêng biệt (0.5').<br>
+                    • <strong>Khắc phục:</strong> Sắp xếp thuốc theo tần suất (Fast-moving); gộp quầy All-in-One tích hợp Smart POS.
                   </p>
                 </div>
-                <div class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/30">
-                  <div class="font-bold text-amber-300 flex items-center gap-2 mb-0.5">
-                    <i class="fa-solid fa-person-walking"></i> 2. Di chuyển thừa (Motion - 2.5 phút)
+
+                <!-- HOLD -->
+                <div class="p-2 rounded-xl bg-slate-900/70 border-l-4 border-rose-400 border border-white/5">
+                  <div class="flex justify-between items-center mb-0.5">
+                    <span class="font-bold text-rose-300 flex items-center gap-1.5">
+                      <i class="fa-solid fa-hourglass-half text-xs"></i> HOLD (Chờ đợi / Tồn trữ - 4.0')
+                    </span>
+                    <span class="text-[10px] font-mono text-slate-400">Liệt kê & Mô tả</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    Dược sĩ mất nhiều thời gian đi lại qua các dãy kệ tìm thuốc vì POS không hiển thị sơ đồ định vị ô/ngăn trực quan.
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Mô tả:</strong> Khách chờ đến lượt giờ cao điểm (3.0') + POS phản hồi tra cứu chậm (1.0') + tồn lệch giữa các shop.<br>
+                    • <strong>Khắc phục:</strong> Kiosk lấy số hẹn giờ; App đặt trước nhận tại quầy; liên thông tồn kho Real-time toàn chuỗi.
                   </p>
                 </div>
-                <div class="p-2.5 rounded-xl bg-purple-500/10 border border-purple-500/30">
-                  <div class="font-bold text-purple-300 flex items-center gap-2 mb-0.5">
-                    <i class="fa-solid fa-file-invoice"></i> 3. Quy trình thừa (Over-processing)
+
+                <!-- OVERDO -->
+                <div class="p-2 rounded-xl bg-slate-900/70 border-l-4 border-purple-400 border border-white/5">
+                  <div class="flex justify-between items-center mb-0.5">
+                    <span class="font-bold text-purple-300 flex items-center gap-1.5">
+                      <i class="fa-solid fa-file-invoice text-xs"></i> OVERDO (Làm thừa / Sửa sai)
+                    </span>
+                    <span class="text-[10px] font-mono text-slate-400">Liệt kê & Mô tả</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    In hóa đơn giấy cho 100% đơn hàng; chưa lưu trữ bệnh án khách quen dẫn đến phải hỏi lại tiền sử bệnh lặp đi lặp lại.
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Mô tả:</strong> In bill giấy 100% dù khách bỏ lại; tư vấn lặp lại do thiếu CRM toa cũ; nhặt nhầm thuốc phải làm lại.<br>
+                    • <strong>Khắc phục:</strong> E-receipt gửi qua Zalo/App; CRM lưu hồ sơ bệnh án số; Barcode scanner khóa nhầm đơn.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="mt-2 text-xs text-slate-400 italic">
-              Hệ quả: Giảm năng lực phục vụ giờ cao điểm, khách bỏ đi.
+            <div class="mt-2 text-[11px] text-cyan-300 font-mono text-center">
+              Khắc phục triệt để: Giảm 67% thời gian chu kỳ giao dịch quầy
             </div>
           </div>
 
-          <!-- Right: Lãng phí Kho (5.3.3) -->
+          <!-- Right: Lãng phí Kho (Bảng 4.7) -->
           <div class="glass-card p-3.5 sm:p-4 rounded-2xl flex flex-col justify-between border-t-4 border-t-amber-400 shadow-xl">
             <div>
-              <h4 class="text-sm sm:text-base font-bold text-amber-300 uppercase tracking-wide mb-2.5 flex items-center gap-2">
-                <i class="fa-solid fa-warehouse"></i> 5 Lãng phí Lean Vận hành Kho (Mục 4.3.3)
-              </h4>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="text-sm sm:text-base font-bold text-amber-300 uppercase tracking-wide flex items-center gap-2">
+                  <i class="fa-solid fa-warehouse"></i> Quản Lý Kho Trung Tâm (Bảng 4.7)
+                </h4>
+                <span class="text-[11px] font-mono text-amber-300 bg-amber-500/20 px-2 py-0.5 rounded border border-amber-500/30">3 Nhóm Lean</span>
+              </div>
+              
               <div class="space-y-2 text-xs sm:text-sm text-slate-100 font-medium">
-                <div class="p-2 rounded-xl bg-rose-500/10 border border-rose-500/20">
-                  <strong class="text-rose-300">1. Quy trình thừa (Over-processing):</strong> Ghi chép thẻ kho giấy rồi nhập lại lần 2 vào ERP; lặp lại thao tác thủ công.
+                <!-- MOVE -->
+                <div class="p-2 rounded-xl bg-slate-900/70 border-l-4 border-amber-400 border border-white/5">
+                  <div class="flex justify-between items-center mb-0.5">
+                    <span class="font-bold text-amber-300 flex items-center gap-1.5">
+                      <i class="fa-solid fa-dolly text-xs"></i> MOVE (Di chuyển thừa - 30.0')
+                    </span>
+                    <span class="text-[10px] font-mono text-slate-400">Liệt kê & Mô tả</span>
+                  </div>
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Mô tả:</strong> Nhân viên đi bộ 8–10 km/ngày tìm thuốc vì thiếu bản đồ; bốc dỡ qua nhiều trạm trung chuyển sàn kho.<br>
+                    • <strong>Khắc phục:</strong> Số hóa vị trí ô kệ (Bin Location); WMS vẽ lộ trình nhặt hàng ngắn nhất; xe nâng pallet Cross-docking.
+                  </p>
                 </div>
-                <div class="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                  <strong class="text-amber-300">2. Di chuyển & Tìm kiếm (Motion):</strong> Thủ kho đi bộ khắp diện tích kho rộng để tìm hàng vì thiếu bản đồ số định vị.
+
+                <!-- HOLD -->
+                <div class="p-2 rounded-xl bg-slate-900/70 border-l-4 border-rose-400 border border-white/5">
+                  <div class="flex justify-between items-center mb-0.5">
+                    <span class="font-bold text-rose-300 flex items-center gap-1.5">
+                      <i class="fa-solid fa-boxes-stacked text-xs"></i> HOLD (Tồn trữ cận date & Chờ hàng)
+                    </span>
+                    <span class="text-[10px] font-mono text-slate-400">Liệt kê & Mô tả</span>
+                  </div>
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Mô tả:</strong> Hàng chờ ký chứng từ giấy (15–30'); thuốc cận date bị đè phía trong do không kiểm soát FEFO gây hủy hàng tỷ.<br>
+                    • <strong>Khắc phục:</strong> Áp dụng E-Delivery Note duyệt trước; thuật toán WMS FEFO khóa quét nếu không nhặt lô date ngắn nhất.
+                  </p>
                 </div>
-                <div class="p-2 rounded-xl bg-purple-500/10 border border-purple-500/20">
-                  <strong class="text-purple-300">3. Tồn kho cận hạn (Inventory & Waste):</strong> Thuốc cận date bị tồn đọng do không có thuật toán FEFO tự động ép xuất trước.
-                </div>
-                <div class="p-2 rounded-xl bg-slate-900/60 border border-white/10">
-                  <strong class="text-cyan-300">4. Chờ đợi (Waiting):</strong> Hàng hóa nằm ở khu vực tiếp nhận chờ làm thủ tục giấy tờ và kiểm đếm tay.
-                </div>
-                <div class="p-2 rounded-xl bg-slate-900/60 border border-white/10">
-                  <strong class="text-emerald-300">5. Đóng băng kiểm kê (Defect/Inspection):</strong> Kiểm kê đếm tay làm gián đoạn vận hành kho 240 phút/đợt.
+
+                <!-- OVERDO -->
+                <div class="p-2 rounded-xl bg-slate-900/70 border-l-4 border-purple-400 border border-white/5">
+                  <div class="flex justify-between items-center mb-0.5">
+                    <span class="font-bold text-purple-300 flex items-center gap-1.5">
+                      <i class="fa-solid fa-copy text-xs"></i> OVERDO (Nhập liệu 2 lần & Kiểm kê tay)
+                    </span>
+                    <span class="text-[10px] font-mono text-slate-400">Liệt kê & Mô tả</span>
+                  </div>
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Mô tả:</strong> Ghi sổ giấy rồi gõ lại vào ERP (mất 35'); duy trì thẻ kho giấy đầu kệ; đóng băng cả kho đếm tay 240 phút.<br>
+                    • <strong>Khắc phục:</strong> Bỏ 100% thẻ kho/sổ giấy; PDA đồng bộ ERP Real-time; kiểm kê cuốn chiếu Cycle Counting không dừng kho.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="mt-2 text-xs text-slate-400 italic">
-              Hệ quả: Sai lệch tồn kho 5–8%, rủi ro hủy thuốc cận date.
+            <div class="mt-2 text-[11px] text-amber-300 font-mono text-center">
+              Khắc phục triệt để: Giảm 72.5% thời gian chu trình kho, triệt tiêu thuốc hết date
             </div>
           </div>
         </div>
@@ -3945,9 +3996,9 @@
         <!-- Bottom Summary Bar -->
         <div class="mt-1 py-2 px-4 rounded-xl bg-slate-900/90 border border-white/10 flex items-center justify-between text-xs sm:text-sm font-semibold shadow-lg shrink-0">
           <span class="text-amber-300">
-            <strong>Điểm tương đồng Lean:</strong> Cả quầy và kho đều mắc bộ ba lãng phí kinh điển: <em>Chờ đợi (Waiting)</em> • <em>Di chuyển thừa (Motion)</em> • <em>Nhập liệu lặp lại (Over-processing)</em>.
+            <strong>Nguyên tắc Lean cốt lõi:</strong> Chuẩn hóa loại bỏ 3 nhóm <em>Move (Đi lại)</em> • <em>Hold (Chờ đợi & Tồn ứ date)</em> • <em>Overdo (Làm thừa giấy tờ)</em> bằng công nghệ Barcode, Smart POS và WMS.
           </span>
-          <span class="text-slate-300 hidden md:inline font-mono">Giải pháp: Tự động hóa bằng WMS & Kiosk</span>
+          <span class="text-emerald-300 hidden md:inline font-mono font-bold">Mục tiêu: Triệt tiêu 90% lãng phí NVA</span>
         </div>
       </div>
     </section>
@@ -4063,7 +4114,7 @@
     </section>
 
     <!-- SLIDE 37: Trụ cột 5 - Đánh giá 3 chiều Thời gian - Chi phí - Chất lượng -->
-    <section class="slide" data-slide="37">
+        <section class="slide" data-slide="37">
       <div class="slide-inner flex flex-col justify-between h-full py-2 sm:py-3">
         <!-- Header -->
         <div class="mb-2">
@@ -4079,7 +4130,7 @@
             4.2.5 & 4.3.5. ĐÁNH GIÁ 3 CHIỀU HIỆU SUẤT: THỜI GIAN – CHI PHÍ – CHẤT LƯỢNG
           </h2>
           <p class="text-slate-300 text-xs sm:text-sm font-medium mt-0.5">
-            Bức tranh tổng hợp định lượng 3 chiều đo lường hiệu suất giữa Quy trình Bán thuốc và Quy trình Quản lý Kho
+            Bảng phân tích định lượng 3 chiều đo lường (Liệt kê – Tính toán AS-IS – Biện pháp khắc phục TO-BE)
           </p>
         </div>
 
@@ -4091,41 +4142,42 @@
             <div>
               <div class="flex items-center justify-between mb-2">
                 <span class="px-2.5 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 font-bold text-xs uppercase flex items-center gap-1.5">
-                  <i class="fa-solid fa-stopwatch"></i> 1. CHIỀU THỜI GIAN
+                  <i class="fa-solid fa-clock"></i> 1. THỜI GIAN (TIME)
                 </span>
-                <span class="text-xs font-mono text-cyan-400 font-bold">Cycle Time</span>
+                <span class="text-xs font-mono text-cyan-400 font-bold">PCE & Cycle Time</span>
               </div>
               
-              <!-- Comparison box -->
-              <div class="space-y-2.5 text-xs sm:text-sm text-slate-200 font-medium">
-                <!-- At Counter -->
+              <div class="space-y-2 text-xs sm:text-sm text-slate-200 font-medium">
+                <!-- Counter -->
                 <div class="p-2.5 rounded-xl bg-slate-900/70 border border-cyan-500/30">
                   <div class="flex justify-between items-center mb-1">
-                    <strong class="text-cyan-300 font-bold flex items-center gap-1">
-                      <i class="fa-solid fa-store text-xs"></i> Tại Quầy (Mục 4.2.5):
+                    <strong class="text-cyan-300 font-bold flex items-center gap-1 text-xs">
+                      <i class="fa-solid fa-store"></i> Tại Quầy (Bảng 4.4):
                     </strong>
-                    <span class="font-mono font-black text-white">13.5 phút</span>
+                    <span class="font-mono font-black text-rose-400 text-xs">PCE = 44.4%</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    Khách chờ 3.0' + Dược sĩ tìm kệ 2.5' -> NVA chiếm tới <strong>48.2% (6.5 phút)</strong>. Mục tiêu TO-BE: rút xuống <strong>4–5 phút</strong>.
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Tính toán AS-IS:</strong> CT = 13.5' (VA = 6.0', BVA = 1.0', NVA = 6.5' chiếm 48.2%). Hơn 55% chu kỳ là thời gian lãng phí.<br>
+                    • <strong>Khắc phục TO-BE:</strong> Kiosk + Smart POS rút CT xuống <strong>4.5 phút</strong> (-67%), nâng PCE lên <strong>88.9%</strong>.
                   </p>
                 </div>
-                <!-- At Warehouse -->
+                <!-- Warehouse -->
                 <div class="p-2.5 rounded-xl bg-slate-900/70 border border-amber-500/30">
                   <div class="flex justify-between items-center mb-1">
-                    <strong class="text-amber-300 font-bold flex items-center gap-1">
-                      <i class="fa-solid fa-warehouse text-xs"></i> Tại Kho (Mục 4.3.5):
+                    <strong class="text-amber-300 font-bold flex items-center gap-1 text-xs">
+                      <i class="fa-solid fa-warehouse"></i> Tại Kho (Bảng 4.8):
                     </strong>
-                    <span class="font-mono font-black text-white">510 phút</span>
+                    <span class="font-mono font-black text-rose-400 text-xs">PCE = 23.5%</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    Nhập kho mất 3–4 giờ/lô lớn, xuất kho 1–2 giờ; đặc biệt kiểm kê mất <strong>240 phút</strong> đếm tay làm gián đoạn kho (NVA chiếm <strong>73.5%</strong>).
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Tính toán AS-IS:</strong> CT = 510' (8.5h). NVA = 360' chiếm 70.6% (kiểm kê tay 240', đếm tay 75', sổ sách 35').<br>
+                    • <strong>Khắc phục TO-BE:</strong> PDA Barcode + FEFO rút CT xuống <strong>140 phút</strong> (-72.5%), nâng PCE lên <strong>85.7%</strong>.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="mt-2 text-xs text-cyan-300 font-mono text-center">
-              Nghẽn nặng ở khâu chờ đợi & đếm tay
+            <div class="mt-1 text-[11px] text-cyan-300 font-mono text-center">
+              Giảm 60–70% thời gian chu kỳ vận hành
             </div>
           </div>
 
@@ -4134,41 +4186,42 @@
             <div>
               <div class="flex items-center justify-between mb-2">
                 <span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-xs uppercase flex items-center gap-1.5">
-                  <i class="fa-solid fa-coins"></i> 2. CHIỀU CHI PHÍ
+                  <i class="fa-solid fa-coins"></i> 2. CHI PHÍ (COST)
                 </span>
-                <span class="text-xs font-mono text-amber-400 font-bold">Lãng phí ẩn</span>
+                <span class="text-xs font-mono text-amber-400 font-bold">Lượng hóa tài chính</span>
               </div>
 
-              <!-- Comparison box -->
-              <div class="space-y-2.5 text-xs sm:text-sm text-slate-200 font-medium">
-                <!-- At Counter -->
+              <div class="space-y-2 text-xs sm:text-sm text-slate-200 font-medium">
+                <!-- Counter -->
                 <div class="p-2.5 rounded-xl bg-slate-900/70 border border-cyan-500/30">
                   <div class="flex justify-between items-center mb-1">
-                    <strong class="text-cyan-300 font-bold flex items-center gap-1">
-                      <i class="fa-solid fa-store text-xs"></i> Tại Quầy (Mục 4.2.5):
+                    <strong class="text-cyan-300 font-bold flex items-center gap-1 text-xs">
+                      <i class="fa-solid fa-store"></i> Tại Quầy (Bảng 4.4):
                     </strong>
-                    <span class="font-mono font-black text-rose-400">-10% đến 15%</span>
+                    <span class="font-mono font-black text-rose-400 text-xs">18.7 Tỷ/tháng</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    Thất thoát chi phí cơ hội do khách bỏ đi giờ cao điểm; lãng phí in hóa đơn giấy 100% và lãng phí giờ công Dược sĩ đi lại tìm thuốc.
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Tính toán AS-IS:</strong> 6.5' NVA x 80 khách x 40k/h -> Lãng phí 10.4 tr/tháng/cửa hàng -> 18.7 tỷ/tháng toàn chuỗi trả lương cho thời gian chết! Mất doanh thu: 28.8 tr/shop/tháng.<br>
+                    • <strong>Khắc phục:</strong> Tiết kiệm <strong>> 16.8 tỷ/tháng</strong> lương NVA.
                   </p>
                 </div>
-                <!-- At Warehouse -->
+                <!-- Warehouse -->
                 <div class="p-2.5 rounded-xl bg-slate-900/70 border border-amber-500/30">
                   <div class="flex justify-between items-center mb-1">
-                    <strong class="text-amber-300 font-bold flex items-center gap-1">
-                      <i class="fa-solid fa-warehouse text-xs"></i> Tại Kho (Mục 4.3.5):
+                    <strong class="text-amber-300 font-bold flex items-center gap-1 text-xs">
+                      <i class="fa-solid fa-warehouse"></i> Tại Kho (Bảng 4.8):
                     </strong>
-                    <span class="font-mono font-black text-rose-400">Thiệt hại Date</span>
+                    <span class="font-mono font-black text-rose-400 text-xs">27–36 Tỷ/năm</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    Lượng thuốc cận hạn bị tiêu hủy do không kiểm soát FEFO nghiêm ngặt; chi phí nhân công ngày càng cao để duy trì đếm tay và ghi chép 2 lần.
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Tính toán AS-IS:</strong> Hủy thuốc quá hạn vi phạm FEFO thất thoát 27–36 tỷ/năm! Lương chết NVA kho: 3.6 tỷ/năm. Đóng kho kiểm kê mất 450 tr/năm.<br>
+                    • <strong>Khắc phục:</strong> Thuật toán FEFO bảo toàn <strong>> 25 tỷ/năm</strong> thuốc không cận date.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="mt-2 text-xs text-amber-300 font-mono text-center">
-              Thất thoát doanh thu & hao hụt tồn kho
+            <div class="mt-1 text-[11px] text-amber-300 font-mono text-center">
+              Tiết kiệm hàng trăm tỷ đồng ngân sách toàn chuỗi
             </div>
           </div>
 
@@ -4177,41 +4230,42 @@
             <div>
               <div class="flex items-center justify-between mb-2">
                 <span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold text-xs uppercase flex items-center gap-1.5">
-                  <i class="fa-solid fa-award"></i> 3. CHẤT LƯỢNG & RỦI RO
+                  <i class="fa-solid fa-award"></i> 3. CHẤT LƯỢNG (QUALITY)
                 </span>
-                <span class="text-xs font-mono text-emerald-400 font-bold">Trải nghiệm</span>
+                <span class="text-xs font-mono text-emerald-400 font-bold">Độ chính xác & NPS</span>
               </div>
 
-              <!-- Comparison box -->
-              <div class="space-y-2.5 text-xs sm:text-sm text-slate-200 font-medium">
-                <!-- At Counter -->
+              <div class="space-y-2 text-xs sm:text-sm text-slate-200 font-medium">
+                <!-- Counter -->
                 <div class="p-2.5 rounded-xl bg-slate-900/70 border border-cyan-500/30">
                   <div class="flex justify-between items-center mb-1">
-                    <strong class="text-cyan-300 font-bold flex items-center gap-1">
-                      <i class="fa-solid fa-store text-xs"></i> Tại Quầy (Mục 4.2.5):
+                    <strong class="text-cyan-300 font-bold flex items-center gap-1 text-xs">
+                      <i class="fa-solid fa-store"></i> Tại Quầy (Bảng 4.4):
                     </strong>
-                    <span class="font-mono font-black text-emerald-400">NPS ~45</span>
+                    <span class="font-mono font-black text-emerald-400 text-xs">NPS 45 -> 65+</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    Điểm hài lòng chỉ ở mức trung bình (~45 điểm), 70% phàn nàn do xếp hàng; rủi ro phát nhầm thuốc/hàm lượng khi quầy đông đúc.
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Tính toán AS-IS:</strong> Tỷ lệ khách bỏ hàng vì chờ đông: 8–10%; nhặt nhầm thuốc: 1.5%; NPS trung bình: +45 điểm.<br>
+                    • <strong>Khắc phục:</strong> Giảm khách bỏ hàng xuống <strong>< 1%</strong>; triệt tiêu 95% nhầm thuốc; nâng NPS lên <strong>≥ 65 điểm</strong>.
                   </p>
                 </div>
-                <!-- At Warehouse -->
+                <!-- Warehouse -->
                 <div class="p-2.5 rounded-xl bg-slate-900/70 border border-amber-500/30">
                   <div class="flex justify-between items-center mb-1">
-                    <strong class="text-amber-300 font-bold flex items-center gap-1">
-                      <i class="fa-solid fa-warehouse text-xs"></i> Tại Kho (Mục 4.3.5):
+                    <strong class="text-amber-300 font-bold flex items-center gap-1 text-xs">
+                      <i class="fa-solid fa-warehouse"></i> Tại Kho (Bảng 4.8):
                     </strong>
-                    <span class="font-mono font-black text-rose-400">Lệch 5% - 8%</span>
+                    <span class="font-mono font-black text-rose-400 text-xs">Lệch 5–8% tồn</span>
                   </div>
-                  <p class="text-slate-300 leading-snug">
-                    Tỷ lệ sai lệch tồn kho giữa hệ thống ERP và thực tế lên tới 5–8% — con số đáng báo động trong ngành y tế đòi hỏi độ chính xác tuyệt đối.
+                  <p class="text-slate-300 text-[11px] leading-snug">
+                    • <strong>Tính toán AS-IS:</strong> Lệch tồn kho 5–8% (500–800 SKU lệch); thuốc trôi date vi phạm FEFO: 2–3%; soạn sai thuốc: 2.5%.<br>
+                    • <strong>Khắc phục:</strong> Quét Barcode 100% giảm lệch tồn xuống <strong>< 0.5%</strong>; cận date giảm còn <strong>< 0.2%</strong>.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="mt-2 text-xs text-emerald-300 font-mono text-center">
-              Mục tiêu TO-BE: Lệch < 1%, NPS 65+
+            <div class="mt-1 text-[11px] text-emerald-300 font-mono text-center">
+              Mục tiêu TO-BE: Sai lệch tồn < 0.5%, NPS 65+
             </div>
           </div>
 
@@ -4220,9 +4274,9 @@
         <!-- Bottom Summary Bar -->
         <div class="mt-1 py-2 px-4 rounded-xl bg-slate-900/90 border border-white/10 flex items-center justify-between text-xs sm:text-sm font-semibold shadow-lg shrink-0">
           <span class="text-slate-200">
-            <strong class="text-amber-300">Nhận định chung 3 chiều:</strong> Cả 2 quy trình đều mất cân đối nghiêm trọng giữa Thời gian - Chi phí - Chất lượng do phụ thuộc nặng nề vào con người và thao tác giấy tờ.
+            <strong class="text-amber-300">Tính toán định lượng chứng minh:</strong> Tự động hóa và chuẩn hóa quy trình giúp chuyển dịch toàn diện cả 3 chiều: <em>Rút ngắn 65% thời gian</em> • <em>Tiết kiệm hàng chục tỷ chi phí</em> • <em>Chuẩn hóa chất lượng y tế đạt chuẩn GPP/GDP</em>.
           </span>
-          <span class="text-emerald-300 hidden md:inline font-mono font-bold">Mục tiêu TO-BE: Giảm 60% thời gian, NPS 65+</span>
+          <span class="text-emerald-300 hidden md:inline font-mono font-bold">Mục tiêu TO-BE toàn diện</span>
         </div>
       </div>
     </section>

@@ -102,10 +102,13 @@
 | **Bảng 3.6** | Tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS) | Chương 3 |
 | **Bảng 4.1** | Ma trận RACI quy trình Bán thuốc tại nhà thuốc | Chương 4 |
 | **Bảng 4.2** | Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc | Chương 4 |
-| **Bảng 4.3** | Bảng tổng hợp lãng phí Lean trong quy trình Bán thuốc tại nhà thuốc | Chương 4 |
-| **Bảng 4.4** | Ma trận RACI quy trình Quản lý kho | Chương 4 |
-| **Bảng 4.5** | Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho | Chương 4 |
-| **Bảng 4.6** | Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt | Chương 4 |
+| **Bảng 4.3** | Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Bán thuốc tại nhà thuốc | Chương 4 |
+| **Bảng 4.4** | Bảng phân tích định lượng hiệu suất quy trình Bán thuốc tại nhà thuốc | Chương 4 |
+| **Bảng 4.5** | Ma trận RACI quy trình Quản lý kho | Chương 4 |
+| **Bảng 4.6** | Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho | Chương 4 |
+| **Bảng 4.7** | Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Quản lý kho | Chương 4 |
+| **Bảng 4.8** | Bảng phân tích định lượng hiệu suất quy trình Quản lý kho | Chương 4 |
+| **Bảng 4.9** | Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt | Chương 4 |
 | **Bảng 5.1** | So sánh các bước thực hiện AS-IS và TO-BE quy trình Bán thuốc tại nhà thuốc | Chương 5 |
 | **Bảng 5.2** | Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Bán thuốc tại nhà thuốc | Chương 5 |
 | **Bảng 5.3** | So sánh quá trình nhập/xuất kho AS-IS và TO-BE | Chương 5 |

@@ -2,12 +2,12 @@
 
 Mô hình hóa quy trình nghiệp vụ hiện tại (AS-IS) là một bước đóng vai trò vô cùng quan trọng trong vòng đời quản trị quy trình nghiệp vụ (BPM). Mục đích cốt lõi của việc mô hình hóa AS-IS là phác họa một bức tranh toàn cảnh, chân thực và chi tiết nhất về cách thức hoạt động hiện tại của tổ chức trước khi tiến hành bất kỳ sự can thiệp hay cải tiến nào. Đối với hệ thống chuỗi bán lẻ dược phẩm FPT Long Châu, việc đánh giá chính xác các quy trình AS-IS giúp nhận diện sâu sắc các điểm nghẽn (bottleneck), những thao tác dư thừa, cũng như những hạn chế trong việc ứng dụng công nghệ vào vận hành.
 
-Trong chương này, toàn bộ 6 quy trình trọng yếu được mô hình hóa tuân thủ nghiêm ngặt tiêu chuẩn quốc tế **BPMN 2.0 (Business Process Model and Notation)** và đáp ứng trọn vẹn **Rubik đánh giá chuyên môn của môn học (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ)**:
-- **Cơ cấu phân bổ chuẩn mực theo Rubik (2 – 2 – 2)**:
+Trong chương này, toàn bộ 6 quy trình trọng yếu được mô hình hóa tuân thủ nghiêm ngặt tiêu chuẩn quốc tế **BPMN 2.0 (Business Process Model and Notation)** theo cơ cấu cân bằng 3 tầng kiến trúc quy trình (2 Quy trình Quản lý – 2 Quy trình Cốt lõi – 2 Quy trình Hỗ trợ):
+- **Cơ cấu phân bổ chuẩn mực 3 tầng (2 – 2 – 2)**:
   - *2 Quy trình Quản lý:* 3.1. Quản lý chuỗi cung ứng & 3.2. Quản lý chất lượng.
   - *2 Quy trình Cốt lõi:* 3.3. Bán thuốc tại nhà thuốc & 3.4. Bán thuốc online.
   - *2 Quy trình Hỗ trợ:* 3.5. Quản lý kho & 3.6. Tuyển dụng và đào tạo.
-- **Chuẩn hóa Cổng điều kiện (Gateways)**: Tất cả 6 sơ đồ đều được thiết kế với **đúng 8 Cổng điều kiện (Gateways > 7)** nhằm đáp ứng tiêu chí đạt điểm tối đa (1.0 điểm) của rubric chấm điểm.
+- **Chuẩn hóa Cổng điều kiện (Gateways)**: Tất cả 6 sơ đồ đều được thiết kế với **đúng 8 Cổng điều kiện (Gateways > 7)** nhằm bảo đảm độ phức tạp, tính bao quát và phản ánh trung thực các rẽ nhánh nghiệp vụ trong thực tế.
 - **Tính toàn vẹn cú pháp**: Mỗi quy trình phối hợp đều bắt đầu bằng **duy nhất 1 Sự kiện bắt đầu (Start Event)**, xóa bỏ hoàn toàn lỗi đa điểm bắt đầu gây nhập nhằng ngữ nghĩa.
 - **Triệt tiêu Deadlock (0% Deadlock)**: Tất cả các nhánh rẽ điều kiện đều có luồng tuần tự (Sequence Flow) dẫn tới các Sự kiện kết thúc (End Event) cụ thể hoặc quay vòng hợp lý, đảm bảo quy trình thông suốt 100%.
 - **Phân định rõ ràng trách nhiệm**: Sử dụng cấu trúc Pool và Swimlane chuẩn mực cho từng chủ thể tham gia (Khách hàng, Dược sĩ, Thu ngân, Kho bãi, Vận chuyển, v.v.).

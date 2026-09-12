@@ -52,138 +52,173 @@ Vai trò cụ thể: Dược sĩ là người đóng vai trò then chốt (R), q
 
 ### 4.2.2. Phân loại hoạt động VA/BVA/NVA
 
-Việc phân loại chi tiết các bước trong quy trình giúp nhận diện những hoạt động cần tối ưu hóa.
+Việc phân loại chi tiết các bước trong quy trình theo ba nhóm giá trị gia tăng (VA - BVA - NVA) giúp nhóm bóc tách chính xác những khâu tạo giá trị và những khâu lãng phí cần triệt tiêu, theo cấu trúc phân tích: Liệt kê hoạt động, Mô tả bản chất và Đề xuất biện pháp khắc phục.
 
 *Bảng 4.2: Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc*
 
-| STT | Tên hoạt động | Loại (VA/BVA/NVA) | Thời gian (phút) | Giải thích |
-| --- | --- | --- | --- | --- |
-| 1 | Khách hàng lấy số/chờ đến lượt | NVA | 3.0 | Khách hàng phải đợi trong giờ cao điểm, không tạo giá trị. |
-| 2 | Khách hàng trình bày triệu chứng/đơn thuốc | VA | 1.0 | Cung cấp thông tin thiết yếu cho việc chẩn đoán. |
-| 3 | Dược sĩ kiểm tra tính hợp lệ đơn thuốc | BVA | 0.5 | Hoạt động bắt buộc theo quy định pháp luật y tế. |
-| 4 | Dược sĩ đặt câu hỏi tư vấn sâu | VA | 2.0 | Tạo ra giá trị chuyên môn, giúp tìm đúng thuốc. |
-| 5 | Tra cứu tồn kho trên phần mềm | NVA | 1.0 | Có thể tự động hóa hoặc tích hợp tốt hơn để giảm thời gian tìm kiếm. |
-| 6 | Đi lại tìm thuốc trên kệ | NVA | 1.5 | Di chuyển vật lý mất thời gian, do bố trí kho chưa tối ưu. |
-| 7 | Lấy thuốc và kiểm tra hạn sử dụng | BVA | 0.5 | Cần thiết để đảm bảo chất lượng trước khi giao. |
-| 8 | Di chuyển thuốc ra quầy thu ngân | NVA | 0.5 | Thao tác thừa do quầy tư vấn và thu ngân tách biệt. |
-| 9 | Thu ngân tính tiền và khách hàng thanh toán | VA | 1.0 | Hoàn tất giao dịch, tạo doanh thu. |
-| 10 | Đợi in hóa đơn giấy | NVA | 0.5 | Lãng phí thời gian chờ thiết bị. |
-| 11 | Ghi chú liều dùng lên vỏ thuốc | VA | 1.0 | Mang lại giá trị sử dụng an toàn cho khách hàng. |
-| 12 | Giao thuốc và dặn dò khách hàng | VA | 1.0 | Tương tác cuối cùng, tạo sự an tâm. |
+| STT | Hoạt động quy trình (Liệt kê) | Phân loại | Thời gian (phút) | Bản chất hoạt động (Mô tả) | Biện pháp khắc phục (Tối ưu hóa) |
+| :---: | :--- | :---: | :---: | :--- | :--- |
+| 1 | Khách hàng lấy số/chờ đến lượt | NVA | 3.0 | Khách phải đứng xếp hàng chờ đợi trong giờ cao điểm, không tạo ra bất kỳ giá trị nào. | Triển khai Kiosk lấy số thông minh phân luồng khách ưu tiên; hỗ trợ đặt trước qua App Long Châu. |
+| 2 | Khách hàng trình bày triệu chứng/đơn thuốc | VA | 1.0 | Cung cấp thông tin lâm sàng thiết yếu cho việc chẩn đoán và lựa chọn thuốc. | Duy trì tương tác trực tiếp; cho phép quét mã đơn thuốc điện tử trên App để nạp dữ liệu tức thì. |
+| 3 | Dược sĩ kiểm tra tính hợp lệ đơn thuốc | BVA | 0.5 | Hoạt động kiểm soát bắt buộc theo quy định pháp luật y tế và chuẩn GPP. | Tự động hóa kiểm tra chéo tương tác thuốc và liều lượng trần qua hệ thống Smart POS. |
+| 4 | Dược sĩ đặt câu hỏi tư vấn sâu | VA | 2.0 | Tạo ra giá trị chuyên môn cao nhất, giúp người bệnh hiểu đúng phác đồ điều trị. | Chuẩn hóa kịch bản tư vấn theo từng nhóm bệnh lý; gợi ý phác đồ chăm sóc kèm theo trên màn hình POS. |
+| 5 | Tra cứu tồn kho trên phần mềm | NVA | 1.0 | Dược sĩ phải gõ từng tên thuốc tìm kiếm thủ công do hệ thống phản hồi chậm. | Tích hợp hệ thống tra cứu nhanh theo hoạt chất và hiển thị tồn kho thời gian thực liên thông toàn chuỗi. |
+| 6 | Đi lại tìm thuốc trên kệ | NVA | 1.5 | Di chuyển vật lý mất nhiều thời gian do mặt bằng quầy bố trí chưa tối ưu vị trí thuốc. | Số hóa sơ đồ kệ thuốc (Bin/Location layout); hiển thị chính xác vị trí ngăn kệ trên màn hình POS. |
+| 7 | Lấy thuốc và kiểm tra hạn sử dụng | BVA | 0.5 | Kiểm soát cảm quan và date thuốc bắt buộc trước khi giao tận tay người bệnh. | Áp dụng máy quét mã vạch Barcode/QR kiểm tra date tự động, loại bỏ kiểm tra bằng mắt thường. |
+| 8 | Di chuyển thuốc ra quầy thu ngân | NVA | 0.5 | Thao tác thừa do quầy tư vấn chuyên môn và quầy thu ngân bị tách rời vật lý. | Hợp nhất quầy tư vấn và quầy thanh toán (All-in-One Counter) trên một thiết bị Smart POS. |
+| 9 | Thu ngân tính tiền và khách hàng thanh toán | VA | 1.0 | Hoàn tất giao dịch tài chính, tạo doanh thu trực tiếp cho nhà thuốc. | Tích hợp thanh toán không tiền mặt đa kênh (VietQR, thẻ ngân hàng, ví điện tử) trong 5 giây. |
+| 10 | Đợi in hóa đơn giấy | NVA | 0.5 | Thời gian chờ máy in nhiệt in ra hóa đơn giấy dài, nhiều khách hàng vứt bỏ ngay. | Chuyển sang xuất hóa đơn điện tử (E-receipt) gửi tự động qua Zalo hoặc ứng dụng Long Châu. |
+| 11 | Ghi chú liều dùng lên vỏ thuốc | VA | 1.0 | Mang lại giá trị sử dụng an toàn, giúp bệnh nhân tuân thủ đúng liều lượng chỉ định. | In tem nhãn hướng dẫn liều dùng tự động dán lên hộp thuốc thay vì viết tay bằng bút lông. |
+| 12 | Giao thuốc và dặn dò khách hàng | VA | 1.0 | Tương tác cuối cùng tạo sự an tâm, dặn dò kiêng cữ và tái khám định kỳ. | Duy trì tương tác nhân văn; kích hoạt tính năng nhắc lịch uống thuốc tự động trên App. |
 
-**Nhận xét:** Tổng thời gian chu kỳ là 13.5 phút. Trong đó, thời gian VA chỉ chiếm 6.0 phút (~44.4%), BVA chiếm 1.0 phút (~7.4%), và NVA chiếm tới 6.5 phút (~48.2%). Tỷ lệ NVA quá cao cho thấy quy trình hiện tại đang lãng phí đáng kể thời gian của khách hàng, chủ yếu rơi vào việc chờ đợi, tra cứu và di chuyển vật lý của nhân viên.
+**Nhận xét:** Tổng thời gian chu kỳ (Cycle Time) là 13.5 phút. Trong đó:
+- Thời gian tạo giá trị (VA): 6.0 phút (~44.4%).
+- Thời gian tạo giá trị kinh doanh bắt buộc (BVA): 1.0 phút (~7.4%).
+- Thời gian lãng phí không tạo giá trị (NVA): 6.5 phút (~48.2%).
+Tỷ lệ NVA chiếm gần một nửa chu kỳ vận hành cho thấy quy trình hiện tại đang lãng phí đáng kể nguồn lực, chủ yếu rơi vào khâu chờ đợi của khách hàng, tra cứu tồn kho thủ công và việc đi lại nhặt thuốc của dược sĩ.
 
-### 4.2.3. Phân tích lãng phí
+### 4.2.3. Phân tích sự lãng phí (Move – Hold – Overdo)
 
-Dựa vào khung phân tích Lean, các điểm lãng phí được chỉ ra cụ thể như sau:
+Theo phương pháp luận Lean, các loại lãng phí trong quy trình bán thuốc tại nhà thuốc được gom cụm thành 3 nhóm tác động trực tiếp: **Move (Di chuyển)**, **Hold (Tồn trữ / Chờ đợi)** và **Overdo (Làm thừa / Sửa sai)** theo cấu trúc chuẩn: Liệt kê, Mô tả biểu hiện trên quy trình và Đề xuất biện pháp khắc phục.
 
-*Bảng 4.3: Bảng tổng hợp lãng phí Lean trong quy trình Bán thuốc tại nhà thuốc*
+*Bảng 4.3: Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Bán thuốc tại nhà thuốc*
 
-| Loại lãng phí | Biểu hiện | Tác động | Mức độ |
-| --- | --- | --- | --- |
-| Chờ đợi | Khách hàng chờ lâu giờ cao điểm do không có hệ thống lấy số; chờ in hóa đơn giấy. | Giảm sự hài lòng, khách hàng có thể bỏ đi. | Cao |
-| Di chuyển | Dược sĩ phải đi lại nhiều giữa quầy tư vấn, kệ thuốc và quầy thu ngân. | Kéo dài thời gian giao dịch, gây mệt mỏi cho nhân sự. | Trung bình |
-| Quy trình thừa | In hóa đơn giấy cho mọi giao dịch dù khách không yêu cầu; ghi chép sổ tay lặp lại. | Tốn kém chi phí giấy in, tốn thời gian thao tác. | Trung bình |
-| Tồn kho | Tồn kho không cân bằng, nhà thuốc thiếu hàng, nơi thừa hàng; không có cảnh báo tự động. | Mất cơ hội bán hàng, tốn thời gian tra cứu. | Cao |
-| Sửa chữa lỗi | Sai sót trong việc lấy nhầm hàm lượng thuốc, phải kiểm tra lại. | Rủi ro sức khỏe khách hàng, tốn thời gian đổi trả. | Cao |
-| Không sử dụng dữ liệu | Không lưu trữ và khai thác lịch sử mua bán của khách quen. | Dược sĩ phải hỏi lại từ đầu, tư vấn lặp lại nhiều lần. | Cao |
+| Nhóm lãng phí Lean | Hoạt động lãng phí (Liệt kê) | Biểu hiện cụ thể trên quy trình (Mô tả) | Biện pháp khắc phục (Khắc phục) |
+| :---: | :--- | :--- | :--- |
+| **MOVE**<br>*(Di chuyển / Vận chuyển)* | Dược sĩ đi lại nhiều lần tìm thuốc trên kệ | Dược sĩ phải di chuyển qua lại liên tục giữa bàn tư vấn và các dãy kệ thuốc phía sau (mất 1.5 phút/đơn); nhiều dược sĩ cùng di chuyển va chạm nhau trong giờ cao điểm. | Quy hoạch lại layout nhà thuốc; sắp xếp thuốc theo tần suất bán (Fast-moving nằm gần bàn tư vấn); chỉ định mã vị trí ngăn chứa trên màn hình. |
+| **MOVE**<br>*(Di chuyển / Vận chuyển)* | Di chuyển khay thuốc sang quầy thu ngân | Sau khi nhặt thuốc, dược sĩ phải mang khay thuốc sang quầy thu ngân riêng biệt để quét mã tính tiền, tạo thêm một chặng di chuyển vật lý thừa (0.5 phút). | Hợp nhất chức năng tư vấn và thanh toán tại một điểm quầy (All-in-One Counter) tích hợp máy POS cảm ứng. |
+| **HOLD**<br>*(Tồn trữ / Chờ đợi)* | Khách hàng chờ đến lượt phục vụ | Khách hàng phải đứng chờ đợi trung bình 3.0 phút vào khung giờ cao điểm (17h – 20h) do không có cơ chế phân luồng khách hàng mua định kỳ và khách tư vấn mới. | Lắp đặt Kiosk điện tử lấy số thứ tự tự động; triển khai làn phục vụ nhanh cho khách đặt thuốc trước qua App. |
+| **HOLD**<br>*(Tồn trữ / Chờ đợi)* | Chờ đợi hệ thống POS tra cứu tồn kho | Dược sĩ phải chờ phần mềm phản hồi tra cứu thuốc thay thế hoặc tồn kho chi nhánh lân cận, làm gián đoạn cuộc hội thoại tư vấn với người bệnh (1.0 phút). | Nâng cấp đường truyền mạng 4G dự phòng; tối ưu hóa cơ sở dữ liệu POS để thời gian truy xuất thông tin dưới 1 giây. |
+| **HOLD**<br>*(Tồn trữ / Chờ đợi)* | Tồn kho lệch pha giữa các chi nhánh | Một số thuốc đặc trị hết hàng tại chi nhánh này nhưng lại tồn ứ tại chi nhánh khác, khiến dược sĩ phải gọi điện tìm nguồn điều chuyển thủ công. | Ứng dụng hệ thống liên thông tồn kho Realtime toàn chuỗi, tự động cảnh báo điều chuyển hàng giữa các cửa hàng lân cận. |
+| **OVERDO**<br>*(Làm thừa / Sửa sai)* | In hóa đơn giấy bắt buộc cho mọi đơn hàng | Máy in bill nhiệt in ra các cuộn giấy dài cho tất cả giao dịch dù phần lớn khách hàng bỏ lại tại quầy; mất thời gian chờ in (0.5 phút) và tốn chi phí giấy. | Mặc định xuất hóa đơn điện tử E-receipt gửi qua Zalo/App Long Châu; chỉ in hóa đơn giấy khi khách hàng có yêu cầu riêng. |
+| **OVERDO**<br>*(Làm thừa / Sửa sai)* | Tư vấn lặp lại do không lưu lịch sử | Khách hàng quen mua thuốc mãn tính hàng tháng vẫn phải khai báo lại từ đầu triệu chứng bệnh do hệ thống POS không lưu vết hồ sơ sức khỏe. | Tích hợp phân hệ CRM hồ sơ bệnh nhân điện tử (E-Health Profile), tự động nhận diện hội viên qua số điện thoại để hiển thị toa cũ. |
+| **OVERDO**<br>*(Làm thừa / Sửa sai)* | Lỗi nhặt nhầm thuốc phải đổi lại | Bao bì các hộp thuốc có hàm lượng khác nhau (ví dụ: Paracetamol 500mg và 650mg) rất giống nhau, dẫn đến rủi ro nhặt nhầm phải làm lại thao tác từ đầu. | Bắt buộc quét mã Barcode hộp thuốc trước khi đóng gói; hệ thống phát cảnh báo âm thanh nếu quét sai mã thuốc trong đơn. |
 
 ### 4.2.4. Phân tích nguyên nhân gốc rễ
 
-Sử dụng biểu đồ Fishbone để phân tích vấn đề trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"**.
-- **Con người**: Thiếu hụt nhân sự vào các khung giờ cao điểm; kỹ năng tra cứu và tư vấn của một số dược sĩ chưa đồng đều.
-- **Quy trình**: Không có quy trình phân luồng khách hàng (mua định kỳ vs tư vấn mới); quy trình kiểm tra đơn thuốc thủ công mất nhiều thời gian.
-- **Công nghệ**: Hệ thống POS chưa thông minh, không tích hợp gợi ý thuốc thay thế; thiếu kênh online hỗ trợ đặt trước.
-- **Môi trường**: Diện tích quầy tư vấn hẹp, bố trí layout chưa tối ưu; thiếu khu vực chờ có tổ chức cho khách hàng.
-- **Nguyên vật liệu**: Thiếu hụt các loại thuốc đặc trị khó tìm tại chi nhánh; không có hệ thống cảnh báo tồn kho ở mức thấp.
+Sử dụng biểu đồ Fishbone (Ishikawa 6M) để phân rã nguyên nhân vấn đề trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"**.
+- **Man (Con người)**: Thiếu hụt nhân sự vào các khung giờ cao điểm (17h - 20h); kỹ năng tra cứu và ghi nhớ vị trí thuốc của dược sĩ mới chưa đồng đều.
+- **Method (Phương pháp / Quy trình)**: Chưa có quy trình phân luồng khách hàng (khách mua thuốc quen định kỳ bị xếp chung luồng với khách tư vấn ca bệnh phức tạp); quy trình thanh toán và in bill giấy cồng kềnh.
+- **Machine (Công nghệ)**: Phần mềm POS chưa thông minh, chưa tự động gợi ý vị trí ngăn thuốc trên kệ; dữ liệu tồn kho chưa liên thông thời gian thực với phân hệ kho WMS.
+- **Material (Nguyên vật liệu / Sản phẩm)**: Danh mục hơn 10.000 SKU thuốc; bao bì nhiều mặt hàng tương đồng dễ gây nhầm lẫn; thuốc hết hàng cục bộ tại quầy.
+- **Measurement (Đo lường)**: Chưa có chỉ số KPI đo lường thời gian phục vụ từng lượt khách theo thời gian thực để tự động điều phối nhân sự hỗ trợ quầy.
+- **Mother Nature (Môi trường)**: Không gian quầy tư vấn hẹp, thiếu ghế ngồi và khu vực chờ có tổ chức cho người bệnh.
 
 **Áp dụng phương pháp 5 Whys cho vấn đề "Khách hàng chờ lâu":**
-1. **Tại sao khách hàng phải chờ lâu?** Vì thời gian xử lý một giao dịch của dược sĩ tốn nhiều thời gian (trung bình khoảng 13.5 phút/giao dịch).
-2. **Tại sao mỗi giao dịch lại tốn nhiều thời gian?** Vì dược sĩ phải đi lại nhiều để tìm thuốc và tra cứu tồn kho trên máy lâu.
-3. **Tại sao việc tìm thuốc và tra cứu lại lâu?** Vì phần mềm POS không gợi ý vị trí lưu trữ và không tự động báo hết hàng.
-4. **Tại sao hệ thống POS không gợi ý và báo hết hàng?** Vì phần mềm bán hàng hiện tại chưa được liên kết chặt chẽ theo thời gian thực với phân hệ quản lý kho (WMS).
-5. **Tại sao chưa có sự liên kết chặt chẽ với WMS?** Vì hạ tầng công nghệ chưa được đầu tư nâng cấp đồng bộ cho phép tích hợp dữ liệu tập trung toàn chuỗi. (Nguyên nhân gốc rễ)
+1. *Tại sao khách hàng phải chờ lâu?* Vì thời gian hoàn tất một lượt giao dịch tại quầy kéo dài trung bình 13.5 phút.
+2. *Tại sao mỗi giao dịch lại mất tới 13.5 phút?* Vì dược sĩ mất nhiều thời gian đi lại tìm thuốc trên kệ (1.5') và khách phải đứng chờ đến lượt (3.0').
+3. *Tại sao việc tìm thuốc trên kệ lại tốn thời gian?* Vì quầy thuốc không có bản đồ vị trí lưu trữ số hóa, dược sĩ phải dựa hoàn toàn vào trí nhớ cá nhân.
+4. *Tại sao hệ thống POS không hiển thị vị trí ngăn kệ thuốc?* Vì cơ sở dữ liệu bán lẻ chưa được cấu trúc hóa theo sơ đồ vị trí (Bin/Location layout) và chưa liên kết với hệ thống kho.
+5. *Tại sao chưa cấu trúc hóa dữ liệu vị trí thuốc?* Vì quy trình vận hành trước đây mang nặng tính thủ công truyền thống, chưa được đầu tư tái thiết kế và số hóa đồng bộ theo chuẩn BPM. *(Nguyên nhân gốc rễ)*
 
-### 4.2.5. Phân tích thời gian, chi phí và chất lượng
+### 4.2.5. Phân tích định lượng (Thời gian, Chất lượng, Chi phí)
 
-- **Thời gian**: Qua khảo sát và mô phỏng học thuật, Cycle Time (thời gian chu kỳ) trung bình AS-IS là 13.5 phút/khách. Trong đó, thời gian khách phải chờ đợi cùng các thao tác lãng phí (NVA) chiếm tới 6.5 phút (~48.2% tổng thời gian chu kỳ).
-- **Chi phí**: Ước tính chi phí lãng phí bao gồm chi phí cơ hội do mất khách (khi họ thấy đông và bỏ đi), chi phí giấy in hóa đơn dư thừa và chi phí nhân công cho các thao tác đi lại vô ích.
-- **Chất lượng**: Tỷ lệ sai sót (xuất nhầm thuốc, nhầm hàm lượng) dù được kiểm soát nhưng vẫn tạo ra những rủi ro. Điểm hài lòng khách hàng (NPS - Net Promoter Score) ước tính chỉ ở mức trung bình (~45) chủ yếu do trải nghiệm chờ đợi làm giảm sự hài lòng.
+Phân tích định lượng là phương pháp sử dụng số liệu đo lường cụ thể để lượng hóa quy mô tổn thất và xác định rõ mục tiêu cần đạt sau cải tiến. Bảng dưới đây tổng hợp các tính toán thực nghiệm trên 3 khía cạnh cốt lõi: **Thời gian**, **Chất lượng** và **Chi phí**, theo cấu trúc: Liệt kê chỉ số, Công thức tính toán và Biện pháp khắc phục.
+
+*Bảng 4.4: Bảng phân tích định lượng hiệu suất quy trình Bán thuốc tại nhà thuốc*
+
+| Khía cạnh | Chỉ số đo lường (Liệt kê) | Công thức & Tính toán thực nghiệm (AS-IS) | Biện pháp khắc phục (Mục tiêu TO-BE) |
+| :---: | :--- | :--- | :--- |
+| **THỜI GIAN**<br>*(Time)* | **1. Thời gian chu kỳ tổng (Cycle Time - CT):**<br>- Thời gian tạo giá trị (VA)<br>- Thời gian lãng phí (NVA)<br><br>**2. Hiệu suất chu kỳ quy trình (PCE - Process Cycle Efficiency):** | **Tính toán:**<br>- Tổng Cycle Time: CT = 13.5 phút/lượt khách.<br>- Phân rã thời gian: T_VA = 6.0 phút (44.4%), T_BVA = 1.0 phút (7.4%), T_NVA = 6.5 phút (48.2%).<br>- **Hiệu suất chu kỳ (PCE):**<br>PCE = (T_VA / CT) * 100% = (6.0 / 13.5) * 100% ≈ 44.4%<br>*(Ý nghĩa: Hơn 55% thời gian chu kỳ là thời gian chết lãng phí).* | - Áp dụng Kiosk phân luồng, Smart POS định vị thuốc và thanh toán QR tức thì.<br>- **Mục tiêu TO-BE:** Cắt giảm NVA từ 6.5 phút xuống còn 0.5 phút; đưa Cycle Time từ 13.5 phút xuống **4.5 phút** (giảm 67%); nâng hiệu suất PCE lên **88.9%**. |
+| **CHẤT LƯỢNG**<br>*(Quality)* | **1. Tỷ lệ khách hàng bỏ hàng (Abandonment Rate):**<br><br>**2. Tỷ lệ nhặt nhầm thuốc (Dispensing Error Rate):**<br><br>**3. Điểm đo lường sự hài lòng (NPS / CSAT):** | **Tính toán:**<br>- Khảo sát vào khung giờ cao điểm (17h - 20h): Tỷ lệ khách hàng thấy đông đúc và bỏ đi không mua ước tính **8% – 10%** tổng lượt ghé quầy.<br>- Tỷ lệ nhặt nhầm hàm lượng thuốc phải đối chiếu đổi lại tại bàn tư vấn: **1.5%** giao dịch.<br>- Điểm hài lòng khách hàng NPS đạt **+45 điểm** (mức trung bình ngành bán lẻ dịch vụ). | - Kiosk phát số hẹn giờ; kiểm tra chéo đơn thuốc bằng máy quét Barcode tự động.<br>- **Mục tiêu TO-BE:** Giảm tỷ lệ khách bỏ đi xuống **< 1%**; triệt tiêu 95% lỗi nhầm thuốc; nâng chỉ số hài lòng NPS lên **≥ 65 điểm** và CSAT đạt **≥ 90%**. |
+| **CHI PHÍ**<br>*(Cost)* | **1. Chi phí nhân công trả cho thời gian chết (NVA Labor Cost):**<br><br>**2. Chi phí cơ hội do mất doanh thu (Lost Sales Cost):**<br><br>**3. Chi phí in ấn hóa đơn giấy (Paper Receipt Cost):** | **Tính toán:**<br>- *Chi phí thời gian chết NVA:* Mỗi khách lãng phí 6.5 phút NVA. Một nhà thuốc phục vụ 80 khách/ngày -> Lãng phí 6.5 x 80 = 520 phút (≈ 8.67 giờ công/ngày). Với đơn giá lương nhân viên 40.000 đ/giờ -> Thiệt hại **346.800 đ/ngày/cửa hàng** -> **10.4 triệu đ/tháng/cửa hàng** -> Toàn chuỗi 1.800 cửa hàng thiệt hại hơn **18.7 tỷ đồng/tháng** chỉ để trả lương cho thời gian chờ và đi lại vô ích!<br>- *Mất doanh thu do khách bỏ đi:* 8% của 80 khách/ngày = 6.4 khách x Giá trị đơn 150.000 đ ≈ Thiệt hại **960.000 đ/ngày/cửa hàng** (≈ 28.8 triệu đ/tháng).<br>- *Chi phí giấy in:* 3 cuộn bill/ngày ≈ **1.35 triệu đ/tháng/cửa hàng** -> 2.4 tỷ đ/tháng toàn chuỗi. | - Triệt tiêu 90% thời gian NVA giúp tiết kiệm hơn **16.8 tỷ đồng/tháng** chi phí nhân công lãng phí toàn hệ thống.<br>- Giữ chân khách hàng giúp thu hồi gần **28 triệu đ doanh thu/tháng/cửa hàng**.<br>- Chuyển sang E-receipt qua Zalo tiết kiệm **100%** chi phí giấy in nhiệt (tiết kiệm hơn 28 tỷ đồng/năm toàn chuỗi). |
 
 ---
 
 ## 4.3. Phân tích quy trình quản lý kho
 
-Quy trình quản lý kho là xương sống hậu cần duy trì nguồn hàng ổn định cho toàn bộ chuỗi. Tại Long Châu, quy trình vận hành kho phức tạp nhưng đang tồn tại nhiều công đoạn thủ công, thiếu sự tự động hóa cần thiết.
+Quy trình quản lý kho là xương sống hậu cần duy trì nguồn hàng ổn định cho toàn bộ chuỗi nhà thuốc FPT Long Châu. Tại hệ thống kho vận dược phẩm, quy trình vận hành đòi hỏi tính nghiêm ngặt về tiêu chuẩn GDP/GSP, nhưng hiện trạng tại các kho trung tâm vẫn đang tồn tại nhiều công đoạn thủ công, ghi chép trùng lặp, thiếu sự tự động hóa cần thiết dẫn đến suy giảm hiệu suất và gia tăng rủi ro cận hạn thuốc.
 
 ### 4.3.1. Phân tích tác nhân và các bên liên quan
 
-Ma trận RACI cho quy trình quản lý kho được xác định như sau:
+Để xác định rõ trách nhiệm và vai trò của từng bộ phận tham gia vào chuỗi cung ứng nội bộ tại kho, ma trận RACI được thiết lập chi tiết:
 
-*Bảng 4.4: Ma trận RACI quy trình Quản lý kho*
+*Bảng 4.5: Ma trận RACI quy trình Quản lý kho*
 
-| STT | Các bên liên quan | R (Thực thi) | A (Chịu trách nhiệm) | C (Tham vấn) | I (Được thông báo) |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Nhân viên kho | Bốc dỡ, kiểm đếm, sắp xếp, xuất hàng | | | |
-| 2 | Trưởng kho | Lập kế hoạch, điều phối nhân sự, duyệt báo cáo | Chịu trách nhiệm toàn bộ về số lượng và chất lượng tồn kho | Bộ phận QA | Ban Giám đốc |
-| 3 | Nhà cung cấp | Giao hàng đúng hạn | | | Trưởng kho |
-| 4 | Nhân viên nhà thuốc | Gửi yêu cầu nhập hàng, nhận hàng | | | Trạng thái xử lý |
-| 5 | Hệ thống ERP | Ghi nhận dữ liệu, xử lý tính toán | | | |
+| STT | Các bên liên quan | R (Responsible - Thực thi) | A (Accountable - Chịu trách nhiệm) | C (Consulted - Tham vấn) | I (Informed - Được thông báo) |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | Nhân viên kho | Trực tiếp bốc dỡ, kiểm đếm, sắp xếp lên kệ, nhặt hàng, đóng gói | | Trưởng kho | Tài xế giao nhận |
+| 2 | Trưởng kho / Quản lý kho | Điều phối nhân sự, kiểm soát nhập - xuất, phê duyệt biên bản | Chịu trách nhiệm toàn diện về tính chính xác của tồn kho và date thuốc | Bộ phận QA, Bộ phận Mua hàng | Ban Giám đốc Khối Vận hành |
+| 3 | Nhà cung cấp (NCC) | Giao hàng đúng lịch, đúng quy cách chủng loại | Chịu trách nhiệm về hóa đơn, chứng từ CO/CQ và chất lượng lô thuốc | Bộ phận Mua hàng | Nhân viên tiếp nhận kho |
+| 4 | Nhân viên nhà thuốc | Lập yêu cầu cấp phát hàng, kiểm tra hàng nhận | Chịu trách nhiệm kiểm tra đối chiếu thuốc giao về quầy | | Trạng thái đơn điều chuyển |
+| 5 | Hệ thống ERP / WMS | Ghi nhận tự động số liệu tồn kho, xử lý tính toán và cảnh báo | | Đội ngũ Quản trị CNTT | Nhân viên kho, Kế toán kho |
 
 ### 4.3.2. Phân loại hoạt động VA/BVA/NVA
 
-*Bảng 4.5: Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho*
+Việc phân tích chuỗi giá trị (Value-Added Analysis) được thực hiện cho toàn bộ 14 hoạt động thuộc chu trình kho điển hình (bao gồm: Tiếp nhận nhập kho, Lưu trữ bảo quản, Soạn hàng xuất kho và Kiểm kê). Mỗi hoạt động được bóc tách theo cấu trúc: Liệt kê, Phân loại, Thời gian, Bản chất mô tả và Biện pháp khắc phục tối ưu.
 
-| STT | Tên hoạt động | Loại (VA/BVA/NVA) | Thời gian (phút) | Giải thích |
-| --- | --- | --- | --- | --- |
-| 1 | Nhận thông báo giao hàng | BVA | 5.0 | Cần thiết để chuẩn bị khu vực bốc dỡ. |
-| 2 | Bốc dỡ hàng từ xe | VA | 30.0 | Di chuyển hàng vào khu vực an toàn. |
-| 3 | Đợi giấy tờ, phiếu giao hàng | NVA | 15.0 | Thời gian chờ đợi do thủ tục hành chính. |
-| 4 | Kiểm đếm số lượng thủ công | NVA | 45.0 | Lãng phí do không sử dụng công nghệ mã vạch. |
-| 5 | Kiểm tra ngoại quan, hạn sử dụng | BVA | 20.0 | Bắt buộc để đảm bảo chất lượng dược phẩm. |
-| 6 | Ghi chép sổ sách nhập kho bằng tay | NVA | 15.0 | Thao tác thừa, dễ dẫn đến sai sót. |
-| 7 | Nhập lại số liệu từ sổ vào hệ thống ERP | NVA | 20.0 | Nhân đôi công việc nhập liệu, lãng phí thời gian. |
-| 8 | Di chuyển, sắp xếp hàng lên kệ | VA | 40.0 | Tổ chức lưu trữ hàng hóa phục vụ xuất kho. |
-| 9 | Nhận yêu cầu xuất kho | BVA | 5.0 | Tiếp nhận thông tin xử lý. |
-| 10 | Đi tìm hàng hóa theo yêu cầu | NVA | 30.0 | Mất thời gian do không có bản đồ kho số hóa. |
-| 11 | Nhặt hàng, soạn hàng | VA | 20.0 | Tạo ra giá trị hoàn thành đơn hàng. |
-| 12 | Đóng gói hàng hóa | VA | 15.0 | Bảo vệ hàng hóa khi vận chuyển. |
-| 13 | Ghi trừ lùi thẻ kho bằng giấy | NVA | 10.0 | Hoạt động lặp lại, dư thừa với hệ thống số. |
-| 14 | Kiểm kê định kỳ đếm tay toàn bộ kho | NVA | 240.0 | Cực kỳ tốn kém thời gian nhân lực và gián đoạn. |
+*Bảng 4.6: Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho*
 
-**Nhận xét:** Với một chu trình nhập-xuất-kiểm cơ bản, thời gian dành cho các hoạt động NVA là cực kỳ lớn (lên tới 375 phút so với tổng ~510 phút). Việc nhập liệu hai lần, đếm thủ công và duy trì hệ thống thẻ kho giấy là nguyên nhân chính dẫn đến sự chậm trễ, sai sót và phình to chi phí vận hành kho.
+| STT | Hoạt động quy trình (Liệt kê) | Phân loại | Thời gian (phút) | Bản chất hoạt động (Mô tả) | Biện pháp khắc phục (Khắc phục) |
+| :---: | :--- | :---: | :---: | :--- | :--- |
+| 1 | Tiếp nhận thông báo giao hàng từ NCC | BVA | 5.0 | Đối chiếu lệnh giao hàng (PO) và chuẩn bị khu vực bến bãi tiếp nhận hàng hóa. | Tự động hóa qua cổng điện tử EDI và thông báo vận chuyển trước (Advance Shipping Notice - ASN). |
+| 2 | Bốc dỡ hàng từ xe tải vào khu trung chuyển | VA | 30.0 | Thao tác vật lý chuyển hàng vào kho an toàn, chuẩn bị kiểm tra tiếp nhận. | Chuẩn hóa pallet hàng và trang bị xe nâng điện (Forklift) chuyên dụng để tăng tốc độ bốc dỡ. |
+| 3 | Đợi giấy tờ, hóa đơn VAT và phiếu giao | NVA | 15.0 | Tài xế và nhân viên kho phải chờ ký duyệt chứng từ giấy tờ, đối chiếu thủ công. | Áp dụng biên bản giao nhận điện tử (E-Delivery Note) tích hợp chữ ký số trên hệ thống. |
+| 4 | Kiểm đếm số lượng từng thùng, từng hộp thủ công | NVA | 45.0 | Đếm thủ công bằng mắt và bút dạ, tốn nhiều thời gian và rất dễ nhầm lẫn số lượng lớn. | Trang bị thiết bị PDA quét mã Barcode/QR Code kiểm đếm tự động theo kiện và quét mẫu ngẫu nhiên. |
+| 5 | Kiểm tra ngoại quan, tem nhãn và hạn dùng | BVA | 20.0 | Hoạt động bắt buộc theo tiêu chuẩn GDP/GSP của Bộ Y tế nhằm đảm bảo chất lượng thuốc. | Tự động đối chiếu thông tin số lô và hạn sử dụng (EXP Date) qua quét mã vạch 2D DataMatrix. |
+| 6 | Ghi chép sổ sách và lập phiếu nhập kho bằng tay | NVA | 15.0 | Thủ kho ghi chép tay vào sổ theo dõi kho trước khi mang về phòng vi tính nhập liệu. | Bãi bỏ hoàn toàn sổ tay giấy; tạo phiếu nhập kho (GRN) tức thì trên thiết bị PDA cầm tay. |
+| 7 | Nhập lại số liệu từ sổ tay vào hệ thống ERP | NVA | 20.0 | Nhân viên ngồi máy tính gõ lại toàn bộ danh mục thuốc từ sổ tay, nhân đôi thời gian thao tác. | Đồng bộ dữ liệu tức thời (Real-time sync) từ PDA thẳng lên hệ thống ERP/WMS qua mạng Wi-Fi công nghiệp. |
+| 8 | Di chuyển và sắp xếp hàng hóa lên giá kệ | VA | 40.0 | Tổ chức lưu trữ hàng hóa đúng quy chuẩn bảo quản, sẵn sàng cho việc xuất kho. | Ứng dụng thuật toán gợi ý vị trí ô kệ lưu trữ tối ưu (Put-away suggestion) trực tiếp trên PDA. |
+| 9 | Tiếp nhận yêu cầu xuất kho từ nhà thuốc | BVA | 5.0 | Tiếp nhận thông tin nhu cầu phân bổ thuốc từ các điểm bán trong chuỗi. | Hệ thống WMS tự động gom đơn (Order Batching) và lập kế hoạch xuất kho tối ưu theo lộ trình xe giao. |
+| 10 | Đi bộ tìm kiếm hàng hóa trên các dãy kệ | NVA | 30.0 | Nhân viên phải đi bộ lòng vòng qua nhiều dãy kệ tìm kiếm do không có bản đồ số hóa. | Mã hóa vị trí ô kệ (Bin Location Layout); hệ thống vạch lộ trình di chuyển nhặt hàng ngắn nhất (Picking Path). |
+| 11 | Nhặt hàng (Picking) và kiểm tra hạn sử dụng | VA | 20.0 | Lấy đúng chủng loại thuốc, kiểm tra đúng lô hạn phục vụ đóng gói đơn hàng. | WMS bắt buộc nhặt đúng lô date ngắn theo nguyên tắc FEFO qua mã vạch (khóa quét mã nếu sai lô date). |
+| 12 | Đóng gói và dán nhãn kiện hàng xuất | VA | 15.0 | Đóng thùng carton chuyên dụng, niêm phong và bảo vệ thuốc trong quá trình vận chuyển. | Chuẩn hóa quy cách đóng gói cơ giới hóa và in tem dán mã kiện hàng (Shipping Label) tự động. |
+| 13 | Ghi trừ lùi thẻ kho bằng giấy thủ công | NVA | 10.0 | Nhân viên ghi bút trừ lùi số lượng tồn kho trên thẻ kho giấy gắn tại đầu kệ. | Loại bỏ 100% thẻ kho giấy; hệ thống tự động trừ lùi tồn kho điện tử thời gian thực ngay khi quét xuất. |
+| 14 | Kiểm kê định kỳ toàn diện đếm tay bằng sổ | NVA | 240.0 | Cả kho phải ngừng vận hành xuất nhập để toàn bộ nhân viên đếm tay từng hộp thuốc. | Chuyển sang kiểm kê cuốn chiếu theo chu kỳ (Cycle Counting) bằng quét mã Barcode/RFID không dừng kho. |
 
-### 4.3.3. Phân tích lãng phí
+**Nhận xét tổng thể chu trình kho AS-IS:**
+- Tổng thời gian chu trình kho (Warehouse Cycle Time): 510.0 phút (tương đương 8.5 giờ công).
+- Thời gian tạo giá trị (VA): 120.0 phút (chiếm 23.5%).
+- Thời gian tạo giá trị kinh doanh bắt buộc (BVA): 30.0 phút (chiếm 5.9%).
+- Thời gian lãng phí không tạo giá trị (NVA): 360.0 phút (chiếm tới **70.6%**).
+Tỷ lệ NVA vượt quá 70% là con số đáng báo động, phản ánh hiện trạng quy trình kho đang chịu tải rất lớn bởi các thao tác kiểm đếm thủ công, nhập liệu lặp lại 2 lần và kiểm kê định kỳ làm đóng băng hoạt động kinh doanh.
 
-- **Chờ đợi**: Hàng hóa phải nằm ở khu vực tiếp nhận chờ được kiểm đếm và hoàn tất thủ tục giấy tờ trước khi lên kệ.
-- **Di chuyển**: Nhân viên kho phải đi bộ rất xa để tìm hàng vì thiếu hệ thống định vị vị trí lưu trữ (Bin/Location layout).
-- **Quy trình thừa**: Việc duy trì song song hệ thống ERP và hệ thống sổ sách, thẻ kho bằng giấy là sự lãng phí quy trình nghiêm trọng.
-- **Tồn kho/Sản xuất thừa**: Đặt hàng thiếu tính toán đồng bộ dẫn đến tồn đọng các lô thuốc cận hạn sử dụng.
-- **Sửa chữa lỗi**: Thường xuyên phải làm báo cáo giải trình, tìm nguyên nhân và kiểm kê lại khi số liệu ERP và số liệu đếm tay không khớp.
+### 4.3.3. Phân tích sự lãng phí (Move – Hold – Overdo)
+
+Áp dụng phương pháp luận Lean, toàn bộ các lãng phí trong quy trình quản lý kho được phân nhóm và chuẩn hóa theo 3 nhóm tác động cốt lõi: **Move (Di chuyển / Vận chuyển)**, **Hold (Tồn trữ / Chờ đợi)** và **Overdo (Làm thừa / Sửa sai)** theo cấu trúc: Liệt kê hoạt động lãng phí, Mô tả biểu hiện trên quy trình và Biện pháp khắc phục.
+
+*Bảng 4.7: Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Quản lý kho*
+
+| Nhóm lãng phí Lean | Hoạt động lãng phí (Liệt kê) | Biểu hiện cụ thể trên quy trình (Mô tả) | Biện pháp khắc phục (Khắc phục) |
+| :---: | :--- | :--- | :--- |
+| **MOVE**<br>*(Di chuyển / Vận chuyển)* | Đi bộ tìm kiếm hàng hóa giữa các dãy kệ kho | Do kho không có hệ thống định vị vị trí lưu trữ (Bin Location), nhân viên phải đi bộ lòng vòng qua hàng ngàn mét vuông kệ (mất 30 phút/đơn); quãng đường đi bộ ước tính 8 – 10 km/nhân viên/ca trực. | Thiết lập sơ đồ định vị ô kệ số hóa (Aisle - Rack - Shelf - Bin); WMS tự động tối ưu hóa lộ trình di chuyển nhặt hàng ngắn nhất. |
+| **MOVE**<br>*(Di chuyển / Vận chuyển)* | Bốc dỡ hàng qua nhiều trạm trung chuyển | Hàng dỡ từ xe tải phải đặt xuống sàn bến bãi, bốc sang pallet kiểm đếm, rồi bốc tiếp sang xe đẩy đưa lên kệ, tạo nhiều lượt di chuyển vật lý thừa và tăng nguy cơ va đập móp méo vỏ thuốc. | Thiết lập luồng luân chuyển pallet nguyên khối từ cửa nhập thẳng lên ô kệ thông qua xe nâng điện (Forklift), giảm tối đa các khâu nâng hạ trung gian. |
+| **HOLD**<br>*(Tồn trữ / Chờ đợi)* | Hàng hóa lưu bãi chờ hoàn tất giấy tờ | Hàng nhập về phải nằm chờ tại bến bãi 15 – 30 phút để tài xế xuất trình phiếu giao, hóa đơn giấy và thủ kho đối chiếu chữ ký thủ công trước khi bốc dỡ. | Áp dụng biên nhận điện tử (E-Delivery Note) và cổng thông tin nhà cung cấp (Supplier Portal); phê duyệt nhập hàng trước khi xe đến bến. |
+| **HOLD**<br>*(Tồn trữ / Chờ đợi)* | Thuốc cận date ứ đọng do vi phạm FEFO | Các lô thuốc mới nhập thường được xếp chồng ra phía trước kệ đè lên lô cũ, dẫn đến các lô cận hạn bị che khuất, lưu cữu trong kho nhiều tháng và phải tiêu hủy khi hết hạn. | Phần mềm WMS quản lý nghiêm ngặt theo hạn sử dụng (FEFO); hệ thống tự động khóa và phát tín hiệu cảnh báo âm thanh nếu nhân viên nhặt sai lô date dài. |
+| **HOLD**<br>*(Tồn trữ / Chờ đợi)* | Tồn kho lệch pha giữa kho trung tâm và nhà thuốc | Nhiều mặt hàng thuốc hết tồn kho tại điểm bán nhưng lại nằm ứ đọng số lượng lớn tại kho tổng do thiếu cơ chế chia sẻ thông tin tồn kho thời gian thực. | Tích hợp hệ thống WMS - ERP - POS thời gian thực, tự động kích hoạt lệnh bổ sung hàng tồn kho tự động (Auto-Replenishment) khi chạm điểm Min-Max. |
+| **OVERDO**<br>*(Làm thừa / Sửa sai)* | Nhập liệu hai lần (Ghi sổ giấy và gõ lại ERP) | Thủ kho dùng bút ghi chép số lượng vào sổ kho giấy lúc kiểm nhận, sau đó cuối ngày nhân viên kế toán kho phải ngồi gõ lại toàn bộ dữ liệu vào phần mềm ERP. | Loại bỏ hoàn toàn việc ghi chép sổ tay; nhân viên thao tác trực tiếp trên máy quét PDA để dữ liệu tự động đồng bộ thẳng lên hệ thống ERP. |
+| **OVERDO**<br>*(Làm thừa / Sửa sai)* | Duy trì ghi chép thẻ kho giấy tại đầu kệ | Thao tác ghi chép trừ lùi thủ công số lượng thuốc lên các tấm thẻ kho giấy treo ở từng ngăn kệ là công việc trùng lặp, dư thừa khi doanh nghiệp đã có ERP. | Bãi bỏ 100% thẻ kho giấy; dán mã QR định danh vị trí ô kệ để tra cứu nhanh số lượng tồn kho tức thời bằng thiết bị PDA trong 1 giây. |
+| **OVERDO**<br>*(Làm thừa / Sửa sai)* | Kiểm kê đếm tay toàn bộ kho làm gián đoạn | Mỗi tháng kho phải dừng hoạt động 1 – 2 ngày để toàn bộ nhân viên đếm tay từng hộp thuốc, sau đó mất nhiều ngày đối chiếu chênh lệch giữa sổ sách và thực tế. | Chuyển sang mô hình kiểm kê cuốn chiếu theo chu kỳ (Cycle Counting) hàng ngày bằng máy quét mã vạch Barcode/RFID, không làm gián đoạn xuất nhập kho. |
 
 ### 4.3.4. Phân tích nguyên nhân gốc rễ
 
-**Vấn đề trung tâm:** "Sai sót tồn kho và hàng cận hạn không được phát hiện kịp thời"
-Phân tích theo 6 yếu tố (6M):
-- **Man (Con người)**: Mệt mỏi do khối lượng đếm tay quá lớn dẫn đến đếm sai; phụ thuộc vào trí nhớ của nhân viên cũ.
-- **Machine (Công nghệ)**: Thiếu máy quét mã vạch (Barcode Scanner) và thiết bị PDA di động; phần mềm ERP chưa có thuật toán kiểm soát FEFO (First Expired First Out).
-- **Method (Phương pháp)**: Quy trình cập nhật thẻ kho giấy dễ xảy ra quên sót; quy trình kiểm kê toàn diện gây đóng băng hoạt động kho.
-- **Material (Nguyên vật liệu)**: Rất nhiều mã thuốc có thiết kế bao bì giống nhau dễ gây nhầm lẫn khi nhặt hàng nhanh.
-- **Measurement (Đo lường)**: Không có chỉ số đo lường hiệu suất (KPI) thời gian thực cho nhân viên kho.
-- **Mother Nature (Môi trường)**: Diện tích kho rộng, nhiều góc khuất, khu vực bảo quản lạnh khó làm việc lâu dài.
+Báo cáo sử dụng phương pháp **Biểu đồ Fishbone (Ishikawa 6M)** để bóc tách đa chiều các nhóm nguyên nhân gây ra vấn đề trung tâm: **"Sai sót số liệu tồn kho và thuốc cận hạn không được phát hiện kịp thời"**.
 
-**Áp dụng 5 Whys cho vấn đề "Số liệu tồn kho trên hệ thống không khớp thực tế":**
-1. **Tại sao số liệu không khớp?** Vì thẻ kho giấy và phần mềm ERP ghi nhận hai con số khác nhau.
-2. **Tại sao hai hệ thống ghi nhận khác nhau?** Vì nhân viên quên cập nhật vào ERP sau khi xuất hàng hoặc gõ sai số liệu.
-3. **Tại sao nhân viên quên hoặc nhập sai?** Vì quá trình này được làm hoàn toàn thủ công, nhân viên phải nhớ và nhập liệu hai lần tách biệt.
-4. **Tại sao lại phải nhập liệu tách biệt?** Vì nhân viên tại hiện trường kho không có thiết bị di động để cập nhật thẳng vào hệ thống lúc thao tác với hàng hóa.
-5. **Tại sao không có thiết bị di động?** Vì quy trình quản lý chưa được số hóa toàn diện bằng việc áp dụng công nghệ quét mã vạch (Barcode/RFID) tích hợp ERP. (Nguyên nhân gốc rễ)
+- **Man (Con người)**: Khối lượng kiểm đếm tay quá lớn dẫn đến mệt mỏi thể chất, mất tập trung; thao tác ghi chép phụ thuộc nặng nề vào trí nhớ và kinh nghiệm cá nhân của thủ kho cũ.
+- **Machine (Công nghệ & Máy móc)**: Thiếu thiết bị di động chuyên dụng (PDA/Barcode Scanner); phần mềm ERP hoạt động độc lập, chưa có thuật toán quản lý hạn sử dụng FEFO (First Expired, First Out) tự động.
+- **Method (Phương pháp & Quy trình)**: Quy trình cập nhật thẻ kho giấy và sổ tay mang nặng tính thủ công; phương thức kiểm kê toàn diện gây đóng băng vận hành và tạo độ trễ lớn trong việc phát hiện sai lệch.
+- **Material (Nguyên vật liệu & Sản phẩm)**: Danh mục hơn 10.000 SKU thuốc; nhiều mặt hàng cùng tên nhưng khác hàm lượng (ví dụ: Panadol xanh và Panadol đỏ) có bao bì tương đồng rất dễ gây nhầm lẫn khi nhặt hàng.
+- **Measurement (Đo lường & Chỉ số)**: Chưa thiết lập chỉ số KPI đo lường năng suất nhặt hàng và tỷ lệ sai lệch tồn kho theo thời gian thực để gắn trách nhiệm cá nhân.
+- **Mother Nature (Môi trường)**: Không gian kho tổng rộng lớn hàng ngàn mét vuông, thiếu biển chỉ dẫn khoa học; khu vực kho lạnh bảo quản vắc-xin/thuốc đặc trị có nhiệt độ thấp gây khó khăn cho nhân viên thao tác lâu.
 
-### 4.3.5. Phân tích thời gian, chi phí và chất lượng
+**Áp dụng phương pháp 5 Whys cho sự cố "Số liệu tồn kho trên hệ thống không khớp thực tế":**
+1. *Tại sao số liệu tồn kho trên ERP không khớp với số lượng thực tế trong kho?* Vì thẻ kho giấy và phần mềm ERP ghi nhận hai con số chênh lệch nhau.
+2. *Tại sao hai hệ thống lại ghi nhận con số khác nhau?* Vì nhân viên quên cập nhật vào phần mềm sau khi xuất hàng hoặc nhập sai số lượng khi gõ lại từ sổ tay.
+3. *Tại sao nhân viên lại quên hoặc nhập sai số liệu?* Vì quy trình được thực hiện hoàn toàn thủ công, nhân viên phải ghi chép ra giấy trước rồi mới gõ lại vào máy tính.
+4. *Tại sao không nhập trực tiếp vào hệ thống ngay lúc bốc xếp hàng hóa?* Vì tại vị trí bốc dỡ và ngăn kệ kho không có máy tính, nhân viên không có thiết bị di động để thao tác thời gian thực.
+5. *Tại sao không trang bị thiết bị di động có quét mã vạch?* Vì hạ tầng vận hành kho trước đây chưa được đầu tư số hóa toàn diện theo chuẩn BPM và WMS hiện đại. *(Nguyên nhân gốc rễ)*
 
-- **Thời gian**: Phân tích thời gian cho thấy quy trình nhập kho mất trung bình 3-4 giờ/lô lớn, xuất kho mất 1-2 giờ/đơn hàng, đặc biệt kiểm kê tốn hàng ngày trời gây gián đoạn kinh doanh.
-- **Chi phí**: Thiệt hại nặng nề nhất nằm ở lượng thuốc hết hạn bị hủy bỏ do quy tắc FEFO không được tuân thủ nghiêm ngặt bằng hệ thống. Cùng với đó là chi phí nhân công ngày càng cao để duy trì việc kiểm đếm và ghi chép thủ công.
-- **Chất lượng**: Tỷ lệ sai lệch tồn kho được ước tính dao động khoảng 5-8%. Đây là con số đáng báo động trong ngành bán lẻ dược phẩm, nơi mức độ chính xác đòi hỏi gần như tuyệt đối để đảm bảo an toàn cho bệnh nhân.
+### 4.3.5. Phân tích định lượng (Thời gian, Chất lượng, Chi phí)
+
+Nhằm định lượng chính xác mức độ tổn thất và xác lập mục tiêu số liệu cho mô hình cải tiến TO-BE, bảng phân tích định lượng hiệu suất quy trình quản lý kho được xây dựng dựa trên 3 khía cạnh: **Thời gian**, **Chất lượng** và **Chi phí**, theo cấu trúc chuẩn: Liệt kê chỉ số, Công thức tính toán và Biện pháp khắc phục.
+
+*Bảng 4.8: Bảng phân tích định lượng hiệu suất quy trình Quản lý kho*
+
+| Khía cạnh | Chỉ số đo lường (Liệt kê) | Công thức & Tính toán thực nghiệm (AS-IS) | Biện pháp khắc phục (Mục tiêu TO-BE) |
+| :---: | :--- | :--- | :--- |
+| **THỜI GIAN**<br>*(Time)* | **1. Thời gian chu kỳ chu trình kho (Warehouse Cycle Time - CT):**<br>- Thời gian nhập kho (T_in)<br>- Thời gian xuất kho (T_out)<br>- Thời gian kiểm kê (T_audit)<br><br>**2. Hiệu suất chu kỳ quy trình kho (PCE - Process Cycle Efficiency):** | **Tính toán:**<br>- Chu trình kho tổng thể: CT = T_in (150') + T_out (120') + T_audit (240') = 510.0 phút (≈ 8.5 giờ).<br>- Phân rã giá trị: T_VA = 120.0 phút (23.5%), T_BVA = 30.0 phút (5.9%), T_NVA = 360.0 phút (70.6%).<br>- **Hiệu suất chu kỳ (PCE):**<br>PCE = (T_VA / CT) * 100% = (120.0 / 510.0) * 100% ≈ 23.5%<br>*(Ý nghĩa: Hơn 76% thời gian vận hành kho là thời gian lãng phí vào đếm tay, ghi sổ và tìm kiếm hàng).* | - Triển khai thiết bị quét mã Barcode/QR PDA cầm tay, thuật toán FEFO và số hóa vị trí kệ kho (Bin Location).<br>- **Mục tiêu TO-BE:** Cắt giảm thời gian NVA từ 360 phút xuống còn 20 phút; đưa Cycle Time từ 510 phút xuống **140 phút** (giảm 72.5%); nâng hiệu suất chu kỳ PCE lên **85.7%**; rút thời gian nhập kho xuống 45 phút và xuất kho xuống 30 phút. |
+| **CHẤT LƯỢNG**<br>*(Quality)* | **1. Tỷ lệ sai lệch tồn kho (Inventory Inaccuracy Rate):**<br><br>**2. Tỷ lệ thuốc vi phạm FEFO cận hạn dùng (FEFO Violation Rate):**<br><br>**3. Tỷ lệ nhặt sai quy cách thuốc (Picking Error Rate):** | **Tính toán:**<br>- *Tỷ lệ sai lệch tồn kho:* Số mã SKU lệch / Tổng mã kiểm kê = **5.0% – 8.0%**. Với quy mô hơn 10.000 SKU, tương đương 500 – 800 mã thuốc bị sai lệch số liệu thực tế so với phần mềm.<br>- *Tỷ lệ vi phạm FEFO:* Ước tính **2.0% – 3.0%** sản phẩm lưu kho bị trôi date do xếp lẫn lộn hàng mới đè lên hàng cũ.<br>- *Tỷ lệ nhặt sai thuốc:* Ước tính **2.5%** đơn hàng xuất đi chi nhánh bị nhầm hàm lượng hoặc quy cách đóng gói. | - Áp dụng quét mã Barcode đối chiếu 100% khi nhập/xuất; WMS tự động khóa quét nếu sai date hoặc sai mã hoạt chất.<br>- **Mục tiêu TO-BE:** Giảm tỷ lệ sai lệch tồn kho xuống **< 0.5%**; giảm tỷ lệ cận date do lỗi xếp kho xuống **< 0.2%**; triệt tiêu 98% lỗi nhặt nhầm thuốc tại kho. |
+| **CHI PHÍ**<br>*(Cost)* | **1. Thiệt hại do tiêu hủy thuốc quá hạn sử dụng (Expired Inventory Loss):**<br><br>**2. Chi phí nhân công trả cho thời gian chết NVA (NVA Labor Cost):**<br><br>**3. Chi phí gián đoạn do dừng kho kiểm kê (Warehouse Downtime Cost):** | **Tính toán:**<br>- *Thiệt hại hủy thuốc quá hạn:* Với quy mô hàng tồn kho luân chuyển tại kho tổng hơn 2.000 tỷ đồng/năm, tỷ lệ thuốc hư hỏng/quá date do vi phạm FEFO chiếm khoảng 0.15% giá trị hàng -> Thiệt hại tài chính ước tính **27 – 36 tỷ đồng/năm**!<br>- *Chi phí thời gian chết NVA:* Một ca trực kho gồm 50 nhân sự lãng phí 4.5 giờ/người/ngày vào các thao tác đếm tay, ghi chép sổ sách -> Lãng phí 50 x 4.5 = 225 giờ công/ngày. Với chi phí lương 45.000 đ/giờ -> Thiệt hại **10.125.000 đ/ngày** -> **303.75 triệu đ/tháng** -> Toàn hệ thống kho thiệt hại hơn **3.6 tỷ đồng/năm**!<br>- *Chi phí dừng kho kiểm kê:* Đóng cửa kho 1 ngày/tháng gây đình trệ giao hàng cho hơn 150 nhà thuốc, ước tính thiệt hại chi phí cơ hội và tăng ca đạt **450 triệu đồng/năm**. | - Quản lý date bằng thuật toán FEFO tự động giúp bảo toàn hơn **25 tỷ đồng/năm** giá trị dược phẩm không bị hết hạn.<br>- Số hóa loại bỏ thao tác giấy tờ giúp tiết kiệm hơn **3.0 tỷ đồng/năm** chi phí nhân công lãng phí.<br>- Kiểm kê cuốn chiếu (Cycle Counting) giúp triệt tiêu **100%** chi phí gián đoạn kho (tiết kiệm 450 triệu đồng/năm). |
 
 ---
 
@@ -191,7 +226,7 @@ Phân tích theo 6 yếu tố (6M):
 
 Sau khi tiến hành mổ xẻ chi tiết hai quy trình mang tính sống còn của Long Châu, báo cáo đã tổng hợp được bức tranh toàn cảnh về những khiếm khuyết đang kìm hãm hiệu suất của hệ thống. Dưới đây là bảng tổng hợp các vấn đề chính yếu đã được nhận diện:
 
-*Bảng 4.6: Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt*
+*Bảng 4.9: Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt*
 
 | Tên vấn đề | Quy trình liên quan | Phân loại lãng phí | Mức độ ảnh hưởng | Giải pháp ưu tiên đề xuất |
 | --- | --- | --- | --- | --- |
@@ -211,7 +246,7 @@ Từ việc tổng hợp các vấn đề trên, có thể định vị 3 điể
 **Nhận xét tổng quan về hiện trạng quy trình:**
 Bức tranh hiện trạng quy trình nghiệp vụ của FPT Long Châu phản ánh một thách thức kinh điển: tốc độ mở rộng quy mô kinh doanh (lên tới hơn 1.800 cửa hàng) đã vượt quá năng lực đáp ứng của một cơ chế vận hành mang nặng tính thủ công và truyền thống. Mặc dù đội ngũ dược sĩ và nhân viên kho làm việc rất nỗ lực, nhưng chính sự thiếu hụt trong việc áp dụng công nghệ thông tin chuyên sâu đã và đang trói buộc năng suất của họ. Một khối lượng lớn thời gian và nguồn lực thay vì được dùng để tạo ra giá trị chăm sóc sức khỏe trực tiếp cho khách hàng (VA), lại bị tiêu phí vào các công việc hành chính, tìm kiếm, chờ đợi và xử lý lỗi (NVA).
 
-Để duy trì vị thế dẫn đầu trên thị trường bán lẻ dược phẩm đầy khốc liệt và mang lại trải nghiệm tối ưu cho người bệnh, FPT Long Châu buộc phải thực hiện một cuộc cách mạng về quy trình (BPR). Những điểm nghẽn và nguyên nhân gốc rễ đã được chỉ ra một cách khoa học trong chương này chính là tiền đề trực tiếp, là kim chỉ nam để nhóm nghiên cứu tiến hành thiết kế lại các luồng công việc, ứng dụng các giải pháp tự động hóa. Cụ thể, các giải pháp mô hình hóa quy trình mục tiêu (TO-BE) và việc lựa chọn nền tảng công nghệ phù hợp sẽ được trình bày chi tiết và toàn diện trong Chương 6.
+Để duy trì vị thế dẫn đầu trên thị trường bán lẻ dược phẩm đầy khốc liệt và mang lại trải nghiệm tối ưu cho người bệnh, FPT Long Châu buộc phải thực hiện một cuộc cách mạng về quy trình (BPR). Những điểm nghẽn và nguyên nhân gốc rễ đã được chỉ ra một cách khoa học trong chương này chính là tiền đề trực tiếp, là kim chỉ nam để nhóm nghiên cứu tiến hành thiết kế lại các luồng công việc, ứng dụng các giải pháp tự động hóa. Cụ thể, các giải pháp mô hình hóa quy trình mục tiêu (TO-BE) và việc lựa chọn nền tảng công nghệ phù hợp sẽ được trình bày chi tiết và toàn diện trong Chương 5.
 
 ---
 *(Lưu ý học thuật: Các thông số định lượng về thời gian xử lý chu kỳ (cycle time), thời gian chờ đợi (wait time), tỷ lệ lãng phí (VA/BVA/NVA), tỷ lệ sai lệch tồn kho và điểm số NPS trong chương này là số liệu giả định mô phỏng phục vụ mục đích nghiên cứu học thuật của đồ án môn học. Các số liệu được xây dựng dựa trên quan sát thực tế bên ngoài, phân tích lý thuyết Lean/BPM và tài liệu công khai, không phải dữ liệu trích xuất trực tiếp từ hệ thống ERP/WMS nội bộ của FPT Long Châu).*
