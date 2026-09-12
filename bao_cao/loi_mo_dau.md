@@ -49,62 +49,9 @@
 
 # DANH MỤC CÁC HÌNH VẼ
 
-| Số hiệu hình | Tên gọi hình vẽ / sơ đồ | Vị trí chương |
-| :--- | :--- | :---: |
-| **Hình 1.1** | Sơ đồ Cơ cấu Tổ chức Công ty Cổ phần Dược phẩm FPT Long Châu | Chương 1 |
-| **Hình 2.1** | Mô hình Ngôi nhà Phân loại Quy trình Nghiệp vụ tại FPT Long Châu | Chương 2 |
-| **Hình 2.2** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chuỗi cung ứng dược phẩm | Chương 2 |
-| **Hình 2.3** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý chất lượng dược phẩm (QA/QC) | Chương 2 |
-| **Hình 2.4** | Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc tại nhà thuốc | Chương 2 |
-| **Hình 2.5** | Sơ đồ Kiến trúc phân rã – Quy trình Bán thuốc online | Chương 2 |
-| **Hình 2.6** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý kho dược phẩm | Chương 2 |
-| **Hình 2.7** | Sơ đồ Kiến trúc phân rã – Quy trình Tuyển dụng và đào tạo Dược sĩ | Chương 2 |
-| **Hình 2.8** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý công nghệ thông tin | Chương 2 |
-| **Hình 2.9** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tài chính – Kế toán | Chương 2 |
-| **Hình 2.10** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM) | Chương 2 |
-| **Hình 2.11** | Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược | Chương 2 |
-| **Hình 3.1** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chuỗi cung ứng | Chương 3 |
-| **Hình 3.2** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý chất lượng | Chương 3 |
-| **Hình 3.3** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc | Chương 3 |
-| **Hình 3.4** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc online | Chương 3 |
-| **Hình 3.5** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Quản lý kho | Chương 3 |
-| **Hình 3.6** | Sơ đồ BPMN 2.0 AS-IS – Quy trình Tuyển dụng và đào tạo | Chương 3 |
-| **Hình 5.1** | Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại nhà thuốc | Chương 5 |
-| **Hình 5.2** | Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý kho | Chương 5 |
-
 ---
 
 # DANH MỤC CÁC BẢNG BIỂU
-
-| Số hiệu bảng | Tên gọi bảng biểu | Vị trí chương |
-| :--- | :--- | :---: |
-| **Bảng 1.1** | Tóm tắt thông tin cơ bản về Công ty Cổ phần Dược phẩm FPT Long Châu | Chương 1 |
-| **Bảng 1.2** | Các cột mốc lịch sử quan trọng của FPT Long Châu | Chương 1 |
-| **Bảng 1.3** | So sánh tương quan giữa FPT Long Châu và các chuỗi đối thủ chính | Chương 1 |
-| **Bảng 2.1** | Danh mục 10 quy trình nghiệp vụ chính của FPT Long Châu | Chương 2 |
-| **Bảng 2.2** | Tổng hợp đối tượng khách hàng và các khả năng kết quả của 10 quy trình nghiệp vụ | Chương 2 |
-| **Bảng 2.3** | Đánh giá tiêu chí lựa chọn quy trình phân tích chuyên sâu | Chương 2 |
-| **Bảng 3.1** | Tóm tắt thông tin quy trình Quản lý chuỗi cung ứng (AS-IS) | Chương 3 |
-| **Bảng 3.2** | Tóm tắt thông tin quy trình Quản lý chất lượng (AS-IS) | Chương 3 |
-| **Bảng 3.3** | Tóm tắt thông tin quy trình Bán thuốc tại nhà thuốc (AS-IS) | Chương 3 |
-| **Bảng 3.4** | Tóm tắt thông tin quy trình Bán thuốc online (AS-IS) | Chương 3 |
-| **Bảng 3.5** | Tóm tắt thông tin quy trình Quản lý kho (AS-IS) | Chương 3 |
-| **Bảng 3.6** | Tóm tắt thông tin quy trình Tuyển dụng và đào tạo (AS-IS) | Chương 3 |
-| **Bảng 4.1** | Ma trận RACI quy trình Bán thuốc tại nhà thuốc | Chương 4 |
-| **Bảng 4.2** | Phân loại hoạt động VA/BVA/NVA quy trình Bán thuốc tại nhà thuốc | Chương 4 |
-| **Bảng 4.3** | Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Bán thuốc tại nhà thuốc | Chương 4 |
-| **Bảng 4.4** | Bảng phân tích định lượng hiệu suất quy trình Bán thuốc tại nhà thuốc | Chương 4 |
-| **Bảng 4.5** | Ma trận RACI quy trình Quản lý kho | Chương 4 |
-| **Bảng 4.6** | Phân loại hoạt động VA/BVA/NVA quy trình Quản lý kho | Chương 4 |
-| **Bảng 4.7** | Bảng phân tích lãng phí Lean (Move – Hold – Overdo) quy trình Quản lý kho | Chương 4 |
-| **Bảng 4.8** | Bảng phân tích định lượng hiệu suất quy trình Quản lý kho | Chương 4 |
-| **Bảng 4.9** | Bảng tổng hợp các vấn đề và điểm nghẽn của 2 quy trình then chốt | Chương 4 |
-| **Bảng 5.1** | So sánh các bước thực hiện AS-IS và TO-BE quy trình Bán thuốc tại nhà thuốc | Chương 5 |
-| **Bảng 5.2** | Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Bán thuốc tại nhà thuốc | Chương 5 |
-| **Bảng 5.3** | So sánh quá trình nhập/xuất kho AS-IS và TO-BE | Chương 5 |
-| **Bảng 5.4** | Chỉ số đo lường hiệu quả dự kiến (KPI) quy trình Quản lý kho | Chương 5 |
-| **Bảng 5.5** | Bảng đối chiếu tổng hợp toàn diện AS-IS và TO-BE cho 2 quy trình then chốt | Chương 5 |
-| **Bảng 5.6** | Ma trận đánh giá rủi ro và giải pháp giảm thiểu | Chương 5 |
 
 ---
 
