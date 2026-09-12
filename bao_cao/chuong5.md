@@ -41,7 +41,7 @@ Quy trình bán thuốc trực tiếp tại hệ thống nhà thuốc đóng vai
 | Chỉ số đo lường | Trước cải tiến (AS-IS) | Sau cải tiến (TO-BE) | % Cải thiện |
 | :--- | :--- | :--- | :--- |
 | Thời gian phục vụ 1 khách hàng | 13.5 phút | 4 - 5 phút | ~63% |
-| Tỷ lệ khách bỏ đi do chờ lâu | 15% | < 3% | 80% |
+| Tỷ lệ khách bỏ đi do chờ lâu (cao điểm) | 8% – 10% | < 1% | Giảm ~90% |
 | Thời gian thao tác POS của dược sĩ | 3 phút | 1 phút | 66% |
 | Chi phí in hóa đơn giấy / tháng | Mức cao | Giảm mạnh (Hóa đơn điện tử) | ~70% |
 
@@ -100,14 +100,14 @@ Sơ đồ BPMN mới [Hình 5.1] đưa vào các tác nhân mới như: Khách h
 
 ![Hình 5.1: Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại nhà thuốc](hinh_5_1_bpmn_to_be_ban_thuoc_tai_nha_thuoc.png)
 
-*Hình 5.1: Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại nhà thuốc* 
+*Hình 5.1: Sơ đồ BPMN 2.0 TO-BE – Quy trình Bán thuốc tại nhà thuốc*
 
 **Sơ đồ BPMN TO-BE Quy trình Quản lý kho:**
 Dựa trên sơ đồ TO-BE [Hình 5.2], luồng công việc của Nhân viên kho đã hoàn toàn vắng bóng các tác vụ Manual Task như "Ghi chép sổ tay" hay "Nhập liệu Excel". Tại luồng Nhập kho, khi tiếp nhận hàng hóa, nhân viên thực hiện tác vụ "Quét mã vạch lô hàng" qua PDA. Hệ thống tự động thực hiện Service Task "Cập nhật dữ liệu ERP" và "Chỉ định vị trí lưu trữ trống". Tại luồng Xuất kho, khi nhận lệnh xuất, Gateway tự động kiểm tra nguyên tắc hạn sử dụng. Nếu hợp lệ, hệ thống tạo "Luồng nhặt hàng FEFO", hướng dẫn nhân viên đến đúng vị trí của lô thuốc cần lấy. Đặc biệt, sơ đồ bổ sung thêm một Timer Event liên tục chạy ngầm trong hệ thống WMS để tự động thực hiện tác vụ "Gửi cảnh báo hàng cận date", loại bỏ hoàn toàn việc phát hiện chậm trễ như mô hình AS-IS.
 
 ![Hình 5.2: Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý kho](hinh_5_2_bpmn_to_be_quan_ly_kho.png)
 
-*Hình 5.2: Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý kho* 
+*Hình 5.2: Sơ đồ BPMN 2.0 TO-BE – Quy trình Quản lý kho*
 
 ## 5.6. So sánh quy trình AS-IS và TO-BE
 

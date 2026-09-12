@@ -106,5 +106,6 @@ Báo cáo được kết cấu chặt chẽ thành 6 chương chuyên môn theo 
 - **Chương 3: Mô hình hóa Quy trình Nghiệp vụ Hiện tại (AS-IS)** – Trình bày 6 sơ đồ BPMN 2.0 AS-IS hoàn chỉnh kèm phân tích mục tiêu, tác nhân và luồng hoạt động.
 - **Chương 4: Phân tích Quy trình Nghiệp vụ** – Phân tích định lượng chuyên sâu 2 quy trình trọng điểm (Bán thuốc và Kho) qua phân loại VA/BVA/NVA, phân tích lãng phí Move-Hold-Overdo, Mô hình Xương cá Fishbone 6M và Kỹ thuật 5 Whys.
 - **Chương 5: Đề xuất Cải tiến Quy trình Nghiệp vụ (TO-BE)** – Đề xuất mục tiêu KPI, giải pháp công nghệ, bảng so sánh AS-IS/TO-BE, 2 sơ đồ BPMN 2.0 TO-BE và lộ trình thực thi 12 tháng.
+- **Chương 6: Kết luận và Hướng phát triển** – Tổng kết toàn diện các đóng góp cốt lõi của đề tài, đánh giá khách quan các hạn chế và đề xuất 6 định hướng phát triển mở rộng trong tương lai.
 - **Tài liệu tham khảo & Phụ lục:** Danh mục trích dẫn chuẩn APA7, Phụ lục A (Bảng đánh giá tiêu chí lựa chọn quy trình) và Phụ lục B (Danh sách câu hỏi khảo sát chuyên sâu).
 
