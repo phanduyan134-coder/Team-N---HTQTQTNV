@@ -218,14 +218,14 @@ Quy trình thu thập, đối soát dòng tiền bán lẻ vi mô và lập báo
 ### 2.4.9. Kiến trúc Quy trình Quản lý quan hệ khách hàng (CRM)
 Quy trình quản lý dữ liệu hội viên, tích điểm F-Reward, tự động gửi nhắc lịch uống thuốc và chăm sóc sức khỏe định kỳ. Kiến trúc phân rã được thể hiện tại Hình 2.10 dưới đây:
 
-![Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)](hinh_2_10_kientruc_crm.png)
+![Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)](hinh_2_10_kientruc_quan_he_khach_hang_crm.png)
 
 *Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)*
 
 ### 2.4.10. Kiến trúc Quy trình Quản lý tuân thủ pháp lý & dược
 Quy trình cập nhật văn bản quy phạm pháp luật, giám sát điều kiện duy trì chuẩn GPP/GDP và phòng ngừa rủi ro pháp lý ngành dược. Kiến trúc phân rã được mô tả tại Hình 2.11 dưới đây:
 
-![Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược](hinh_2_11_kientruc_tuan_thu_phap_ly.png)
+![Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược](hinh_2_11_kientruc_tuan_thu_phap_ly_duoc.png)
 
 *Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược*
 

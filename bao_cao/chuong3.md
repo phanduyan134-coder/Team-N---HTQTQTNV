@@ -127,7 +127,7 @@ Bán thuốc trực tiếp tại quầy là quy trình cốt lõi mang lại doa
 - **Xóa bỏ triệt để điểm nghẽn Deadlock**: Khắc phục lỗi luồng khách hàng bị ngắt quãng bằng cách liên kết thông suốt 100% Sequence Flow từ khâu tư vấn, chọn phương thức thanh toán đến nhận thuốc và kết thúc.
 - **8 Cổng quyết định**: G1 (Thuốc kê đơn bác sĩ?), G2 (Đơn thuốc hợp lệ?), G3 (Còn hàng tại quầy?), G4 (Khách đồng ý đổi Generic?), G5 (Hạn sử dụng > 6 tháng?), G6 (Khách hàng có thẻ Hội viên CRM?), G7 (Lựa chọn hình thức thanh toán?), G8 (Thanh toán thành công?).
 
-![Hình 3.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc](hinh_3_3_bpmn_as_is_ban_thuoc_tai_quay.png)
+![Hình 3.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc](hinh_3_3_bpmn_as_is_ban_thuoc_tai_nha_thuoc.png)
 
 *Hình 3.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc (8 Gateways • 0% Deadlock • 4 Swimlanes)*
 

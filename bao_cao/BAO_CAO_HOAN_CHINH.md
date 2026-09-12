@@ -421,14 +421,14 @@ Quy trình thu thập, đối soát dòng tiền bán lẻ vi mô và lập báo
 ### 2.4.9. Kiến trúc Quy trình Quản lý quan hệ khách hàng (CRM)
 Quy trình quản lý dữ liệu hội viên, tích điểm F-Reward, tự động gửi nhắc lịch uống thuốc và chăm sóc sức khỏe định kỳ. Kiến trúc phân rã được thể hiện tại Hình 2.10 dưới đây:
 
-![Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)](hinh_2_10_kientruc_crm.png)
+![Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)](hinh_2_10_kientruc_quan_he_khach_hang_crm.png)
 
 *Hình 2.10: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý quan hệ khách hàng (CRM)*
 
 ### 2.4.10. Kiến trúc Quy trình Quản lý tuân thủ pháp lý & dược
 Quy trình cập nhật văn bản quy phạm pháp luật, giám sát điều kiện duy trì chuẩn GPP/GDP và phòng ngừa rủi ro pháp lý ngành dược. Kiến trúc phân rã được mô tả tại Hình 2.11 dưới đây:
 
-![Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược](hinh_2_11_kientruc_tuan_thu_phap_ly.png)
+![Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược](hinh_2_11_kientruc_tuan_thu_phap_ly_duoc.png)
 
 *Hình 2.11: Sơ đồ Kiến trúc phân rã – Quy trình Quản lý tuân thủ pháp lý & dược*
 
@@ -853,7 +853,7 @@ Bán thuốc trực tiếp tại quầy là quy trình cốt lõi mang lại doa
 - **Xóa bỏ triệt để điểm nghẽn Deadlock**: Khắc phục lỗi luồng khách hàng bị ngắt quãng bằng cách liên kết thông suốt 100% Sequence Flow từ khâu tư vấn, chọn phương thức thanh toán đến nhận thuốc và kết thúc.
 - **8 Cổng quyết định**: G1 (Thuốc kê đơn bác sĩ?), G2 (Đơn thuốc hợp lệ?), G3 (Còn hàng tại quầy?), G4 (Khách đồng ý đổi Generic?), G5 (Hạn sử dụng > 6 tháng?), G6 (Khách hàng có thẻ Hội viên CRM?), G7 (Lựa chọn hình thức thanh toán?), G8 (Thanh toán thành công?).
 
-![Hình 3.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc](hinh_3_3_bpmn_as_is_ban_thuoc_tai_quay.png)
+![Hình 3.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc](hinh_3_3_bpmn_as_is_ban_thuoc_tai_nha_thuoc.png)
 
 *Hình 3.3: Sơ đồ BPMN 2.0 AS-IS – Quy trình Bán thuốc tại nhà thuốc (8 Gateways • 0% Deadlock • 4 Swimlanes)*
 
@@ -1066,7 +1066,7 @@ Trong quy trình bán thuốc tại nhà thuốc, các bên liên quan trực ti
 
 Mô hình phân rã bài toán trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"** thành 6 nhánh nhân tố tương tác trực tiếp với các bên liên quan: Con người (Man), Phương pháp (Method), Máy móc / Công nghệ (Machine), Sản phẩm (Material), Đo lường (Measurement) và Môi trường (Mother Nature).
 
-![Hình 4.1: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Bán thuốc tại nhà thuốc](hinh_4_1_fishbone_ban_thuoc.png)
+![Hình 4.1: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Bán thuốc tại nhà thuốc](hinh_4_1_fishbone_ban_thuoc_tai_nha_thuoc.png)
 
 *Hình 4.1: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Bán thuốc tại nhà thuốc*
 
@@ -1156,7 +1156,7 @@ Quy trình quản lý kho trung tâm là mắt xích kết nối đa chiều gi�
 
 Để nhận diện căn nguyên của các tổn thất, nhóm nghiên cứu áp dụng **Mô hình Xương cá (Fishbone 6M)** để giải phẫu bài toán trung tâm: **"Sai sót số liệu tồn kho và thuốc cận hạn không được phát hiện kịp thời"** theo 6 nhóm nhân tố toàn diện: Con người, Công nghệ, Quy trình, Sản phẩm, Đo lường và Môi trường.
 
-![Hình 4.2: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Quản lý kho trung tâm](hinh_4_2_fishbone_quan_ly_kho.png)
+![Hình 4.2: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Quản lý kho trung tâm](hinh_4_2_fishbone_quan_ly_kho_trung_tam.png)
 
 *Hình 4.2: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Quản lý kho trung tâm*
 

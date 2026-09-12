@@ -82,7 +82,7 @@ Trong quy trình bán thuốc tại nhà thuốc, các bên liên quan trực ti
 
 Mô hình phân rã bài toán trung tâm: **"Thời gian phục vụ khách hàng còn chậm, tỷ lệ khách hàng phải chờ cao"** thành 6 nhánh nhân tố tương tác trực tiếp với các bên liên quan: Con người (Man), Phương pháp (Method), Máy móc / Công nghệ (Machine), Sản phẩm (Material), Đo lường (Measurement) và Môi trường (Mother Nature).
 
-![Hình 4.1: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Bán thuốc tại nhà thuốc](hinh_4_1_fishbone_ban_thuoc.png)
+![Hình 4.1: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Bán thuốc tại nhà thuốc](hinh_4_1_fishbone_ban_thuoc_tai_nha_thuoc.png)
 
 *Hình 4.1: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Bán thuốc tại nhà thuốc*
 
@@ -172,7 +172,7 @@ Quy trình quản lý kho trung tâm là mắt xích kết nối đa chiều gi�
 
 Để nhận diện căn nguyên của các tổn thất, nhóm nghiên cứu áp dụng **Mô hình Xương cá (Fishbone 6M)** để giải phẫu bài toán trung tâm: **"Sai sót số liệu tồn kho và thuốc cận hạn không được phát hiện kịp thời"** theo 6 nhóm nhân tố toàn diện: Con người, Công nghệ, Quy trình, Sản phẩm, Đo lường và Môi trường.
 
-![Hình 4.2: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Quản lý kho trung tâm](hinh_4_2_fishbone_quan_ly_kho.png)
+![Hình 4.2: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Quản lý kho trung tâm](hinh_4_2_fishbone_quan_ly_kho_trung_tam.png)
 
 *Hình 4.2: Sơ đồ Xương cá (Fishbone 6M) – Phân tích nguyên nhân ách tắc quy trình Quản lý kho trung tâm*
 

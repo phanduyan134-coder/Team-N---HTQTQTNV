@@ -16,7 +16,7 @@ const PROCESS_DATA = [
     frequency: "Liên tục hàng ngày (>1.800 nhà thuốc)",
     icon: "fa-pills",
     color: "#0284c7",
-    bpmnSvg: "assets/bpmn/hinh_3_3_bpmn_as_is_ban_thuoc_tai_quay.svg",
+    bpmnSvg: "assets/bpmn/hinh_3_3_bpmn_as_is_ban_thuoc_tai_nha_thuoc.svg",
     toBeSvg: "assets/bpmn/hinh_5_1_bpmn_to_be_ban_thuoc_tai_nha_thuoc.svg",
     toBeTitle: "Hình 5.1: Sơ đồ BPMN 2.0 (TO-BE) – Bán thuốc tại nhà thuốc",
     desc: "Quy trình đón tiếp khách hàng, tư vấn đơn thuốc, tra cứu tồn kho, thanh toán và hướng dẫn sử dụng thuốc tại quầy.",
