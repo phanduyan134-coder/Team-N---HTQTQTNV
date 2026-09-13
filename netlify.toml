@@ -1,0 +1,19 @@
+# Netlify Configuration for FPT Long Châu BPM Presentation
+
+[build]
+  # Thư mục xuất bản: thuyet_trinh
+  publish = "thuyet_trinh"
+
+# Header cấu hình cho phép chạy mượt mà, hỗ trợ nhúng iframe và font
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "ALLOWALL"
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Redirect cho Single Page Presentation
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
